@@ -1,9 +1,10 @@
 sudo: false
 language: C
 
-#branches:
-#  only:
-#    - master
+branches:
+  only:
+  - master
+  - gh-pages
 
 env:
   global:
