@@ -1,0 +1,6 @@
+<map id="w_cleanup" name="w_cleanup">
+<area shape="rect" id="node3" href="$warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d" title="Close a warpcore socket." alt="" coords="165,5,235,35"/>
+<area shape="rect" id="node7" href="$backend_8h.html#a0d3c16a0d0fbe62e779252b4f085abd3" title="Shut a warpcore netmap engine down cleanly." alt="" coords="139,59,261,88"/>
+<area shape="rect" id="node5" href="$warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7" title="Return a w_iov chain obtained via w_alloc() or w_rx() back to warpcore." alt="" coords="335,5,396,35"/>
+<area shape="rect" id="node9" href="$arp_8c.html#a29b1c1f926ec4ca21f78e3dd0addce21" title="Free the ARP cache entries associated with engine w." alt="" coords="311,59,420,88"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="w_bind" name="w_bind">
+<area shape="rect" id="node3" href="$backend_8h.html#adc061493c4082f0206a51a67bbfb255d" title="Get the socket bound to local port port." alt="" coords="132,5,207,35"/>
+<area shape="rect" id="node5" href="$backend_8h.html#a7ee48b1b41c1c5293f7cca261794b338" title="Netmap&#45;specific code to bind a warpcore socket." alt="" coords="119,59,220,88"/>
+</map>

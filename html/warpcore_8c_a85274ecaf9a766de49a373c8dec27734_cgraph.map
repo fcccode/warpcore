@@ -1,0 +1,13 @@
+<map id="w_tx" name="w_tx">
+<area shape="rect" id="node3" href="$backend_8h.html#a538d48855851264a01c0a959476c40d4" title="Places the payload of v into an IPv4 UDP packet, and attempts to move it onto a TX ring..." alt="" coords="105,179,193,208"/>
+<area shape="rect" id="node5" href="$udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c" title="Sends a payload contained in a w_sock::ov via UDP." alt="" coords="243,111,304,140"/>
+<area shape="rect" id="node15" href="$backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link." alt="" coords="517,272,592,301"/>
+<area shape="rect" id="node7" href="$arp_8c.html#a767793cec18e132d3875c6d374e8414f" title="Return the Ethernet MAC address for target IP address dip." alt="" coords="352,165,451,195"/>
+<area shape="rect" id="node19" href="$ip_8h.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values." alt="" coords="361,57,441,87"/>
+<area shape="rect" id="node21" href="$ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len." alt="" coords="516,5,593,35"/>
+<area shape="rect" id="node23" href="$ip_8c.html#a2165f6158886310cb7d3cdb1e0b5646d" title="IPv4 transmit processing for the w_iov v of length len." alt="" coords="376,111,427,140"/>
+<area shape="rect" id="node9" href="$arp_8c.html#a755a6595690a86527e7ef79847298d4a" title="Find the ARP cache entry associated with IPv4 address ip." alt="" coords="500,219,609,248"/>
+<area shape="rect" id="node11" href="$backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine." alt="" coords="519,112,591,141"/>
+<area shape="rect" id="node13" href="$eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring." alt="" coords="525,59,584,88"/>
+<area shape="rect" id="node17" href="$backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1" title="Trigger netmap to make new received data available to w_rx()." alt="" coords="517,165,592,195"/>
+</map>

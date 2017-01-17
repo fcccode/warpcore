@@ -1,0 +1,9 @@
+<map id="w_connect" name="w_connect">
+<area shape="rect" id="node3" href="$backend_8h.html#af5df52522d52bfed04aa270094deaa78" title="Connect the given w_sock, using the netmap backend." alt="" coords="140,112,263,141"/>
+<area shape="rect" id="node5" href="$arp_8c.html#a767793cec18e132d3875c6d374e8414f" title="Return the Ethernet MAC address for target IP address dip." alt="" coords="312,112,411,141"/>
+<area shape="rect" id="node7" href="$arp_8c.html#a755a6595690a86527e7ef79847298d4a" title="Find the ARP cache entry associated with IPv4 address ip." alt="" coords="460,5,569,35"/>
+<area shape="rect" id="node9" href="$backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine." alt="" coords="479,59,551,88"/>
+<area shape="rect" id="node11" href="$eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring." alt="" coords="485,112,544,141"/>
+<area shape="rect" id="node13" href="$backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link." alt="" coords="477,165,552,195"/>
+<area shape="rect" id="node15" href="$backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1" title="Trigger netmap to make new received data available to w_rx()." alt="" coords="477,219,552,248"/>
+</map>
