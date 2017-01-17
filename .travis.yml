@@ -4,7 +4,6 @@
 branches:
   only:
     - master
-    - gh-pages
 
 env:
   global:
