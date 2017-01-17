@@ -1,10 +1,10 @@
 <map id="warpcore.c" name="warpcore.c">
-<area shape="rect" id="node25" href="$warpcore_8h.html" title="warpcore.h" alt="" coords="524,160,609,189"/>
-<area shape="rect" id="node48" href="$backend_8h.html" title="backend.h" alt="" coords="295,83,377,112"/>
-<area shape="rect" id="node50" href="$eth_8h.html" title="eth.h" alt="" coords="97,237,148,267"/>
-<area shape="rect" id="node55" href="$ip_8h.html" title="ip.h" alt="" coords="215,160,257,189"/>
-<area shape="rect" id="node60" href="$udp_8h.html" title="udp.h" alt="" coords="343,160,396,189"/>
-<area shape="rect" id="node68" href="$version_8h.html" title="version.h" alt="" coords="1421,83,1496,112"/>
-<area shape="rect" id="node31" href="$plat_8h.html" title="plat.h" alt="" coords="324,237,377,267"/>
-<area shape="rect" id="node35" href="$util_8h.html" title="util.h" alt="" coords="604,237,655,267"/>
+<area shape="rect" id="node13" href="$warpcore_8h.html" title="warpcore.h" alt="" coords="526,155,612,181"/>
+<area shape="rect" id="node21" href="$backend_8h.html" title="backend.h" alt="" coords="297,80,379,107"/>
+<area shape="rect" id="node22" href="$eth_8h.html" title="eth.h" alt="" coords="97,229,148,256"/>
+<area shape="rect" id="node23" href="$ip_8h.html" title="ip.h" alt="" coords="215,155,257,181"/>
+<area shape="rect" id="node24" href="$udp_8h.html" title="udp.h" alt="" coords="343,155,397,181"/>
+<area shape="rect" id="node25" href="$version_8h.html" title="version.h" alt="" coords="1431,80,1504,107"/>
+<area shape="rect" id="node15" href="$plat_8h.html" title="plat.h" alt="" coords="325,229,379,256"/>
+<area shape="rect" id="node16" href="$util_8h.html" title="util.h" alt="" coords="607,229,657,256"/>
 </map>

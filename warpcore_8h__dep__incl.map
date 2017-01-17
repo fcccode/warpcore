@@ -1,15 +1,15 @@
 <map id="warpcore.h" name="warpcore.h">
-<area shape="rect" id="node3" href="$arp_8c.html" title="arp.c" alt="" coords="5,160,56,189"/>
-<area shape="rect" id="node5" href="$backend_8h.html" title="backend.h" alt="" coords="385,83,468,112"/>
-<area shape="rect" id="node8" href="$backend__netmap_8c.html" title="backend_netmap.c" alt="" coords="80,160,211,189"/>
-<area shape="rect" id="node10" href="$backend__shim_8c.html" title="backend_shim.c" alt="" coords="235,160,352,189"/>
-<area shape="rect" id="node12" href="$eth_8c.html" title="eth.c" alt="" coords="376,160,427,189"/>
-<area shape="rect" id="node14" href="$icmp_8c.html" title="icmp.c" alt="" coords="451,160,512,189"/>
-<area shape="rect" id="node16" href="$ip_8c.html" title="ip.c" alt="" coords="536,160,579,189"/>
-<area shape="rect" id="node18" href="$udp_8c.html" title="udp.c" alt="" coords="603,160,656,189"/>
-<area shape="rect" id="node20" href="$warpcore_8c.html" title="warpcore.c" alt="" coords="680,160,765,189"/>
-<area shape="rect" id="node27" href="$plat__freebsd_8c.html" title="plat_freebsd.c" alt="" coords="695,83,799,112"/>
-<area shape="rect" id="node29" href="$plat__generic_8c.html" title="plat_generic.c" alt="" coords="823,83,924,112"/>
-<area shape="rect" id="node31" href="$plat__linux_8c.html" title="plat_linux.c" alt="" coords="948,83,1036,112"/>
-<area shape="rect" id="node34" href="$util_8c.html" title="util.c" alt="" coords="1060,83,1111,112"/>
+<area shape="rect" id="node2" href="$arp_8c.html" title="arp.c" alt="" coords="5,155,56,181"/>
+<area shape="rect" id="node3" href="$backend_8h.html" title="backend.h" alt="" coords="388,80,469,107"/>
+<area shape="rect" id="node4" href="$backend__netmap_8c.html" title="backend_netmap.c" alt="" coords="81,155,212,181"/>
+<area shape="rect" id="node5" href="$backend__shim_8c.html" title="backend_shim.c" alt="" coords="237,155,353,181"/>
+<area shape="rect" id="node6" href="$eth_8c.html" title="eth.c" alt="" coords="379,155,429,181"/>
+<area shape="rect" id="node7" href="$icmp_8c.html" title="icmp.c" alt="" coords="453,155,515,181"/>
+<area shape="rect" id="node8" href="$ip_8c.html" title="ip.c" alt="" coords="539,155,581,181"/>
+<area shape="rect" id="node9" href="$udp_8c.html" title="udp.c" alt="" coords="606,155,660,181"/>
+<area shape="rect" id="node10" href="$warpcore_8c.html" title="warpcore.c" alt="" coords="685,155,771,181"/>
+<area shape="rect" id="node11" href="$plat__freebsd_8c.html" title="plat_freebsd.c" alt="" coords="697,80,801,107"/>
+<area shape="rect" id="node12" href="$plat__generic_8c.html" title="plat_generic.c" alt="" coords="826,80,928,107"/>
+<area shape="rect" id="node13" href="$plat__linux_8c.html" title="plat_linux.c" alt="" coords="953,80,1041,107"/>
+<area shape="rect" id="node14" href="$util_8c.html" title="util.c" alt="" coords="1065,80,1116,107"/>
 </map>

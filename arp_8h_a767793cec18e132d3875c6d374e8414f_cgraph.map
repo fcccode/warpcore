@@ -1,7 +1,7 @@
 <map id="arp_who_has" name="arp_who_has">
-<area shape="rect" id="node3" href="$arp_8c.html#a755a6595690a86527e7ef79847298d4a" title="Find the ARP cache entry associated with IPv4 address ip." alt="" coords="153,5,263,35"/>
-<area shape="rect" id="node5" href="$backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine." alt="" coords="172,59,244,88"/>
-<area shape="rect" id="node7" href="$eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring." alt="" coords="179,112,237,141"/>
-<area shape="rect" id="node9" href="$backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link." alt="" coords="171,165,245,195"/>
-<area shape="rect" id="node11" href="$backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1" title="Trigger netmap to make new received data available to w_rx()." alt="" coords="171,219,245,248"/>
+<area shape="rect" id="node2" href="$arp_8c.html#a755a6595690a86527e7ef79847298d4a" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="153,5,263,32"/>
+<area shape="rect" id="node3" href="$backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="171,56,245,83"/>
+<area shape="rect" id="node4" href="$eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="179,107,237,133"/>
+<area shape="rect" id="node5" href="$backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="171,157,245,184"/>
+<area shape="rect" id="node6" href="$backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="171,208,245,235"/>
 </map>

@@ -1,8 +1,8 @@
 <map id="backend_connect" name="backend_connect">
-<area shape="rect" id="node3" href="$arp_8c.html#a767793cec18e132d3875c6d374e8414f" title="Return the Ethernet MAC address for target IP address dip." alt="" coords="179,112,277,141"/>
-<area shape="rect" id="node5" href="$arp_8c.html#a755a6595690a86527e7ef79847298d4a" title="Find the ARP cache entry associated with IPv4 address ip." alt="" coords="327,5,436,35"/>
-<area shape="rect" id="node7" href="$backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine." alt="" coords="345,59,417,88"/>
-<area shape="rect" id="node9" href="$eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring." alt="" coords="352,112,411,141"/>
-<area shape="rect" id="node11" href="$backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link." alt="" coords="344,165,419,195"/>
-<area shape="rect" id="node13" href="$backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1" title="Trigger netmap to make new received data available to w_rx()." alt="" coords="344,219,419,248"/>
+<area shape="rect" id="node2" href="$arp_8c.html#a767793cec18e132d3875c6d374e8414f" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="179,107,277,133"/>
+<area shape="rect" id="node3" href="$arp_8c.html#a755a6595690a86527e7ef79847298d4a" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="326,5,437,32"/>
+<area shape="rect" id="node4" href="$backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="345,56,418,83"/>
+<area shape="rect" id="node5" href="$eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="352,107,411,133"/>
+<area shape="rect" id="node6" href="$backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="344,157,419,184"/>
+<area shape="rect" id="node7" href="$backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="344,208,419,235"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="plat_linux.c" name="plat_linux.c">
-<area shape="rect" id="node31" href="$warpcore_8h.html" title="warpcore.h" alt="" coords="899,83,984,112"/>
-<area shape="rect" id="node56" href="$eth_8h.html" title="eth.h" alt="" coords="720,160,771,189"/>
-<area shape="rect" id="node38" href="$plat_8h.html" title="plat.h" alt="" coords="963,160,1016,189"/>
-<area shape="rect" id="node42" href="$util_8h.html" title="util.h" alt="" coords="1141,160,1192,189"/>
+<area shape="rect" id="node16" href="$warpcore_8h.html" title="warpcore.h" alt="" coords="906,80,992,107"/>
+<area shape="rect" id="node26" href="$eth_8h.html" title="eth.h" alt="" coords="728,155,779,181"/>
+<area shape="rect" id="node19" href="$plat_8h.html" title="plat.h" alt="" coords="971,155,1025,181"/>
+<area shape="rect" id="node20" href="$util_8h.html" title="util.h" alt="" coords="1152,155,1203,181"/>
 </map>

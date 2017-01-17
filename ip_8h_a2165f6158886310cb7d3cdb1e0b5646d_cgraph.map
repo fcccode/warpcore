@@ -1,4 +1,4 @@
 <map id="ip_tx" name="ip_tx">
-<area shape="rect" id="node3" href="$ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len." alt="" coords="105,5,183,35"/>
-<area shape="rect" id="node5" href="$eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring." alt="" coords="115,59,173,88"/>
+<area shape="rect" id="node2" href="$ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="105,5,183,32"/>
+<area shape="rect" id="node3" href="$eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="115,56,173,83"/>
 </map>
