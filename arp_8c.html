@@ -89,14 +89,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;arpa/inet.h&gt;</code><br/>
+<code>#include &lt;net/if.h&gt;</code><br/>
+<code>#include &lt;netinet/in.h&gt;</code><br/>
 <code>#include &lt;poll.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;sys/queue.h&gt;</code><br/>
 <code>#include &lt;sys/socket.h&gt;</code><br/>
-<code>#include &lt;sys/types.h&gt;</code><br/>
 <code>#include &lt;net/ethernet.h&gt;</code><br/>
+<code>#include &lt;net/netmap.h&gt;</code><br/>
 <code>#include &lt;<a class="el" href="warpcore_8h_source.html">warpcore.h</a>&gt;</code><br/>
 <code>#include &quot;<a class="el" href="arp_8h_source.html">arp.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="backend_8h_source.html">backend.h</a>&quot;</code><br/>
@@ -107,7 +109,7 @@ Include dependency graph for arp.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="arp_8c__incl.png" border="0" usemap="#arp_8c" alt=""/></div>
 <map name="arp_8c" id="arp_8c">
-<area shape="rect" id="node11" href="warpcore_8h.html" title="warpcore.h" alt="" coords="505,155,591,181"/><area shape="rect" id="node20" href="arp_8h.html" title="arp.h" alt="" coords="359,155,409,181"/><area shape="rect" id="node21" href="eth_8h.html" title="eth.h" alt="" coords="99,229,149,256"/><area shape="rect" id="node22" href="backend_8h.html" title="backend.h" alt="" coords="259,80,340,107"/><area shape="rect" id="node23" href="ip_8h.html" title="ip.h" alt="" coords="169,155,212,181"/><area shape="rect" id="node13" href="plat_8h.html" title="plat.h" alt="" coords="253,229,307,256"/><area shape="rect" id="node15" href="util_8h.html" title="util.h" alt="" coords="585,229,636,256"/><area shape="rect" id="node24" href="udp_8h.html" title="udp.h" alt="" coords="174,229,228,256"/></map>
+<area shape="rect" id="node13" href="warpcore_8h.html" title="warpcore.h" alt="" coords="687,155,773,181"/><area shape="rect" id="node22" href="arp_8h.html" title="arp.h" alt="" coords="561,155,612,181"/><area shape="rect" id="node23" href="eth_8h.html" title="eth.h" alt="" coords="301,229,352,256"/><area shape="rect" id="node24" href="backend_8h.html" title="backend.h" alt="" coords="469,80,551,107"/><area shape="rect" id="node25" href="ip_8h.html" title="ip.h" alt="" coords="380,155,423,181"/><area shape="rect" id="node15" href="plat_8h.html" title="plat.h" alt="" coords="455,229,509,256"/><area shape="rect" id="node17" href="util_8h.html" title="util.h" alt="" coords="788,229,839,256"/><area shape="rect" id="node26" href="udp_8h.html" title="udp.h" alt="" coords="377,229,431,256"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -413,7 +415,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jan 19 2017 14:51:29 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 6 2017 14:59:12 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
