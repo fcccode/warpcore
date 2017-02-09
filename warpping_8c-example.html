@@ -295,9 +295,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                    <span class="keywordflow">if</span> (poll(&amp;fds, 1, -1) == -1)</div>
 <div class="line">                        <span class="comment">// if the poll was interrupted, move on</span></div>
 <div class="line">                        <span class="keywordflow">continue</span>;</div>
-<div class="line">                } <span class="keywordflow">else</span></div>
-<div class="line">                    <span class="comment">// just suck in whatever is in the NIC rings</span></div>
-<div class="line">                    <a name="a21"></a><a class="code" href="backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1">w_nic_rx</a>(w);</div>
+<div class="line">                }</div>
+<div class="line"></div>
+<div class="line">                <span class="comment">// receive new data (there may not be any if busy-waiting)</span></div>
+<div class="line">                <a name="a21"></a><a class="code" href="backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1">w_nic_rx</a>(w);</div>
 <div class="line"></div>
 <div class="line">                <span class="comment">// read new data</span></div>
 <div class="line">                <span class="keyword">struct </span>w_iov_chain * <span class="keyword">new</span> = <a name="a22"></a><a class="code" href="warpcore_8c.html#a56a86a977786ce031b974f17536c1c4e">w_rx</a>(s);</div>
@@ -356,7 +357,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 9 2017 09:17:15 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 9 2017 13:04:35 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
