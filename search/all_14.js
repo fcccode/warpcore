@@ -2,7 +2,7 @@ var searchData=
 [
   ['w',['w',['../structw__sock.html#a153f7af47d3e0dfc681e01c0b3a86c69',1,'w_sock']]],
   ['w_5falloc',['w_alloc',['../warpcore_8c.html#a6cbc34732ec917ab5dcc7fcb40757612',1,'w_alloc(struct warpcore *const w, const uint32_t len, const uint16_t off):&#160;warpcore.c'],['../warpcore_8h.html#a6cbc34732ec917ab5dcc7fcb40757612',1,'w_alloc(struct warpcore *const w, const uint32_t len, const uint16_t off):&#160;warpcore.c']]],
-  ['w_5fbind',['w_bind',['../warpcore_8c.html#a5324385818436f533a38118655098855',1,'w_bind(struct warpcore *const w, const uint16_t port):&#160;warpcore.c'],['../warpcore_8h.html#a5324385818436f533a38118655098855',1,'w_bind(struct warpcore *const w, const uint16_t port):&#160;warpcore.c']]],
+  ['w_5fbind',['w_bind',['../warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705',1,'w_bind(struct warpcore *const w, const uint16_t port, const uint8_t flags):&#160;warpcore.c'],['../warpcore_8h.html#a3d0097edbfdedda7f4a53d85c9f24705',1,'w_bind(struct warpcore *const w, const uint16_t port, const uint8_t flags):&#160;warpcore.c']]],
   ['w_5fcleanup',['w_cleanup',['../warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf',1,'w_cleanup(struct warpcore *const w):&#160;warpcore.c'],['../warpcore_8h.html#ae29607b63a6bccf591386fbdabb944bf',1,'w_cleanup(struct warpcore *const w):&#160;warpcore.c']]],
   ['w_5fclose',['w_close',['../warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d',1,'w_close(struct w_sock *const s):&#160;warpcore.c'],['../warpcore_8h.html#a26c31751f7bb602b01bf00077ebd362d',1,'w_close(struct w_sock *const s):&#160;warpcore.c']]],
   ['w_5fconnect',['w_connect',['../warpcore_8c.html#ab31d23fb4fa64de58aef6c688ea6563a',1,'w_connect(struct w_sock *const s, const uint32_t ip, const uint16_t port):&#160;warpcore.c'],['../warpcore_8h.html#ab31d23fb4fa64de58aef6c688ea6563a',1,'w_connect(struct w_sock *const s, const uint32_t ip, const uint16_t port):&#160;warpcore.c']]],
@@ -22,6 +22,7 @@ var searchData=
   ['w_5frx_5fready',['w_rx_ready',['../warpcore_8c.html#a9de95626b431e277ef91938501adea5f',1,'w_rx_ready(const struct warpcore *w):&#160;warpcore.c'],['../warpcore_8h.html#a9de95626b431e277ef91938501adea5f',1,'w_rx_ready(const struct warpcore *w):&#160;warpcore.c']]],
   ['w_5fsock',['w_sock',['../structw__sock.html',1,'']]],
   ['w_5ftx',['w_tx',['../warpcore_8c.html#a85274ecaf9a766de49a373c8dec27734',1,'w_tx(const struct w_sock *const s, struct w_iov_chain *const c):&#160;warpcore.c'],['../warpcore_8h.html#a85274ecaf9a766de49a373c8dec27734',1,'w_tx(const struct w_sock *const s, struct w_iov_chain *const c):&#160;warpcore.c']]],
+  ['w_5fzero_5fchksum',['W_ZERO_CHKSUM',['../warpcore_8h.html#a1dc8f24f3aece4066bc8ff8fceeb54f3',1,'warpcore.h']]],
   ['warn',['warn',['../util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887',1,'warn():&#160;util.h'],['../util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f',1,'warn():&#160;util.h']]],
   ['warpcore',['warpcore',['../structwarpcore.html',1,'']]],
   ['warpcore_2ec',['warpcore.c',['../warpcore_8c.html',1,'']]],

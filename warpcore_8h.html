@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">warpcore.h File Reference</div>  </div>
@@ -119,6 +120,12 @@ Data Structures</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The I/O vector structure that warpcore uses at the center of its API.  <a href="structw__iov.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a1dc8f24f3aece4066bc8ff8fceeb54f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a1dc8f24f3aece4066bc8ff8fceeb54f3">W_ZERO_CHKSUM</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memdesc:a1dc8f24f3aece4066bc8ff8fceeb54f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not compute a UDP checksum for outgoing packets.  <a href="#a1dc8f24f3aece4066bc8ff8fceeb54f3">More...</a><br/></td></tr>
+<tr class="separator:a1dc8f24f3aece4066bc8ff8fceeb54f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a72ec0594c6809ba127e0409efaab76b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a72ec0594c6809ba127e0409efaab76b8">STAILQ_HEAD</a> (w_iov_chain, <a class="el" href="structw__iov.html">w_iov</a>)</td></tr>
@@ -131,9 +138,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ae29607b63a6bccf591386fbdabb944bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w)</td></tr>
 <tr class="memdesc:ae29607b63a6bccf591386fbdabb944bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore engine down cleanly.  <a href="#ae29607b63a6bccf591386fbdabb944bf">More...</a><br/></td></tr>
 <tr class="separator:ae29607b63a6bccf591386fbdabb944bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5324385818436f533a38118655098855"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a5324385818436f533a38118655098855">w_bind</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, const uint16_t port)</td></tr>
-<tr class="memdesc:a5324385818436f533a38118655098855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to the given local UDP port number.  <a href="#a5324385818436f533a38118655098855">More...</a><br/></td></tr>
-<tr class="separator:a5324385818436f533a38118655098855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0097edbfdedda7f4a53d85c9f24705"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, const uint16_t port, const uint8_t flags)</td></tr>
+<tr class="memdesc:a3d0097edbfdedda7f4a53d85c9f24705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to the given local UDP port number.  <a href="#a3d0097edbfdedda7f4a53d85c9f24705">More...</a><br/></td></tr>
+<tr class="separator:a3d0097edbfdedda7f4a53d85c9f24705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab31d23fb4fa64de58aef6c688ea6563a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ab31d23fb4fa64de58aef6c688ea6563a">w_connect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s, const uint32_t ip, const uint16_t port)</td></tr>
 <tr class="memdesc:ab31d23fb4fa64de58aef6c688ea6563a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a bound socket to a remote IP address and port.  <a href="#ab31d23fb4fa64de58aef6c688ea6563a">More...</a><br/></td></tr>
 <tr class="separator:ab31d23fb4fa64de58aef6c688ea6563a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,6 +186,23 @@ Functions</h2></td></tr>
 <tr class="memdesc:aae8a584953993df015ec032271c66f19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximum size a given <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> may have for the given engine.  <a href="#aae8a584953993df015ec032271c66f19">More...</a><br/></td></tr>
 <tr class="separator:aae8a584953993df015ec032271c66f19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a1dc8f24f3aece4066bc8ff8fceeb54f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define W_ZERO_CHKSUM&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Do not compute a UDP checksum for outgoing packets. </p>
+<p>Has no effect for the shim backend. </p>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a0">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a0">warpping.c</a>.</dd>
+</dl>
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a8d9fe29560dea6f00e9693bb0b0142cb"></a>
 <div class="memitem">
@@ -285,7 +309,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5324385818436f533a38118655098855"></a>
+<a class="anchor" id="a3d0097edbfdedda7f4a53d85c9f24705"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -299,7 +323,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -313,7 +343,8 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to bind. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The local port number to bind to, in network byte order.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The local port number to bind to, in network byte order. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>Flags for this socket.</td></tr>
   </table>
   </dd>
 </dl>
@@ -322,8 +353,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="warpcore_8h_a5324385818436f533a38118655098855_cgraph.png" border="0" usemap="#warpcore_8h_a5324385818436f533a38118655098855_cgraph" alt=""/></div>
-<map name="warpcore_8h_a5324385818436f533a38118655098855_cgraph" id="warpcore_8h_a5324385818436f533a38118655098855_cgraph">
+<div class="center"><img src="warpcore_8h_a3d0097edbfdedda7f4a53d85c9f24705_cgraph.png" border="0" usemap="#warpcore_8h_a3d0097edbfdedda7f4a53d85c9f24705_cgraph" alt=""/></div>
+<map name="warpcore_8h_a3d0097edbfdedda7f4a53d85c9f24705_cgraph" id="warpcore_8h_a3d0097edbfdedda7f4a53d85c9f24705_cgraph">
 <area shape="rect" id="node2" href="warpcore_8c.html#a096e92035238dbb2c6425094c4fdd869" title="Get the socket bound to local port port. " alt="" coords="132,5,207,32"/><area shape="rect" id="node3" href="backend_8h.html#a7ee48b1b41c1c5293f7cca261794b338" title="Netmap&#45;specific code to bind a warpcore socket. " alt="" coords="118,56,221,83"/></map>
 </div>
 </p>
@@ -881,7 +912,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 7 2017 10:45:54 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 9 2017 09:17:15 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

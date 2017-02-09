@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['w_5fzero_5fchksum',['W_ZERO_CHKSUM',['../warpcore_8h.html#a1dc8f24f3aece4066bc8ff8fceeb54f3',1,'warpcore.h']]],
   ['warn',['warn',['../util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887',1,'util.h']]],
   ['warpcore_5fversion_5fmajor',['WARPCORE_VERSION_MAJOR',['../version_8h.html#a0b885defc8f5c2974b7c322a5d8029d2',1,'version.h']]],
   ['warpcore_5fversion_5fminor',['WARPCORE_VERSION_MINOR',['../version_8h.html#a7ae4e1c713d564d9be834cd43f5dac50',1,'version.h']]],

@@ -138,9 +138,9 @@ Functions</h2></td></tr>
 <tr class="separator:ab31d23fb4fa64de58aef6c688ea6563a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a07d8e5b61adc2c9fe1bd32c663a7e23f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a07d8e5b61adc2c9fe1bd32c663a7e23f">w_disconnect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="separator:a07d8e5b61adc2c9fe1bd32c663a7e23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5324385818436f533a38118655098855"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a5324385818436f533a38118655098855">w_bind</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, const uint16_t port)</td></tr>
-<tr class="memdesc:a5324385818436f533a38118655098855"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to the given local UDP port number.  <a href="#a5324385818436f533a38118655098855">More...</a><br/></td></tr>
-<tr class="separator:a5324385818436f533a38118655098855"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0097edbfdedda7f4a53d85c9f24705"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, const uint16_t port, const uint8_t flags)</td></tr>
+<tr class="memdesc:a3d0097edbfdedda7f4a53d85c9f24705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to the given local UDP port number.  <a href="#a3d0097edbfdedda7f4a53d85c9f24705">More...</a><br/></td></tr>
+<tr class="separator:a3d0097edbfdedda7f4a53d85c9f24705"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26c31751f7bb602b01bf00077ebd362d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:a26c31751f7bb602b01bf00077ebd362d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a warpcore socket.  <a href="#a26c31751f7bb602b01bf00077ebd362d">More...</a><br/></td></tr>
 <tr class="separator:a26c31751f7bb602b01bf00077ebd362d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,7 +276,7 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Chain of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structs. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpping_8c-example.html#a9">warpping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpping_8c-example.html#a10">warpping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -289,7 +289,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a5324385818436f533a38118655098855"></a>
+<a class="anchor" id="a3d0097edbfdedda7f4a53d85c9f24705"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -303,7 +303,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const uint16_t&#160;</td>
-          <td class="paramname"><em>port</em>&#160;</td>
+          <td class="paramname"><em>port</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -317,18 +323,19 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to bind. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The local port number to bind to, in network byte order.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">port</td><td>The local port number to bind to, in network byte order. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">flags</td><td>Flags for this socket.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a bound <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a6">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a6">warpping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a7">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a7">warpping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="warpcore_8c_a5324385818436f533a38118655098855_cgraph.png" border="0" usemap="#warpcore_8c_a5324385818436f533a38118655098855_cgraph" alt=""/></div>
-<map name="warpcore_8c_a5324385818436f533a38118655098855_cgraph" id="warpcore_8c_a5324385818436f533a38118655098855_cgraph">
+<div class="center"><img src="warpcore_8c_a3d0097edbfdedda7f4a53d85c9f24705_cgraph.png" border="0" usemap="#warpcore_8c_a3d0097edbfdedda7f4a53d85c9f24705_cgraph" alt=""/></div>
+<map name="warpcore_8c_a3d0097edbfdedda7f4a53d85c9f24705_cgraph" id="warpcore_8c_a3d0097edbfdedda7f4a53d85c9f24705_cgraph">
 <area shape="rect" id="node2" href="warpcore_8c.html#a096e92035238dbb2c6425094c4fdd869" title="Get the socket bound to local port port. " alt="" coords="132,5,207,32"/><area shape="rect" id="node3" href="backend_8h.html#a7ee48b1b41c1c5293f7cca261794b338" title="Netmap&#45;specific code to bind a warpcore socket. " alt="" coords="118,56,221,83"/></map>
 </div>
 </p>
@@ -357,7 +364,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a24">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a28">warpping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a25">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a27">warpping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -392,7 +399,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a23">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a27">warpping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a24">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a26">warpping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -446,7 +453,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpping_8c-example.html#a8">warpping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpping_8c-example.html#a9">warpping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -534,7 +541,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a22">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a25">warpping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a23">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a24">warpping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -573,7 +580,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Initialized warpcore engine. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a3">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a4">warpping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a4">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a5">warpping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -644,7 +651,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sum of the payload lengths of the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structs in <code>c</code>. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a12">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a24">warpping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a13">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a23">warpping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -682,8 +689,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Maximum length of the data in a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> for this engine. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpping_8c-example.html#a12">warpping.c</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="a56a86a977786ce031b974f17536c1c4e"></a>
@@ -710,7 +716,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Chain of received wFirst <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> in <a class="el" href="structw__sock.html#ada65e4fbf06221e7fb73fabd1dd1be8c" title="w_iov chain containing incoming unread data. ">w_sock::iv</a> if there is new data, or zero. Needs to be freed with <a class="el" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7" title="Return a w_iov chain obtained via w_alloc() or w_rx() back to warpcore. ">w_free()</a> by the caller. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a11">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a23">warpping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a12">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a22">warpping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -737,7 +743,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Chain of <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> sockets that have incoming data pending. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a10">warpinetd.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a11">warpinetd.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -773,7 +779,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a17">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a16">warpping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="warpinetd_8c-example.html#a18">warpinetd.c</a>, and <a class="el" href="warpping_8c-example.html#a14">warpping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -804,7 +810,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 7 2017 10:45:54 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 9 2017 09:17:15 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
