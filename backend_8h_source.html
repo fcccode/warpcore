@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.1.1</span>
+   &#160;<span id="projectnumber">0.2.0</span>
    </div>
   </td>
  </tr>
@@ -231,11 +231,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="backend_8h_html_acf9d923e03f757a9b81bd80293ce204a"><div class="ttname"><a href="backend_8h.html#acf9d923e03f757a9b81bd80293ce204a">alloc_iov</a></div><div class="ttdeci">struct w_iov * alloc_iov(struct warpcore *const w)</div><div class="ttdoc">Return a spare w_iov from the pool of the given warpcore engine. </div><div class="ttdef"><b>Definition:</b> backend.h:151</div></div>
 <div class="ttc" id="warpcore_8h_html"><div class="ttname"><a href="warpcore_8h.html">warpcore.h</a></div></div>
 <div class="ttc" id="ip_8h_html"><div class="ttname"><a href="ip_8h.html">ip.h</a></div></div>
-<div class="ttc" id="structw__iov_html_a03cc6e947f6c954e1eff1256aed43f0d"><div class="ttname"><a href="structw__iov.html#a03cc6e947f6c954e1eff1256aed43f0d">w_iov::idx</a></div><div class="ttdeci">uint32_t idx</div><div class="ttdoc">Index of netmap buffer. (Internal use.) </div><div class="ttdef"><b>Definition:</b> warpcore.h:87</div></div>
+<div class="ttc" id="structw__iov_html_a03cc6e947f6c954e1eff1256aed43f0d"><div class="ttname"><a href="structw__iov.html#a03cc6e947f6c954e1eff1256aed43f0d">w_iov::idx</a></div><div class="ttdeci">uint32_t idx</div><div class="ttdoc">Index of netmap buffer. (Internal use.) </div><div class="ttdef"><b>Definition:</b> warpcore.h:91</div></div>
 <div class="ttc" id="structwarpcore_html_a563c5b7e33cf3278e05b3359d52dd06a"><div class="ttname"><a href="structwarpcore.html#a563c5b7e33cf3278e05b3359d52dd06a">warpcore::mtu</a></div><div class="ttdeci">uint16_t mtu</div><div class="ttdoc">MTU of this interface. </div><div class="ttdef"><b>Definition:</b> backend.h:89</div></div>
-<div class="ttc" id="structw__iov_html"><div class="ttname"><a href="structw__iov.html">w_iov</a></div><div class="ttdoc">The I/O vector structure that warpcore uses at the center of its API. </div><div class="ttdef"><b>Definition:</b> warpcore.h:84</div></div>
+<div class="ttc" id="structw__iov_html"><div class="ttname"><a href="structw__iov.html">w_iov</a></div><div class="ttdoc">The I/O vector structure that warpcore uses at the center of its API. </div><div class="ttdef"><b>Definition:</b> warpcore.h:88</div></div>
 <div class="ttc" id="backend_8h_html_ac3bb9e4ee9a65dd78636d8d82423a13e"><div class="ttname"><a href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a></div><div class="ttdeci">#define IDX2BUF(w, i)</div><div class="ttdoc">For a given buffer index, get a pointer to its beginning. </div><div class="ttdef"><b>Definition:</b> backend.h:58</div></div>
-<div class="ttc" id="structw__iov_html_a362d3a1b5838b941b52350f86be23f4d"><div class="ttname"><a href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">w_iov::len</a></div><div class="ttdeci">uint16_t len</div><div class="ttdoc">Length of payload data. </div><div class="ttdef"><b>Definition:</b> warpcore.h:88</div></div>
+<div class="ttc" id="structw__iov_html_a362d3a1b5838b941b52350f86be23f4d"><div class="ttname"><a href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">w_iov::len</a></div><div class="ttdeci">uint16_t len</div><div class="ttdoc">Length of payload data. </div><div class="ttdef"><b>Definition:</b> warpcore.h:92</div></div>
 <div class="ttc" id="structw__sock_html"><div class="ttname"><a href="structw__sock.html">w_sock</a></div><div class="ttdoc">A warpcore socket. </div><div class="ttdef"><b>Definition:</b> warpcore.h:52</div></div>
 <div class="ttc" id="structwarpcore_html_aa56f6728e0f96967fd7b3d220650c051"><div class="ttname"><a href="structwarpcore.html#aa56f6728e0f96967fd7b3d220650c051">warpcore::mask</a></div><div class="ttdeci">uint32_t mask</div><div class="ttdoc">IPv4 netmask of this interface. </div><div class="ttdef"><b>Definition:</b> backend.h:88</div></div>
 <div class="ttc" id="structw__hdr_html_a100e2c3a92a36ce954d2082e8afffb88"><div class="ttname"><a href="structw__hdr.html#a100e2c3a92a36ce954d2082e8afffb88">w_hdr::eth</a></div><div class="ttdeci">struct eth_hdr eth</div><div class="ttdoc">Ethernet header. </div><div class="ttdef"><b>Definition:</b> backend.h:73</div></div>
@@ -243,7 +243,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structw__sock_html_a153f7af47d3e0dfc681e01c0b3a86c69"><div class="ttname"><a href="structw__sock.html#a153f7af47d3e0dfc681e01c0b3a86c69">w_sock::w</a></div><div class="ttdeci">struct warpcore * w</div><div class="ttdoc">Pointer back to the warpcore instance associated with this w_sock. </div><div class="ttdef"><b>Definition:</b> warpcore.h:55</div></div>
 <div class="ttc" id="structwarpcore_html_a826c3faeb59ca3aa16636edf28116f96"><div class="ttname"><a href="structwarpcore.html#a826c3faeb59ca3aa16636edf28116f96">warpcore::ip</a></div><div class="ttdeci">uint32_t ip</div><div class="ttdoc">Local IPv4 address used on this interface. </div><div class="ttdef"><b>Definition:</b> backend.h:87</div></div>
 <div class="ttc" id="structw__sock_html_a0b8ec75854814f39f204648af5dd5726"><div class="ttname"><a href="structw__sock.html#a0b8ec75854814f39f204648af5dd5726">w_sock::hdr</a></div><div class="ttdeci">struct w_hdr * hdr</div><div class="ttdoc">The template header to be used for outbound packets on this w_sock. </div><div class="ttdef"><b>Definition:</b> warpcore.h:60</div></div>
-<div class="ttc" id="structw__iov_html_a02cafa553312f8414ff2141c572218de"><div class="ttname"><a href="structw__iov.html#a02cafa553312f8414ff2141c572218de">w_iov::buf</a></div><div class="ttdeci">void * buf</div><div class="ttdoc">Start of payload data. </div><div class="ttdef"><b>Definition:</b> warpcore.h:85</div></div>
+<div class="ttc" id="structw__iov_html_a02cafa553312f8414ff2141c572218de"><div class="ttname"><a href="structw__iov.html#a02cafa553312f8414ff2141c572218de">w_iov::buf</a></div><div class="ttdeci">void * buf</div><div class="ttdoc">Start of payload data. </div><div class="ttdef"><b>Definition:</b> warpcore.h:89</div></div>
 <div class="ttc" id="backend_8h_html_af7b0aa97cf956c2110e4ef0625e519fa"><div class="ttname"><a href="backend_8h.html#af7b0aa97cf956c2110e4ef0625e519fa">backend_init</a></div><div class="ttdeci">void backend_init(struct warpcore *w, const char *const ifname)</div><div class="ttdoc">Initialize the warpcore netmap backend for engine w. </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:65</div></div>
 <div class="ttc" id="backend_8h_html_a538d48855851264a01c0a959476c40d4"><div class="ttname"><a href="backend_8h.html#a538d48855851264a01c0a959476c40d4">backend_tx</a></div><div class="ttdeci">void backend_tx(const struct w_sock *const s, struct w_iov *const v)</div><div class="ttdoc">Places the payload of v into an IPv4 UDP packet, and attempts to move it onto a TX ring...</div><div class="ttdef"><b>Definition:</b> backend_netmap.c:218</div></div>
 <div class="ttc" id="structeth__hdr_html"><div class="ttname"><a href="structeth__hdr.html">eth_hdr</a></div><div class="ttdoc">An Ethernet II MAC header. </div><div class="ttdef"><b>Definition:</b> eth.h:54</div></div>
@@ -265,7 +265,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 13 2017 16:12:22 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 15 2017 09:44:00 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

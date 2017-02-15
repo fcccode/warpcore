@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>warpcore: warpping.c</title>
+<title>warpcore: ping.c</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.1.1</span>
+   &#160;<span id="projectnumber">0.2.0</span>
    </div>
   </td>
  </tr>
@@ -76,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">warpping.c</div>  </div>
+<div class="title">ping.c</div>  </div>
 </div><!--header-->
 <div class="contents">
 <p>)</p>
@@ -127,16 +127,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                  <span class="keyword">const</span> uint32_t start,</div>
 <div class="line">                  <span class="keyword">const</span> uint32_t inc,</div>
 <div class="line">                  <span class="keyword">const</span> uint32_t end,</div>
-<div class="line">                  <span class="keyword">const</span> <span class="keywordtype">long</span> loops)</div>
+<div class="line">                  <span class="keyword">const</span> uint32_t loops)</div>
 <div class="line">{</div>
 <div class="line">    printf(<span class="stringliteral">&quot;%s\n&quot;</span>, name);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t -i interface           interface to run over\n&quot;</span>);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t -d destination IP      peer to connect to\n&quot;</span>);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-r router IP]          router to use for non-local peers\n&quot;</span>);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-s start packet size]  optional, default %d\n&quot;</span>, start);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-c increment]          optional, default %d\n&quot;</span>, inc);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-e end packet size]    optional, default %d\n&quot;</span>, end);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-l loop iterations]    optional, default %ld\n&quot;</span>, loops);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-s start packet size]  optional, default %u\n&quot;</span>, start);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-c increment]          optional, default %u\n&quot;</span>, inc);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-e end packet size]    optional, default %u\n&quot;</span>, end);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-l loop iterations]    optional, default %u\n&quot;</span>, loops);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-z]                    optional, turn off UDP checksums\n&quot;</span>);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-b]                    busy-wait\n&quot;</span>);</div>
 <div class="line">}</div>
@@ -171,12 +171,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span> * ifname = 0;</div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span> * dst = 0;</div>
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span> * rtr = 0;</div>
-<div class="line">    <span class="keywordtype">long</span> loops = 1;</div>
+<div class="line">    uint32_t loops = 1;</div>
 <div class="line">    uint32_t start = <span class="keyword">sizeof</span>(<span class="keyword">struct </span>timespec);</div>
 <div class="line">    uint32_t inc = 103;</div>
 <div class="line">    uint32_t end = 1458;</div>
 <div class="line">    <span class="keywordtype">bool</span> busywait = <span class="keyword">false</span>;</div>
 <div class="line">    uint8_t flags = 0;</div>
+<div class="line">    uint32_t transact = 0;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// handle arguments</span></div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
@@ -192,16 +193,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            rtr = optarg;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;l&#39;</span>:</div>
-<div class="line">            loops = strtol(optarg, 0, 10);</div>
+<div class="line">            loops = MIN(UINT32_MAX, (uint32_t)strtoul(optarg, 0, 10));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:</div>
-<div class="line">            start = MIN(UINT32_MAX, MAX(1, (uint32_t)strtol(optarg, 0, 10)));</div>
+<div class="line">            start = MIN(UINT32_MAX, MAX(1, (uint32_t)strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:</div>
-<div class="line">            inc = MIN(UINT32_MAX, MAX(1, (uint32_t)strtol(optarg, 0, 10)));</div>
+<div class="line">            inc = MIN(UINT32_MAX, MAX(1, (uint32_t)strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;e&#39;</span>:</div>
-<div class="line">            end = MIN(UINT32_MAX, MAX(1, (uint32_t)strtol(optarg, 0, 10)));</div>
+<div class="line">            end = MIN(UINT32_MAX, MAX(1, (uint32_t)strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;b&#39;</span>:</div>
 <div class="line">            busywait = <span class="keyword">true</span>;</div>
@@ -261,23 +262,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">    <span class="comment">// send packet trains of sizes between &quot;start&quot; and &quot;end&quot;</span></div>
 <div class="line">    puts(<span class="stringliteral">&quot;nsec\tsize&quot;</span>);</div>
-<div class="line">    <span class="keywordflow">for</span> (uint32_t size = start; size &lt;= end; size += inc) {</div>
-<div class="line">        <span class="comment">// allocate tx chain</span></div>
-<div class="line">        <span class="keyword">struct </span>w_iov_chain * <span class="keyword">const</span> o = <a name="a10"></a><a class="code" href="warpcore_8c.html#a6cbc34732ec917ab5dcc7fcb40757612">w_alloc</a>(w, size, 0);</div>
 <div class="line"></div>
-<div class="line">        <span class="comment">// send &quot;loops&quot; number of payloads of size &quot;size&quot; and wait for reply</span></div>
-<div class="line">        <span class="keywordtype">long</span> iter = loops;</div>
-<div class="line">        <span class="keywordflow">while</span> (<a name="a11"></a><a class="code" href="util_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a>(iter--)) {</div>
+<div class="line">    <span class="comment">// send &quot;loops&quot; number of payloads of size &quot;size&quot; and wait for reply</span></div>
+<div class="line">    <span class="keywordtype">long</span> iter = loops;</div>
+<div class="line">    <span class="keywordflow">while</span> (<a name="a10"></a><a class="code" href="util_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a>(iter--)) {</div>
+<div class="line"></div>
+<div class="line">        <span class="keywordflow">for</span> (uint32_t size = start; size &lt;= end; size += inc) {</div>
+<div class="line">            <span class="comment">// allocate tx chain</span></div>
+<div class="line">            <span class="keyword">struct </span>w_iov_chain * <span class="keyword">const</span> o = <a name="a11"></a><a class="code" href="warpcore_8c.html#a6cbc34732ec917ab5dcc7fcb40757612">w_alloc</a>(w, size, 0);</div>
+<div class="line"></div>
 <div class="line">            <span class="comment">// timestamp the payloads</span></div>
 <div class="line">            <span class="keyword">const</span> <span class="keyword">struct </span><a name="_a12"></a><a class="code" href="structw__iov.html">w_iov</a> * v;</div>
 <div class="line">            STAILQ_FOREACH (v, o, next)</div>
 <div class="line">                <a class="code" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(clock_gettime(CLOCK_MONOTONIC, v-&gt;<a name="a13"></a><a class="code" href="structw__iov.html#a02cafa553312f8414ff2141c572218de">buf</a>) != -1,</div>
 <div class="line">                       &quot;clock_gettime&quot;);</div>
 <div class="line"></div>
-<div class="line">            <span class="comment">// send the data and free the w_iov</span></div>
+<div class="line">            <span class="comment">// send the data</span></div>
 <div class="line">            <a name="a14"></a><a class="code" href="warpcore_8c.html#a85274ecaf9a766de49a373c8dec27734">w_tx</a>(s, o);</div>
 <div class="line">            <a name="a15"></a><a class="code" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a>(w);</div>
-<div class="line">            <a name="a16"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a17"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64faa4abb266e72efba828327b605b2ab0f4">info</a>, &quot;sent %d byte%s&quot;, size, <a name="a18"></a><a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(size));</div>
+<div class="line">            <a name="a16"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a17"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64faa4abb266e72efba828327b605b2ab0f4">info</a>, &quot;sent %u byte%s&quot;, size, <a name="a18"></a><a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(size));</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// wait for a reply</span></div>
 <div class="line">            struct w_iov_chain * i = 0;</div>
@@ -326,7 +329,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keyword">const</span> <span class="keyword">struct </span>itimerval stop = {0};</div>
 <div class="line">            <a class="code" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(setitimer(ITIMER_REAL, &amp;stop, 0) == 0, <span class="stringliteral">&quot;setitimer&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">            <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(info, <span class="stringliteral">&quot;received %d/%d byte%s&quot;</span>, len, size, <a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(len));</div>
+<div class="line">            <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(info, <span class="stringliteral">&quot;received %u/%u byte%s&quot;</span>, len, size, <a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(len));</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// if we didn&#39;t receive all the data we sent</span></div>
 <div class="line">            <span class="keywordflow">if</span> (<a name="a25"></a><a class="code" href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a>(len &lt; size)) {</div>
@@ -341,23 +344,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            time_diff(&amp;diff, &amp;now, (<span class="keyword">struct</span> timespec *)STAILQ_FIRST(i)-&gt;buf);</div>
 <div class="line">            <span class="keywordflow">if</span> (<a class="code" href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a>(diff.tv_sec != 0))</div>
 <div class="line">                <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>, <span class="stringliteral">&quot;time difference is more than %ld sec&quot;</span>, diff.tv_sec);</div>
-<div class="line">            <span class="keywordflow">else</span></div>
+<div class="line">            <span class="keywordflow">else</span> {</div>
 <div class="line">                printf(<span class="stringliteral">&quot;%ld\t%d\n&quot;</span>, diff.tv_nsec, size);</div>
+<div class="line">                transact++;</div>
+<div class="line">            }</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// we are done with the received data</span></div>
 <div class="line">            <a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, i);</div>
+<div class="line">            <a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, o);</div>
 <div class="line">        }</div>
-<div class="line"></div>
-<div class="line">        <a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, o);</div>
 <div class="line">    }</div>
 <div class="line">    <a name="a26"></a><a class="code" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a>(s);</div>
-<div class="line">    <a name="a27"></a><a class="code" href="warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a>(w);</div>
+<div class="line">    <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a27"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa1947748888b7be287264b77a59951f5d">notice</a>, <span class="stringliteral">&quot;executed %u transaction%s&quot;</span>, transact, <a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(transact));</div>
+<div class="line">    <a name="a28"></a><a class="code" href="warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a>(w);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 13 2017 16:12:22 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 15 2017 09:44:00 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

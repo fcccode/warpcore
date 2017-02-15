@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>warpcore: warpinetd.c</title>
+<title>warpcore: inetd.c</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.1.1</span>
+   &#160;<span id="projectnumber">0.2.0</span>
    </div>
   </td>
  </tr>
@@ -76,7 +76,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">warpinetd.c</div>  </div>
+<div class="title">inetd.c</div>  </div>
 </div><!--header-->
 <div class="contents">
 <p>)</p>
@@ -149,6 +149,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span> * ifname = 0;</div>
 <div class="line">    <span class="keywordtype">bool</span> busywait = <span class="keyword">false</span>;</div>
 <div class="line">    uint8_t flags = 0;</div>
+<div class="line">    uint32_t transact = 0;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// handle arguments</span></div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
@@ -187,10 +188,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <a class="code" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(signal(SIGINT, &amp;terminate) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// start four inetd-like &quot;small services&quot;</span></div>
-<div class="line">    <span class="keyword">const</span> uint16_t port[] = {7, 9, 13, 37};</div>
 <div class="line">    <span class="keyword">struct </span><a name="_a6"></a><a class="code" href="structw__sock.html">w_sock</a> * <span class="keyword">const</span> srv[] = {</div>
-<div class="line">        <a name="a7"></a><a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(port[0]), flags), <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(port[1]), flags),</div>
-<div class="line">        <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(port[2]), flags), <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(port[3]), flags)};</div>
+<div class="line">        <a name="a7"></a><a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(7), flags), <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(9), flags),</div>
+<div class="line">        <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(13), flags), <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(37), flags)};</div>
 <div class="line">    <span class="keyword">const</span> uint16_t n = <span class="keyword">sizeof</span>(srv) / <span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code" href="structw__sock.html">w_sock</a> *);</div>
 <div class="line">    <span class="keyword">struct </span>pollfd fds[] = {{.<a name="a8"></a><a class="code" href="structw__sock.html#a52c31f9dcdeff3860a4f5d39208b73b8">fd</a> = <a name="a9"></a><a class="code" href="backend__netmap_8c.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a>(srv[0]), .events = POLLIN},</div>
 <div class="line">                           {.fd = <a class="code" href="backend__netmap_8c.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a>(srv[1]), .events = POLLIN},</div>
@@ -254,6 +254,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            }</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// track how much data was served</span></div>
+<div class="line">            transact++;</div>
 <div class="line">            <span class="keyword">const</span> uint32_t o_len = <a class="code" href="warpcore_8c.html#a41497cbbe1bd11e4414a3c42d7f0c2ba">w_iov_chain_len</a>(o, 0);</div>
 <div class="line">            <span class="keywordflow">if</span> (i_len || o_len)</div>
 <div class="line">                <a name="a20"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a21"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64faa4abb266e72efba828327b605b2ab0f4">info</a>, <span class="stringliteral">&quot;handled %d byte%s in, %d byte%s out&quot;</span>, i_len,</div>
@@ -268,13 +269,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="comment">// we only get here after an interrupt; clean up</span></div>
 <div class="line">    <span class="keywordflow">for</span> (uint16_t s = 0; s &lt; n; s++)</div>
 <div class="line">        <a name="a24"></a><a class="code" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a>(srv[s]);</div>
-<div class="line">    <a name="a25"></a><a class="code" href="warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a>(w);</div>
+<div class="line">    <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a25"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa1947748888b7be287264b77a59951f5d">notice</a>, <span class="stringliteral">&quot;executed %u transaction%s&quot;</span>, transact, <a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(transact));</div>
+<div class="line">    <a name="a26"></a><a class="code" href="warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a>(w);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 13 2017 16:12:22 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 15 2017 09:44:00 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
