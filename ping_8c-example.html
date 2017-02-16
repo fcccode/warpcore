@@ -261,7 +261,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keyword">const</span> <span class="keyword">struct </span>itimerval timer = {.it_value.tv_sec = 1};</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// send packet trains of sizes between &quot;start&quot; and &quot;end&quot;</span></div>
-<div class="line">    puts(<span class="stringliteral">&quot;nsec\tsize&quot;</span>);</div>
+<div class="line">    puts(<span class="stringliteral">&quot;time\tnsec\tsize&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// send &quot;loops&quot; number of payloads of size &quot;size&quot; and wait for reply</span></div>
 <div class="line">    <span class="keywordtype">long</span> iter = loops;</div>
@@ -269,7 +269,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">        <span class="keywordflow">for</span> (uint32_t size = start; size &lt;= end; size += inc) {</div>
 <div class="line">            <span class="comment">// allocate tx chain</span></div>
-<div class="line">            <span class="keyword">struct </span>w_iov_chain * <span class="keyword">const</span> o = <a name="a11"></a><a class="code" href="warpcore_8c.html#a6cbc34732ec917ab5dcc7fcb40757612">w_alloc</a>(w, size, 0);</div>
+<div class="line">            <span class="keyword">struct </span>w_iov_chain * o = <a name="a11"></a><a class="code" href="warpcore_8c.html#a464c918ca2cf68996ddc0e903128b2ee">w_alloc_size</a>(w, size, 0);</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// timestamp the payloads</span></div>
 <div class="line">            <span class="keyword">const</span> <span class="keyword">struct </span><a name="_a12"></a><a class="code" href="structw__iov.html">w_iov</a> * v;</div>
@@ -345,7 +345,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keywordflow">if</span> (<a class="code" href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a>(diff.tv_sec != 0))</div>
 <div class="line">                <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>, <span class="stringliteral">&quot;time difference is more than %ld sec&quot;</span>, diff.tv_sec);</div>
 <div class="line">            <span class="keywordflow">else</span> {</div>
-<div class="line">                printf(<span class="stringliteral">&quot;%ld\t%d\n&quot;</span>, diff.tv_nsec, size);</div>
+<div class="line">                printf(<span class="stringliteral">&quot;%ld.%ld\t%ld\t%d\n&quot;</span>, now.tv_sec, now.tv_nsec,</div>
+<div class="line">                       diff.tv_nsec, size);</div>
 <div class="line">                transact++;</div>
 <div class="line">            }</div>
 <div class="line"></div>
@@ -362,7 +363,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 15 2017 09:44:00 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Feb 16 2017 13:27:11 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
