@@ -14,6 +14,7 @@ var searchData=
   ['w_5fhdr',['w_hdr',['../structw__hdr.html',1,'']]],
   ['w_5finit',['w_init',['../warpcore_8c.html#aa83867b0dcc2a057772d7d6548a2be00',1,'w_init(const char *const ifname, const uint32_t rip):&#160;warpcore.c'],['../warpcore_8h.html#aa83867b0dcc2a057772d7d6548a2be00',1,'w_init(const char *const ifname, const uint32_t rip):&#160;warpcore.c']]],
   ['w_5fiov',['w_iov',['../structw__iov.html',1,'']]],
+  ['w_5fiov_5fchain',['w_iov_chain',['../structw__iov__chain.html',1,'']]],
   ['w_5fiov_5fchain_5fcnt',['w_iov_chain_cnt',['../warpcore_8c.html#a94286f6c75290edeb74f0a499aef1434',1,'w_iov_chain_cnt(const struct w_iov_chain *const c):&#160;warpcore.c'],['../warpcore_8h.html#a94286f6c75290edeb74f0a499aef1434',1,'w_iov_chain_cnt(const struct w_iov_chain *const c):&#160;warpcore.c']]],
   ['w_5fiov_5fchain_5flen',['w_iov_chain_len',['../warpcore_8c.html#a41497cbbe1bd11e4414a3c42d7f0c2ba',1,'w_iov_chain_len(const struct w_iov_chain *const c, const uint16_t off):&#160;warpcore.c'],['../warpcore_8h.html#a41497cbbe1bd11e4414a3c42d7f0c2ba',1,'w_iov_chain_len(const struct w_iov_chain *const c, const uint16_t off):&#160;warpcore.c']]],
   ['w_5fiov_5fmax_5flen',['w_iov_max_len',['../warpcore_8c.html#aae8a584953993df015ec032271c66f19',1,'w_iov_max_len(const struct warpcore *const w, const struct w_iov *const v):&#160;warpcore.c'],['../warpcore_8h.html#aae8a584953993df015ec032271c66f19',1,'w_iov_max_len(const struct warpcore *const w, const struct w_iov *const v):&#160;warpcore.c']]],

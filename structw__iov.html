@@ -94,11 +94,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
  <a href="structw__iov.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="warpcore_8h_source.html">warpcore.h</a>&gt;</code></p>
+<div class="dynheader">
+Collaboration diagram for w_iov:</div>
+<div class="dyncontent">
+<div class="center"><img src="structw__iov__coll__graph.png" border="0" usemap="#w__iov_coll__map" alt="Collaboration graph"/></div>
+<map name="w__iov_coll__map" id="w__iov_coll__map">
+<area shape="rect" id="node2" href="structw__iov__chain.html" title="w_iov_chain" alt="" coords="5,5,99,32"/></map>
+<center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a63096f96ebff68793ccac843ad3354ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#a63096f96ebff68793ccac843ad3354ab">STAILQ_ENTRY</a> (<a class="el" href="structw__iov.html">w_iov</a>) next</td></tr>
-<tr class="memdesc:a63096f96ebff68793ccac843ad3354ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> in a w_iov_chain.  <a href="#a63096f96ebff68793ccac843ad3354ab">More...</a><br/></td></tr>
+<tr class="memdesc:a63096f96ebff68793ccac843ad3354ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> in a <a class="el" href="structw__iov__chain.html">w_iov_chain</a>.  <a href="#a63096f96ebff68793ccac843ad3354ab">More...</a><br/></td></tr>
 <tr class="separator:a63096f96ebff68793ccac843ad3354ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -124,13 +131,16 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a541a61989e3e765b059d8382a77d5bb3"><td class="memItemLeft" align="right" valign="top">struct timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#a541a61989e3e765b059d8382a77d5bb3">ts</a></td></tr>
 <tr class="memdesc:a541a61989e3e765b059d8382a77d5bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive time of the data. Only valid on RX.  <a href="#a541a61989e3e765b059d8382a77d5bb3">More...</a><br/></td></tr>
 <tr class="separator:a541a61989e3e765b059d8382a77d5bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f880d48390c66707097c22c9f4f2ad"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#a78f880d48390c66707097c22c9f4f2ad">chain</a></td></tr>
+<tr class="memdesc:a78f880d48390c66707097c22c9f4f2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to w_ioc_chain. Only valid on TX.  <a href="#a78f880d48390c66707097c22c9f4f2ad">More...</a><br/></td></tr>
+<tr class="separator:a78f880d48390c66707097c22c9f4f2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The I/O vector structure that warpcore uses at the center of its API. </p>
 <p>It is mostly a pointer to the first UDP payload byte contained in a netmap packet buffer, together with some associated meta data.</p>
 <p>The meta data consists of the length of the payload data, the sender IPv4 address and port number, the DSCP and ECN bits associated with the IPv4 packet in which the payload arrived, and the netmap arrival timestamp.</p>
 <p>The <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structure also contains a pointer to the next I/O vector, which can be used to chain together longer data items for use with <a class="el" href="warpcore_8c.html#a56a86a977786ce031b974f17536c1c4e" title="Iterates over any new data in the RX rings, appending them to the w_sock::iv socket buffers of the re...">w_rx()</a> and <a class="el" href="warpcore_8c.html#a85274ecaf9a766de49a373c8dec27734" title="Loops over the w_iov structures in the chain c, sending them all over w_sock s. ">w_tx()</a>. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#_a12">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#_a13">ping.c</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a63096f96ebff68793ccac843ad3354ab"></a>
 <div class="memitem">
@@ -146,7 +156,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Next <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> in a w_iov_chain. </p>
+<p>Next <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> in a <a class="el" href="structw__iov__chain.html">w_iov_chain</a>. </p>
 
 </div>
 </div>
@@ -162,8 +172,22 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Start of payload data. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a13">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a14">ping.c</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="a78f880d48390c66707097c22c9f4f2ad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a>* w_iov::chain</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to w_ioc_chain. Only valid on TX. </p>
+
 </div>
 </div>
 <a class="anchor" id="aa2e95068f4bef17d199d6b3cb6f89323"></a>
@@ -220,8 +244,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Length of payload data. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a19">ping.c</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="a2370b82e72918815dadb10ef44e99349"></a>
@@ -259,7 +282,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 21 2017 10:52:26 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 21 2017 11:19:39 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

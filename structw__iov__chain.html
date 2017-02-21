@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>warpcore: Data Fields - Functions</title>
+<title>warpcore: w_iov_chain Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,17 +63,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
-      <li class="current"><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
     </ul>
   </div>
-  <div id="navrow3" class="tabs2">
-    <ul class="tablist">
-      <li><a href="functions.html"><span>All</span></a></li>
-      <li class="current"><a href="functions_func.html"><span>Functions</span></a></li>
-      <li><a href="functions_vars.html"><span>Variables</span></a></li>
-    </ul>
-  </div>
-</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -88,21 +80,63 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle">
+<div class="title">w_iov_chain Struct Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-&#160;<ul>
-<li>SLIST_ENTRY()
-: <a class="el" href="structw__sock.html#aea1f5ad77f33f230ba7839eca3b2b4bb">w_sock</a>
-, <a class="el" href="structwarpcore.html#a573017fca57f4bf0a542b183d191e855">warpcore</a>
-</li>
-<li>SLIST_HEAD()
-: <a class="el" href="structwarpcore.html#aba60738da0aa8124c2bd5838c704327d">warpcore</a>
-</li>
-<li>STAILQ_ENTRY()
-: <a class="el" href="structw__iov.html#a63096f96ebff68793ccac843ad3354ab">w_iov</a>
-</li>
-<li>STAILQ_HEAD()
-: <a class="el" href="structw__iov__chain.html#a5dbec66d14b843dab67dbfab9afd129d">w_iov_chain</a>
-</li>
+
+<p><code>#include &lt;<a class="el" href="warpcore_8h_source.html">warpcore.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a5dbec66d14b843dab67dbfab9afd129d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov__chain.html#a5dbec66d14b843dab67dbfab9afd129d">STAILQ_HEAD</a> (, <a class="el" href="structw__iov.html">w_iov</a>)</td></tr>
+<tr class="separator:a5dbec66d14b843dab67dbfab9afd129d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a6406152b6deca199ad2ba65ddad92b96"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov__chain.html#a6406152b6deca199ad2ba65ddad92b96">tx_pending</a></td></tr>
+<tr class="separator:a6406152b6deca199ad2ba65ddad92b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a12">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a11">ping.c</a>.</dd>
+</dl></div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a5dbec66d14b843dab67dbfab9afd129d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">w_iov_chain::STAILQ_HEAD </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structw__iov.html">w_iov</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a6406152b6deca199ad2ba65ddad92b96"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t w_iov_chain::tx_pending</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a18">inetd.c</a>.</dd>
+</dl>
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="warpcore_8h_source.html">warpcore.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

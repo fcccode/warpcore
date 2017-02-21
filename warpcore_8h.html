@@ -113,6 +113,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov__chain.html">w_iov_chain</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html">w_sock</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A warpcore socket.  <a href="structw__sock.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,8 +130,6 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a72ec0594c6809ba127e0409efaab76b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a72ec0594c6809ba127e0409efaab76b8">STAILQ_HEAD</a> (w_iov_chain, <a class="el" href="structw__iov.html">w_iov</a>)</td></tr>
-<tr class="separator:a72ec0594c6809ba127e0409efaab76b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d9fe29560dea6f00e9693bb0b0142cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a8d9fe29560dea6f00e9693bb0b0142cb">SLIST_HEAD</a> (w_sock_chain, <a class="el" href="structw__sock.html">w_sock</a>)</td></tr>
 <tr class="separator:a8d9fe29560dea6f00e9693bb0b0142cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa83867b0dcc2a057772d7d6548a2be00"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structwarpcore.html">warpcore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#aa83867b0dcc2a057772d7d6548a2be00">w_init</a> (const char *const ifname, const uint32_t rip)</td></tr>
@@ -149,28 +149,28 @@ Functions</h2></td></tr>
 <tr class="memitem:a26c31751f7bb602b01bf00077ebd362d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:a26c31751f7bb602b01bf00077ebd362d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a warpcore socket.  <a href="#a26c31751f7bb602b01bf00077ebd362d">More...</a><br/></td></tr>
 <tr class="separator:a26c31751f7bb602b01bf00077ebd362d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a464c918ca2cf68996ddc0e903128b2ee"><td class="memItemLeft" align="right" valign="top">struct w_iov_chain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a464c918ca2cf68996ddc0e903128b2ee">w_alloc_size</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, const uint32_t len, const uint16_t off)</td></tr>
+<tr class="memitem:a464c918ca2cf68996ddc0e903128b2ee"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a464c918ca2cf68996ddc0e903128b2ee">w_alloc_size</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, const uint32_t len, const uint16_t off)</td></tr>
 <tr class="memdesc:a464c918ca2cf68996ddc0e903128b2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> chain for <code>len</code> payload bytes, for eventual use with <a class="el" href="warpcore_8c.html#a85274ecaf9a766de49a373c8dec27734" title="Loops over the w_iov structures in the chain c, sending them all over w_sock s. ">w_tx()</a>.  <a href="#a464c918ca2cf68996ddc0e903128b2ee">More...</a><br/></td></tr>
 <tr class="separator:a464c918ca2cf68996ddc0e903128b2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a307399b989f3d69d8d49516999217336"><td class="memItemLeft" align="right" valign="top">struct w_iov_chain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a307399b989f3d69d8d49516999217336">w_alloc_count</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, const uint32_t count, const uint16_t off)</td></tr>
+<tr class="memitem:a307399b989f3d69d8d49516999217336"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a307399b989f3d69d8d49516999217336">w_alloc_count</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, const uint32_t count, const uint16_t off)</td></tr>
 <tr class="memdesc:a307399b989f3d69d8d49516999217336"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> chain of <code>count</code> packets, for eventual use with <a class="el" href="warpcore_8c.html#a85274ecaf9a766de49a373c8dec27734" title="Loops over the w_iov structures in the chain c, sending them all over w_sock s. ">w_tx()</a>.  <a href="#a307399b989f3d69d8d49516999217336">More...</a><br/></td></tr>
 <tr class="separator:a307399b989f3d69d8d49516999217336"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85274ecaf9a766de49a373c8dec27734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a85274ecaf9a766de49a373c8dec27734">w_tx</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct w_iov_chain *const c)</td></tr>
+<tr class="memitem:a85274ecaf9a766de49a373c8dec27734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a85274ecaf9a766de49a373c8dec27734">w_tx</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *const c)</td></tr>
 <tr class="memdesc:a85274ecaf9a766de49a373c8dec27734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the chain <code>c</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#a85274ecaf9a766de49a373c8dec27734">More...</a><br/></td></tr>
 <tr class="separator:a85274ecaf9a766de49a373c8dec27734"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade585dbd786f22b06727ff3a00d62ff7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, struct w_iov_chain *const c)</td></tr>
+<tr class="memitem:ade585dbd786f22b06727ff3a00d62ff7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *const c)</td></tr>
 <tr class="memdesc:ade585dbd786f22b06727ff3a00d62ff7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> chain obtained via w_alloc() or <a class="el" href="warpcore_8c.html#a56a86a977786ce031b974f17536c1c4e" title="Iterates over any new data in the RX rings, appending them to the w_sock::iv socket buffers of the re...">w_rx()</a> back to warpcore.  <a href="#ade585dbd786f22b06727ff3a00d62ff7">More...</a><br/></td></tr>
 <tr class="separator:ade585dbd786f22b06727ff3a00d62ff7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41497cbbe1bd11e4414a3c42d7f0c2ba"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a41497cbbe1bd11e4414a3c42d7f0c2ba">w_iov_chain_len</a> (const struct w_iov_chain *const c, const uint16_t off)</td></tr>
+<tr class="memitem:a41497cbbe1bd11e4414a3c42d7f0c2ba"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a41497cbbe1bd11e4414a3c42d7f0c2ba">w_iov_chain_len</a> (const struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *const c, const uint16_t off)</td></tr>
 <tr class="memdesc:a41497cbbe1bd11e4414a3c42d7f0c2ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total payload length of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> chain <code>c</code>.  <a href="#a41497cbbe1bd11e4414a3c42d7f0c2ba">More...</a><br/></td></tr>
 <tr class="separator:a41497cbbe1bd11e4414a3c42d7f0c2ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94286f6c75290edeb74f0a499aef1434"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a94286f6c75290edeb74f0a499aef1434">w_iov_chain_cnt</a> (const struct w_iov_chain *const c)</td></tr>
+<tr class="memitem:a94286f6c75290edeb74f0a499aef1434"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a94286f6c75290edeb74f0a499aef1434">w_iov_chain_cnt</a> (const struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *const c)</td></tr>
 <tr class="memdesc:a94286f6c75290edeb74f0a499aef1434"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> chain <code>c</code>.  <a href="#a94286f6c75290edeb74f0a499aef1434">More...</a><br/></td></tr>
 <tr class="separator:a94286f6c75290edeb74f0a499aef1434"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a12251a4b704a157f47ecc763b1e68ca2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:a12251a4b704a157f47ecc763b1e68ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the file descriptor associated with a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>.  <a href="#a12251a4b704a157f47ecc763b1e68ca2">More...</a><br/></td></tr>
 <tr class="separator:a12251a4b704a157f47ecc763b1e68ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56a86a977786ce031b974f17536c1c4e"><td class="memItemLeft" align="right" valign="top">struct w_iov_chain *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a56a86a977786ce031b974f17536c1c4e">w_rx</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
+<tr class="memitem:a56a86a977786ce031b974f17536c1c4e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a56a86a977786ce031b974f17536c1c4e">w_rx</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:a56a86a977786ce031b974f17536c1c4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterates over any new data in the RX rings, appending them to the <a class="el" href="structw__sock.html#ada65e4fbf06221e7fb73fabd1dd1be8c" title="w_iov chain containing incoming unread data. ">w_sock::iv</a> socket buffers of the respective <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> structures associated with a given sender IPv4 address and port.  <a href="#a56a86a977786ce031b974f17536c1c4e">More...</a><br/></td></tr>
 <tr class="separator:a56a86a977786ce031b974f17536c1c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cd1929b5a30a3d3980feaaffb4c95ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w)</td></tr>
@@ -233,38 +233,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a72ec0594c6809ba127e0409efaab76b8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">STAILQ_HEAD </td>
-          <td>(</td>
-          <td class="paramtype">w_iov_chain&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structw__iov.html">w_iov</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a307399b989f3d69d8d49516999217336"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct w_iov_chain* w_alloc_count </td>
+          <td class="memname">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a>* w_alloc_count </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structwarpcore.html">warpcore</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
@@ -317,7 +291,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct w_iov_chain* w_alloc_size </td>
+          <td class="memname">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a>* w_alloc_size </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structwarpcore.html">warpcore</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
@@ -626,7 +600,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct w_iov_chain *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *const&#160;</td>
           <td class="paramname"><em>c</em>&#160;</td>
         </tr>
         <tr>
@@ -704,7 +678,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint32_t w_iov_chain_cnt </td>
           <td>(</td>
-          <td class="paramtype">const struct w_iov_chain *const&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *const&#160;</td>
           <td class="paramname"><em>c</em></td><td>)</td>
           <td></td>
         </tr>
@@ -729,7 +703,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint32_t w_iov_chain_len </td>
           <td>(</td>
-          <td class="paramtype">const struct w_iov_chain *const&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *const&#160;</td>
           <td class="paramname"><em>c</em>, </td>
         </tr>
         <tr>
@@ -874,7 +848,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct w_iov_chain* w_rx </td>
+          <td class="memname">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a>* w_rx </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
@@ -935,7 +909,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct w_iov_chain *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *const&#160;</td>
           <td class="paramname"><em>c</em>&#160;</td>
         </tr>
         <tr>
@@ -950,7 +924,7 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to send data over. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">c</td><td>w_iov_chain to send. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">c</td><td><a class="el" href="structw__iov__chain.html">w_iov_chain</a> to send. </td></tr>
   </table>
   </dd>
 </dl>
@@ -969,7 +943,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 21 2017 10:52:26 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 21 2017 11:19:39 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
