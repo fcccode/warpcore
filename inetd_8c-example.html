@@ -112,9 +112,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><span class="comment">// #include &lt;string.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sys/queue.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><span class="comment">// #include &lt;time.h&gt;</span></div>
+<div class="line"><span class="comment">// #include &lt;unistd.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#ifdef __linux__</span></div>
 <div class="line"><span class="preprocessor"></span><span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div>
@@ -149,7 +150,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keyword">const</span> <span class="keywordtype">char</span> * ifname = 0;</div>
 <div class="line">    <span class="keywordtype">bool</span> busywait = <span class="keyword">false</span>;</div>
 <div class="line">    uint8_t flags = 0;</div>
-<div class="line">    uint32_t transact = 0;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// handle arguments</span></div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
@@ -227,28 +227,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keywordflow">if</span> (s == srv[0]) {</div>
 <div class="line">                <span class="comment">// echo received data back to sender (zero-copy)</span></div>
 <div class="line">                o = i;</div>
-<div class="line">            <span class="comment">// } else if (s == srv[1]) {</span></div>
-<div class="line">            <span class="comment">//     // discard; nothing to do</span></div>
-<div class="line">            <span class="comment">// } else if (s == srv[2]) {</span></div>
-<div class="line">            <span class="comment">//     // daytime</span></div>
-<div class="line">            <span class="comment">//     const time_t t = time(0);</span></div>
-<div class="line">            <span class="comment">//     const char * ct = ctime(&amp;t);</span></div>
-<div class="line">            <span class="comment">//     const uint16_t l = (uint16_t)strlen(ct);</span></div>
-<div class="line">            <span class="comment">//     struct w_iov * v;</span></div>
-<div class="line">            <span class="comment">//     STAILQ_FOREACH (v, i, next) {</span></div>
-<div class="line">            <span class="comment">//         memcpy(v-&gt;buf, c, l); // write a timestamp</span></div>
-<div class="line">            <span class="comment">//         v-&gt;len = l;</span></div>
-<div class="line">            <span class="comment">//     }</span></div>
-<div class="line">            <span class="comment">//     o = i;</span></div>
-<div class="line">            <span class="comment">// } else if (s == srv[3]) {</span></div>
-<div class="line">            <span class="comment">//     // time</span></div>
-<div class="line">            <span class="comment">//     const time_t t = time(0);</span></div>
-<div class="line">            <span class="comment">//     struct w_iov * v;</span></div>
-<div class="line">            <span class="comment">//     STAILQ_FOREACH (v, i, next) {</span></div>
-<div class="line">            <span class="comment">//         memcpy(v-&gt;buf, &amp;t, sizeof(t)); // write a timestamp</span></div>
-<div class="line">            <span class="comment">//         v-&gt;len = sizeof(t);</span></div>
-<div class="line">            <span class="comment">//     }</span></div>
-<div class="line">            <span class="comment">//     o = i;</span></div>
+<div class="line">                <span class="comment">// } else if (s == srv[1]) {</span></div>
+<div class="line">                <span class="comment">//     // discard; nothing to do</span></div>
+<div class="line">                <span class="comment">// } else if (s == srv[2]) {</span></div>
+<div class="line">                <span class="comment">//     // daytime</span></div>
+<div class="line">                <span class="comment">//     const time_t t = time(0);</span></div>
+<div class="line">                <span class="comment">//     const char * ct = ctime(&amp;t);</span></div>
+<div class="line">                <span class="comment">//     const uint16_t l = (uint16_t)strlen(ct);</span></div>
+<div class="line">                <span class="comment">//     struct w_iov * v;</span></div>
+<div class="line">                <span class="comment">//     STAILQ_FOREACH (v, i, next) {</span></div>
+<div class="line">                <span class="comment">//         memcpy(v-&gt;buf, c, l); // write a timestamp</span></div>
+<div class="line">                <span class="comment">//         v-&gt;len = l;</span></div>
+<div class="line">                <span class="comment">//     }</span></div>
+<div class="line">                <span class="comment">//     o = i;</span></div>
+<div class="line">                <span class="comment">// } else if (s == srv[3]) {</span></div>
+<div class="line">                <span class="comment">//     // time</span></div>
+<div class="line">                <span class="comment">//     const time_t t = time(0);</span></div>
+<div class="line">                <span class="comment">//     struct w_iov * v;</span></div>
+<div class="line">                <span class="comment">//     STAILQ_FOREACH (v, i, next) {</span></div>
+<div class="line">                <span class="comment">//         memcpy(v-&gt;buf, &amp;t, sizeof(t)); // write a timestamp</span></div>
+<div class="line">                <span class="comment">//         v-&gt;len = sizeof(t);</span></div>
+<div class="line">                <span class="comment">//     }</span></div>
+<div class="line">                <span class="comment">//     o = i;</span></div>
 <div class="line">            } <span class="keywordflow">else</span> {</div>
 <div class="line">                <a name="a14"></a><a class="code" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a>(<span class="stringliteral">&quot;unknown service&quot;</span>);</div>
 <div class="line">            }</div>
@@ -257,32 +257,31 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keywordflow">if</span> (o) {</div>
 <div class="line">                <a name="a15"></a><a class="code" href="warpcore_8c.html#a85274ecaf9a766de49a373c8dec27734">w_tx</a>(s, o);</div>
 <div class="line">                <a name="a16"></a><a class="code" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a>(w);</div>
+<div class="line"></div>
 <div class="line">            }</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// track how much data was served</span></div>
-<div class="line">            transact++;</div>
 <div class="line">            <span class="keyword">const</span> uint32_t o_len = <a class="code" href="warpcore_8c.html#a41497cbbe1bd11e4414a3c42d7f0c2ba">w_iov_chain_len</a>(o, 0);</div>
 <div class="line">            <span class="keywordflow">if</span> (i_len || o_len)</div>
-<div class="line">                <a name="a17"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a18"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64faa4abb266e72efba828327b605b2ab0f4">info</a>, <span class="stringliteral">&quot;handled %d byte%s in, %d byte%s out&quot;</span>, i_len,</div>
-<div class="line">                     <a name="a19"></a><a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(i_len), o_len, <a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(o_len));</div>
+<div class="line">                <a name="a17"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>, <span class="stringliteral">&quot;handled %d byte%s in, %d byte%s out&quot;</span>, i_len,</div>
+<div class="line">                     <a name="a18"></a><a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(i_len), o_len, <a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(o_len));</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// we are done serving the received data</span></div>
-<div class="line">            <a name="a20"></a><a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, i);</div>
+<div class="line">            <a name="a19"></a><a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, i);</div>
 <div class="line">        }</div>
 <div class="line">        free(c);</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// we only get here after an interrupt; clean up</span></div>
 <div class="line">    <span class="keywordflow">for</span> (uint16_t s = 0; s &lt; n; s++)</div>
-<div class="line">        <a name="a21"></a><a class="code" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a>(srv[s]);</div>
-<div class="line">    <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a22"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa1947748888b7be287264b77a59951f5d">notice</a>, <span class="stringliteral">&quot;executed %u transaction%s&quot;</span>, transact, <a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(transact));</div>
-<div class="line">    <a name="a23"></a><a class="code" href="warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a>(w);</div>
+<div class="line">        <a name="a20"></a><a class="code" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a>(srv[s]);</div>
+<div class="line">    <a name="a21"></a><a class="code" href="warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a>(w);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 16 2017 13:27:11 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 21 2017 10:52:26 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

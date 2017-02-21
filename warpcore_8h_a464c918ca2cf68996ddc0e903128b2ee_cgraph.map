@@ -1,4 +1,4 @@
 <map id="w_alloc_size" name="w_alloc_size">
-<area shape="rect" id="node2" href="$warpcore_8c.html#a307399b989f3d69d8d49516999217336" title="Allocate a w_iov chain of count packets, for eventual use with w_tx(). " alt="" coords="153,5,258,32"/>
-<area shape="rect" id="node3" href="$warpcore_8c.html#a58b5813f998352aa600d0415acb49fc5" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="307,5,381,32"/>
+<area shape="rect" id="node2" href="$warpcore_8c.html#a3b3e22b3269944b39e639424a08f4adb" title="alloc_count" alt="" coords="152,5,240,32"/>
+<area shape="rect" id="node3" href="$warpcore_8c.html#a58b5813f998352aa600d0415acb49fc5" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="289,5,362,32"/>
 </map>

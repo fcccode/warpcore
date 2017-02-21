@@ -431,7 +431,7 @@ Functions</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
 <div class="line">        (ip)-&gt;vhl = (4 &lt;&lt; 4) + 5;                                              \</div>
 <div class="line">        (ip)-&gt;off = htons(<a class="code" href="ip_8h.html#ae2473f4a88d141d5298f92a4335b714a">IP_DF</a>);                                              \</div>
-<div class="line">        (ip)-&gt;ttl = 1;                                                         \</div>
+<div class="line">        (ip)-&gt;ttl = 64; <span class="comment">/* XXX this should be configurable */</span>                  \</div>
 <div class="line">        (ip)-&gt;p = <a class="code" href="ip_8h.html#a0a2d72ff4c961f5e8b58c40cc4e1987c">IP_P_UDP</a>;                                                    \</div>
 <div class="line">        (ip)-&gt;cksum = 0;                                                       \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
@@ -439,7 +439,6 @@ Functions</h2></td></tr>
 <div class="ttc" id="ip_8h_html_a0a2d72ff4c961f5e8b58c40cc4e1987c"><div class="ttname"><a href="ip_8h.html#a0a2d72ff4c961f5e8b58c40cc4e1987c">IP_P_UDP</a></div><div class="ttdeci">#define IP_P_UDP</div><div class="ttdoc">IP protocol number for UDP. </div><div class="ttdef"><b>Definition:</b> ip.h:79</div></div>
 </div><!-- fragment -->
 <p>Initialize the static fields in an IPv4 <a class="el" href="structip__hdr.html" title="An IPv4 header representation; see RFC791 ">ip_hdr</a> header. </p>
-<p>TTL is currently set to 1.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">ip</td><td>Pointer to the <a class="el" href="structip__hdr.html" title="An IPv4 header representation; see RFC791 ">ip_hdr</a> to initialize. </td></tr>
@@ -791,7 +790,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Feb 16 2017 13:27:11 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 21 2017 10:52:26 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
