@@ -1,5 +1,5 @@
 <map id="w_sock" name="w_sock">
-<area shape="rect" id="node2" href="$structw__iov__chain.html" title="w_iov_chain" alt="" coords="5,5,99,32"/>
+<area shape="rect" id="node2" href="$structw__iov__chain.html" title="A chain of w_iov I/O vectors. " alt="" coords="5,5,99,32"/>
 <area shape="rect" id="node7" href="$structwarpcore.html" title="A warpcore engine. " alt="" coords="51,187,124,213"/>
 <area shape="rect" id="node8" href="$structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="97,96,152,123"/>
 <area shape="rect" id="node3" href="$structw__hdr.html" title="A warpcore template packet header structure. " alt="" coords="226,187,283,213"/>

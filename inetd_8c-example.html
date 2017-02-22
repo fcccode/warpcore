@@ -115,7 +115,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="comment">// #include &lt;string.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sys/queue.h&gt;</span></div>
 <div class="line"><span class="comment">// #include &lt;time.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#ifdef __linux__</span></div>
 <div class="line"><span class="preprocessor"></span><span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div>
@@ -256,18 +255,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="comment">// if the current service requires replying with data, do so</span></div>
 <div class="line">            <span class="keywordflow">if</span> (o) {</div>
 <div class="line">                <a name="a16"></a><a class="code" href="warpcore_8c.html#a85274ecaf9a766de49a373c8dec27734">w_tx</a>(s, o);</div>
-<div class="line">                <a name="a17"></a><a class="code" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a>(w);</div>
-<div class="line">                <span class="keywordflow">while</span> (o-&gt;<a name="a18"></a><a class="code" href="structw__iov__chain.html#a6406152b6deca199ad2ba65ddad92b96">tx_pending</a>) {</div>
-<div class="line">                    <a name="a19"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a20"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa5be0fd270d9cbf6a0b7445db855089da">debug</a>, <span class="stringliteral">&quot;waiting for %u slots to TX&quot;</span>, o-&gt;<a class="code" href="structw__iov__chain.html#a6406152b6deca199ad2ba65ddad92b96">tx_pending</a>);</div>
-<div class="line">                    <a class="code" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a>(w);</div>
-<div class="line">                    usleep(1);</div>
-<div class="line">                }</div>
+<div class="line">                <span class="keywordflow">while</span> (o-&gt;<a name="a17"></a><a class="code" href="structw__iov__chain.html#a6406152b6deca199ad2ba65ddad92b96">tx_pending</a>)</div>
+<div class="line">                    <a name="a18"></a><a class="code" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a>(w);</div>
 <div class="line">            }</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// track how much data was served</span></div>
 <div class="line">            <span class="keyword">const</span> uint32_t o_len = <a class="code" href="warpcore_8c.html#a41497cbbe1bd11e4414a3c42d7f0c2ba">w_iov_chain_len</a>(o, 0);</div>
 <div class="line">            <span class="keywordflow">if</span> (i_len || o_len)</div>
-<div class="line">                <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>, <span class="stringliteral">&quot;handled %d byte%s in, %d byte%s out&quot;</span>, i_len,</div>
+<div class="line">                <a name="a19"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a20"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64faa4abb266e72efba828327b605b2ab0f4">info</a>, <span class="stringliteral">&quot;handled %d byte%s in, %d byte%s out&quot;</span>, i_len,</div>
 <div class="line">                     <a name="a21"></a><a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(i_len), o_len, <a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(o_len));</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// we are done serving the received data</span></div>
@@ -285,7 +280,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 21 2017 11:19:39 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 22 2017 12:15:16 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

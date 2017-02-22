@@ -114,6 +114,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov__chain.html">w_iov_chain</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A chain of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> I/O vectors.  <a href="structw__iov__chain.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html">w_sock</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A warpcore socket.  <a href="structw__sock.html#details">More...</a><br/></td></tr>
@@ -131,6 +132,7 @@ Macros</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a8d9fe29560dea6f00e9693bb0b0142cb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a8d9fe29560dea6f00e9693bb0b0142cb">SLIST_HEAD</a> (w_sock_chain, <a class="el" href="structw__sock.html">w_sock</a>)</td></tr>
+<tr class="memdesc:a8d9fe29560dea6f00e9693bb0b0142cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A chain of <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> socket.  <a href="#a8d9fe29560dea6f00e9693bb0b0142cb">More...</a><br/></td></tr>
 <tr class="separator:a8d9fe29560dea6f00e9693bb0b0142cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa83867b0dcc2a057772d7d6548a2be00"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structwarpcore.html">warpcore</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#aa83867b0dcc2a057772d7d6548a2be00">w_init</a> (const char *const ifname, const uint32_t rip)</td></tr>
 <tr class="memdesc:aa83867b0dcc2a057772d7d6548a2be00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a warpcore engine on the given interface.  <a href="#aa83867b0dcc2a057772d7d6548a2be00">More...</a><br/></td></tr>
@@ -230,6 +232,8 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>A chain of <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> socket. </p>
 
 </div>
 </div>
@@ -924,7 +928,7 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to send data over. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">c</td><td><a class="el" href="structw__iov__chain.html">w_iov_chain</a> to send. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">c</td><td><a class="el" href="structw__iov__chain.html" title="A chain of w_iov I/O vectors. ">w_iov_chain</a> to send. </td></tr>
   </table>
   </dd>
 </dl>
@@ -943,7 +947,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Feb 21 2017 11:19:39 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 22 2017 12:15:16 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
