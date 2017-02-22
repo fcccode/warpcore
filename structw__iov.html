@@ -140,8 +140,7 @@ Data Fields</h2></td></tr>
 <p>It is mostly a pointer to the first UDP payload byte contained in a netmap packet buffer, together with some associated meta data.</p>
 <p>The meta data consists of the length of the payload data, the sender IPv4 address and port number, the DSCP and ECN bits associated with the IPv4 packet in which the payload arrived, and the netmap arrival timestamp.</p>
 <p>The <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structure also contains a pointer to the next I/O vector, which can be used to chain together longer data items for use with <a class="el" href="warpcore_8c.html#a56a86a977786ce031b974f17536c1c4e" title="Iterates over any new data in the RX rings, appending them to the w_sock::iv socket buffers of the re...">w_rx()</a> and <a class="el" href="warpcore_8c.html#a85274ecaf9a766de49a373c8dec27734" title="Loops over the w_iov structures in the chain c, sending them all over w_sock s. ">w_tx()</a>. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#_a13">ping.c</a>.</dd>
-</dl></div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a63096f96ebff68793ccac843ad3354ab"></a>
 <div class="memitem">
 <div class="memproto">
@@ -172,8 +171,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Start of payload data. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a14">ping.c</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="a78f880d48390c66707097c22c9f4f2ad"></a>
@@ -244,8 +242,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Length of payload data. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a20">ping.c</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="a2370b82e72918815dadb10ef44e99349"></a>
@@ -283,7 +280,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 22 2017 12:15:16 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 22 2017 15:45:20 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
