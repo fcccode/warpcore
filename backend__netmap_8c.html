@@ -130,9 +130,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a12251a4b704a157f47ecc763b1e68ca2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:a12251a4b704a157f47ecc763b1e68ca2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the file descriptor associated with a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>.  <a href="#a12251a4b704a157f47ecc763b1e68ca2">More...</a><br/></td></tr>
 <tr class="separator:a12251a4b704a157f47ecc763b1e68ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a538d48855851264a01c0a959476c40d4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#a538d48855851264a01c0a959476c40d4">backend_tx</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov.html">w_iov</a> *const v)</td></tr>
-<tr class="memdesc:a538d48855851264a01c0a959476c40d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places the payload of <code>v</code> into an IPv4 UDP packet, and attempts to move it onto a TX ring.  <a href="#a538d48855851264a01c0a959476c40d4">More...</a><br/></td></tr>
-<tr class="separator:a538d48855851264a01c0a959476c40d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85274ecaf9a766de49a373c8dec27734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#a85274ecaf9a766de49a373c8dec27734">w_tx</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *const c)</td></tr>
+<tr class="memdesc:a85274ecaf9a766de49a373c8dec27734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the chain <code>c</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#a85274ecaf9a766de49a373c8dec27734">More...</a><br/></td></tr>
+<tr class="separator:a85274ecaf9a766de49a373c8dec27734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f7d5dfbb0e11df581c3fcc6fe3015c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1">w_nic_rx</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w)</td></tr>
 <tr class="memdesc:a3f7d5dfbb0e11df581c3fcc6fe3015c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger netmap to make new received data available to <a class="el" href="warpcore_8c.html#a56a86a977786ce031b974f17536c1c4e" title="Iterates over any new data in the RX rings, appending them to the w_sock::iv socket buffers of the re...">w_rx()</a>.  <a href="#a3f7d5dfbb0e11df581c3fcc6fe3015c1">More...</a><br/></td></tr>
 <tr class="separator:a3f7d5dfbb0e11df581c3fcc6fe3015c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -276,51 +276,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a538d48855851264a01c0a959476c40d4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void backend_tx </td>
-          <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
-          <td class="paramname"><em>s</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov.html">w_iov</a> *const&#160;</td>
-          <td class="paramname"><em>v</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Places the payload of <code>v</code> into an IPv4 UDP packet, and attempts to move it onto a TX ring. </p>
-<p>Will force a NIC TX if all rings are full, retry the failed <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> and continue with the chain. The (last batch of) packets are not send yet; <a class="el" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. ">w_nic_tx()</a> needs to be called (again) for that. This is, so that an application has control over exactly when to schedule packet I/O.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> socket to transmit over. </td></tr>
-    <tr><td class="paramname">v</td><td><a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> to transmit. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="backend__netmap_8c_a538d48855851264a01c0a959476c40d4_cgraph.png" border="0" usemap="#backend__netmap_8c_a538d48855851264a01c0a959476c40d4_cgraph" alt=""/></div>
-<map name="backend__netmap_8c_a538d48855851264a01c0a959476c40d4_cgraph" id="backend__netmap_8c_a538d48855851264a01c0a959476c40d4_cgraph">
-<area shape="rect" id="node2" href="udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c" title="Sends a payload contained in a w_sock::ov via UDP. " alt="" coords="144,107,205,133"/><area shape="rect" id="node7" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="419,259,493,285"/><area shape="rect" id="node3" href="arp_8c.html#a767793cec18e132d3875c6d374e8414f" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="253,157,352,184"/><area shape="rect" id="node9" href="ip_8h.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="262,56,343,83"/><area shape="rect" id="node10" href="ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="417,5,495,32"/><area shape="rect" id="node11" href="ip_8c.html#a2165f6158886310cb7d3cdb1e0b5646d" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="277,107,328,133"/><area shape="rect" id="node4" href="arp_8c.html#a755a6595690a86527e7ef79847298d4a" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="401,208,511,235"/><area shape="rect" id="node5" href="backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="419,107,493,133"/><area shape="rect" id="node6" href="eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="427,56,485,83"/><area shape="rect" id="node8" href="backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="419,157,493,184"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="a12251a4b704a157f47ecc763b1e68ca2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -400,6 +355,43 @@ Here is the call graph for this function:</div>
 </dl>
 </div>
 </div>
+<a class="anchor" id="a85274ecaf9a766de49a373c8dec27734"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void w_tx </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> *const&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the chain <code>c</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>. </p>
+<p>Places the payloads into IPv4 UDP packets, and attempts to move them into TX rings. Will force a NIC TX if all rings are full, retry the failed w_iovs and continue with the chain. The (last batch of) packets are not send yet; <a class="el" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. ">w_nic_tx()</a> needs to be called (again) for that. This is, so that an application has control over exactly when to schedule packet I/O.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> socket to transmit over. </td></tr>
+    <tr><td class="paramname">c</td><td><a class="el" href="structw__iov__chain.html" title="A chain of w_iov I/O vectors. ">w_iov_chain</a> to send. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a16">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a14">ping.c</a>.</dd>
+</dl>
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a class="anchor" id="a7c5ea7d02c5d0693dfc377f3a7f929a1"></a>
 <div class="memitem">
@@ -426,7 +418,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2017 11:42:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 24 2017 12:18:09 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

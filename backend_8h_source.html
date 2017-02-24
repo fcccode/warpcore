@@ -214,9 +214,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<a class="code" href="backend_8h.html#af7b0aa97cf956c2110e4ef0625e519fa">backend_init</a>(struct <a class="code" href="structwarpcore.html">warpcore</a> * <a class="code" href="structw__sock.html#a153f7af47d3e0dfc681e01c0b3a86c69">w</a>, const <span class="keywordtype">char</span> * const <a class="code" href="structwarpcore.html#a571768f642ada8a7715f5cfdd1c664c8">ifname</a>);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a0d3c16a0d0fbe62e779252b4f085abd3">backend_cleanup</a>(struct <a class="code" href="structwarpcore.html">warpcore</a> * const w);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;<a class="code" href="backend_8h.html#a538d48855851264a01c0a959476c40d4">backend_tx</a>(const struct <a class="code" href="structw__sock.html">w_sock</a> * const s, struct <a class="code" href="structw__iov.html">w_iov</a> * const v);</div>
 <div class="ttc" id="structwarpcore_html_a573017fca57f4bf0a542b183d191e855"><div class="ttname"><a href="structwarpcore.html#a573017fca57f4bf0a542b183d191e855">warpcore::SLIST_ENTRY</a></div><div class="ttdeci">SLIST_ENTRY(warpcore) next</div><div class="ttdoc">Pointer to next engine. </div></div>
 <div class="ttc" id="structwarpcore_html"><div class="ttname"><a href="structwarpcore.html">warpcore</a></div><div class="ttdoc">A warpcore engine. </div><div class="ttdef"><b>Definition:</b> backend.h:83</div></div>
 <div class="ttc" id="structudp__hdr_html"><div class="ttname"><a href="structudp__hdr.html">udp_hdr</a></div><div class="ttdoc">A representation of a UDP header; see RFC768. </div><div class="ttdef"><b>Definition:</b> udp.h:40</div></div>
@@ -245,7 +242,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structw__sock_html_a0b8ec75854814f39f204648af5dd5726"><div class="ttname"><a href="structw__sock.html#a0b8ec75854814f39f204648af5dd5726">w_sock::hdr</a></div><div class="ttdeci">struct w_hdr * hdr</div><div class="ttdoc">The template header to be used for outbound packets on this w_sock. </div><div class="ttdef"><b>Definition:</b> warpcore.h:73</div></div>
 <div class="ttc" id="structw__iov_html_a02cafa553312f8414ff2141c572218de"><div class="ttname"><a href="structw__iov.html#a02cafa553312f8414ff2141c572218de">w_iov::buf</a></div><div class="ttdeci">void * buf</div><div class="ttdoc">Start of payload data. </div><div class="ttdef"><b>Definition:</b> warpcore.h:102</div></div>
 <div class="ttc" id="backend_8h_html_af7b0aa97cf956c2110e4ef0625e519fa"><div class="ttname"><a href="backend_8h.html#af7b0aa97cf956c2110e4ef0625e519fa">backend_init</a></div><div class="ttdeci">void backend_init(struct warpcore *w, const char *const ifname)</div><div class="ttdoc">Initialize the warpcore netmap backend for engine w. </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:65</div></div>
-<div class="ttc" id="backend_8h_html_a538d48855851264a01c0a959476c40d4"><div class="ttname"><a href="backend_8h.html#a538d48855851264a01c0a959476c40d4">backend_tx</a></div><div class="ttdeci">void backend_tx(const struct w_sock *const s, struct w_iov *const v)</div><div class="ttdoc">Places the payload of v into an IPv4 UDP packet, and attempts to move it onto a TX ring...</div><div class="ttdef"><b>Definition:</b> backend_netmap.c:221</div></div>
 <div class="ttc" id="structeth__hdr_html"><div class="ttname"><a href="structeth__hdr.html">eth_hdr</a></div><div class="ttdoc">An Ethernet II MAC header. </div><div class="ttdef"><b>Definition:</b> eth.h:54</div></div>
 <div class="ttc" id="structudp__hdr_html_abea80c853cab93c249f23208662f8650"><div class="ttname"><a href="structudp__hdr.html#abea80c853cab93c249f23208662f8650">udp_hdr::sport</a></div><div class="ttdeci">uint16_t sport</div><div class="ttdoc">Source port. </div><div class="ttdef"><b>Definition:</b> udp.h:41</div></div>
 <div class="ttc" id="warpcore_8c_html_ac5f4812d2c339c6d0fa6e591bf555caf"><div class="ttname"><a href="warpcore_8c.html#ac5f4812d2c339c6d0fa6e591bf555caf">engines</a></div><div class="ttdeci">struct w_engines engines</div><div class="ttdoc">A global list of netmap engines that have been initialized for different interfaces. </div><div class="ttdef"><b>Definition:</b> warpcore.c:64</div></div>
@@ -265,7 +261,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 24 2017 11:42:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Feb 24 2017 12:18:09 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

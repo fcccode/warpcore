@@ -9,7 +9,6 @@ var searchData=
   ['backend_5fname',['backend_name',['../backend__netmap_8c.html#a7c5ea7d02c5d0693dfc377f3a7f929a1',1,'backend_name():&#160;backend_netmap.c'],['../backend__shim_8c.html#a7c5ea7d02c5d0693dfc377f3a7f929a1',1,'backend_name():&#160;backend_shim.c']]],
   ['backend_5fnetmap_2ec',['backend_netmap.c',['../backend__netmap_8c.html',1,'']]],
   ['backend_5fshim_2ec',['backend_shim.c',['../backend__shim_8c.html',1,'']]],
-  ['backend_5ftx',['backend_tx',['../backend_8h.html#a538d48855851264a01c0a959476c40d4',1,'backend_tx(const struct w_sock *const s, struct w_iov *const v):&#160;backend_netmap.c'],['../backend__netmap_8c.html#a538d48855851264a01c0a959476c40d4',1,'backend_tx(const struct w_sock *const s, struct w_iov *const v):&#160;backend_netmap.c'],['../backend__shim_8c.html#a538d48855851264a01c0a959476c40d4',1,'backend_tx(const struct w_sock *const s, struct w_iov *const v):&#160;backend_shim.c']]],
   ['basename',['basename',['../util_8h.html#abf5f17d3254f2e930aee0dc34dbff071',1,'util.h']]],
   ['bld',['BLD',['../util_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb',1,'util.h']]],
   ['blk',['BLK',['../util_8h.html#a6283768c836fd4a0f382514973bc3ff4',1,'util.h']]],
