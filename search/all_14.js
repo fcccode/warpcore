@@ -29,10 +29,10 @@ var searchData=
   ['warpcore',['warpcore',['../structwarpcore.html',1,'']]],
   ['warpcore_2ec',['warpcore.c',['../warpcore_8c.html',1,'']]],
   ['warpcore_2eh',['warpcore.h',['../warpcore_8h.html',1,'']]],
-  ['warpcore_5fname',['warpcore_name',['../version_8c.html#a7fd9dfd57d0b4d34f89c4d2ced0a8319',1,'warpcore_name():&#160;version.c'],['../version_8h.html#a7fd9dfd57d0b4d34f89c4d2ced0a8319',1,'warpcore_name():&#160;version.c']]],
-  ['warpcore_5fversion',['warpcore_version',['../version_8c.html#a83a304bfe83fd24059adf0c5ba97d9b5',1,'warpcore_version():&#160;version.c'],['../version_8h.html#a83a304bfe83fd24059adf0c5ba97d9b5',1,'warpcore_version():&#160;version.c']]],
-  ['warpcore_5fversion_5fmajor',['WARPCORE_VERSION_MAJOR',['../version_8h.html#a0b885defc8f5c2974b7c322a5d8029d2',1,'version.h']]],
-  ['warpcore_5fversion_5fminor',['WARPCORE_VERSION_MINOR',['../version_8h.html#a7ae4e1c713d564d9be834cd43f5dac50',1,'version.h']]],
-  ['warpcore_5fversion_5fpatch',['WARPCORE_VERSION_PATCH',['../version_8h.html#a10f58adbdf68ee2d9a9ff0bdfac4c56e',1,'version.h']]],
+  ['warpcore_5fname',['warpcore_name',['../config_8c.html#a7fd9dfd57d0b4d34f89c4d2ced0a8319',1,'warpcore_name():&#160;config.c'],['../config_8h.html#a7fd9dfd57d0b4d34f89c4d2ced0a8319',1,'warpcore_name():&#160;config.c']]],
+  ['warpcore_5fversion',['warpcore_version',['../config_8c.html#a83a304bfe83fd24059adf0c5ba97d9b5',1,'warpcore_version():&#160;config.c'],['../config_8h.html#a83a304bfe83fd24059adf0c5ba97d9b5',1,'warpcore_version():&#160;config.c']]],
+  ['warpcore_5fversion_5fmajor',['WARPCORE_VERSION_MAJOR',['../config_8h.html#a0b885defc8f5c2974b7c322a5d8029d2',1,'config.h']]],
+  ['warpcore_5fversion_5fminor',['WARPCORE_VERSION_MINOR',['../config_8h.html#a7ae4e1c713d564d9be834cd43f5dac50',1,'config.h']]],
+  ['warpcore_5fversion_5fpatch',['WARPCORE_VERSION_PATCH',['../config_8h.html#a10f58adbdf68ee2d9a9ff0bdfac4c56e',1,'config.h']]],
   ['wht',['WHT',['../util_8h.html#aeaf3a04d5bf63b204689a714718ea930',1,'util.h']]]
 ];

@@ -1,4 +1,5 @@
 <map id="warpcore.h" name="warpcore.h">
-<area shape="rect" id="node5" href="$plat_8h.html" title="plat.h" alt="" coords="167,80,221,107"/>
-<area shape="rect" id="node7" href="$util_8h.html" title="util.h" alt="" coords="465,80,516,107"/>
+<area shape="rect" id="node5" href="$config_8h.html" title="config.h" alt="" coords="227,80,295,107"/>
+<area shape="rect" id="node6" href="$plat_8h.html" title="plat.h" alt="" coords="149,80,203,107"/>
+<area shape="rect" id="node8" href="$util_8h.html" title="util.h" alt="" coords="511,80,561,107"/>
 </map>

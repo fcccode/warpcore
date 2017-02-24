@@ -2,7 +2,8 @@
 <area shape="rect" id="node2" href="$eth_8h.html" title="eth.h" alt="" coords="25,155,76,181"/>
 <area shape="rect" id="node6" href="$ip_8h.html" title="ip.h" alt="" coords="93,80,136,107"/>
 <area shape="rect" id="node7" href="$udp_8h.html" title="udp.h" alt="" coords="151,155,205,181"/>
-<area shape="rect" id="node8" href="$warpcore_8h.html" title="warpcore.h" alt="" coords="406,80,492,107"/>
-<area shape="rect" id="node11" href="$plat_8h.html" title="plat.h" alt="" coords="282,155,336,181"/>
-<area shape="rect" id="node12" href="$util_8h.html" title="util.h" alt="" coords="608,155,659,181"/>
+<area shape="rect" id="node8" href="$warpcore_8h.html" title="warpcore.h" alt="" coords="423,80,509,107"/>
+<area shape="rect" id="node11" href="$config_8h.html" title="config.h" alt="" coords="361,155,428,181"/>
+<area shape="rect" id="node12" href="$plat_8h.html" title="plat.h" alt="" coords="282,155,336,181"/>
+<area shape="rect" id="node13" href="$util_8h.html" title="util.h" alt="" coords="621,155,672,181"/>
 </map>
