@@ -105,6 +105,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="comment">// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
 <div class="line"><span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
 <div class="line"></div>
+<div class="line"><span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;getopt.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;poll.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;signal.h&gt;</span></div>
@@ -112,14 +113,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
-<div class="line"><span class="comment">// #include &lt;string.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sys/queue.h&gt;</span></div>
-<div class="line"><span class="comment">// #include &lt;time.h&gt;</span></div>
 <div class="line"></div>
-<div class="line"><span class="preprocessor">#ifdef __linux__</span></div>
-<div class="line"><span class="preprocessor"></span><span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#else</span></div>
-<div class="line"><span class="preprocessor"></span><span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#if 0</span></div>
+<div class="line"><span class="preprocessor"></span><span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;time.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor"></span></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="warpcore_8h.html">warpcore.h</a>&gt;</span></div>
@@ -186,19 +184,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <a name="a5"></a><a class="code" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(signal(SIGTERM, &amp;terminate) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
 <div class="line">    <a class="code" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(signal(SIGINT, &amp;terminate) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">    <span class="comment">// start four inetd-like &quot;small services&quot;</span></div>
+<div class="line">    <span class="comment">// start four inetd-like &quot;small services&quot; and one benchmark of our own</span></div>
 <div class="line">    <span class="keyword">struct </span><a name="_a6"></a><a class="code" href="structw__sock.html">w_sock</a> * <span class="keyword">const</span> srv[] = {</div>
-<div class="line">        <a name="a7"></a><a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(7), flags),</div>
-<div class="line">        <span class="comment">// w_bind(w, htons(9), flags),</span></div>
-<div class="line">        <span class="comment">// w_bind(w, htons(13), flags),</span></div>
-<div class="line">        <span class="comment">// w_bind(w, htons(37), flags)</span></div>
+<div class="line"><span class="preprocessor">#if 0</span></div>
+<div class="line"><span class="preprocessor"></span>        <a name="a7"></a><a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(7), flags),</div>
+<div class="line">        <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(9), flags),</div>
+<div class="line">        <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(13), flags),</div>
+<div class="line">        <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(37), flags)</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>        <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(55555), flags)</div>
 <div class="line">    };</div>
-<div class="line">    <span class="keyword">const</span> uint16_t n = <span class="keyword">sizeof</span>(srv) / <span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code" href="structw__sock.html">w_sock</a> *);</div>
+<div class="line">    uint16_t n = 0;</div>
 <div class="line">    <span class="keyword">struct </span>pollfd fds[] = {</div>
-<div class="line">        {.<a name="a8"></a><a class="code" href="structw__sock.html#a52c31f9dcdeff3860a4f5d39208b73b8">fd</a> = <a name="a9"></a><a class="code" href="backend__netmap_8c.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a>(srv[0]), .events = POLLIN},</div>
-<div class="line">        <span class="comment">// {.fd = w_fd(srv[1]), .events = POLLIN},</span></div>
-<div class="line">        <span class="comment">// {.fd = w_fd(srv[2]), .events = POLLIN},</span></div>
-<div class="line">        <span class="comment">// {.fd = w_fd(srv[3]), .events = POLLIN}</span></div>
+<div class="line"><span class="preprocessor">#if 0</span></div>
+<div class="line"><span class="preprocessor"></span>        {.<a name="a8"></a><a class="code" href="structw__sock.html#a52c31f9dcdeff3860a4f5d39208b73b8">fd</a> = <a name="a9"></a><a class="code" href="backend__netmap_8c.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a>(srv[n++]), .events = POLLIN},</div>
+<div class="line">        {.fd = <a class="code" href="backend__netmap_8c.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a>(srv[n++]), .events = POLLIN},</div>
+<div class="line">        {.fd = <a class="code" href="backend__netmap_8c.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a>(srv[n++]), .events = POLLIN},</div>
+<div class="line">        {.fd = <a class="code" href="backend__netmap_8c.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a>(srv[n++]), .events = POLLIN}</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>        {.fd = <a class="code" href="backend__netmap_8c.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a>(srv[n++]), .events = POLLIN}</div>
 <div class="line">    };</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// serve requests on the four sockets until an interrupt occurs</span></div>
@@ -221,65 +225,86 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">            <span class="keyword">const</span> uint32_t i_len = <a name="a14"></a><a class="code" href="warpcore_8c.html#a41497cbbe1bd11e4414a3c42d7f0c2ba">w_iov_chain_len</a>(i, 0);</div>
 <div class="line">            <span class="keyword">struct </span><a class="code" href="structw__iov__chain.html">w_iov_chain</a> * o = 0; <span class="comment">// w_iov for outbound data</span></div>
-<div class="line"></div>
-<div class="line">            <span class="keywordflow">if</span> (s == srv[0]) {</div>
+<div class="line">            uint16_t t = 0;</div>
+<div class="line"><span class="preprocessor">#if 0</span></div>
+<div class="line"><span class="preprocessor"></span>            <span class="keywordflow">if</span> (s == srv[t++]) {</div>
 <div class="line">                <span class="comment">// echo received data back to sender (zero-copy)</span></div>
 <div class="line">                o = i;</div>
-<div class="line">                <span class="comment">// } else if (s == srv[1]) {</span></div>
-<div class="line">                <span class="comment">//     // discard; nothing to do</span></div>
-<div class="line">                <span class="comment">// } else if (s == srv[2]) {</span></div>
-<div class="line">                <span class="comment">//     // daytime</span></div>
-<div class="line">                <span class="comment">//     const time_t t = time(0);</span></div>
-<div class="line">                <span class="comment">//     const char * ct = ctime(&amp;t);</span></div>
-<div class="line">                <span class="comment">//     const uint16_t l = (uint16_t)strlen(ct);</span></div>
-<div class="line">                <span class="comment">//     struct w_iov * v;</span></div>
-<div class="line">                <span class="comment">//     STAILQ_FOREACH (v, i, next) {</span></div>
-<div class="line">                <span class="comment">//         memcpy(v-&gt;buf, c, l); // write a timestamp</span></div>
-<div class="line">                <span class="comment">//         v-&gt;len = l;</span></div>
-<div class="line">                <span class="comment">//     }</span></div>
-<div class="line">                <span class="comment">//     o = i;</span></div>
-<div class="line">                <span class="comment">// } else if (s == srv[3]) {</span></div>
-<div class="line">                <span class="comment">//     // time</span></div>
-<div class="line">                <span class="comment">//     const time_t t = time(0);</span></div>
-<div class="line">                <span class="comment">//     struct w_iov * v;</span></div>
-<div class="line">                <span class="comment">//     STAILQ_FOREACH (v, i, next) {</span></div>
-<div class="line">                <span class="comment">//         memcpy(v-&gt;buf, &amp;t, sizeof(t)); // write a timestamp</span></div>
-<div class="line">                <span class="comment">//         v-&gt;len = sizeof(t);</span></div>
-<div class="line">                <span class="comment">//     }</span></div>
-<div class="line">                <span class="comment">//     o = i;</span></div>
+<div class="line">            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == srv[t++]) {</div>
+<div class="line">                <span class="comment">// discard; nothing to do</span></div>
+<div class="line">            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == srv[t++]) {</div>
+<div class="line">                <span class="comment">// daytime</span></div>
+<div class="line">                <span class="keyword">const</span> time_t t = time(0);</div>
+<div class="line">                <span class="keyword">const</span> <span class="keywordtype">char</span> * ct = ctime(&amp;t);</div>
+<div class="line">                <span class="keyword">const</span> uint16_t l = (uint16_t)strlen(ct);</div>
+<div class="line">                <span class="keyword">struct </span><a name="_a15"></a><a class="code" href="structw__iov.html">w_iov</a> * v;</div>
+<div class="line">                STAILQ_FOREACH (v, i, next) {</div>
+<div class="line">                    memcpy(v-&gt;<a name="a16"></a><a class="code" href="structw__iov.html#a02cafa553312f8414ff2141c572218de">buf</a>, c, l); <span class="comment">// write a timestamp</span></div>
+<div class="line">                    v-&gt;<a name="a17"></a><a class="code" href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">len</a> = l;</div>
+<div class="line">                }</div>
+<div class="line">                o = i;</div>
+<div class="line">            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == srv[t++]) {</div>
+<div class="line">                <span class="comment">// time</span></div>
+<div class="line">                <span class="keyword">const</span> time_t t = time(0);</div>
+<div class="line">                <span class="keyword">struct </span><a class="code" href="structw__iov.html">w_iov</a> * v;</div>
+<div class="line">                STAILQ_FOREACH (v, i, next) {</div>
+<div class="line">                    memcpy(v-&gt;<a class="code" href="structw__iov.html#a02cafa553312f8414ff2141c572218de">buf</a>, &amp;t, <span class="keyword">sizeof</span>(t)); <span class="comment">// write a timestamp</span></div>
+<div class="line">                    v-&gt;<a class="code" href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">len</a> = <span class="keyword">sizeof</span>(t);</div>
+<div class="line">                }</div>
+<div class="line">                o = i;</div>
+<div class="line">            } <span class="keywordflow">else</span></div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>            <span class="keywordflow">if</span> (s == srv[t++]) {</div>
+<div class="line">                <span class="comment">// our benchmark</span></div>
+<div class="line">                <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structw__iov__chain.html">w_iov_chain</a> * tmp = 0;</div>
+<div class="line">                <span class="keywordflow">if</span> (tmp == 0)</div>
+<div class="line">                    tmp = <a name="a18"></a><a class="code" href="warpcore_8c.html#a464c918ca2cf68996ddc0e903128b2ee">w_alloc_size</a>(w, 0, 0);</div>
+<div class="line">                <span class="keyword">static</span> uint32_t tmp_len = 0;</div>
+<div class="line">                tmp_len += i_len;</div>
+<div class="line">                STAILQ_CONCAT(tmp, i);</div>
+<div class="line">                <a name="a19"></a><a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, i);</div>
+<div class="line"></div>
+<div class="line">                <span class="comment">// did we receive all data?</span></div>
+<div class="line">                <span class="keywordflow">if</span> (tmp_len == ntohl(*(uint32_t *)STAILQ_FIRST(tmp)-&gt;buf)) {</div>
+<div class="line">                    <span class="comment">// yep, let&#39;s send the data back</span></div>
+<div class="line">                    i = o = tmp;</div>
+<div class="line">                    tmp = 0;</div>
+<div class="line">                    tmp_len = 0;</div>
+<div class="line">                }</div>
+<div class="line"></div>
 <div class="line">            } <span class="keywordflow">else</span> {</div>
-<div class="line">                <a name="a15"></a><a class="code" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a>(<span class="stringliteral">&quot;unknown service&quot;</span>);</div>
+<div class="line">                <a name="a20"></a><a class="code" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a>(<span class="stringliteral">&quot;unknown service&quot;</span>);</div>
 <div class="line">            }</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// if the current service requires replying with data, do so</span></div>
 <div class="line">            <span class="keywordflow">if</span> (o) {</div>
-<div class="line">                <a name="a16"></a><a class="code" href="backend__netmap_8c.html#a85274ecaf9a766de49a373c8dec27734">w_tx</a>(s, o);</div>
-<div class="line">                <span class="keywordflow">while</span> (o-&gt;<a name="a17"></a><a class="code" href="structw__iov__chain.html#a6406152b6deca199ad2ba65ddad92b96">tx_pending</a>)</div>
-<div class="line">                    <a name="a18"></a><a class="code" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a>(w);</div>
+<div class="line">                <a name="a21"></a><a class="code" href="backend__netmap_8c.html#a85274ecaf9a766de49a373c8dec27734">w_tx</a>(s, o);</div>
+<div class="line">                <span class="keywordflow">while</span> (o-&gt;<a name="a22"></a><a class="code" href="structw__iov__chain.html#a6406152b6deca199ad2ba65ddad92b96">tx_pending</a>)</div>
+<div class="line">                    <a name="a23"></a><a class="code" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a>(w);</div>
 <div class="line">            }</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// track how much data was served</span></div>
 <div class="line">            <span class="keyword">const</span> uint32_t o_len = <a class="code" href="warpcore_8c.html#a41497cbbe1bd11e4414a3c42d7f0c2ba">w_iov_chain_len</a>(o, 0);</div>
 <div class="line">            <span class="keywordflow">if</span> (i_len || o_len)</div>
-<div class="line">                <a name="a19"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a20"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64faa4abb266e72efba828327b605b2ab0f4">info</a>, <span class="stringliteral">&quot;handled %d byte%s in, %d byte%s out&quot;</span>, i_len,</div>
-<div class="line">                     <a name="a21"></a><a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(i_len), o_len, <a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(o_len));</div>
+<div class="line">                <a name="a24"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a25"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64faa4abb266e72efba828327b605b2ab0f4">info</a>, <span class="stringliteral">&quot;handled %d byte%s in, %d byte%s out&quot;</span>, i_len,</div>
+<div class="line">                     <a name="a26"></a><a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(i_len), o_len, <a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(o_len));</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// we are done serving the received data</span></div>
-<div class="line">            <a name="a22"></a><a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, i);</div>
+<div class="line">            <a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, i);</div>
 <div class="line">        }</div>
 <div class="line">        free(c);</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// we only get here after an interrupt; clean up</span></div>
 <div class="line">    <span class="keywordflow">for</span> (uint16_t s = 0; s &lt; n; s++)</div>
-<div class="line">        <a name="a23"></a><a class="code" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a>(srv[s]);</div>
-<div class="line">    <a name="a24"></a><a class="code" href="warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a>(w);</div>
+<div class="line">        <a name="a27"></a><a class="code" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a>(srv[s]);</div>
+<div class="line">    <a name="a28"></a><a class="code" href="warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a>(w);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Feb 27 2017 11:10:33 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Feb 28 2017 13:07:53 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
