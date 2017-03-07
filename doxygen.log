@@ -87,10 +87,6 @@ F/home/travis/build/NTAP/warpcore/lib/util.h:89: warning: argument 'fmt' of comm
 /home/travis/build/NTAP/warpcore/lib/util.h:231: warning: argument 'fmt' of command @param is not found in the argument list of ensure(e,...)
 /home/travis/build/NTAP/warpcore/lib/util.h:193: warning: argument 'fmt' of command @param is not found in the argument list of rwarn(dlevel, lps,...)
 /home/travis/build/NTAP/warpcore/lib/util.h:159: warning: argument 'fmt' of command @param is not found in the argument list of warn(dlevel,...)
-/home/travis/build/NTAP/warpcore/lib/warpcore.c:348: warning: argument 's' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
-/home/travis/build/NTAP/warpcore/lib/warpcore.c:348: warning: argument 'c' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
-/home/travis/build/NTAP/warpcore/lib/warpcore.c:348: warning: argument 's' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
-/home/travis/build/NTAP/warpcore/lib/warpcore.c:348: warning: argument 'c' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
 reeing entry tree
 Determining which enums are documented
 Computing member relations...
@@ -338,5 +334,5 @@ Patching output file 21/24
 Patching output file 22/24
 Patching output file 23/24
 Patching output file 24/24
-lookup cache used 323/65536 hits=2384 misses=329
+lookup cache used 323/65536 hits=2385 misses=329
 finished...

@@ -139,7 +139,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa83867b0dcc2a057772d7d6548a2be00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a warpcore engine on the given interface.  <a href="#aa83867b0dcc2a057772d7d6548a2be00">More...</a><br/></td></tr>
 <tr class="separator:aa83867b0dcc2a057772d7d6548a2be00"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae29607b63a6bccf591386fbdabb944bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w)</td></tr>
-<tr class="memdesc:ae29607b63a6bccf591386fbdabb944bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the chain <code>c</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#ae29607b63a6bccf591386fbdabb944bf">More...</a><br/></td></tr>
+<tr class="memdesc:ae29607b63a6bccf591386fbdabb944bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore engine down cleanly.  <a href="#ae29607b63a6bccf591386fbdabb944bf">More...</a><br/></td></tr>
 <tr class="separator:ae29607b63a6bccf591386fbdabb944bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d0097edbfdedda7f4a53d85c9f24705"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, const uint16_t port, const uint8_t flags)</td></tr>
 <tr class="memdesc:a3d0097edbfdedda7f4a53d85c9f24705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to the given local UDP port number.  <a href="#a3d0097edbfdedda7f4a53d85c9f24705">More...</a><br/></td></tr>
@@ -205,7 +205,7 @@ Functions</h2></td></tr>
 
 <p>Do not compute a UDP checksum for outgoing packets. </p>
 <p>Has no effect for the shim backend. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a0">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a0">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a0">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a1">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -410,12 +410,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the chain <code>c</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>. </p>
+<p>Shut a warpcore engine down cleanly. </p>
+<p>In addition to calling into the backend-specific cleanup function, it frees up the extra buffers and other memory structures.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to send data over. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">c</td><td><a class="el" href="structw__iov__chain.html" title="A chain of w_iov I/O vectors. ">w_iov_chain</a> to send.Shut a warpcore engine down cleanly. In addition to calling into the backend-specific cleanup function, it frees up the extra buffers and other memory structures.</td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">w</td><td>Warpcore engine. </td></tr>
+    <tr><td class="paramname">w</td><td>Warpcore engine. </td></tr>
   </table>
   </dd>
 </dl>
@@ -958,7 +957,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 7 2017 12:51:53 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 7 2017 15:52:01 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

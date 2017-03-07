@@ -223,7 +223,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keywordflow">if</span> (i == 0)</div>
 <div class="line">                <span class="keywordflow">continue</span>;</div>
 <div class="line"></div>
-<div class="line">            <span class="keyword">const</span> uint32_t i_len = <a name="a14"></a><a class="code" href="warpcore_8c.html#a41497cbbe1bd11e4414a3c42d7f0c2ba">w_iov_chain_len</a>(i, 0);</div>
 <div class="line">            <span class="keyword">struct </span><a class="code" href="structw__iov__chain.html">w_iov_chain</a> * o = 0; <span class="comment">// w_iov for outbound data</span></div>
 <div class="line">            uint16_t t = 0;</div>
 <div class="line"><span class="preprocessor">#if 0</span></div>
@@ -237,10 +236,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                <span class="keyword">const</span> time_t t = time(0);</div>
 <div class="line">                <span class="keyword">const</span> <span class="keywordtype">char</span> * ct = ctime(&amp;t);</div>
 <div class="line">                <span class="keyword">const</span> uint16_t l = (uint16_t)strlen(ct);</div>
-<div class="line">                <span class="keyword">struct </span><a name="_a15"></a><a class="code" href="structw__iov.html">w_iov</a> * v;</div>
+<div class="line">                <span class="keyword">struct </span><a name="_a14"></a><a class="code" href="structw__iov.html">w_iov</a> * v;</div>
 <div class="line">                STAILQ_FOREACH (v, i, next) {</div>
-<div class="line">                    memcpy(v-&gt;<a name="a16"></a><a class="code" href="structw__iov.html#a02cafa553312f8414ff2141c572218de">buf</a>, c, l); <span class="comment">// write a timestamp</span></div>
-<div class="line">                    v-&gt;<a name="a17"></a><a class="code" href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">len</a> = l;</div>
+<div class="line">                    memcpy(v-&gt;<a name="a15"></a><a class="code" href="structw__iov.html#a02cafa553312f8414ff2141c572218de">buf</a>, c, l); <span class="comment">// write a timestamp</span></div>
+<div class="line">                    v-&gt;<a name="a16"></a><a class="code" href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">len</a> = l;</div>
 <div class="line">                }</div>
 <div class="line">                o = i;</div>
 <div class="line">            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == srv[t++]) {</div>
@@ -257,54 +256,65 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor"></span>            <span class="keywordflow">if</span> (s == srv[t++]) {</div>
 <div class="line">                <span class="comment">// our benchmark</span></div>
 <div class="line">                <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structw__iov__chain.html">w_iov_chain</a> * tmp = 0;</div>
-<div class="line">                <span class="keywordflow">if</span> (tmp == 0)</div>
-<div class="line">                    tmp = <a name="a18"></a><a class="code" href="warpcore_8c.html#a464c918ca2cf68996ddc0e903128b2ee">w_alloc_size</a>(w, 0, 0);</div>
 <div class="line">                <span class="keyword">static</span> uint32_t tmp_len = 0;</div>
-<div class="line">                tmp_len += i_len;</div>
-<div class="line">                STAILQ_CONCAT(tmp, i);</div>
 <div class="line"></div>
-<div class="line">                <span class="comment">// did we receive all data?</span></div>
-<div class="line">                <span class="keywordflow">if</span> (tmp_len == ntohl(*(uint32_t *)STAILQ_FIRST(tmp)-&gt;buf)) {</div>
-<div class="line">                    <span class="comment">// yep, let&#39;s send the data back</span></div>
-<div class="line">                    <a name="a19"></a><a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, i);</div>
-<div class="line">                    i = o = tmp;</div>
-<div class="line">                    tmp = 0;</div>
+<div class="line">                <span class="comment">// if tmp is empty, the target size is in the first buf of the</span></div>
+<div class="line">                <span class="comment">// incoming chain; otherwise, it&#39;s in the first buf of tmp</span></div>
+<div class="line">                <span class="keyword">const</span> uint32_t size =</div>
+<div class="line">                    ntohl(*(uint32_t *)STAILQ_FIRST(tmp ? tmp : i)-&gt;buf);</div>
+<div class="line">                <span class="comment">// warn(crit, &quot;waiting for %d&quot;, size);</span></div>
+<div class="line"></div>
+<div class="line">                <span class="keywordflow">if</span> (tmp == 0) {</div>
+<div class="line">                    tmp = <a name="a17"></a><a class="code" href="warpcore_8c.html#a464c918ca2cf68996ddc0e903128b2ee">w_alloc_size</a>(w, 0, 0);</div>
 <div class="line">                    tmp_len = 0;</div>
 <div class="line">                }</div>
 <div class="line"></div>
+<div class="line">                <span class="keywordflow">while</span> (tmp_len &lt; size &amp;&amp; !STAILQ_EMPTY(i)) {</div>
+<div class="line">                    <span class="keyword">struct </span><a class="code" href="structw__iov.html">w_iov</a> * <span class="keyword">const</span> v = STAILQ_FIRST(i);</div>
+<div class="line">                    STAILQ_REMOVE_HEAD(i, next);</div>
+<div class="line">                    STAILQ_INSERT_TAIL(tmp, v, next);</div>
+<div class="line">                    tmp_len += v-&gt;<a class="code" href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">len</a>;</div>
+<div class="line">                }</div>
+<div class="line"></div>
+<div class="line">                <span class="comment">// did we receive all data?</span></div>
+<div class="line">                <span class="keywordflow">if</span> (tmp_len == size) {</div>
+<div class="line">                    <span class="comment">// yep, let&#39;s send the data back</span></div>
+<div class="line">                    o = tmp;</div>
+<div class="line">                    <span class="comment">// and keep any leftovers around</span></div>
+<div class="line">                    tmp = i;</div>
+<div class="line">                    <span class="keywordflow">if</span> (STAILQ_EMPTY(tmp)) {</div>
+<div class="line">                        <a name="a18"></a><a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, tmp);</div>
+<div class="line">                        tmp = i = 0;</div>
+<div class="line">                    }</div>
+<div class="line">                }</div>
+<div class="line"></div>
 <div class="line">            } <span class="keywordflow">else</span> {</div>
-<div class="line">                <a name="a20"></a><a class="code" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a>(<span class="stringliteral">&quot;unknown service&quot;</span>);</div>
+<div class="line">                <a name="a19"></a><a class="code" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a>(<span class="stringliteral">&quot;unknown service&quot;</span>);</div>
 <div class="line">            }</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// if the current service requires replying with data, do so</span></div>
 <div class="line">            <span class="keywordflow">if</span> (o) {</div>
-<div class="line">                <a name="a21"></a><a class="code" href="backend__netmap_8c.html#a85274ecaf9a766de49a373c8dec27734">w_tx</a>(s, o);</div>
-<div class="line">                <span class="keywordflow">while</span> (o-&gt;<a name="a22"></a><a class="code" href="structw__iov__chain.html#a6406152b6deca199ad2ba65ddad92b96">tx_pending</a>)</div>
-<div class="line">                    <a name="a23"></a><a class="code" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a>(w);</div>
+<div class="line">                <a name="a20"></a><a class="code" href="backend__netmap_8c.html#a85274ecaf9a766de49a373c8dec27734">w_tx</a>(s, o);</div>
+<div class="line">                <span class="keywordflow">while</span> (o-&gt;<a name="a21"></a><a class="code" href="structw__iov__chain.html#a6406152b6deca199ad2ba65ddad92b96">tx_pending</a>)</div>
+<div class="line">                    <a name="a22"></a><a class="code" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a>(w);</div>
 <div class="line">            }</div>
 <div class="line"></div>
-<div class="line">            <span class="comment">// track how much data was served</span></div>
-<div class="line">            <span class="keyword">const</span> uint32_t o_len = <a class="code" href="warpcore_8c.html#a41497cbbe1bd11e4414a3c42d7f0c2ba">w_iov_chain_len</a>(o, 0);</div>
-<div class="line">            <span class="keywordflow">if</span> (i_len || o_len)</div>
-<div class="line">                <a name="a24"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a25"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64faa4abb266e72efba828327b605b2ab0f4">info</a>, <span class="stringliteral">&quot;handled %d byte%s in, %d byte%s out&quot;</span>, i_len,</div>
-<div class="line">                     <a name="a26"></a><a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(i_len), o_len, <a class="code" href="util_8h.html#a0a01a943f8b9a66cdb3221d7e39c8f5d">plural</a>(o_len));</div>
-<div class="line"></div>
 <div class="line">            <span class="comment">// we are done serving the received data</span></div>
-<div class="line">            <a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, i);</div>
+<div class="line">            <a class="code" href="warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7">w_free</a>(w, o ? o : i);</div>
 <div class="line">        }</div>
 <div class="line">        free(c);</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// we only get here after an interrupt; clean up</span></div>
 <div class="line">    <span class="keywordflow">for</span> (uint16_t s = 0; s &lt; n; s++)</div>
-<div class="line">        <a name="a27"></a><a class="code" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a>(srv[s]);</div>
-<div class="line">    <a name="a28"></a><a class="code" href="warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a>(w);</div>
+<div class="line">        <a name="a23"></a><a class="code" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a>(srv[s]);</div>
+<div class="line">    <a name="a24"></a><a class="code" href="warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a>(w);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 7 2017 12:51:53 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Mar 7 2017 15:52:01 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
