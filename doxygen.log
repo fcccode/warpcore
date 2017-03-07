@@ -192,10 +192,10 @@ Generating docs for file warpcore.c...
 Generating call graph for function alloc_count
 Generating call graph for function w_alloc_count
 Generating call graph for function w_alloc_size
-Generating call graph/home/travis/build/NTAP/warpcore/lib/warpcore.c:349: warning: argument 's' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
-/home/travis/build/NTAP/warpcore/lib/warpcore.c:349: warning: argument 'c' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
-/home/travis/build/NTAP/warpcore/lib/warpcore.c:349: warning: argument 's' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
-/home/travis/build/NTAP/warpcore/lib/warpcore.c:349: warning: argument 'c' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
+Generating call graph/home/travis/build/NTAP/warpcore/lib/warpcore.c:348: warning: argument 's' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
+/home/travis/build/NTAP/warpcore/lib/warpcore.c:348: warning: argument 'c' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
+/home/travis/build/NTAP/warpcore/lib/warpcore.c:348: warning: argument 's' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
+/home/travis/build/NTAP/warpcore/lib/warpcore.c:348: warning: argument 'c' of command @param is not found in the argument list of w_cleanup(struct warpcore *const w)
  for function w_bind
 Generating call graph for function w_cleanup
 Generating call graph for function w_close
