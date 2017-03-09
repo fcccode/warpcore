@@ -134,7 +134,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a85274ecaf9a766de49a373c8dec27734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the chain <code>c</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#a85274ecaf9a766de49a373c8dec27734">More...</a><br/></td></tr>
 <tr class="separator:a85274ecaf9a766de49a373c8dec27734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f7d5dfbb0e11df581c3fcc6fe3015c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1">w_nic_rx</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w)</td></tr>
-<tr class="memdesc:a3f7d5dfbb0e11df581c3fcc6fe3015c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger netmap to make new received data available to <a class="el" href="warpcore_8c.html#a56a86a977786ce031b974f17536c1c4e" title="Iterates over any new data in the RX rings, appending them to the w_sock::iv socket buffers of the re...">w_rx()</a>.  <a href="#a3f7d5dfbb0e11df581c3fcc6fe3015c1">More...</a><br/></td></tr>
+<tr class="memdesc:a3f7d5dfbb0e11df581c3fcc6fe3015c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger netmap to make new received data available to <a class="el" href="warpcore_8c.html#ab8cd7c5f3ed82f716e86f42c45eaf739" title="Return any new data that has been received on a socket by appending it to c. ">w_rx()</a>.  <a href="#a3f7d5dfbb0e11df581c3fcc6fe3015c1">More...</a><br/></td></tr>
 <tr class="separator:a3f7d5dfbb0e11df581c3fcc6fe3015c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cd1929b5a30a3d3980feaaffb4c95ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w)</td></tr>
 <tr class="memdesc:a8cd1929b5a30a3d3980feaaffb4c95ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push data placed in the TX rings via <a class="el" href="udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c" title="Sends a payload contained in a w_sock::ov via UDP. ">udp_tx()</a> and similar methods out onto the link.  <a href="#a8cd1929b5a30a3d3980feaaffb4c95ab">More...</a><br/></td></tr>
@@ -317,7 +317,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Trigger netmap to make new received data available to <a class="el" href="warpcore_8c.html#a56a86a977786ce031b974f17536c1c4e" title="Iterates over any new data in the RX rings, appending them to the w_sock::iv socket buffers of the re...">w_rx()</a>. </p>
+<p>Trigger netmap to make new received data available to <a class="el" href="warpcore_8c.html#ab8cd7c5f3ed82f716e86f42c45eaf739" title="Return any new data that has been received on a socket by appending it to c. ">w_rx()</a>. </p>
 <p>Iterates over any new data in the RX rings, calling <a class="el" href="eth_8c.html#a0081995cf396c79afb149b0b4646f4b0" title="Receive an Ethernet frame. ">eth_rx()</a> for each.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -325,7 +325,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a10">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a25">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a10">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a24">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -351,7 +351,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a22">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a19">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a21">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a18">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -388,7 +388,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a20">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a17">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a19">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a16">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -418,7 +418,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Mar 7 2017 15:52:01 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 9 2017 14:55:08 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

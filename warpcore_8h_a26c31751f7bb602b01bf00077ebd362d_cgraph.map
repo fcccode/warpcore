@@ -1,3 +1,3 @@
 <map id="w_close" name="w_close">
-<area shape="rect" id="node2" href="$warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7" title="Return a w_iov chain obtained via w_alloc() or w_rx() back to warpcore. " alt="" coords="125,5,187,32"/>
+<area shape="rect" id="node2" href="$warpcore_8c.html#ade585dbd786f22b06727ff3a00d62ff7" title="Return a w_iov chain obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore. " alt="" coords="125,5,187,32"/>
 </map>

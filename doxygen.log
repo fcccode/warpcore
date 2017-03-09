@@ -181,17 +181,17 @@ Generating call graph for function udp_tx
 Generating docs for file util.c...
 Generating docs for file util.h...
 Generating docs for file warpcore.c...
-Generating call graph for function alloc_count
-Generating call graph for function w_alloc_count
-Generating call graph for function w_alloc_size
+Generating call graph for function alloc_cnt
+Generating call graph for function w_alloc_cnt
+Generating call graph for function w_alloc_len
 Generating call graph for function w_bind
 Generating call graph for function w_cleanup
 Generating call graph for function w_close
 Generating call graph for function w_connect
 Generating call graph for function w_init
 Generating docs for file warpcore.h...
-Generating call graph for function w_alloc_count
-Generating call graph for function w_alloc_size
+Generating call graph for function w_alloc_cnt
+Generating call graph for function w_alloc_len
 Generating call graph for function w_bind
 Generating call graph for function w_cleanup
 Generating call graph for function w_close
@@ -334,5 +334,5 @@ Patching output file 21/24
 Patching output file 22/24
 Patching output file 23/24
 Patching output file 24/24
-lookup cache used 323/65536 hits=2385 misses=329
+lookup cache used 322/65536 hits=2368 misses=328
 finished...
