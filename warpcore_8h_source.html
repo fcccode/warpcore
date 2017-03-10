@@ -211,7 +211,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;extern uint32_t <a class="code" href="warpcore_8h.html#aec5a5bdb16a124254766c349768c2d7e">w_iov_stailq_cnt</a>(const struct <a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> * const q);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;extern <span class="keywordtype">int</span> __attribute__((nonnull)) <a class="code" href="warpcore_8h.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;extern <span class="keywordtype">int</span> __attribute__((nonnull)) <a class="code" href="warpcore_8h.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a>(const struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<a class="code" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384">w_rx</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s, struct <a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> * const i);</div>
@@ -273,12 +273,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="warpcore_8h_html_a07d8e5b61adc2c9fe1bd32c663a7e23f"><div class="ttname"><a href="warpcore_8h.html#a07d8e5b61adc2c9fe1bd32c663a7e23f">w_disconnect</a></div><div class="ttdeci">void w_disconnect(struct w_sock *const s)</div><div class="ttdef"><b>Definition:</b> warpcore.c:218</div></div>
 <div class="ttc" id="warpcore_8h_html_a83b86f011acb496a1aa350a83442be77"><div class="ttname"><a href="warpcore_8h.html#a83b86f011acb496a1aa350a83442be77">SLIST_HEAD</a></div><div class="ttdeci">SLIST_HEAD(w_sock_slist, w_sock)</div><div class="ttdoc">A chain of w_sock socket. </div></div>
 <div class="ttc" id="structw__iov_html_a63096f96ebff68793ccac843ad3354ab"><div class="ttname"><a href="structw__iov.html#a63096f96ebff68793ccac843ad3354ab">w_iov::STAILQ_ENTRY</a></div><div class="ttdeci">STAILQ_ENTRY(w_iov) next</div><div class="ttdoc">Next w_iov in a w_iov_stailq. </div></div>
+<div class="ttc" id="warpcore_8h_html_aaf46056f39cb452d908ddac8cf6e57c5"><div class="ttname"><a href="warpcore_8h.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a></div><div class="ttdeci">int w_fd(const struct w_sock *const s)</div><div class="ttdoc">Return the file descriptor associated with a w_sock. </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:207</div></div>
 <div class="ttc" id="structwarpcore_html_a5da908a6cd6b06adad4e592fa9b6c680"><div class="ttname"><a href="structwarpcore.html#a5da908a6cd6b06adad4e592fa9b6c680">warpcore::rip</a></div><div class="ttdeci">uint32_t rip</div><div class="ttdoc">Our default IPv4 router IP address. </div><div class="ttdef"><b>Definition:</b> backend.h:91</div></div>
-<div class="ttc" id="warpcore_8h_html_a12251a4b704a157f47ecc763b1e68ca2"><div class="ttname"><a href="warpcore_8h.html#a12251a4b704a157f47ecc763b1e68ca2">w_fd</a></div><div class="ttdeci">int w_fd(struct w_sock *const s)</div><div class="ttdoc">Return the file descriptor associated with a w_sock. </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:207</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2017 12:15:18 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 14:48:37 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
