@@ -17,7 +17,7 @@ var searchData=
   ['in_5fcksum',['in_cksum',['../ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2',1,'ip.h']]],
   ['in_5fpseudo',['in_pseudo',['../ip_8h.html#a39e558260b696ca36c2a8af7b771b84a',1,'ip.h']]],
   ['info',['info',['../util_8h.html#a1889d6734420c17df6105c658525f64faa4abb266e72efba828327b605b2ab0f4',1,'util.h']]],
-  ['iov',['iov',['../structwarpcore.html#aa466094411d45b8feaa9d62214500ba7',1,'warpcore']]],
+  ['iov',['iov',['../structwarpcore.html#a56689270a25cc3e41cfbd4f40b28596c',1,'warpcore']]],
   ['iov_5fbuf_5flen',['IOV_BUF_LEN',['../backend_8h.html#add093141fd48f37dd9fbcfbed326705b',1,'backend.h']]],
   ['ip',['ip',['../structw__hdr.html#ad5e4784894672338870380104db362a8',1,'w_hdr::ip()'],['../structwarpcore.html#a826c3faeb59ca3aa16636edf28116f96',1,'warpcore::ip()'],['../structw__iov.html#a693d49529a1993d2d72e3f2eb97df183',1,'w_iov::ip()']]],
   ['ip_2ec',['ip.c',['../ip_8c.html',1,'']]],
@@ -47,6 +47,5 @@ var searchData=
   ['ip_5ftx',['ip_tx',['../ip_8c.html#a2165f6158886310cb7d3cdb1e0b5646d',1,'ip_tx(struct warpcore *const w, struct w_iov *const v, const uint16_t len):&#160;ip.c'],['../ip_8h.html#a2165f6158886310cb7d3cdb1e0b5646d',1,'ip_tx(struct warpcore *const w, struct w_iov *const v, const uint16_t len):&#160;ip.c']]],
   ['ip_5ftx_5fwith_5frx_5fbuf',['ip_tx_with_rx_buf',['../ip_8h.html#a8a134c59f20ae8978f44af03f25fa6f1',1,'ip.h']]],
   ['ip_5fv',['ip_v',['../ip_8h.html#a9cf43471a59a136858ea093070660c79',1,'ip.h']]],
-  ['is_5fzero',['IS_ZERO',['../eth_8h.html#aab09391c95d8babed73e853af8652bb3',1,'eth.h']]],
-  ['iv',['iv',['../structw__sock.html#ada65e4fbf06221e7fb73fabd1dd1be8c',1,'w_sock']]]
+  ['is_5fzero',['IS_ZERO',['../eth_8h.html#aab09391c95d8babed73e853af8652bb3',1,'eth.h']]]
 ];

@@ -99,7 +99,7 @@ Collaboration diagram for warpcore:</div>
 <div class="dyncontent">
 <div class="center"><img src="structwarpcore__coll__graph.png" border="0" usemap="#warpcore_coll__map" alt="Collaboration graph"/></div>
 <map name="warpcore_coll__map" id="warpcore_coll__map">
-<area shape="rect" id="node2" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="5,5,60,32"/><area shape="rect" id="node3" href="structw__iov__chain.html" title="A chain of w_iov I/O vectors. " alt="" coords="86,5,180,32"/></map>
+<area shape="rect" id="node2" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="5,5,60,32"/><area shape="rect" id="node3" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="86,5,180,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -113,9 +113,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aa466094411d45b8feaa9d62214500ba7"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwarpcore.html#aa466094411d45b8feaa9d62214500ba7">iov</a></td></tr>
-<tr class="memdesc:aa466094411d45b8feaa9d62214500ba7"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers available.  <a href="#aa466094411d45b8feaa9d62214500ba7">More...</a><br/></td></tr>
-<tr class="separator:aa466094411d45b8feaa9d62214500ba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56689270a25cc3e41cfbd4f40b28596c"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwarpcore.html#a56689270a25cc3e41cfbd4f40b28596c">iov</a></td></tr>
+<tr class="memdesc:a56689270a25cc3e41cfbd4f40b28596c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tail queue of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers available.  <a href="#a56689270a25cc3e41cfbd4f40b28596c">More...</a><br/></td></tr>
+<tr class="separator:a56689270a25cc3e41cfbd4f40b28596c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a826c3faeb59ca3aa16636edf28116f96"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structwarpcore.html#a826c3faeb59ca3aa16636edf28116f96">ip</a></td></tr>
 <tr class="memdesc:a826c3faeb59ca3aa16636edf28116f96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local IPv4 address used on this interface.  <a href="#a826c3faeb59ca3aa16636edf28116f96">More...</a><br/></td></tr>
 <tr class="separator:a826c3faeb59ca3aa16636edf28116f96"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,17 +234,17 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aa466094411d45b8feaa9d62214500ba7"></a>
+<a class="anchor" id="a56689270a25cc3e41cfbd4f40b28596c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structw__iov__chain.html">w_iov_chain</a> warpcore::iov</td>
+          <td class="memname">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> warpcore::iov</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>List of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers available. </p>
+<p>Tail queue of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers available. </p>
 
 </div>
 </div>
@@ -338,7 +338,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2017 08:15:29 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 09:20:26 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

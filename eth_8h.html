@@ -291,7 +291,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Receive an Ethernet frame. </p>
-<p>This is the lowest-level RX function, called for each new inbound frame from <a class="el" href="warpcore_8c.html#ab8cd7c5f3ed82f716e86f42c45eaf739" title="Return any new data that has been received on a socket by appending it to c. ">w_rx()</a>. Dispatches the frame to either <a class="el" href="ip_8c.html#aae879ef1c07cea2d287aae2bbd675b97" title="Receive processing for an IPv4 packet. ">ip_rx()</a> or <a class="el" href="arp_8c.html#aff37d816e4c66467ad4bde4d94d0fcef" title="Receive an ARP packet, and react to it. ">arp_rx()</a>, based on its EtherType.</p>
+<p>This is the lowest-level RX function, called for each new inbound frame from <a class="el" href="warpcore_8c.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a>. Dispatches the frame to either <a class="el" href="ip_8c.html#aae879ef1c07cea2d287aae2bbd675b97" title="Receive processing for an IPv4 packet. ">ip_rx()</a> or <a class="el" href="arp_8c.html#aff37d816e4c66467ad4bde4d94d0fcef" title="Receive an ARP packet, and react to it. ">arp_rx()</a>, based on its EtherType.</p>
 <p>The Ethernet frame to operate on is in the current netmap lot of the indicated RX ring.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -391,7 +391,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 10 2017 08:15:29 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 09:20:26 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
