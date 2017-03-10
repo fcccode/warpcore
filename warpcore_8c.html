@@ -265,7 +265,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Return a spare <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> from the pool of the given warpcore engine. </p>
-<p>Needs to be returned via STAILQ_INSERT_HEAD(&amp;w-&gt;iov, v, next).</p>
+<p>Needs to be returned to w-&gt;iov via STAILQ_INSERT_HEAD() or STAILQ_CONCAT().</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">w</td><td>Warpcore engine.</td></tr>
@@ -915,7 +915,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 9 2017 15:42:09 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 10 2017 08:15:29 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
