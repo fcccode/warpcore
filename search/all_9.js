@@ -17,7 +17,6 @@ var searchData=
   ['in_5fcksum',['in_cksum',['../ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2',1,'ip.h']]],
   ['in_5fpseudo',['in_pseudo',['../ip_8h.html#a39e558260b696ca36c2a8af7b771b84a',1,'ip.h']]],
   ['info',['info',['../util_8h.html#a1889d6734420c17df6105c658525f64faa4abb266e72efba828327b605b2ab0f4',1,'util.h']]],
-  ['iov',['iov',['../structwarpcore.html#a56689270a25cc3e41cfbd4f40b28596c',1,'warpcore']]],
   ['iov_5fbuf_5flen',['IOV_BUF_LEN',['../backend_8h.html#add093141fd48f37dd9fbcfbed326705b',1,'backend.h']]],
   ['ip',['ip',['../structw__hdr.html#ad5e4784894672338870380104db362a8',1,'w_hdr::ip()'],['../structwarpcore.html#a826c3faeb59ca3aa16636edf28116f96',1,'warpcore::ip()'],['../structw__iov.html#a693d49529a1993d2d72e3f2eb97df183',1,'w_iov::ip()']]],
   ['ip_2ec',['ip.c',['../ip_8c.html',1,'']]],
