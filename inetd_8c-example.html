@@ -184,7 +184,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <a name="a2"></a><a class="code" href="plat_8c.html#a75ef82637a8cda556efb781b84ec5169">plat_setaffinity</a>();</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// initialize a warpcore engine on the given network interface</span></div>
-<div class="line">    <span class="keyword">struct </span><a name="_a3"></a><a class="code" href="structwarpcore.html">warpcore</a> * w = <a name="a4"></a><a class="code" href="warpcore_8c.html#aa83867b0dcc2a057772d7d6548a2be00">w_init</a>(ifname, 0);</div>
+<div class="line">    <span class="keyword">struct </span><a name="_a3"></a><a class="code" href="structw__engine.html">w_engine</a> * w = <a name="a4"></a><a class="code" href="warpcore_8c.html#a20d62fd50464b5e3f47fd357386ddbed">w_init</a>(ifname, 0);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// install a signal handler to clean up after interrupt</span></div>
 <div class="line">    <a name="a5"></a><a class="code" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(signal(SIGTERM, &amp;terminate) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
@@ -193,12 +193,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="comment">// start four inetd-like &quot;small services&quot; and one benchmark of our own</span></div>
 <div class="line">    <span class="keyword">struct </span><a name="_a6"></a><a class="code" href="structw__sock.html">w_sock</a> * <span class="keyword">const</span> srv[] = {</div>
 <div class="line"><span class="preprocessor">#if 0</span></div>
-<div class="line"><span class="preprocessor"></span>        <a name="a7"></a><a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(7), flags),</div>
-<div class="line">        <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(9), flags),</div>
-<div class="line">        <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(13), flags),</div>
-<div class="line">        <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(37), flags)</div>
+<div class="line"><span class="preprocessor"></span>        <a name="a7"></a><a class="code" href="warpcore_8c.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a>(w, htons(7), flags),</div>
+<div class="line">        <a class="code" href="warpcore_8c.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a>(w, htons(9), flags),</div>
+<div class="line">        <a class="code" href="warpcore_8c.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a>(w, htons(13), flags),</div>
+<div class="line">        <a class="code" href="warpcore_8c.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a>(w, htons(37), flags)</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor"></span>        <a class="code" href="warpcore_8c.html#a3d0097edbfdedda7f4a53d85c9f24705">w_bind</a>(w, htons(55555), flags)</div>
+<div class="line"><span class="preprocessor"></span>        <a class="code" href="warpcore_8c.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a>(w, htons(55555), flags)</div>
 <div class="line">    };</div>
 <div class="line">    uint16_t n = 0;</div>
 <div class="line">    <span class="keyword">struct </span>pollfd fds[] = {</div>
@@ -218,10 +218,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            poll(fds, n, -1);</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// receive new data (there may not be any if busy-waiting)</span></div>
-<div class="line">        <a name="a10"></a><a class="code" href="backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1">w_nic_rx</a>(w);</div>
+<div class="line">        <a name="a10"></a><a class="code" href="backend__netmap_8c.html#a1d597d435427917b298137d8e10521e4">w_nic_rx</a>(w);</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// for each of the small services that have received data...</span></div>
-<div class="line">        <span class="keyword">struct </span>w_sock_slist * sl = <a name="a11"></a><a class="code" href="warpcore_8c.html#adfa64f243bbe6250a1b54814671f5d13">w_rx_ready</a>(w);</div>
+<div class="line">        <span class="keyword">struct </span>w_sock_slist * sl = <a name="a11"></a><a class="code" href="warpcore_8c.html#a96ef2718ef0ecea4604195c399a97c95">w_rx_ready</a>(w);</div>
 <div class="line">        <span class="keyword">struct </span><a class="code" href="structw__sock.html">w_sock</a> * s;</div>
 <div class="line">        SLIST_FOREACH (s, sl, next_rx) {</div>
 <div class="line">            <span class="comment">// ...check if any new data has arrived on the socket</span></div>
@@ -298,11 +298,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keywordflow">if</span> (!STAILQ_EMPTY(&amp;o)) {</div>
 <div class="line">                <a name="a18"></a><a class="code" href="backend__netmap_8c.html#ae4e224c9a1e5d17f44ea007ff2aa4692">w_tx</a>(s, &amp;o);</div>
 <div class="line">                <span class="keywordflow">while</span> (<a name="a19"></a><a class="code" href="warpcore_8h.html#adad79a0011e52c38d52df980843fff78">w_tx_pending</a>(&amp;o))</div>
-<div class="line">                    <a name="a20"></a><a class="code" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab">w_nic_tx</a>(w);</div>
+<div class="line">                    <a name="a20"></a><a class="code" href="backend__netmap_8c.html#a3fba5669717435248ca7b7945a9b9d75">w_nic_tx</a>(w);</div>
 <div class="line">            }</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// we are done serving the received data</span></div>
-<div class="line">            <a name="a21"></a><a class="code" href="warpcore_8c.html#aec8c5dc5745234524f19e7f71c6a5ce8">w_free</a>(w, &amp;i);</div>
+<div class="line">            <a name="a21"></a><a class="code" href="warpcore_8c.html#a7dda1788a8e14dc34142676afa6a4e13">w_free</a>(w, &amp;i);</div>
 <div class="line">        }</div>
 <div class="line">        free(sl);</div>
 <div class="line">    }</div>
@@ -310,13 +310,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="comment">// we only get here after an interrupt; clean up</span></div>
 <div class="line">    <span class="keywordflow">for</span> (uint16_t s = 0; s &lt; n; s++)</div>
 <div class="line">        <a name="a22"></a><a class="code" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a>(srv[s]);</div>
-<div class="line">    <a name="a23"></a><a class="code" href="warpcore_8c.html#ae29607b63a6bccf591386fbdabb944bf">w_cleanup</a>(w);</div>
+<div class="line">    <a name="a23"></a><a class="code" href="warpcore_8c.html#a726b06c06493678f7f48c889bbcd30a5">w_cleanup</a>(w);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2017 11:12:03 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2017 12:33:57 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

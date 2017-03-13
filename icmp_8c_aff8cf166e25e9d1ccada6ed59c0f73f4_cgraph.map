@@ -1,7 +1,0 @@
-<map id="icmp_tx" name="icmp_tx">
-<area shape="rect" id="node2" href="$backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="123,5,197,32"/>
-<area shape="rect" id="node3" href="$ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="246,56,325,83"/>
-<area shape="rect" id="node4" href="$ip_8c.html#a2165f6158886310cb7d3cdb1e0b5646d" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="135,107,185,133"/>
-<area shape="rect" id="node6" href="$backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="123,157,197,184"/>
-<area shape="rect" id="node5" href="$eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="256,107,315,133"/>
-</map>

@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['backend',['backend',['../structwarpcore.html#a0777fd6ed721989248c4332f234a0058',1,'warpcore']]],
+  ['backend',['backend',['../structw__engine.html#a9e3c98639db97a503c8093070f13d765',1,'w_engine']]],
   ['backend_2eh',['backend.h',['../backend_8h.html',1,'']]],
   ['backend_5fbind',['backend_bind',['../backend_8h.html#a7ee48b1b41c1c5293f7cca261794b338',1,'backend_bind(struct w_sock *s):&#160;backend_netmap.c'],['../backend__netmap_8c.html#a7ee48b1b41c1c5293f7cca261794b338',1,'backend_bind(struct w_sock *s):&#160;backend_netmap.c'],['../backend__shim_8c.html#a7ee48b1b41c1c5293f7cca261794b338',1,'backend_bind(struct w_sock *s):&#160;backend_shim.c']]],
-  ['backend_5fcleanup',['backend_cleanup',['../backend_8h.html#a0d3c16a0d0fbe62e779252b4f085abd3',1,'backend_cleanup(struct warpcore *const w):&#160;backend_netmap.c'],['../backend__netmap_8c.html#a0d3c16a0d0fbe62e779252b4f085abd3',1,'backend_cleanup(struct warpcore *const w):&#160;backend_netmap.c'],['../backend__shim_8c.html#a0d3c16a0d0fbe62e779252b4f085abd3',1,'backend_cleanup(struct warpcore *const w):&#160;backend_shim.c']]],
+  ['backend_5fcleanup',['backend_cleanup',['../backend_8h.html#a7e43d05a55650db2be88e9eece99905d',1,'backend_cleanup(struct w_engine *const w):&#160;backend_netmap.c'],['../backend__netmap_8c.html#a7e43d05a55650db2be88e9eece99905d',1,'backend_cleanup(struct w_engine *const w):&#160;backend_netmap.c'],['../backend__shim_8c.html#a7e43d05a55650db2be88e9eece99905d',1,'backend_cleanup(struct w_engine *const w):&#160;backend_shim.c']]],
   ['backend_5fconnect',['backend_connect',['../backend_8h.html#af5df52522d52bfed04aa270094deaa78',1,'backend_connect(struct w_sock *const s):&#160;backend_netmap.c'],['../backend__netmap_8c.html#af5df52522d52bfed04aa270094deaa78',1,'backend_connect(struct w_sock *const s):&#160;backend_netmap.c'],['../backend__shim_8c.html#af5df52522d52bfed04aa270094deaa78',1,'backend_connect(struct w_sock *const s):&#160;backend_shim.c']]],
-  ['backend_5finit',['backend_init',['../backend_8h.html#af7b0aa97cf956c2110e4ef0625e519fa',1,'backend_init(struct warpcore *w, const char *const ifname):&#160;backend_netmap.c'],['../backend__netmap_8c.html#af7b0aa97cf956c2110e4ef0625e519fa',1,'backend_init(struct warpcore *w, const char *const ifname):&#160;backend_netmap.c'],['../backend__shim_8c.html#af7b0aa97cf956c2110e4ef0625e519fa',1,'backend_init(struct warpcore *w, const char *const ifname):&#160;backend_shim.c']]],
+  ['backend_5finit',['backend_init',['../backend_8h.html#a2432ae030115026485bca23bb4e45972',1,'backend_init(struct w_engine *w, const char *const ifname):&#160;backend_netmap.c'],['../backend__netmap_8c.html#a2432ae030115026485bca23bb4e45972',1,'backend_init(struct w_engine *w, const char *const ifname):&#160;backend_netmap.c'],['../backend__shim_8c.html#a2432ae030115026485bca23bb4e45972',1,'backend_init(struct w_engine *w, const char *const ifname):&#160;backend_shim.c']]],
   ['backend_5fname',['backend_name',['../backend__netmap_8c.html#a7c5ea7d02c5d0693dfc377f3a7f929a1',1,'backend_name():&#160;backend_netmap.c'],['../backend__shim_8c.html#a7c5ea7d02c5d0693dfc377f3a7f929a1',1,'backend_name():&#160;backend_shim.c']]],
   ['backend_5fnetmap_2ec',['backend_netmap.c',['../backend__netmap_8c.html',1,'']]],
   ['backend_5fshim_2ec',['backend_shim.c',['../backend__shim_8c.html',1,'']]],
@@ -15,5 +15,5 @@ var searchData=
   ['bln',['BLN',['../util_8h.html#affc43d19d38fedbf7a83ea1730115c02',1,'util.h']]],
   ['blu',['BLU',['../util_8h.html#add9307de87f38e77d336751e305886f6',1,'util.h']]],
   ['buf',['buf',['../structw__iov.html#a02cafa553312f8414ff2141c572218de',1,'w_iov']]],
-  ['bufs',['bufs',['../structwarpcore.html#a67267a7e1b92f7fc8404bf7f9b92317e',1,'warpcore']]]
+  ['bufs',['bufs',['../structw__engine.html#afa8ad906202b2098b44fb6a5bdeb5c20',1,'w_engine']]]
 ];

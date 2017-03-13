@@ -128,15 +128,15 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7644917ba53d72cd4a71818d9ea19d1c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arp_8h.html#a7644917ba53d72cd4a71818d9ea19d1c">arp_rx</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *w, struct netmap_ring *const r)</td></tr>
-<tr class="memdesc:a7644917ba53d72cd4a71818d9ea19d1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive an ARP packet, and react to it.  <a href="#a7644917ba53d72cd4a71818d9ea19d1c">More...</a><br/></td></tr>
-<tr class="separator:a7644917ba53d72cd4a71818d9ea19d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a767793cec18e132d3875c6d374e8414f"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arp_8h.html#a767793cec18e132d3875c6d374e8414f">arp_who_has</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, const uint32_t dip)</td></tr>
-<tr class="memdesc:a767793cec18e132d3875c6d374e8414f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the Ethernet MAC address for target IP address <code>dip</code>.  <a href="#a767793cec18e132d3875c6d374e8414f">More...</a><br/></td></tr>
-<tr class="separator:a767793cec18e132d3875c6d374e8414f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29b1c1f926ec4ca21f78e3dd0addce21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arp_8h.html#a29b1c1f926ec4ca21f78e3dd0addce21">free_arp_cache</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w)</td></tr>
-<tr class="memdesc:a29b1c1f926ec4ca21f78e3dd0addce21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the ARP cache entries associated with engine <code>w</code>.  <a href="#a29b1c1f926ec4ca21f78e3dd0addce21">More...</a><br/></td></tr>
-<tr class="separator:a29b1c1f926ec4ca21f78e3dd0addce21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ec90ba3bb22f510ca5083c78434d6ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arp_8h.html#a4ec90ba3bb22f510ca5083c78434d6ad">arp_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, struct netmap_ring *const r)</td></tr>
+<tr class="memdesc:a4ec90ba3bb22f510ca5083c78434d6ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive an ARP packet, and react to it.  <a href="#a4ec90ba3bb22f510ca5083c78434d6ad">More...</a><br/></td></tr>
+<tr class="separator:a4ec90ba3bb22f510ca5083c78434d6ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26abe3672a2e5a135cd6af4970ca2f32"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arp_8h.html#a26abe3672a2e5a135cd6af4970ca2f32">arp_who_has</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint32_t dip)</td></tr>
+<tr class="memdesc:a26abe3672a2e5a135cd6af4970ca2f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the Ethernet MAC address for target IP address <code>dip</code>.  <a href="#a26abe3672a2e5a135cd6af4970ca2f32">More...</a><br/></td></tr>
+<tr class="separator:a26abe3672a2e5a135cd6af4970ca2f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b84f8ec20a55f766fcfcb9cd2d0d1e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arp_8h.html#a1b84f8ec20a55f766fcfcb9cd2d0d1e7">free_arp_cache</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
+<tr class="memdesc:a1b84f8ec20a55f766fcfcb9cd2d0d1e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free the ARP cache entries associated with engine <code>w</code>.  <a href="#a1b84f8ec20a55f766fcfcb9cd2d0d1e7">More...</a><br/></td></tr>
+<tr class="separator:a1b84f8ec20a55f766fcfcb9cd2d0d1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="ae83b89fd0db8b3a508c7f73dfc785a14"></a>
@@ -182,14 +182,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a7644917ba53d72cd4a71818d9ea19d1c"></a>
+<a class="anchor" id="a4ec90ba3bb22f510ca5083c78434d6ad"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void arp_rx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structwarpcore.html">warpcore</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
@@ -211,7 +211,7 @@ Functions</h2></td></tr>
 <p>The Ethernet frame to operate on is in the current netmap lot of the indicated RX ring.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">w</td><td>Warpcore engine </td></tr>
+    <tr><td class="paramname">w</td><td>Backend engine. </td></tr>
     <tr><td class="paramname">r</td><td>Currently active netmap RX ring. </td></tr>
   </table>
   </dd>
@@ -220,22 +220,22 @@ Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="arp_8h_a7644917ba53d72cd4a71818d9ea19d1c_cgraph.png" border="0" usemap="#arp_8h_a7644917ba53d72cd4a71818d9ea19d1c_cgraph" alt=""/></div>
-<map name="arp_8h_a7644917ba53d72cd4a71818d9ea19d1c_cgraph" id="arp_8h_a7644917ba53d72cd4a71818d9ea19d1c_cgraph">
-<area shape="rect" id="node2" href="arp_8c.html#a228bb245950c2ad2bdea4bf3a5387b58" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="139,69,213,96"/><area shape="rect" id="node6" href="arp_8c.html#a85913a2902204d3847343b1d31866215" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="112,132,240,159"/><area shape="rect" id="node3" href="backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="307,5,381,32"/><area shape="rect" id="node4" href="eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="315,56,373,83"/><area shape="rect" id="node5" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="307,107,381,133"/><area shape="rect" id="node7" href="arp_8c.html#a755a6595690a86527e7ef79847298d4a" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="289,157,399,184"/></map>
+<div class="center"><img src="arp_8h_a4ec90ba3bb22f510ca5083c78434d6ad_cgraph.png" border="0" usemap="#arp_8h_a4ec90ba3bb22f510ca5083c78434d6ad_cgraph" alt=""/></div>
+<map name="arp_8h_a4ec90ba3bb22f510ca5083c78434d6ad_cgraph" id="arp_8h_a4ec90ba3bb22f510ca5083c78434d6ad_cgraph">
+<area shape="rect" id="node2" href="arp_8c.html#a5af7c9e1c738d53368f4ea834ffb9e47" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="139,69,213,96"/><area shape="rect" id="node6" href="arp_8c.html#a0b4c8c542881f3936ab01600942e54a5" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="112,132,240,159"/><area shape="rect" id="node3" href="backend_8h.html#abd7f7d37dcf53e9045d18b6e0f2a57dc" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="307,5,381,32"/><area shape="rect" id="node4" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="315,56,373,83"/><area shape="rect" id="node5" href="backend__netmap_8c.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="307,107,381,133"/><area shape="rect" id="node7" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="289,157,399,184"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a767793cec18e132d3875c6d374e8414f"></a>
+<a class="anchor" id="a26abe3672a2e5a135cd6af4970ca2f32"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">uint8_t* arp_who_has </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structwarpcore.html">warpcore</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
@@ -256,7 +256,7 @@ Here is the call graph for this function:</div>
 <p>If there is no entry in the ARP cache for the Ethernet MAC address corresponding to IPv4 address <code>dip</code>, this function will block while attempting to resolve the address.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">w</td><td>Warpcore engine </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">dip</td><td>IP address that is the target of the ARP request</td></tr>
   </table>
   </dd>
@@ -266,22 +266,22 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="arp_8h_a767793cec18e132d3875c6d374e8414f_cgraph.png" border="0" usemap="#arp_8h_a767793cec18e132d3875c6d374e8414f_cgraph" alt=""/></div>
-<map name="arp_8h_a767793cec18e132d3875c6d374e8414f_cgraph" id="arp_8h_a767793cec18e132d3875c6d374e8414f_cgraph">
-<area shape="rect" id="node2" href="arp_8c.html#a755a6595690a86527e7ef79847298d4a" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="153,5,263,32"/><area shape="rect" id="node3" href="backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="171,56,245,83"/><area shape="rect" id="node4" href="eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="179,107,237,133"/><area shape="rect" id="node5" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="171,157,245,184"/><area shape="rect" id="node6" href="backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="171,208,245,235"/></map>
+<div class="center"><img src="arp_8h_a26abe3672a2e5a135cd6af4970ca2f32_cgraph.png" border="0" usemap="#arp_8h_a26abe3672a2e5a135cd6af4970ca2f32_cgraph" alt=""/></div>
+<map name="arp_8h_a26abe3672a2e5a135cd6af4970ca2f32_cgraph" id="arp_8h_a26abe3672a2e5a135cd6af4970ca2f32_cgraph">
+<area shape="rect" id="node2" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="153,5,263,32"/><area shape="rect" id="node3" href="backend_8h.html#abd7f7d37dcf53e9045d18b6e0f2a57dc" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="171,56,245,83"/><area shape="rect" id="node4" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="179,107,237,133"/><area shape="rect" id="node5" href="backend__netmap_8c.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="171,157,245,184"/><area shape="rect" id="node6" href="backend__netmap_8c.html#a1d597d435427917b298137d8e10521e4" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="171,208,245,235"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a29b1c1f926ec4ca21f78e3dd0addce21"></a>
+<a class="anchor" id="a1b84f8ec20a55f766fcfcb9cd2d0d1e7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void free_arp_cache </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structwarpcore.html">warpcore</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
         </tr>
@@ -291,7 +291,7 @@ Here is the call graph for this function:</div>
 <p>Free the ARP cache entries associated with engine <code>w</code>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>Warpcore engine. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>Backend engine. </td></tr>
   </table>
   </dd>
 </dl>
@@ -301,7 +301,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2017 11:12:03 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2017 12:33:57 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

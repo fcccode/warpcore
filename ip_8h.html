@@ -180,14 +180,14 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8a134c59f20ae8978f44af03f25fa6f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#a8a134c59f20ae8978f44af03f25fa6f1">ip_tx_with_rx_buf</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *w, const uint8_t p, void *const buf, const uint16_t len)</td></tr>
-<tr class="separator:a8a134c59f20ae8978f44af03f25fa6f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae879ef1c07cea2d287aae2bbd675b97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#aae879ef1c07cea2d287aae2bbd675b97">ip_rx</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, struct netmap_ring *const r)</td></tr>
-<tr class="memdesc:aae879ef1c07cea2d287aae2bbd675b97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive processing for an IPv4 packet.  <a href="#aae879ef1c07cea2d287aae2bbd675b97">More...</a><br/></td></tr>
-<tr class="separator:aae879ef1c07cea2d287aae2bbd675b97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2165f6158886310cb7d3cdb1e0b5646d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#a2165f6158886310cb7d3cdb1e0b5646d">ip_tx</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, struct <a class="el" href="structw__iov.html">w_iov</a> *const v, const uint16_t len)</td></tr>
-<tr class="memdesc:a2165f6158886310cb7d3cdb1e0b5646d"><td class="mdescLeft">&#160;</td><td class="mdescRight">IPv4 transmit processing for the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> <code>v</code> of length <code>len</code>.  <a href="#a2165f6158886310cb7d3cdb1e0b5646d">More...</a><br/></td></tr>
-<tr class="separator:a2165f6158886310cb7d3cdb1e0b5646d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abce4a5aefa4ece9002ca4499828716ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#abce4a5aefa4ece9002ca4499828716ee">ip_tx_with_rx_buf</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, const uint8_t p, void *const buf, const uint16_t len)</td></tr>
+<tr class="separator:abce4a5aefa4ece9002ca4499828716ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5140912b175371c1ed50dd8f4325a654"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#a5140912b175371c1ed50dd8f4325a654">ip_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct netmap_ring *const r)</td></tr>
+<tr class="memdesc:a5140912b175371c1ed50dd8f4325a654"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive processing for an IPv4 packet.  <a href="#a5140912b175371c1ed50dd8f4325a654">More...</a><br/></td></tr>
+<tr class="separator:a5140912b175371c1ed50dd8f4325a654"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5934c09781e39f8bec7f5eae021f791"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#ad5934c09781e39f8bec7f5eae021f791">ip_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov.html">w_iov</a> *const v, const uint16_t len)</td></tr>
+<tr class="memdesc:ad5934c09781e39f8bec7f5eae021f791"><td class="mdescLeft">&#160;</td><td class="mdescRight">IPv4 transmit processing for the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> <code>v</code> of length <code>len</code>.  <a href="#ad5934c09781e39f8bec7f5eae021f791">More...</a><br/></td></tr>
+<tr class="separator:ad5934c09781e39f8bec7f5eae021f791"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d5fa0202a9ab96e38a5769d8c6177f2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2">in_cksum</a> (const void *const buf, const uint16_t len)</td></tr>
 <tr class="memdesc:a7d5fa0202a9ab96e38a5769d8c6177f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the Internet checksum over buffer <code>buf</code> of length <code>len</code>.  <a href="#a7d5fa0202a9ab96e38a5769d8c6177f2">More...</a><br/></td></tr>
 <tr class="separator:a7d5fa0202a9ab96e38a5769d8c6177f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -429,15 +429,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        (<a class="code" href="structwarpcore.html#a826c3faeb59ca3aa16636edf28116f96">ip</a>)-&gt;vhl = (4 &lt;&lt; 4) + 5;                                              \</div>
-<div class="line">        (<a class="code" href="structwarpcore.html#a826c3faeb59ca3aa16636edf28116f96">ip</a>)-&gt;off = htons(<a class="code" href="ip_8h.html#ae2473f4a88d141d5298f92a4335b714a">IP_DF</a>);                                              \</div>
-<div class="line">        (<a class="code" href="structwarpcore.html#a826c3faeb59ca3aa16636edf28116f96">ip</a>)-&gt;ttl = 64; <span class="comment">/* XXX this should be configurable */</span>                  \</div>
-<div class="line">        (<a class="code" href="structwarpcore.html#a826c3faeb59ca3aa16636edf28116f96">ip</a>)-&gt;p = <a class="code" href="ip_8h.html#a0a2d72ff4c961f5e8b58c40cc4e1987c">IP_P_UDP</a>;                                                    \</div>
-<div class="line">        (<a class="code" href="structwarpcore.html#a826c3faeb59ca3aa16636edf28116f96">ip</a>)-&gt;cksum = 0;                                                       \</div>
+<div class="line">        (<a class="code" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a>)-&gt;vhl = (4 &lt;&lt; 4) + 5;                                              \</div>
+<div class="line">        (<a class="code" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a>)-&gt;off = htons(<a class="code" href="ip_8h.html#ae2473f4a88d141d5298f92a4335b714a">IP_DF</a>);                                              \</div>
+<div class="line">        (<a class="code" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a>)-&gt;ttl = 64; <span class="comment">/* XXX this should be configurable */</span>                  \</div>
+<div class="line">        (<a class="code" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a>)-&gt;p = <a class="code" href="ip_8h.html#a0a2d72ff4c961f5e8b58c40cc4e1987c">IP_P_UDP</a>;                                                    \</div>
+<div class="line">        (<a class="code" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a>)-&gt;cksum = 0;                                                       \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
+<div class="ttc" id="structw__engine_html_a9cd4f582bf408fb94b38158f3b4fee19"><div class="ttname"><a href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">w_engine::ip</a></div><div class="ttdeci">uint32_t ip</div><div class="ttdoc">Local IPv4 address used on this interface. </div><div class="ttdef"><b>Definition:</b> backend.h:86</div></div>
 <div class="ttc" id="ip_8h_html_ae2473f4a88d141d5298f92a4335b714a"><div class="ttname"><a href="ip_8h.html#ae2473f4a88d141d5298f92a4335b714a">IP_DF</a></div><div class="ttdeci">#define IP_DF</div><div class="ttdoc">&quot;Don&#39;t fragment&quot; flag. </div><div class="ttdef"><b>Definition:</b> ip.h:44</div></div>
 <div class="ttc" id="ip_8h_html_a0a2d72ff4c961f5e8b58c40cc4e1987c"><div class="ttname"><a href="ip_8h.html#a0a2d72ff4c961f5e8b58c40cc4e1987c">IP_P_UDP</a></div><div class="ttdeci">#define IP_P_UDP</div><div class="ttdoc">IP protocol number for UDP. </div><div class="ttdef"><b>Definition:</b> ip.h:75</div></div>
-<div class="ttc" id="structwarpcore_html_a826c3faeb59ca3aa16636edf28116f96"><div class="ttname"><a href="structwarpcore.html#a826c3faeb59ca3aa16636edf28116f96">warpcore::ip</a></div><div class="ttdeci">uint32_t ip</div><div class="ttdoc">Local IPv4 address used on this interface. </div><div class="ttdef"><b>Definition:</b> backend.h:86</div></div>
 </div><!-- fragment -->
 <p>Initialize the static fields in an IPv4 <a class="el" href="structip__hdr.html" title="An IPv4 header representation; see RFC791 ">ip_hdr</a> header. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -650,14 +650,14 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aae879ef1c07cea2d287aae2bbd675b97"></a>
+<a class="anchor" id="a5140912b175371c1ed50dd8f4325a654"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void ip_rx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structwarpcore.html">warpcore</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
@@ -675,12 +675,12 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Receive processing for an IPv4 packet. </p>
-<p>Verifies the checksum and dispatches the packet to <a class="el" href="udp_8c.html#a64717cdca2e36117f573780e2458fdbb" title="Receive a UDP packet. ">udp_rx()</a> or <a class="el" href="icmp_8c.html#ac982da151cd3a844185bf895f602ec24" title="Analyze an inbound ICMP packet and react to it. ">icmp_rx()</a>, as appropriate.</p>
+<p>Verifies the checksum and dispatches the packet to <a class="el" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. ">udp_rx()</a> or <a class="el" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. ">icmp_rx()</a>, as appropriate.</p>
 <p>The Ethernet frame to operate on is in the current netmap lot of the indicated RX ring.</p>
 <p>IPv4 options are currently unsupported; as are IPv4 fragments.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">w</td><td>Warpcore engine. </td></tr>
+    <tr><td class="paramname">w</td><td>Backend engine. </td></tr>
     <tr><td class="paramname">r</td><td>Currently active netmap RX ring. </td></tr>
   </table>
   </dd>
@@ -689,22 +689,22 @@ Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="ip_8h_aae879ef1c07cea2d287aae2bbd675b97_cgraph.png" border="0" usemap="#ip_8h_aae879ef1c07cea2d287aae2bbd675b97_cgraph" alt=""/></div>
-<map name="ip_8h_aae879ef1c07cea2d287aae2bbd675b97_cgraph" id="ip_8h_aae879ef1c07cea2d287aae2bbd675b97_cgraph">
-<area shape="rect" id="node2" href="ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="475,133,554,160"/><area shape="rect" id="node3" href="udp_8c.html#a64717cdca2e36117f573780e2458fdbb" title="Receive a UDP packet. " alt="" coords="108,108,169,134"/><area shape="rect" id="node6" href="icmp_8c.html#aff8cf166e25e9d1ccada6ed59c0f73f4" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="229,209,297,236"/><area shape="rect" id="node11" href="icmp_8c.html#ac982da151cd3a844185bf895f602ec24" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="105,209,173,236"/><area shape="rect" id="node4" href="ip_8h.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="222,57,303,84"/><area shape="rect" id="node5" href="backend_8h.html#adc061493c4082f0206a51a67bbfb255d" title="Get the socket bound to local port port. " alt="" coords="225,108,300,134"/><area shape="rect" id="node7" href="backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="353,82,426,109"/><area shape="rect" id="node8" href="ip_8c.html#a2165f6158886310cb7d3cdb1e0b5646d" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="364,184,415,210"/><area shape="rect" id="node10" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="352,234,427,261"/><area shape="rect" id="node9" href="eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="485,184,544,210"/></map>
+<div class="center"><img src="ip_8h_a5140912b175371c1ed50dd8f4325a654_cgraph.png" border="0" usemap="#ip_8h_a5140912b175371c1ed50dd8f4325a654_cgraph" alt=""/></div>
+<map name="ip_8h_a5140912b175371c1ed50dd8f4325a654_cgraph" id="ip_8h_a5140912b175371c1ed50dd8f4325a654_cgraph">
+<area shape="rect" id="node2" href="ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="475,133,554,160"/><area shape="rect" id="node3" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="108,108,169,134"/><area shape="rect" id="node6" href="icmp_8c.html#a8f6ec5846e0311caefe6a4368c4218a1" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="229,209,297,236"/><area shape="rect" id="node11" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="105,209,173,236"/><area shape="rect" id="node4" href="ip_8h.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="222,57,303,84"/><area shape="rect" id="node5" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="225,108,300,134"/><area shape="rect" id="node7" href="backend_8h.html#abd7f7d37dcf53e9045d18b6e0f2a57dc" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="353,82,426,109"/><area shape="rect" id="node8" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="364,184,415,210"/><area shape="rect" id="node10" href="backend__netmap_8c.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="352,234,427,261"/><area shape="rect" id="node9" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="485,184,544,210"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a2165f6158886310cb7d3cdb1e0b5646d"></a>
+<a class="anchor" id="ad5934c09781e39f8bec7f5eae021f791"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">bool ip_tx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structwarpcore.html">warpcore</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
@@ -728,36 +728,36 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>IPv4 transmit processing for the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> <code>v</code> of length <code>len</code>. </p>
-<p>Fills in the IPv4 header, calculates the checksum, sets the TOS bits and passes the packet to <a class="el" href="eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. ">eth_tx()</a>.</p>
+<p>Fills in the IPv4 header, calculates the checksum, sets the TOS bits and passes the packet to <a class="el" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. ">eth_tx()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">w</td><td>Warpcore engine. </td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
     <tr><td class="paramdir"></td><td class="paramname">v</td><td>The <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> containing the data to transmit. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The length of the payload data in <code>v</code>.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Passes on the return value from <a class="el" href="eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. ">eth_tx()</a>, which indicates whether <code>v</code> was successfully placed into a TX ring. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Passes on the return value from <a class="el" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. ">eth_tx()</a>, which indicates whether <code>v</code> was successfully placed into a TX ring. </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="ip_8h_a2165f6158886310cb7d3cdb1e0b5646d_cgraph.png" border="0" usemap="#ip_8h_a2165f6158886310cb7d3cdb1e0b5646d_cgraph" alt=""/></div>
-<map name="ip_8h_a2165f6158886310cb7d3cdb1e0b5646d_cgraph" id="ip_8h_a2165f6158886310cb7d3cdb1e0b5646d_cgraph">
-<area shape="rect" id="node2" href="ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="105,5,183,32"/><area shape="rect" id="node3" href="eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="115,56,173,83"/></map>
+<div class="center"><img src="ip_8h_ad5934c09781e39f8bec7f5eae021f791_cgraph.png" border="0" usemap="#ip_8h_ad5934c09781e39f8bec7f5eae021f791_cgraph" alt=""/></div>
+<map name="ip_8h_ad5934c09781e39f8bec7f5eae021f791_cgraph" id="ip_8h_ad5934c09781e39f8bec7f5eae021f791_cgraph">
+<area shape="rect" id="node2" href="ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="105,5,183,32"/><area shape="rect" id="node3" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="115,56,173,83"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a8a134c59f20ae8978f44af03f25fa6f1"></a>
+<a class="anchor" id="abce4a5aefa4ece9002ca4499828716ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void ip_tx_with_rx_buf </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structwarpcore.html">warpcore</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
@@ -791,7 +791,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2017 11:12:03 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2017 12:33:57 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

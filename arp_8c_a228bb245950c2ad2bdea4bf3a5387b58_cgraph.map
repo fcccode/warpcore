@@ -1,5 +1,0 @@
-<map id="arp_is_at" name="arp_is_at">
-<area shape="rect" id="node2" href="$backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="129,5,202,32"/>
-<area shape="rect" id="node3" href="$eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="136,56,195,83"/>
-<area shape="rect" id="node4" href="$backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="128,107,203,133"/>
-</map>

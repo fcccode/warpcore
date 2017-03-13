@@ -120,9 +120,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a64717cdca2e36117f573780e2458fdbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a64717cdca2e36117f573780e2458fdbb">udp_rx</a> (struct <a class="el" href="structwarpcore.html">warpcore</a> *const w, struct netmap_ring *const r)</td></tr>
-<tr class="memdesc:a64717cdca2e36117f573780e2458fdbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a UDP packet.  <a href="#a64717cdca2e36117f573780e2458fdbb">More...</a><br/></td></tr>
-<tr class="separator:a64717cdca2e36117f573780e2458fdbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a008e1d17237f152a0184c0c6b120a747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747">udp_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct netmap_ring *const r)</td></tr>
+<tr class="memdesc:a008e1d17237f152a0184c0c6b120a747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a UDP packet.  <a href="#a008e1d17237f152a0184c0c6b120a747">More...</a><br/></td></tr>
+<tr class="separator:a008e1d17237f152a0184c0c6b120a747"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ff6c06e976086b17457bc7766bb8e0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c">udp_tx</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov.html">w_iov</a> *const v)</td></tr>
 <tr class="memdesc:a5ff6c06e976086b17457bc7766bb8e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a payload contained in a w_sock::ov via UDP.  <a href="#a5ff6c06e976086b17457bc7766bb8e0c">More...</a><br/></td></tr>
 <tr class="separator:a5ff6c06e976086b17457bc7766bb8e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -159,14 +159,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a64717cdca2e36117f573780e2458fdbb"></a>
+<a class="anchor" id="a008e1d17237f152a0184c0c6b120a747"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void udp_rx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structwarpcore.html">warpcore</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
@@ -188,7 +188,7 @@ Functions</h2></td></tr>
 <p>The Ethernet frame to operate on is in the current netmap lot of the indicated RX ring.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">w</td><td>Warpcore engine </td></tr>
+    <tr><td class="paramname">w</td><td>Backend engine. </td></tr>
     <tr><td class="paramname">r</td><td>Currently active netmap RX ring. </td></tr>
   </table>
   </dd>
@@ -197,9 +197,9 @@ Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="udp_8c_a64717cdca2e36117f573780e2458fdbb_cgraph.png" border="0" usemap="#udp_8c_a64717cdca2e36117f573780e2458fdbb_cgraph" alt=""/></div>
-<map name="udp_8c_a64717cdca2e36117f573780e2458fdbb_cgraph" id="udp_8c_a64717cdca2e36117f573780e2458fdbb_cgraph">
-<area shape="rect" id="node2" href="ip_8h.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="115,5,197,32"/><area shape="rect" id="node3" href="ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="369,183,447,209"/><area shape="rect" id="node4" href="backend_8h.html#adc061493c4082f0206a51a67bbfb255d" title="Get the socket bound to local port port. " alt="" coords="119,107,193,133"/><area shape="rect" id="node5" href="icmp_8c.html#aff8cf166e25e9d1ccada6ed59c0f73f4" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="122,208,190,235"/><area shape="rect" id="node6" href="backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="246,132,319,159"/><area shape="rect" id="node7" href="ip_8c.html#a2165f6158886310cb7d3cdb1e0b5646d" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="257,233,308,260"/><area shape="rect" id="node9" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="245,284,320,311"/><area shape="rect" id="node8" href="eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="379,233,437,260"/></map>
+<div class="center"><img src="udp_8c_a008e1d17237f152a0184c0c6b120a747_cgraph.png" border="0" usemap="#udp_8c_a008e1d17237f152a0184c0c6b120a747_cgraph" alt=""/></div>
+<map name="udp_8c_a008e1d17237f152a0184c0c6b120a747_cgraph" id="udp_8c_a008e1d17237f152a0184c0c6b120a747_cgraph">
+<area shape="rect" id="node2" href="ip_8h.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="115,5,197,32"/><area shape="rect" id="node3" href="ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="369,183,447,209"/><area shape="rect" id="node4" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="119,107,193,133"/><area shape="rect" id="node5" href="icmp_8c.html#a8f6ec5846e0311caefe6a4368c4218a1" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="122,208,190,235"/><area shape="rect" id="node6" href="backend_8h.html#abd7f7d37dcf53e9045d18b6e0f2a57dc" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="246,132,319,159"/><area shape="rect" id="node7" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="257,233,308,260"/><area shape="rect" id="node9" href="backend__netmap_8c.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="245,284,320,311"/><area shape="rect" id="node8" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="379,233,437,260"/></map>
 </div>
 </p>
 
@@ -230,7 +230,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Sends a payload contained in a w_sock::ov via UDP. </p>
-<p>For a connected <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, prepends the template header from <a class="el" href="structw__sock.html#a0b8ec75854814f39f204648af5dd5726" title="The template header to be used for outbound packets on this w_sock. ">w_sock::hdr</a>, computes the UDP length and checksum, and hands the packet off to <a class="el" href="ip_8c.html#a2165f6158886310cb7d3cdb1e0b5646d" title="IPv4 transmit processing for the w_iov v of length len. ">ip_tx()</a>. For a disconnected <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, uses the destination IP and port information in the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> for TX.</p>
+<p>For a connected <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, prepends the template header from <a class="el" href="structw__sock.html#a0b8ec75854814f39f204648af5dd5726" title="The template header to be used for outbound packets on this w_sock. ">w_sock::hdr</a>, computes the UDP length and checksum, and hands the packet off to <a class="el" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. ">ip_tx()</a>. For a disconnected <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, uses the destination IP and port information in the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> for TX.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to transmit over. </td></tr>
@@ -245,7 +245,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="udp_8c_a5ff6c06e976086b17457bc7766bb8e0c_cgraph.png" border="0" usemap="#udp_8c_a5ff6c06e976086b17457bc7766bb8e0c_cgraph" alt=""/></div>
 <map name="udp_8c_a5ff6c06e976086b17457bc7766bb8e0c_cgraph" id="udp_8c_a5ff6c06e976086b17457bc7766bb8e0c_cgraph">
-<area shape="rect" id="node2" href="arp_8c.html#a767793cec18e132d3875c6d374e8414f" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="115,107,213,133"/><area shape="rect" id="node8" href="ip_8h.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="123,157,205,184"/><area shape="rect" id="node9" href="ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="278,259,357,285"/><area shape="rect" id="node10" href="ip_8c.html#a2165f6158886310cb7d3cdb1e0b5646d" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="139,208,189,235"/><area shape="rect" id="node3" href="arp_8c.html#a755a6595690a86527e7ef79847298d4a" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="262,5,373,32"/><area shape="rect" id="node4" href="backend_8h.html#acf9d923e03f757a9b81bd80293ce204a" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="281,56,354,83"/><area shape="rect" id="node5" href="eth_8c.html#a8cf5c7d93ad3a23d3b7b7787e0652653" title="Places an Ethernet frame into a TX ring. " alt="" coords="288,208,347,235"/><area shape="rect" id="node6" href="backend__netmap_8c.html#a8cd1929b5a30a3d3980feaaffb4c95ab" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="280,107,355,133"/><area shape="rect" id="node7" href="backend__netmap_8c.html#a3f7d5dfbb0e11df581c3fcc6fe3015c1" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="280,157,355,184"/></map>
+<area shape="rect" id="node2" href="arp_8c.html#a26abe3672a2e5a135cd6af4970ca2f32" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="115,107,213,133"/><area shape="rect" id="node8" href="ip_8h.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="123,157,205,184"/><area shape="rect" id="node9" href="ip_8h.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="278,259,357,285"/><area shape="rect" id="node10" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="139,208,189,235"/><area shape="rect" id="node3" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="262,5,373,32"/><area shape="rect" id="node4" href="backend_8h.html#abd7f7d37dcf53e9045d18b6e0f2a57dc" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="281,56,354,83"/><area shape="rect" id="node5" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="288,208,347,235"/><area shape="rect" id="node6" href="backend__netmap_8c.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="280,107,355,133"/><area shape="rect" id="node7" href="backend__netmap_8c.html#a1d597d435427917b298137d8e10521e4" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="280,157,355,184"/></map>
 </div>
 </p>
 
@@ -254,7 +254,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 13 2017 11:12:03 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Mar 13 2017 12:33:57 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
