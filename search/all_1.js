@@ -1,7 +1,7 @@
 var searchData=
 [
   ['alloc_5fcnt',['alloc_cnt',['../warpcore_8c.html#aa1766905284fc320fd4443e74bf1313c',1,'warpcore.c']]],
-  ['alloc_5fiov',['alloc_iov',['../backend_8h.html#abd7f7d37dcf53e9045d18b6e0f2a57dc',1,'alloc_iov(struct w_engine *const w):&#160;backend.h'],['../warpcore_8c.html#ae52c5d5dfd1dd990503bc289388fa61a',1,'alloc_iov(struct w_engine *w):&#160;backend.h']]],
+  ['alloc_5fiov',['alloc_iov',['../backend_8h.html#abd7f7d37dcf53e9045d18b6e0f2a57dc',1,'alloc_iov(struct w_engine *const w):&#160;warpcore.c'],['../warpcore_8c.html#abd7f7d37dcf53e9045d18b6e0f2a57dc',1,'alloc_iov(struct w_engine *const w):&#160;warpcore.c']]],
   ['arp_2ec',['arp.c',['../arp_8c.html',1,'']]],
   ['arp_2eh',['arp.h',['../arp_8h.html',1,'']]],
   ['arp_5fcache_5ffind',['arp_cache_find',['../arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae',1,'arp.c']]],

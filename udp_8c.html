@@ -142,8 +142,9 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">\</a></div>
-<div class="line"><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">        warn</a>(<a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa5be0fd270d9cbf6a0b7445db855089da">debug</a>, <span class="stringliteral">&quot;UDP :%d -&gt; :%d, cksum 0x%04x, len %u&quot;</span>, ntohs(udp-&gt;sport), \</div>
-<div class="line">             ntohs(udp-&gt;dport), ntohs(udp-&gt;cksum), ntohs(udp-&gt;len));           \</div>
+<div class="line"><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">        warn</a>(<a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa5be0fd270d9cbf6a0b7445db855089da">debug</a>, <span class="stringliteral">&quot;UDP :%d -&gt; :%d, cksum 0x%04x, len %u&quot;</span>,                    \</div>
+<div class="line">             ntohs((udp)-&gt;sport), ntohs((udp)-&gt;dport), ntohs((udp)-&gt;cksum),    \</div>
+<div class="line">             ntohs((udp)-&gt;len));                                               \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="util_8h_html_a1889d6734420c17df6105c658525f64fa5be0fd270d9cbf6a0b7445db855089da"><div class="ttname"><a href="util_8h.html#a1889d6734420c17df6105c658525f64fa5be0fd270d9cbf6a0b7445db855089da">debug</a></div><div class="ttdoc">Debug. </div><div class="ttdef"><b>Definition:</b> util.h:127</div></div>
 <div class="ttc" id="util_8h_html_a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f"><div class="ttname"><a href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a></div><div class="ttdoc">Warning. </div><div class="ttdef"><b>Definition:</b> util.h:124</div></div>
@@ -254,7 +255,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Apr 25 2017 14:35:59 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 27 2017 12:50:16 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
