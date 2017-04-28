@@ -1,8 +1,0 @@
-<map id="w_sock" name="w_sock">
-<area shape="rect" id="node2" href="$structw__hdr.html" title="A warpcore template packet header structure. " alt="" coords="115,96,172,123"/>
-<area shape="rect" id="node3" href="$structudp__hdr.html" title="A representation of a UDP header; see RFC768. " alt="" coords="5,5,72,32"/>
-<area shape="rect" id="node4" href="$structip__hdr.html" title="An IPv4 header representation; see RFC791 " alt="" coords="97,5,153,32"/>
-<area shape="rect" id="node5" href="$structeth__hdr.html" title="An Ethernet II MAC header. " alt="" coords="178,5,243,32"/>
-<area shape="rect" id="node6" href="$structw__engine.html" title="A warpcore backend engine. " alt="" coords="236,96,312,123"/>
-<area shape="rect" id="node7" href="$structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="267,5,321,32"/>
-</map>

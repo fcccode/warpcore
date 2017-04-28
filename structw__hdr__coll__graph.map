@@ -1,5 +1,0 @@
-<map id="w_hdr" name="w_hdr">
-<area shape="rect" id="node2" href="$structudp__hdr.html" title="A representation of a UDP header; see RFC768. " alt="" coords="5,5,72,32"/>
-<area shape="rect" id="node3" href="$structip__hdr.html" title="An IPv4 header representation; see RFC791 " alt="" coords="97,5,153,32"/>
-<area shape="rect" id="node4" href="$structeth__hdr.html" title="An Ethernet II MAC header. " alt="" coords="178,5,243,32"/>
-</map>

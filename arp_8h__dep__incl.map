@@ -1,6 +1,0 @@
-<map id="arp.h" name="arp.h">
-<area shape="rect" id="node2" href="$arp_8c.html" title="arp.c" alt="" coords="5,80,56,107"/>
-<area shape="rect" id="node3" href="$backend__netmap_8c.html" title="backend_netmap.c" alt="" coords="81,80,212,107"/>
-<area shape="rect" id="node4" href="$eth_8c.html" title="eth.c" alt="" coords="237,80,288,107"/>
-<area shape="rect" id="node5" href="$udp_8c.html" title="udp.c" alt="" coords="313,80,367,107"/>
-</map>
