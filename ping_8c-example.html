@@ -304,7 +304,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">            <span class="comment">// wait for a reply; loop until timeout or we have received all data</span></div>
 <div class="line">            <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
-<div class="line">            <span class="keywordflow">while</span> (likely(w_iov_stailq_len(&amp;i, 0) &lt; len &amp;&amp; done == <span class="keyword">false</span>)) {</div>
+<div class="line">            <span class="keywordflow">while</span> (likely(w_iov_stailq_len(&amp;i) &lt; len &amp;&amp; done == <span class="keyword">false</span>)) {</div>
 <div class="line">                <span class="keywordflow">if</span> (unlikely(busywait == <span class="keyword">false</span>))</div>
 <div class="line">                    <span class="comment">// poll for new data</span></div>
 <div class="line">                    <span class="keywordflow">if</span> (poll(&amp;fds, 1, -1) == -1)</div>
@@ -325,7 +325,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keyword">const</span> <span class="keyword">struct </span>itimerval stop = {0};</div>
 <div class="line">            ensure(setitimer(ITIMER_REAL, &amp;stop, 0) == 0, <span class="stringliteral">&quot;setitimer&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">            <span class="keyword">const</span> uint32_t i_len = w_iov_stailq_len(&amp;i, 0);</div>
+<div class="line">            <span class="keyword">const</span> uint32_t i_len = w_iov_stailq_len(&amp;i);</div>
 <div class="line">            <span class="keywordflow">if</span> (i_len != len) {</div>
 <div class="line">                warn(warn, <span class="stringliteral">&quot;received %u/%u byte%s&quot;</span>, i_len, len, plural(i_len));</div>
 <div class="line">                <span class="keywordflow">continue</span>;</div>
@@ -356,7 +356,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Apr 28 2017 10:15:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 4 2017 12:05:48 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
