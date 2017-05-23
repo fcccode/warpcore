@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.7.0</span>
    </div>
   </td>
  </tr>
@@ -217,6 +217,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        <span class="keywordflow">if</span> (busywait == <span class="keyword">false</span>)</div>
 <div class="line">            <span class="comment">// if we aren&#39;t supposed to busy-wait, poll for new data</span></div>
 <div class="line">            poll(fds, n, -1);</div>
+<div class="line">        warn(debug, <span class="stringliteral">&quot;poll done&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// receive new data (there may not be any if busy-waiting)</span></div>
 <div class="line">        w_nic_rx(w);</div>
@@ -230,6 +231,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            w_rx(s, &amp;i);</div>
 <div class="line">            <span class="keywordflow">if</span> (STAILQ_EMPTY(&amp;i))</div>
 <div class="line">                <span class="keywordflow">continue</span>;</div>
+<div class="line">            warn(debug, <span class="stringliteral">&quot;received %u bytes&quot;</span>, w_iov_stailq_len(&amp;i));</div>
 <div class="line"></div>
 <div class="line">            <span class="keyword">struct </span>w_iov_stailq o = STAILQ_HEAD_INITIALIZER(o);</div>
 <div class="line">            uint16_t t = 0;</div>
@@ -318,7 +320,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 22 2017 08:57:38 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 23 2017 05:51:01 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

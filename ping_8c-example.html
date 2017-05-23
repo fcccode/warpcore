@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.6.0</span>
+   &#160;<span id="projectnumber">0.7.0</span>
    </div>
   </td>
  </tr>
@@ -126,18 +126,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                  <span class="keyword">const</span> uint32_t start,</div>
 <div class="line">                  <span class="keyword">const</span> uint32_t inc,</div>
 <div class="line">                  <span class="keyword">const</span> uint32_t end,</div>
-<div class="line">                  <span class="keyword">const</span> uint32_t loops)</div>
+<div class="line">                  <span class="keyword">const</span> uint32_t loops,</div>
+<div class="line">                  <span class="keyword">const</span> uint32_t conns)</div>
 <div class="line">{</div>
 <div class="line">    printf(<span class="stringliteral">&quot;%s\n&quot;</span>, name);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t -i interface           interface to run over\n&quot;</span>);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t -d destination IP      peer to connect to\n&quot;</span>);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-r router IP]          router to use for non-local peers\n&quot;</span>);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-s start packet len]   optional, default %u\n&quot;</span>, start);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-c increment]          optional (0 = exponential), default %u\n&quot;</span>,</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-s start packet len]   starting packet length (default %u)\n&quot;</span>,</div>
+<div class="line">           start);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-p increment]          packet length increment; 0 = exponential &quot;</span></div>
+<div class="line">           <span class="stringliteral">&quot;(default %u)\n&quot;</span>,</div>
 <div class="line">           inc);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-e end packet len]     optional, default %u\n&quot;</span>, end);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-l loop iterations]    optional, default %u\n&quot;</span>, loops);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-z]                    optional, turn off UDP checksums\n&quot;</span>);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-e end packet len]     largest packet length (default %u)\n&quot;</span>,</div>
+<div class="line">           end);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-l loop iterations]    repeat iterations (default %u)\n&quot;</span>, loops);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-c connections]        parallel connections (default %u)\n&quot;</span>,</div>
+<div class="line">           conns);</div>
+<div class="line">    printf(<span class="stringliteral">&quot;\t[-z]                    turn off UDP checksums\n&quot;</span>);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-b]                    busy-wait\n&quot;</span>);</div>
 <div class="line">}</div>
 <div class="line"></div>
@@ -181,12 +187,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    uint32_t start = <span class="keyword">sizeof</span>(<span class="keyword">struct </span>payload);</div>
 <div class="line">    uint32_t inc = 102;</div>
 <div class="line">    uint32_t end = 1458;</div>
+<div class="line">    uint32_t conns = 1;</div>
 <div class="line">    <span class="keywordtype">bool</span> busywait = <span class="keyword">false</span>;</div>
 <div class="line">    uint8_t flags = 0;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// handle arguments</span></div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
-<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hzi:d:l:r:s:c:e:b&quot;</span>)) != -1) {</div>
+<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hzbi:d:l:r:s:c:e:p:&quot;</span>)) != -1) {</div>
 <div class="line">        <span class="keywordflow">switch</span> (ch) {</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;i&#39;</span>:</div>
 <div class="line">            ifname = optarg;</div>
@@ -203,11 +210,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:</div>
 <div class="line">            start = MIN(UINT32_MAX, MAX(1, (uint32_t)strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
 <div class="line">            inc = MIN(UINT32_MAX, MAX(0, (uint32_t)strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;e&#39;</span>:</div>
 <div class="line">            end = MIN(UINT32_MAX, MAX(1, (uint32_t)strtoul(optarg, 0, 10)));</div>
+<div class="line">            <span class="keywordflow">break</span>;</div>
+<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:</div>
+<div class="line">            conns = MIN(50000, MAX(1, (uint32_t)strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;b&#39;</span>:</div>
 <div class="line">            busywait = <span class="keyword">true</span>;</div>
@@ -218,13 +228,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;?&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">default</span>:</div>
-<div class="line">            usage(basename(argv[0]), start, inc, end, loops);</div>
+<div class="line">            usage(basename(argv[0]), start, inc, end, loops, conns);</div>
 <div class="line">            <span class="keywordflow">return</span> 0;</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">if</span> (ifname == 0 || dst == 0) {</div>
-<div class="line">        usage(basename(argv[0]), start, inc, end, loops);</div>
+<div class="line">        usage(basename(argv[0]), start, inc, end, loops, conns);</div>
 <div class="line">        <span class="keywordflow">return</span> 0;</div>
 <div class="line">    }</div>
 <div class="line"></div>
@@ -244,16 +254,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="comment">// initialize a warpcore engine on the given network interface</span></div>
 <div class="line">    <span class="keyword">struct </span>w_engine * w = w_init(ifname, rip);</div>
 <div class="line"></div>
-<div class="line">    <span class="comment">// bind a new socket to a random local source port</span></div>
-<div class="line">    <span class="keyword">struct </span>w_sock * s = w_bind(w, (uint16_t)plat_random(), flags);</div>
+<div class="line">    <span class="keyword">struct </span>w_sock ** s = calloc(conns, <span class="keyword">sizeof</span>(*s));</div>
+<div class="line">    ensure(s, <span class="stringliteral">&quot;got sockets&quot;</span>);</div>
+<div class="line">    <span class="keyword">struct </span>pollfd * fds = calloc(conns, <span class="keyword">sizeof</span>(*fds));</div>
+<div class="line">    ensure(fds, <span class="stringliteral">&quot;got poll structure&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// look up the peer IP address and our benchmark port</span></div>
 <div class="line">    <span class="keyword">struct </span>addrinfo * peer;</div>
 <div class="line">    ensure(getaddrinfo(dst, <span class="stringliteral">&quot;55555&quot;</span>, &amp;hints, &amp;peer) == 0, <span class="stringliteral">&quot;getaddrinfo peer&quot;</span>);</div>
 <div class="line"></div>
-<div class="line">    <span class="comment">// connect to the peer</span></div>
-<div class="line">    w_connect(s, ((<span class="keyword">struct</span> sockaddr_in *)(<span class="keywordtype">void</span> *)peer-&gt;ai_addr)-&gt;sin_addr.s_addr,</div>
-<div class="line">              ((<span class="keyword">struct</span> sockaddr_in *)(<span class="keywordtype">void</span> *)peer-&gt;ai_addr)-&gt;sin_port);</div>
+<div class="line">    <span class="keywordflow">for</span> (uint32_t c = 0; c &lt; conns; c++) {</div>
+<div class="line">        <span class="comment">// bind a new socket to a random local source port; make sure we don&#39;t</span></div>
+<div class="line">        <span class="comment">// bind the same port twice if we draw the same random number</span></div>
+<div class="line">        <span class="keywordflow">do</span> {</div>
+<div class="line">            <span class="keyword">const</span> uint16_t port = htons(plat_random() % 50000 + 10000);</div>
+<div class="line">            s[c] = w_bind(w, port, flags);</div>
+<div class="line">        } <span class="keywordflow">while</span> (s[c] == 0);</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// initialize poll descriptors</span></div>
+<div class="line">        fds[c] = (<span class="keyword">struct </span>pollfd){.fd = w_fd(s[c]), .events = POLLIN};</div>
+<div class="line"></div>
+<div class="line">        <span class="comment">// connect to the peer</span></div>
+<div class="line">        w_connect(</div>
+<div class="line">            s[c],</div>
+<div class="line">            ((<span class="keyword">struct</span> sockaddr_in *)(<span class="keywordtype">void</span> *)peer-&gt;ai_addr)-&gt;sin_addr.s_addr,</div>
+<div class="line">            ((<span class="keyword">struct</span> sockaddr_in *)(<span class="keywordtype">void</span> *)peer-&gt;ai_addr)-&gt;sin_port);</div>
+<div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// free the getaddrinfo</span></div>
 <div class="line">    freeaddrinfo(peer);</div>
@@ -266,7 +292,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    puts(<span class="stringliteral">&quot;byte\tpkts\ttx\trx&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// send &quot;loops&quot; number of payloads of len &quot;len&quot; and wait for reply</span></div>
-<div class="line">    <span class="keyword">struct </span>pollfd fds = {.fd = w_fd(s), .events = POLLIN};</div>
 <div class="line">    <span class="keywordflow">for</span> (uint32_t len = start; len &lt;= end; len += (inc ? inc : .483 * len)) {</div>
 <div class="line">        <span class="comment">// allocate tx tail queue</span></div>
 <div class="line">        <span class="keyword">struct </span>w_iov_stailq o;</div>
@@ -287,8 +312,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                p-&gt;ts = before_tx;</div>
 <div class="line">            }</div>
 <div class="line"></div>
+<div class="line">            <span class="comment">// pick a random connection for output</span></div>
+<div class="line">            <span class="keyword">const</span> uint32_t c = plat_random() % conns;</div>
+<div class="line"></div>
 <div class="line">            <span class="comment">// send the data, and wait until it is out</span></div>
-<div class="line">            w_tx(s, &amp;o);</div>
+<div class="line">            w_tx(s[c], &amp;o);</div>
 <div class="line">            <span class="keywordflow">while</span> (w_tx_pending(&amp;o))</div>
 <div class="line">                w_nic_tx(w);</div>
 <div class="line"></div>
@@ -308,13 +336,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keywordflow">while</span> (likely(w_iov_stailq_len(&amp;i) &lt; len &amp;&amp; done == <span class="keyword">false</span>)) {</div>
 <div class="line">                <span class="keywordflow">if</span> (unlikely(busywait == <span class="keyword">false</span>))</div>
 <div class="line">                    <span class="comment">// poll for new data</span></div>
-<div class="line">                    <span class="keywordflow">if</span> (poll(&amp;fds, 1, -1) == -1)</div>
+<div class="line">                    <span class="keywordflow">if</span> (poll(fds, conns, -1) == -1)</div>
 <div class="line">                        <span class="comment">// if the poll was interrupted, move on</span></div>
 <div class="line">                        <span class="keywordflow">continue</span>;</div>
 <div class="line"></div>
 <div class="line">                <span class="comment">// receive new data (there may not be any if busy-waiting)</span></div>
 <div class="line">                w_nic_rx(w);</div>
-<div class="line">                w_rx(s, &amp;i);</div>
+<div class="line">                w_rx(s[c], &amp;i);</div>
 <div class="line">            }</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// get the current time</span></div>
@@ -350,14 +378,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        }</div>
 <div class="line">        w_free(w, &amp;o);</div>
 <div class="line">    }</div>
-<div class="line">    w_close(s);</div>
+<div class="line"></div>
+<div class="line">    <span class="keywordflow">for</span> (uint32_t c = 0; c &lt; conns; c++)</div>
+<div class="line">        w_close(s[c]);</div>
 <div class="line">    w_cleanup(w);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 22 2017 08:57:38 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue May 23 2017 05:51:01 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
