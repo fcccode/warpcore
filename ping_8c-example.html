@@ -107,7 +107,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor">#include &lt;getopt.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;netdb.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;netinet/in.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;poll.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;signal.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
@@ -256,8 +255,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">    <span class="keyword">struct </span>w_sock ** s = calloc(conns, <span class="keyword">sizeof</span>(*s));</div>
 <div class="line">    ensure(s, <span class="stringliteral">&quot;got sockets&quot;</span>);</div>
-<div class="line">    <span class="keyword">struct </span>pollfd * fds = calloc(conns, <span class="keyword">sizeof</span>(*fds));</div>
-<div class="line">    ensure(fds, <span class="stringliteral">&quot;got poll structure&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// look up the peer IP address and our benchmark port</span></div>
 <div class="line">    <span class="keyword">struct </span>addrinfo * peer;</div>
@@ -270,9 +267,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keyword">const</span> uint16_t port = htons(plat_random() % 50000 + 10000);</div>
 <div class="line">            s[c] = w_bind(w, port, flags);</div>
 <div class="line">        } <span class="keywordflow">while</span> (s[c] == 0);</div>
-<div class="line"></div>
-<div class="line">        <span class="comment">// initialize poll descriptors</span></div>
-<div class="line">        fds[c] = (<span class="keyword">struct </span>pollfd){.fd = w_fd(s[c]), .events = POLLIN};</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// connect to the peer</span></div>
 <div class="line">        w_connect(</div>
@@ -334,14 +328,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="comment">// wait for a reply; loop until timeout or we have received all data</span></div>
 <div class="line">            <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
 <div class="line">            <span class="keywordflow">while</span> (likely(w_iov_stailq_len(&amp;i) &lt; len &amp;&amp; done == <span class="keyword">false</span>)) {</div>
-<div class="line">                <span class="keywordflow">if</span> (unlikely(busywait == <span class="keyword">false</span>))</div>
-<div class="line">                    <span class="comment">// poll for new data</span></div>
-<div class="line">                    <span class="keywordflow">if</span> (poll(fds, conns, -1) == -1)</div>
-<div class="line">                        <span class="comment">// if the poll was interrupted, move on</span></div>
-<div class="line">                        <span class="keywordflow">continue</span>;</div>
-<div class="line"></div>
 <div class="line">                <span class="comment">// receive new data (there may not be any if busy-waiting)</span></div>
-<div class="line">                w_nic_rx(w);</div>
+<div class="line">                <span class="keywordflow">if</span> (w_nic_rx(w, busywait ? 0 : -1) == <span class="keyword">false</span>)</div>
+<div class="line">                    <span class="keywordflow">continue</span>;</div>
 <div class="line">                w_rx(s[c], &amp;i);</div>
 <div class="line">            }</div>
 <div class="line"></div>
@@ -382,14 +371,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">    <span class="keywordflow">for</span> (uint32_t c = 0; c &lt; conns; c++)</div>
 <div class="line">        w_close(s[c]);</div>
 <div class="line">    w_cleanup(w);</div>
-<div class="line">    free(fds);</div>
 <div class="line">    free(s);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 24 2017 07:55:07 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 24 2017 13:55:36 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
