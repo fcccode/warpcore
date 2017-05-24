@@ -110,7 +110,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sys/queue.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;time.h&gt;</span></div>
 <div class="line"></div>
@@ -223,9 +222,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        w_nic_rx(w);</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// for each of the small services that have received data...</span></div>
-<div class="line">        <span class="keyword">struct </span>w_sock_slist * sl = w_rx_ready(w);</div>
+<div class="line">        <span class="keyword">struct </span>w_sock_slist sl = SLIST_HEAD_INITIALIZER(sl);</div>
+<div class="line">        w_rx_ready(w, &amp;sl);</div>
 <div class="line">        <span class="keyword">struct </span>w_sock * s;</div>
-<div class="line">        SLIST_FOREACH (s, sl, next_rx) {</div>
+<div class="line">        SLIST_FOREACH (s, &amp;sl, next_rx) {</div>
 <div class="line">            <span class="comment">// ...check if any new data has arrived on the socket</span></div>
 <div class="line">            <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
 <div class="line">            w_rx(s, &amp;i);</div>
@@ -308,7 +308,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="comment">// we are done serving the received data</span></div>
 <div class="line">            w_free(w, &amp;i);</div>
 <div class="line">        }</div>
-<div class="line">        free(sl);</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// we only get here after an interrupt; clean up</span></div>
@@ -320,7 +319,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 23 2017 15:01:41 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed May 24 2017 07:55:07 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
