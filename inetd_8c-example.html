@@ -289,6 +289,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">            <span class="comment">// we are done serving the received data</span></div>
 <div class="line">            w_free(w, &amp;i);</div>
+<div class="line">            <span class="keywordflow">if</span> (!STAILQ_EMPTY(&amp;o))</div>
+<div class="line">                w_free(w, &amp;o);</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"></div>
@@ -301,7 +303,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 29 2017 07:58:55 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 29 2017 08:45:42 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
