@@ -38,6 +38,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -63,7 +65,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Files</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -112,7 +114,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor">#include &lt;sys/queue.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;time.h&gt;</span></div>
 <div class="line"></div>
-<div class="line"><span class="preprocessor">#include &lt;warpcore/warpcore.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;<a class="code" href="warpcore_8h.html">warpcore/warpcore.h</a>&gt;</span></div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"><span class="keyword">static</span> <span class="keywordtype">void</span> usage(<span class="keyword">const</span> <span class="keywordtype">char</span> * <span class="keyword">const</span> name)</div>
@@ -132,9 +134,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">{</div>
 <div class="line">    <span class="keywordflow">if</span> (done) {</div>
 <div class="line">        <span class="comment">// we&#39;ve been here before, restore the default signal handlers</span></div>
-<div class="line">        warn(warn, <span class="stringliteral">&quot;got repeated signal, passing through&quot;</span>);</div>
-<div class="line">        ensure(signal(SIGTERM, SIG_DFL) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
-<div class="line">        ensure(signal(SIGINT, SIG_DFL) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
+<div class="line">        <a name="a0"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>, <span class="stringliteral">&quot;got repeated signal, passing through&quot;</span>);</div>
+<div class="line">        <a name="a1"></a><a class="code" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(signal(SIGTERM, SIG_DFL) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
+<div class="line">        <a class="code" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(signal(SIGINT, SIG_DFL) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
 <div class="line">    } <span class="keywordflow">else</span></div>
 <div class="line">        done = <span class="keyword">true</span>;</div>
 <div class="line">}</div>
@@ -163,59 +165,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            busywait = <span class="keyword">true</span>;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;z&#39;</span>:</div>
-<div class="line">            flags |= W_ZERO_CHKSUM;</div>
+<div class="line">            flags |= <a name="a2"></a><a class="code" href="warpcore_8h.html#a1dc8f24f3aece4066bc8ff8fceeb54f3">W_ZERO_CHKSUM</a>;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;?&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">default</span>:</div>
-<div class="line">            usage(basename(argv[0]));</div>
+<div class="line">            usage(<a name="a3"></a><a class="code" href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a>(argv[0]));</div>
 <div class="line">            <span class="keywordflow">return</span> 0;</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="keywordflow">if</span> (ifname == 0) {</div>
-<div class="line">        usage(basename(argv[0]));</div>
+<div class="line">        usage(<a class="code" href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a>(argv[0]));</div>
 <div class="line">        <span class="keywordflow">return</span> 0;</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// initialize a warpcore engine on the given network interface</span></div>
-<div class="line">    <span class="keyword">struct </span>w_engine * w = w_init(ifname, 0);</div>
+<div class="line">    <span class="keyword">struct </span><a name="_a4"></a><a class="code" href="structw__engine.html">w_engine</a> * w = <a name="a5"></a><a class="code" href="warpcore_8h.html#a20d62fd50464b5e3f47fd357386ddbed">w_init</a>(ifname, 0);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// install a signal handler to clean up after interrupt</span></div>
-<div class="line">    ensure(signal(SIGTERM, &amp;terminate) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
-<div class="line">    ensure(signal(SIGINT, &amp;terminate) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
+<div class="line">    <a class="code" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(signal(SIGTERM, &amp;terminate) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
+<div class="line">    <a class="code" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(signal(SIGINT, &amp;terminate) != SIG_ERR, <span class="stringliteral">&quot;signal&quot;</span>);</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// start four inetd-like &quot;small services&quot; and one benchmark of our own</span></div>
-<div class="line">    <span class="keyword">struct </span>w_sock * <span class="keyword">const</span> srv[] = {</div>
+<div class="line">    <span class="keyword">struct </span><a name="_a6"></a><a class="code" href="structw__sock.html">w_sock</a> * <span class="keyword">const</span> srv[] = {</div>
 <div class="line"><span class="preprocessor">#if 0</span></div>
-<div class="line"><span class="preprocessor"></span>        w_bind(w, htons(7), flags),</div>
-<div class="line">        w_bind(w, htons(9), flags),</div>
-<div class="line">        w_bind(w, htons(13), flags),</div>
-<div class="line">        w_bind(w, htons(37), flags)</div>
+<div class="line"><span class="preprocessor"></span>        <a name="a7"></a><a class="code" href="warpcore_8h.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a>(w, htons(7), flags),</div>
+<div class="line">        <a class="code" href="warpcore_8h.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a>(w, htons(9), flags),</div>
+<div class="line">        <a class="code" href="warpcore_8h.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a>(w, htons(13), flags),</div>
+<div class="line">        <a class="code" href="warpcore_8h.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a>(w, htons(37), flags)</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
-<div class="line"><span class="preprocessor"></span>        w_bind(w, htons(55555), flags)</div>
+<div class="line"><span class="preprocessor"></span>        <a class="code" href="warpcore_8h.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a>(w, htons(55555), flags)</div>
 <div class="line">    };</div>
 <div class="line">    uint16_t n = 0;</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// serve requests on the four sockets until an interrupt occurs</span></div>
 <div class="line">    <span class="keywordflow">while</span> (done == <span class="keyword">false</span>) {</div>
 <div class="line">        <span class="comment">// receive new data (there may not be any if busy-waiting)</span></div>
-<div class="line">        <span class="keywordflow">if</span> (w_nic_rx(w, busywait ? 0 : -1) == <span class="keyword">false</span>)</div>
+<div class="line">        <span class="keywordflow">if</span> (<a name="a8"></a><a class="code" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d">w_nic_rx</a>(w, busywait ? 0 : -1) == <span class="keyword">false</span>)</div>
 <div class="line">            <span class="keywordflow">continue</span>;</div>
 <div class="line"></div>
 <div class="line">        <span class="comment">// for each of the small services that have received data...</span></div>
 <div class="line">        <span class="keyword">struct </span>w_sock_slist sl = SLIST_HEAD_INITIALIZER(sl);</div>
-<div class="line">        w_rx_ready(w, &amp;sl);</div>
-<div class="line">        <span class="keyword">struct </span>w_sock * s;</div>
+<div class="line">        <a name="a9"></a><a class="code" href="warpcore_8h.html#a2f513496b2cd0e117d1577fc074e6a4c">w_rx_ready</a>(w, &amp;sl);</div>
+<div class="line">        <span class="keyword">struct </span><a class="code" href="structw__sock.html">w_sock</a> * s;</div>
 <div class="line">        SLIST_FOREACH (s, &amp;sl, next_rx) {</div>
 <div class="line">            <span class="comment">// ...check if any new data has arrived on the socket</span></div>
-<div class="line">            <span class="keyword">struct </span>w_iov_stailq i = STAILQ_HEAD_INITIALIZER(i);</div>
-<div class="line">            w_rx(s, &amp;i);</div>
+<div class="line">            <span class="keyword">struct </span><a name="_a10"></a><a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> i = STAILQ_HEAD_INITIALIZER(i);</div>
+<div class="line">            <a name="a11"></a><a class="code" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384">w_rx</a>(s, &amp;i);</div>
 <div class="line">            <span class="keywordflow">if</span> (STAILQ_EMPTY(&amp;i))</div>
 <div class="line">                <span class="keywordflow">continue</span>;</div>
-<div class="line">            warn(debug, <span class="stringliteral">&quot;received %u bytes&quot;</span>, w_iov_stailq_len(&amp;i));</div>
+<div class="line">            <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f">warn</a>(<a name="a12"></a><a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64fa5be0fd270d9cbf6a0b7445db855089da">debug</a>, <span class="stringliteral">&quot;received %u bytes&quot;</span>, <a name="a13"></a><a class="code" href="warpcore_8h.html#a2570e386e8776c6cc5203f56490a6a54">w_iov_stailq_len</a>(&amp;i));</div>
 <div class="line"></div>
-<div class="line">            <span class="keyword">struct </span>w_iov_stailq o = STAILQ_HEAD_INITIALIZER(o);</div>
+<div class="line">            <span class="keyword">struct </span><a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> o = STAILQ_HEAD_INITIALIZER(o);</div>
 <div class="line">            uint16_t t = 0;</div>
 <div class="line"><span class="preprocessor">#if 0</span></div>
 <div class="line"><span class="preprocessor"></span>            <span class="keywordflow">if</span> (s == srv[t++]) {</div>
@@ -228,19 +230,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                <span class="keyword">const</span> time_t t = time(0);</div>
 <div class="line">                <span class="keyword">const</span> <span class="keywordtype">char</span> * ct = ctime(&amp;t);</div>
 <div class="line">                <span class="keyword">const</span> uint16_t l = (uint16_t)strlen(ct);</div>
-<div class="line">                <span class="keyword">struct </span>w_iov * v;</div>
+<div class="line">                <span class="keyword">struct </span><a name="_a14"></a><a class="code" href="structw__iov.html">w_iov</a> * v;</div>
 <div class="line">                STAILQ_FOREACH (v, i, next) {</div>
-<div class="line">                    memcpy(v-&gt;buf, c, l); <span class="comment">// write a timestamp</span></div>
-<div class="line">                    v-&gt;len = l;</div>
+<div class="line">                    memcpy(v-&gt;<a name="a15"></a><a class="code" href="structw__iov.html#a2b33510e8a5b556deef4fb2b29b62a9e">buf</a>, c, l); <span class="comment">// write a timestamp</span></div>
+<div class="line">                    v-&gt;<a name="a16"></a><a class="code" href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">len</a> = l;</div>
 <div class="line">                }</div>
 <div class="line">                STAILQ_CONCAT(o, i);</div>
 <div class="line">            } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (s == srv[t++]) {</div>
 <div class="line">                <span class="comment">// time</span></div>
 <div class="line">                <span class="keyword">const</span> time_t t = time(0);</div>
-<div class="line">                <span class="keyword">struct </span>w_iov * v;</div>
+<div class="line">                <span class="keyword">struct </span><a class="code" href="structw__iov.html">w_iov</a> * v;</div>
 <div class="line">                STAILQ_FOREACH (v, i, next) {</div>
-<div class="line">                    memcpy(v-&gt;buf, &amp;t, <span class="keyword">sizeof</span>(t)); <span class="comment">// write a timestamp</span></div>
-<div class="line">                    v-&gt;len = <span class="keyword">sizeof</span>(t);</div>
+<div class="line">                    memcpy(v-&gt;<a class="code" href="structw__iov.html#a2b33510e8a5b556deef4fb2b29b62a9e">buf</a>, &amp;t, <span class="keyword">sizeof</span>(t)); <span class="comment">// write a timestamp</span></div>
+<div class="line">                    v-&gt;<a class="code" href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">len</a> = <span class="keyword">sizeof</span>(t);</div>
 <div class="line">                }</div>
 <div class="line">                STAILQ_CONCAT(o, i);</div>
 <div class="line"></div>
@@ -251,21 +253,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">                <span class="comment">// if o is empty, the target len is in the first buf of the</span></div>
 <div class="line">                <span class="comment">// incoming tail queue; otherwise, it&#39;s in the first buf of o</span></div>
-<div class="line">                <span class="keyword">const</span> <span class="keyword">struct </span>w_iov * <span class="keyword">const</span> head =</div>
+<div class="line">                <span class="keyword">const</span> <span class="keyword">struct </span><a class="code" href="structw__iov.html">w_iov</a> * <span class="keyword">const</span> head =</div>
 <div class="line">                    STAILQ_FIRST(STAILQ_EMPTY(&amp;o) ? &amp;i : &amp;o);</div>
-<div class="line">                <span class="keyword">const</span> uint32_t len =</div>
-<div class="line">                    ntohl(((<span class="keyword">struct</span> payload *)(<span class="keywordtype">void</span> *)head-&gt;buf)-&gt;len);</div>
+<div class="line">                <span class="keyword">const</span> uint32_t <a class="code" href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">len</a> =</div>
+<div class="line">                    ntohl(((<span class="keyword">struct</span> payload *)(<span class="keywordtype">void</span> *)head-&gt;<a class="code" href="structw__iov.html#a2b33510e8a5b556deef4fb2b29b62a9e">buf</a>)-&gt;len);</div>
 <div class="line"></div>
 <div class="line">                <span class="keywordflow">while</span> (!STAILQ_EMPTY(&amp;i)) {</div>
-<div class="line">                    <span class="keyword">static</span> <span class="keyword">struct </span>w_iov_stailq tmp =</div>
+<div class="line">                    <span class="keyword">static</span> <span class="keyword">struct </span><a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> tmp =</div>
 <div class="line">                        STAILQ_HEAD_INITIALIZER(tmp);</div>
 <div class="line">                    <span class="keyword">static</span> uint32_t tmp_len = 0;</div>
 <div class="line"></div>
 <div class="line">                    <span class="keywordflow">while</span> (tmp_len &lt; len &amp;&amp; !STAILQ_EMPTY(&amp;i)) {</div>
-<div class="line">                        <span class="keyword">struct </span>w_iov * <span class="keyword">const</span> v = STAILQ_FIRST(&amp;i);</div>
+<div class="line">                        <span class="keyword">struct </span><a class="code" href="structw__iov.html">w_iov</a> * <span class="keyword">const</span> v = STAILQ_FIRST(&amp;i);</div>
 <div class="line">                        STAILQ_REMOVE_HEAD(&amp;i, next);</div>
 <div class="line">                        STAILQ_INSERT_TAIL(&amp;tmp, v, next);</div>
-<div class="line">                        tmp_len += v-&gt;len;</div>
+<div class="line">                        tmp_len += v-&gt;<a class="code" href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">len</a>;</div>
 <div class="line">                    }</div>
 <div class="line"></div>
 <div class="line">                    <span class="comment">// did we receive all data?</span></div>
@@ -277,33 +279,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">                }</div>
 <div class="line"></div>
 <div class="line">            } <span class="keywordflow">else</span> {</div>
-<div class="line">                die(<span class="stringliteral">&quot;unknown service&quot;</span>);</div>
+<div class="line">                <a name="a17"></a><a class="code" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a>(<span class="stringliteral">&quot;unknown service&quot;</span>);</div>
 <div class="line">            }</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// if the current service requires replying with data, do so</span></div>
 <div class="line">            <span class="keywordflow">if</span> (!STAILQ_EMPTY(&amp;o)) {</div>
-<div class="line">                w_tx(s, &amp;o);</div>
-<div class="line">                <span class="keywordflow">while</span> (w_tx_pending(&amp;o))</div>
-<div class="line">                    w_nic_tx(w);</div>
+<div class="line">                <a name="a18"></a><a class="code" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692">w_tx</a>(s, &amp;o);</div>
+<div class="line">                <span class="keywordflow">while</span> (<a name="a19"></a><a class="code" href="warpcore_8h.html#adad79a0011e52c38d52df980843fff78">w_tx_pending</a>(&amp;o))</div>
+<div class="line">                    <a name="a20"></a><a class="code" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75">w_nic_tx</a>(w);</div>
 <div class="line">            }</div>
 <div class="line"></div>
 <div class="line">            <span class="comment">// we are done serving the received data</span></div>
-<div class="line">            w_free(w, &amp;i);</div>
+<div class="line">            <a name="a21"></a><a class="code" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free</a>(w, &amp;i);</div>
 <div class="line">            <span class="keywordflow">if</span> (!STAILQ_EMPTY(&amp;o))</div>
-<div class="line">                w_free(w, &amp;o);</div>
+<div class="line">                <a class="code" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free</a>(w, &amp;o);</div>
 <div class="line">        }</div>
 <div class="line">    }</div>
 <div class="line"></div>
 <div class="line">    <span class="comment">// we only get here after an interrupt; clean up</span></div>
 <div class="line">    <span class="keywordflow">for</span> (uint16_t s = 0; s &lt; n; s++)</div>
-<div class="line">        w_close(srv[s]);</div>
-<div class="line">    w_cleanup(w);</div>
+<div class="line">        <a name="a22"></a><a class="code" href="warpcore_8h.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a>(srv[s]);</div>
+<div class="line">    <a name="a23"></a><a class="code" href="warpcore_8h.html#a726b06c06493678f7f48c889bbcd30a5">w_cleanup</a>(w);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon May 29 2017 14:15:41 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon May 29 2017 14:22:11 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
