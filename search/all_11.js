@@ -3,6 +3,7 @@ var searchData=
   ['s',['s',['../unionl__util.html#a953ae4f8543e052e4bc6c014bfd8e009',1,'l_util::s()'],['../unionq__util.html#ac66bbb0473acb797d9c679b54681b829',1,'q_util::s()']]],
   ['seq',['seq',['../structicmp__hdr.html#a2909b8a0cbcb277ae403d40bf642d2c3',1,'icmp_hdr']]],
   ['sha',['sha',['../structarp__hdr.html#a0ccf15c2e3cf8855e5266d38897dcba3',1,'arp_hdr']]],
+  ['signed',['signed',['../cdefs_8h.html#ae31516cd0c4adc3d52b93ef2e5c6117b',1,'cdefs.h']]],
   ['slist_5fclass_5fentry',['SLIST_CLASS_ENTRY',['../queue_8h.html#ad426b7874955958c48cc04fa3bc9bfce',1,'queue.h']]],
   ['slist_5fclass_5fhead',['SLIST_CLASS_HEAD',['../queue_8h.html#aaf61bc2f16e0dbd3664318920a7af577',1,'queue.h']]],
   ['slist_5fconcat',['SLIST_CONCAT',['../queue_8h.html#ae4345f570996dce1e3b5cada3419ca26',1,'queue.h']]],

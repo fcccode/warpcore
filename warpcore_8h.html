@@ -95,6 +95,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;sys/time.h&gt;</code><br/>
+<code>#include &lt;<a class="el" href="cdefs_8h_source.html">warpcore/cdefs.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="config_8h_source.html">warpcore/config.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="plat_8h_source.html">warpcore/plat.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="queue_8h_source.html">warpcore/queue.h</a>&gt;</code><br/>
@@ -105,7 +106,7 @@ Include dependency graph for warpcore.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8h__incl.png" border="0" usemap="#include_2warpcore_2warpcore_8h" alt=""/></div>
 <map name="include_2warpcore_2warpcore_8h" id="include_2warpcore_2warpcore_8h">
-<area shape="rect" id="node4" href="config_8h.html" title="warpcore/config.h" alt="" coords="211,80,336,107"/><area shape="rect" id="node5" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="75,80,185,107"/><area shape="rect" id="node7" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="496,80,621,107"/><area shape="rect" id="node9" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="360,80,471,107"/><area shape="rect" id="node10" href="util_8h.html" title="warpcore/util.h" alt="" coords="735,80,841,107"/></map>
+<area shape="rect" id="node4" href="cdefs_8h.html" title="warpcore/cdefs.h" alt="" coords="211,80,333,107"/><area shape="rect" id="node5" href="config_8h.html" title="warpcore/config.h" alt="" coords="357,80,483,107"/><area shape="rect" id="node6" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="75,80,185,107"/><area shape="rect" id="node8" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="507,80,632,107"/><area shape="rect" id="node10" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="656,80,767,107"/><area shape="rect" id="node11" href="util_8h.html" title="warpcore/util.h" alt="" coords="879,80,985,107"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -143,60 +144,60 @@ Functions</h2></td></tr>
 <tr class="memitem:a83b86f011acb496a1aa350a83442be77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a83b86f011acb496a1aa350a83442be77">SLIST_HEAD</a> (w_sock_slist, <a class="el" href="structw__sock.html">w_sock</a>)</td></tr>
 <tr class="memdesc:a83b86f011acb496a1aa350a83442be77"><td class="mdescLeft">&#160;</td><td class="mdescRight">A chain of <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> socket.  <a href="#a83b86f011acb496a1aa350a83442be77">More...</a><br/></td></tr>
 <tr class="separator:a83b86f011acb496a1aa350a83442be77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20d62fd50464b5e3f47fd357386ddbed"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a20d62fd50464b5e3f47fd357386ddbed">w_init</a> (const char *const ifname, const uint32_t rip)</td></tr>
+<tr class="memitem:a20d62fd50464b5e3f47fd357386ddbed"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a20d62fd50464b5e3f47fd357386ddbed">w_init</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> ifname, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t rip)</td></tr>
 <tr class="memdesc:a20d62fd50464b5e3f47fd357386ddbed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a warpcore engine on the given interface.  <a href="#a20d62fd50464b5e3f47fd357386ddbed">More...</a><br/></td></tr>
 <tr class="separator:a20d62fd50464b5e3f47fd357386ddbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a726b06c06493678f7f48c889bbcd30a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a726b06c06493678f7f48c889bbcd30a5">w_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
+<tr class="memitem:a726b06c06493678f7f48c889bbcd30a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a726b06c06493678f7f48c889bbcd30a5">w_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w)</td></tr>
 <tr class="memdesc:a726b06c06493678f7f48c889bbcd30a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore engine down cleanly.  <a href="#a726b06c06493678f7f48c889bbcd30a5">More...</a><br/></td></tr>
 <tr class="separator:a726b06c06493678f7f48c889bbcd30a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b39fb3160debbd7c56314d8a990780"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint16_t port, const uint8_t flags)</td></tr>
+<tr class="memitem:a74b39fb3160debbd7c56314d8a990780"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t port, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint8_t flags)</td></tr>
 <tr class="memdesc:a74b39fb3160debbd7c56314d8a990780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to the given local UDP port number.  <a href="#a74b39fb3160debbd7c56314d8a990780">More...</a><br/></td></tr>
 <tr class="separator:a74b39fb3160debbd7c56314d8a990780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab31d23fb4fa64de58aef6c688ea6563a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ab31d23fb4fa64de58aef6c688ea6563a">w_connect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s, const uint32_t ip, const uint16_t port)</td></tr>
+<tr class="memitem:ab31d23fb4fa64de58aef6c688ea6563a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ab31d23fb4fa64de58aef6c688ea6563a">w_connect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t ip, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t port)</td></tr>
 <tr class="memdesc:ab31d23fb4fa64de58aef6c688ea6563a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a bound socket to a remote IP address and port.  <a href="#ab31d23fb4fa64de58aef6c688ea6563a">More...</a><br/></td></tr>
 <tr class="separator:ab31d23fb4fa64de58aef6c688ea6563a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07d8e5b61adc2c9fe1bd32c663a7e23f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a07d8e5b61adc2c9fe1bd32c663a7e23f">w_disconnect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
+<tr class="memitem:a07d8e5b61adc2c9fe1bd32c663a7e23f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a07d8e5b61adc2c9fe1bd32c663a7e23f">w_disconnect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s)</td></tr>
 <tr class="separator:a07d8e5b61adc2c9fe1bd32c663a7e23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26c31751f7bb602b01bf00077ebd362d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
+<tr class="memitem:a26c31751f7bb602b01bf00077ebd362d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s)</td></tr>
 <tr class="memdesc:a26c31751f7bb602b01bf00077ebd362d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a warpcore socket.  <a href="#a26c31751f7bb602b01bf00077ebd362d">More...</a><br/></td></tr>
 <tr class="separator:a26c31751f7bb602b01bf00077ebd362d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a689204eb10c7dbef64428413352fff85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a689204eb10c7dbef64428413352fff85">w_alloc_len</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q, const uint32_t len, const uint16_t off)</td></tr>
+<tr class="memitem:a689204eb10c7dbef64428413352fff85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a689204eb10c7dbef64428413352fff85">w_alloc_len</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> q, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t len, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t off)</td></tr>
 <tr class="memdesc:a689204eb10c7dbef64428413352fff85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue for <code>len</code> payload bytes, for eventual use with <a class="el" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692" title="Loops over the w_iov structures in the w_iov_stailq o, sending them all over w_sock s...">w_tx()</a>.  <a href="#a689204eb10c7dbef64428413352fff85">More...</a><br/></td></tr>
 <tr class="separator:a689204eb10c7dbef64428413352fff85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c2b4f87688e14a7530bc86ddf377411"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7c2b4f87688e14a7530bc86ddf377411">w_alloc_cnt</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q, const uint32_t count, const uint16_t off)</td></tr>
+<tr class="memitem:a7c2b4f87688e14a7530bc86ddf377411"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7c2b4f87688e14a7530bc86ddf377411">w_alloc_cnt</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> q, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t count, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t off)</td></tr>
 <tr class="memdesc:a7c2b4f87688e14a7530bc86ddf377411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue of <code>count</code> packets, for eventual use with <a class="el" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692" title="Loops over the w_iov structures in the w_iov_stailq o, sending them all over w_sock s...">w_tx()</a>.  <a href="#a7c2b4f87688e14a7530bc86ddf377411">More...</a><br/></td></tr>
 <tr class="separator:a7c2b4f87688e14a7530bc86ddf377411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692">w_tx</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const o)</td></tr>
+<tr class="memitem:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692">w_tx</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> o)</td></tr>
 <tr class="memdesc:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a> <code>o</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#ae4e224c9a1e5d17f44ea007ff2aa4692">More...</a><br/></td></tr>
 <tr class="separator:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dda1788a8e14dc34142676afa6a4e13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q)</td></tr>
+<tr class="memitem:a7dda1788a8e14dc34142676afa6a4e13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> q)</td></tr>
 <tr class="memdesc:a7dda1788a8e14dc34142676afa6a4e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue obtained via <a class="el" href="warpcore_8c.html#a689204eb10c7dbef64428413352fff85" title="Allocate a w_iov tail queue for len payload bytes, for eventual use with w_tx(). ">w_alloc_len()</a>, <a class="el" href="warpcore_8c.html#a7c2b4f87688e14a7530bc86ddf377411" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore.  <a href="#a7dda1788a8e14dc34142676afa6a4e13">More...</a><br/></td></tr>
 <tr class="separator:a7dda1788a8e14dc34142676afa6a4e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2570e386e8776c6cc5203f56490a6a54"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a2570e386e8776c6cc5203f56490a6a54">w_iov_stailq_len</a> (const struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q)</td></tr>
+<tr class="memitem:a2570e386e8776c6cc5203f56490a6a54"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a2570e386e8776c6cc5203f56490a6a54">w_iov_stailq_len</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> q)</td></tr>
 <tr class="memdesc:a2570e386e8776c6cc5203f56490a6a54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total payload length of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>c</code>.  <a href="#a2570e386e8776c6cc5203f56490a6a54">More...</a><br/></td></tr>
 <tr class="separator:a2570e386e8776c6cc5203f56490a6a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec5a5bdb16a124254766c349768c2d7e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#aec5a5bdb16a124254766c349768c2d7e">w_iov_stailq_cnt</a> (const struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q)</td></tr>
+<tr class="memitem:aec5a5bdb16a124254766c349768c2d7e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#aec5a5bdb16a124254766c349768c2d7e">w_iov_stailq_cnt</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> q)</td></tr>
 <tr class="memdesc:aec5a5bdb16a124254766c349768c2d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>c</code>.  <a href="#aec5a5bdb16a124254766c349768c2d7e">More...</a><br/></td></tr>
 <tr class="separator:aec5a5bdb16a124254766c349768c2d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf46056f39cb452d908ddac8cf6e57c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
+<tr class="memitem:aaf46056f39cb452d908ddac8cf6e57c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s)</td></tr>
 <tr class="memdesc:aaf46056f39cb452d908ddac8cf6e57c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the file descriptor associated with a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>.  <a href="#aaf46056f39cb452d908ddac8cf6e57c5">More...</a><br/></td></tr>
 <tr class="separator:aaf46056f39cb452d908ddac8cf6e57c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5d9eb6da113ab9e0e7219efa0876384"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384">w_rx</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const i)</td></tr>
+<tr class="memitem:ae5d9eb6da113ab9e0e7219efa0876384"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384">w_rx</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> i)</td></tr>
 <tr class="memdesc:ae5d9eb6da113ab9e0e7219efa0876384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return any new data that has been received on a socket by appending it to the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>i</code>.  <a href="#ae5d9eb6da113ab9e0e7219efa0876384">More...</a><br/></td></tr>
 <tr class="separator:ae5d9eb6da113ab9e0e7219efa0876384"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fba5669717435248ca7b7945a9b9d75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75">w_nic_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
+<tr class="memitem:a3fba5669717435248ca7b7945a9b9d75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75">w_nic_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w)</td></tr>
 <tr class="memdesc:a3fba5669717435248ca7b7945a9b9d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push data placed in the TX rings via <a class="el" href="udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c" title="Sends a payload contained in a w_sock::ov via UDP. ">udp_tx()</a> and similar methods out onto the link.  <a href="#a3fba5669717435248ca7b7945a9b9d75">More...</a><br/></td></tr>
 <tr class="separator:a3fba5669717435248ca7b7945a9b9d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d">w_nic_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const int32_t msec)</td></tr>
+<tr class="memitem:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d">w_nic_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> int32_t msec)</td></tr>
 <tr class="memdesc:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger netmap to make new received data available to <a class="el" href="backend__netmap_8c.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a>.  <a href="#ab0508cfebe874ba0f3f2f230b4120e0d">More...</a><br/></td></tr>
 <tr class="separator:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67c5990cbbeaaf2615655a79ae99c2b8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a67c5990cbbeaaf2615655a79ae99c2b8">w_engine</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
+<tr class="memitem:a67c5990cbbeaaf2615655a79ae99c2b8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a67c5990cbbeaaf2615655a79ae99c2b8">w_engine</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s)</td></tr>
 <tr class="memdesc:a67c5990cbbeaaf2615655a79ae99c2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return warpcore engine serving <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#a67c5990cbbeaaf2615655a79ae99c2b8">More...</a><br/></td></tr>
 <tr class="separator:a67c5990cbbeaaf2615655a79ae99c2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f513496b2cd0e117d1577fc074e6a4c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a2f513496b2cd0e117d1577fc074e6a4c">w_rx_ready</a> (const struct <a class="el" href="structw__engine.html">w_engine</a> *w, struct w_sock_slist *sl)</td></tr>
+<tr class="memitem:a2f513496b2cd0e117d1577fc074e6a4c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a2f513496b2cd0e117d1577fc074e6a4c">w_rx_ready</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__engine.html">w_engine</a> *w, struct w_sock_slist *sl)</td></tr>
 <tr class="memdesc:a2f513496b2cd0e117d1577fc074e6a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a w_sock_slist with pointers to some sockets with pending inbound data.  <a href="#a2f513496b2cd0e117d1577fc074e6a4c">More...</a><br/></td></tr>
 <tr class="separator:a2f513496b2cd0e117d1577fc074e6a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b47d2c85543fe7de031d20a946a8d40"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7b47d2c85543fe7de031d20a946a8d40">w_iov_max_len</a> (const struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const struct <a class="el" href="structw__iov.html">w_iov</a> *const v)</td></tr>
+<tr class="memitem:a7b47d2c85543fe7de031d20a946a8d40"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7b47d2c85543fe7de031d20a946a8d40">w_iov_max_len</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov.html">w_iov</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> v)</td></tr>
 <tr class="memdesc:a7b47d2c85543fe7de031d20a946a8d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximum size a given <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> may have for the given engine.  <a href="#a7b47d2c85543fe7de031d20a946a8d40">More...</a><br/></td></tr>
 <tr class="separator:a7b47d2c85543fe7de031d20a946a8d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -280,25 +281,25 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void w_alloc_cnt </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
           <td class="paramname"><em>count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t&#160;</td>
           <td class="paramname"><em>off</em>&#160;</td>
         </tr>
         <tr>
@@ -339,25 +340,25 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_alloc_len </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t&#160;</td>
           <td class="paramname"><em>off</em>&#160;</td>
         </tr>
         <tr>
@@ -399,19 +400,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">struct <a class="el" href="structw__sock.html">w_sock</a>* w_bind </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint8_t&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint8_t&#160;</td>
           <td class="paramname"><em>flags</em>&#160;</td>
         </tr>
         <tr>
@@ -452,7 +453,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_cleanup </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
         </tr>
@@ -487,7 +488,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_close </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -513,19 +514,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_connect </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
           <td class="paramname"><em>ip</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t&#160;</td>
           <td class="paramname"><em>port</em>&#160;</td>
         </tr>
         <tr>
@@ -567,7 +568,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_disconnect </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -583,7 +584,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">struct <a class="el" href="structw__engine.html">w_engine</a>* <a class="el" href="structw__engine.html">w_engine</a> </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -608,7 +609,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int w_fd </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -642,13 +643,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_free </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>q</em>&#160;</td>
         </tr>
         <tr>
@@ -678,13 +679,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">struct <a class="el" href="structw__engine.html">w_engine</a>* w_init </td>
           <td>(</td>
-          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>ifname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
           <td class="paramname"><em>rip</em>&#160;</td>
         </tr>
         <tr>
@@ -726,13 +727,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint16_t w_iov_max_len </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const struct <a class="el" href="structw__iov.html">w_iov</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov.html">w_iov</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>
@@ -763,7 +764,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint32_t w_iov_stailq_cnt </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
           <td></td>
         </tr>
@@ -789,7 +790,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint32_t w_iov_stailq_len </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
           <td></td>
         </tr>
@@ -815,13 +816,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool w_nic_rx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int32_t&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> int32_t&#160;</td>
           <td class="paramname"><em>msec</em>&#160;</td>
         </tr>
         <tr>
@@ -871,7 +872,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_nic_tx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
         </tr>
@@ -904,13 +905,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_rx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>i</em>&#160;</td>
         </tr>
         <tr>
@@ -959,13 +960,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint32_t w_rx_ready </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct w_sock_slist *const&#160;</td>
+          <td class="paramtype">struct w_sock_slist *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>sl</em>&#160;</td>
         </tr>
         <tr>
@@ -997,13 +998,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_tx </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>o</em>&#160;</td>
         </tr>
         <tr>
@@ -1048,7 +1049,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 08:39:14 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 08:47:44 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

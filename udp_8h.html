@@ -119,10 +119,10 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a008e1d17237f152a0184c0c6b120a747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a008e1d17237f152a0184c0c6b120a747">udp_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct netmap_ring *const r)</td></tr>
+<tr class="memitem:a008e1d17237f152a0184c0c6b120a747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a008e1d17237f152a0184c0c6b120a747">udp_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct netmap_ring *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> r)</td></tr>
 <tr class="memdesc:a008e1d17237f152a0184c0c6b120a747"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive a UDP packet.  <a href="#a008e1d17237f152a0184c0c6b120a747">More...</a><br/></td></tr>
 <tr class="separator:a008e1d17237f152a0184c0c6b120a747"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ff6c06e976086b17457bc7766bb8e0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a5ff6c06e976086b17457bc7766bb8e0c">udp_tx</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov.html">w_iov</a> *const v)</td></tr>
+<tr class="memitem:a5ff6c06e976086b17457bc7766bb8e0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="udp_8h.html#a5ff6c06e976086b17457bc7766bb8e0c">udp_tx</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s, struct <a class="el" href="structw__iov.html">w_iov</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> v)</td></tr>
 <tr class="memdesc:a5ff6c06e976086b17457bc7766bb8e0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a payload contained in a w_sock::ov via UDP.  <a href="#a5ff6c06e976086b17457bc7766bb8e0c">More...</a><br/></td></tr>
 <tr class="separator:a5ff6c06e976086b17457bc7766bb8e0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -134,13 +134,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void udp_rx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct netmap_ring *const&#160;</td>
+          <td class="paramtype">struct netmap_ring *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>r</em>&#160;</td>
         </tr>
         <tr>
@@ -180,13 +180,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool udp_tx </td>
           <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov.html">w_iov</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov.html">w_iov</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>
@@ -222,7 +222,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 08:39:15 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 08:47:44 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

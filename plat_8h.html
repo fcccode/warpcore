@@ -121,16 +121,16 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:af6b33b55cec0d2eedec73b51fdaef8ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plat_8h.html#af6b33b55cec0d2eedec73b51fdaef8ab">plat_get_mac</a> (uint8_t *mac, const struct ifaddrs *i)</td></tr>
+<tr class="memitem:af6b33b55cec0d2eedec73b51fdaef8ab"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plat_8h.html#af6b33b55cec0d2eedec73b51fdaef8ab">plat_get_mac</a> (uint8_t *mac, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct ifaddrs *i)</td></tr>
 <tr class="memdesc:af6b33b55cec0d2eedec73b51fdaef8ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the Ethernet MAC address of network interface <code>i</code>.  <a href="#af6b33b55cec0d2eedec73b51fdaef8ab">More...</a><br/></td></tr>
 <tr class="separator:af6b33b55cec0d2eedec73b51fdaef8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ababcbad22db97091f566216a5b2b849f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plat_8h.html#ababcbad22db97091f566216a5b2b849f">plat_get_mtu</a> (const struct ifaddrs *i)</td></tr>
+<tr class="memitem:ababcbad22db97091f566216a5b2b849f"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plat_8h.html#ababcbad22db97091f566216a5b2b849f">plat_get_mtu</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct ifaddrs *i)</td></tr>
 <tr class="memdesc:ababcbad22db97091f566216a5b2b849f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the MTU of network interface <code>i</code>.  <a href="#ababcbad22db97091f566216a5b2b849f">More...</a><br/></td></tr>
 <tr class="separator:ababcbad22db97091f566216a5b2b849f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d7a687500042a6283402c4154bf453c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plat_8h.html#a5d7a687500042a6283402c4154bf453c">plat_get_mbps</a> (const struct ifaddrs *i)</td></tr>
+<tr class="memitem:a5d7a687500042a6283402c4154bf453c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plat_8h.html#a5d7a687500042a6283402c4154bf453c">plat_get_mbps</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct ifaddrs *i)</td></tr>
 <tr class="memdesc:a5d7a687500042a6283402c4154bf453c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the link speed in Mb/s of network interface <code>i</code>.  <a href="#a5d7a687500042a6283402c4154bf453c">More...</a><br/></td></tr>
 <tr class="separator:a5d7a687500042a6283402c4154bf453c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84253d34fd3d0f7c55d4b319c4d2618b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plat_8h.html#a84253d34fd3d0f7c55d4b319c4d2618b">plat_get_link</a> (const struct ifaddrs *i)</td></tr>
+<tr class="memitem:a84253d34fd3d0f7c55d4b319c4d2618b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="plat_8h.html#a84253d34fd3d0f7c55d4b319c4d2618b">plat_get_link</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct ifaddrs *i)</td></tr>
 <tr class="memdesc:a84253d34fd3d0f7c55d4b319c4d2618b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the link status of network interface <code>i</code>.  <a href="#a84253d34fd3d0f7c55d4b319c4d2618b">More...</a><br/></td></tr>
 <tr class="separator:a84253d34fd3d0f7c55d4b319c4d2618b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -174,7 +174,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">bool plat_get_link </td>
           <td>(</td>
-          <td class="paramtype">const struct ifaddrs *&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct ifaddrs *&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
@@ -205,7 +205,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const struct ifaddrs *&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct ifaddrs *&#160;</td>
           <td class="paramname"><em>i</em>&#160;</td>
         </tr>
         <tr>
@@ -234,7 +234,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">uint32_t plat_get_mbps </td>
           <td>(</td>
-          <td class="paramtype">const struct ifaddrs *&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct ifaddrs *&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
@@ -259,7 +259,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">uint16_t plat_get_mtu </td>
           <td>(</td>
-          <td class="paramtype">const struct ifaddrs *&#160;</td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct ifaddrs *&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td></td>
         </tr>
@@ -280,7 +280,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 08:39:14 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 08:47:44 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
