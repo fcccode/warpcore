@@ -99,7 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
-<code>#include &lt;sys/queue.h&gt;</code><br/>
 <code>#include &lt;sys/socket.h&gt;</code><br/>
 <code>#include &lt;unistd.h&gt;</code><br/>
 <code>#include &lt;net/ethernet.h&gt;</code><br/>
@@ -108,13 +107,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &quot;<a class="el" href="eth_8h_source.html">eth.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ip_8h_source.html">ip.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="udp_8h_source.html">udp.h</a>&quot;</code><br/>
-<code>#include &quot;<a class="el" href="config_8h_source.html">warpcore/config.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for warpcore.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8c__incl.png" border="0" usemap="#src_2warpcore_8c" alt=""/></div>
 <map name="src_2warpcore_8c" id="src_2warpcore_8c">
-<area shape="rect" id="node13" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="586,155,728,181"/><area shape="rect" id="node15" href="config_8h.html" title="warpcore/config.h" alt="" coords="897,229,1023,256"/><area shape="rect" id="node22" href="backend_8h.html" title="backend.h" alt="" coords="225,80,307,107"/><area shape="rect" id="node23" href="eth_8h.html" title="eth.h" alt="" coords="135,229,185,256"/><area shape="rect" id="node24" href="ip_8h.html" title="ip.h" alt="" coords="108,155,151,181"/><area shape="rect" id="node25" href="udp_8h.html" title="udp.h" alt="" coords="287,155,341,181"/><area shape="rect" id="node16" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="413,229,523,256"/><area shape="rect" id="node17" href="util_8h.html" title="warpcore/util.h" alt="" coords="649,229,756,256"/></map>
+<area shape="rect" id="node12" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="683,155,825,181"/><area shape="rect" id="node24" href="backend_8h.html" title="backend.h" alt="" coords="1235,80,1316,107"/><area shape="rect" id="node25" href="eth_8h.html" title="eth.h" alt="" coords="1368,229,1419,256"/><area shape="rect" id="node26" href="ip_8h.html" title="ip.h" alt="" coords="1321,155,1364,181"/><area shape="rect" id="node27" href="udp_8h.html" title="udp.h" alt="" coords="1170,155,1224,181"/><area shape="rect" id="node14" href="config_8h.html" title="warpcore/config.h" alt="" coords="779,229,904,256"/><area shape="rect" id="node15" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="979,229,1089,256"/><area shape="rect" id="node16" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="493,229,619,256"/><area shape="rect" id="node18" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="643,229,753,256"/><area shape="rect" id="node19" href="util_8h.html" title="warpcore/util.h" alt="" coords="312,229,419,256"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -169,7 +167,7 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ac5f4812d2c339c6d0fa6e591bf555caf"><td class="memItemLeft" align="right" valign="top">struct w_engines&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#ac5f4812d2c339c6d0fa6e591bf555caf">engines</a> = SLIST_HEAD_INITIALIZER(engines)</td></tr>
+<tr class="memitem:ac5f4812d2c339c6d0fa6e591bf555caf"><td class="memItemLeft" align="right" valign="top">struct w_engines&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#ac5f4812d2c339c6d0fa6e591bf555caf">engines</a> = <a class="el" href="queue_8h.html#a9ae2aca3d46e62be4cb1408bd946ef15">SLIST_HEAD_INITIALIZER</a>(engines)</td></tr>
 <tr class="memdesc:ac5f4812d2c339c6d0fa6e591bf555caf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A global list of netmap engines that have been initialized for different interfaces.  <a href="#ac5f4812d2c339c6d0fa6e591bf555caf">More...</a><br/></td></tr>
 <tr class="separator:ac5f4812d2c339c6d0fa6e591bf555caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -263,7 +261,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Return a spare <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> from the pool of the given warpcore engine. </p>
-<p>Needs to be returned to w-&gt;iov via STAILQ_INSERT_HEAD() or STAILQ_CONCAT().</p>
+<p>Needs to be returned to w-&gt;iov via <a class="el" href="queue_8h.html#aad3b1fb87b675bae75334acd958b57dc">STAILQ_INSERT_HEAD()</a> or <a class="el" href="queue_8h.html#aadfbe79db37e93cf528ae79a9aafb755">STAILQ_CONCAT()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">w</td><td>Backend engine.</td></tr>
@@ -808,7 +806,7 @@ Here is the call graph for this function:</div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct w_engines engines = SLIST_HEAD_INITIALIZER(engines)</td>
+          <td class="memname">struct w_engines engines = <a class="el" href="queue_8h.html#a9ae2aca3d46e62be4cb1408bd946ef15">SLIST_HEAD_INITIALIZER</a>(engines)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -820,7 +818,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 2 2017 12:17:22 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 08:39:15 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -429,13 +429,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        (<a class="code" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a>)-&gt;vhl = (4 &lt;&lt; 4) + 5;                                              \</div>
-<div class="line">        (<a class="code" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a>)-&gt;off = htons(<a class="code" href="ip_8h.html#ae2473f4a88d141d5298f92a4335b714a">IP_DF</a>);                                              \</div>
-<div class="line">        (<a class="code" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a>)-&gt;ttl = 64; <span class="comment">/* XXX this should be configurable */</span>                  \</div>
-<div class="line">        (<a class="code" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a>)-&gt;p = <a class="code" href="ip_8h.html#a0a2d72ff4c961f5e8b58c40cc4e1987c">IP_P_UDP</a>;                                                    \</div>
-<div class="line">        (<a class="code" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a>)-&gt;cksum = 0;                                                       \</div>
+<div class="line">        (ip)-&gt;vhl = (4 &lt;&lt; 4) + 5;                                              \</div>
+<div class="line">        (ip)-&gt;off = htons(<a class="code" href="ip_8h.html#ae2473f4a88d141d5298f92a4335b714a">IP_DF</a>);                                              \</div>
+<div class="line">        (ip)-&gt;ttl = 64; <span class="comment">/* XXX this should be configurable */</span>                  \</div>
+<div class="line">        (ip)-&gt;p = <a class="code" href="ip_8h.html#a0a2d72ff4c961f5e8b58c40cc4e1987c">IP_P_UDP</a>;                                                    \</div>
+<div class="line">        (ip)-&gt;cksum = 0;                                                       \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="structw__engine_html_a9cd4f582bf408fb94b38158f3b4fee19"><div class="ttname"><a href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">w_engine::ip</a></div><div class="ttdeci">uint32_t ip</div><div class="ttdoc">Local IPv4 address used on this interface. </div><div class="ttdef"><b>Definition:</b> backend.h:86</div></div>
 <div class="ttc" id="ip_8h_html_ae2473f4a88d141d5298f92a4335b714a"><div class="ttname"><a href="ip_8h.html#ae2473f4a88d141d5298f92a4335b714a">IP_DF</a></div><div class="ttdeci">#define IP_DF</div><div class="ttdoc">&quot;Don&#39;t fragment&quot; flag. </div><div class="ttdef"><b>Definition:</b> ip.h:48</div></div>
 <div class="ttc" id="ip_8h_html_a0a2d72ff4c961f5e8b58c40cc4e1987c"><div class="ttname"><a href="ip_8h.html#a0a2d72ff4c961f5e8b58c40cc4e1987c">IP_P_UDP</a></div><div class="ttdeci">#define IP_P_UDP</div><div class="ttdoc">IP protocol number for UDP. </div><div class="ttdef"><b>Definition:</b> ip.h:79</div></div>
 </div><!-- fragment -->
@@ -800,7 +799,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 2 2017 12:17:22 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 08:39:15 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

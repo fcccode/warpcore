@@ -98,7 +98,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
-<code>#include &lt;sys/queue.h&gt;</code><br/>
 <code>#include &lt;sys/socket.h&gt;</code><br/>
 <code>#include &lt;unistd.h&gt;</code><br/>
 <code>#include &lt;net/ethernet.h&gt;</code><br/>
@@ -112,7 +111,7 @@ Include dependency graph for arp.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="arp_8c__incl.png" border="0" usemap="#src_2arp_8c" alt=""/></div>
 <map name="src_2arp_8c" id="src_2arp_8c">
-<area shape="rect" id="node12" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="609,155,751,181"/><area shape="rect" id="node22" href="arp_8h.html" title="arp.h" alt="" coords="463,155,513,181"/><area shape="rect" id="node23" href="eth_8h.html" title="eth.h" alt="" coords="185,229,236,256"/><area shape="rect" id="node24" href="backend_8h.html" title="backend.h" alt="" coords="271,80,352,107"/><area shape="rect" id="node25" href="ip_8h.html" title="ip.h" alt="" coords="128,155,171,181"/><area shape="rect" id="node14" href="config_8h.html" title="warpcore/config.h" alt="" coords="525,229,651,256"/><area shape="rect" id="node15" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="339,229,449,256"/><area shape="rect" id="node17" href="util_8h.html" title="warpcore/util.h" alt="" coords="827,229,933,256"/><area shape="rect" id="node26" href="udp_8h.html" title="udp.h" alt="" coords="261,229,315,256"/></map>
+<area shape="rect" id="node11" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="681,155,823,181"/><area shape="rect" id="node24" href="arp_8h.html" title="arp.h" alt="" coords="1163,155,1213,181"/><area shape="rect" id="node25" href="eth_8h.html" title="eth.h" alt="" coords="1303,229,1353,256"/><area shape="rect" id="node26" href="backend_8h.html" title="backend.h" alt="" coords="1232,80,1313,107"/><area shape="rect" id="node27" href="ip_8h.html" title="ip.h" alt="" coords="1389,155,1432,181"/><area shape="rect" id="node13" href="config_8h.html" title="warpcore/config.h" alt="" coords="785,229,911,256"/><area shape="rect" id="node14" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="1037,229,1147,256"/><area shape="rect" id="node16" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="636,229,761,256"/><area shape="rect" id="node18" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="500,229,611,256"/><area shape="rect" id="node19" href="util_8h.html" title="warpcore/util.h" alt="" coords="319,229,425,256"/><area shape="rect" id="node28" href="udp_8h.html" title="udp.h" alt="" coords="1223,229,1277,256"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -123,6 +122,8 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a8abe9ac59d52d651f3fef972cab9c016"><td class="memItemLeft" align="right" valign="top">static int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arp_8c.html#a8abe9ac59d52d651f3fef972cab9c016">arp_cache_cmp</a> (const struct <a class="el" href="structarp__entry.html">arp_entry</a> *const a, const struct <a class="el" href="structarp__entry.html">arp_entry</a> *const b)</td></tr>
+<tr class="separator:a8abe9ac59d52d651f3fef972cab9c016"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab57d1a0513207babcdb2f6a8a8295fae"><td class="memItemLeft" align="right" valign="top">static struct <a class="el" href="structarp__entry.html">arp_entry</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae">arp_cache_find</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, const uint32_t ip)</td></tr>
 <tr class="memdesc:ab57d1a0513207babcdb2f6a8a8295fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Find the ARP cache entry associated with IPv4 address <code>ip</code>.  <a href="#ab57d1a0513207babcdb2f6a8a8295fae">More...</a><br/></td></tr>
 <tr class="separator:ab57d1a0513207babcdb2f6a8a8295fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,6 +144,40 @@ Functions</h2></td></tr>
 <tr class="separator:a1b84f8ec20a55f766fcfcb9cd2d0d1e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a8abe9ac59d52d651f3fef972cab9c016"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int64_t arp_cache_cmp </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structarp__entry.html">arp_entry</a> *const&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const struct <a class="el" href="structarp__entry.html">arp_entry</a> *const&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ab57d1a0513207babcdb2f6a8a8295fae"></a>
 <div class="memitem">
 <div class="memproto">
@@ -418,7 +453,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 2 2017 12:17:22 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 08:39:14 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
