@@ -194,9 +194,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a67c5990cbbeaaf2615655a79ae99c2b8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a67c5990cbbeaaf2615655a79ae99c2b8">w_engine</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s)</td></tr>
 <tr class="memdesc:a67c5990cbbeaaf2615655a79ae99c2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return warpcore engine serving <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#a67c5990cbbeaaf2615655a79ae99c2b8">More...</a><br/></td></tr>
 <tr class="separator:a67c5990cbbeaaf2615655a79ae99c2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f513496b2cd0e117d1577fc074e6a4c"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a2f513496b2cd0e117d1577fc074e6a4c">w_rx_ready</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__engine.html">w_engine</a> *w, struct w_sock_slist *sl)</td></tr>
-<tr class="memdesc:a2f513496b2cd0e117d1577fc074e6a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a w_sock_slist with pointers to some sockets with pending inbound data.  <a href="#a2f513496b2cd0e117d1577fc074e6a4c">More...</a><br/></td></tr>
-<tr class="separator:a2f513496b2cd0e117d1577fc074e6a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10a4664235583c583eee0a08a35a9c71"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a10a4664235583c583eee0a08a35a9c71">w_rx_ready</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct w_sock_slist *sl)</td></tr>
+<tr class="memdesc:a10a4664235583c583eee0a08a35a9c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a w_sock_slist with pointers to some sockets with pending inbound data.  <a href="#a10a4664235583c583eee0a08a35a9c71">More...</a><br/></td></tr>
+<tr class="separator:a10a4664235583c583eee0a08a35a9c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b47d2c85543fe7de031d20a946a8d40"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7b47d2c85543fe7de031d20a946a8d40">w_iov_max_len</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov.html">w_iov</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> v)</td></tr>
 <tr class="memdesc:a7b47d2c85543fe7de031d20a946a8d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximum size a given <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> may have for the given engine.  <a href="#a7b47d2c85543fe7de031d20a946a8d40">More...</a><br/></td></tr>
 <tr class="separator:a7b47d2c85543fe7de031d20a946a8d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,7 +225,7 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structs not yet transmitted. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a28">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a16">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a30">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a18">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -241,7 +241,7 @@ Functions</h2></td></tr>
 
 <p>Do not compute a UDP checksum for outgoing packets. </p>
 <p>Has no effect for the shim backend. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a2">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a0">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a4">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a2">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -380,7 +380,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a10">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a12">ping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -433,7 +433,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to a bound <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a7">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a7">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a9">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a9">ping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -468,7 +468,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a32">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a28">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a34">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a30">ping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -503,7 +503,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a31">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a27">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a33">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a29">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -548,7 +548,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a8">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a10">ping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -668,7 +668,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a30">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a26">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a32">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a28">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -707,7 +707,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Initialized warpcore engine. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a5">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a4">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a7">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a6">ping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -779,7 +779,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structs in <code>q</code>. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a25">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a27">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -805,7 +805,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sum of the payload lengths of the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structs in <code>q</code>. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a17">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a22">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a19">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a24">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -852,7 +852,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Whether any data is ready for reading. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a8">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a23">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a10">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a25">ping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -894,7 +894,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a29">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a17">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a31">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a19">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -940,7 +940,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a14">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a24">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a16">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a26">ping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -953,14 +953,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a2f513496b2cd0e117d1577fc074e6a4c"></a>
+<a class="anchor" id="a10a4664235583c583eee0a08a35a9c71"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">uint32_t w_rx_ready </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
@@ -987,7 +987,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Number of connections that are ready for reading. </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a10">inetd.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a12">inetd.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1033,7 +1033,7 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a27">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a15">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a29">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a17">ping.c</a>.</dd>
 </dl>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1049,7 +1049,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 08:54:55 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 17:42:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

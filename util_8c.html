@@ -136,6 +136,9 @@ Variables</h2></td></tr>
 <tr class="memitem:adc6521557ce5f08fe0c96b20d81c7ebc"><td class="memItemLeft" align="right" valign="top">regex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#adc6521557ce5f08fe0c96b20d81c7ebc">_comp</a></td></tr>
 <tr class="memdesc:adc6521557ce5f08fe0c96b20d81c7ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the regex compiled from DCOMPONENT.  <a href="#adc6521557ce5f08fe0c96b20d81c7ebc">More...</a><br/></td></tr>
 <tr class="separator:adc6521557ce5f08fe0c96b20d81c7ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff6c95c5d023bcc9fb827a14c8e6ca4c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#aff6c95c5d023bcc9fb827a14c8e6ca4c">_dlevel</a> = <a class="el" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></td></tr>
+<tr class="memdesc:aff6c95c5d023bcc9fb827a14c8e6ca4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically adjust _dlevel from your code to show or suppress debug messages at runtime.  <a href="#aff6c95c5d023bcc9fb827a14c8e6ca4c">More...</a><br/></td></tr>
+<tr class="separator:aff6c95c5d023bcc9fb827a14c8e6ca4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a7a3fc877ae19d64e52cff7e0ceff7668"></a>
@@ -267,6 +270,21 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aff6c95c5d023bcc9fb827a14c8e6ca4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a> _dlevel = <a class="el" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Dynamically adjust _dlevel from your code to show or suppress debug messages at runtime. </p>
+<p>Increasing this past what was compiled in by setting DLEVEL is obviously not going to have any effect. </p>
+
+</div>
+</div>
 <a class="anchor" id="ad520a2ca0199ec9bb85c37772900e332"></a>
 <div class="memitem">
 <div class="memproto">
@@ -312,7 +330,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 08:54:55 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 17:42:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

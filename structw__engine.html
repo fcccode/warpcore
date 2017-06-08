@@ -104,9 +104,6 @@ Collaboration diagram for w_engine:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af9d4e7b38a69d1617deb1d15f30f8e9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#af9d4e7b38a69d1617deb1d15f30f8e9f">SLIST_HEAD</a> (, <a class="el" href="structw__sock.html">w_sock</a>) sock</td></tr>
-<tr class="memdesc:af9d4e7b38a69d1617deb1d15f30f8e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of open (bound) <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> sockets.  <a href="#af9d4e7b38a69d1617deb1d15f30f8e9f">More...</a><br/></td></tr>
-<tr class="separator:af9d4e7b38a69d1617deb1d15f30f8e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e8766eb2e008799eac78a5a083ac235"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a1e8766eb2e008799eac78a5a083ac235">STAILQ_HEAD</a> (, <a class="el" href="structw__iov.html">w_iov</a>) iov</td></tr>
 <tr class="memdesc:a1e8766eb2e008799eac78a5a083ac235"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tail queue of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers available.  <a href="#a1e8766eb2e008799eac78a5a083ac235">More...</a><br/></td></tr>
 <tr class="separator:a1e8766eb2e008799eac78a5a083ac235"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -116,6 +113,9 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
+<tr class="memitem:aa321bccab5bbcc458e1f793afa7a0e45"><td class="memItemLeft" align="right" valign="top">struct sock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#aa321bccab5bbcc458e1f793afa7a0e45">sock</a></td></tr>
+<tr class="memdesc:aa321bccab5bbcc458e1f793afa7a0e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of open (bound) <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> sockets.  <a href="#aa321bccab5bbcc458e1f793afa7a0e45">More...</a><br/></td></tr>
+<tr class="separator:aa321bccab5bbcc458e1f793afa7a0e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cd4f582bf408fb94b38158f3b4fee19"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a></td></tr>
 <tr class="memdesc:a9cd4f582bf408fb94b38158f3b4fee19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local IPv4 address used on this interface.  <a href="#a9cd4f582bf408fb94b38158f3b4fee19">More...</a><br/></td></tr>
 <tr class="separator:a9cd4f582bf408fb94b38158f3b4fee19"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -145,7 +145,7 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A warpcore backend engine. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a4">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a3">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a6">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a5">ping.c</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac5547ee2ef8246542b9c0d48b74b02fc"></a>
 <div class="memitem">
@@ -162,24 +162,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pointer to next engine. </p>
-
-</div>
-</div>
-<a class="anchor" id="af9d4e7b38a69d1617deb1d15f30f8e9f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">w_engine::SLIST_HEAD </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structw__sock.html">w_sock</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>List of open (bound) <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> sockets. </p>
 
 </div>
 </div>
@@ -326,13 +308,27 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa321bccab5bbcc458e1f793afa7a0e45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct sock w_engine::sock</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>List of open (bound) <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> sockets. </p>
+
+</div>
+</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>src/<a class="el" href="backend_8h_source.html">backend.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 08:54:55 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 17:42:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

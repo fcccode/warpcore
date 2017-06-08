@@ -107,9 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abd85085e95c56fcccd5ea70d50107d30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#abd85085e95c56fcccd5ea70d50107d30">STAILQ_HEAD</a> (, <a class="el" href="structw__iov.html">w_iov</a>) iv</td></tr>
 <tr class="memdesc:abd85085e95c56fcccd5ea70d50107d30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tail queue containing incoming unread data.  <a href="#abd85085e95c56fcccd5ea70d50107d30">More...</a><br/></td></tr>
 <tr class="separator:abd85085e95c56fcccd5ea70d50107d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea1f5ad77f33f230ba7839eca3b2b4bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#aea1f5ad77f33f230ba7839eca3b2b4bb">SLIST_ENTRY</a> (<a class="el" href="structw__sock.html">w_sock</a>) next</td></tr>
-<tr class="memdesc:aea1f5ad77f33f230ba7839eca3b2b4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next socket associated with this engine.  <a href="#aea1f5ad77f33f230ba7839eca3b2b4bb">More...</a><br/></td></tr>
-<tr class="separator:aea1f5ad77f33f230ba7839eca3b2b4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66c89a4b288fc0b434f98ffa407b6cbc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#a66c89a4b288fc0b434f98ffa407b6cbc">SPLAY_ENTRY</a> (<a class="el" href="structw__sock.html">w_sock</a>) next</td></tr>
+<tr class="memdesc:a66c89a4b288fc0b434f98ffa407b6cbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next socket associated with this engine.  <a href="#a66c89a4b288fc0b434f98ffa407b6cbc">More...</a><br/></td></tr>
+<tr class="separator:a66c89a4b288fc0b434f98ffa407b6cbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fe244ebdfd0f22d3bb05288bc251ada"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#a1fe244ebdfd0f22d3bb05288bc251ada">SLIST_ENTRY</a> (<a class="el" href="structw__sock.html">w_sock</a>) next_rx</td></tr>
 <tr class="memdesc:a1fe244ebdfd0f22d3bb05288bc251ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next socket with unread data.  <a href="#a1fe244ebdfd0f22d3bb05288bc251ada">More...</a><br/></td></tr>
 <tr class="separator:a1fe244ebdfd0f22d3bb05288bc251ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,26 +130,8 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A warpcore socket. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a6">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a5">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a8">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a7">ping.c</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aea1f5ad77f33f230ba7839eca3b2b4bb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">w_sock::SLIST_ENTRY </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structw__sock.html">w_sock</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Next socket associated with this engine. </p>
-
-</div>
-</div>
 <a class="anchor" id="a1fe244ebdfd0f22d3bb05288bc251ada"></a>
 <div class="memitem">
 <div class="memproto">
@@ -165,6 +147,24 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Next socket with unread data. </p>
+
+</div>
+</div>
+<a class="anchor" id="a66c89a4b288fc0b434f98ffa407b6cbc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">w_sock::SPLAY_ENTRY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structw__sock.html">w_sock</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Next socket associated with this engine. </p>
 
 </div>
 </div>
@@ -247,7 +247,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 08:54:55 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 8 2017 17:42:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
