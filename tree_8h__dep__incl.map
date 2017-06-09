@@ -3,7 +3,7 @@
 <area shape="rect" id="node3" href="$arp_8c.html" title="src/arp.c" alt="" coords="5,229,77,256"/>
 <area shape="rect" id="node4" href="$backend_8h.html" title="src/backend.h" alt="" coords="467,155,571,181"/>
 <area shape="rect" id="node5" href="$backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="103,229,256,256"/>
-<area shape="rect" id="node6" href="$backend__shim_8c.html" title="src/backend_shim.c" alt="" coords="281,229,420,256"/>
+<area shape="rect" id="node6" href="$backend__sock_8c.html" title="src/backend_sock.c" alt="" coords="281,229,420,256"/>
 <area shape="rect" id="node7" href="$eth_8c.html" title="src/eth.c" alt="" coords="445,229,517,256"/>
 <area shape="rect" id="node8" href="$icmp_8c.html" title="src/icmp.c" alt="" coords="543,229,624,256"/>
 <area shape="rect" id="node9" href="$ip_8c.html" title="src/ip.c" alt="" coords="650,229,715,256"/>

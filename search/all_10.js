@@ -58,7 +58,7 @@ var searchData=
   ['rb_5fset',['RB_SET',['../tree_8h.html#a22ac8df3f28664e8d6bc70032eb32380',1,'tree.h']]],
   ['rb_5fset_5fblackred',['RB_SET_BLACKRED',['../tree_8h.html#ae18c494fbc0b1f9331f35d585078d10d',1,'tree.h']]],
   ['readme_2emd',['README.md',['../README_8md.html',1,'']]],
-  ['recv_5fsize',['RECV_SIZE',['../backend__shim_8c.html#ab05e00e8cea9db60202e746d95818997',1,'backend_shim.c']]],
+  ['recv_5fsize',['RECV_SIZE',['../backend__sock_8c.html#ab05e00e8cea9db60202e746d95818997',1,'backend_sock.c']]],
   ['red',['RED',['../util_8h.html#a8d23feea868a983c8c2b661e1e16972f',1,'util.h']]],
   ['reduce16',['REDUCE16',['../in__cksum_8c.html#ac6a8020baadc05fa31dbb0cf86d01af0',1,'in_cksum.c']]],
   ['reduce32',['REDUCE32',['../in__cksum_8c.html#ad35ca114885025735413c9aab6b4a3c6',1,'in_cksum.c']]],

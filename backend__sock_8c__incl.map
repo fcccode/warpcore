@@ -1,4 +1,4 @@
-<map id="src/backend_shim.c" name="src/backend_shim.c">
+<map id="src/backend_sock.c" name="src/backend_sock.c">
 <area shape="rect" id="node13" href="$warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="761,155,903,181"/>
 <area shape="rect" id="node26" href="$backend_8h.html" title="backend.h" alt="" coords="1503,80,1584,107"/>
 <area shape="rect" id="node28" href="$ip_8h.html" title="ip.h" alt="" coords="1549,155,1592,181"/>

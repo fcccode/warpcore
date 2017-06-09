@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.7.1</span>
+   &#160;<span id="projectnumber">0.8.0</span>
    </div>
   </td>
  </tr>
@@ -113,7 +113,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8h__dep__incl.png" border="0" usemap="#include_2warpcore_2warpcore_8hdep" alt=""/></div>
 <map name="include_2warpcore_2warpcore_8hdep" id="include_2warpcore_2warpcore_8hdep">
-<area shape="rect" id="node2" href="arp_8c.html" title="src/arp.c" alt="" coords="5,155,77,181"/><area shape="rect" id="node3" href="backend_8h.html" title="src/backend.h" alt="" coords="467,80,571,107"/><area shape="rect" id="node4" href="backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="103,155,256,181"/><area shape="rect" id="node5" href="backend__shim_8c.html" title="src/backend_shim.c" alt="" coords="281,155,420,181"/><area shape="rect" id="node6" href="eth_8c.html" title="src/eth.c" alt="" coords="445,155,517,181"/><area shape="rect" id="node7" href="icmp_8c.html" title="src/icmp.c" alt="" coords="543,155,624,181"/><area shape="rect" id="node8" href="ip_8c.html" title="src/ip.c" alt="" coords="650,155,715,181"/><area shape="rect" id="node9" href="udp_8c.html" title="src/udp.c" alt="" coords="739,155,815,181"/><area shape="rect" id="node10" href="warpcore_8c.html" title="src/warpcore.c" alt="" coords="839,155,947,181"/><area shape="rect" id="node11" href="plat_8c.html" title="src/plat.c" alt="" coords="798,80,873,107"/><area shape="rect" id="node12" href="util_8c.html" title="src/util.c" alt="" coords="899,80,971,107"/></map>
+<area shape="rect" id="node2" href="arp_8c.html" title="src/arp.c" alt="" coords="5,155,77,181"/><area shape="rect" id="node3" href="backend_8h.html" title="src/backend.h" alt="" coords="467,80,571,107"/><area shape="rect" id="node4" href="backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="103,155,256,181"/><area shape="rect" id="node5" href="backend__sock_8c.html" title="src/backend_sock.c" alt="" coords="281,155,420,181"/><area shape="rect" id="node6" href="eth_8c.html" title="src/eth.c" alt="" coords="445,155,517,181"/><area shape="rect" id="node7" href="icmp_8c.html" title="src/icmp.c" alt="" coords="543,155,624,181"/><area shape="rect" id="node8" href="ip_8c.html" title="src/ip.c" alt="" coords="650,155,715,181"/><area shape="rect" id="node9" href="udp_8c.html" title="src/udp.c" alt="" coords="739,155,815,181"/><area shape="rect" id="node10" href="warpcore_8c.html" title="src/warpcore.c" alt="" coords="839,155,947,181"/><area shape="rect" id="node11" href="plat_8c.html" title="src/plat.c" alt="" coords="798,80,873,107"/><area shape="rect" id="node12" href="util_8c.html" title="src/util.c" alt="" coords="899,80,971,107"/></map>
 </div>
 </div>
 <p><a href="warpcore_8h_source.html">Go to the source code of this file.</a></p>
@@ -240,7 +240,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Do not compute a UDP checksum for outgoing packets. </p>
-<p>Has no effect for the shim backend. </p>
+<p>Has no effect for the socket backend. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a4">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a2">ping.c</a>.</dd>
 </dl>
 </div>
@@ -625,7 +625,7 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A file descriptor.</dd></dl>
-<p>For the shim backend, this an OS file descriptor of the underlying socket. It can be used for poll() or with event-loop libraries in the application.</p>
+<p>For the socket backend, this an OS file descriptor of the underlying socket. It can be used for poll() or with event-loop libraries in the application.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> socket for which to get the underlying descriptor.</td></tr>
@@ -1049,7 +1049,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 9 2017 09:25:01 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 9 2017 09:31:46 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
