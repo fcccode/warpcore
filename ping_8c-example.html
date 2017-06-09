@@ -145,9 +145,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">           conns);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-z]                    turn off UDP checksums\n&quot;</span>);</div>
 <div class="line">    printf(<span class="stringliteral">&quot;\t[-b]                    busy-wait\n&quot;</span>);</div>
-<div class="line">    printf(<span class="stringliteral">&quot;\t[-v verbosity]          verbosity level (0-%u, default %u)\n&quot;</span>,</div>
+<div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><span class="preprocessor"></span>    printf(<span class="stringliteral">&quot;\t[-v verbosity]          verbosity level (0-%u, default %u)\n&quot;</span>,</div>
 <div class="line">           <a name="a0"></a><a class="code" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a>, <a name="a1"></a><a class="code" href="util_8h.html#aff6c95c5d023bcc9fb827a14c8e6ca4c">_dlevel</a>);</div>
-<div class="line">}</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>}</div>
 <div class="line"></div>
 <div class="line"></div>
 <div class="line"><span class="comment">// Subtract the struct timespec values x and y (x-y), storing the result in r.</span></div>
@@ -195,7 +197,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">    <span class="comment">// handle arguments</span></div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
-<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hzbi:d:l:r:s:c:e:p:v:&quot;</span>)) != -1) {</div>
+<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hzbi:d:l:r:s:c:e:p:&quot;</span></div>
+<div class="line">#ifndef NDEBUG</div>
+<div class="line">                                    <span class="stringliteral">&quot;v:&quot;</span></div>
+<div class="line">#endif</div>
+<div class="line">                        )) != -1) {</div>
 <div class="line">        <span class="keywordflow">switch</span> (ch) {</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;i&#39;</span>:</div>
 <div class="line">            ifname = optarg;</div>
@@ -227,10 +233,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;z&#39;</span>:</div>
 <div class="line">            flags |= <a name="a2"></a><a class="code" href="warpcore_8h.html#a1dc8f24f3aece4066bc8ff8fceeb54f3">W_ZERO_CHKSUM</a>;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
+<div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><span class="preprocessor"></span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
 <div class="line">            <a class="code" href="util_8h.html#aff6c95c5d023bcc9fb827a14c8e6ca4c">_dlevel</a> = MIN(<a class="code" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a>, MAX(0, (uint32_t)strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
-<div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;?&#39;</span>:</div>
 <div class="line">        <span class="keywordflow">default</span>:</div>
 <div class="line">            usage(<a name="a3"></a><a class="code" href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a>(argv[0]), start, inc, end, loops, conns);</div>
@@ -376,7 +384,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 9 2017 09:31:46 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 9 2017 09:46:51 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
