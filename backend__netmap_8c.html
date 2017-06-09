@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.7.0</span>
+   &#160;<span id="projectnumber">0.7.1</span>
    </div>
   </td>
  </tr>
@@ -172,13 +172,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Netmap-specific code to bind a warpcore socket. </p>
-<p>Does nothing currently.</p>
+<p>Only computes a random port number per RFC 6056, if the socket is not binding to a specific port.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to bind. </td></tr>
   </table>
   </dd>
 </dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="backend__netmap_8c_a7ee48b1b41c1c5293f7cca261794b338_cgraph.png" border="0" usemap="#backend__netmap_8c_a7ee48b1b41c1c5293f7cca261794b338_cgraph" alt=""/></div>
+<map name="backend__netmap_8c_a7ee48b1b41c1c5293f7cca261794b338_cgraph" id="backend__netmap_8c_a7ee48b1b41c1c5293f7cca261794b338_cgraph">
+<area shape="rect" id="node2" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="157,5,232,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -527,7 +536,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 8 2017 17:42:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 9 2017 09:25:01 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
