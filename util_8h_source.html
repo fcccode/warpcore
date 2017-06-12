@@ -168,7 +168,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">        gettimeofday(&amp;_now, 0);                                                \</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">        timersub(&amp;_now, &amp;_epoch, &amp;_elapsed);                                   \</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">        fprintf(                                                               \</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">            stderr, REV &quot;%s &quot; NRM MAG BLD REV &quot; %ld.%04ld   %s %s:%d ABORT: &quot;, \</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">            stderr, REV &quot;%s &quot; NRM MAG BLD REV &quot; %ld.%03ld   %s %s:%d ABORT: &quot;, \</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">            (pthread_self() == _master ? BLK : WHT),                           \</span></div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">            (long)(_elapsed.tv_sec % 1000), (long)(_elapsed.tv_usec / 1000),   \</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">            __func__, basename(__FILE__), __LINE__);                           \</span></div>
@@ -223,7 +223,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">            struct timeval _now, _elapsed;                                     \</span></div>
 <div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="preprocessor">            gettimeofday(&amp;_now, 0);                                            \</span></div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">            timersub(&amp;_now, &amp;_epoch, &amp;_elapsed);                               \</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">            fprintf(stderr, REV &quot;%s &quot; NRM &quot; %ld.%04ld &quot; REV &quot;%s &quot; NRM MAG      \</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="preprocessor">            fprintf(stderr, REV &quot;%s &quot; NRM &quot; %ld.%03ld &quot; REV &quot;%s &quot; NRM MAG      \</span></div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">                                &quot; %s&quot; BLK &quot; &quot; BLU &quot;%s:%d &quot; NRM,                \</span></div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">                    (pthread_self() == _master ? BLK : WHT),                   \</span></div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">                    (long)(_elapsed.tv_sec % 1000),                            \</span></div>
@@ -303,7 +303,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 12 2017 09:48:57 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 12 2017 13:18:49 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

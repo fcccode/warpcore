@@ -372,7 +372,7 @@ Variables</h2></td></tr>
 <div class="line">        gettimeofday(&amp;_now, 0);                                                \</div>
 <div class="line">        timersub(&amp;_now, &amp;<a class="code" href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a>, &amp;_elapsed);                                   \</div>
 <div class="line">        fprintf(                                                               \</div>
-<div class="line">            stderr, <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot;%s &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a> <a class="code" href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a> <a class="code" href="util_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">BLD</a> <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot; %ld.%04ld   %s %s:%d ABORT: &quot;</span>, \</div>
+<div class="line">            stderr, <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot;%s &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a> <a class="code" href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a> <a class="code" href="util_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">BLD</a> <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot; %ld.%03ld   %s %s:%d ABORT: &quot;</span>, \</div>
 <div class="line">            (pthread_self() == <a class="code" href="util_8h.html#ae5f47aa3d4bfb607bef518350025c33d">_master</a> ? <a class="code" href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a> : <a class="code" href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a>),                           \</div>
 <div class="line">            (<span class="keywordtype">long</span>)(_elapsed.tv_sec % 1000), (<span class="keywordtype">long</span>)(_elapsed.tv_usec / 1000),   \</div>
 <div class="line">            <a class="code" href="cdefs_8h.html#a7d6e1cf1a8d53f38471e9e9db3faf740">__func__</a>, <a class="code" href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a>(__FILE__), __LINE__);                           \</div>
@@ -765,7 +765,7 @@ Variables</h2></td></tr>
 <div class="line">            struct timeval _now, _elapsed;                                     \</div>
 <div class="line">            gettimeofday(&amp;_now, 0);                                            \</div>
 <div class="line">            timersub(&amp;_now, &amp;<a class="code" href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a>, &amp;_elapsed);                               \</div>
-<div class="line">            fprintf(stderr, <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot;%s &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a> <span class="stringliteral">&quot; %ld.%04ld &quot;</span> <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot;%s &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a> <a class="code" href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a>      \</div>
+<div class="line">            fprintf(stderr, <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot;%s &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a> <span class="stringliteral">&quot; %ld.%03ld &quot;</span> <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot;%s &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a> <a class="code" href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a>      \</div>
 <div class="line">                                <span class="stringliteral">&quot; %s&quot;</span> <a class="code" href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a> <span class="stringliteral">&quot; &quot;</span> <a class="code" href="util_8h.html#add9307de87f38e77d336751e305886f6">BLU</a> <span class="stringliteral">&quot;%s:%d &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>,                \</div>
 <div class="line">                    (pthread_self() == <a class="code" href="util_8h.html#ae5f47aa3d4bfb607bef518350025c33d">_master</a> ? <a class="code" href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a> : <a class="code" href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a>),                   \</div>
 <div class="line">                    (<span class="keywordtype">long</span>)(_elapsed.tv_sec % 1000),                            \</div>
@@ -1011,7 +1011,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 12 2017 09:48:57 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 12 2017 13:18:49 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
