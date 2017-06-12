@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.8.0</span>
+   &#160;<span id="projectnumber">0.9.0</span>
    </div>
   </td>
  </tr>
@@ -157,9 +157,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a726b06c06493678f7f48c889bbcd30a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a726b06c06493678f7f48c889bbcd30a5">w_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w)</td></tr>
 <tr class="memdesc:a726b06c06493678f7f48c889bbcd30a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore engine down cleanly.  <a href="#a726b06c06493678f7f48c889bbcd30a5">More...</a><br/></td></tr>
 <tr class="separator:a726b06c06493678f7f48c889bbcd30a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a20d62fd50464b5e3f47fd357386ddbed"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a20d62fd50464b5e3f47fd357386ddbed">w_init</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> ifname, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t rip)</td></tr>
-<tr class="memdesc:a20d62fd50464b5e3f47fd357386ddbed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a warpcore engine on the given interface.  <a href="#a20d62fd50464b5e3f47fd357386ddbed">More...</a><br/></td></tr>
-<tr class="separator:a20d62fd50464b5e3f47fd357386ddbed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a045f4826ff2a8917693126c9d27455e4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a045f4826ff2a8917693126c9d27455e4">w_init</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> ifname, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t rip, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t nbufs)</td></tr>
+<tr class="memdesc:a045f4826ff2a8917693126c9d27455e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a warpcore engine on the given interface.  <a href="#a045f4826ff2a8917693126c9d27455e4">More...</a><br/></td></tr>
+<tr class="separator:a045f4826ff2a8917693126c9d27455e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67c5990cbbeaaf2615655a79ae99c2b8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a67c5990cbbeaaf2615655a79ae99c2b8">w_engine</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s)</td></tr>
 <tr class="memdesc:a67c5990cbbeaaf2615655a79ae99c2b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return warpcore engine serving <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#a67c5990cbbeaaf2615655a79ae99c2b8">More...</a><br/></td></tr>
 <tr class="separator:a67c5990cbbeaaf2615655a79ae99c2b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -668,7 +668,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a20d62fd50464b5e3f47fd357386ddbed"></a>
+<a class="anchor" id="a045f4826ff2a8917693126c9d27455e4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -682,7 +682,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
-          <td class="paramname"><em>rip</em>&#160;</td>
+          <td class="paramname"><em>rip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
+          <td class="paramname"><em>nbufs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -693,12 +699,13 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Initialize a warpcore engine on the given interface. </p>
-<p>Ethernet and IPv4 source addresses and related information, such as the netmask, are taken from the active OS configuration of the interface. A default router, however, needs to be specified with <code>rip</code>, if communication over a WAN is desired.</p>
+<p>Ethernet and IPv4 source addresses and related information, such as the netmask, are taken from the active OS configuration of the interface. A default router, however, needs to be specified with <code>rip</code>, if communication over a WAN is desired. <code>nbufs</code> controls how many packet buffers the engine will attempt to allocate.</p>
 <p>Since warpcore relies on random() to generate random values, the caller should also set an initial seed with srandom() or srandomdev(). Warpcore does not do this, to allow the application control over the seed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ifname</td><td>The OS name of the interface (e.g., "eth0"). </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">rip</td><td>The default router to be used for non-local destinations. Can be zero.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">rip</td><td>The default router to be used for non-local destinations. Can be zero. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate.</td></tr>
   </table>
   </dd>
 </dl>
@@ -707,9 +714,9 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="warpcore_8c_a20d62fd50464b5e3f47fd357386ddbed_cgraph.png" border="0" usemap="#warpcore_8c_a20d62fd50464b5e3f47fd357386ddbed_cgraph" alt=""/></div>
-<map name="warpcore_8c_a20d62fd50464b5e3f47fd357386ddbed_cgraph" id="warpcore_8c_a20d62fd50464b5e3f47fd357386ddbed_cgraph">
-<area shape="rect" id="node2" href="backend_8h.html#a2432ae030115026485bca23bb4e45972" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,5,210,32"/><area shape="rect" id="node3" href="plat_8h.html#af6b33b55cec0d2eedec73b51fdaef8ab" title="Return the Ethernet MAC address of network interface i. " alt="" coords="113,56,213,83"/><area shape="rect" id="node4" href="plat_8h.html#ababcbad22db97091f566216a5b2b849f" title="Return the MTU of network interface i. " alt="" coords="114,107,211,133"/><area shape="rect" id="node5" href="plat_8h.html#a84253d34fd3d0f7c55d4b319c4d2618b" title="Return the link status of network interface i. " alt="" coords="115,157,210,184"/><area shape="rect" id="node6" href="plat_8h.html#a5d7a687500042a6283402c4154bf453c" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,208,216,235"/></map>
+<div class="center"><img src="warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph.png" border="0" usemap="#warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph" alt=""/></div>
+<map name="warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph" id="warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph">
+<area shape="rect" id="node2" href="backend_8h.html#aaae9f7a292954c769564c1c8eb6c337d" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,5,210,32"/><area shape="rect" id="node3" href="plat_8h.html#af6b33b55cec0d2eedec73b51fdaef8ab" title="Return the Ethernet MAC address of network interface i. " alt="" coords="113,56,213,83"/><area shape="rect" id="node4" href="plat_8h.html#ababcbad22db97091f566216a5b2b849f" title="Return the MTU of network interface i. " alt="" coords="114,107,211,133"/><area shape="rect" id="node5" href="plat_8h.html#a84253d34fd3d0f7c55d4b319c4d2618b" title="Return the link status of network interface i. " alt="" coords="115,157,210,184"/><area shape="rect" id="node6" href="plat_8h.html#a5d7a687500042a6283402c4154bf453c" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,208,216,235"/></map>
 </div>
 </p>
 
@@ -846,7 +853,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 9 2017 09:46:51 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 12 2017 07:17:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

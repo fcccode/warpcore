@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.8.0</span>
+   &#160;<span id="projectnumber">0.9.0</span>
    </div>
   </td>
  </tr>
@@ -131,9 +131,6 @@ Macros</h2></td></tr>
 <tr class="memitem:ac3bb9e4ee9a65dd78636d8d82423a13e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a>(w, i)&#160;&#160;&#160;(((uint8_t *)w-&gt;mem + (i * <a class="el" href="backend_8h.html#add093141fd48f37dd9fbcfbed326705b">IOV_BUF_LEN</a>)))</td></tr>
 <tr class="memdesc:ac3bb9e4ee9a65dd78636d8d82423a13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a given buffer index, get a pointer to its beginning.  <a href="#ac3bb9e4ee9a65dd78636d8d82423a13e">More...</a><br/></td></tr>
 <tr class="separator:ac3bb9e4ee9a65dd78636d8d82423a13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9efdbb282bf404bf2787dbacc3373d9a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a9efdbb282bf404bf2787dbacc3373d9a">NUM_BUFS</a>&#160;&#160;&#160;900000</td></tr>
-<tr class="memdesc:a9efdbb282bf404bf2787dbacc3373d9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The number of extra buffers to allocate from netmap.  <a href="#a9efdbb282bf404bf2787dbacc3373d9a">More...</a><br/></td></tr>
-<tr class="separator:a9efdbb282bf404bf2787dbacc3373d9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8607e482e4078fd33618f12c0f305a9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a8607e482e4078fd33618f12c0f305a9d">mk_bcast</a>(ip, mask)&#160;&#160;&#160;((ip) | (~mask))</td></tr>
 <tr class="memdesc:a8607e482e4078fd33618f12c0f305a9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the IPv4 broadcast address for the given IPv4 address and netmask.  <a href="#a8607e482e4078fd33618f12c0f305a9d">More...</a><br/></td></tr>
 <tr class="separator:a8607e482e4078fd33618f12c0f305a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,9 +159,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af5df52522d52bfed04aa270094deaa78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#af5df52522d52bfed04aa270094deaa78">backend_connect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s)</td></tr>
 <tr class="memdesc:af5df52522d52bfed04aa270094deaa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect the given <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, using the netmap backend.  <a href="#af5df52522d52bfed04aa270094deaa78">More...</a><br/></td></tr>
 <tr class="separator:af5df52522d52bfed04aa270094deaa78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2432ae030115026485bca23bb4e45972"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a2432ae030115026485bca23bb4e45972">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> ifname)</td></tr>
-<tr class="memdesc:a2432ae030115026485bca23bb4e45972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore netmap backend for engine <code>w</code>.  <a href="#a2432ae030115026485bca23bb4e45972">More...</a><br/></td></tr>
-<tr class="separator:a2432ae030115026485bca23bb4e45972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae9f7a292954c769564c1c8eb6c337d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#aaae9f7a292954c769564c1c8eb6c337d">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> ifname, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t nbufs)</td></tr>
+<tr class="memdesc:aaae9f7a292954c769564c1c8eb6c337d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore netmap backend for engine <code>w</code>.  <a href="#aaae9f7a292954c769564c1c8eb6c337d">More...</a><br/></td></tr>
+<tr class="separator:aaae9f7a292954c769564c1c8eb6c337d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e43d05a55650db2be88e9eece99905d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w)</td></tr>
 <tr class="memdesc:a7e43d05a55650db2be88e9eece99905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore netmap engine down cleanly.  <a href="#a7e43d05a55650db2be88e9eece99905d">More...</a><br/></td></tr>
 <tr class="separator:a7e43d05a55650db2be88e9eece99905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -291,21 +288,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The IPv4 prefix associated with <code>ip</code> and <code>mask</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a9efdbb282bf404bf2787dbacc3373d9a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NUM_BUFS&#160;&#160;&#160;900000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The number of extra buffers to allocate from netmap. </p>
-<p>Extra buffers are buffers that are not used to support TX or RX rings, but instead are used for the warpcore w_sock::iv and w_sock::ov socket buffers, as well as for maintaining packetized data inside an application using warpcore. </p>
 
 </div>
 </div>
@@ -461,7 +443,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a2432ae030115026485bca23bb4e45972"></a>
+<a class="anchor" id="aaae9f7a292954c769564c1c8eb6c337d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -475,7 +457,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
-          <td class="paramname"><em>ifname</em>&#160;</td>
+          <td class="paramname"><em>ifname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
+          <td class="paramname"><em>nbufs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -490,7 +478,8 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ifname</td><td>The OS name of the interface (e.g., "eth0").</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ifname</td><td>The OS name of the interface (e.g., "eth0"). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate.</td></tr>
   </table>
   </dd>
 </dl>
@@ -500,6 +489,7 @@ Here is the call graph for this function:</div>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ifname</td><td>The OS name of the interface (e.g., "eth0"). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate. </td></tr>
   </table>
   </dd>
 </dl>
@@ -625,7 +615,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 9 2017 09:46:51 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 12 2017 07:17:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

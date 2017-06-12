@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['data',['data',['../structw__iov.html#a66c588ed35761382fac6064df6db25da',1,'w_iov']]],
   ['dcomponent',['DCOMPONENT',['../util_8h.html#a64d2f2982c8a29ad7a632e671b42cf52',1,'util.h']]],
   ['debug',['debug',['../util_8h.html#a1889d6734420c17df6105c658525f64fa5be0fd270d9cbf6a0b7445db855089da',1,'util.h']]],
   ['die',['die',['../util_8h.html#a0b2164ee75646f16a7388a36e6800c35',1,'util.h']]],

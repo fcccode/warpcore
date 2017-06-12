@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.8.0</span>
+   &#160;<span id="projectnumber">0.9.0</span>
    </div>
   </td>
  </tr>
@@ -124,9 +124,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a2432ae030115026485bca23bb4e45972"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#a2432ae030115026485bca23bb4e45972">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> ifname)</td></tr>
-<tr class="memdesc:a2432ae030115026485bca23bb4e45972"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore socket backend for engine <code>w</code>.  <a href="#a2432ae030115026485bca23bb4e45972">More...</a><br/></td></tr>
-<tr class="separator:a2432ae030115026485bca23bb4e45972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaae9f7a292954c769564c1c8eb6c337d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#aaae9f7a292954c769564c1c8eb6c337d">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> ifname, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t nbufs)</td></tr>
+<tr class="memdesc:aaae9f7a292954c769564c1c8eb6c337d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore socket backend for engine <code>w</code>.  <a href="#aaae9f7a292954c769564c1c8eb6c337d">More...</a><br/></td></tr>
+<tr class="separator:aaae9f7a292954c769564c1c8eb6c337d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e43d05a55650db2be88e9eece99905d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w)</td></tr>
 <tr class="memdesc:a7e43d05a55650db2be88e9eece99905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore socket engine down cleanly.  <a href="#a7e43d05a55650db2be88e9eece99905d">More...</a><br/></td></tr>
 <tr class="separator:a7e43d05a55650db2be88e9eece99905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,7 +252,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a2432ae030115026485bca23bb4e45972"></a>
+<a class="anchor" id="aaae9f7a292954c769564c1c8eb6c337d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -266,7 +266,13 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
-          <td class="paramname"><em>ifname</em>&#160;</td>
+          <td class="paramname"><em>ifname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
+          <td class="paramname"><em>nbufs</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -283,6 +289,7 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">ifname</td><td>The OS name of the interface (e.g., "eth0"). </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate. </td></tr>
   </table>
   </dd>
 </dl>
@@ -523,7 +530,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 9 2017 09:46:51 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 12 2017 07:17:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

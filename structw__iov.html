@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.8.0</span>
+   &#160;<span id="projectnumber">0.9.0</span>
    </div>
   </td>
  </tr>
@@ -107,7 +107,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:a2b33510e8a5b556deef4fb2b29b62a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start of payload data.  <a href="#a2b33510e8a5b556deef4fb2b29b62a9e">More...</a><br/></td></tr>
 <tr class="separator:a2b33510e8a5b556deef4fb2b29b62a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03cc6e947f6c954e1eff1256aed43f0d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#a03cc6e947f6c954e1eff1256aed43f0d">idx</a></td></tr>
-<tr class="memdesc:a03cc6e947f6c954e1eff1256aed43f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of netmap buffer. (Internal use.)  <a href="#a03cc6e947f6c954e1eff1256aed43f0d">More...</a><br/></td></tr>
+<tr class="memdesc:a03cc6e947f6c954e1eff1256aed43f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of buffer, starting at zero.  <a href="#a03cc6e947f6c954e1eff1256aed43f0d">More...</a><br/></td></tr>
 <tr class="separator:a03cc6e947f6c954e1eff1256aed43f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a362d3a1b5838b941b52350f86be23f4d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">len</a></td></tr>
 <tr class="memdesc:a362d3a1b5838b941b52350f86be23f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of payload data.  <a href="#a362d3a1b5838b941b52350f86be23f4d">More...</a><br/></td></tr>
@@ -121,9 +121,6 @@ Data Fields</h2></td></tr>
 <tr class="memitem:aa2e95068f4bef17d199d6b3cb6f89323"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#aa2e95068f4bef17d199d6b3cb6f89323">flags</a></td></tr>
 <tr class="memdesc:aa2e95068f4bef17d199d6b3cb6f89323"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSCP + ECN of the received IPv4 packet on RX, DSCP + ECN to use for the to-be-transmitted IPv4 packet on TX.  <a href="#aa2e95068f4bef17d199d6b3cb6f89323">More...</a><br/></td></tr>
 <tr class="separator:aa2e95068f4bef17d199d6b3cb6f89323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66c588ed35761382fac6064df6db25da"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#a66c588ed35761382fac6064df6db25da">data</a></td></tr>
-<tr class="memdesc:a66c588ed35761382fac6064df6db25da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arbitrary data, for use by callers. Ignored by warpcore.  <a href="#a66c588ed35761382fac6064df6db25da">More...</a><br/></td></tr>
-<tr class="separator:a66c588ed35761382fac6064df6db25da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The I/O vector structure that warpcore uses at the center of its API. </p>
@@ -166,20 +163,6 @@ Data Fields</h2></td></tr>
 </dl>
 </div>
 </div>
-<a class="anchor" id="a66c588ed35761382fac6064df6db25da"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void* w_iov::data</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Arbitrary data, for use by callers. Ignored by warpcore. </p>
-
-</div>
-</div>
 <a class="anchor" id="aa2e95068f4bef17d199d6b3cb6f89323"></a>
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +187,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Index of netmap buffer. (Internal use.) </p>
+<p>Index of buffer, starting at zero. </p>
 
 </div>
 </div>
@@ -259,7 +242,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 9 2017 09:46:51 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 12 2017 07:17:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
