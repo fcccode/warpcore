@@ -125,10 +125,7 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:add093141fd48f37dd9fbcfbed326705b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#add093141fd48f37dd9fbcfbed326705b">IOV_BUF_LEN</a>&#160;&#160;&#160;2048</td></tr>
-<tr class="memdesc:add093141fd48f37dd9fbcfbed326705b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of a buffer.  <a href="#add093141fd48f37dd9fbcfbed326705b">More...</a><br/></td></tr>
-<tr class="separator:add093141fd48f37dd9fbcfbed326705b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3bb9e4ee9a65dd78636d8d82423a13e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a>(w, i)&#160;&#160;&#160;(((uint8_t *)w-&gt;mem + (i * <a class="el" href="backend_8h.html#add093141fd48f37dd9fbcfbed326705b">IOV_BUF_LEN</a>)))</td></tr>
+<tr class="memitem:ac3bb9e4ee9a65dd78636d8d82423a13e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a>(w, i)&#160;&#160;&#160;(((uint8_t *)w-&gt;mem + (i * w-&gt;mtu)))</td></tr>
 <tr class="memdesc:ac3bb9e4ee9a65dd78636d8d82423a13e"><td class="mdescLeft">&#160;</td><td class="mdescRight">For a given buffer index, get a pointer to its beginning.  <a href="#ac3bb9e4ee9a65dd78636d8d82423a13e">More...</a><br/></td></tr>
 <tr class="separator:ac3bb9e4ee9a65dd78636d8d82423a13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8607e482e4078fd33618f12c0f305a9d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a8607e482e4078fd33618f12c0f305a9d">mk_bcast</a>(ip, mask)&#160;&#160;&#160;((ip) | (~mask))</td></tr>
@@ -186,7 +183,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(((uint8_t *)w-&gt;mem + (i * <a class="el" href="backend_8h.html#add093141fd48f37dd9fbcfbed326705b">IOV_BUF_LEN</a>)))</td>
+          <td></td><td>&#160;&#160;&#160;(((uint8_t *)w-&gt;mem + (i * w-&gt;mtu)))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -201,21 +198,6 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Memory region associated with buffer <code>i</code>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="add093141fd48f37dd9fbcfbed326705b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IOV_BUF_LEN&#160;&#160;&#160;2048</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Length of a buffer. </p>
-<p>Same as netmap uses. </p>
 
 </div>
 </div>
@@ -615,7 +597,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 22 2017 12:58:22 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 23 2017 08:50:14 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -99,6 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
+<code>#include &lt;sys/param.h&gt;</code><br/>
 <code>#include &lt;sys/socket.h&gt;</code><br/>
 <code>#include &lt;unistd.h&gt;</code><br/>
 <code>#include &lt;net/ethernet.h&gt;</code><br/>
@@ -112,7 +113,7 @@ Include dependency graph for warpcore.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8c__incl.png" border="0" usemap="#src_2warpcore_8c" alt=""/></div>
 <map name="src_2warpcore_8c" id="src_2warpcore_8c">
-<area shape="rect" id="node12" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="738,155,880,181"/><area shape="rect" id="node25" href="backend_8h.html" title="backend.h" alt="" coords="391,80,472,107"/><area shape="rect" id="node26" href="eth_8h.html" title="eth.h" alt="" coords="185,229,236,256"/><area shape="rect" id="node27" href="ip_8h.html" title="ip.h" alt="" coords="197,155,240,181"/><area shape="rect" id="node28" href="udp_8h.html" title="udp.h" alt="" coords="451,155,505,181"/><area shape="rect" id="node14" href="cdefs_8h.html" title="warpcore/cdefs.h" alt="" coords="649,229,772,256"/><area shape="rect" id="node15" href="config_8h.html" title="warpcore/config.h" alt="" coords="977,229,1103,256"/><area shape="rect" id="node16" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="362,229,472,256"/><area shape="rect" id="node17" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="1263,229,1388,256"/><area shape="rect" id="node19" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="1127,229,1237,256"/><area shape="rect" id="node20" href="util_8h.html" title="warpcore/util.h" alt="" coords="847,229,953,256"/></map>
+<area shape="rect" id="node13" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="783,155,925,181"/><area shape="rect" id="node26" href="backend_8h.html" title="backend.h" alt="" coords="391,80,472,107"/><area shape="rect" id="node27" href="eth_8h.html" title="eth.h" alt="" coords="185,229,236,256"/><area shape="rect" id="node28" href="ip_8h.html" title="ip.h" alt="" coords="201,155,244,181"/><area shape="rect" id="node29" href="udp_8h.html" title="udp.h" alt="" coords="451,155,505,181"/><area shape="rect" id="node15" href="cdefs_8h.html" title="warpcore/cdefs.h" alt="" coords="649,229,772,256"/><area shape="rect" id="node16" href="config_8h.html" title="warpcore/config.h" alt="" coords="977,229,1103,256"/><area shape="rect" id="node17" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="362,229,472,256"/><area shape="rect" id="node18" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="1263,229,1388,256"/><area shape="rect" id="node20" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="1127,229,1237,256"/><area shape="rect" id="node21" href="util_8h.html" title="warpcore/util.h" alt="" coords="847,229,953,256"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -716,7 +717,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph.png" border="0" usemap="#warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph" alt=""/></div>
 <map name="warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph" id="warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph">
-<area shape="rect" id="node2" href="backend_8h.html#aaae9f7a292954c769564c1c8eb6c337d" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,5,210,32"/><area shape="rect" id="node3" href="plat_8h.html#af6b33b55cec0d2eedec73b51fdaef8ab" title="Return the Ethernet MAC address of network interface i. " alt="" coords="113,56,213,83"/><area shape="rect" id="node4" href="plat_8h.html#ababcbad22db97091f566216a5b2b849f" title="Return the MTU of network interface i. " alt="" coords="114,107,211,133"/><area shape="rect" id="node5" href="plat_8h.html#a84253d34fd3d0f7c55d4b319c4d2618b" title="Return the link status of network interface i. " alt="" coords="115,157,210,184"/><area shape="rect" id="node6" href="plat_8h.html#a5d7a687500042a6283402c4154bf453c" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,208,216,235"/></map>
+<area shape="rect" id="node2" href="plat_8h.html#af6b33b55cec0d2eedec73b51fdaef8ab" title="Return the Ethernet MAC address of network interface i. " alt="" coords="113,5,213,32"/><area shape="rect" id="node3" href="plat_8h.html#ababcbad22db97091f566216a5b2b849f" title="Return the MTU of network interface i. " alt="" coords="114,56,211,83"/><area shape="rect" id="node4" href="plat_8h.html#a84253d34fd3d0f7c55d4b319c4d2618b" title="Return the link status of network interface i. " alt="" coords="115,107,210,133"/><area shape="rect" id="node5" href="plat_8h.html#a5d7a687500042a6283402c4154bf453c" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,157,216,184"/><area shape="rect" id="node6" href="backend_8h.html#aaae9f7a292954c769564c1c8eb6c337d" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,208,210,235"/></map>
 </div>
 </p>
 
@@ -853,7 +854,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 22 2017 12:58:22 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 23 2017 08:50:14 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
