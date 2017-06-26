@@ -86,7 +86,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a>  </div>
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">tree.h File Reference</div>  </div>
 </div><!--header-->
@@ -111,7 +113,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ae44db866f1d8a9963860666f057d40db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ae44db866f1d8a9963860666f057d40db">SPLAY_HEAD</a>(name, type)</td></tr>
+<tr class="memitem:ae44db866f1d8a9963860666f057d40db"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ae44db866f1d8a9963860666f057d40db">SPLAY_HEAD</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type)</td></tr>
 <tr class="separator:ae44db866f1d8a9963860666f057d40db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02c068eb5f4b900668ceb4e380a0da4d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a02c068eb5f4b900668ceb4e380a0da4d">SPLAY_INITIALIZER</a>(root)&#160;&#160;&#160;{ NULL }</td></tr>
 <tr class="separator:a02c068eb5f4b900668ceb4e380a0da4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,29 +139,33 @@ Macros</h2></td></tr>
 <tr class="separator:a7d93f3c61541d0af520bf5bc5d9e0247"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab316feeb1d3c7058bae7cc3b55f1a14"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#aab316feeb1d3c7058bae7cc3b55f1a14">SPLAY_ASSEMBLE</a>(head, node, left, right, field)</td></tr>
 <tr class="separator:aab316feeb1d3c7058bae7cc3b55f1a14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75ee3833aa4387ba31979341c84b6954"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a75ee3833aa4387ba31979341c84b6954">SPLAY_PROTOTYPE</a>(name, type, field, cmp)</td></tr>
+<tr class="memitem:a75ee3833aa4387ba31979341c84b6954"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a75ee3833aa4387ba31979341c84b6954">SPLAY_PROTOTYPE</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp)</td></tr>
 <tr class="separator:a75ee3833aa4387ba31979341c84b6954"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a16173671c451dceee32260e5e7661d48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a16173671c451dceee32260e5e7661d48">SPLAY_GENERATE</a>(name, type, field, cmp)</td></tr>
+<tr class="memitem:a16173671c451dceee32260e5e7661d48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a16173671c451dceee32260e5e7661d48">SPLAY_GENERATE</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp)</td></tr>
 <tr class="separator:a16173671c451dceee32260e5e7661d48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd35c28f4261c9857cdd7670cf0eee1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#acd35c28f4261c9857cdd7670cf0eee1e">SPLAY_NEGINF</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="separator:acd35c28f4261c9857cdd7670cf0eee1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0d99fe18af2c95116d74d1df5f3ac8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ab0d99fe18af2c95116d74d1df5f3ac8b">SPLAY_INF</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ab0d99fe18af2c95116d74d1df5f3ac8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1282629fe287a75eda9a08c34ff4009"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ac1282629fe287a75eda9a08c34ff4009">SPLAY_INSERT</a>(name, x, y)&#160;&#160;&#160;name##_SPLAY_INSERT(x, y)</td></tr>
+<tr class="memitem:ac1282629fe287a75eda9a08c34ff4009"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ac1282629fe287a75eda9a08c34ff4009">SPLAY_INSERT</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x, y)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_INSERT(x, y)</td></tr>
 <tr class="separator:ac1282629fe287a75eda9a08c34ff4009"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adae97bc6106b301bd4bf94a7ee0f8a3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#adae97bc6106b301bd4bf94a7ee0f8a3a">SPLAY_REMOVE</a>(name, x, y)&#160;&#160;&#160;name##_SPLAY_REMOVE(x, y)</td></tr>
+<tr class="memitem:adae97bc6106b301bd4bf94a7ee0f8a3a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#adae97bc6106b301bd4bf94a7ee0f8a3a">SPLAY_REMOVE</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x, y)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_REMOVE(x, y)</td></tr>
 <tr class="separator:adae97bc6106b301bd4bf94a7ee0f8a3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a640590d10a440909b2f4d0c6c5fd4ac7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a640590d10a440909b2f4d0c6c5fd4ac7">SPLAY_FIND</a>(name, x, y)&#160;&#160;&#160;name##_SPLAY_FIND(x, y)</td></tr>
+<tr class="memitem:a640590d10a440909b2f4d0c6c5fd4ac7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a640590d10a440909b2f4d0c6c5fd4ac7">SPLAY_FIND</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x, y)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_FIND(x, y)</td></tr>
 <tr class="separator:a640590d10a440909b2f4d0c6c5fd4ac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27d2f6ae2430eb964191f478963895c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a27d2f6ae2430eb964191f478963895c4">SPLAY_NEXT</a>(name, x, y)&#160;&#160;&#160;name##_SPLAY_NEXT(x, y)</td></tr>
+<tr class="memitem:a27d2f6ae2430eb964191f478963895c4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a27d2f6ae2430eb964191f478963895c4">SPLAY_NEXT</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x, y)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_NEXT(x, y)</td></tr>
 <tr class="separator:a27d2f6ae2430eb964191f478963895c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a44260dfd30bc1e4021cade34124f48a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a44260dfd30bc1e4021cade34124f48a2">SPLAY_MIN</a>(name, x)</td></tr>
+<tr class="memitem:a1d0623c9a9ab21b5f4362bcc3561696b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a1d0623c9a9ab21b5f4362bcc3561696b">SPLAY_PREV</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x, y)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_PREV(x, y)</td></tr>
+<tr class="separator:a1d0623c9a9ab21b5f4362bcc3561696b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44260dfd30bc1e4021cade34124f48a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a44260dfd30bc1e4021cade34124f48a2">SPLAY_MIN</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x)</td></tr>
 <tr class="separator:a44260dfd30bc1e4021cade34124f48a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52c3d63bf730d8735892aa9eeb516b3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a52c3d63bf730d8735892aa9eeb516b3e">SPLAY_MAX</a>(name, x)</td></tr>
+<tr class="memitem:a52c3d63bf730d8735892aa9eeb516b3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a52c3d63bf730d8735892aa9eeb516b3e">SPLAY_MAX</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x)</td></tr>
 <tr class="separator:a52c3d63bf730d8735892aa9eeb516b3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a715a87d3912dd5875b5f36621efa89c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a715a87d3912dd5875b5f36621efa89c5">SPLAY_FOREACH</a>(x, name, head)</td></tr>
+<tr class="memitem:a715a87d3912dd5875b5f36621efa89c5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a715a87d3912dd5875b5f36621efa89c5">SPLAY_FOREACH</a>(x, <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head)</td></tr>
 <tr class="separator:a715a87d3912dd5875b5f36621efa89c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8036fa6f14fe429545b9228ec92e026f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a8036fa6f14fe429545b9228ec92e026f">RB_HEAD</a>(name, type)</td></tr>
+<tr class="memitem:ab731e0c40e975da901041c8ca0195dbb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ab731e0c40e975da901041c8ca0195dbb">SPLAY_FOREACH_REV</a>(x, <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head)</td></tr>
+<tr class="separator:ab731e0c40e975da901041c8ca0195dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8036fa6f14fe429545b9228ec92e026f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a8036fa6f14fe429545b9228ec92e026f">RB_HEAD</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type)</td></tr>
 <tr class="separator:a8036fa6f14fe429545b9228ec92e026f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbea90211a1872bdaf4f86d23dbf5cfd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#afbea90211a1872bdaf4f86d23dbf5cfd">RB_INITIALIZER</a>(root)&#160;&#160;&#160;{ NULL }</td></tr>
 <tr class="separator:afbea90211a1872bdaf4f86d23dbf5cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,86 +199,96 @@ Macros</h2></td></tr>
 <tr class="separator:a3d320c9b1b009d30ea8bbeae6d2cb738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08ae7198a66e4d3548016cf07ca1c0fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a08ae7198a66e4d3548016cf07ca1c0fb">RB_ROTATE_RIGHT</a>(head, elm, tmp, field)</td></tr>
 <tr class="separator:a08ae7198a66e4d3548016cf07ca1c0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f31c441ab7126be5ca1b0eda203d2cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a4f31c441ab7126be5ca1b0eda203d2cd">RB_PROTOTYPE</a>(name, type, field, cmp)&#160;&#160;&#160;<a class="el" href="tree_8h.html#ac24e599cbd9ee9d860282816ac736a07">RB_PROTOTYPE_INTERNAL</a>(name, type, field, cmp,)</td></tr>
+<tr class="memitem:a4f31c441ab7126be5ca1b0eda203d2cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a4f31c441ab7126be5ca1b0eda203d2cd">RB_PROTOTYPE</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp)&#160;&#160;&#160;<a class="el" href="tree_8h.html#ac24e599cbd9ee9d860282816ac736a07">RB_PROTOTYPE_INTERNAL</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp,)</td></tr>
 <tr class="separator:a4f31c441ab7126be5ca1b0eda203d2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8163b022562664ed2daafad8c601e5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ad8163b022562664ed2daafad8c601e5a">RB_PROTOTYPE_STATIC</a>(name, type, field, cmp)&#160;&#160;&#160;<a class="el" href="tree_8h.html#ac24e599cbd9ee9d860282816ac736a07">RB_PROTOTYPE_INTERNAL</a>(name, type, field, cmp, <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> static)</td></tr>
+<tr class="memitem:ad8163b022562664ed2daafad8c601e5a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ad8163b022562664ed2daafad8c601e5a">RB_PROTOTYPE_STATIC</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp)&#160;&#160;&#160;<a class="el" href="tree_8h.html#ac24e599cbd9ee9d860282816ac736a07">RB_PROTOTYPE_INTERNAL</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> static)</td></tr>
 <tr class="separator:ad8163b022562664ed2daafad8c601e5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac24e599cbd9ee9d860282816ac736a07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ac24e599cbd9ee9d860282816ac736a07">RB_PROTOTYPE_INTERNAL</a>(name, type, field, cmp, attr)</td></tr>
+<tr class="memitem:ac24e599cbd9ee9d860282816ac736a07"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ac24e599cbd9ee9d860282816ac736a07">RB_PROTOTYPE_INTERNAL</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, attr)</td></tr>
 <tr class="separator:ac24e599cbd9ee9d860282816ac736a07"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab26c4721e0b667b5505fa5d0d9c7562f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ab26c4721e0b667b5505fa5d0d9c7562f">RB_PROTOTYPE_INSERT_COLOR</a>(name, type, attr)&#160;&#160;&#160;attr void name##_RB_INSERT_COLOR(struct name *, struct type *)</td></tr>
+<tr class="memitem:ab26c4721e0b667b5505fa5d0d9c7562f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ab26c4721e0b667b5505fa5d0d9c7562f">RB_PROTOTYPE_INSERT_COLOR</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr)&#160;&#160;&#160;attr void <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_INSERT_COLOR(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *)</td></tr>
 <tr class="separator:ab26c4721e0b667b5505fa5d0d9c7562f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e456c219163bdfef4307f519dbee145"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a2e456c219163bdfef4307f519dbee145">RB_PROTOTYPE_REMOVE_COLOR</a>(name, type, attr)&#160;&#160;&#160;attr void name##_RB_REMOVE_COLOR(struct name *, struct type *, struct type *)</td></tr>
+<tr class="memitem:a2e456c219163bdfef4307f519dbee145"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a2e456c219163bdfef4307f519dbee145">RB_PROTOTYPE_REMOVE_COLOR</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr)&#160;&#160;&#160;attr void <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_REMOVE_COLOR(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *, struct type *)</td></tr>
 <tr class="separator:a2e456c219163bdfef4307f519dbee145"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab2202308f92dae59ab91c3a8d95bb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#acab2202308f92dae59ab91c3a8d95bb1">RB_PROTOTYPE_REMOVE</a>(name, type, attr)&#160;&#160;&#160;attr struct type *name##_RB_REMOVE(struct name *, struct type *)</td></tr>
+<tr class="memitem:acab2202308f92dae59ab91c3a8d95bb1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#acab2202308f92dae59ab91c3a8d95bb1">RB_PROTOTYPE_REMOVE</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr)&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_REMOVE(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *)</td></tr>
 <tr class="separator:acab2202308f92dae59ab91c3a8d95bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a0c00067a4411e478cb2eb3b1cd2c35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a8a0c00067a4411e478cb2eb3b1cd2c35">RB_PROTOTYPE_INSERT</a>(name, type, attr)&#160;&#160;&#160;attr struct type *name##_RB_INSERT(struct name *, struct type *)</td></tr>
+<tr class="memitem:a8a0c00067a4411e478cb2eb3b1cd2c35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a8a0c00067a4411e478cb2eb3b1cd2c35">RB_PROTOTYPE_INSERT</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr)&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_INSERT(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *)</td></tr>
 <tr class="separator:a8a0c00067a4411e478cb2eb3b1cd2c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9e4cec7d6815418a32466b2bf664279"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ab9e4cec7d6815418a32466b2bf664279">RB_PROTOTYPE_FIND</a>(name, type, attr)&#160;&#160;&#160;attr struct type *name##_RB_FIND(struct name *, struct type *)</td></tr>
+<tr class="memitem:ab9e4cec7d6815418a32466b2bf664279"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ab9e4cec7d6815418a32466b2bf664279">RB_PROTOTYPE_FIND</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr)&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_FIND(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *)</td></tr>
 <tr class="separator:ab9e4cec7d6815418a32466b2bf664279"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ff7d004f91b137aa7ad62c0df95697f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a5ff7d004f91b137aa7ad62c0df95697f">RB_PROTOTYPE_NFIND</a>(name, type, attr)&#160;&#160;&#160;attr struct type *name##_RB_NFIND(struct name *, struct type *)</td></tr>
+<tr class="memitem:a5ff7d004f91b137aa7ad62c0df95697f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a5ff7d004f91b137aa7ad62c0df95697f">RB_PROTOTYPE_NFIND</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr)&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NFIND(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *)</td></tr>
 <tr class="separator:a5ff7d004f91b137aa7ad62c0df95697f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c60658d4a40787aaf39c3dbf9d8af75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a0c60658d4a40787aaf39c3dbf9d8af75">RB_PROTOTYPE_NEXT</a>(name, type, attr)&#160;&#160;&#160;attr struct type *name##_RB_NEXT(struct type *)</td></tr>
+<tr class="memitem:a0c60658d4a40787aaf39c3dbf9d8af75"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a0c60658d4a40787aaf39c3dbf9d8af75">RB_PROTOTYPE_NEXT</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr)&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NEXT(struct type *)</td></tr>
 <tr class="separator:a0c60658d4a40787aaf39c3dbf9d8af75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bc6fc2e62f644e3d3183f10206d8f54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a4bc6fc2e62f644e3d3183f10206d8f54">RB_PROTOTYPE_PREV</a>(name, type, attr)&#160;&#160;&#160;attr struct type *name##_RB_PREV(struct type *)</td></tr>
+<tr class="memitem:a4bc6fc2e62f644e3d3183f10206d8f54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a4bc6fc2e62f644e3d3183f10206d8f54">RB_PROTOTYPE_PREV</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr)&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_PREV(struct type *)</td></tr>
 <tr class="separator:a4bc6fc2e62f644e3d3183f10206d8f54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a651a60ca100dde9b437db953d7c9f80a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a651a60ca100dde9b437db953d7c9f80a">RB_PROTOTYPE_MINMAX</a>(name, type, attr)&#160;&#160;&#160;attr struct type *name##_RB_MINMAX(struct name *, int)</td></tr>
+<tr class="memitem:a651a60ca100dde9b437db953d7c9f80a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a651a60ca100dde9b437db953d7c9f80a">RB_PROTOTYPE_MINMAX</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr)&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_MINMAX(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, int)</td></tr>
 <tr class="separator:a651a60ca100dde9b437db953d7c9f80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef943a700d479a15f16744ba51dd1141"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#aef943a700d479a15f16744ba51dd1141">RB_GENERATE</a>(name, type, field, cmp)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a01d155a5dadb714960941b7c5bfb1d50">RB_GENERATE_INTERNAL</a>(name, type, field, cmp,)</td></tr>
+<tr class="memitem:aef943a700d479a15f16744ba51dd1141"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#aef943a700d479a15f16744ba51dd1141">RB_GENERATE</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a01d155a5dadb714960941b7c5bfb1d50">RB_GENERATE_INTERNAL</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp,)</td></tr>
 <tr class="separator:aef943a700d479a15f16744ba51dd1141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70771841c3ed0487d47ed426bc6b089e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a70771841c3ed0487d47ed426bc6b089e">RB_GENERATE_STATIC</a>(name, type, field, cmp)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a01d155a5dadb714960941b7c5bfb1d50">RB_GENERATE_INTERNAL</a>(name, type, field, cmp, <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> static)</td></tr>
+<tr class="memitem:a70771841c3ed0487d47ed426bc6b089e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a70771841c3ed0487d47ed426bc6b089e">RB_GENERATE_STATIC</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a01d155a5dadb714960941b7c5bfb1d50">RB_GENERATE_INTERNAL</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> static)</td></tr>
 <tr class="separator:a70771841c3ed0487d47ed426bc6b089e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a01d155a5dadb714960941b7c5bfb1d50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a01d155a5dadb714960941b7c5bfb1d50">RB_GENERATE_INTERNAL</a>(name, type, field, cmp, attr)</td></tr>
+<tr class="memitem:a01d155a5dadb714960941b7c5bfb1d50"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a01d155a5dadb714960941b7c5bfb1d50">RB_GENERATE_INTERNAL</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, attr)</td></tr>
 <tr class="separator:a01d155a5dadb714960941b7c5bfb1d50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8af9d15b5c81e00a76402c51fdc6ef20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a8af9d15b5c81e00a76402c51fdc6ef20">RB_GENERATE_INSERT_COLOR</a>(name, type, field, attr)</td></tr>
+<tr class="memitem:a8af9d15b5c81e00a76402c51fdc6ef20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a8af9d15b5c81e00a76402c51fdc6ef20">RB_GENERATE_INSERT_COLOR</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)</td></tr>
 <tr class="separator:a8af9d15b5c81e00a76402c51fdc6ef20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c8f0c9178c24dab0eec2d5761b698d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a3c8f0c9178c24dab0eec2d5761b698d8">RB_GENERATE_REMOVE_COLOR</a>(name, type, field, attr)</td></tr>
+<tr class="memitem:a3c8f0c9178c24dab0eec2d5761b698d8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a3c8f0c9178c24dab0eec2d5761b698d8">RB_GENERATE_REMOVE_COLOR</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)</td></tr>
 <tr class="separator:a3c8f0c9178c24dab0eec2d5761b698d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35f1c071232dfbb96d3f76b21915af03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a35f1c071232dfbb96d3f76b21915af03">RB_GENERATE_REMOVE</a>(name, type, field, attr)</td></tr>
+<tr class="memitem:a35f1c071232dfbb96d3f76b21915af03"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a35f1c071232dfbb96d3f76b21915af03">RB_GENERATE_REMOVE</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)</td></tr>
 <tr class="separator:a35f1c071232dfbb96d3f76b21915af03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34a25e14192e0ac6dbe127dbf28a8363"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a34a25e14192e0ac6dbe127dbf28a8363">RB_GENERATE_INSERT</a>(name, type, field, cmp, attr)</td></tr>
+<tr class="memitem:a34a25e14192e0ac6dbe127dbf28a8363"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a34a25e14192e0ac6dbe127dbf28a8363">RB_GENERATE_INSERT</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, attr)</td></tr>
 <tr class="separator:a34a25e14192e0ac6dbe127dbf28a8363"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4802944ae5e87c2ac948b7728edad6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#af4802944ae5e87c2ac948b7728edad6d">RB_GENERATE_FIND</a>(name, type, field, cmp, attr)</td></tr>
+<tr class="memitem:af4802944ae5e87c2ac948b7728edad6d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#af4802944ae5e87c2ac948b7728edad6d">RB_GENERATE_FIND</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, attr)</td></tr>
 <tr class="separator:af4802944ae5e87c2ac948b7728edad6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aea73826f091b5cbff7499c9794b70e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a9aea73826f091b5cbff7499c9794b70e">RB_GENERATE_NFIND</a>(name, type, field, cmp, attr)</td></tr>
+<tr class="memitem:a9aea73826f091b5cbff7499c9794b70e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a9aea73826f091b5cbff7499c9794b70e">RB_GENERATE_NFIND</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, attr)</td></tr>
 <tr class="separator:a9aea73826f091b5cbff7499c9794b70e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad27418107242151b95e35d5f8d690ac6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ad27418107242151b95e35d5f8d690ac6">RB_GENERATE_NEXT</a>(name, type, field, attr)</td></tr>
+<tr class="memitem:ad27418107242151b95e35d5f8d690ac6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ad27418107242151b95e35d5f8d690ac6">RB_GENERATE_NEXT</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)</td></tr>
 <tr class="separator:ad27418107242151b95e35d5f8d690ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab51048022b8e9cccc877499983db3744"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ab51048022b8e9cccc877499983db3744">RB_GENERATE_PREV</a>(name, type, field, attr)</td></tr>
+<tr class="memitem:ab51048022b8e9cccc877499983db3744"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ab51048022b8e9cccc877499983db3744">RB_GENERATE_PREV</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)</td></tr>
 <tr class="separator:ab51048022b8e9cccc877499983db3744"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e12777100b95593ffe9c5d7e128b2b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a7e12777100b95593ffe9c5d7e128b2b1">RB_GENERATE_MINMAX</a>(name, type, field, attr)</td></tr>
+<tr class="memitem:a7e12777100b95593ffe9c5d7e128b2b1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a7e12777100b95593ffe9c5d7e128b2b1">RB_GENERATE_MINMAX</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)</td></tr>
 <tr class="separator:a7e12777100b95593ffe9c5d7e128b2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b26b7c6b32e00d863fd1ae346fb3bb5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a2b26b7c6b32e00d863fd1ae346fb3bb5">RB_NEGINF</a>&#160;&#160;&#160;-1</td></tr>
 <tr class="separator:a2b26b7c6b32e00d863fd1ae346fb3bb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a763f4baa123753e9fc466ea178229715"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a763f4baa123753e9fc466ea178229715">RB_INF</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:a763f4baa123753e9fc466ea178229715"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9861a8925c953340e483ae0a0f5120"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a5b9861a8925c953340e483ae0a0f5120">RB_INSERT</a>(name, x, y)&#160;&#160;&#160;name##_RB_INSERT(x, y)</td></tr>
+<tr class="memitem:a5b9861a8925c953340e483ae0a0f5120"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a5b9861a8925c953340e483ae0a0f5120">RB_INSERT</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x, y)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_INSERT(x, y)</td></tr>
 <tr class="separator:a5b9861a8925c953340e483ae0a0f5120"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad97eb44d2c39debda8cfbbbbcb354cce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ad97eb44d2c39debda8cfbbbbcb354cce">RB_REMOVE</a>(name, x, y)&#160;&#160;&#160;name##_RB_REMOVE(x, y)</td></tr>
+<tr class="memitem:ad97eb44d2c39debda8cfbbbbcb354cce"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ad97eb44d2c39debda8cfbbbbcb354cce">RB_REMOVE</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x, y)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_REMOVE(x, y)</td></tr>
 <tr class="separator:ad97eb44d2c39debda8cfbbbbcb354cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0ae89dc9239fbe8c056eeed595cedac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#af0ae89dc9239fbe8c056eeed595cedac">RB_FIND</a>(name, x, y)&#160;&#160;&#160;name##_RB_FIND(x, y)</td></tr>
+<tr class="memitem:af0ae89dc9239fbe8c056eeed595cedac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#af0ae89dc9239fbe8c056eeed595cedac">RB_FIND</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x, y)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_FIND(x, y)</td></tr>
 <tr class="separator:af0ae89dc9239fbe8c056eeed595cedac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70e614029f71a8debff2d42ce72a160b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a70e614029f71a8debff2d42ce72a160b">RB_NFIND</a>(name, x, y)&#160;&#160;&#160;name##_RB_NFIND(x, y)</td></tr>
+<tr class="memitem:a70e614029f71a8debff2d42ce72a160b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a70e614029f71a8debff2d42ce72a160b">RB_NFIND</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x, y)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NFIND(x, y)</td></tr>
 <tr class="separator:a70e614029f71a8debff2d42ce72a160b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2852fb3d5ccc9f1d3a245096fee9eb0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a2852fb3d5ccc9f1d3a245096fee9eb0b">RB_NEXT</a>(name, x, y)&#160;&#160;&#160;name##_RB_NEXT(y)</td></tr>
+<tr class="memitem:a2852fb3d5ccc9f1d3a245096fee9eb0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a2852fb3d5ccc9f1d3a245096fee9eb0b">RB_NEXT</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x, y)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NEXT(y)</td></tr>
 <tr class="separator:a2852fb3d5ccc9f1d3a245096fee9eb0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2e0a645fac7c63886eaa1bbc78ca3696"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a2e0a645fac7c63886eaa1bbc78ca3696">RB_PREV</a>(name, x, y)&#160;&#160;&#160;name##_RB_PREV(y)</td></tr>
+<tr class="memitem:a2e0a645fac7c63886eaa1bbc78ca3696"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a2e0a645fac7c63886eaa1bbc78ca3696">RB_PREV</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x, y)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_PREV(y)</td></tr>
 <tr class="separator:a2e0a645fac7c63886eaa1bbc78ca3696"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0827c86d4c8c63495f665141d857f380"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a0827c86d4c8c63495f665141d857f380">RB_MIN</a>(name, x)&#160;&#160;&#160;name##_RB_MINMAX(x, <a class="el" href="tree_8h.html#a2b26b7c6b32e00d863fd1ae346fb3bb5">RB_NEGINF</a>)</td></tr>
+<tr class="memitem:a0827c86d4c8c63495f665141d857f380"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a0827c86d4c8c63495f665141d857f380">RB_MIN</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_MINMAX(x, <a class="el" href="tree_8h.html#a2b26b7c6b32e00d863fd1ae346fb3bb5">RB_NEGINF</a>)</td></tr>
 <tr class="separator:a0827c86d4c8c63495f665141d857f380"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a78e155b3b5a296ba9c0ab15b70fb8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a6a78e155b3b5a296ba9c0ab15b70fb8d">RB_MAX</a>(name, x)&#160;&#160;&#160;name##_RB_MINMAX(x, <a class="el" href="tree_8h.html#a763f4baa123753e9fc466ea178229715">RB_INF</a>)</td></tr>
+<tr class="memitem:a6a78e155b3b5a296ba9c0ab15b70fb8d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a6a78e155b3b5a296ba9c0ab15b70fb8d">RB_MAX</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, x)&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_MINMAX(x, <a class="el" href="tree_8h.html#a763f4baa123753e9fc466ea178229715">RB_INF</a>)</td></tr>
 <tr class="separator:a6a78e155b3b5a296ba9c0ab15b70fb8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d7436c418f56d0b50ebc4c4273d71b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a1d7436c418f56d0b50ebc4c4273d71b6">RB_FOREACH</a>(x, name, head)</td></tr>
+<tr class="memitem:a1d7436c418f56d0b50ebc4c4273d71b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a1d7436c418f56d0b50ebc4c4273d71b6">RB_FOREACH</a>(x, <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head)</td></tr>
 <tr class="separator:a1d7436c418f56d0b50ebc4c4273d71b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231d21c956e25b24406cbf8ff856508d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a231d21c956e25b24406cbf8ff856508d">RB_FOREACH_FROM</a>(x, name, y)</td></tr>
+<tr class="memitem:a231d21c956e25b24406cbf8ff856508d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a231d21c956e25b24406cbf8ff856508d">RB_FOREACH_FROM</a>(x, <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, y)</td></tr>
 <tr class="separator:a231d21c956e25b24406cbf8ff856508d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabadd40831e862632d55eb8c867fd258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#aabadd40831e862632d55eb8c867fd258">RB_FOREACH_SAFE</a>(x, name, head, y)</td></tr>
+<tr class="memitem:aabadd40831e862632d55eb8c867fd258"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#aabadd40831e862632d55eb8c867fd258">RB_FOREACH_SAFE</a>(x, <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head, y)</td></tr>
 <tr class="separator:aabadd40831e862632d55eb8c867fd258"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6d8b4211e268f05895ea7c312873968"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ae6d8b4211e268f05895ea7c312873968">RB_FOREACH_REVERSE</a>(x, name, head)</td></tr>
+<tr class="memitem:ae6d8b4211e268f05895ea7c312873968"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ae6d8b4211e268f05895ea7c312873968">RB_FOREACH_REVERSE</a>(x, <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head)</td></tr>
 <tr class="separator:ae6d8b4211e268f05895ea7c312873968"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab64fa0884a65611c65fb9b9eca9908d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ab64fa0884a65611c65fb9b9eca9908d7">RB_FOREACH_REVERSE_FROM</a>(x, name, y)</td></tr>
+<tr class="memitem:ab64fa0884a65611c65fb9b9eca9908d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ab64fa0884a65611c65fb9b9eca9908d7">RB_FOREACH_REVERSE_FROM</a>(x, <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, y)</td></tr>
 <tr class="separator:ab64fa0884a65611c65fb9b9eca9908d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac278702349f5b1ac7c63d069b16d239b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ac278702349f5b1ac7c63d069b16d239b">RB_FOREACH_REVERSE_SAFE</a>(x, name, head, y)</td></tr>
+<tr class="memitem:ac278702349f5b1ac7c63d069b16d239b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#ac278702349f5b1ac7c63d069b16d239b">RB_FOREACH_REVERSE_SAFE</a>(x, <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head, y)</td></tr>
 <tr class="separator:ac278702349f5b1ac7c63d069b16d239b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a001a75ae2d9637938646bb5acfa6458f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">return</a> (<a class="el" href="tree_8h.html#a5f6b92ec0c0ceccee94990625fa9a9ab">SPLAY_ROOT</a>(head))</td></tr>
+<tr class="separator:a001a75ae2d9637938646bb5acfa6458f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a469e01cb6607ce7ef4bdf659d44d05b3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="cdefs_8h.html#a96deb7ba5a74848afb710cc4ee6d2c08">__inline</a> struct type *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></td></tr>
+<tr class="separator:a469e01cb6607ce7ef4bdf659d44d05b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="aa8a785bf6106b1926889c882ec093f15"></a>
@@ -375,7 +391,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_FIND</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -392,7 +408,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_RB_FIND(x, y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_FIND(x, y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -413,7 +429,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -428,10 +444,11 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = <a class="code" href="tree_8h.html#a0827c86d4c8c63495f665141d857f380">RB_MIN</a>(name, head);                  \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = <a class="code" href="tree_8h.html#a0827c86d4c8c63495f665141d857f380">RB_MIN</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head);                  \</div>
 <div class="line">         (x) != NULL;                       \</div>
-<div class="line">         (x) = name##_RB_NEXT(x))</div>
-<div class="ttc" id="tree_8h_html_a0827c86d4c8c63495f665141d857f380"><div class="ttname"><a href="tree_8h.html#a0827c86d4c8c63495f665141d857f380">RB_MIN</a></div><div class="ttdeci">#define RB_MIN(name, x)</div><div class="ttdef"><b>Definition:</b> tree.h:768</div></div>
+<div class="line">         (x) = <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NEXT(x))</div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a0827c86d4c8c63495f665141d857f380"><div class="ttname"><a href="tree_8h.html#a0827c86d4c8c63495f665141d857f380">RB_MIN</a></div><div class="ttdeci">#define RB_MIN(name, x)</div><div class="ttdef"><b>Definition:</b> tree.h:789</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -449,7 +466,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -465,8 +482,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = (y);                         \</div>
-<div class="line">        ((x) != NULL) &amp;&amp; ((y) = name##_RB_NEXT(x), (x) != NULL);    \</div>
+<div class="line">        ((x) != NULL) &amp;&amp; ((y) = <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NEXT(x), (x) != NULL);    \</div>
 <div class="line">         (x) = (y))</div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -484,7 +502,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -499,10 +517,11 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = <a class="code" href="tree_8h.html#a6a78e155b3b5a296ba9c0ab15b70fb8d">RB_MAX</a>(name, head);                  \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = <a class="code" href="tree_8h.html#a6a78e155b3b5a296ba9c0ab15b70fb8d">RB_MAX</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head);                  \</div>
 <div class="line">         (x) != NULL;                       \</div>
-<div class="line">         (x) = name##_RB_PREV(x))</div>
-<div class="ttc" id="tree_8h_html_a6a78e155b3b5a296ba9c0ab15b70fb8d"><div class="ttname"><a href="tree_8h.html#a6a78e155b3b5a296ba9c0ab15b70fb8d">RB_MAX</a></div><div class="ttdeci">#define RB_MAX(name, x)</div><div class="ttdef"><b>Definition:</b> tree.h:769</div></div>
+<div class="line">         (x) = <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_PREV(x))</div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a6a78e155b3b5a296ba9c0ab15b70fb8d"><div class="ttname"><a href="tree_8h.html#a6a78e155b3b5a296ba9c0ab15b70fb8d">RB_MAX</a></div><div class="ttdeci">#define RB_MAX(name, x)</div><div class="ttdef"><b>Definition:</b> tree.h:790</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -520,7 +539,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -536,8 +555,9 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = (y);                         \</div>
-<div class="line">        ((x) != NULL) &amp;&amp; ((y) = name##_RB_PREV(x), (x) != NULL);    \</div>
+<div class="line">        ((x) != NULL) &amp;&amp; ((y) = <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_PREV(x), (x) != NULL);    \</div>
 <div class="line">         (x) = (y))</div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -555,7 +575,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -576,10 +596,11 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = <a class="code" href="tree_8h.html#a6a78e155b3b5a296ba9c0ab15b70fb8d">RB_MAX</a>(name, head);                  \</div>
-<div class="line">        ((x) != NULL) &amp;&amp; ((y) = name##_RB_PREV(x), (x) != NULL);    \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = <a class="code" href="tree_8h.html#a6a78e155b3b5a296ba9c0ab15b70fb8d">RB_MAX</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head);                  \</div>
+<div class="line">        ((x) != NULL) &amp;&amp; ((y) = <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_PREV(x), (x) != NULL);    \</div>
 <div class="line">         (x) = (y))</div>
-<div class="ttc" id="tree_8h_html_a6a78e155b3b5a296ba9c0ab15b70fb8d"><div class="ttname"><a href="tree_8h.html#a6a78e155b3b5a296ba9c0ab15b70fb8d">RB_MAX</a></div><div class="ttdeci">#define RB_MAX(name, x)</div><div class="ttdef"><b>Definition:</b> tree.h:769</div></div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a6a78e155b3b5a296ba9c0ab15b70fb8d"><div class="ttname"><a href="tree_8h.html#a6a78e155b3b5a296ba9c0ab15b70fb8d">RB_MAX</a></div><div class="ttdeci">#define RB_MAX(name, x)</div><div class="ttdef"><b>Definition:</b> tree.h:790</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -597,7 +618,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -618,10 +639,11 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = <a class="code" href="tree_8h.html#a0827c86d4c8c63495f665141d857f380">RB_MIN</a>(name, head);                  \</div>
-<div class="line">        ((x) != NULL) &amp;&amp; ((y) = name##_RB_NEXT(x), (x) != NULL);    \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = <a class="code" href="tree_8h.html#a0827c86d4c8c63495f665141d857f380">RB_MIN</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head);                  \</div>
+<div class="line">        ((x) != NULL) &amp;&amp; ((y) = <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NEXT(x), (x) != NULL);    \</div>
 <div class="line">         (x) = (y))</div>
-<div class="ttc" id="tree_8h_html_a0827c86d4c8c63495f665141d857f380"><div class="ttname"><a href="tree_8h.html#a0827c86d4c8c63495f665141d857f380">RB_MIN</a></div><div class="ttdeci">#define RB_MIN(name, x)</div><div class="ttdef"><b>Definition:</b> tree.h:768</div></div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a0827c86d4c8c63495f665141d857f380"><div class="ttname"><a href="tree_8h.html#a0827c86d4c8c63495f665141d857f380">RB_MIN</a></div><div class="ttdeci">#define RB_MIN(name, x)</div><div class="ttdef"><b>Definition:</b> tree.h:789</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -633,7 +655,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -656,7 +678,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a01d155a5dadb714960941b7c5bfb1d50">RB_GENERATE_INTERNAL</a>(name, type, field, cmp,)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a01d155a5dadb714960941b7c5bfb1d50">RB_GENERATE_INTERNAL</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp,)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -671,7 +693,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE_FIND</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -705,8 +727,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="comment">/* Finds the node with the same key as elm */</span>               \</div>
-<div class="line">attr <span class="keyword">struct </span>type *                          \</div>
-<div class="line">name##_RB_FIND(<span class="keyword">struct</span> name *head, <span class="keyword">struct</span> type *elm)         \</div>
+<div class="line">attr <span class="keyword">struct </span>type *                          <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_FIND(<span class="keyword">struct</span> <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *head, <span class="keyword">struct</span> type *elm)         \</div>
 <div class="line">{                                   \</div>
 <div class="line">    struct type *tmp = <a class="code" href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">RB_ROOT</a>(head);               \</div>
 <div class="line">    int comp;                           \</div>
@@ -715,15 +737,17 @@ Macros</h2></td></tr>
 <div class="line">        if (comp &lt; 0)                       \</div>
 <div class="line">            tmp = <a class="code" href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a>(tmp, field);          \</div>
 <div class="line">        else <span class="keywordflow">if</span> (comp &gt; 0)                  \</div>
-<div class="line">            tmp = <a class="code" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a>(tmp, field);         \</div>
-<div class="line">        else                            \</div>
-<div class="line">            return (tmp);                   \</div>
-<div class="line">    }                               \</div>
-<div class="line">    return (NULL);                          \</div>
+<div class="line">            tmp = <a class="code" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a>(tmp, field);         <a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">		else							\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">			return</a> (tmp);                    \</div>
+<div class="line">    }                               <a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">	return</a> (NULL);                         \</div>
 <div class="line">}</div>
-<div class="ttc" id="tree_8h_html_aebfe9f6de31553dc906d5910b6b604b0"><div class="ttname"><a href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">RB_ROOT</a></div><div class="ttdeci">#define RB_ROOT(head)</div><div class="ttdef"><b>Definition:</b> tree.h:322</div></div>
-<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:318</div></div>
-<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:319</div></div>
+<div class="ttc" id="tree_8h_html_aebfe9f6de31553dc906d5910b6b604b0"><div class="ttname"><a href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">RB_ROOT</a></div><div class="ttdeci">#define RB_ROOT(head)</div><div class="ttdef"><b>Definition:</b> tree.h:343</div></div>
+<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:339</div></div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a001a75ae2d9637938646bb5acfa6458f"><div class="ttname"><a href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">return</a></div><div class="ttdeci">return(SPLAY_ROOT(head))</div></div>
+<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:340</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -735,7 +759,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE_INSERT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -769,8 +793,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="comment">/* Inserts a node into the RB tree */</span>                   \</div>
-<div class="line">attr <span class="keyword">struct </span>type *                          \</div>
-<div class="line">name##_RB_INSERT(<span class="keyword">struct</span> name *head, <span class="keyword">struct</span> type *elm)           \</div>
+<div class="line">attr <span class="keyword">struct </span>type *                          <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_INSERT(<span class="keyword">struct</span> <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *head, <span class="keyword">struct</span> type *elm)           \</div>
 <div class="line">{                                   \</div>
 <div class="line">    struct type *tmp;                       \</div>
 <div class="line">    struct type *parent = NULL;                 \</div>
@@ -782,9 +806,9 @@ Macros</h2></td></tr>
 <div class="line">        if (comp &lt; 0)                       \</div>
 <div class="line">            tmp = <a class="code" href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a>(tmp, field);          \</div>
 <div class="line">        else <span class="keywordflow">if</span> (comp &gt; 0)                  \</div>
-<div class="line">            tmp = <a class="code" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a>(tmp, field);         \</div>
-<div class="line">        else                            \</div>
-<div class="line">            return (tmp);                   \</div>
+<div class="line">            tmp = <a class="code" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a>(tmp, field);         <a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">		else							\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">			return</a> (tmp);                    \</div>
 <div class="line">    }                               <a class="code" href="tree_8h.html#a22ac8df3f28664e8d6bc70032eb32380">\</a></div>
 <div class="line"><a class="code" href="tree_8h.html#a22ac8df3f28664e8d6bc70032eb32380">	RB_SET</a>(elm, parent, field);                    \</div>
 <div class="line">    if (parent != NULL) {                       \</div>
@@ -794,15 +818,17 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">			RB_RIGHT</a>(parent, field) = elm;           <a class="code" href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">\</a></div>
 <div class="line"><a class="code" href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">		RB_AUGMENT</a>(parent);                   \</div>
 <div class="line">    } <a class="code" href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">else								\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">		RB_ROOT</a>(head) = elm;                  \</div>
-<div class="line">    name##_RB_INSERT_COLOR(head, elm);              \</div>
-<div class="line">    return (NULL);                          \</div>
+<div class="line"><a class="code" href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">		RB_ROOT</a>(head) = elm;                  <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">	name</a>##_RB_INSERT_COLOR(head, elm);             <a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">	return</a> (NULL);                         \</div>
 <div class="line">}</div>
-<div class="ttc" id="tree_8h_html_aebfe9f6de31553dc906d5910b6b604b0"><div class="ttname"><a href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">RB_ROOT</a></div><div class="ttdeci">#define RB_ROOT(head)</div><div class="ttdef"><b>Definition:</b> tree.h:322</div></div>
-<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:318</div></div>
-<div class="ttc" id="tree_8h_html_aa8a785bf6106b1926889c882ec093f15"><div class="ttname"><a href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">RB_AUGMENT</a></div><div class="ttdeci">#define RB_AUGMENT(x)</div><div class="ttdef"><b>Definition:</b> tree.h:337</div></div>
-<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:319</div></div>
-<div class="ttc" id="tree_8h_html_a22ac8df3f28664e8d6bc70032eb32380"><div class="ttname"><a href="tree_8h.html#a22ac8df3f28664e8d6bc70032eb32380">RB_SET</a></div><div class="ttdeci">#define RB_SET(elm, parent, field)</div><div class="ttdef"><b>Definition:</b> tree.h:325</div></div>
+<div class="ttc" id="tree_8h_html_aebfe9f6de31553dc906d5910b6b604b0"><div class="ttname"><a href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">RB_ROOT</a></div><div class="ttdeci">#define RB_ROOT(head)</div><div class="ttdef"><b>Definition:</b> tree.h:343</div></div>
+<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:339</div></div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a001a75ae2d9637938646bb5acfa6458f"><div class="ttname"><a href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">return</a></div><div class="ttdeci">return(SPLAY_ROOT(head))</div></div>
+<div class="ttc" id="tree_8h_html_aa8a785bf6106b1926889c882ec093f15"><div class="ttname"><a href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">RB_AUGMENT</a></div><div class="ttdeci">#define RB_AUGMENT(x)</div><div class="ttdef"><b>Definition:</b> tree.h:358</div></div>
+<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:340</div></div>
+<div class="ttc" id="tree_8h_html_a22ac8df3f28664e8d6bc70032eb32380"><div class="ttname"><a href="tree_8h.html#a22ac8df3f28664e8d6bc70032eb32380">RB_SET</a></div><div class="ttdeci">#define RB_SET(elm, parent, field)</div><div class="ttdef"><b>Definition:</b> tree.h:346</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -814,7 +840,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE_INSERT_COLOR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -852,7 +878,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE_INTERNAL</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -885,24 +911,25 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="tree_8h.html#a8af9d15b5c81e00a76402c51fdc6ef20">RB_GENERATE_INSERT_COLOR</a>(name, type, field, attr)       <a class="code" href="tree_8h.html#a3c8f0c9178c24dab0eec2d5761b698d8">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#a3c8f0c9178c24dab0eec2d5761b698d8">	RB_GENERATE_REMOVE_COLOR</a>(name, type, field, attr)      <a class="code" href="tree_8h.html#a34a25e14192e0ac6dbe127dbf28a8363">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#a34a25e14192e0ac6dbe127dbf28a8363">	RB_GENERATE_INSERT</a>(name, type, field, cmp, attr)       <a class="code" href="tree_8h.html#a35f1c071232dfbb96d3f76b21915af03">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#a35f1c071232dfbb96d3f76b21915af03">	RB_GENERATE_REMOVE</a>(name, type, field, attr)            <a class="code" href="tree_8h.html#af4802944ae5e87c2ac948b7728edad6d">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#af4802944ae5e87c2ac948b7728edad6d">	RB_GENERATE_FIND</a>(name, type, field, cmp, attr)         <a class="code" href="tree_8h.html#a9aea73826f091b5cbff7499c9794b70e">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#a9aea73826f091b5cbff7499c9794b70e">	RB_GENERATE_NFIND</a>(name, type, field, cmp, attr)            <a class="code" href="tree_8h.html#ad27418107242151b95e35d5f8d690ac6">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#ad27418107242151b95e35d5f8d690ac6">	RB_GENERATE_NEXT</a>(name, type, field, attr)          <a class="code" href="tree_8h.html#ab51048022b8e9cccc877499983db3744">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#ab51048022b8e9cccc877499983db3744">	RB_GENERATE_PREV</a>(name, type, field, attr)          <a class="code" href="tree_8h.html#a7e12777100b95593ffe9c5d7e128b2b1">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#a7e12777100b95593ffe9c5d7e128b2b1">	RB_GENERATE_MINMAX</a>(name, type, field, attr)</div>
-<div class="ttc" id="tree_8h_html_a3c8f0c9178c24dab0eec2d5761b698d8"><div class="ttname"><a href="tree_8h.html#a3c8f0c9178c24dab0eec2d5761b698d8">RB_GENERATE_REMOVE_COLOR</a></div><div class="ttdeci">#define RB_GENERATE_REMOVE_COLOR(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:477</div></div>
-<div class="ttc" id="tree_8h_html_ad27418107242151b95e35d5f8d690ac6"><div class="ttname"><a href="tree_8h.html#ad27418107242151b95e35d5f8d690ac6">RB_GENERATE_NEXT</a></div><div class="ttdeci">#define RB_GENERATE_NEXT(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:697</div></div>
-<div class="ttc" id="tree_8h_html_a9aea73826f091b5cbff7499c9794b70e"><div class="ttname"><a href="tree_8h.html#a9aea73826f091b5cbff7499c9794b70e">RB_GENERATE_NFIND</a></div><div class="ttdeci">#define RB_GENERATE_NFIND(name, type, field, cmp, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:675</div></div>
-<div class="ttc" id="tree_8h_html_af4802944ae5e87c2ac948b7728edad6d"><div class="ttname"><a href="tree_8h.html#af4802944ae5e87c2ac948b7728edad6d">RB_GENERATE_FIND</a></div><div class="ttdeci">#define RB_GENERATE_FIND(name, type, field, cmp, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:656</div></div>
-<div class="ttc" id="tree_8h_html_a8af9d15b5c81e00a76402c51fdc6ef20"><div class="ttname"><a href="tree_8h.html#a8af9d15b5c81e00a76402c51fdc6ef20">RB_GENERATE_INSERT_COLOR</a></div><div class="ttdeci">#define RB_GENERATE_INSERT_COLOR(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:432</div></div>
-<div class="ttc" id="tree_8h_html_a7e12777100b95593ffe9c5d7e128b2b1"><div class="ttname"><a href="tree_8h.html#a7e12777100b95593ffe9c5d7e128b2b1">RB_GENERATE_MINMAX</a></div><div class="ttdeci">#define RB_GENERATE_MINMAX(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:743</div></div>
-<div class="ttc" id="tree_8h_html_a35f1c071232dfbb96d3f76b21915af03"><div class="ttname"><a href="tree_8h.html#a35f1c071232dfbb96d3f76b21915af03">RB_GENERATE_REMOVE</a></div><div class="ttdeci">#define RB_GENERATE_REMOVE(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:556</div></div>
-<div class="ttc" id="tree_8h_html_ab51048022b8e9cccc877499983db3744"><div class="ttname"><a href="tree_8h.html#ab51048022b8e9cccc877499983db3744">RB_GENERATE_PREV</a></div><div class="ttdeci">#define RB_GENERATE_PREV(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:720</div></div>
-<div class="ttc" id="tree_8h_html_a34a25e14192e0ac6dbe127dbf28a8363"><div class="ttname"><a href="tree_8h.html#a34a25e14192e0ac6dbe127dbf28a8363">RB_GENERATE_INSERT</a></div><div class="ttdeci">#define RB_GENERATE_INSERT(name, type, field, cmp, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:624</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="tree_8h.html#a8af9d15b5c81e00a76402c51fdc6ef20">RB_GENERATE_INSERT_COLOR</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)       <a class="code" href="tree_8h.html#a3c8f0c9178c24dab0eec2d5761b698d8">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a3c8f0c9178c24dab0eec2d5761b698d8">	RB_GENERATE_REMOVE_COLOR</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)      <a class="code" href="tree_8h.html#a34a25e14192e0ac6dbe127dbf28a8363">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a34a25e14192e0ac6dbe127dbf28a8363">	RB_GENERATE_INSERT</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, attr)       <a class="code" href="tree_8h.html#a35f1c071232dfbb96d3f76b21915af03">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a35f1c071232dfbb96d3f76b21915af03">	RB_GENERATE_REMOVE</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)            <a class="code" href="tree_8h.html#af4802944ae5e87c2ac948b7728edad6d">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#af4802944ae5e87c2ac948b7728edad6d">	RB_GENERATE_FIND</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, attr)         <a class="code" href="tree_8h.html#a9aea73826f091b5cbff7499c9794b70e">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a9aea73826f091b5cbff7499c9794b70e">	RB_GENERATE_NFIND</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, attr)            <a class="code" href="tree_8h.html#ad27418107242151b95e35d5f8d690ac6">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#ad27418107242151b95e35d5f8d690ac6">	RB_GENERATE_NEXT</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)          <a class="code" href="tree_8h.html#ab51048022b8e9cccc877499983db3744">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#ab51048022b8e9cccc877499983db3744">	RB_GENERATE_PREV</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)          <a class="code" href="tree_8h.html#a7e12777100b95593ffe9c5d7e128b2b1">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a7e12777100b95593ffe9c5d7e128b2b1">	RB_GENERATE_MINMAX</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, attr)</div>
+<div class="ttc" id="tree_8h_html_a3c8f0c9178c24dab0eec2d5761b698d8"><div class="ttname"><a href="tree_8h.html#a3c8f0c9178c24dab0eec2d5761b698d8">RB_GENERATE_REMOVE_COLOR</a></div><div class="ttdeci">#define RB_GENERATE_REMOVE_COLOR(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:498</div></div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_ad27418107242151b95e35d5f8d690ac6"><div class="ttname"><a href="tree_8h.html#ad27418107242151b95e35d5f8d690ac6">RB_GENERATE_NEXT</a></div><div class="ttdeci">#define RB_GENERATE_NEXT(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:718</div></div>
+<div class="ttc" id="tree_8h_html_a9aea73826f091b5cbff7499c9794b70e"><div class="ttname"><a href="tree_8h.html#a9aea73826f091b5cbff7499c9794b70e">RB_GENERATE_NFIND</a></div><div class="ttdeci">#define RB_GENERATE_NFIND(name, type, field, cmp, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:696</div></div>
+<div class="ttc" id="tree_8h_html_af4802944ae5e87c2ac948b7728edad6d"><div class="ttname"><a href="tree_8h.html#af4802944ae5e87c2ac948b7728edad6d">RB_GENERATE_FIND</a></div><div class="ttdeci">#define RB_GENERATE_FIND(name, type, field, cmp, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:677</div></div>
+<div class="ttc" id="tree_8h_html_a8af9d15b5c81e00a76402c51fdc6ef20"><div class="ttname"><a href="tree_8h.html#a8af9d15b5c81e00a76402c51fdc6ef20">RB_GENERATE_INSERT_COLOR</a></div><div class="ttdeci">#define RB_GENERATE_INSERT_COLOR(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:453</div></div>
+<div class="ttc" id="tree_8h_html_a7e12777100b95593ffe9c5d7e128b2b1"><div class="ttname"><a href="tree_8h.html#a7e12777100b95593ffe9c5d7e128b2b1">RB_GENERATE_MINMAX</a></div><div class="ttdeci">#define RB_GENERATE_MINMAX(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:764</div></div>
+<div class="ttc" id="tree_8h_html_a35f1c071232dfbb96d3f76b21915af03"><div class="ttname"><a href="tree_8h.html#a35f1c071232dfbb96d3f76b21915af03">RB_GENERATE_REMOVE</a></div><div class="ttdeci">#define RB_GENERATE_REMOVE(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:577</div></div>
+<div class="ttc" id="tree_8h_html_ab51048022b8e9cccc877499983db3744"><div class="ttname"><a href="tree_8h.html#ab51048022b8e9cccc877499983db3744">RB_GENERATE_PREV</a></div><div class="ttdeci">#define RB_GENERATE_PREV(name, type, field, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:741</div></div>
+<div class="ttc" id="tree_8h_html_a34a25e14192e0ac6dbe127dbf28a8363"><div class="ttname"><a href="tree_8h.html#a34a25e14192e0ac6dbe127dbf28a8363">RB_GENERATE_INSERT</a></div><div class="ttdeci">#define RB_GENERATE_INSERT(name, type, field, cmp, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:645</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -914,7 +941,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE_MINMAX</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -941,8 +968,8 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">attr <span class="keyword">struct </span>type *                          \</div>
-<div class="line">name##_RB_MINMAX(<span class="keyword">struct</span> name *head, <span class="keywordtype">int</span> val)                \</div>
+<b>Value:</b><div class="fragment"><div class="line">attr <span class="keyword">struct </span>type *                          <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_MINMAX(<span class="keyword">struct</span> <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *head, <span class="keywordtype">int</span> val)                \</div>
 <div class="line">{                                   \</div>
 <div class="line">    struct type *tmp = <a class="code" href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">RB_ROOT</a>(head);               \</div>
 <div class="line">    struct type *parent = NULL;                 \</div>
@@ -952,12 +979,14 @@ Macros</h2></td></tr>
 <div class="line">            tmp = <a class="code" href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a>(tmp, field);          \</div>
 <div class="line">        else                            \</div>
 <div class="line">            tmp = <a class="code" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a>(tmp, field);         \</div>
-<div class="line">    }                               \</div>
-<div class="line">    return (parent);                        \</div>
+<div class="line">    }                               <a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">	return</a> (parent);                       \</div>
 <div class="line">}</div>
-<div class="ttc" id="tree_8h_html_aebfe9f6de31553dc906d5910b6b604b0"><div class="ttname"><a href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">RB_ROOT</a></div><div class="ttdeci">#define RB_ROOT(head)</div><div class="ttdef"><b>Definition:</b> tree.h:322</div></div>
-<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:318</div></div>
-<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:319</div></div>
+<div class="ttc" id="tree_8h_html_aebfe9f6de31553dc906d5910b6b604b0"><div class="ttname"><a href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">RB_ROOT</a></div><div class="ttdeci">#define RB_ROOT(head)</div><div class="ttdef"><b>Definition:</b> tree.h:343</div></div>
+<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:339</div></div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a001a75ae2d9637938646bb5acfa6458f"><div class="ttname"><a href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">return</a></div><div class="ttdeci">return(SPLAY_ROOT(head))</div></div>
+<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:340</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -969,7 +998,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE_NEXT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -997,8 +1026,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="comment">/* ARGSUSED */</span>                              \</div>
-<div class="line">attr <span class="keyword">struct </span>type *                          \</div>
-<div class="line">name##_RB_NEXT(<span class="keyword">struct</span> type *elm)                    \</div>
+<div class="line">attr <span class="keyword">struct </span>type *                          <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NEXT(<span class="keyword">struct</span> type *elm)                    \</div>
 <div class="line">{                                   \</div>
 <div class="line">    if (<a class="code" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a>(elm, field)) {                 \</div>
 <div class="line">        elm = <a class="code" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a>(elm, field);             \</div>
@@ -1014,12 +1043,14 @@ Macros</h2></td></tr>
 <div class="line">                elm = <a class="code" href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a>(elm, field);        \</div>
 <div class="line">            elm = <a class="code" href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a>(elm, field);            \</div>
 <div class="line">        }                           \</div>
-<div class="line">    }                               \</div>
-<div class="line">    return (elm);                           \</div>
+<div class="line">    }                               <a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">	return</a> (elm);                          \</div>
 <div class="line">}</div>
-<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:318</div></div>
-<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:319</div></div>
-<div class="ttc" id="tree_8h_html_a18413e366064c57a09478aa84f56677f"><div class="ttname"><a href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a></div><div class="ttdeci">#define RB_PARENT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:320</div></div>
+<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:339</div></div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a001a75ae2d9637938646bb5acfa6458f"><div class="ttname"><a href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">return</a></div><div class="ttdeci">return(SPLAY_ROOT(head))</div></div>
+<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:340</div></div>
+<div class="ttc" id="tree_8h_html_a18413e366064c57a09478aa84f56677f"><div class="ttname"><a href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a></div><div class="ttdeci">#define RB_PARENT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:341</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1031,7 +1062,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE_NFIND</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1065,8 +1096,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="comment">/* Finds the first node greater than or equal to the search key */</span>  \</div>
-<div class="line">attr <span class="keyword">struct </span>type *                          \</div>
-<div class="line">name##_RB_NFIND(<span class="keyword">struct</span> name *head, <span class="keyword">struct</span> type *elm)            \</div>
+<div class="line">attr <span class="keyword">struct </span>type *                          <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NFIND(<span class="keyword">struct</span> <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *head, <span class="keyword">struct</span> type *elm)            \</div>
 <div class="line">{                                   \</div>
 <div class="line">    struct type *tmp = <a class="code" href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">RB_ROOT</a>(head);               \</div>
 <div class="line">    struct type *res = NULL;                    \</div>
@@ -1078,15 +1109,17 @@ Macros</h2></td></tr>
 <div class="line">            tmp = <a class="code" href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a>(tmp, field);          \</div>
 <div class="line">        }                           \</div>
 <div class="line">        else <span class="keywordflow">if</span> (comp &gt; 0)                  \</div>
-<div class="line">            tmp = <a class="code" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a>(tmp, field);         \</div>
-<div class="line">        else                            \</div>
-<div class="line">            return (tmp);                   \</div>
-<div class="line">    }                               \</div>
-<div class="line">    return (res);                           \</div>
+<div class="line">            tmp = <a class="code" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a>(tmp, field);         <a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">		else							\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">			return</a> (tmp);                    \</div>
+<div class="line">    }                               <a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">	return</a> (res);                          \</div>
 <div class="line">}</div>
-<div class="ttc" id="tree_8h_html_aebfe9f6de31553dc906d5910b6b604b0"><div class="ttname"><a href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">RB_ROOT</a></div><div class="ttdeci">#define RB_ROOT(head)</div><div class="ttdef"><b>Definition:</b> tree.h:322</div></div>
-<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:318</div></div>
-<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:319</div></div>
+<div class="ttc" id="tree_8h_html_aebfe9f6de31553dc906d5910b6b604b0"><div class="ttname"><a href="tree_8h.html#aebfe9f6de31553dc906d5910b6b604b0">RB_ROOT</a></div><div class="ttdeci">#define RB_ROOT(head)</div><div class="ttdef"><b>Definition:</b> tree.h:343</div></div>
+<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:339</div></div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a001a75ae2d9637938646bb5acfa6458f"><div class="ttname"><a href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">return</a></div><div class="ttdeci">return(SPLAY_ROOT(head))</div></div>
+<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:340</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1098,7 +1131,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE_PREV</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1126,8 +1159,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="comment">/* ARGSUSED */</span>                              \</div>
-<div class="line">attr <span class="keyword">struct </span>type *                          \</div>
-<div class="line">name##_RB_PREV(<span class="keyword">struct</span> type *elm)                    \</div>
+<div class="line">attr <span class="keyword">struct </span>type *                          <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_PREV(<span class="keyword">struct</span> type *elm)                    \</div>
 <div class="line">{                                   \</div>
 <div class="line">    if (<a class="code" href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a>(elm, field)) {                  \</div>
 <div class="line">        elm = <a class="code" href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a>(elm, field);              \</div>
@@ -1143,12 +1176,14 @@ Macros</h2></td></tr>
 <div class="line">                elm = <a class="code" href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a>(elm, field);        \</div>
 <div class="line">            elm = <a class="code" href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a>(elm, field);            \</div>
 <div class="line">        }                           \</div>
-<div class="line">    }                               \</div>
-<div class="line">    return (elm);                           \</div>
+<div class="line">    }                               <a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">	return</a> (elm);                          \</div>
 <div class="line">}</div>
-<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:318</div></div>
-<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:319</div></div>
-<div class="ttc" id="tree_8h_html_a18413e366064c57a09478aa84f56677f"><div class="ttname"><a href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a></div><div class="ttdeci">#define RB_PARENT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:320</div></div>
+<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:339</div></div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a001a75ae2d9637938646bb5acfa6458f"><div class="ttname"><a href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">return</a></div><div class="ttdeci">return(SPLAY_ROOT(head))</div></div>
+<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:340</div></div>
+<div class="ttc" id="tree_8h_html_a18413e366064c57a09478aa84f56677f"><div class="ttname"><a href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a></div><div class="ttdeci">#define RB_PARENT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:341</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1160,7 +1195,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE_REMOVE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1198,7 +1233,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE_REMOVE_COLOR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1236,7 +1271,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_GENERATE_STATIC</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1259,7 +1294,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a01d155a5dadb714960941b7c5bfb1d50">RB_GENERATE_INTERNAL</a>(name, type, field, cmp, <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> static)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a01d155a5dadb714960941b7c5bfb1d50">RB_GENERATE_INTERNAL</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> static)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1274,7 +1309,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_HEAD</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1289,9 +1324,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span>name {                               \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> {                               \</div>
 <div class="line">    struct type *rbh_root; <span class="comment">/* root of the tree */</span>           \</div>
 <div class="line">}</div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1350,7 +1386,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_INSERT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1367,7 +1403,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_RB_INSERT(x, y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_INSERT(x, y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1408,7 +1444,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_MAX</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1419,7 +1455,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_RB_MINMAX(x, <a class="el" href="tree_8h.html#a763f4baa123753e9fc466ea178229715">RB_INF</a>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_MINMAX(x, <a class="el" href="tree_8h.html#a763f4baa123753e9fc466ea178229715">RB_INF</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1434,7 +1470,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_MIN</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1445,7 +1481,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_RB_MINMAX(x, <a class="el" href="tree_8h.html#a2b26b7c6b32e00d863fd1ae346fb3bb5">RB_NEGINF</a>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_MINMAX(x, <a class="el" href="tree_8h.html#a2b26b7c6b32e00d863fd1ae346fb3bb5">RB_NEGINF</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1472,7 +1508,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_NEXT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1489,7 +1525,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_RB_NEXT(y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NEXT(y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1504,7 +1540,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_NFIND</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1521,7 +1557,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_RB_NFIND(x, y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NFIND(x, y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1562,7 +1598,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PREV</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1579,7 +1615,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_RB_PREV(y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_PREV(y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1594,7 +1630,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1617,7 +1653,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#ac24e599cbd9ee9d860282816ac736a07">RB_PROTOTYPE_INTERNAL</a>(name, type, field, cmp,)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#ac24e599cbd9ee9d860282816ac736a07">RB_PROTOTYPE_INTERNAL</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp,)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1632,7 +1668,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE_FIND</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1649,7 +1685,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;attr struct type *name##_RB_FIND(struct name *, struct type *)</td>
+          <td></td><td>&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_FIND(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1664,7 +1700,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE_INSERT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1681,7 +1717,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;attr struct type *name##_RB_INSERT(struct name *, struct type *)</td>
+          <td></td><td>&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_INSERT(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1696,7 +1732,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE_INSERT_COLOR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1713,7 +1749,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;attr void name##_RB_INSERT_COLOR(struct name *, struct type *)</td>
+          <td></td><td>&#160;&#160;&#160;attr void <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_INSERT_COLOR(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1728,7 +1764,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE_INTERNAL</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1761,24 +1797,25 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="tree_8h.html#ab26c4721e0b667b5505fa5d0d9c7562f">RB_PROTOTYPE_INSERT_COLOR</a>(name, type, attr);            <a class="code" href="tree_8h.html#a2e456c219163bdfef4307f519dbee145">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#a2e456c219163bdfef4307f519dbee145">	RB_PROTOTYPE_REMOVE_COLOR</a>(name, type, attr);           <a class="code" href="tree_8h.html#a8a0c00067a4411e478cb2eb3b1cd2c35">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#a8a0c00067a4411e478cb2eb3b1cd2c35">	RB_PROTOTYPE_INSERT</a>(name, type, attr);             <a class="code" href="tree_8h.html#acab2202308f92dae59ab91c3a8d95bb1">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#acab2202308f92dae59ab91c3a8d95bb1">	RB_PROTOTYPE_REMOVE</a>(name, type, attr);             <a class="code" href="tree_8h.html#ab9e4cec7d6815418a32466b2bf664279">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#ab9e4cec7d6815418a32466b2bf664279">	RB_PROTOTYPE_FIND</a>(name, type, attr);               <a class="code" href="tree_8h.html#a5ff7d004f91b137aa7ad62c0df95697f">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#a5ff7d004f91b137aa7ad62c0df95697f">	RB_PROTOTYPE_NFIND</a>(name, type, attr);              <a class="code" href="tree_8h.html#a0c60658d4a40787aaf39c3dbf9d8af75">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#a0c60658d4a40787aaf39c3dbf9d8af75">	RB_PROTOTYPE_NEXT</a>(name, type, attr);               <a class="code" href="tree_8h.html#a4bc6fc2e62f644e3d3183f10206d8f54">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#a4bc6fc2e62f644e3d3183f10206d8f54">	RB_PROTOTYPE_PREV</a>(name, type, attr);               <a class="code" href="tree_8h.html#a651a60ca100dde9b437db953d7c9f80a">\</a></div>
-<div class="line"><a class="code" href="tree_8h.html#a651a60ca100dde9b437db953d7c9f80a">	RB_PROTOTYPE_MINMAX</a>(name, type, attr);</div>
-<div class="ttc" id="tree_8h_html_a8a0c00067a4411e478cb2eb3b1cd2c35"><div class="ttname"><a href="tree_8h.html#a8a0c00067a4411e478cb2eb3b1cd2c35">RB_PROTOTYPE_INSERT</a></div><div class="ttdeci">#define RB_PROTOTYPE_INSERT(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:401</div></div>
-<div class="ttc" id="tree_8h_html_ab9e4cec7d6815418a32466b2bf664279"><div class="ttname"><a href="tree_8h.html#ab9e4cec7d6815418a32466b2bf664279">RB_PROTOTYPE_FIND</a></div><div class="ttdeci">#define RB_PROTOTYPE_FIND(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:403</div></div>
-<div class="ttc" id="tree_8h_html_ab26c4721e0b667b5505fa5d0d9c7562f"><div class="ttname"><a href="tree_8h.html#ab26c4721e0b667b5505fa5d0d9c7562f">RB_PROTOTYPE_INSERT_COLOR</a></div><div class="ttdeci">#define RB_PROTOTYPE_INSERT_COLOR(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:395</div></div>
-<div class="ttc" id="tree_8h_html_a2e456c219163bdfef4307f519dbee145"><div class="ttname"><a href="tree_8h.html#a2e456c219163bdfef4307f519dbee145">RB_PROTOTYPE_REMOVE_COLOR</a></div><div class="ttdeci">#define RB_PROTOTYPE_REMOVE_COLOR(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:397</div></div>
-<div class="ttc" id="tree_8h_html_a5ff7d004f91b137aa7ad62c0df95697f"><div class="ttname"><a href="tree_8h.html#a5ff7d004f91b137aa7ad62c0df95697f">RB_PROTOTYPE_NFIND</a></div><div class="ttdeci">#define RB_PROTOTYPE_NFIND(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:405</div></div>
-<div class="ttc" id="tree_8h_html_a651a60ca100dde9b437db953d7c9f80a"><div class="ttname"><a href="tree_8h.html#a651a60ca100dde9b437db953d7c9f80a">RB_PROTOTYPE_MINMAX</a></div><div class="ttdeci">#define RB_PROTOTYPE_MINMAX(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:411</div></div>
-<div class="ttc" id="tree_8h_html_acab2202308f92dae59ab91c3a8d95bb1"><div class="ttname"><a href="tree_8h.html#acab2202308f92dae59ab91c3a8d95bb1">RB_PROTOTYPE_REMOVE</a></div><div class="ttdeci">#define RB_PROTOTYPE_REMOVE(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:399</div></div>
-<div class="ttc" id="tree_8h_html_a4bc6fc2e62f644e3d3183f10206d8f54"><div class="ttname"><a href="tree_8h.html#a4bc6fc2e62f644e3d3183f10206d8f54">RB_PROTOTYPE_PREV</a></div><div class="ttdeci">#define RB_PROTOTYPE_PREV(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:409</div></div>
-<div class="ttc" id="tree_8h_html_a0c60658d4a40787aaf39c3dbf9d8af75"><div class="ttname"><a href="tree_8h.html#a0c60658d4a40787aaf39c3dbf9d8af75">RB_PROTOTYPE_NEXT</a></div><div class="ttdeci">#define RB_PROTOTYPE_NEXT(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:407</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="tree_8h.html#ab26c4721e0b667b5505fa5d0d9c7562f">RB_PROTOTYPE_INSERT_COLOR</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr);            <a class="code" href="tree_8h.html#a2e456c219163bdfef4307f519dbee145">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a2e456c219163bdfef4307f519dbee145">	RB_PROTOTYPE_REMOVE_COLOR</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr);           <a class="code" href="tree_8h.html#a8a0c00067a4411e478cb2eb3b1cd2c35">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a8a0c00067a4411e478cb2eb3b1cd2c35">	RB_PROTOTYPE_INSERT</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr);             <a class="code" href="tree_8h.html#acab2202308f92dae59ab91c3a8d95bb1">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#acab2202308f92dae59ab91c3a8d95bb1">	RB_PROTOTYPE_REMOVE</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr);             <a class="code" href="tree_8h.html#ab9e4cec7d6815418a32466b2bf664279">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#ab9e4cec7d6815418a32466b2bf664279">	RB_PROTOTYPE_FIND</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr);               <a class="code" href="tree_8h.html#a5ff7d004f91b137aa7ad62c0df95697f">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a5ff7d004f91b137aa7ad62c0df95697f">	RB_PROTOTYPE_NFIND</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr);              <a class="code" href="tree_8h.html#a0c60658d4a40787aaf39c3dbf9d8af75">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a0c60658d4a40787aaf39c3dbf9d8af75">	RB_PROTOTYPE_NEXT</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr);               <a class="code" href="tree_8h.html#a4bc6fc2e62f644e3d3183f10206d8f54">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a4bc6fc2e62f644e3d3183f10206d8f54">	RB_PROTOTYPE_PREV</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr);               <a class="code" href="tree_8h.html#a651a60ca100dde9b437db953d7c9f80a">\</a></div>
+<div class="line"><a class="code" href="tree_8h.html#a651a60ca100dde9b437db953d7c9f80a">	RB_PROTOTYPE_MINMAX</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, attr);</div>
+<div class="ttc" id="tree_8h_html_a8a0c00067a4411e478cb2eb3b1cd2c35"><div class="ttname"><a href="tree_8h.html#a8a0c00067a4411e478cb2eb3b1cd2c35">RB_PROTOTYPE_INSERT</a></div><div class="ttdeci">#define RB_PROTOTYPE_INSERT(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:422</div></div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_ab9e4cec7d6815418a32466b2bf664279"><div class="ttname"><a href="tree_8h.html#ab9e4cec7d6815418a32466b2bf664279">RB_PROTOTYPE_FIND</a></div><div class="ttdeci">#define RB_PROTOTYPE_FIND(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:424</div></div>
+<div class="ttc" id="tree_8h_html_ab26c4721e0b667b5505fa5d0d9c7562f"><div class="ttname"><a href="tree_8h.html#ab26c4721e0b667b5505fa5d0d9c7562f">RB_PROTOTYPE_INSERT_COLOR</a></div><div class="ttdeci">#define RB_PROTOTYPE_INSERT_COLOR(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:416</div></div>
+<div class="ttc" id="tree_8h_html_a2e456c219163bdfef4307f519dbee145"><div class="ttname"><a href="tree_8h.html#a2e456c219163bdfef4307f519dbee145">RB_PROTOTYPE_REMOVE_COLOR</a></div><div class="ttdeci">#define RB_PROTOTYPE_REMOVE_COLOR(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:418</div></div>
+<div class="ttc" id="tree_8h_html_a5ff7d004f91b137aa7ad62c0df95697f"><div class="ttname"><a href="tree_8h.html#a5ff7d004f91b137aa7ad62c0df95697f">RB_PROTOTYPE_NFIND</a></div><div class="ttdeci">#define RB_PROTOTYPE_NFIND(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:426</div></div>
+<div class="ttc" id="tree_8h_html_a651a60ca100dde9b437db953d7c9f80a"><div class="ttname"><a href="tree_8h.html#a651a60ca100dde9b437db953d7c9f80a">RB_PROTOTYPE_MINMAX</a></div><div class="ttdeci">#define RB_PROTOTYPE_MINMAX(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:432</div></div>
+<div class="ttc" id="tree_8h_html_acab2202308f92dae59ab91c3a8d95bb1"><div class="ttname"><a href="tree_8h.html#acab2202308f92dae59ab91c3a8d95bb1">RB_PROTOTYPE_REMOVE</a></div><div class="ttdeci">#define RB_PROTOTYPE_REMOVE(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:420</div></div>
+<div class="ttc" id="tree_8h_html_a4bc6fc2e62f644e3d3183f10206d8f54"><div class="ttname"><a href="tree_8h.html#a4bc6fc2e62f644e3d3183f10206d8f54">RB_PROTOTYPE_PREV</a></div><div class="ttdeci">#define RB_PROTOTYPE_PREV(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:430</div></div>
+<div class="ttc" id="tree_8h_html_a0c60658d4a40787aaf39c3dbf9d8af75"><div class="ttname"><a href="tree_8h.html#a0c60658d4a40787aaf39c3dbf9d8af75">RB_PROTOTYPE_NEXT</a></div><div class="ttdeci">#define RB_PROTOTYPE_NEXT(name, type, attr)</div><div class="ttdef"><b>Definition:</b> tree.h:428</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1790,7 +1827,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE_MINMAX</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1807,7 +1844,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;attr struct type *name##_RB_MINMAX(struct name *, int)</td>
+          <td></td><td>&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_MINMAX(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, int)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1822,7 +1859,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE_NEXT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1839,7 +1876,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;attr struct type *name##_RB_NEXT(struct type *)</td>
+          <td></td><td>&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NEXT(struct type *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1854,7 +1891,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE_NFIND</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1871,7 +1908,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;attr struct type *name##_RB_NFIND(struct name *, struct type *)</td>
+          <td></td><td>&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_NFIND(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1886,7 +1923,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE_PREV</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1903,7 +1940,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;attr struct type *name##_RB_PREV(struct type *)</td>
+          <td></td><td>&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_PREV(struct type *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1918,7 +1955,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE_REMOVE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1935,7 +1972,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;attr struct type *name##_RB_REMOVE(struct name *, struct type *)</td>
+          <td></td><td>&#160;&#160;&#160;attr struct type *<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_REMOVE(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1950,7 +1987,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE_REMOVE_COLOR</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1967,7 +2004,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;attr void name##_RB_REMOVE_COLOR(struct name *, struct type *, struct type *)</td>
+          <td></td><td>&#160;&#160;&#160;attr void <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_REMOVE_COLOR(struct <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *, struct type *, struct type *)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1982,7 +2019,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_PROTOTYPE_STATIC</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2005,7 +2042,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#ac24e599cbd9ee9d860282816ac736a07">RB_PROTOTYPE_INTERNAL</a>(name, type, field, cmp, <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> static)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#ac24e599cbd9ee9d860282816ac736a07">RB_PROTOTYPE_INTERNAL</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, type, field, cmp, <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> static)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2032,7 +2069,7 @@ Macros</h2></td></tr>
           <td class="memname">#define RB_REMOVE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2049,7 +2086,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_RB_REMOVE(x, y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_RB_REMOVE(x, y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2152,10 +2189,10 @@ Macros</h2></td></tr>
 <div class="line">    if ((<a class="code" href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a>(tmp, field)))                    <a class="code" href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">\</a></div>
 <div class="line"><a class="code" href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">		RB_AUGMENT</a>(<a class="code" href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a>(tmp, field));            \</div>
 <div class="line">} <span class="keywordflow">while</span> (<span class="comment">/*CONSTCOND*/</span> 0)</div>
-<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:318</div></div>
-<div class="ttc" id="tree_8h_html_aa8a785bf6106b1926889c882ec093f15"><div class="ttname"><a href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">RB_AUGMENT</a></div><div class="ttdeci">#define RB_AUGMENT(x)</div><div class="ttdef"><b>Definition:</b> tree.h:337</div></div>
-<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:319</div></div>
-<div class="ttc" id="tree_8h_html_a18413e366064c57a09478aa84f56677f"><div class="ttname"><a href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a></div><div class="ttdeci">#define RB_PARENT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:320</div></div>
+<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:339</div></div>
+<div class="ttc" id="tree_8h_html_aa8a785bf6106b1926889c882ec093f15"><div class="ttname"><a href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">RB_AUGMENT</a></div><div class="ttdeci">#define RB_AUGMENT(x)</div><div class="ttdef"><b>Definition:</b> tree.h:358</div></div>
+<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:340</div></div>
+<div class="ttc" id="tree_8h_html_a18413e366064c57a09478aa84f56677f"><div class="ttname"><a href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a></div><div class="ttdeci">#define RB_PARENT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:341</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2213,10 +2250,10 @@ Macros</h2></td></tr>
 <div class="line">    if ((<a class="code" href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a>(tmp, field)))                    <a class="code" href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">\</a></div>
 <div class="line"><a class="code" href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">		RB_AUGMENT</a>(<a class="code" href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a>(tmp, field));            \</div>
 <div class="line">} <span class="keywordflow">while</span> (<span class="comment">/*CONSTCOND*/</span> 0)</div>
-<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:318</div></div>
-<div class="ttc" id="tree_8h_html_aa8a785bf6106b1926889c882ec093f15"><div class="ttname"><a href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">RB_AUGMENT</a></div><div class="ttdeci">#define RB_AUGMENT(x)</div><div class="ttdef"><b>Definition:</b> tree.h:337</div></div>
-<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:319</div></div>
-<div class="ttc" id="tree_8h_html_a18413e366064c57a09478aa84f56677f"><div class="ttname"><a href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a></div><div class="ttdeci">#define RB_PARENT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:320</div></div>
+<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:339</div></div>
+<div class="ttc" id="tree_8h_html_aa8a785bf6106b1926889c882ec093f15"><div class="ttname"><a href="tree_8h.html#aa8a785bf6106b1926889c882ec093f15">RB_AUGMENT</a></div><div class="ttdeci">#define RB_AUGMENT(x)</div><div class="ttdef"><b>Definition:</b> tree.h:358</div></div>
+<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:340</div></div>
+<div class="ttc" id="tree_8h_html_a18413e366064c57a09478aa84f56677f"><div class="ttname"><a href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a></div><div class="ttdeci">#define RB_PARENT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:341</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2254,11 +2291,11 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">	RB_LEFT</a>(elm, field) = <a class="code" href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a>(elm, field) = NULL;     <a class="code" href="tree_8h.html#a6c34afb761c6aa84cef8aba54b46b032">\</a></div>
 <div class="line"><a class="code" href="tree_8h.html#a6c34afb761c6aa84cef8aba54b46b032">	RB_COLOR</a>(elm, field) = <a class="code" href="tree_8h.html#aebf73e751fbdd4b625db308dbf04d0d2">RB_RED</a>;                 \</div>
 <div class="line">} <span class="keywordflow">while</span> (<span class="comment">/*CONSTCOND*/</span> 0)</div>
-<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:318</div></div>
-<div class="ttc" id="tree_8h_html_aebf73e751fbdd4b625db308dbf04d0d2"><div class="ttname"><a href="tree_8h.html#aebf73e751fbdd4b625db308dbf04d0d2">RB_RED</a></div><div class="ttdeci">#define RB_RED</div><div class="ttdef"><b>Definition:</b> tree.h:309</div></div>
-<div class="ttc" id="tree_8h_html_a6c34afb761c6aa84cef8aba54b46b032"><div class="ttname"><a href="tree_8h.html#a6c34afb761c6aa84cef8aba54b46b032">RB_COLOR</a></div><div class="ttdeci">#define RB_COLOR(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:321</div></div>
-<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:319</div></div>
-<div class="ttc" id="tree_8h_html_a18413e366064c57a09478aa84f56677f"><div class="ttname"><a href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a></div><div class="ttdeci">#define RB_PARENT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:320</div></div>
+<div class="ttc" id="tree_8h_html_a3357266d7e28607f499cbb049adac9d0"><div class="ttname"><a href="tree_8h.html#a3357266d7e28607f499cbb049adac9d0">RB_LEFT</a></div><div class="ttdeci">#define RB_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:339</div></div>
+<div class="ttc" id="tree_8h_html_aebf73e751fbdd4b625db308dbf04d0d2"><div class="ttname"><a href="tree_8h.html#aebf73e751fbdd4b625db308dbf04d0d2">RB_RED</a></div><div class="ttdeci">#define RB_RED</div><div class="ttdef"><b>Definition:</b> tree.h:330</div></div>
+<div class="ttc" id="tree_8h_html_a6c34afb761c6aa84cef8aba54b46b032"><div class="ttname"><a href="tree_8h.html#a6c34afb761c6aa84cef8aba54b46b032">RB_COLOR</a></div><div class="ttdeci">#define RB_COLOR(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:342</div></div>
+<div class="ttc" id="tree_8h_html_a40d5d980a9da19c9347fdd4560ea999a"><div class="ttname"><a href="tree_8h.html#a40d5d980a9da19c9347fdd4560ea999a">RB_RIGHT</a></div><div class="ttdeci">#define RB_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:340</div></div>
+<div class="ttc" id="tree_8h_html_a18413e366064c57a09478aa84f56677f"><div class="ttname"><a href="tree_8h.html#a18413e366064c57a09478aa84f56677f">RB_PARENT</a></div><div class="ttdeci">#define RB_PARENT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:341</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2295,9 +2332,9 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="tree_8h.html#a6c34afb761c6aa84cef8aba54b46b032">	RB_COLOR</a>(black, field) = <a class="code" href="tree_8h.html#a9776c921e63661755728d05e55484d0b">RB_BLACK</a>;             <a class="code" href="tree_8h.html#a6c34afb761c6aa84cef8aba54b46b032">\</a></div>
 <div class="line"><a class="code" href="tree_8h.html#a6c34afb761c6aa84cef8aba54b46b032">	RB_COLOR</a>(red, field) = <a class="code" href="tree_8h.html#aebf73e751fbdd4b625db308dbf04d0d2">RB_RED</a>;                 \</div>
 <div class="line">} <span class="keywordflow">while</span> (<span class="comment">/*CONSTCOND*/</span> 0)</div>
-<div class="ttc" id="tree_8h_html_a9776c921e63661755728d05e55484d0b"><div class="ttname"><a href="tree_8h.html#a9776c921e63661755728d05e55484d0b">RB_BLACK</a></div><div class="ttdeci">#define RB_BLACK</div><div class="ttdef"><b>Definition:</b> tree.h:308</div></div>
-<div class="ttc" id="tree_8h_html_aebf73e751fbdd4b625db308dbf04d0d2"><div class="ttname"><a href="tree_8h.html#aebf73e751fbdd4b625db308dbf04d0d2">RB_RED</a></div><div class="ttdeci">#define RB_RED</div><div class="ttdef"><b>Definition:</b> tree.h:309</div></div>
-<div class="ttc" id="tree_8h_html_a6c34afb761c6aa84cef8aba54b46b032"><div class="ttname"><a href="tree_8h.html#a6c34afb761c6aa84cef8aba54b46b032">RB_COLOR</a></div><div class="ttdeci">#define RB_COLOR(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:321</div></div>
+<div class="ttc" id="tree_8h_html_a9776c921e63661755728d05e55484d0b"><div class="ttname"><a href="tree_8h.html#a9776c921e63661755728d05e55484d0b">RB_BLACK</a></div><div class="ttdeci">#define RB_BLACK</div><div class="ttdef"><b>Definition:</b> tree.h:329</div></div>
+<div class="ttc" id="tree_8h_html_aebf73e751fbdd4b625db308dbf04d0d2"><div class="ttname"><a href="tree_8h.html#aebf73e751fbdd4b625db308dbf04d0d2">RB_RED</a></div><div class="ttdeci">#define RB_RED</div><div class="ttdef"><b>Definition:</b> tree.h:330</div></div>
+<div class="ttc" id="tree_8h_html_a6c34afb761c6aa84cef8aba54b46b032"><div class="ttname"><a href="tree_8h.html#a6c34afb761c6aa84cef8aba54b46b032">RB_COLOR</a></div><div class="ttdeci">#define RB_COLOR(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:342</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2348,8 +2385,8 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">	SPLAY_LEFT</a>((head)-&gt;sph_root, field) = <a class="code" href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">SPLAY_RIGHT</a>(node, field);    <a class="code" href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">\</a></div>
 <div class="line"><a class="code" href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">	SPLAY_RIGHT</a>((head)-&gt;sph_root, field) = <a class="code" href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">SPLAY_LEFT</a>(node, field);    \</div>
 <div class="line">} <span class="keywordflow">while</span> (<span class="comment">/*CONSTCOND*/</span> 0)</div>
-<div class="ttc" id="tree_8h_html_a1182dffa92cc3c64fa473f9b9856214f"><div class="ttname"><a href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">SPLAY_LEFT</a></div><div class="ttdeci">#define SPLAY_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:80</div></div>
-<div class="ttc" id="tree_8h_html_a97d791c8cf32170965daf98eb12ce9e8"><div class="ttname"><a href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">SPLAY_RIGHT</a></div><div class="ttdeci">#define SPLAY_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:81</div></div>
+<div class="ttc" id="tree_8h_html_a1182dffa92cc3c64fa473f9b9856214f"><div class="ttname"><a href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">SPLAY_LEFT</a></div><div class="ttdeci">#define SPLAY_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:81</div></div>
+<div class="ttc" id="tree_8h_html_a97d791c8cf32170965daf98eb12ce9e8"><div class="ttname"><a href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">SPLAY_RIGHT</a></div><div class="ttdeci">#define SPLAY_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:82</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2397,7 +2434,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SPLAY_FIND</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2414,7 +2451,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_SPLAY_FIND(x, y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_FIND(x, y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2435,7 +2472,7 @@ Macros</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2450,11 +2487,50 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = <a class="code" href="tree_8h.html#a44260dfd30bc1e4021cade34124f48a2">SPLAY_MIN</a>(name, head);               \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = <a class="code" href="tree_8h.html#a44260dfd30bc1e4021cade34124f48a2">SPLAY_MIN</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head);               \</div>
 <div class="line">         (x) != NULL;                       \</div>
-<div class="line">         (x) = <a class="code" href="tree_8h.html#a27d2f6ae2430eb964191f478963895c4">SPLAY_NEXT</a>(name, head, x))</div>
-<div class="ttc" id="tree_8h_html_a27d2f6ae2430eb964191f478963895c4"><div class="ttname"><a href="tree_8h.html#a27d2f6ae2430eb964191f478963895c4">SPLAY_NEXT</a></div><div class="ttdeci">#define SPLAY_NEXT(name, x, y)</div><div class="ttdef"><b>Definition:</b> tree.h:284</div></div>
-<div class="ttc" id="tree_8h_html_a44260dfd30bc1e4021cade34124f48a2"><div class="ttname"><a href="tree_8h.html#a44260dfd30bc1e4021cade34124f48a2">SPLAY_MIN</a></div><div class="ttdeci">#define SPLAY_MIN(name, x)</div><div class="ttdef"><b>Definition:</b> tree.h:285</div></div>
+<div class="line">         (x) = <a class="code" href="tree_8h.html#a27d2f6ae2430eb964191f478963895c4">SPLAY_NEXT</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head, x))</div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a27d2f6ae2430eb964191f478963895c4"><div class="ttname"><a href="tree_8h.html#a27d2f6ae2430eb964191f478963895c4">SPLAY_NEXT</a></div><div class="ttdeci">#define SPLAY_NEXT(name, x, y)</div><div class="ttdef"><b>Definition:</b> tree.h:299</div></div>
+<div class="ttc" id="tree_8h_html_a44260dfd30bc1e4021cade34124f48a2"><div class="ttname"><a href="tree_8h.html#a44260dfd30bc1e4021cade34124f48a2">SPLAY_MIN</a></div><div class="ttdeci">#define SPLAY_MIN(name, x)</div><div class="ttdef"><b>Definition:</b> tree.h:301</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ab731e0c40e975da901041c8ca0195dbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPLAY_FOREACH_REV</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">head&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((x) = <a class="code" href="tree_8h.html#a52c3d63bf730d8735892aa9eeb516b3e">SPLAY_MAX</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head);               \</div>
+<div class="line">         (x) != NULL;                       \</div>
+<div class="line">         (x) = <a class="code" href="tree_8h.html#a1d0623c9a9ab21b5f4362bcc3561696b">SPLAY_PREV</a>(<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, head, x))</div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_a52c3d63bf730d8735892aa9eeb516b3e"><div class="ttname"><a href="tree_8h.html#a52c3d63bf730d8735892aa9eeb516b3e">SPLAY_MAX</a></div><div class="ttdeci">#define SPLAY_MAX(name, x)</div><div class="ttdef"><b>Definition:</b> tree.h:303</div></div>
+<div class="ttc" id="tree_8h_html_a1d0623c9a9ab21b5f4362bcc3561696b"><div class="ttname"><a href="tree_8h.html#a1d0623c9a9ab21b5f4362bcc3561696b">SPLAY_PREV</a></div><div class="ttdeci">#define SPLAY_PREV(name, x, y)</div><div class="ttdef"><b>Definition:</b> tree.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2466,7 +2542,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SPLAY_GENERATE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2504,7 +2580,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SPLAY_HEAD</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2519,9 +2595,10 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span>name {                               \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">struct </span><a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> {                               \</div>
 <div class="line">    struct type *sph_root; <span class="comment">/* root of the tree */</span>           \</div>
 <div class="line">}</div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2580,7 +2657,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SPLAY_INSERT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2597,7 +2674,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_SPLAY_INSERT(x, y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_INSERT(x, y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2664,7 +2741,7 @@ Macros</h2></td></tr>
 <div class="line">    tmp = (head)-&gt;sph_root;                     \</div>
 <div class="line">    (head)-&gt;sph_root = <a class="code" href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">SPLAY_LEFT</a>((head)-&gt;sph_root, field);     \</div>
 <div class="line">} <span class="keywordflow">while</span> (<span class="comment">/*CONSTCOND*/</span> 0)</div>
-<div class="ttc" id="tree_8h_html_a1182dffa92cc3c64fa473f9b9856214f"><div class="ttname"><a href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">SPLAY_LEFT</a></div><div class="ttdeci">#define SPLAY_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:80</div></div>
+<div class="ttc" id="tree_8h_html_a1182dffa92cc3c64fa473f9b9856214f"><div class="ttname"><a href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">SPLAY_LEFT</a></div><div class="ttdeci">#define SPLAY_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:81</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2702,7 +2779,7 @@ Macros</h2></td></tr>
 <div class="line">    tmp = (head)-&gt;sph_root;                     \</div>
 <div class="line">    (head)-&gt;sph_root = <a class="code" href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">SPLAY_RIGHT</a>((head)-&gt;sph_root, field);    \</div>
 <div class="line">} <span class="keywordflow">while</span> (<span class="comment">/*CONSTCOND*/</span> 0)</div>
-<div class="ttc" id="tree_8h_html_a97d791c8cf32170965daf98eb12ce9e8"><div class="ttname"><a href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">SPLAY_RIGHT</a></div><div class="ttdeci">#define SPLAY_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:81</div></div>
+<div class="ttc" id="tree_8h_html_a97d791c8cf32170965daf98eb12ce9e8"><div class="ttname"><a href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">SPLAY_RIGHT</a></div><div class="ttdeci">#define SPLAY_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:82</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2714,7 +2791,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SPLAY_MAX</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2730,9 +2807,10 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="tree_8h.html#acd5a15948e7307457700a1e70af1baf0">SPLAY_EMPTY</a>(x) ? NULL  \</div>
-<div class="line">                    : name##_SPLAY_MIN_MAX(x, <a class="code" href="tree_8h.html#ab0d99fe18af2c95116d74d1df5f3ac8b">SPLAY_INF</a>))</div>
-<div class="ttc" id="tree_8h_html_acd5a15948e7307457700a1e70af1baf0"><div class="ttname"><a href="tree_8h.html#acd5a15948e7307457700a1e70af1baf0">SPLAY_EMPTY</a></div><div class="ttdeci">#define SPLAY_EMPTY(head)</div><div class="ttdef"><b>Definition:</b> tree.h:83</div></div>
-<div class="ttc" id="tree_8h_html_ab0d99fe18af2c95116d74d1df5f3ac8b"><div class="ttname"><a href="tree_8h.html#ab0d99fe18af2c95116d74d1df5f3ac8b">SPLAY_INF</a></div><div class="ttdeci">#define SPLAY_INF</div><div class="ttdef"><b>Definition:</b> tree.h:279</div></div>
+<div class="line">                    : <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_MIN_MAX(x, <a class="code" href="tree_8h.html#ab0d99fe18af2c95116d74d1df5f3ac8b">SPLAY_INF</a>))</div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_acd5a15948e7307457700a1e70af1baf0"><div class="ttname"><a href="tree_8h.html#acd5a15948e7307457700a1e70af1baf0">SPLAY_EMPTY</a></div><div class="ttdeci">#define SPLAY_EMPTY(head)</div><div class="ttdef"><b>Definition:</b> tree.h:84</div></div>
+<div class="ttc" id="tree_8h_html_ab0d99fe18af2c95116d74d1df5f3ac8b"><div class="ttname"><a href="tree_8h.html#ab0d99fe18af2c95116d74d1df5f3ac8b">SPLAY_INF</a></div><div class="ttdeci">#define SPLAY_INF</div><div class="ttdef"><b>Definition:</b> tree.h:294</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2744,7 +2822,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SPLAY_MIN</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2760,9 +2838,10 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="tree_8h.html#acd5a15948e7307457700a1e70af1baf0">SPLAY_EMPTY</a>(x) ? NULL  \</div>
-<div class="line">                    : name##_SPLAY_MIN_MAX(x, <a class="code" href="tree_8h.html#acd35c28f4261c9857cdd7670cf0eee1e">SPLAY_NEGINF</a>))</div>
-<div class="ttc" id="tree_8h_html_acd35c28f4261c9857cdd7670cf0eee1e"><div class="ttname"><a href="tree_8h.html#acd35c28f4261c9857cdd7670cf0eee1e">SPLAY_NEGINF</a></div><div class="ttdeci">#define SPLAY_NEGINF</div><div class="ttdef"><b>Definition:</b> tree.h:278</div></div>
-<div class="ttc" id="tree_8h_html_acd5a15948e7307457700a1e70af1baf0"><div class="ttname"><a href="tree_8h.html#acd5a15948e7307457700a1e70af1baf0">SPLAY_EMPTY</a></div><div class="ttdeci">#define SPLAY_EMPTY(head)</div><div class="ttdef"><b>Definition:</b> tree.h:83</div></div>
+<div class="line">                    : <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_MIN_MAX(x, <a class="code" href="tree_8h.html#acd35c28f4261c9857cdd7670cf0eee1e">SPLAY_NEGINF</a>))</div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+<div class="ttc" id="tree_8h_html_acd35c28f4261c9857cdd7670cf0eee1e"><div class="ttname"><a href="tree_8h.html#acd35c28f4261c9857cdd7670cf0eee1e">SPLAY_NEGINF</a></div><div class="ttdeci">#define SPLAY_NEGINF</div><div class="ttdef"><b>Definition:</b> tree.h:293</div></div>
+<div class="ttc" id="tree_8h_html_acd5a15948e7307457700a1e70af1baf0"><div class="ttname"><a href="tree_8h.html#acd5a15948e7307457700a1e70af1baf0">SPLAY_EMPTY</a></div><div class="ttdeci">#define SPLAY_EMPTY(head)</div><div class="ttdef"><b>Definition:</b> tree.h:84</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2786,7 +2865,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SPLAY_NEXT</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2803,7 +2882,39 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_SPLAY_NEXT(x, y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_NEXT(x, y)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1d0623c9a9ab21b5f4362bcc3561696b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SPLAY_PREV</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_PREV(x, y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2818,7 +2929,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SPLAY_PROTOTYPE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2856,7 +2967,7 @@ Macros</h2></td></tr>
           <td class="memname">#define SPLAY_REMOVE</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname">name, </td>
+          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2873,7 +2984,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;name##_SPLAY_REMOVE(x, y)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_REMOVE(x, y)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2956,8 +3067,8 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">	SPLAY_LEFT</a>(tmp, field) = (head)-&gt;sph_root;         \</div>
 <div class="line">    (head)-&gt;sph_root = tmp;                     \</div>
 <div class="line">} <span class="keywordflow">while</span> (<span class="comment">/*CONSTCOND*/</span> 0)</div>
-<div class="ttc" id="tree_8h_html_a1182dffa92cc3c64fa473f9b9856214f"><div class="ttname"><a href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">SPLAY_LEFT</a></div><div class="ttdeci">#define SPLAY_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:80</div></div>
-<div class="ttc" id="tree_8h_html_a97d791c8cf32170965daf98eb12ce9e8"><div class="ttname"><a href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">SPLAY_RIGHT</a></div><div class="ttdeci">#define SPLAY_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:81</div></div>
+<div class="ttc" id="tree_8h_html_a1182dffa92cc3c64fa473f9b9856214f"><div class="ttname"><a href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">SPLAY_LEFT</a></div><div class="ttdeci">#define SPLAY_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:81</div></div>
+<div class="ttc" id="tree_8h_html_a97d791c8cf32170965daf98eb12ce9e8"><div class="ttname"><a href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">SPLAY_RIGHT</a></div><div class="ttdeci">#define SPLAY_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:82</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2995,15 +3106,57 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">	SPLAY_RIGHT</a>(tmp, field) = (head)-&gt;sph_root;            \</div>
 <div class="line">    (head)-&gt;sph_root = tmp;                     \</div>
 <div class="line">} <span class="keywordflow">while</span> (<span class="comment">/*CONSTCOND*/</span> 0)</div>
-<div class="ttc" id="tree_8h_html_a1182dffa92cc3c64fa473f9b9856214f"><div class="ttname"><a href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">SPLAY_LEFT</a></div><div class="ttdeci">#define SPLAY_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:80</div></div>
-<div class="ttc" id="tree_8h_html_a97d791c8cf32170965daf98eb12ce9e8"><div class="ttname"><a href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">SPLAY_RIGHT</a></div><div class="ttdeci">#define SPLAY_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:81</div></div>
+<div class="ttc" id="tree_8h_html_a1182dffa92cc3c64fa473f9b9856214f"><div class="ttname"><a href="tree_8h.html#a1182dffa92cc3c64fa473f9b9856214f">SPLAY_LEFT</a></div><div class="ttdeci">#define SPLAY_LEFT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:81</div></div>
+<div class="ttc" id="tree_8h_html_a97d791c8cf32170965daf98eb12ce9e8"><div class="ttname"><a href="tree_8h.html#a97d791c8cf32170965daf98eb12ce9e8">SPLAY_RIGHT</a></div><div class="ttdeci">#define SPLAY_RIGHT(elm, field)</div><div class="ttdef"><b>Definition:</b> tree.h:82</div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a001a75ae2d9637938646bb5acfa6458f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">return </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="tree_8h.html#a5f6b92ec0c0ceccee94990625fa9a9ab">SPLAY_ROOT</a>(head)&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a class="anchor" id="a469e01cb6607ce7ef4bdf659d44d05b3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="cdefs_8h.html#a96deb7ba5a74848afb710cc4ee6d2c08">__inline</a> struct type* name</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{                                   </div>
+<div class="line">    <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_MINMAX(head, val)</div>
+<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
+</div><!-- fragment --><dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a0">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a0">ping.c</a>.</dd>
+</dl>
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 26 2017 07:13:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 26 2017 10:24:37 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
