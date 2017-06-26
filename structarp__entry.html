@@ -82,6 +82,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
 <div class="title">arp_entry Struct Reference</div>  </div>
 </div><!--header-->
@@ -89,15 +92,81 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>ARP cache entry.  
  <a href="structarp__entry.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="arp_8h_source.html">arp.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:abe7fe99906a77b8e41fa2d59a3c9ac50"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarp__entry.html#abe7fe99906a77b8e41fa2d59a3c9ac50">SPLAY_ENTRY</a> (<a class="el" href="structarp__entry.html">arp_entry</a>) next</td></tr>
+<tr class="memdesc:abe7fe99906a77b8e41fa2d59a3c9ac50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to next cache entry.  <a href="#abe7fe99906a77b8e41fa2d59a3c9ac50">More...</a><br/></td></tr>
+<tr class="separator:abe7fe99906a77b8e41fa2d59a3c9ac50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a5ac0bb9105276b100aa6d5cc3d2738c9"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarp__entry.html#a5ac0bb9105276b100aa6d5cc3d2738c9">ip</a></td></tr>
+<tr class="memdesc:a5ac0bb9105276b100aa6d5cc3d2738c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">IPv4 address.  <a href="#a5ac0bb9105276b100aa6d5cc3d2738c9">More...</a><br/></td></tr>
+<tr class="separator:a5ac0bb9105276b100aa6d5cc3d2738c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbda1b612e4f981dd4391d4e3b63ad6c"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarp__entry.html#acbda1b612e4f981dd4391d4e3b63ad6c">mac</a> [<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a>]</td></tr>
+<tr class="memdesc:acbda1b612e4f981dd4391d4e3b63ad6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ethernet MAC address.  <a href="#acbda1b612e4f981dd4391d4e3b63ad6c">More...</a><br/></td></tr>
+<tr class="separator:acbda1b612e4f981dd4391d4e3b63ad6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>ARP cache entry. </p>
-</div><hr/>The documentation for this struct was generated from the following file:<ul>
-<li>src/<a class="el" href="arp_8c.html">arp.c</a></li>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="abe7fe99906a77b8e41fa2d59a3c9ac50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">arp_entry::SPLAY_ENTRY </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structarp__entry.html">arp_entry</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Pointer to next cache entry. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a5ac0bb9105276b100aa6d5cc3d2738c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t arp_entry::ip</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>IPv4 address. </p>
+
+</div>
+</div>
+<a class="anchor" id="acbda1b612e4f981dd4391d4e3b63ad6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t arp_entry::mac[<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Ethernet MAC address. </p>
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/<a class="el" href="arp_8h_source.html">arp.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 26 2017 10:27:09 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 26 2017 15:17:35 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
