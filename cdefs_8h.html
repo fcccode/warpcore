@@ -221,7 +221,7 @@ Macros</h2></td></tr>
 <tr class="separator:a19831242ccd7e7d0e450cdfe6e51174a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a398ca8d9da9cff929a113400a8b36df3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdefs_8h.html#a398ca8d9da9cff929a113400a8b36df3">__GLOBL</a>(sym)&#160;&#160;&#160;<a class="el" href="cdefs_8h.html#a19831242ccd7e7d0e450cdfe6e51174a">__GLOBL1</a>(sym)</td></tr>
 <tr class="separator:a398ca8d9da9cff929a113400a8b36df3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabb1ea4bbd4842fc14a16d8fb779ea4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdefs_8h.html#aabb1ea4bbd4842fc14a16d8fb779ea4b">__IDSTRING</a>(<a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, string)&#160;&#160;&#160;static <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>[] <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> = string</td></tr>
+<tr class="memitem:aabb1ea4bbd4842fc14a16d8fb779ea4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdefs_8h.html#aabb1ea4bbd4842fc14a16d8fb779ea4b">__IDSTRING</a>(name, string)&#160;&#160;&#160;static <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char name[] <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> = string</td></tr>
 <tr class="separator:aabb1ea4bbd4842fc14a16d8fb779ea4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4a7fd57c89fab1cb4992d93593ab60e6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cdefs_8h.html#a4a7fd57c89fab1cb4992d93593ab60e6">__FBSDID</a>(s)&#160;&#160;&#160;<a class="el" href="cdefs_8h.html#aabb1ea4bbd4842fc14a16d8fb779ea4b">__IDSTRING</a>(<a class="el" href="cdefs_8h.html#a55835dbed10508bb7c57700e8f6a81c6">__CONCAT</a>(__rcsid_,__LINE__),s)</td></tr>
 <tr class="separator:a4a7fd57c89fab1cb4992d93593ab60e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -907,7 +907,7 @@ Macros</h2></td></tr>
           <td class="memname">#define __IDSTRING</td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>, </td>
+          <td class="paramname">name, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -918,7 +918,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;static <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char <a class="el" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>[] <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> = string</td>
+          <td></td><td>&#160;&#160;&#160;static <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char name[] <a class="el" href="cdefs_8h.html#a2e3484535ee610c8e19e9859563abe48">__unused</a> = string</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1841,7 +1841,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 26 2017 10:24:36 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 26 2017 10:27:09 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

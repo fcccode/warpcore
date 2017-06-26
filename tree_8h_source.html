@@ -253,14 +253,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">        elm = NULL;                     \</span></div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">    return (elm);                           \</span></div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">}                                   \</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor"></span><span class="keyword">static</span> <a class="code" href="cdefs_8h.html#a96deb7ba5a74848afb710cc4ee6d2c08">__inline</a> <span class="keyword">struct </span>type *                       <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">\</a></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a>##_SPLAY_MIN_MAX(<span class="keyword">struct</span> <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a> *head, <span class="keywordtype">int</span> val)            \</div>
-<div class="line"><a name="l00168"></a><span class="lineno"><a class="line" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">  168</a></span>&#160;{                                   <a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">\</a></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<a class="code" href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">	name</a>##_SPLAY_MINMAX(head, val);                    <a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">\</a></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<a class="code" href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">        return</a> (<a class="code" href="tree_8h.html#a5f6b92ec0c0ceccee94990625fa9a9ab">SPLAY_ROOT</a>(head));                  \</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;}</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">                                    \</span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor">static __inline struct type *                       \</span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="preprocessor">name##_SPLAY_MIN_MAX(struct name *head, int val)            \</span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="preprocessor">{                                   \</span></div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="preprocessor">    name##_SPLAY_MINMAX(head, val);                 \</span></div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="preprocessor">        return (SPLAY_ROOT(head));                  \</span></div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="preprocessor">}</span></div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">/* Main splay operation.</span></div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment"> * Moves node close to the key of elm to top</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment"> */</span></div>
@@ -911,14 +911,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;<span class="preprocessor">         (x) = (y))</span></div>
 <div class="line"><a name="l00821"></a><span class="lineno">  821</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00822"></a><span class="lineno">  822</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">/* _SYS_TREE_H_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="tree_8h_html_a5f6b92ec0c0ceccee94990625fa9a9ab"><div class="ttname"><a href="tree_8h.html#a5f6b92ec0c0ceccee94990625fa9a9ab">SPLAY_ROOT</a></div><div class="ttdeci">#define SPLAY_ROOT(head)</div><div class="ttdef"><b>Definition:</b> tree.h:83</div></div>
-<div class="ttc" id="tree_8h_html_a469e01cb6607ce7ef4bdf659d44d05b3"><div class="ttname"><a href="tree_8h.html#a469e01cb6607ce7ef4bdf659d44d05b3">name</a></div><div class="ttdeci">static __inline struct type * name</div><div class="ttdef"><b>Definition:</b> tree.h:168</div></div>
-<div class="ttc" id="tree_8h_html_a001a75ae2d9637938646bb5acfa6458f"><div class="ttname"><a href="tree_8h.html#a001a75ae2d9637938646bb5acfa6458f">return</a></div><div class="ttdeci">return(SPLAY_ROOT(head))</div></div>
-<div class="ttc" id="cdefs_8h_html_a96deb7ba5a74848afb710cc4ee6d2c08"><div class="ttname"><a href="cdefs_8h.html#a96deb7ba5a74848afb710cc4ee6d2c08">__inline</a></div><div class="ttdeci">#define __inline</div><div class="ttdef"><b>Definition:</b> cdefs.h:179</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Jun 26 2017 10:24:36 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jun 26 2017 10:27:09 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
