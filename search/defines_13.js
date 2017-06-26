@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['w_5fconnected',['w_connected',['../warpcore_8h.html#abfa9077c996b6d9f26f070afd0bdb9d9',1,'warpcore.h']]],
   ['w_5ftx_5fpending',['w_tx_pending',['../warpcore_8h.html#adad79a0011e52c38d52df980843fff78',1,'warpcore.h']]],
   ['w_5fzero_5fchksum',['W_ZERO_CHKSUM',['../warpcore_8h.html#a1dc8f24f3aece4066bc8ff8fceeb54f3',1,'warpcore.h']]],
   ['warn',['warn',['../util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887',1,'util.h']]],
