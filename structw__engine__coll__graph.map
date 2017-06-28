@@ -1,3 +1,4 @@
 <map id="w_engine" name="w_engine">
-<area shape="rect" id="node2" href="$structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="15,5,69,32"/>
+<area shape="rect" id="node2" href="$structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="24,96,79,123"/>
+<area shape="rect" id="node3" href="$structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="5,5,99,32"/>
 </map>
