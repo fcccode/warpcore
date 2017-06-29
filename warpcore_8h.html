@@ -131,6 +131,12 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a1eb5255e1d14c0f5b812d26c0c38ef81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a1eb5255e1d14c0f5b812d26c0c38ef81">__offsetof</a>(type, field)&#160;&#160;&#160;__builtin_offsetof(type, field)</td></tr>
+<tr class="separator:a1eb5255e1d14c0f5b812d26c0c38ef81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c76efdd134700aee3eb002cf4c0a674"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a0c76efdd134700aee3eb002cf4c0a674">__DEQUALIFY</a>(type, var)&#160;&#160;&#160;((type)(__uintptr_t)(const volatile void *)(var))</td></tr>
+<tr class="separator:a0c76efdd134700aee3eb002cf4c0a674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18c8113e8a7874a7f2718b2b46cf2c9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a18c8113e8a7874a7f2718b2b46cf2c9f">__containerof</a>(x, s, m)</td></tr>
+<tr class="separator:a18c8113e8a7874a7f2718b2b46cf2c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6c8c618c1c3811f7c7d8350c1c073567"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a6c8c618c1c3811f7c7d8350c1c073567">w_sock_slist_initializer</a>(l)&#160;&#160;&#160;<a class="el" href="queue_8h.html#a9ae2aca3d46e62be4cb1408bd946ef15">SLIST_HEAD_INITIALIZER</a>(l)</td></tr>
 <tr class="memdesc:a6c8c618c1c3811f7c7d8350c1c073567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializer for struct w_sock_slist.  <a href="#a6c8c618c1c3811f7c7d8350c1c073567">More...</a><br/></td></tr>
 <tr class="separator:a6c8c618c1c3811f7c7d8350c1c073567"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,6 +222,96 @@ Functions</h2></td></tr>
 <tr class="separator:a25db095b03b04843ed074c604c85c27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a18c8113e8a7874a7f2718b2b46cf2c9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __containerof</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">s, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">m&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">({                                                                         \</div>
+<div class="line">        const <span class="keyword">volatile</span> __typeof(((s *)0)-&gt;m) * __x = (x);                      <a class="code" href="warpcore_8h.html#a0c76efdd134700aee3eb002cf4c0a674">\</a></div>
+<div class="line"><a class="code" href="warpcore_8h.html#a0c76efdd134700aee3eb002cf4c0a674">        __DEQUALIFY</a>(s *, (<span class="keyword">const</span> <span class="keyword">volatile</span> <span class="keywordtype">char</span> *)__x - <a class="code" href="warpcore_8h.html#a1eb5255e1d14c0f5b812d26c0c38ef81">__offsetof</a>(s, m));       \</div>
+<div class="line">    })</div>
+<div class="ttc" id="warpcore_8h_html_a0c76efdd134700aee3eb002cf4c0a674"><div class="ttname"><a href="warpcore_8h.html#a0c76efdd134700aee3eb002cf4c0a674">__DEQUALIFY</a></div><div class="ttdeci">#define __DEQUALIFY(type, var)</div><div class="ttdef"><b>Definition:</b> warpcore.h:44</div></div>
+<div class="ttc" id="warpcore_8h_html_a1eb5255e1d14c0f5b812d26c0c38ef81"><div class="ttname"><a href="warpcore_8h.html#a1eb5255e1d14c0f5b812d26c0c38ef81">__offsetof</a></div><div class="ttdeci">#define __offsetof(type, field)</div><div class="ttdef"><b>Definition:</b> warpcore.h:40</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a0c76efdd134700aee3eb002cf4c0a674"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __DEQUALIFY</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">var&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;((type)(__uintptr_t)(const volatile void *)(var))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1eb5255e1d14c0f5b812d26c0c38ef81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __offsetof</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;__builtin_offsetof(type, field)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ae13f9b3c39d99b4a14d36b88ae5387da"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1223,7 +1319,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 29 2017 14:33:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 29 2017 15:13:07 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
