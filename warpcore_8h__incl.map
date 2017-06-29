@@ -1,8 +1,7 @@
 <map id="include/warpcore/warpcore.h" name="include/warpcore/warpcore.h">
-<area shape="rect" id="node4" href="$cdefs_8h.html" title="warpcore/cdefs.h" alt="" coords="211,80,333,107"/>
-<area shape="rect" id="node5" href="$config_8h.html" title="warpcore/config.h" alt="" coords="357,80,483,107"/>
-<area shape="rect" id="node6" href="$plat_8h.html" title="warpcore/plat.h" alt="" coords="75,80,185,107"/>
-<area shape="rect" id="node8" href="$queue_8h.html" title="warpcore/queue.h" alt="" coords="507,80,632,107"/>
-<area shape="rect" id="node10" href="$tree_8h.html" title="warpcore/tree.h" alt="" coords="656,80,767,107"/>
-<area shape="rect" id="node11" href="$util_8h.html" title="warpcore/util.h" alt="" coords="879,80,985,107"/>
+<area shape="rect" id="node4" href="$config_8h.html" title="warpcore/config.h" alt="" coords="211,80,336,107"/>
+<area shape="rect" id="node5" href="$plat_8h.html" title="warpcore/plat.h" alt="" coords="75,80,185,107"/>
+<area shape="rect" id="node8" href="$queue_8h.html" title="warpcore/queue.h" alt="" coords="496,80,621,107"/>
+<area shape="rect" id="node10" href="$tree_8h.html" title="warpcore/tree.h" alt="" coords="360,80,471,107"/>
+<area shape="rect" id="node11" href="$util_8h.html" title="warpcore/util.h" alt="" coords="737,80,844,107"/>
 </map>

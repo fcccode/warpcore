@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.12.0</span>
+   &#160;<span id="projectnumber">0.13.0</span>
    </div>
   </td>
  </tr>
@@ -96,12 +96,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ad5823560b3c94d235bc69d0873fe07da"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structeth__hdr.html#ad5823560b3c94d235bc69d0873fe07da">dst</a> [<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a>]</td></tr>
-<tr class="memdesc:ad5823560b3c94d235bc69d0873fe07da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destination MAC address.  <a href="#ad5823560b3c94d235bc69d0873fe07da">More...</a><br/></td></tr>
-<tr class="separator:ad5823560b3c94d235bc69d0873fe07da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab859620d49a9f684c6642583412b174b"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structeth__hdr.html#ab859620d49a9f684c6642583412b174b">src</a> [<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a>]</td></tr>
-<tr class="memdesc:ab859620d49a9f684c6642583412b174b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source MAC address.  <a href="#ab859620d49a9f684c6642583412b174b">More...</a><br/></td></tr>
-<tr class="separator:ab859620d49a9f684c6642583412b174b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62491dbb603459d3b23060cd05944752"><td class="memItemLeft" align="right" valign="top">struct ether_addr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structeth__hdr.html#a62491dbb603459d3b23060cd05944752">dst</a></td></tr>
+<tr class="memdesc:a62491dbb603459d3b23060cd05944752"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destination MAC address.  <a href="#a62491dbb603459d3b23060cd05944752">More...</a><br/></td></tr>
+<tr class="separator:a62491dbb603459d3b23060cd05944752"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa6c08a23be7d9dd8d4cf5ef7fc302f5"><td class="memItemLeft" align="right" valign="top">struct ether_addr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structeth__hdr.html#aaa6c08a23be7d9dd8d4cf5ef7fc302f5">src</a></td></tr>
+<tr class="memdesc:aaa6c08a23be7d9dd8d4cf5ef7fc302f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Source MAC address.  <a href="#aaa6c08a23be7d9dd8d4cf5ef7fc302f5">More...</a><br/></td></tr>
+<tr class="separator:aaa6c08a23be7d9dd8d4cf5ef7fc302f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae58e97f701ce21c9cc0b065bbf2fc77c"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structeth__hdr.html#ae58e97f701ce21c9cc0b065bbf2fc77c">type</a></td></tr>
 <tr class="memdesc:ae58e97f701ce21c9cc0b065bbf2fc77c"><td class="mdescLeft">&#160;</td><td class="mdescRight">EtherType of the payload data.  <a href="#ae58e97f701ce21c9cc0b065bbf2fc77c">More...</a><br/></td></tr>
 <tr class="separator:ae58e97f701ce21c9cc0b065bbf2fc77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -109,12 +109,12 @@ Data Fields</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An <a href="https://en.wikipedia.org/wiki/Ethernet_frame#Ethernet_II">Ethernet II MAC header</a>. </p>
 </div><h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="ad5823560b3c94d235bc69d0873fe07da"></a>
+<a class="anchor" id="a62491dbb603459d3b23060cd05944752"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t eth_hdr::dst[<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a>]</td>
+          <td class="memname">struct ether_addr eth_hdr::dst</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -123,12 +123,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab859620d49a9f684c6642583412b174b"></a>
+<a class="anchor" id="aaa6c08a23be7d9dd8d4cf5ef7fc302f5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t eth_hdr::src[<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a>]</td>
+          <td class="memname">struct ether_addr eth_hdr::src</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -157,7 +157,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 28 2017 14:26:43 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 29 2017 14:33:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

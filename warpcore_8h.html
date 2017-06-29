@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.12.0</span>
+   &#160;<span id="projectnumber">0.13.0</span>
    </div>
   </td>
  </tr>
@@ -95,7 +95,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;sys/time.h&gt;</code><br/>
-<code>#include &lt;<a class="el" href="cdefs_8h_source.html">warpcore/cdefs.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="config_8h_source.html">warpcore/config.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="plat_8h_source.html">warpcore/plat.h</a>&gt;</code><br/>
 <code>#include &lt;<a class="el" href="queue_8h_source.html">warpcore/queue.h</a>&gt;</code><br/>
@@ -106,7 +105,7 @@ Include dependency graph for warpcore.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8h__incl.png" border="0" usemap="#include_2warpcore_2warpcore_8h" alt=""/></div>
 <map name="include_2warpcore_2warpcore_8h" id="include_2warpcore_2warpcore_8h">
-<area shape="rect" id="node4" href="cdefs_8h.html" title="warpcore/cdefs.h" alt="" coords="211,80,333,107"/><area shape="rect" id="node5" href="config_8h.html" title="warpcore/config.h" alt="" coords="357,80,483,107"/><area shape="rect" id="node6" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="75,80,185,107"/><area shape="rect" id="node8" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="507,80,632,107"/><area shape="rect" id="node10" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="656,80,767,107"/><area shape="rect" id="node11" href="util_8h.html" title="warpcore/util.h" alt="" coords="879,80,985,107"/></map>
+<area shape="rect" id="node4" href="config_8h.html" title="warpcore/config.h" alt="" coords="211,80,336,107"/><area shape="rect" id="node5" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="75,80,185,107"/><area shape="rect" id="node8" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="496,80,621,107"/><area shape="rect" id="node10" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="360,80,471,107"/><area shape="rect" id="node11" href="util_8h.html" title="warpcore/util.h" alt="" coords="737,80,844,107"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -132,6 +131,12 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a6c8c618c1c3811f7c7d8350c1c073567"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a6c8c618c1c3811f7c7d8350c1c073567">w_sock_slist_initializer</a>(l)&#160;&#160;&#160;<a class="el" href="queue_8h.html#a9ae2aca3d46e62be4cb1408bd946ef15">SLIST_HEAD_INITIALIZER</a>(l)</td></tr>
+<tr class="memdesc:a6c8c618c1c3811f7c7d8350c1c073567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializer for struct w_sock_slist.  <a href="#a6c8c618c1c3811f7c7d8350c1c073567">More...</a><br/></td></tr>
+<tr class="separator:a6c8c618c1c3811f7c7d8350c1c073567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66e9fb9b95d09984dcfd0e987fe0f1d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a66e9fb9b95d09984dcfd0e987fe0f1d9">w_iov_stailq_initializer</a>(q)</td></tr>
+<tr class="memdesc:a66e9fb9b95d09984dcfd0e987fe0f1d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializer for struct <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a>.  <a href="#a66e9fb9b95d09984dcfd0e987fe0f1d9">More...</a><br/></td></tr>
+<tr class="separator:a66e9fb9b95d09984dcfd0e987fe0f1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1dc8f24f3aece4066bc8ff8fceeb54f3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a1dc8f24f3aece4066bc8ff8fceeb54f3">W_ZERO_CHKSUM</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memdesc:a1dc8f24f3aece4066bc8ff8fceeb54f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Do not compute a UDP checksum for outgoing packets.  <a href="#a1dc8f24f3aece4066bc8ff8fceeb54f3">More...</a><br/></td></tr>
 <tr class="separator:a1dc8f24f3aece4066bc8ff8fceeb54f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,66 +152,66 @@ Functions</h2></td></tr>
 <tr class="memitem:a83b86f011acb496a1aa350a83442be77"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a83b86f011acb496a1aa350a83442be77">SLIST_HEAD</a> (w_sock_slist, <a class="el" href="structw__sock.html">w_sock</a>)</td></tr>
 <tr class="memdesc:a83b86f011acb496a1aa350a83442be77"><td class="mdescLeft">&#160;</td><td class="mdescRight">A chain of <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> socket.  <a href="#a83b86f011acb496a1aa350a83442be77">More...</a><br/></td></tr>
 <tr class="separator:a83b86f011acb496a1aa350a83442be77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a045f4826ff2a8917693126c9d27455e4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a045f4826ff2a8917693126c9d27455e4">w_init</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> ifname, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t rip, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t nbufs)</td></tr>
+<tr class="memitem:a045f4826ff2a8917693126c9d27455e4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a045f4826ff2a8917693126c9d27455e4">w_init</a> (const char *const ifname, const uint32_t rip, const uint32_t nbufs)</td></tr>
 <tr class="memdesc:a045f4826ff2a8917693126c9d27455e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize a warpcore engine on the given interface.  <a href="#a045f4826ff2a8917693126c9d27455e4">More...</a><br/></td></tr>
 <tr class="separator:a045f4826ff2a8917693126c9d27455e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a726b06c06493678f7f48c889bbcd30a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a726b06c06493678f7f48c889bbcd30a5">w_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w)</td></tr>
+<tr class="memitem:a726b06c06493678f7f48c889bbcd30a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a726b06c06493678f7f48c889bbcd30a5">w_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
 <tr class="memdesc:a726b06c06493678f7f48c889bbcd30a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore engine down cleanly.  <a href="#a726b06c06493678f7f48c889bbcd30a5">More...</a><br/></td></tr>
 <tr class="separator:a726b06c06493678f7f48c889bbcd30a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b39fb3160debbd7c56314d8a990780"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t port, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint8_t flags)</td></tr>
+<tr class="memitem:a74b39fb3160debbd7c56314d8a990780"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a74b39fb3160debbd7c56314d8a990780">w_bind</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint16_t port, const uint8_t flags)</td></tr>
 <tr class="memdesc:a74b39fb3160debbd7c56314d8a990780"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to the given local UDP port number.  <a href="#a74b39fb3160debbd7c56314d8a990780">More...</a><br/></td></tr>
 <tr class="separator:a74b39fb3160debbd7c56314d8a990780"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab31d23fb4fa64de58aef6c688ea6563a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ab31d23fb4fa64de58aef6c688ea6563a">w_connect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t ip, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t port)</td></tr>
+<tr class="memitem:ab31d23fb4fa64de58aef6c688ea6563a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ab31d23fb4fa64de58aef6c688ea6563a">w_connect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s, const uint32_t ip, const uint16_t port)</td></tr>
 <tr class="memdesc:ab31d23fb4fa64de58aef6c688ea6563a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect a bound socket to a remote IP address and port.  <a href="#ab31d23fb4fa64de58aef6c688ea6563a">More...</a><br/></td></tr>
 <tr class="separator:ab31d23fb4fa64de58aef6c688ea6563a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07d8e5b61adc2c9fe1bd32c663a7e23f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a07d8e5b61adc2c9fe1bd32c663a7e23f">w_disconnect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s)</td></tr>
+<tr class="memitem:a07d8e5b61adc2c9fe1bd32c663a7e23f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a07d8e5b61adc2c9fe1bd32c663a7e23f">w_disconnect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="separator:a07d8e5b61adc2c9fe1bd32c663a7e23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26c31751f7bb602b01bf00077ebd362d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s)</td></tr>
+<tr class="memitem:a26c31751f7bb602b01bf00077ebd362d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:a26c31751f7bb602b01bf00077ebd362d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a warpcore socket.  <a href="#a26c31751f7bb602b01bf00077ebd362d">More...</a><br/></td></tr>
 <tr class="separator:a26c31751f7bb602b01bf00077ebd362d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a689204eb10c7dbef64428413352fff85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a689204eb10c7dbef64428413352fff85">w_alloc_len</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> q, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t len, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t off)</td></tr>
+<tr class="memitem:a689204eb10c7dbef64428413352fff85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a689204eb10c7dbef64428413352fff85">w_alloc_len</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q, const uint32_t len, const uint16_t off)</td></tr>
 <tr class="memdesc:a689204eb10c7dbef64428413352fff85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue for <code>len</code> payload bytes, for eventual use with <a class="el" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692" title="Loops over the w_iov structures in the w_iov_stailq o, sending them all over w_sock s...">w_tx()</a>.  <a href="#a689204eb10c7dbef64428413352fff85">More...</a><br/></td></tr>
 <tr class="separator:a689204eb10c7dbef64428413352fff85"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c2b4f87688e14a7530bc86ddf377411"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7c2b4f87688e14a7530bc86ddf377411">w_alloc_cnt</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> q, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t count, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t off)</td></tr>
+<tr class="memitem:a7c2b4f87688e14a7530bc86ddf377411"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7c2b4f87688e14a7530bc86ddf377411">w_alloc_cnt</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q, const uint32_t count, const uint16_t off)</td></tr>
 <tr class="memdesc:a7c2b4f87688e14a7530bc86ddf377411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocate a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue of <code>count</code> packets, for eventual use with <a class="el" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692" title="Loops over the w_iov structures in the w_iov_stailq o, sending them all over w_sock s...">w_tx()</a>.  <a href="#a7c2b4f87688e14a7530bc86ddf377411">More...</a><br/></td></tr>
 <tr class="separator:a7c2b4f87688e14a7530bc86ddf377411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82e841cb10098960c39ab26a17b20843"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov.html">w_iov</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843">w_alloc_iov</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t off)</td></tr>
+<tr class="memitem:a82e841cb10098960c39ab26a17b20843"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov.html">w_iov</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843">w_alloc_iov</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint16_t off)</td></tr>
 <tr class="memdesc:a82e841cb10098960c39ab26a17b20843"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a spare <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> from the pool of the given warpcore engine.  <a href="#a82e841cb10098960c39ab26a17b20843">More...</a><br/></td></tr>
 <tr class="separator:a82e841cb10098960c39ab26a17b20843"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692">w_tx</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> o)</td></tr>
+<tr class="memitem:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692">w_tx</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const o)</td></tr>
 <tr class="memdesc:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a> <code>o</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#ae4e224c9a1e5d17f44ea007ff2aa4692">More...</a><br/></td></tr>
 <tr class="separator:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7dda1788a8e14dc34142676afa6a4e13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> q)</td></tr>
+<tr class="memitem:a7dda1788a8e14dc34142676afa6a4e13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q)</td></tr>
 <tr class="memdesc:a7dda1788a8e14dc34142676afa6a4e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue obtained via <a class="el" href="warpcore_8c.html#a689204eb10c7dbef64428413352fff85" title="Allocate a w_iov tail queue for len payload bytes, for eventual use with w_tx(). ">w_alloc_len()</a>, <a class="el" href="warpcore_8c.html#a7c2b4f87688e14a7530bc86ddf377411" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore.  <a href="#a7dda1788a8e14dc34142676afa6a4e13">More...</a><br/></td></tr>
 <tr class="separator:a7dda1788a8e14dc34142676afa6a4e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0de8ce8c73df7d75c3a90c5e01ea998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#af0de8ce8c73df7d75c3a90c5e01ea998">w_free_iov</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct <a class="el" href="structw__iov.html">w_iov</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> v)</td></tr>
+<tr class="memitem:af0de8ce8c73df7d75c3a90c5e01ea998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#af0de8ce8c73df7d75c3a90c5e01ea998">w_free_iov</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov.html">w_iov</a> *const v)</td></tr>
 <tr class="memdesc:af0de8ce8c73df7d75c3a90c5e01ea998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a single <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> obtained via <a class="el" href="warpcore_8c.html#a689204eb10c7dbef64428413352fff85" title="Allocate a w_iov tail queue for len payload bytes, for eventual use with w_tx(). ">w_alloc_len()</a>, <a class="el" href="warpcore_8c.html#a7c2b4f87688e14a7530bc86ddf377411" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore.  <a href="#af0de8ce8c73df7d75c3a90c5e01ea998">More...</a><br/></td></tr>
 <tr class="separator:af0de8ce8c73df7d75c3a90c5e01ea998"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2570e386e8776c6cc5203f56490a6a54"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a2570e386e8776c6cc5203f56490a6a54">w_iov_stailq_len</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> q)</td></tr>
+<tr class="memitem:a2570e386e8776c6cc5203f56490a6a54"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a2570e386e8776c6cc5203f56490a6a54">w_iov_stailq_len</a> (const struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q)</td></tr>
 <tr class="memdesc:a2570e386e8776c6cc5203f56490a6a54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total payload length of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>c</code>.  <a href="#a2570e386e8776c6cc5203f56490a6a54">More...</a><br/></td></tr>
 <tr class="separator:a2570e386e8776c6cc5203f56490a6a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec5a5bdb16a124254766c349768c2d7e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#aec5a5bdb16a124254766c349768c2d7e">w_iov_stailq_cnt</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> q)</td></tr>
+<tr class="memitem:aec5a5bdb16a124254766c349768c2d7e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#aec5a5bdb16a124254766c349768c2d7e">w_iov_stailq_cnt</a> (const struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q)</td></tr>
 <tr class="memdesc:aec5a5bdb16a124254766c349768c2d7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>c</code>.  <a href="#aec5a5bdb16a124254766c349768c2d7e">More...</a><br/></td></tr>
 <tr class="separator:aec5a5bdb16a124254766c349768c2d7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaf46056f39cb452d908ddac8cf6e57c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s)</td></tr>
+<tr class="memitem:aaf46056f39cb452d908ddac8cf6e57c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:aaf46056f39cb452d908ddac8cf6e57c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the file descriptor associated with a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>.  <a href="#aaf46056f39cb452d908ddac8cf6e57c5">More...</a><br/></td></tr>
 <tr class="separator:aaf46056f39cb452d908ddac8cf6e57c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5d9eb6da113ab9e0e7219efa0876384"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384">w_rx</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> i)</td></tr>
+<tr class="memitem:ae5d9eb6da113ab9e0e7219efa0876384"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384">w_rx</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const i)</td></tr>
 <tr class="memdesc:ae5d9eb6da113ab9e0e7219efa0876384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return any new data that has been received on a socket by appending it to the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>i</code>.  <a href="#ae5d9eb6da113ab9e0e7219efa0876384">More...</a><br/></td></tr>
 <tr class="separator:ae5d9eb6da113ab9e0e7219efa0876384"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fba5669717435248ca7b7945a9b9d75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75">w_nic_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w)</td></tr>
+<tr class="memitem:a3fba5669717435248ca7b7945a9b9d75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75">w_nic_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
 <tr class="memdesc:a3fba5669717435248ca7b7945a9b9d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push data placed in the TX rings via <a class="el" href="udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c" title="Sends a payload contained in a w_sock::ov via UDP. ">udp_tx()</a> and similar methods out onto the link.  <a href="#a3fba5669717435248ca7b7945a9b9d75">More...</a><br/></td></tr>
 <tr class="separator:a3fba5669717435248ca7b7945a9b9d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d">w_nic_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> int32_t msec)</td></tr>
+<tr class="memitem:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d">w_nic_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const int32_t msec)</td></tr>
 <tr class="memdesc:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger netmap to make new received data available to <a class="el" href="backend__netmap_8c.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a>.  <a href="#ab0508cfebe874ba0f3f2f230b4120e0d">More...</a><br/></td></tr>
 <tr class="separator:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a10a4664235583c583eee0a08a35a9c71"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a10a4664235583c583eee0a08a35a9c71">w_rx_ready</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct w_sock_slist *sl)</td></tr>
+<tr class="memitem:a10a4664235583c583eee0a08a35a9c71"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a10a4664235583c583eee0a08a35a9c71">w_rx_ready</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct w_sock_slist *sl)</td></tr>
 <tr class="memdesc:a10a4664235583c583eee0a08a35a9c71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fill a w_sock_slist with pointers to some sockets with pending inbound data.  <a href="#a10a4664235583c583eee0a08a35a9c71">More...</a><br/></td></tr>
 <tr class="separator:a10a4664235583c583eee0a08a35a9c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b47d2c85543fe7de031d20a946a8d40"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7b47d2c85543fe7de031d20a946a8d40">w_iov_max_len</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov.html">w_iov</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> v)</td></tr>
+<tr class="memitem:a7b47d2c85543fe7de031d20a946a8d40"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7b47d2c85543fe7de031d20a946a8d40">w_iov_max_len</a> (const struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const struct <a class="el" href="structw__iov.html">w_iov</a> *const v)</td></tr>
 <tr class="memdesc:a7b47d2c85543fe7de031d20a946a8d40"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the maximum size a given <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> may have for the given engine.  <a href="#a7b47d2c85543fe7de031d20a946a8d40">More...</a><br/></td></tr>
 <tr class="separator:a7b47d2c85543fe7de031d20a946a8d40"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25db095b03b04843ed074c604c85c27d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a25db095b03b04843ed074c604c85c27d">w_connected</a> (<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> s)</td></tr>
+<tr class="memitem:a25db095b03b04843ed074c604c85c27d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a25db095b03b04843ed074c604c85c27d">w_connected</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:a25db095b03b04843ed074c604c85c27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a socket is connected (i.e., <a class="el" href="warpcore_8c.html#ab31d23fb4fa64de58aef6c688ea6563a" title="Connect a bound socket to a remote IP address and port. ">w_connect()</a> has been called on it) or not.  <a href="#a25db095b03b04843ed074c604c85c27d">More...</a><br/></td></tr>
 <tr class="separator:a25db095b03b04843ed074c604c85c27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -234,6 +239,62 @@ Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The warpcore engine for <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>. </dd></dl>
 
+</div>
+</div>
+<a class="anchor" id="a66e9fb9b95d09984dcfd0e987fe0f1d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define w_iov_stailq_initializer</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">q</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">{                                                                          <a class="code" href="queue_8h.html#a3d41ce2c3f1dd21c0d4051d13204c321">\</a></div>
+<div class="line"><a class="code" href="queue_8h.html#a3d41ce2c3f1dd21c0d4051d13204c321">        STAILQ_HEAD_INITIALIZER</a>(q), 0                                          \</div>
+<div class="line">    }</div>
+<div class="ttc" id="queue_8h_html_a3d41ce2c3f1dd21c0d4051d13204c321"><div class="ttname"><a href="queue_8h.html#a3d41ce2c3f1dd21c0d4051d13204c321">STAILQ_HEAD_INITIALIZER</a></div><div class="ttdeci">#define STAILQ_HEAD_INITIALIZER(head)</div><div class="ttdef"><b>Definition:</b> queue.h:324</div></div>
+</div><!-- fragment -->
+<p>Initializer for struct <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">q</td><td>A struct <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Empty <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a>, to be assigned to <code>q</code>. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a15">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a24">ping.c</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="a6c8c618c1c3811f7c7d8350c1c073567"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define w_sock_slist_initializer</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">l</td><td>)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="queue_8h.html#a9ae2aca3d46e62be4cb1408bd946ef15">SLIST_HEAD_INITIALIZER</a>(l)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initializer for struct w_sock_slist. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">l</td><td>A struct w_sock_slist.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Empty w_sock_slist, to be assigned to <code>l</code>. </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a11">inetd.c</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="adad79a0011e52c38d52df980843fff78"></a>
@@ -274,7 +335,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Do not compute a UDP checksum for outgoing packets. </p>
-<p>Has no effect for the socket backend. </p>
+<p>Has no effect for the socket engine. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a4">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a2">ping.c</a>.</dd>
 </dl>
 </div>
@@ -315,25 +376,25 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void w_alloc_cnt </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
           <td class="paramname"><em>q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
+          <td class="paramtype">const uint32_t&#160;</td>
           <td class="paramname"><em>count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t&#160;</td>
+          <td class="paramtype">const uint16_t&#160;</td>
           <td class="paramname"><em>off</em>&#160;</td>
         </tr>
         <tr>
@@ -374,13 +435,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">struct <a class="el" href="structw__iov.html">w_iov</a>* w_alloc_iov </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t&#160;</td>
+          <td class="paramtype">const uint16_t&#160;</td>
           <td class="paramname"><em>off</em>&#160;</td>
         </tr>
         <tr>
@@ -411,25 +472,25 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_alloc_len </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
           <td class="paramname"><em>q</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
+          <td class="paramtype">const uint32_t&#160;</td>
           <td class="paramname"><em>len</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t&#160;</td>
+          <td class="paramtype">const uint16_t&#160;</td>
           <td class="paramname"><em>off</em>&#160;</td>
         </tr>
         <tr>
@@ -471,19 +532,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">struct <a class="el" href="structw__sock.html">w_sock</a>* w_bind </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t&#160;</td>
+          <td class="paramtype">const uint16_t&#160;</td>
           <td class="paramname"><em>port</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint8_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>flags</em>&#160;</td>
         </tr>
         <tr>
@@ -524,7 +585,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_cleanup </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
         </tr>
@@ -559,7 +620,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_close </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -585,19 +646,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_connect </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
+          <td class="paramtype">const uint32_t&#160;</td>
           <td class="paramname"><em>ip</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t&#160;</td>
+          <td class="paramtype">const uint16_t&#160;</td>
           <td class="paramname"><em>port</em>&#160;</td>
         </tr>
         <tr>
@@ -626,7 +687,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8h_ab31d23fb4fa64de58aef6c688ea6563a_cgraph.png" border="0" usemap="#warpcore_8h_ab31d23fb4fa64de58aef6c688ea6563a_cgraph" alt=""/></div>
 <map name="warpcore_8h_ab31d23fb4fa64de58aef6c688ea6563a_cgraph" id="warpcore_8h_ab31d23fb4fa64de58aef6c688ea6563a_cgraph">
-<area shape="rect" id="node2" href="backend_8h.html#af5df52522d52bfed04aa270094deaa78" title="Connect the given w_sock, using the netmap backend. " alt="" coords="139,147,263,173"/><area shape="rect" id="node3" href="arp_8c.html#a26abe3672a2e5a135cd6af4970ca2f32" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="312,147,411,173"/><area shape="rect" id="node4" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="971,147,1082,173"/><area shape="rect" id="node5" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="1131,248,1221,275"/><area shape="rect" id="node6" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="1280,96,1339,123"/><area shape="rect" id="node7" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="1139,45,1213,72"/><area shape="rect" id="node8" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="459,147,533,173"/><area shape="rect" id="node9" href="eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="581,147,640,173"/><area shape="rect" id="node10" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="692,299,743,325"/><area shape="rect" id="node19" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="688,147,747,173"/><area shape="rect" id="node11" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="1270,299,1349,325"/><area shape="rect" id="node13" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="828,349,889,376"/><area shape="rect" id="node16" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="993,197,1061,224"/><area shape="rect" id="node18" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="825,299,893,325"/><area shape="rect" id="node12" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="1398,299,1501,325"/><area shape="rect" id="node14" href="in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="986,349,1067,376"/><area shape="rect" id="node15" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="989,400,1064,427"/><area shape="rect" id="node17" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="1151,147,1201,173"/><area shape="rect" id="node20" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="989,96,1064,123"/><area shape="rect" id="node21" href="arp_8c.html#a0b4c8c542881f3936ab01600942e54a5" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="795,147,923,173"/></map>
+<area shape="rect" id="node2" href="backend_8h.html#af5df52522d52bfed04aa270094deaa78" title="Connect the given w_sock, using the netmap backend. " alt="" coords="139,147,263,173"/><area shape="rect" id="node3" href="arp_8c.html#aad7ca3e847867c4dcc618d034aa42739" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="312,147,411,173"/><area shape="rect" id="node4" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="971,147,1082,173"/><area shape="rect" id="node5" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="1131,248,1221,275"/><area shape="rect" id="node6" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="1280,96,1339,123"/><area shape="rect" id="node7" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="1139,45,1213,72"/><area shape="rect" id="node8" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="459,147,533,173"/><area shape="rect" id="node9" href="eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="581,147,640,173"/><area shape="rect" id="node10" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="692,299,743,325"/><area shape="rect" id="node19" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="688,147,747,173"/><area shape="rect" id="node11" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="1270,299,1349,325"/><area shape="rect" id="node13" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="828,349,889,376"/><area shape="rect" id="node16" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="993,197,1061,224"/><area shape="rect" id="node18" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="825,299,893,325"/><area shape="rect" id="node12" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="1398,299,1501,325"/><area shape="rect" id="node14" href="in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="986,349,1067,376"/><area shape="rect" id="node15" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="989,400,1064,427"/><area shape="rect" id="node17" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="1151,147,1201,173"/><area shape="rect" id="node20" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="989,96,1064,123"/><area shape="rect" id="node21" href="arp_8c.html#ab422190f07f8dd9929c6802b53f5c8fa" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="795,147,923,173"/></map>
 </div>
 </p>
 
@@ -639,7 +700,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool w_connected </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -664,7 +725,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_disconnect </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -680,7 +741,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">int w_fd </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -714,13 +775,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_free </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
           <td class="paramname"><em>q</em>&#160;</td>
         </tr>
         <tr>
@@ -750,13 +811,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_free_iov </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov.html">w_iov</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov.html">w_iov</a> *const&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>
@@ -785,19 +846,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">struct <a class="el" href="structw__engine.html">w_engine</a>* w_init </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> char *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">const char *const&#160;</td>
           <td class="paramname"><em>ifname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
+          <td class="paramtype">const uint32_t&#160;</td>
           <td class="paramname"><em>rip</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint32_t&#160;</td>
+          <td class="paramtype">const uint32_t&#160;</td>
           <td class="paramname"><em>nbufs</em>&#160;</td>
         </tr>
         <tr>
@@ -827,7 +888,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8h_a045f4826ff2a8917693126c9d27455e4_cgraph.png" border="0" usemap="#warpcore_8h_a045f4826ff2a8917693126c9d27455e4_cgraph" alt=""/></div>
 <map name="warpcore_8h_a045f4826ff2a8917693126c9d27455e4_cgraph" id="warpcore_8h_a045f4826ff2a8917693126c9d27455e4_cgraph">
-<area shape="rect" id="node2" href="plat_8h.html#af6b33b55cec0d2eedec73b51fdaef8ab" title="Return the Ethernet MAC address of network interface i. " alt="" coords="113,5,213,32"/><area shape="rect" id="node3" href="plat_8h.html#ababcbad22db97091f566216a5b2b849f" title="Return the MTU of network interface i. " alt="" coords="114,56,211,83"/><area shape="rect" id="node4" href="plat_8h.html#a84253d34fd3d0f7c55d4b319c4d2618b" title="Return the link status of network interface i. " alt="" coords="115,107,210,133"/><area shape="rect" id="node5" href="plat_8h.html#a5d7a687500042a6283402c4154bf453c" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,157,216,184"/><area shape="rect" id="node6" href="backend_8h.html#aaae9f7a292954c769564c1c8eb6c337d" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,208,210,235"/></map>
+<area shape="rect" id="node2" href="plat_8h.html#ac645a18d329f9204ceddb21bff751abd" title="Return the Ethernet MAC address of network interface i. " alt="" coords="113,5,213,32"/><area shape="rect" id="node3" href="plat_8h.html#aed8665163695e9a71d2d423f978c4b6a" title="Return the MTU of network interface i. " alt="" coords="114,56,211,83"/><area shape="rect" id="node4" href="plat_8h.html#a2f7eb56d857e3fc97476186dbf10d36b" title="Return the link status of network interface i. " alt="" coords="115,107,210,133"/><area shape="rect" id="node5" href="plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,157,216,184"/><area shape="rect" id="node6" href="backend_8h.html#aaae9f7a292954c769564c1c8eb6c337d" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,208,210,235"/></map>
 </div>
 </p>
 
@@ -840,13 +901,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint16_t w_iov_max_len </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov.html">w_iov</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structw__iov.html">w_iov</a> *const&#160;</td>
           <td class="paramname"><em>v</em>&#160;</td>
         </tr>
         <tr>
@@ -877,7 +938,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint32_t w_iov_stailq_cnt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
           <td></td>
         </tr>
@@ -903,7 +964,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint32_t w_iov_stailq_len </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
           <td class="paramname"><em>q</em></td><td>)</td>
           <td></td>
         </tr>
@@ -929,13 +990,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool w_nic_rx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> int32_t&#160;</td>
+          <td class="paramtype">const int32_t&#160;</td>
           <td class="paramname"><em>msec</em>&#160;</td>
         </tr>
         <tr>
@@ -972,7 +1033,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8h_ab0508cfebe874ba0f3f2f230b4120e0d_cgraph.png" border="0" usemap="#warpcore_8h_ab0508cfebe874ba0f3f2f230b4120e0d_cgraph" alt=""/></div>
 <map name="warpcore_8h_ab0508cfebe874ba0f3f2f230b4120e0d_cgraph" id="warpcore_8h_ab0508cfebe874ba0f3f2f230b4120e0d_cgraph">
-<area shape="rect" id="node2" href="eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="128,150,187,176"/><area shape="rect" id="node3" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="235,99,285,126"/><area shape="rect" id="node15" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="339,302,397,328"/><area shape="rect" id="node4" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="787,48,866,75"/><area shape="rect" id="node6" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="337,150,399,176"/><area shape="rect" id="node9" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="481,99,549,126"/><area shape="rect" id="node14" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="334,48,402,75"/><area shape="rect" id="node5" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="915,48,1018,75"/><area shape="rect" id="node7" href="in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="474,150,555,176"/><area shape="rect" id="node8" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="477,200,552,227"/><area shape="rect" id="node10" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="637,251,728,278"/><area shape="rect" id="node11" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="657,150,708,176"/><area shape="rect" id="node13" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="645,200,720,227"/><area shape="rect" id="node12" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="797,226,856,252"/><area shape="rect" id="node16" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="477,302,552,328"/><area shape="rect" id="node17" href="arp_8c.html#a0b4c8c542881f3936ab01600942e54a5" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="451,352,579,379"/><area shape="rect" id="node18" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="627,352,738,379"/></map>
+<area shape="rect" id="node2" href="eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="128,150,187,176"/><area shape="rect" id="node3" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="235,99,285,126"/><area shape="rect" id="node15" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="339,302,397,328"/><area shape="rect" id="node4" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="787,48,866,75"/><area shape="rect" id="node6" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="337,150,399,176"/><area shape="rect" id="node9" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="481,99,549,126"/><area shape="rect" id="node14" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="334,48,402,75"/><area shape="rect" id="node5" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="915,48,1018,75"/><area shape="rect" id="node7" href="in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="474,150,555,176"/><area shape="rect" id="node8" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="477,200,552,227"/><area shape="rect" id="node10" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="637,251,728,278"/><area shape="rect" id="node11" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="657,150,708,176"/><area shape="rect" id="node13" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="645,200,720,227"/><area shape="rect" id="node12" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="797,226,856,252"/><area shape="rect" id="node16" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="477,302,552,328"/><area shape="rect" id="node17" href="arp_8c.html#ab422190f07f8dd9929c6802b53f5c8fa" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="451,352,579,379"/><area shape="rect" id="node18" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="627,352,738,379"/></map>
 </div>
 </p>
 
@@ -985,7 +1046,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_nic_tx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1018,13 +1079,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_rx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
           <td class="paramname"><em>i</em>&#160;</td>
         </tr>
         <tr>
@@ -1073,13 +1134,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">uint32_t w_rx_ready </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct w_sock_slist *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct w_sock_slist *const&#160;</td>
           <td class="paramname"><em>sl</em>&#160;</td>
         </tr>
         <tr>
@@ -1111,13 +1172,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void w_tx </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> struct <a class="el" href="structw__sock.html">w_sock</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">const struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
           <td class="paramname"><em>s</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
           <td class="paramname"><em>o</em>&#160;</td>
         </tr>
         <tr>
@@ -1153,7 +1214,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8h_ae4e224c9a1e5d17f44ea007ff2aa4692_cgraph.png" border="0" usemap="#warpcore_8h_ae4e224c9a1e5d17f44ea007ff2aa4692_cgraph" alt=""/></div>
 <map name="warpcore_8h_ae4e224c9a1e5d17f44ea007ff2aa4692_cgraph" id="warpcore_8h_ae4e224c9a1e5d17f44ea007ff2aa4692_cgraph">
-<area shape="rect" id="node2" href="warpcore_8h.html#a25db095b03b04843ed074c604c85c27d" title="Return whether a socket is connected (i.e., w_connect() has been called on it) or not..." alt="" coords="227,5,325,32"/><area shape="rect" id="node3" href="udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c" title="Sends a payload contained in a w_sock::ov via UDP. " alt="" coords="111,95,172,121"/><area shape="rect" id="node23" href="backend__netmap_8c.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="104,145,179,172"/><area shape="rect" id="node4" href="arp_8c.html#a26abe3672a2e5a135cd6af4970ca2f32" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="227,233,325,260"/><area shape="rect" id="node12" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="1185,461,1263,488"/><area shape="rect" id="node15" href="in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="901,284,982,311"/><area shape="rect" id="node18" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="1065,157,1116,184"/><area shape="rect" id="node5" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="886,233,997,260"/><area shape="rect" id="node6" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="1045,335,1136,361"/><area shape="rect" id="node7" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="1195,107,1253,133"/><area shape="rect" id="node8" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="1053,208,1128,235"/><area shape="rect" id="node9" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="373,259,448,285"/><area shape="rect" id="node10" href="eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="496,259,555,285"/><area shape="rect" id="node11" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="607,411,657,437"/><area shape="rect" id="node20" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="603,259,661,285"/><area shape="rect" id="node14" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="743,461,804,488"/><area shape="rect" id="node17" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="907,335,975,361"/><area shape="rect" id="node19" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="739,411,807,437"/><area shape="rect" id="node13" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="1313,461,1415,488"/><area shape="rect" id="node16" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="904,487,979,513"/><area shape="rect" id="node21" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="904,183,979,209"/><area shape="rect" id="node22" href="arp_8c.html#a0b4c8c542881f3936ab01600942e54a5" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="709,259,837,285"/></map>
+<area shape="rect" id="node2" href="warpcore_8h.html#a25db095b03b04843ed074c604c85c27d" title="Return whether a socket is connected (i.e., w_connect() has been called on it) or not..." alt="" coords="227,5,325,32"/><area shape="rect" id="node3" href="udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c" title="Sends a payload contained in a w_sock::ov via UDP. " alt="" coords="111,95,172,121"/><area shape="rect" id="node23" href="backend__netmap_8c.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="104,145,179,172"/><area shape="rect" id="node4" href="arp_8c.html#aad7ca3e847867c4dcc618d034aa42739" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="227,233,325,260"/><area shape="rect" id="node12" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="1185,461,1263,488"/><area shape="rect" id="node15" href="in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="901,284,982,311"/><area shape="rect" id="node18" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="1065,157,1116,184"/><area shape="rect" id="node5" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="886,233,997,260"/><area shape="rect" id="node6" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="1045,335,1136,361"/><area shape="rect" id="node7" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="1195,107,1253,133"/><area shape="rect" id="node8" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="1053,208,1128,235"/><area shape="rect" id="node9" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="373,259,448,285"/><area shape="rect" id="node10" href="eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="496,259,555,285"/><area shape="rect" id="node11" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="607,411,657,437"/><area shape="rect" id="node20" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="603,259,661,285"/><area shape="rect" id="node14" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="743,461,804,488"/><area shape="rect" id="node17" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="907,335,975,361"/><area shape="rect" id="node19" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="739,411,807,437"/><area shape="rect" id="node13" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="1313,461,1415,488"/><area shape="rect" id="node16" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="904,487,979,513"/><area shape="rect" id="node21" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="904,183,979,209"/><area shape="rect" id="node22" href="arp_8c.html#ab422190f07f8dd9929c6802b53f5c8fa" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="709,259,837,285"/></map>
 </div>
 </p>
 
@@ -1162,7 +1223,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 28 2017 14:26:43 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 29 2017 14:33:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.12.0</span>
+   &#160;<span id="projectnumber">0.13.0</span>
    </div>
   </td>
  </tr>
@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;arpa/inet.h&gt;</code><br/>
 <code>#include &lt;stdbool.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &lt;net/ethernet.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for eth.h:</div>
 <div class="dyncontent">
@@ -108,7 +109,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="eth_8h__dep__incl.png" border="0" usemap="#src_2eth_8hdep" alt=""/></div>
 <map name="src_2eth_8hdep" id="src_2eth_8hdep">
-<area shape="rect" id="node2" href="arp_8h.html" title="src/arp.h" alt="" coords="269,80,341,107"/><area shape="rect" id="node3" href="arp_8c.html" title="src/arp.c" alt="" coords="5,229,77,256"/><area shape="rect" id="node4" href="backend_8h.html" title="src/backend.h" alt="" coords="469,155,573,181"/><area shape="rect" id="node5" href="backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="119,229,272,256"/><area shape="rect" id="node7" href="eth_8c.html" title="src/eth.c" alt="" coords="317,229,389,256"/><area shape="rect" id="node8" href="icmp_8c.html" title="src/icmp.c" alt="" coords="807,229,888,256"/><area shape="rect" id="node9" href="ip_8c.html" title="src/ip.c" alt="" coords="915,229,980,256"/><area shape="rect" id="node10" href="udp_8c.html" title="src/udp.c" alt="" coords="422,229,497,256"/><area shape="rect" id="node11" href="warpcore_8c.html" title="src/warpcore.c" alt="" coords="1005,229,1112,256"/><area shape="rect" id="node12" href="ip_8h.html" title="src/ip.h" alt="" coords="578,80,643,107"/><area shape="rect" id="node14" href="plat_8c.html" title="src/plat.c" alt="" coords="1139,80,1215,107"/><area shape="rect" id="node6" href="backend__sock_8c.html" title="src/backend_sock.c" alt="" coords="569,229,708,256"/><area shape="rect" id="node13" href="in__cksum_8c.html" title="src/in_cksum.c" alt="" coords="649,155,759,181"/></map>
+<area shape="rect" id="node2" href="backend_8h.html" title="src/backend.h" alt="" coords="340,155,444,181"/><area shape="rect" id="node3" href="arp_8c.html" title="src/arp.c" alt="" coords="185,229,257,256"/><area shape="rect" id="node4" href="backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="5,229,159,256"/><area shape="rect" id="node6" href="eth_8c.html" title="src/eth.c" alt="" coords="282,229,355,256"/><area shape="rect" id="node7" href="icmp_8c.html" title="src/icmp.c" alt="" coords="883,229,964,256"/><area shape="rect" id="node8" href="ip_8c.html" title="src/ip.c" alt="" coords="543,229,608,256"/><area shape="rect" id="node9" href="udp_8c.html" title="src/udp.c" alt="" coords="782,229,857,256"/><area shape="rect" id="node10" href="warpcore_8c.html" title="src/warpcore.c" alt="" coords="650,229,757,256"/><area shape="rect" id="node11" href="ip_8h.html" title="src/ip.h" alt="" coords="474,80,539,107"/><area shape="rect" id="node5" href="backend__sock_8c.html" title="src/backend_sock.c" alt="" coords="380,229,519,256"/><area shape="rect" id="node12" href="in__cksum_8c.html" title="src/in_cksum.c" alt="" coords="570,155,680,181"/></map>
 </div>
 </div>
 <p><a href="eth_8h_source.html">Go to the source code of this file.</a></p>
@@ -121,83 +122,28 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a78fc3e3fe5c33412e9f47a214f6e0415"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a>&#160;&#160;&#160;6</td></tr>
-<tr class="memdesc:a78fc3e3fe5c33412e9f47a214f6e0415"><td class="mdescLeft">&#160;</td><td class="mdescRight">MAC address length in bytes. Six.  <a href="#a78fc3e3fe5c33412e9f47a214f6e0415">More...</a><br/></td></tr>
-<tr class="separator:a78fc3e3fe5c33412e9f47a214f6e0415"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa5bff04c552a0e07d9cb6358300e69a5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#aa5bff04c552a0e07d9cb6358300e69a5">ETH_ADDR_STRLEN</a>&#160;&#160;&#160;<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a> * 3</td></tr>
-<tr class="memdesc:aa5bff04c552a0e07d9cb6358300e69a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the string representation of an MAC address.  <a href="#aa5bff04c552a0e07d9cb6358300e69a5">More...</a><br/></td></tr>
-<tr class="separator:aa5bff04c552a0e07d9cb6358300e69a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b8c8ce23cb47d1e56590f00e0c1b583"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#a4b8c8ce23cb47d1e56590f00e0c1b583">ETH_TYPE_IP</a>&#160;&#160;&#160;htons(0x0800)</td></tr>
 <tr class="memdesc:a4b8c8ce23cb47d1e56590f00e0c1b583"><td class="mdescLeft">&#160;</td><td class="mdescRight">EtherType for IPv4.  <a href="#a4b8c8ce23cb47d1e56590f00e0c1b583">More...</a><br/></td></tr>
 <tr class="separator:a4b8c8ce23cb47d1e56590f00e0c1b583"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14a88f547fcbf1570273a1582e823f87"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#a14a88f547fcbf1570273a1582e823f87">ETH_TYPE_ARP</a>&#160;&#160;&#160;htons(0x0806)</td></tr>
 <tr class="memdesc:a14a88f547fcbf1570273a1582e823f87"><td class="mdescLeft">&#160;</td><td class="mdescRight">EtherType for ARP.  <a href="#a14a88f547fcbf1570273a1582e823f87">More...</a><br/></td></tr>
 <tr class="separator:a14a88f547fcbf1570273a1582e823f87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5c5770bbc60c357d5aeb91eb8b4cee7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#ac5c5770bbc60c357d5aeb91eb8b4cee7">ETH_BCAST</a>&#160;&#160;&#160;&quot;\xff\xff\xff\xff\xff\xff&quot;</td></tr>
-<tr class="memdesc:ac5c5770bbc60c357d5aeb91eb8b4cee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ethernet broadcast address.  <a href="#ac5c5770bbc60c357d5aeb91eb8b4cee7">More...</a><br/></td></tr>
-<tr class="separator:ac5c5770bbc60c357d5aeb91eb8b4cee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab09391c95d8babed73e853af8652bb3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#aab09391c95d8babed73e853af8652bb3">IS_ZERO</a>(e)&#160;&#160;&#160;((e[0] | e[1] | e[2] | e[3] | e[4] | e[5]) == 0)</td></tr>
-<tr class="memdesc:aab09391c95d8babed73e853af8652bb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether MAC address <code>e</code> is all zero.  <a href="#aab09391c95d8babed73e853af8652bb3">More...</a><br/></td></tr>
-<tr class="separator:aab09391c95d8babed73e853af8652bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a236ee51bb0a208a2fd2dd9ffa6a6946e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#a236ee51bb0a208a2fd2dd9ffa6a6946e">eth_data</a>(buf)&#160;&#160;&#160;((buf) + sizeof(struct <a class="el" href="structeth__hdr.html">eth_hdr</a>))</td></tr>
 <tr class="memdesc:a236ee51bb0a208a2fd2dd9ffa6a6946e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a pointer to the first data byte inside the Ethernet frame in <code>buf</code>.  <a href="#a236ee51bb0a208a2fd2dd9ffa6a6946e">More...</a><br/></td></tr>
 <tr class="separator:a236ee51bb0a208a2fd2dd9ffa6a6946e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab6c7c5a5f3deb0d0dee539dd17ab0d16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#ab6c7c5a5f3deb0d0dee539dd17ab0d16">eth_tx_rx_cur</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, void *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> buf, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t len)</td></tr>
+<tr class="memitem:ab6c7c5a5f3deb0d0dee539dd17ab0d16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#ab6c7c5a5f3deb0d0dee539dd17ab0d16">eth_tx_rx_cur</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, void *const buf, const uint16_t len)</td></tr>
 <tr class="separator:ab6c7c5a5f3deb0d0dee539dd17ab0d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a977a1c4f0168c2b972ea837bbc9b9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#a3a977a1c4f0168c2b972ea837bbc9b9e">eth_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct netmap_ring *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> r)</td></tr>
+<tr class="memitem:a3a977a1c4f0168c2b972ea837bbc9b9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#a3a977a1c4f0168c2b972ea837bbc9b9e">eth_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct netmap_ring *const r)</td></tr>
 <tr class="memdesc:a3a977a1c4f0168c2b972ea837bbc9b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive an Ethernet frame.  <a href="#a3a977a1c4f0168c2b972ea837bbc9b9e">More...</a><br/></td></tr>
 <tr class="separator:a3a977a1c4f0168c2b972ea837bbc9b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a44a575864f7d958ad2ecde089144c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#a6a44a575864f7d958ad2ecde089144c9">eth_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> w, struct <a class="el" href="structw__iov.html">w_iov</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> v, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t len)</td></tr>
+<tr class="memitem:a6a44a575864f7d958ad2ecde089144c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#a6a44a575864f7d958ad2ecde089144c9">eth_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov.html">w_iov</a> *const v, const uint16_t len)</td></tr>
 <tr class="memdesc:a6a44a575864f7d958ad2ecde089144c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places an Ethernet frame into a TX ring.  <a href="#a6a44a575864f7d958ad2ecde089144c9">More...</a><br/></td></tr>
 <tr class="separator:a6a44a575864f7d958ad2ecde089144c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a78fc3e3fe5c33412e9f47a214f6e0415"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETH_ADDR_LEN&#160;&#160;&#160;6</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>MAC address length in bytes. Six. </p>
-
-</div>
-</div>
-<a class="anchor" id="aa5bff04c552a0e07d9cb6358300e69a5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETH_ADDR_STRLEN&#160;&#160;&#160;<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a> * 3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Length of the string representation of an MAC address. </p>
-<p>The format we use is "xx:xx:xx:xx:xx:xx\0" and includes a final zero byte. </p>
-
-</div>
-</div>
-<a class="anchor" id="ac5c5770bbc60c357d5aeb91eb8b4cee7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ETH_BCAST&#160;&#160;&#160;&quot;\xff\xff\xff\xff\xff\xff&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Ethernet broadcast address. </p>
-
-</div>
-</div>
 <a class="anchor" id="a236ee51bb0a208a2fd2dd9ffa6a6946e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -251,24 +197,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aab09391c95d8babed73e853af8652bb3"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IS_ZERO</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">e</td><td>)</td>
-          <td>&#160;&#160;&#160;((e[0] | e[1] | e[2] | e[3] | e[4] | e[5]) == 0)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Check whether MAC address <code>e</code> is all zero. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a3a977a1c4f0168c2b972ea837bbc9b9e"></a>
 <div class="memitem">
@@ -277,13 +205,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void eth_rx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct netmap_ring *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct netmap_ring *const&#160;</td>
           <td class="paramname"><em>r</em>&#160;</td>
         </tr>
         <tr>
@@ -310,7 +238,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="eth_8h_a3a977a1c4f0168c2b972ea837bbc9b9e_cgraph.png" border="0" usemap="#eth_8h_a3a977a1c4f0168c2b972ea837bbc9b9e_cgraph" alt=""/></div>
 <map name="eth_8h_a3a977a1c4f0168c2b972ea837bbc9b9e_cgraph" id="eth_8h_a3a977a1c4f0168c2b972ea837bbc9b9e_cgraph">
-<area shape="rect" id="node2" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="112,99,163,126"/><area shape="rect" id="node14" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="216,302,275,328"/><area shape="rect" id="node3" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="665,48,743,75"/><area shape="rect" id="node5" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="215,150,276,176"/><area shape="rect" id="node8" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="358,99,426,126"/><area shape="rect" id="node13" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="211,48,279,75"/><area shape="rect" id="node4" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="793,48,895,75"/><area shape="rect" id="node6" href="in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="351,150,433,176"/><area shape="rect" id="node7" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="355,200,429,227"/><area shape="rect" id="node9" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="515,251,605,278"/><area shape="rect" id="node10" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="535,150,585,176"/><area shape="rect" id="node12" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="523,200,597,227"/><area shape="rect" id="node11" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="675,226,733,252"/><area shape="rect" id="node15" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="355,302,429,328"/><area shape="rect" id="node16" href="arp_8c.html#a0b4c8c542881f3936ab01600942e54a5" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="328,352,456,379"/><area shape="rect" id="node17" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="505,352,615,379"/></map>
+<area shape="rect" id="node2" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="112,99,163,126"/><area shape="rect" id="node14" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="216,302,275,328"/><area shape="rect" id="node3" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="665,48,743,75"/><area shape="rect" id="node5" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="215,150,276,176"/><area shape="rect" id="node8" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="358,99,426,126"/><area shape="rect" id="node13" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="211,48,279,75"/><area shape="rect" id="node4" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="793,48,895,75"/><area shape="rect" id="node6" href="in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="351,150,433,176"/><area shape="rect" id="node7" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="355,200,429,227"/><area shape="rect" id="node9" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="515,251,605,278"/><area shape="rect" id="node10" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="535,150,585,176"/><area shape="rect" id="node12" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="523,200,597,227"/><area shape="rect" id="node11" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="675,226,733,252"/><area shape="rect" id="node15" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="355,302,429,328"/><area shape="rect" id="node16" href="arp_8c.html#ab422190f07f8dd9929c6802b53f5c8fa" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="328,352,456,379"/><area shape="rect" id="node17" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="505,352,615,379"/></map>
 </div>
 </p>
 
@@ -323,19 +251,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">bool eth_tx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov.html">w_iov</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov.html">w_iov</a> *const&#160;</td>
           <td class="paramname"><em>v</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t&#160;</td>
+          <td class="paramtype">const uint16_t&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -373,13 +301,13 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">void *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">void *const&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint16_t&#160;</td>
+          <td class="paramtype">const uint16_t&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -395,7 +323,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 28 2017 14:26:43 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 29 2017 14:33:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

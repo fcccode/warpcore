@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.12.0</span>
+   &#160;<span id="projectnumber">0.13.0</span>
    </div>
   </td>
  </tr>
@@ -111,15 +111,15 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a239e78a3ceaa360c0a2ace850105de20"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarp__hdr.html#a239e78a3ceaa360c0a2ace850105de20">op</a></td></tr>
 <tr class="memdesc:a239e78a3ceaa360c0a2ace850105de20"><td class="mdescLeft">&#160;</td><td class="mdescRight">ARP operation. Either ARP_OP_REQUEST or ARP_OP_REPLY.  <a href="#a239e78a3ceaa360c0a2ace850105de20">More...</a><br/></td></tr>
 <tr class="separator:a239e78a3ceaa360c0a2ace850105de20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ccf15c2e3cf8855e5266d38897dcba3"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarp__hdr.html#a0ccf15c2e3cf8855e5266d38897dcba3">sha</a> [<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a>]</td></tr>
-<tr class="memdesc:a0ccf15c2e3cf8855e5266d38897dcba3"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sender hardware (i.e., Ethernet) address of the ARP operation.  <a href="#a0ccf15c2e3cf8855e5266d38897dcba3">More...</a><br/></td></tr>
-<tr class="separator:a0ccf15c2e3cf8855e5266d38897dcba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad746c2a4cea41bd274f445a83ad3d9ca"><td class="memItemLeft" align="right" valign="top">struct ether_addr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarp__hdr.html#ad746c2a4cea41bd274f445a83ad3d9ca">sha</a></td></tr>
+<tr class="memdesc:ad746c2a4cea41bd274f445a83ad3d9ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sender hardware (i.e., Ethernet) address of the ARP operation.  <a href="#ad746c2a4cea41bd274f445a83ad3d9ca">More...</a><br/></td></tr>
+<tr class="separator:ad746c2a4cea41bd274f445a83ad3d9ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7d4b3e7974f76320a65ddd51e375d765"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarp__hdr.html#a7d4b3e7974f76320a65ddd51e375d765">spa</a></td></tr>
 <tr class="memdesc:a7d4b3e7974f76320a65ddd51e375d765"><td class="mdescLeft">&#160;</td><td class="mdescRight">The sender protocol (i.e., IPv4) address of the ARP operation.  <a href="#a7d4b3e7974f76320a65ddd51e375d765">More...</a><br/></td></tr>
 <tr class="separator:a7d4b3e7974f76320a65ddd51e375d765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad804b260b29dea787aa8fb9c06cff8f"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarp__hdr.html#aad804b260b29dea787aa8fb9c06cff8f">tha</a> [<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a>]</td></tr>
-<tr class="memdesc:aad804b260b29dea787aa8fb9c06cff8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target hardware (i.e., Ethernet) address of the ARP operation.  <a href="#aad804b260b29dea787aa8fb9c06cff8f">More...</a><br/></td></tr>
-<tr class="separator:aad804b260b29dea787aa8fb9c06cff8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a192105b01e4cc5ecc0a1deb716ae535a"><td class="memItemLeft" align="right" valign="top">struct ether_addr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarp__hdr.html#a192105b01e4cc5ecc0a1deb716ae535a">tha</a></td></tr>
+<tr class="memdesc:a192105b01e4cc5ecc0a1deb716ae535a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target hardware (i.e., Ethernet) address of the ARP operation.  <a href="#a192105b01e4cc5ecc0a1deb716ae535a">More...</a><br/></td></tr>
+<tr class="separator:a192105b01e4cc5ecc0a1deb716ae535a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7726cb8a97705c987b1cde312cf71c1d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structarp__hdr.html#a7726cb8a97705c987b1cde312cf71c1d">tpa</a></td></tr>
 <tr class="memdesc:a7726cb8a97705c987b1cde312cf71c1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The target protocol (i.e., IPv4) address of the ARP operation.  <a href="#a7726cb8a97705c987b1cde312cf71c1d">More...</a><br/></td></tr>
 <tr class="separator:a7726cb8a97705c987b1cde312cf71c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,7 +139,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Length of the hardware address. </p>
-<p>Will always be ETH_ADDR_LEN for Ethernet. </p>
+<p>Will always be ETHER_ADDR_LEN for Ethernet. </p>
 
 </div>
 </div>
@@ -202,12 +202,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0ccf15c2e3cf8855e5266d38897dcba3"></a>
+<a class="anchor" id="ad746c2a4cea41bd274f445a83ad3d9ca"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t arp_hdr::sha[<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a>]</td>
+          <td class="memname">struct ether_addr arp_hdr::sha</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -230,12 +230,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aad804b260b29dea787aa8fb9c06cff8f"></a>
+<a class="anchor" id="a192105b01e4cc5ecc0a1deb716ae535a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t arp_hdr::tha[<a class="el" href="eth_8h.html#a78fc3e3fe5c33412e9f47a214f6e0415">ETH_ADDR_LEN</a>]</td>
+          <td class="memname">struct ether_addr arp_hdr::tha</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -264,7 +264,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 28 2017 14:26:43 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 29 2017 14:33:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

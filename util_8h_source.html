@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.12.0</span>
+   &#160;<span id="projectnumber">0.13.0</span>
    </div>
   </td>
  </tr>
@@ -178,7 +178,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">        fflush(stderr);                                                        \</span></div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">        pthread_mutex_unlock(&amp;_lock);                                          \</span></div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">        abort();                                                               \</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">    } while (0)</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">    } while (0) // NOLINT</span></div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#ifndef NDEBUG</span></div>
@@ -279,12 +279,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;</div>
 <div class="line"><a name="l00264"></a><span class="lineno"><a class="line" href="util_8h.html#a1ecaf849af500832b2da48e3c60794de">  264</a></span>&#160;<span class="preprocessor">#define hexdump(ptr, len) _hexdump(ptr, len, #ptr, __func__, __FILE__, __LINE__)</span></div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="util_8h.html#a7a3fc877ae19d64e52cff7e0ceff7668">_hexdump</a>(<a class="code" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <span class="keywordtype">void</span> * <a class="code" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> ptr,</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                              <a class="code" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <span class="keywordtype">size_t</span> len,</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                              <a class="code" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <span class="keywordtype">char</span> * <a class="code" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> ptr_name,</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                                              <a class="code" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <span class="keywordtype">char</span> * <a class="code" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> func,</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                                              <a class="code" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <span class="keywordtype">char</span> * <a class="code" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> file,</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                                              <a class="code" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> <span class="keywordtype">int</span> line);</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="util_8h.html#a7a3fc877ae19d64e52cff7e0ceff7668">_hexdump</a>(const <span class="keywordtype">void</span> * const ptr,</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                                              const <span class="keywordtype">size_t</span> len,</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                              const <span class="keywordtype">char</span> * const ptr_name,</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                                              const <span class="keywordtype">char</span> * const func,</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;                                              const <span class="keywordtype">char</span> * const file,</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;                                              const <span class="keywordtype">int</span> line);</div>
 <div class="ttc" id="util_8h_html_a1889d6734420c17df6105c658525f64fa5be0fd270d9cbf6a0b7445db855089da"><div class="ttname"><a href="util_8h.html#a1889d6734420c17df6105c658525f64fa5be0fd270d9cbf6a0b7445db855089da">debug</a></div><div class="ttdoc">Debug. </div><div class="ttdef"><b>Definition:</b> util.h:127</div></div>
 <div class="ttc" id="util_8h_html_ae5f47aa3d4bfb607bef518350025c33d"><div class="ttname"><a href="util_8h.html#ae5f47aa3d4bfb607bef518350025c33d">_master</a></div><div class="ttdeci">pthread_t _master</div><div class="ttdoc">Thread ID of the master thread. </div><div class="ttdef"><b>Definition:</b> util.c:36</div></div>
 <div class="ttc" id="util_8h_html_adc6521557ce5f08fe0c96b20d81c7ebc"><div class="ttname"><a href="util_8h.html#adc6521557ce5f08fe0c96b20d81c7ebc">_comp</a></div><div class="ttdeci">regex_t _comp</div><div class="ttdoc">Holds the regex compiled from DCOMPONENT. </div><div class="ttdef"><b>Definition:</b> util.c:42</div></div>
@@ -292,7 +292,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="util_8h_html_a1889d6734420c17df6105c658525f64fa9905ef842a47a8fc589905d270ecf04b"><div class="ttname"><a href="util_8h.html#a1889d6734420c17df6105c658525f64fa9905ef842a47a8fc589905d270ecf04b">crit</a></div><div class="ttdoc">Critical. </div><div class="ttdef"><b>Definition:</b> util.h:122</div></div>
 <div class="ttc" id="util_8h_html_a1889d6734420c17df6105c658525f64fac16f69770bf5601fbace0a55304daa99"><div class="ttname"><a href="util_8h.html#a1889d6734420c17df6105c658525f64fac16f69770bf5601fbace0a55304daa99">err</a></div><div class="ttdoc">Error. </div><div class="ttdef"><b>Definition:</b> util.h:123</div></div>
 <div class="ttc" id="util_8h_html_ad520a2ca0199ec9bb85c37772900e332"><div class="ttname"><a href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a></div><div class="ttdeci">struct timeval _epoch</div><div class="ttdoc">Stores the timeval at the start of the program, used to print relative times in warn(), die(), etc. </div><div class="ttdef"><b>Definition:</b> util.c:37</div></div>
-<div class="ttc" id="cdefs_8h_html_a2c212835823e3c54a8ab6d95c652660e"><div class="ttname"><a href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a></div><div class="ttdeci">#define const</div><div class="ttdef"><b>Definition:</b> cdefs.h:191</div></div>
 <div class="ttc" id="util_8h_html_a9ca66e34b3e6cbe53f22798fc1996f2a"><div class="ttname"><a href="util_8h.html#a9ca66e34b3e6cbe53f22798fc1996f2a">_lock</a></div><div class="ttdeci">pthread_mutex_t _lock</div><div class="ttdoc">Lock to prevent multiple threads from corrupting each others output. </div><div class="ttdef"><b>Definition:</b> util.c:35</div></div>
 <div class="ttc" id="util_8h_html_a1889d6734420c17df6105c658525f64fa1947748888b7be287264b77a59951f5d"><div class="ttname"><a href="util_8h.html#a1889d6734420c17df6105c658525f64fa1947748888b7be287264b77a59951f5d">notice</a></div><div class="ttdoc">Notice. </div><div class="ttdef"><b>Definition:</b> util.h:125</div></div>
 <div class="ttc" id="util_8h_html_a1889d6734420c17df6105c658525f64f"><div class="ttname"><a href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a></div><div class="ttdeci">dlevel</div><div class="ttdoc">Debug levels, decreasing severity. </div><div class="ttdef"><b>Definition:</b> util.h:121</div></div>
@@ -303,7 +302,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 28 2017 14:26:43 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 29 2017 14:33:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

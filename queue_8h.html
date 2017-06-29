@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.12.0</span>
+   &#160;<span id="projectnumber">0.13.0</span>
    </div>
   </td>
  </tr>
@@ -896,9 +896,8 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">((elm)-&gt;field.le_prev == &amp;<a class="code" href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">LIST_FIRST</a>((head)) ? NULL :   \</div>
-<div class="line">        <a class="code" href="cdefs_8h.html#a18c8113e8a7874a7f2718b2b46cf2c9f">__containerof</a>((elm)-&gt;field.le_prev,         <a class="code" href="queue_8h.html#a329a99f8542bf673a0620cc188644558">\</a></div>
+<div class="line">        __containerof((elm)-&gt;field.le_prev,         <a class="code" href="queue_8h.html#a329a99f8542bf673a0620cc188644558">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#a329a99f8542bf673a0620cc188644558">	    QUEUE_TYPEOF</a>(type), field.le_next))</div>
-<div class="ttc" id="cdefs_8h_html_a18c8113e8a7874a7f2718b2b46cf2c9f"><div class="ttname"><a href="cdefs_8h.html#a18c8113e8a7874a7f2718b2b46cf2c9f">__containerof</a></div><div class="ttdeci">#define __containerof(x, s, m)</div><div class="ttdef"><b>Definition:</b> cdefs.h:511</div></div>
 <div class="ttc" id="queue_8h_html_a8f223070a7fe7c5f24033e9d8fbeb610"><div class="ttname"><a href="queue_8h.html#a8f223070a7fe7c5f24033e9d8fbeb610">LIST_FIRST</a></div><div class="ttdeci">#define LIST_FIRST(head)</div><div class="ttdef"><b>Definition:</b> queue.h:535</div></div>
 <div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:174</div></div>
 </div><!-- fragment -->
@@ -1693,8 +1692,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a11">inetd.c</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="a361ac8e88cf066cc4d46d28b54fd3031"></a>
@@ -2359,8 +2357,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a15">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a24">ping.c</a>.</dd>
-</dl>
+
 </div>
 </div>
 <a class="anchor" id="a3b508a1c06ded6b4ce4b1feea7643c28"></a>
@@ -2535,10 +2532,9 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="queue_8h.html#a8427c8f43d09d73062cf6b37f303aff5">STAILQ_EMPTY</a>((head)) ? NULL :              <a class="code" href="cdefs_8h.html#a18c8113e8a7874a7f2718b2b46cf2c9f">\</a></div>
-<div class="line"><a class="code" href="cdefs_8h.html#a18c8113e8a7874a7f2718b2b46cf2c9f">	    __containerof</a>((head)-&gt;stqh_last,           \</div>
+<b>Value:</b><div class="fragment"><div class="line">(<a class="code" href="queue_8h.html#a8427c8f43d09d73062cf6b37f303aff5">STAILQ_EMPTY</a>((head)) ? NULL :              \</div>
+<div class="line">        __containerof((head)-&gt;stqh_last,            \</div>
 <div class="line">        <a class="code" href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a>(type), field.stqe_next))</div>
-<div class="ttc" id="cdefs_8h_html_a18c8113e8a7874a7f2718b2b46cf2c9f"><div class="ttname"><a href="cdefs_8h.html#a18c8113e8a7874a7f2718b2b46cf2c9f">__containerof</a></div><div class="ttdeci">#define __containerof(x, s, m)</div><div class="ttdef"><b>Definition:</b> cdefs.h:511</div></div>
 <div class="ttc" id="queue_8h_html_a8427c8f43d09d73062cf6b37f303aff5"><div class="ttname"><a href="queue_8h.html#a8427c8f43d09d73062cf6b37f303aff5">STAILQ_EMPTY</a></div><div class="ttdeci">#define STAILQ_EMPTY(head)</div><div class="ttdef"><b>Definition:</b> queue.h:348</div></div>
 <div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:174</div></div>
 </div><!-- fragment -->
@@ -3747,7 +3743,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 28 2017 14:26:43 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 29 2017 14:33:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

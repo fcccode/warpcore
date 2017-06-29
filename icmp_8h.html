@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.12.0</span>
+   &#160;<span id="projectnumber">0.13.0</span>
    </div>
   </td>
  </tr>
@@ -137,10 +137,10 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a901675b142551b335ad115ebef6431e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="icmp_8h.html#a901675b142551b335ad115ebef6431e3">icmp_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint8_t type, <a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint8_t code, uint8_t *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> buf)</td></tr>
+<tr class="memitem:a901675b142551b335ad115ebef6431e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="icmp_8h.html#a901675b142551b335ad115ebef6431e3">icmp_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, const uint8_t type, const uint8_t code, uint8_t *const buf)</td></tr>
 <tr class="memdesc:a901675b142551b335ad115ebef6431e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an ICMP message with the given <code>type</code> and <code>code</code> based on the received packet in <code>buf</code>.  <a href="#a901675b142551b335ad115ebef6431e3">More...</a><br/></td></tr>
 <tr class="separator:a901675b142551b335ad115ebef6431e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b39f25900fc4f9895f7ced404e98718"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="icmp_8h.html#a2b39f25900fc4f9895f7ced404e98718">icmp_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, struct netmap_ring *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> r)</td></tr>
+<tr class="memitem:a2b39f25900fc4f9895f7ced404e98718"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="icmp_8h.html#a2b39f25900fc4f9895f7ced404e98718">icmp_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, struct netmap_ring *const r)</td></tr>
 <tr class="memdesc:a2b39f25900fc4f9895f7ced404e98718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analyze an inbound ICMP packet and react to it.  <a href="#a2b39f25900fc4f9895f7ced404e98718">More...</a><br/></td></tr>
 <tr class="separator:a2b39f25900fc4f9895f7ced404e98718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -223,13 +223,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void icmp_rx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct netmap_ring *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct netmap_ring *const&#160;</td>
           <td class="paramname"><em>r</em>&#160;</td>
         </tr>
         <tr>
@@ -270,25 +270,25 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void icmp_tx </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint8_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>type</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a> uint8_t&#160;</td>
+          <td class="paramtype">const uint8_t&#160;</td>
           <td class="paramname"><em>code</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t *<a class="el" href="cdefs_8h.html#a2c212835823e3c54a8ab6d95c652660e">const</a>&#160;</td>
+          <td class="paramtype">uint8_t *const&#160;</td>
           <td class="paramname"><em>buf</em>&#160;</td>
         </tr>
         <tr>
@@ -324,7 +324,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Jun 28 2017 14:26:43 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jun 29 2017 14:33:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
