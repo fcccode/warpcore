@@ -110,7 +110,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="backend_8h__dep__incl.png" border="0" usemap="#src_2backend_8hdep" alt=""/></div>
 <map name="src_2backend_8hdep" id="src_2backend_8hdep">
-<area shape="rect" id="node2" href="arp_8c.html" title="src/arp.c" alt="" coords="5,80,77,107"/><area shape="rect" id="node3" href="backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="103,80,256,107"/><area shape="rect" id="node4" href="backend__sock_8c.html" title="src/backend_sock.c" alt="" coords="281,80,420,107"/><area shape="rect" id="node5" href="eth_8c.html" title="src/eth.c" alt="" coords="445,80,517,107"/><area shape="rect" id="node6" href="icmp_8c.html" title="src/icmp.c" alt="" coords="543,80,624,107"/><area shape="rect" id="node7" href="ip_8c.html" title="src/ip.c" alt="" coords="650,80,715,107"/><area shape="rect" id="node8" href="udp_8c.html" title="src/udp.c" alt="" coords="739,80,815,107"/><area shape="rect" id="node9" href="warpcore_8c.html" title="src/warpcore.c" alt="" coords="839,80,947,107"/></map>
+<area shape="rect" id="node2" href="arp_8c.html" title="src/arp.c" alt="" coords="5,80,77,107"/><area shape="rect" id="node3" href="backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="103,80,256,107"/><area shape="rect" id="node4" href="backend__sock_8c.html" title="src/backend_sock.c" alt="" coords="281,80,420,107"/><area shape="rect" id="node5" href="eth_8c.html" title="src/eth.c" alt="" coords="445,80,517,107"/><area shape="rect" id="node6" href="ip_8c.html" title="src/ip.c" alt="" coords="542,80,607,107"/><area shape="rect" id="node7" href="udp_8c.html" title="src/udp.c" alt="" coords="631,80,707,107"/><area shape="rect" id="node8" href="warpcore_8c.html" title="src/warpcore.c" alt="" coords="731,80,839,107"/></map>
 </div>
 </div>
 <p><a href="backend_8h_source.html">Go to the source code of this file.</a></p>
@@ -120,8 +120,7 @@ Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__hdr.html">w_hdr</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A warpcore template packet header structure.  <a href="structw__hdr.html#details">More...</a><br/></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html">w_engine</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A warpcore backend engine.  <a href="structw__engine.html#details">More...</a><br/></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__backend.html">w_backend</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -140,8 +139,6 @@ Macros</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a8070a2fc850d74be039d1ead890b5af1"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a8070a2fc850d74be039d1ead890b5af1">w_sock_cmp</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const a, const struct <a class="el" href="structw__sock.html">w_sock</a> *const b)</td></tr>
 <tr class="separator:a8070a2fc850d74be039d1ead890b5af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abecee1241663c8ff2f078bad1595531f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#abecee1241663c8ff2f078bad1595531f">SPLAY_HEAD</a> (sock, <a class="el" href="structw__sock.html">w_sock</a>)</td></tr>
-<tr class="separator:abecee1241663c8ff2f078bad1595531f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad2441128817a4242a994f56eba7154d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#ad2441128817a4242a994f56eba7154d6">SLIST_HEAD</a> (w_engines, <a class="el" href="structw__engine.html">w_engine</a>) <a class="el" href="warpcore_8c.html#ac5f4812d2c339c6d0fa6e591bf555caf">engines</a></td></tr>
 <tr class="memdesc:ad2441128817a4242a994f56eba7154d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global list of initialized warpcore engines.  <a href="#ad2441128817a4242a994f56eba7154d6">More...</a><br/></td></tr>
 <tr class="separator:ad2441128817a4242a994f56eba7154d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -482,6 +479,15 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="backend_8h_a0b4b8656430fe5d82ae40e747c1db819_cgraph.png" border="0" usemap="#backend_8h_a0b4b8656430fe5d82ae40e747c1db819_cgraph" alt=""/></div>
+<map name="backend_8h_a0b4b8656430fe5d82ae40e747c1db819_cgraph" id="backend_8h_a0b4b8656430fe5d82ae40e747c1db819_cgraph">
+<area shape="rect" id="node2" href="warpcore_8h.html#a6c11946b425760d0fe066d74d23e149e" title="w_ifname" alt="" coords="150,5,229,32"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ab3f2cda7f51b9530aa3c7c0d9b128cfe"></a>
@@ -548,32 +554,6 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="abecee1241663c8ff2f078bad1595531f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">SPLAY_HEAD </td>
-          <td>(</td>
-          <td class="paramtype">sock&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structw__sock.html">w_sock</a>&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a8070a2fc850d74be039d1ead890b5af1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -603,7 +583,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 30 2017 14:32:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 30 2017 15:12:20 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

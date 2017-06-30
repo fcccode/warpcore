@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['b',['b',['../structw__engine.html#a9a64dd1d5e088e121a11eb440d60ae9e',1,'w_engine']]],
   ['backend',['backend',['../structw__engine.html#a9e3c98639db97a503c8093070f13d765',1,'w_engine']]],
   ['backend_2eh',['backend.h',['../backend_8h.html',1,'']]],
   ['backend_5fbind',['backend_bind',['../backend_8h.html#a495a4a69dd158694e972166b9c0ddcb7',1,'backend_bind(struct w_sock *const s):&#160;backend_netmap.c'],['../backend__netmap_8c.html#a7ee48b1b41c1c5293f7cca261794b338',1,'backend_bind(struct w_sock *s):&#160;backend_netmap.c'],['../backend__sock_8c.html#a495a4a69dd158694e972166b9c0ddcb7',1,'backend_bind(struct w_sock *const s):&#160;backend_sock.c']]],

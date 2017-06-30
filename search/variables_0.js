@@ -5,5 +5,6 @@ var searchData=
   ['_5fdlevel',['_dlevel',['../util_8h.html#aff6c95c5d023bcc9fb827a14c8e6ca4c',1,'_dlevel():&#160;util.c'],['../util_8c.html#aff6c95c5d023bcc9fb827a14c8e6ca4c',1,'_dlevel():&#160;util.c']]],
   ['_5fepoch',['_epoch',['../util_8h.html#ad520a2ca0199ec9bb85c37772900e332',1,'_epoch():&#160;util.c'],['../util_8c.html#ad520a2ca0199ec9bb85c37772900e332',1,'_epoch():&#160;util.c']]],
   ['_5flock',['_lock',['../util_8h.html#a9ca66e34b3e6cbe53f22798fc1996f2a',1,'_lock():&#160;util.c'],['../util_8c.html#a9ca66e34b3e6cbe53f22798fc1996f2a',1,'_lock():&#160;util.c']]],
-  ['_5fmaster',['_master',['../util_8h.html#ae5f47aa3d4bfb607bef518350025c33d',1,'_master():&#160;util.c'],['../util_8c.html#ae5f47aa3d4bfb607bef518350025c33d',1,'_master():&#160;util.c']]]
+  ['_5fmaster',['_master',['../util_8h.html#ae5f47aa3d4bfb607bef518350025c33d',1,'_master():&#160;util.c'],['../util_8c.html#ae5f47aa3d4bfb607bef518350025c33d',1,'_master():&#160;util.c']]],
+  ['_5funused_5f2',['_unused_2',['../structw__backend.html#ab64dbe696889010f15443fadf7ad9f7e',1,'w_backend']]]
 ];

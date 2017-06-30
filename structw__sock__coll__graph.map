@@ -3,7 +3,8 @@
 <area shape="rect" id="node3" href="$structudp__hdr.html" title="A representation of a UDP header; see RFC768. " alt="" coords="5,96,72,123"/>
 <area shape="rect" id="node4" href="$structip__hdr.html" title="An IPv4 header representation; see RFC791 " alt="" coords="97,96,153,123"/>
 <area shape="rect" id="node5" href="$structeth__hdr.html" title="An Ethernet II MAC header. " alt="" coords="178,96,243,123"/>
-<area shape="rect" id="node6" href="$structw__engine.html" title="A warpcore backend engine. " alt="" coords="224,187,300,213"/>
+<area shape="rect" id="node6" href="$structw__engine.html" title="A warpcore backend engine. " alt="" coords="256,187,332,213"/>
 <area shape="rect" id="node7" href="$structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="267,96,321,123"/>
 <area shape="rect" id="node8" href="$structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="247,5,341,32"/>
+<area shape="rect" id="node9" href="$structw__backend.html" title="w_backend" alt="" coords="347,96,435,123"/>
 </map>

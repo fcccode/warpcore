@@ -4,4 +4,5 @@
 <area shape="rect" id="node4" href="$plat_8h.html#a2f7eb56d857e3fc97476186dbf10d36b" title="Return the link status of network interface i. " alt="" coords="115,107,210,133"/>
 <area shape="rect" id="node5" href="$plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,157,216,184"/>
 <area shape="rect" id="node6" href="$backend_8h.html#a0b4b8656430fe5d82ae40e747c1db819" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,208,210,235"/>
+<area shape="rect" id="node7" href="$warpcore_8h.html#a6c11946b425760d0fe066d74d23e149e" title="w_ifname" alt="" coords="265,208,343,235"/>
 </map>
