@@ -102,8 +102,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;stdlib.h&gt;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;sys/socket.h&gt;</code><br/>
-<code>#include &lt;sys/types.h&gt;</code><br/>
 <code>#include &lt;sys/uio.h&gt;</code><br/>
+<code>#include &lt;unistd.h&gt;</code><br/>
 <code>#include &lt;<a class="el" href="warpcore_8h_source.html">warpcore/warpcore.h</a>&gt;</code><br/>
 <code>#include &lt;poll.h&gt;</code><br/>
 <code>#include &quot;<a class="el" href="backend_8h_source.html">backend.h</a>&quot;</code><br/>
@@ -114,7 +114,7 @@ Include dependency graph for backend_sock.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="backend__sock_8c__incl.png" border="0" usemap="#src_2backend__sock_8c" alt=""/></div>
 <map name="src_2backend__sock_8c" id="src_2backend__sock_8c">
-<area shape="rect" id="node13" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="805,229,947,256"/><area shape="rect" id="node26" href="backend_8h.html" title="backend.h" alt="" coords="859,80,940,107"/><area shape="rect" id="node29" href="ip_8h.html" title="ip.h" alt="" coords="1460,229,1503,256"/><area shape="rect" id="node30" href="udp_8h.html" title="udp.h" alt="" coords="1255,155,1309,181"/><area shape="rect" id="node15" href="config_8h.html" title="warpcore/config.h" alt="" coords="855,304,980,331"/><area shape="rect" id="node16" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="1157,304,1267,331"/><area shape="rect" id="node18" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="604,304,729,331"/><area shape="rect" id="node20" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="468,304,579,331"/><area shape="rect" id="node21" href="util_8h.html" title="warpcore/util.h" alt="" coords="287,304,393,331"/><area shape="rect" id="node27" href="arp_8h.html" title="arp.h" alt="" coords="964,155,1015,181"/><area shape="rect" id="node28" href="eth_8h.html" title="eth.h" alt="" coords="1343,304,1393,331"/></map>
+<area shape="rect" id="node13" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="805,229,947,256"/><area shape="rect" id="node26" href="backend_8h.html" title="backend.h" alt="" coords="859,80,940,107"/><area shape="rect" id="node29" href="ip_8h.html" title="ip.h" alt="" coords="1460,229,1503,256"/><area shape="rect" id="node30" href="udp_8h.html" title="udp.h" alt="" coords="1239,155,1293,181"/><area shape="rect" id="node15" href="config_8h.html" title="warpcore/config.h" alt="" coords="855,304,980,331"/><area shape="rect" id="node16" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="1157,304,1267,331"/><area shape="rect" id="node18" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="604,304,729,331"/><area shape="rect" id="node20" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="468,304,579,331"/><area shape="rect" id="node21" href="util_8h.html" title="warpcore/util.h" alt="" coords="287,304,393,331"/><area shape="rect" id="node27" href="arp_8h.html" title="arp.h" alt="" coords="964,155,1015,181"/><area shape="rect" id="node28" href="eth_8h.html" title="eth.h" alt="" coords="1343,304,1393,331"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -124,18 +124,21 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aaae9f7a292954c769564c1c8eb6c337d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#aaae9f7a292954c769564c1c8eb6c337d">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, const char *const ifname, const uint32_t nbufs)</td></tr>
-<tr class="memdesc:aaae9f7a292954c769564c1c8eb6c337d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore socket backend for engine <code>w</code>.  <a href="#aaae9f7a292954c769564c1c8eb6c337d">More...</a><br/></td></tr>
-<tr class="separator:aaae9f7a292954c769564c1c8eb6c337d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4b8656430fe5d82ae40e747c1db819"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#a0b4b8656430fe5d82ae40e747c1db819">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const char *const ifname, const uint32_t nbufs)</td></tr>
+<tr class="memdesc:a0b4b8656430fe5d82ae40e747c1db819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore socket backend for engine <code>w</code>.  <a href="#a0b4b8656430fe5d82ae40e747c1db819">More...</a><br/></td></tr>
+<tr class="separator:a0b4b8656430fe5d82ae40e747c1db819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e43d05a55650db2be88e9eece99905d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
 <tr class="memdesc:a7e43d05a55650db2be88e9eece99905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore socket engine down cleanly.  <a href="#a7e43d05a55650db2be88e9eece99905d">More...</a><br/></td></tr>
 <tr class="separator:a7e43d05a55650db2be88e9eece99905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee48b1b41c1c5293f7cca261794b338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#a7ee48b1b41c1c5293f7cca261794b338">backend_bind</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *s)</td></tr>
-<tr class="memdesc:a7ee48b1b41c1c5293f7cca261794b338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a warpcore socket-backend socket.  <a href="#a7ee48b1b41c1c5293f7cca261794b338">More...</a><br/></td></tr>
-<tr class="separator:a7ee48b1b41c1c5293f7cca261794b338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495a4a69dd158694e972166b9c0ddcb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#a495a4a69dd158694e972166b9c0ddcb7">backend_bind</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
+<tr class="memdesc:a495a4a69dd158694e972166b9c0ddcb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a warpcore socket-backend socket.  <a href="#a495a4a69dd158694e972166b9c0ddcb7">More...</a><br/></td></tr>
+<tr class="separator:a495a4a69dd158694e972166b9c0ddcb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5df52522d52bfed04aa270094deaa78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#af5df52522d52bfed04aa270094deaa78">backend_connect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:af5df52522d52bfed04aa270094deaa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">The socket backend performs no operation here.  <a href="#af5df52522d52bfed04aa270094deaa78">More...</a><br/></td></tr>
 <tr class="separator:af5df52522d52bfed04aa270094deaa78"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10352237f3cab978ad3dbe7f25acb8cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#a10352237f3cab978ad3dbe7f25acb8cc">backend_close</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
+<tr class="memdesc:a10352237f3cab978ad3dbe7f25acb8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the socket.  <a href="#a10352237f3cab978ad3dbe7f25acb8cc">More...</a><br/></td></tr>
+<tr class="separator:a10352237f3cab978ad3dbe7f25acb8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf46056f39cb452d908ddac8cf6e57c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:aaf46056f39cb452d908ddac8cf6e57c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the file descriptor associated with a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>.  <a href="#aaf46056f39cb452d908ddac8cf6e57c5">More...</a><br/></td></tr>
 <tr class="separator:aaf46056f39cb452d908ddac8cf6e57c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -175,14 +178,14 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a7ee48b1b41c1c5293f7cca261794b338"></a>
+<a class="anchor" id="a495a4a69dd158694e972166b9c0ddcb7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void backend_bind </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -227,6 +230,31 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a10352237f3cab978ad3dbe7f25acb8cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void backend_close </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Close the socket. </p>
+<p>The netmap backend performs no operation here.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to close. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="af5df52522d52bfed04aa270094deaa78"></a>
 <div class="memitem">
 <div class="memproto">
@@ -252,14 +280,14 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aaae9f7a292954c769564c1c8eb6c337d"></a>
+<a class="anchor" id="a0b4b8656430fe5d82ae40e747c1db819"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void backend_init </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
@@ -539,7 +567,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 29 2017 15:18:46 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 30 2017 11:38:51 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

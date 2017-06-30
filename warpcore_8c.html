@@ -170,6 +170,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a25db095b03b04843ed074c604c85c27d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a25db095b03b04843ed074c604c85c27d">w_connected</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:a25db095b03b04843ed074c604c85c27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a socket is connected (i.e., <a class="el" href="warpcore_8c.html#ab31d23fb4fa64de58aef6c688ea6563a" title="Connect a bound socket to a remote IP address and port. ">w_connect()</a> has been called on it) or not.  <a href="#a25db095b03b04843ed074c604c85c27d">More...</a><br/></td></tr>
 <tr class="separator:a25db095b03b04843ed074c604c85c27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ce967f6b66b1665f9d8049c36fe4a88"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a0ce967f6b66b1665f9d8049c36fe4a88">w_mtu</a> (const struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
+<tr class="memdesc:a0ce967f6b66b1665f9d8049c36fe4a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return MTU of <a class="el" href="structw__engine.html" title="A warpcore backend engine. ">w_engine</a> <code>w</code>.  <a href="#a0ce967f6b66b1665f9d8049c36fe4a88">More...</a><br/></td></tr>
+<tr class="separator:a0ce967f6b66b1665f9d8049c36fe4a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -489,7 +492,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8c_a74b39fb3160debbd7c56314d8a990780_cgraph.png" border="0" usemap="#warpcore_8c_a74b39fb3160debbd7c56314d8a990780_cgraph" alt=""/></div>
 <map name="warpcore_8c_a74b39fb3160debbd7c56314d8a990780_cgraph" id="warpcore_8c_a74b39fb3160debbd7c56314d8a990780_cgraph">
-<area shape="rect" id="node2" href="warpcore_8c.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="132,5,207,32"/><area shape="rect" id="node3" href="backend_8h.html#a7ee48b1b41c1c5293f7cca261794b338" title="Netmap&#45;specific code to bind a warpcore socket. " alt="" coords="118,56,221,83"/><area shape="rect" id="node4" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="269,56,344,83"/></map>
+<area shape="rect" id="node2" href="warpcore_8c.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="132,5,207,32"/><area shape="rect" id="node3" href="backend_8h.html#a495a4a69dd158694e972166b9c0ddcb7" title="Netmap&#45;specific code to bind a warpcore socket. " alt="" coords="118,56,221,83"/><area shape="rect" id="node4" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="269,56,344,83"/></map>
 </div>
 </p>
 
@@ -523,7 +526,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8c_a726b06c06493678f7f48c889bbcd30a5_cgraph.png" border="0" usemap="#warpcore_8c_a726b06c06493678f7f48c889bbcd30a5_cgraph" alt=""/></div>
 <map name="warpcore_8c_a726b06c06493678f7f48c889bbcd30a5_cgraph" id="warpcore_8c_a726b06c06493678f7f48c889bbcd30a5_cgraph">
-<area shape="rect" id="node2" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d" title="Close a warpcore socket. " alt="" coords="165,5,235,32"/><area shape="rect" id="node3" href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d" title="Shut a warpcore netmap engine down cleanly. " alt="" coords="139,56,261,83"/><area shape="rect" id="node4" href="arp_8c.html#a1b84f8ec20a55f766fcfcb9cd2d0d1e7" title="Free the ARP cache entries associated with engine w. " alt="" coords="310,56,421,83"/></map>
+<area shape="rect" id="node2" href="warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d" title="Close a warpcore socket. " alt="" coords="165,5,235,32"/><area shape="rect" id="node4" href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d" title="Shut a warpcore netmap engine down cleanly. " alt="" coords="139,56,261,83"/><area shape="rect" id="node3" href="backend_8h.html#a10352237f3cab978ad3dbe7f25acb8cc" title="The netmap backend performs no operation here. " alt="" coords="311,5,420,32"/><area shape="rect" id="node5" href="arp_8c.html#a1b84f8ec20a55f766fcfcb9cd2d0d1e7" title="Free the ARP cache entries associated with engine w. " alt="" coords="310,56,421,83"/></map>
 </div>
 </p>
 
@@ -551,6 +554,15 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="warpcore_8c_a26c31751f7bb602b01bf00077ebd362d_cgraph.png" border="0" usemap="#warpcore_8c_a26c31751f7bb602b01bf00077ebd362d_cgraph" alt=""/></div>
+<map name="warpcore_8c_a26c31751f7bb602b01bf00077ebd362d_cgraph" id="warpcore_8c_a26c31751f7bb602b01bf00077ebd362d_cgraph">
+<area shape="rect" id="node2" href="backend_8h.html#a10352237f3cab978ad3dbe7f25acb8cc" title="The netmap backend performs no operation here. " alt="" coords="125,5,235,32"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -766,7 +778,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph.png" border="0" usemap="#warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph" alt=""/></div>
 <map name="warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph" id="warpcore_8c_a045f4826ff2a8917693126c9d27455e4_cgraph">
-<area shape="rect" id="node2" href="plat_8h.html#ac645a18d329f9204ceddb21bff751abd" title="Return the Ethernet MAC address of network interface i. " alt="" coords="113,5,213,32"/><area shape="rect" id="node3" href="plat_8h.html#aed8665163695e9a71d2d423f978c4b6a" title="Return the MTU of network interface i. " alt="" coords="114,56,211,83"/><area shape="rect" id="node4" href="plat_8h.html#a2f7eb56d857e3fc97476186dbf10d36b" title="Return the link status of network interface i. " alt="" coords="115,107,210,133"/><area shape="rect" id="node5" href="plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,157,216,184"/><area shape="rect" id="node6" href="backend_8h.html#aaae9f7a292954c769564c1c8eb6c337d" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,208,210,235"/></map>
+<area shape="rect" id="node2" href="plat_8h.html#ac645a18d329f9204ceddb21bff751abd" title="Return the Ethernet MAC address of network interface i. " alt="" coords="113,5,213,32"/><area shape="rect" id="node3" href="plat_8h.html#aed8665163695e9a71d2d423f978c4b6a" title="Return the MTU of network interface i. " alt="" coords="114,56,211,83"/><area shape="rect" id="node4" href="plat_8h.html#a2f7eb56d857e3fc97476186dbf10d36b" title="Return the link status of network interface i. " alt="" coords="115,107,210,133"/><area shape="rect" id="node5" href="plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,157,216,184"/><area shape="rect" id="node6" href="backend_8h.html#a0b4b8656430fe5d82ae40e747c1db819" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,208,210,235"/></map>
 </div>
 </p>
 
@@ -859,6 +871,31 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a0ce967f6b66b1665f9d8049c36fe4a88"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t w_mtu </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return MTU of <a class="el" href="structw__engine.html" title="A warpcore backend engine. ">w_engine</a> <code>w</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>Backend engine.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>MTU value in use by engine <code>w</code>. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a8070a2fc850d74be039d1ead890b5af1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -903,7 +940,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 29 2017 15:18:46 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 30 2017 11:38:51 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

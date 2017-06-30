@@ -148,15 +148,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ab3f2cda7f51b9530aa3c7c0d9b128cfe"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe">get_sock</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint16_t port)</td></tr>
 <tr class="memdesc:ab3f2cda7f51b9530aa3c7c0d9b128cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the socket bound to local port <code>port</code>.  <a href="#ab3f2cda7f51b9530aa3c7c0d9b128cfe">More...</a><br/></td></tr>
 <tr class="separator:ab3f2cda7f51b9530aa3c7c0d9b128cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee48b1b41c1c5293f7cca261794b338"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a7ee48b1b41c1c5293f7cca261794b338">backend_bind</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *s)</td></tr>
-<tr class="memdesc:a7ee48b1b41c1c5293f7cca261794b338"><td class="mdescLeft">&#160;</td><td class="mdescRight">Netmap-specific code to bind a warpcore socket.  <a href="#a7ee48b1b41c1c5293f7cca261794b338">More...</a><br/></td></tr>
-<tr class="separator:a7ee48b1b41c1c5293f7cca261794b338"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495a4a69dd158694e972166b9c0ddcb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a495a4a69dd158694e972166b9c0ddcb7">backend_bind</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
+<tr class="memdesc:a495a4a69dd158694e972166b9c0ddcb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Netmap-specific code to bind a warpcore socket.  <a href="#a495a4a69dd158694e972166b9c0ddcb7">More...</a><br/></td></tr>
+<tr class="separator:a495a4a69dd158694e972166b9c0ddcb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10352237f3cab978ad3dbe7f25acb8cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a10352237f3cab978ad3dbe7f25acb8cc">backend_close</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
+<tr class="memdesc:a10352237f3cab978ad3dbe7f25acb8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The netmap backend performs no operation here.  <a href="#a10352237f3cab978ad3dbe7f25acb8cc">More...</a><br/></td></tr>
+<tr class="separator:a10352237f3cab978ad3dbe7f25acb8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5df52522d52bfed04aa270094deaa78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#af5df52522d52bfed04aa270094deaa78">backend_connect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:af5df52522d52bfed04aa270094deaa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect the given <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, using the netmap backend.  <a href="#af5df52522d52bfed04aa270094deaa78">More...</a><br/></td></tr>
 <tr class="separator:af5df52522d52bfed04aa270094deaa78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaae9f7a292954c769564c1c8eb6c337d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#aaae9f7a292954c769564c1c8eb6c337d">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, const char *const ifname, const uint32_t nbufs)</td></tr>
-<tr class="memdesc:aaae9f7a292954c769564c1c8eb6c337d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore netmap backend for engine <code>w</code>.  <a href="#aaae9f7a292954c769564c1c8eb6c337d">More...</a><br/></td></tr>
-<tr class="separator:aaae9f7a292954c769564c1c8eb6c337d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4b8656430fe5d82ae40e747c1db819"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a0b4b8656430fe5d82ae40e747c1db819">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const char *const ifname, const uint32_t nbufs)</td></tr>
+<tr class="memdesc:a0b4b8656430fe5d82ae40e747c1db819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore netmap backend for engine <code>w</code>.  <a href="#a0b4b8656430fe5d82ae40e747c1db819">More...</a><br/></td></tr>
+<tr class="separator:a0b4b8656430fe5d82ae40e747c1db819"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e43d05a55650db2be88e9eece99905d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
 <tr class="memdesc:a7e43d05a55650db2be88e9eece99905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore netmap engine down cleanly.  <a href="#a7e43d05a55650db2be88e9eece99905d">More...</a><br/></td></tr>
 <tr class="separator:a7e43d05a55650db2be88e9eece99905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -272,14 +275,14 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a7ee48b1b41c1c5293f7cca261794b338"></a>
+<a class="anchor" id="a495a4a69dd158694e972166b9c0ddcb7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void backend_bind </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
           <td class="paramname"><em>s</em></td><td>)</td>
           <td></td>
         </tr>
@@ -306,8 +309,8 @@ Functions</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="backend_8h_a7ee48b1b41c1c5293f7cca261794b338_cgraph.png" border="0" usemap="#backend_8h_a7ee48b1b41c1c5293f7cca261794b338_cgraph" alt=""/></div>
-<map name="backend_8h_a7ee48b1b41c1c5293f7cca261794b338_cgraph" id="backend_8h_a7ee48b1b41c1c5293f7cca261794b338_cgraph">
+<div class="center"><img src="backend_8h_a495a4a69dd158694e972166b9c0ddcb7_cgraph.png" border="0" usemap="#backend_8h_a495a4a69dd158694e972166b9c0ddcb7_cgraph" alt=""/></div>
+<map name="backend_8h_a495a4a69dd158694e972166b9c0ddcb7_cgraph" id="backend_8h_a495a4a69dd158694e972166b9c0ddcb7_cgraph">
 <area shape="rect" id="node2" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="157,5,232,32"/></map>
 </div>
 </p>
@@ -356,6 +359,37 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a10352237f3cab978ad3dbe7f25acb8cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void backend_close </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The netmap backend performs no operation here. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to close.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The netmap backend performs no operation here.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to close. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="af5df52522d52bfed04aa270094deaa78"></a>
 <div class="memitem">
 <div class="memproto">
@@ -397,14 +431,14 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aaae9f7a292954c769564c1c8eb6c337d"></a>
+<a class="anchor" id="a0b4b8656430fe5d82ae40e747c1db819"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void backend_init </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
@@ -569,7 +603,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jun 29 2017 15:18:46 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jun 30 2017 11:38:51 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
