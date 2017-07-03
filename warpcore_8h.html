@@ -155,6 +155,18 @@ Macros</h2></td></tr>
 <tr class="memitem:ae13f9b3c39d99b4a14d36b88ae5387da"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ae13f9b3c39d99b4a14d36b88ae5387da">w_engine</a>(s)&#160;&#160;&#160;(s)-&gt;w</td></tr>
 <tr class="memdesc:ae13f9b3c39d99b4a14d36b88ae5387da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return warpcore engine serving <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#ae13f9b3c39d99b4a14d36b88ae5387da">More...</a><br/></td></tr>
 <tr class="separator:ae13f9b3c39d99b4a14d36b88ae5387da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c1507af14382c3a9afd21140d879e99"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a4c1507af14382c3a9afd21140d879e99">w_ifname</a>(w)&#160;&#160;&#160;(w)-&gt;ifname</td></tr>
+<tr class="memdesc:a4c1507af14382c3a9afd21140d879e99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return name of interface associated with warpcore engine.  <a href="#a4c1507af14382c3a9afd21140d879e99">More...</a><br/></td></tr>
+<tr class="separator:a4c1507af14382c3a9afd21140d879e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8d64c60572eee99efeb3118c292e318"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#ab8d64c60572eee99efeb3118c292e318">w_mtu</a>(w)&#160;&#160;&#160;(w)-&gt;mtu</td></tr>
+<tr class="memdesc:ab8d64c60572eee99efeb3118c292e318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return MTU of <a class="el" href="structw__engine.html" title="A warpcore backend engine. ">w_engine</a> <code>w</code>.  <a href="#ab8d64c60572eee99efeb3118c292e318">More...</a><br/></td></tr>
+<tr class="separator:ab8d64c60572eee99efeb3118c292e318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a068c0bd68483726654df048ad7dd0792"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a068c0bd68483726654df048ad7dd0792">w_free</a>(w, q)&#160;&#160;&#160;<a class="el" href="queue_8h.html#aadfbe79db37e93cf528ae79a9aafb755">STAILQ_CONCAT</a>(&amp;(w)-&gt;iov, (q))</td></tr>
+<tr class="memdesc:a068c0bd68483726654df048ad7dd0792"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue obtained via <a class="el" href="warpcore_8h.html#a689204eb10c7dbef64428413352fff85" title="Allocate a w_iov tail queue for len payload bytes, for eventual use with w_tx(). ">w_alloc_len()</a>, <a class="el" href="warpcore_8h.html#a7c2b4f87688e14a7530bc86ddf377411" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore.  <a href="#a068c0bd68483726654df048ad7dd0792">More...</a><br/></td></tr>
+<tr class="separator:a068c0bd68483726654df048ad7dd0792"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc649fb895f797d4ddd2e831f57595f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a6dc649fb895f797d4ddd2e831f57595f">w_free_iov</a>(w, v)&#160;&#160;&#160;<a class="el" href="queue_8h.html#aad3b1fb87b675bae75334acd958b57dc">STAILQ_INSERT_HEAD</a>(&amp;(w)-&gt;iov, (v), next)</td></tr>
+<tr class="memdesc:a6dc649fb895f797d4ddd2e831f57595f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a single <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> obtained via <a class="el" href="warpcore_8h.html#a689204eb10c7dbef64428413352fff85" title="Allocate a w_iov tail queue for len payload bytes, for eventual use with w_tx(). ">w_alloc_len()</a>, <a class="el" href="warpcore_8h.html#a7c2b4f87688e14a7530bc86ddf377411" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore.  <a href="#a6dc649fb895f797d4ddd2e831f57595f">More...</a><br/></td></tr>
+<tr class="separator:a6dc649fb895f797d4ddd2e831f57595f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -193,10 +205,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a> <code>o</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#ae4e224c9a1e5d17f44ea007ff2aa4692">More...</a><br/></td></tr>
 <tr class="separator:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dda1788a8e14dc34142676afa6a4e13"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q)</td></tr>
-<tr class="memdesc:a7dda1788a8e14dc34142676afa6a4e13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue obtained via <a class="el" href="warpcore_8c.html#a689204eb10c7dbef64428413352fff85" title="Allocate a w_iov tail queue for len payload bytes, for eventual use with w_tx(). ">w_alloc_len()</a>, <a class="el" href="warpcore_8c.html#a7c2b4f87688e14a7530bc86ddf377411" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore.  <a href="#a7dda1788a8e14dc34142676afa6a4e13">More...</a><br/></td></tr>
 <tr class="separator:a7dda1788a8e14dc34142676afa6a4e13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0de8ce8c73df7d75c3a90c5e01ea998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#af0de8ce8c73df7d75c3a90c5e01ea998">w_free_iov</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov.html">w_iov</a> *const v)</td></tr>
-<tr class="memdesc:af0de8ce8c73df7d75c3a90c5e01ea998"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a single <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> obtained via <a class="el" href="warpcore_8c.html#a689204eb10c7dbef64428413352fff85" title="Allocate a w_iov tail queue for len payload bytes, for eventual use with w_tx(). ">w_alloc_len()</a>, <a class="el" href="warpcore_8c.html#a7c2b4f87688e14a7530bc86ddf377411" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore.  <a href="#af0de8ce8c73df7d75c3a90c5e01ea998">More...</a><br/></td></tr>
 <tr class="separator:af0de8ce8c73df7d75c3a90c5e01ea998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2570e386e8776c6cc5203f56490a6a54"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a2570e386e8776c6cc5203f56490a6a54">w_iov_stailq_len</a> (const struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const q)</td></tr>
 <tr class="memdesc:a2570e386e8776c6cc5203f56490a6a54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the total payload length of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>c</code>.  <a href="#a2570e386e8776c6cc5203f56490a6a54">More...</a><br/></td></tr>
@@ -225,11 +235,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a25db095b03b04843ed074c604c85c27d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a25db095b03b04843ed074c604c85c27d">w_connected</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:a25db095b03b04843ed074c604c85c27d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return whether a socket is connected (i.e., <a class="el" href="warpcore_8c.html#ab31d23fb4fa64de58aef6c688ea6563a" title="Connect a bound socket to a remote IP address and port. ">w_connect()</a> has been called on it) or not.  <a href="#a25db095b03b04843ed074c604c85c27d">More...</a><br/></td></tr>
 <tr class="separator:a25db095b03b04843ed074c604c85c27d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ce967f6b66b1665f9d8049c36fe4a88"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a0ce967f6b66b1665f9d8049c36fe4a88">w_mtu</a> (const struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
-<tr class="memdesc:a0ce967f6b66b1665f9d8049c36fe4a88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return MTU of <a class="el" href="structw__engine.html" title="A warpcore backend engine. ">w_engine</a> <code>w</code>.  <a href="#a0ce967f6b66b1665f9d8049c36fe4a88">More...</a><br/></td></tr>
-<tr class="separator:a0ce967f6b66b1665f9d8049c36fe4a88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c11946b425760d0fe066d74d23e149e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8h.html#a6c11946b425760d0fe066d74d23e149e">w_ifname</a> (const struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
-<tr class="separator:a6c11946b425760d0fe066d74d23e149e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="a18c8113e8a7874a7f2718b2b46cf2c9f"></a>
@@ -347,6 +352,103 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a068c0bd68483726654df048ad7dd0792"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define w_free</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">w, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">q&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="queue_8h.html#aadfbe79db37e93cf528ae79a9aafb755">STAILQ_CONCAT</a>(&amp;(w)-&gt;iov, (q))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue obtained via <a class="el" href="warpcore_8h.html#a689204eb10c7dbef64428413352fff85" title="Allocate a w_iov tail queue for len payload bytes, for eventual use with w_tx(). ">w_alloc_len()</a>, <a class="el" href="warpcore_8h.html#a7c2b4f87688e14a7530bc86ddf377411" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>Backend engine. </td></tr>
+    <tr><td class="paramname">q</td><td>Tail queue of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structs to return. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a6dc649fb895f797d4ddd2e831f57595f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define w_free_iov</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">w, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">v&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="queue_8h.html#aad3b1fb87b675bae75334acd958b57dc">STAILQ_INSERT_HEAD</a>(&amp;(w)-&gt;iov, (v), next)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return a single <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> obtained via <a class="el" href="warpcore_8h.html#a689204eb10c7dbef64428413352fff85" title="Allocate a w_iov tail queue for len payload bytes, for eventual use with w_tx(). ">w_alloc_len()</a>, <a class="el" href="warpcore_8h.html#a7c2b4f87688e14a7530bc86ddf377411" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>Backend engine. </td></tr>
+    <tr><td class="paramname">v</td><td><a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> struct to return.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> struct. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c1507af14382c3a9afd21140d879e99"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define w_ifname</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">w</td><td>)</td>
+          <td>&#160;&#160;&#160;(w)-&gt;ifname</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return name of interface associated with warpcore engine. </p>
+<p>Must not be modified by caller.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">w</td><td>Backend engine.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Interface name. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a66e9fb9b95d09984dcfd0e987fe0f1d9"></a>
 <div class="memitem">
 <div class="memproto">
@@ -375,6 +477,31 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Empty <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a>, to be assigned to <code>q</code>. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a15">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a24">ping.c</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="ab8d64c60572eee99efeb3118c292e318"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define w_mtu</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">w</td><td>)</td>
+          <td>&#160;&#160;&#160;(w)-&gt;mtu</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return MTU of <a class="el" href="structw__engine.html" title="A warpcore backend engine. ">w_engine</a> <code>w</code>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>Backend engine.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>MTU value in use by engine <code>w</code>. </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="a6c8c618c1c3811f7c7d8350c1c073567"></a>
@@ -538,7 +665,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Allocate a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue of <code>count</code> packets, for eventual use with <a class="el" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692" title="Loops over the w_iov structures in the w_iov_stailq o, sending them all over w_sock s...">w_tx()</a>. </p>
-<p>The tail queue must be later returned to warpcore <a class="el" href="warpcore_8c.html#a7dda1788a8e14dc34142676afa6a4e13" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore...">w_free()</a>. If a <code>off</code> offset is specified, leave this much extra space before <code>buf</code> in each <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a>. This is meant for upper-level protocols that wish to reserve space for their headers.</p>
+<p>The tail queue must be later returned to warpcore <a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free()</a>. If a <code>off</code> offset is specified, leave this much extra space before <code>buf</code> in each <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a>. This is meant for upper-level protocols that wish to reserve space for their headers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
@@ -634,7 +761,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Allocate a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue for <code>len</code> payload bytes, for eventual use with <a class="el" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692" title="Loops over the w_iov structures in the w_iov_stailq o, sending them all over w_sock s...">w_tx()</a>. </p>
-<p>The tail queue must be later returned to warpcore <a class="el" href="warpcore_8c.html#a7dda1788a8e14dc34142676afa6a4e13" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore...">w_free()</a>. If a <code>off</code> offset is specified, leave this much extra space before <code>buf</code> in each <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a>. This is meant for upper-level protocols that wish to reserve space for their headers.</p>
+<p>The tail queue must be later returned to warpcore <a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free()</a>. If a <code>off</code> offset is specified, leave this much extra space before <code>buf</code> in each <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a>. This is meant for upper-level protocols that wish to reserve space for their headers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
@@ -932,15 +1059,6 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Return a <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue obtained via <a class="el" href="warpcore_8c.html#a689204eb10c7dbef64428413352fff85" title="Allocate a w_iov tail queue for len payload bytes, for eventual use with w_tx(). ">w_alloc_len()</a>, <a class="el" href="warpcore_8c.html#a7c2b4f87688e14a7530bc86ddf377411" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">w</td><td>Backend engine. </td></tr>
-    <tr><td class="paramname">q</td><td>Tail queue of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structs to return. </td></tr>
-  </table>
-  </dd>
-</dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a32">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a29">ping.c</a>.</dd>
 </dl>
 </div>
@@ -965,31 +1083,6 @@ Here is the call graph for this function:</div>
           <td></td>
           <td>)</td>
           <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return a single <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> obtained via <a class="el" href="warpcore_8c.html#a689204eb10c7dbef64428413352fff85" title="Allocate a w_iov tail queue for len payload bytes, for eventual use with w_tx(). ">w_alloc_len()</a>, <a class="el" href="warpcore_8c.html#a7c2b4f87688e14a7530bc86ddf377411" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">w</td><td>Backend engine. </td></tr>
-    <tr><td class="paramname">v</td><td><a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> struct to return. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a6c11946b425760d0fe066d74d23e149e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const char* w_ifname </td>
-          <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
-          <td class="paramname"><em>w</em></td><td>)</td>
-          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1045,7 +1138,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8h_a045f4826ff2a8917693126c9d27455e4_cgraph.png" border="0" usemap="#warpcore_8h_a045f4826ff2a8917693126c9d27455e4_cgraph" alt=""/></div>
 <map name="warpcore_8h_a045f4826ff2a8917693126c9d27455e4_cgraph" id="warpcore_8h_a045f4826ff2a8917693126c9d27455e4_cgraph">
-<area shape="rect" id="node2" href="plat_8h.html#ac645a18d329f9204ceddb21bff751abd" title="Return the Ethernet MAC address of network interface i. " alt="" coords="113,5,213,32"/><area shape="rect" id="node3" href="plat_8h.html#aed8665163695e9a71d2d423f978c4b6a" title="Return the MTU of network interface i. " alt="" coords="114,56,211,83"/><area shape="rect" id="node4" href="plat_8h.html#a2f7eb56d857e3fc97476186dbf10d36b" title="Return the link status of network interface i. " alt="" coords="115,107,210,133"/><area shape="rect" id="node5" href="plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,157,216,184"/><area shape="rect" id="node6" href="backend_8h.html#a0b4b8656430fe5d82ae40e747c1db819" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,208,210,235"/><area shape="rect" id="node7" href="warpcore_8h.html#a6c11946b425760d0fe066d74d23e149e" title="w_ifname" alt="" coords="265,208,343,235"/></map>
+<area shape="rect" id="node2" href="plat_8h.html#ac645a18d329f9204ceddb21bff751abd" title="Return the Ethernet MAC address of network interface i. " alt="" coords="113,5,213,32"/><area shape="rect" id="node3" href="plat_8h.html#aed8665163695e9a71d2d423f978c4b6a" title="Return the MTU of network interface i. " alt="" coords="114,56,211,83"/><area shape="rect" id="node4" href="plat_8h.html#a2f7eb56d857e3fc97476186dbf10d36b" title="Return the link status of network interface i. " alt="" coords="115,107,210,133"/><area shape="rect" id="node5" href="plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,157,216,184"/><area shape="rect" id="node6" href="backend_8h.html#ad11227ca36c524fe0bb4fc5f8917f0b4" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,208,210,235"/></map>
 </div>
 </p>
 
@@ -1138,31 +1231,6 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>Sum of the payload lengths of the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structs in <code>q</code>. </dd></dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a19">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a25">ping.c</a>.</dd>
 </dl>
-</div>
-</div>
-<a class="anchor" id="a0ce967f6b66b1665f9d8049c36fe4a88"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t w_mtu </td>
-          <td>(</td>
-          <td class="paramtype">const struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
-          <td class="paramname"><em>w</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Return MTU of <a class="el" href="structw__engine.html" title="A warpcore backend engine. ">w_engine</a> <code>w</code>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>Backend engine.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>MTU value in use by engine <code>w</code>. </dd></dl>
-
 </div>
 </div>
 <a class="anchor" id="ab0508cfebe874ba0f3f2f230b4120e0d"></a>
@@ -1279,7 +1347,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Return any new data that has been received on a socket by appending it to the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>i</code>. </p>
-<p>The tail queue must eventually be returned to warpcore via <a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore...">w_free()</a>.</p>
+<p>The tail queue must eventually be returned to warpcore via <a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> for which the application would like to receive new data. </td></tr>
@@ -1405,7 +1473,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 30 2017 15:12:20 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 3 2017 08:11:59 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

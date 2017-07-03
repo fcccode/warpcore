@@ -94,7 +94,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><code>#include &lt;arpa/inet.h&gt;</code><br/>
 <code>#include &lt;fcntl.h&gt;</code><br/>
-<code>#include &lt;net/if.h&gt;</code><br/>
 <code>#include &lt;net/netmap_user.h&gt;</code><br/>
 <code>#include &lt;poll.h&gt;</code><br/>
 <code>#include &lt;stdbool.h&gt;</code><br/>
@@ -115,14 +114,14 @@ Include dependency graph for backend_netmap.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="backend__netmap_8c__incl.png" border="0" usemap="#src_2backend__netmap_8c" alt=""/></div>
 <map name="src_2backend__netmap_8c" id="src_2backend__netmap_8c">
-<area shape="rect" id="node14" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="747,229,889,256"/><area shape="rect" id="node27" href="arp_8h.html" title="arp.h" alt="" coords="944,155,995,181"/><area shape="rect" id="node28" href="backend_8h.html" title="backend.h" alt="" coords="1276,80,1357,107"/><area shape="rect" id="node29" href="eth_8h.html" title="eth.h" alt="" coords="1423,229,1473,256"/><area shape="rect" id="node30" href="ip_8h.html" title="ip.h" alt="" coords="1507,155,1549,181"/><area shape="rect" id="node31" href="udp_8h.html" title="udp.h" alt="" coords="1318,229,1372,256"/><area shape="rect" id="node16" href="config_8h.html" title="warpcore/config.h" alt="" coords="756,304,881,331"/><area shape="rect" id="node17" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="1058,304,1168,331"/><area shape="rect" id="node19" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="607,304,732,331"/><area shape="rect" id="node21" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="471,304,581,331"/><area shape="rect" id="node22" href="util_8h.html" title="warpcore/util.h" alt="" coords="289,304,396,331"/></map>
+<area shape="rect" id="node13" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="747,229,889,256"/><area shape="rect" id="node26" href="arp_8h.html" title="arp.h" alt="" coords="944,155,995,181"/><area shape="rect" id="node27" href="backend_8h.html" title="backend.h" alt="" coords="1276,80,1357,107"/><area shape="rect" id="node28" href="eth_8h.html" title="eth.h" alt="" coords="1423,229,1473,256"/><area shape="rect" id="node29" href="ip_8h.html" title="ip.h" alt="" coords="1507,155,1549,181"/><area shape="rect" id="node30" href="udp_8h.html" title="udp.h" alt="" coords="1318,229,1372,256"/><area shape="rect" id="node15" href="config_8h.html" title="warpcore/config.h" alt="" coords="756,304,881,331"/><area shape="rect" id="node16" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="1058,304,1168,331"/><area shape="rect" id="node18" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="607,304,732,331"/><area shape="rect" id="node20" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="471,304,581,331"/><area shape="rect" id="node21" href="util_8h.html" title="warpcore/util.h" alt="" coords="289,304,396,331"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aaae9f7a292954c769564c1c8eb6c337d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#aaae9f7a292954c769564c1c8eb6c337d">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, const char *const ifname, const uint32_t nbufs)</td></tr>
-<tr class="memdesc:aaae9f7a292954c769564c1c8eb6c337d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore netmap backend for engine <code>w</code>.  <a href="#aaae9f7a292954c769564c1c8eb6c337d">More...</a><br/></td></tr>
-<tr class="separator:aaae9f7a292954c769564c1c8eb6c337d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad11227ca36c524fe0bb4fc5f8917f0b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#ad11227ca36c524fe0bb4fc5f8917f0b4">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint32_t nbufs)</td></tr>
+<tr class="memdesc:ad11227ca36c524fe0bb4fc5f8917f0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore netmap backend for engine <code>w</code>.  <a href="#ad11227ca36c524fe0bb4fc5f8917f0b4">More...</a><br/></td></tr>
+<tr class="separator:ad11227ca36c524fe0bb4fc5f8917f0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e43d05a55650db2be88e9eece99905d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
 <tr class="memdesc:a7e43d05a55650db2be88e9eece99905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore netmap engine down cleanly.  <a href="#a7e43d05a55650db2be88e9eece99905d">More...</a><br/></td></tr>
 <tr class="separator:a7e43d05a55650db2be88e9eece99905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -287,21 +286,15 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aaae9f7a292954c769564c1c8eb6c337d"></a>
+<a class="anchor" id="ad11227ca36c524fe0bb4fc5f8917f0b4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void backend_init </td>
           <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *const&#160;</td>
-          <td class="paramname"><em>ifname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -322,7 +315,6 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ifname</td><td>The OS name of the interface (e.g., "eth0"). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate. </td></tr>
   </table>
   </dd>
@@ -452,7 +444,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Return any new data that has been received on a socket by appending it to the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>i</code>. </p>
-<p>The tail queue must eventually be returned to warpcore via <a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore...">w_free()</a>.</p>
+<p>The tail queue must eventually be returned to warpcore via <a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> for which the application would like to receive new data. </td></tr>
@@ -571,7 +563,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 30 2017 15:12:20 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 3 2017 08:11:59 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -113,33 +113,42 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:aa321bccab5bbcc458e1f793afa7a0e45"><td class="memItemLeft" align="right" valign="top">struct sock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#aa321bccab5bbcc458e1f793afa7a0e45">sock</a></td></tr>
-<tr class="memdesc:aa321bccab5bbcc458e1f793afa7a0e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of open (bound) <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> sockets.  <a href="#aa321bccab5bbcc458e1f793afa7a0e45">More...</a><br/></td></tr>
-<tr class="separator:aa321bccab5bbcc458e1f793afa7a0e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeef518ec5511a7094ea0db7cd91013be"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#aeef518ec5511a7094ea0db7cd91013be">mem</a></td></tr>
+<tr class="memdesc:aeef518ec5511a7094ea0db7cd91013be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to netmap or socket buffer memory region.  <a href="#aeef518ec5511a7094ea0db7cd91013be">More...</a><br/></td></tr>
+<tr class="separator:aeef518ec5511a7094ea0db7cd91013be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8ad906202b2098b44fb6a5bdeb5c20"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov.html">w_iov</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#afa8ad906202b2098b44fb6a5bdeb5c20">bufs</a></td></tr>
+<tr class="memdesc:afa8ad906202b2098b44fb6a5bdeb5c20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers.  <a href="#afa8ad906202b2098b44fb6a5bdeb5c20">More...</a><br/></td></tr>
+<tr class="separator:afa8ad906202b2098b44fb6a5bdeb5c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a64dd1d5e088e121a11eb440d60ae9e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__backend.html">w_backend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a9a64dd1d5e088e121a11eb440d60ae9e">b</a></td></tr>
+<tr class="memdesc:a9a64dd1d5e088e121a11eb440d60ae9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backend.  <a href="#a9a64dd1d5e088e121a11eb440d60ae9e">More...</a><br/></td></tr>
+<tr class="separator:a9a64dd1d5e088e121a11eb440d60ae9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cd4f582bf408fb94b38158f3b4fee19"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a9cd4f582bf408fb94b38158f3b4fee19">ip</a></td></tr>
 <tr class="memdesc:a9cd4f582bf408fb94b38158f3b4fee19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local IPv4 address used on this interface.  <a href="#a9cd4f582bf408fb94b38158f3b4fee19">More...</a><br/></td></tr>
 <tr class="separator:a9cd4f582bf408fb94b38158f3b4fee19"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a671ab793dfd9b6f416c126da7660607b"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a671ab793dfd9b6f416c126da7660607b">mask</a></td></tr>
 <tr class="memdesc:a671ab793dfd9b6f416c126da7660607b"><td class="mdescLeft">&#160;</td><td class="mdescRight">IPv4 netmask of this interface.  <a href="#a671ab793dfd9b6f416c126da7660607b">More...</a><br/></td></tr>
 <tr class="separator:a671ab793dfd9b6f416c126da7660607b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070cfa61a403b3024f06fbef374097be"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a070cfa61a403b3024f06fbef374097be">rip</a></td></tr>
+<tr class="memdesc:a070cfa61a403b3024f06fbef374097be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our default IPv4 router IP address.  <a href="#a070cfa61a403b3024f06fbef374097be">More...</a><br/></td></tr>
+<tr class="separator:a070cfa61a403b3024f06fbef374097be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab66a9b845ccc74bf9988ee81c062b2c1"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#ab66a9b845ccc74bf9988ee81c062b2c1">mtu</a></td></tr>
 <tr class="memdesc:ab66a9b845ccc74bf9988ee81c062b2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTU of this interface.  <a href="#ab66a9b845ccc74bf9988ee81c062b2c1">More...</a><br/></td></tr>
 <tr class="separator:ab66a9b845ccc74bf9988ee81c062b2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d5acf77045637c8687983b933d9e41d"><td class="memItemLeft" align="right" valign="top">struct ether_addr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a4d5acf77045637c8687983b933d9e41d">mac</a></td></tr>
 <tr class="memdesc:a4d5acf77045637c8687983b933d9e41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local Ethernet MAC address of the interface.  <a href="#a4d5acf77045637c8687983b933d9e41d">More...</a><br/></td></tr>
 <tr class="separator:a4d5acf77045637c8687983b933d9e41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeef518ec5511a7094ea0db7cd91013be"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#aeef518ec5511a7094ea0db7cd91013be">mem</a></td></tr>
-<tr class="memdesc:aeef518ec5511a7094ea0db7cd91013be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to netmap or socket buffer memory region.  <a href="#aeef518ec5511a7094ea0db7cd91013be">More...</a><br/></td></tr>
-<tr class="separator:aeef518ec5511a7094ea0db7cd91013be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a070cfa61a403b3024f06fbef374097be"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a070cfa61a403b3024f06fbef374097be">rip</a></td></tr>
-<tr class="memdesc:a070cfa61a403b3024f06fbef374097be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our default IPv4 router IP address.  <a href="#a070cfa61a403b3024f06fbef374097be">More...</a><br/></td></tr>
-<tr class="separator:a070cfa61a403b3024f06fbef374097be"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa8ad906202b2098b44fb6a5bdeb5c20"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov.html">w_iov</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#afa8ad906202b2098b44fb6a5bdeb5c20">bufs</a></td></tr>
-<tr class="separator:afa8ad906202b2098b44fb6a5bdeb5c20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e3c98639db97a503c8093070f13d765"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a9e3c98639db97a503c8093070f13d765">backend</a></td></tr>
-<tr class="separator:a9e3c98639db97a503c8093070f13d765"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a64dd1d5e088e121a11eb440d60ae9e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__backend.html">w_backend</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a9a64dd1d5e088e121a11eb440d60ae9e">b</a></td></tr>
-<tr class="separator:a9a64dd1d5e088e121a11eb440d60ae9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf62241650020eeeac843a8d9e9e5db1"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#abf62241650020eeeac843a8d9e9e5db1">nbufs</a></td></tr>
+<tr class="memdesc:abf62241650020eeeac843a8d9e9e5db1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers in <code>bufs</code>.  <a href="#abf62241650020eeeac843a8d9e9e5db1">More...</a><br/></td></tr>
+<tr class="separator:abf62241650020eeeac843a8d9e9e5db1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa321bccab5bbcc458e1f793afa7a0e45"><td class="memItemLeft" align="right" valign="top">struct sock&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#aa321bccab5bbcc458e1f793afa7a0e45">sock</a></td></tr>
+<tr class="memdesc:aa321bccab5bbcc458e1f793afa7a0e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of open (bound) <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> sockets.  <a href="#aa321bccab5bbcc458e1f793afa7a0e45">More...</a><br/></td></tr>
+<tr class="separator:aa321bccab5bbcc458e1f793afa7a0e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d208158e977addc3218c194df3d644"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a73d208158e977addc3218c194df3d644">ifname</a></td></tr>
+<tr class="memdesc:a73d208158e977addc3218c194df3d644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the interface of this engine.  <a href="#a73d208158e977addc3218c194df3d644">More...</a><br/></td></tr>
+<tr class="separator:a73d208158e977addc3218c194df3d644"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3041da7e8ef3210cae558f5fa14128e8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a3041da7e8ef3210cae558f5fa14128e8">backend_name</a></td></tr>
+<tr class="memdesc:a3041da7e8ef3210cae558f5fa14128e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the backend in <code>b</code>.  <a href="#a3041da7e8ef3210cae558f5fa14128e8">More...</a><br/></td></tr>
+<tr class="separator:a3041da7e8ef3210cae558f5fa14128e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A warpcore backend engine. </p>
@@ -192,17 +201,21 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Backend. </p>
+
 </div>
 </div>
-<a class="anchor" id="a9e3c98639db97a503c8093070f13d765"></a>
+<a class="anchor" id="a3041da7e8ef3210cae558f5fa14128e8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* w_engine::backend</td>
+          <td class="memname">const char* w_engine::backend_name</td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Name of the backend in <code>b</code>. </p>
 
 </div>
 </div>
@@ -215,6 +228,22 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Pointer to <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers. </p>
+
+</div>
+</div>
+<a class="anchor" id="a73d208158e977addc3218c194df3d644"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* w_engine::ifname</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Name of the interface of this engine. </p>
 
 </div>
 </div>
@@ -288,6 +317,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="abf62241650020eeeac843a8d9e9e5db1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t w_engine::nbufs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Number of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers in <code>bufs</code>. </p>
+
+</div>
+</div>
 <a class="anchor" id="a070cfa61a403b3024f06fbef374097be"></a>
 <div class="memitem">
 <div class="memproto">
@@ -322,7 +365,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 30 2017 15:12:20 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 3 2017 08:11:59 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

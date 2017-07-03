@@ -129,6 +129,7 @@ Data Fields</h2></td></tr>
 <tr class="memdesc:aa2e95068f4bef17d199d6b3cb6f89323"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSCP + ECN of the received IPv4 packet on RX, DSCP + ECN to use for the to-be-transmitted IPv4 packet on TX.  <a href="#aa2e95068f4bef17d199d6b3cb6f89323">More...</a><br/></td></tr>
 <tr class="separator:aa2e95068f4bef17d199d6b3cb6f89323"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accbd9852b7315222705d15c2f571f36b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#accbd9852b7315222705d15c2f571f36b">o</a></td></tr>
+<tr class="memdesc:accbd9852b7315222705d15c2f571f36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Pointer to the <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a> this <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> resides in. Only valid on TX.  <a href="#accbd9852b7315222705d15c2f571f36b">More...</a><br/></td></tr>
 <tr class="separator:accbd9852b7315222705d15c2f571f36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -183,7 +184,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>DSCP + ECN of the received IPv4 packet on RX, DSCP + ECN to use for the to-be-transmitted IPv4 packet on TX. </p>
-<p>Pointer to the <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a> this <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> resides in. Only valid on TX. </p>
 
 </div>
 </div>
@@ -240,6 +240,8 @@ Data Fields</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>&lt; Pointer to the <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a> this <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> resides in. Only valid on TX. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a15">ping.c</a>.</dd>
 </dl>
 </div>
@@ -265,7 +267,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 30 2017 15:12:20 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 3 2017 08:11:59 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

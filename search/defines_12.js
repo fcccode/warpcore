@@ -1,7 +1,11 @@
 var searchData=
 [
   ['w_5fengine',['w_engine',['../warpcore_8h.html#ae13f9b3c39d99b4a14d36b88ae5387da',1,'warpcore.h']]],
+  ['w_5ffree',['w_free',['../warpcore_8h.html#a068c0bd68483726654df048ad7dd0792',1,'warpcore.h']]],
+  ['w_5ffree_5fiov',['w_free_iov',['../warpcore_8h.html#a6dc649fb895f797d4ddd2e831f57595f',1,'warpcore.h']]],
+  ['w_5fifname',['w_ifname',['../warpcore_8h.html#a4c1507af14382c3a9afd21140d879e99',1,'warpcore.h']]],
   ['w_5fiov_5fstailq_5finitializer',['w_iov_stailq_initializer',['../warpcore_8h.html#a66e9fb9b95d09984dcfd0e987fe0f1d9',1,'warpcore.h']]],
+  ['w_5fmtu',['w_mtu',['../warpcore_8h.html#ab8d64c60572eee99efeb3118c292e318',1,'warpcore.h']]],
   ['w_5fsock_5fslist_5finitializer',['w_sock_slist_initializer',['../warpcore_8h.html#a6c8c618c1c3811f7c7d8350c1c073567',1,'warpcore.h']]],
   ['w_5ftx_5fpending',['w_tx_pending',['../warpcore_8h.html#adad79a0011e52c38d52df980843fff78',1,'warpcore.h']]],
   ['w_5fzero_5fchksum',['W_ZERO_CHKSUM',['../warpcore_8h.html#a1dc8f24f3aece4066bc8ff8fceeb54f3',1,'warpcore.h']]],

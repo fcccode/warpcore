@@ -154,9 +154,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af5df52522d52bfed04aa270094deaa78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#af5df52522d52bfed04aa270094deaa78">backend_connect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:af5df52522d52bfed04aa270094deaa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect the given <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, using the netmap backend.  <a href="#af5df52522d52bfed04aa270094deaa78">More...</a><br/></td></tr>
 <tr class="separator:af5df52522d52bfed04aa270094deaa78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b4b8656430fe5d82ae40e747c1db819"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a0b4b8656430fe5d82ae40e747c1db819">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const char *const ifname, const uint32_t nbufs)</td></tr>
-<tr class="memdesc:a0b4b8656430fe5d82ae40e747c1db819"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore netmap backend for engine <code>w</code>.  <a href="#a0b4b8656430fe5d82ae40e747c1db819">More...</a><br/></td></tr>
-<tr class="separator:a0b4b8656430fe5d82ae40e747c1db819"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad11227ca36c524fe0bb4fc5f8917f0b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#ad11227ca36c524fe0bb4fc5f8917f0b4">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint32_t nbufs)</td></tr>
+<tr class="memdesc:ad11227ca36c524fe0bb4fc5f8917f0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore netmap backend for engine <code>w</code>.  <a href="#ad11227ca36c524fe0bb4fc5f8917f0b4">More...</a><br/></td></tr>
+<tr class="separator:ad11227ca36c524fe0bb4fc5f8917f0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e43d05a55650db2be88e9eece99905d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
 <tr class="memdesc:a7e43d05a55650db2be88e9eece99905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore netmap engine down cleanly.  <a href="#a7e43d05a55650db2be88e9eece99905d">More...</a><br/></td></tr>
 <tr class="separator:a7e43d05a55650db2be88e9eece99905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -428,7 +428,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a0b4b8656430fe5d82ae40e747c1db819"></a>
+<a class="anchor" id="ad11227ca36c524fe0bb4fc5f8917f0b4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -437,12 +437,6 @@ Here is the call graph for this function:</div>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *const&#160;</td>
-          <td class="paramname"><em>ifname</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -463,7 +457,6 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ifname</td><td>The OS name of the interface (e.g., "eth0"). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate.</td></tr>
   </table>
   </dd>
@@ -473,20 +466,10 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">ifname</td><td>The OS name of the interface (e.g., "eth0"). </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate. </td></tr>
   </table>
   </dd>
 </dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="backend_8h_a0b4b8656430fe5d82ae40e747c1db819_cgraph.png" border="0" usemap="#backend_8h_a0b4b8656430fe5d82ae40e747c1db819_cgraph" alt=""/></div>
-<map name="backend_8h_a0b4b8656430fe5d82ae40e747c1db819_cgraph" id="backend_8h_a0b4b8656430fe5d82ae40e747c1db819_cgraph">
-<area shape="rect" id="node2" href="warpcore_8h.html#a6c11946b425760d0fe066d74d23e149e" title="w_ifname" alt="" coords="150,5,229,32"/></map>
-</div>
-</p>
 
 </div>
 </div>
@@ -583,7 +566,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 30 2017 15:12:20 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Jul 3 2017 08:11:59 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
