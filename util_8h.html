@@ -95,7 +95,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;errno.h&gt;</code><br/>
-<code>#include &lt;pthread.h&gt;</code><br/>
 <code>#include &lt;stdio.h&gt;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
@@ -175,6 +174,12 @@ Macros</h2></td></tr>
 <tr class="separator:a217a0bd562b98ae8c2ffce44935351e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6c45889010c1bd68631771b64f18101"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a>(x)&#160;&#160;&#160;__builtin_expect(!!(x), 0)</td></tr>
 <tr class="separator:ac6c45889010c1bd68631771b64f18101"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97c15b51609eac87dccc82f73bf3ba39"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a97c15b51609eac87dccc82f73bf3ba39">DLOCK</a></td></tr>
+<tr class="separator:a97c15b51609eac87dccc82f73bf3ba39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb362507fe8a1becdede446779b54102"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#adb362507fe8a1becdede446779b54102">DUNLOCK</a></td></tr>
+<tr class="separator:adb362507fe8a1becdede446779b54102"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1b96b12f6ee95bcc37468756298918"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#aca1b96b12f6ee95bcc37468756298918">DMASTER</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aca1b96b12f6ee95bcc37468756298918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b2164ee75646f16a7388a36e6800c35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a>(...)</td></tr>
 <tr class="memdesc:a0b2164ee75646f16a7388a36e6800c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort execution with a message.  <a href="#a0b2164ee75646f16a7388a36e6800c35">More...</a><br/></td></tr>
 <tr class="separator:a0b2164ee75646f16a7388a36e6800c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -218,12 +223,6 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a9ca66e34b3e6cbe53f22798fc1996f2a"><td class="memItemLeft" align="right" valign="top">pthread_mutex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a9ca66e34b3e6cbe53f22798fc1996f2a">_lock</a></td></tr>
-<tr class="memdesc:a9ca66e34b3e6cbe53f22798fc1996f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock to prevent multiple threads from corrupting each others output.  <a href="#a9ca66e34b3e6cbe53f22798fc1996f2a">More...</a><br/></td></tr>
-<tr class="separator:a9ca66e34b3e6cbe53f22798fc1996f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5f47aa3d4bfb607bef518350025c33d"><td class="memItemLeft" align="right" valign="top">pthread_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ae5f47aa3d4bfb607bef518350025c33d">_master</a></td></tr>
-<tr class="memdesc:ae5f47aa3d4bfb607bef518350025c33d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Thread ID of the master thread.  <a href="#ae5f47aa3d4bfb607bef518350025c33d">More...</a><br/></td></tr>
-<tr class="separator:ae5f47aa3d4bfb607bef518350025c33d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff6c95c5d023bcc9fb827a14c8e6ca4c"><td class="memItemLeft" align="right" valign="top">enum <a class="el" href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#aff6c95c5d023bcc9fb827a14c8e6ca4c">_dlevel</a></td></tr>
 <tr class="memdesc:aff6c95c5d023bcc9fb827a14c8e6ca4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically adjust _dlevel from your code to show or suppress debug messages at runtime.  <a href="#aff6c95c5d023bcc9fb827a14c8e6ca4c">More...</a><br/></td></tr>
 <tr class="separator:aff6c95c5d023bcc9fb827a14c8e6ca4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -348,35 +347,35 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        if (pthread_mutex_lock(&amp;<a class="code" href="util_8h.html#a9ca66e34b3e6cbe53f22798fc1996f2a">_lock</a>))                                        \</div>
-<div class="line">            abort();                                                           \</div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       <a class="code" href="util_8h.html#a97c15b51609eac87dccc82f73bf3ba39">\</a></div>
+<div class="line"><a class="code" href="util_8h.html#a97c15b51609eac87dccc82f73bf3ba39">        DLOCK</a>;                                                                 \</div>
 <div class="line">        const <span class="keywordtype">int</span> _e = errno;                                                  \</div>
 <div class="line">        struct timeval _now = {0, 0}, _dur = {0, 0};                           \</div>
 <div class="line">        gettimeofday(&amp;_now, 0);                                                \</div>
 <div class="line">        timersub(&amp;_now, &amp;<a class="code" href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a>, &amp;_dur); <span class="comment">/* NOLINT */</span>                          \</div>
 <div class="line">        fprintf(stderr,                                                        \</div>
 <div class="line">                <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot;%s &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a> <a class="code" href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a> <a class="code" href="util_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">BLD</a> <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot; %ld.%03ld   %s %s:%d ABORT: &quot;</span>,     \</div>
-<div class="line">                (pthread_self() == <a class="code" href="util_8h.html#ae5f47aa3d4bfb607bef518350025c33d">_master</a> ? <a class="code" href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a> : <a class="code" href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a>), <span class="comment">/* NOLINT */</span>          \</div>
+<div class="line">                (<a class="code" href="util_8h.html#aca1b96b12f6ee95bcc37468756298918">DMASTER</a> ? <a class="code" href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a> : <a class="code" href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a>), <span class="comment">/* NOLINT */</span>                            \</div>
 <div class="line">                (<span class="keywordtype">long</span>)(_dur.tv_sec % 1000), (<span class="keywordtype">long</span>)(_dur.tv_usec / 1000),       \</div>
 <div class="line">                __func__, <a class="code" href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a>(__FILE__), __LINE__); <span class="comment">/* NOLINT */</span>          \</div>
 <div class="line">        fprintf(stderr, __VA_ARGS__);                                          \</div>
 <div class="line">        fprintf(stderr, <span class="stringliteral">&quot; %c%s%c\n&quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>, (_e ? <span class="charliteral">&#39;[&#39;</span> : 0),                       \</div>
 <div class="line">                (_e ? strerror(_e) : <span class="stringliteral">&quot;&quot;</span>), (_e ? <span class="charliteral">&#39;]&#39;</span> : 0));                     \</div>
-<div class="line">        fflush(stderr);                                                        \</div>
-<div class="line">        pthread_mutex_unlock(&amp;<a class="code" href="util_8h.html#a9ca66e34b3e6cbe53f22798fc1996f2a">_lock</a>);                                          \</div>
+<div class="line">        fflush(stderr);                                                        <a class="code" href="util_8h.html#adb362507fe8a1becdede446779b54102">\</a></div>
+<div class="line"><a class="code" href="util_8h.html#adb362507fe8a1becdede446779b54102">        DUNLOCK</a>;                                                               \</div>
 <div class="line">        abort();                                                               \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="util_8h_html_a6283768c836fd4a0f382514973bc3ff4"><div class="ttname"><a href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a></div><div class="ttdeci">#define BLK</div><div class="ttdoc">ANSI escape sequence: black. </div><div class="ttdef"><b>Definition:</b> util.h:44</div></div>
-<div class="ttc" id="util_8h_html_ae5f47aa3d4bfb607bef518350025c33d"><div class="ttname"><a href="util_8h.html#ae5f47aa3d4bfb607bef518350025c33d">_master</a></div><div class="ttdeci">pthread_t _master</div><div class="ttdoc">Thread ID of the master thread. </div><div class="ttdef"><b>Definition:</b> util.c:39</div></div>
-<div class="ttc" id="util_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> util.h:37</div></div>
-<div class="ttc" id="util_8h_html_abf5f17d3254f2e930aee0dc34dbff071"><div class="ttname"><a href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a></div><div class="ttdeci">#define basename(f)</div><div class="ttdoc">Trim the path from the given file name. </div><div class="ttdef"><b>Definition:</b> util.h:60</div></div>
-<div class="ttc" id="util_8h_html_aeaf3a04d5bf63b204689a714718ea930"><div class="ttname"><a href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a></div><div class="ttdeci">#define WHT</div><div class="ttdoc">ANSI escape sequence: white. </div><div class="ttdef"><b>Definition:</b> util.h:51</div></div>
-<div class="ttc" id="util_8h_html_af54a5a977c0c499323d656315f008ee0"><div class="ttname"><a href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a></div><div class="ttdeci">#define MAG</div><div class="ttdoc">ANSI escape sequence: magenta. </div><div class="ttdef"><b>Definition:</b> util.h:49</div></div>
-<div class="ttc" id="util_8h_html_ad520a2ca0199ec9bb85c37772900e332"><div class="ttname"><a href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a></div><div class="ttdeci">struct timeval _epoch</div><div class="ttdoc">Stores the timeval at the start of the program, used to print relative times in warn(), die(), etc. </div><div class="ttdef"><b>Definition:</b> util.c:40</div></div>
-<div class="ttc" id="util_8h_html_a33a42d6bfefe54ae2384f5c28dd87340"><div class="ttname"><a href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a></div><div class="ttdeci">#define REV</div><div class="ttdoc">ANSI escape sequence: reverse. </div><div class="ttdef"><b>Definition:</b> util.h:42</div></div>
-<div class="ttc" id="util_8h_html_a9ca66e34b3e6cbe53f22798fc1996f2a"><div class="ttname"><a href="util_8h.html#a9ca66e34b3e6cbe53f22798fc1996f2a">_lock</a></div><div class="ttdeci">pthread_mutex_t _lock</div><div class="ttdoc">Lock to prevent multiple threads from corrupting each others output. </div><div class="ttdef"><b>Definition:</b> util.c:38</div></div>
-<div class="ttc" id="util_8h_html_a6773bd84b2bf2a4f2118fc787f3a53fb"><div class="ttname"><a href="util_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">BLD</a></div><div class="ttdeci">#define BLD</div><div class="ttdoc">ANSI escape sequence: bold. </div><div class="ttdef"><b>Definition:</b> util.h:38</div></div>
+<div class="ttc" id="util_8h_html_a6283768c836fd4a0f382514973bc3ff4"><div class="ttname"><a href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a></div><div class="ttdeci">#define BLK</div><div class="ttdoc">ANSI escape sequence: black. </div><div class="ttdef"><b>Definition:</b> util.h:46</div></div>
+<div class="ttc" id="util_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> util.h:39</div></div>
+<div class="ttc" id="util_8h_html_abf5f17d3254f2e930aee0dc34dbff071"><div class="ttname"><a href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a></div><div class="ttdeci">#define basename(f)</div><div class="ttdoc">Trim the path from the given file name. </div><div class="ttdef"><b>Definition:</b> util.h:62</div></div>
+<div class="ttc" id="util_8h_html_adb362507fe8a1becdede446779b54102"><div class="ttname"><a href="util_8h.html#adb362507fe8a1becdede446779b54102">DUNLOCK</a></div><div class="ttdeci">#define DUNLOCK</div><div class="ttdef"><b>Definition:</b> util.h:107</div></div>
+<div class="ttc" id="util_8h_html_aeaf3a04d5bf63b204689a714718ea930"><div class="ttname"><a href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a></div><div class="ttdeci">#define WHT</div><div class="ttdoc">ANSI escape sequence: white. </div><div class="ttdef"><b>Definition:</b> util.h:53</div></div>
+<div class="ttc" id="util_8h_html_af54a5a977c0c499323d656315f008ee0"><div class="ttname"><a href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a></div><div class="ttdeci">#define MAG</div><div class="ttdoc">ANSI escape sequence: magenta. </div><div class="ttdef"><b>Definition:</b> util.h:51</div></div>
+<div class="ttc" id="util_8h_html_ad520a2ca0199ec9bb85c37772900e332"><div class="ttname"><a href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a></div><div class="ttdeci">struct timeval _epoch</div><div class="ttdoc">Stores the timeval at the start of the program, used to print relative times in warn(), die(), etc. </div><div class="ttdef"><b>Definition:</b> util.c:43</div></div>
+<div class="ttc" id="util_8h_html_a33a42d6bfefe54ae2384f5c28dd87340"><div class="ttname"><a href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a></div><div class="ttdeci">#define REV</div><div class="ttdoc">ANSI escape sequence: reverse. </div><div class="ttdef"><b>Definition:</b> util.h:44</div></div>
+<div class="ttc" id="util_8h_html_a6773bd84b2bf2a4f2118fc787f3a53fb"><div class="ttname"><a href="util_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">BLD</a></div><div class="ttdeci">#define BLD</div><div class="ttdoc">ANSI escape sequence: bold. </div><div class="ttdef"><b>Definition:</b> util.h:40</div></div>
+<div class="ttc" id="util_8h_html_aca1b96b12f6ee95bcc37468756298918"><div class="ttname"><a href="util_8h.html#aca1b96b12f6ee95bcc37468756298918">DMASTER</a></div><div class="ttdeci">#define DMASTER</div><div class="ttdef"><b>Definition:</b> util.h:108</div></div>
+<div class="ttc" id="util_8h_html_a97c15b51609eac87dccc82f73bf3ba39"><div class="ttname"><a href="util_8h.html#a97c15b51609eac87dccc82f73bf3ba39">DLOCK</a></div><div class="ttdeci">#define DLOCK</div><div class="ttdef"><b>Definition:</b> util.h:106</div></div>
 </div><!-- fragment -->
 <p>Abort execution with a message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -420,12 +419,48 @@ Variables</h2></td></tr>
 </dl>
 </div>
 </div>
+<a class="anchor" id="a97c15b51609eac87dccc82f73bf3ba39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DLOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aca1b96b12f6ee95bcc37468756298918"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DMASTER&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a911d17fccac43347bb3c6ace7a8051c8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define DO_REGEXEC&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adb362507fe8a1becdede446779b54102"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DUNLOCK</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -460,7 +495,7 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">            die</a>(<span class="stringliteral">&quot;assertion failed \n          &quot;</span> #e                             \</div>
 <div class="line">                <span class="stringliteral">&quot; \n          &quot;</span> __VA_ARGS__);                                  \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="util_8h_html_a0b2164ee75646f16a7388a36e6800c35"><div class="ttname"><a href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a></div><div class="ttdeci">#define die(...)</div><div class="ttdoc">Abort execution with a message. </div><div class="ttdef"><b>Definition:</b> util.h:93</div></div>
+<div class="ttc" id="util_8h_html_a0b2164ee75646f16a7388a36e6800c35"><div class="ttname"><a href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a></div><div class="ttdeci">#define die(...)</div><div class="ttdoc">Abort execution with a message. </div><div class="ttdef"><b>Definition:</b> util.h:118</div></div>
 </div><!-- fragment -->
 <p>A version of the C assert() macro that isn't disabled by NDEBUG and that ties in with <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, <a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35" title="Abort execution with a message. ">die()</a> and our other debug functions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -681,11 +716,11 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887">                warn</a>(<a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a>, __VA_ARGS__);                                     \</div>
 <div class="line">        }                                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="util_8h_html_a94c2776a2d1f9e44c3d327befe0d3bfe"><div class="ttname"><a href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></div><div class="ttdeci">#define DLEVEL</div><div class="ttdoc">Default debug level. </div><div class="ttdef"><b>Definition:</b> util.h:134</div></div>
+<div class="ttc" id="util_8h_html_a94c2776a2d1f9e44c3d327befe0d3bfe"><div class="ttname"><a href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></div><div class="ttdeci">#define DLEVEL</div><div class="ttdoc">Default debug level. </div><div class="ttdef"><b>Definition:</b> util.h:158</div></div>
 <div class="ttc" id="util_8h_html_adc6521557ce5f08fe0c96b20d81c7ebc"><div class="ttname"><a href="util_8h.html#adc6521557ce5f08fe0c96b20d81c7ebc">_comp</a></div><div class="ttdeci">regex_t _comp</div><div class="ttdoc">Holds the regex compiled from DCOMPONENT. </div></div>
-<div class="ttc" id="util_8h_html_a911d17fccac43347bb3c6ace7a8051c8"><div class="ttname"><a href="util_8h.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a></div><div class="ttdeci">#define DO_REGEXEC</div><div class="ttdef"><b>Definition:</b> util.h:149</div></div>
-<div class="ttc" id="util_8h_html_a1889d6734420c17df6105c658525f64f"><div class="ttname"><a href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a></div><div class="ttdeci">dlevel</div><div class="ttdoc">Debug levels, decreasing severity. </div><div class="ttdef"><b>Definition:</b> util.h:121</div></div>
-<div class="ttc" id="util_8h_html_a75fb9e13fe5fdbdbf4f0b7f34d25a887"><div class="ttname"><a href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887">warn</a></div><div class="ttdeci">#define warn(dlevel,...)</div><div class="ttdoc">Print a debug message to stderr, including a black/white indicator whether the message comes from the...</div><div class="ttdef"><b>Definition:</b> util.h:176</div></div>
+<div class="ttc" id="util_8h_html_a911d17fccac43347bb3c6ace7a8051c8"><div class="ttname"><a href="util_8h.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a></div><div class="ttdeci">#define DO_REGEXEC</div><div class="ttdef"><b>Definition:</b> util.h:173</div></div>
+<div class="ttc" id="util_8h_html_a1889d6734420c17df6105c658525f64f"><div class="ttname"><a href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a></div><div class="ttdeci">dlevel</div><div class="ttdoc">Debug levels, decreasing severity. </div><div class="ttdef"><b>Definition:</b> util.h:145</div></div>
+<div class="ttc" id="util_8h_html_a75fb9e13fe5fdbdbf4f0b7f34d25a887"><div class="ttname"><a href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887">warn</a></div><div class="ttdeci">#define warn(dlevel,...)</div><div class="ttdoc">Print a debug message to stderr, including a black/white indicator whether the message comes from the...</div><div class="ttdef"><b>Definition:</b> util.h:200</div></div>
 </div><!-- fragment -->
 <p>Rate-limited variant of <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, which repeats the message prints at most <code>lps</code> times. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -755,41 +790,40 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
 <div class="line">        if (<a class="code" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a> &gt;= <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a> &amp;&amp; <a class="code" href="util_8h.html#aff6c95c5d023bcc9fb827a14c8e6ca4c">_dlevel</a> &gt;= <a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a> &amp;&amp;                           \</div>
-<div class="line">            (<a class="code" href="util_8h.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a> ? !regexec(&amp;<a class="code" href="util_8h.html#adc6521557ce5f08fe0c96b20d81c7ebc">_comp</a>, __FILE__, 0, 0, 0) : 1)) {          \</div>
-<div class="line">            if (pthread_mutex_lock(&amp;<a class="code" href="util_8h.html#a9ca66e34b3e6cbe53f22798fc1996f2a">_lock</a>))                                    \</div>
-<div class="line">                abort();                                                       \</div>
+<div class="line">            (<a class="code" href="util_8h.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a> ? !regexec(&amp;<a class="code" href="util_8h.html#adc6521557ce5f08fe0c96b20d81c7ebc">_comp</a>, __FILE__, 0, 0, 0) : 1)) {          <a class="code" href="util_8h.html#a97c15b51609eac87dccc82f73bf3ba39">\</a></div>
+<div class="line"><a class="code" href="util_8h.html#a97c15b51609eac87dccc82f73bf3ba39">            DLOCK</a>;                                                             \</div>
 <div class="line">            struct timeval _now = {0, 0}, _dur = {0, 0};                       \</div>
 <div class="line">            gettimeofday(&amp;_now, 0);                                            \</div>
 <div class="line">            timersub(&amp;_now, &amp;<a class="code" href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a>, &amp;_dur); <span class="comment">/* NOLINT */</span>                      \</div>
 <div class="line">            fprintf(stderr, <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot;%s &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a> <span class="stringliteral">&quot; %ld.%03ld &quot;</span> <a class="code" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a> <span class="stringliteral">&quot;%s &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a> <a class="code" href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a>      \</div>
 <div class="line">                                <span class="stringliteral">&quot; %s&quot;</span> <a class="code" href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a> <span class="stringliteral">&quot; &quot;</span> <a class="code" href="util_8h.html#add9307de87f38e77d336751e305886f6">BLU</a> <span class="stringliteral">&quot;%s:%d &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>,                \</div>
-<div class="line">                    (pthread_self() == <a class="code" href="util_8h.html#ae5f47aa3d4bfb607bef518350025c33d">_master</a> ? <a class="code" href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a> : <a class="code" href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a>), <span class="comment">/* NOLINT */</span>      \</div>
+<div class="line">                    (<a class="code" href="util_8h.html#aca1b96b12f6ee95bcc37468756298918">DMASTER</a> ? <a class="code" href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a> : <a class="code" href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a>), <span class="comment">/* NOLINT */</span>                        \</div>
 <div class="line">                    (<span class="keywordtype">long</span>)(_dur.tv_sec % 1000), (<span class="keywordtype">long</span>)(_dur.tv_usec / 1000),   \</div>
 <div class="line">                    <a class="code" href="util_8h.html#a5b9c82f349630a2371c3eeee0fb50a12">_col</a>[<a class="code" href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a>], __func__, <span class="comment">/* NOLINT */</span> <a class="code" href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a>(__FILE__),   \</div>
 <div class="line">                    __LINE__);                                                 \</div>
 <div class="line">            fprintf(stderr, __VA_ARGS__);                                      \</div>
 <div class="line">            fprintf(stderr, <span class="stringliteral">&quot;\n&quot;</span>);                                             \</div>
-<div class="line">            fflush(stderr);                                                    \</div>
-<div class="line">            if (pthread_mutex_unlock(&amp;<a class="code" href="util_8h.html#a9ca66e34b3e6cbe53f22798fc1996f2a">_lock</a>))                                  \</div>
-<div class="line">                abort();                                                       \</div>
+<div class="line">            fflush(stderr);                                                    <a class="code" href="util_8h.html#adb362507fe8a1becdede446779b54102">\</a></div>
+<div class="line"><a class="code" href="util_8h.html#adb362507fe8a1becdede446779b54102">            DUNLOCK</a>;                                                           \</div>
 <div class="line">        }                                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="util_8h_html_a6283768c836fd4a0f382514973bc3ff4"><div class="ttname"><a href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a></div><div class="ttdeci">#define BLK</div><div class="ttdoc">ANSI escape sequence: black. </div><div class="ttdef"><b>Definition:</b> util.h:44</div></div>
-<div class="ttc" id="util_8h_html_ae5f47aa3d4bfb607bef518350025c33d"><div class="ttname"><a href="util_8h.html#ae5f47aa3d4bfb607bef518350025c33d">_master</a></div><div class="ttdeci">pthread_t _master</div><div class="ttdoc">Thread ID of the master thread. </div><div class="ttdef"><b>Definition:</b> util.c:39</div></div>
-<div class="ttc" id="util_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> util.h:37</div></div>
-<div class="ttc" id="util_8h_html_a94c2776a2d1f9e44c3d327befe0d3bfe"><div class="ttname"><a href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></div><div class="ttdeci">#define DLEVEL</div><div class="ttdoc">Default debug level. </div><div class="ttdef"><b>Definition:</b> util.h:134</div></div>
+<div class="ttc" id="util_8h_html_a6283768c836fd4a0f382514973bc3ff4"><div class="ttname"><a href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a></div><div class="ttdeci">#define BLK</div><div class="ttdoc">ANSI escape sequence: black. </div><div class="ttdef"><b>Definition:</b> util.h:46</div></div>
+<div class="ttc" id="util_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> util.h:39</div></div>
+<div class="ttc" id="util_8h_html_a94c2776a2d1f9e44c3d327befe0d3bfe"><div class="ttname"><a href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></div><div class="ttdeci">#define DLEVEL</div><div class="ttdoc">Default debug level. </div><div class="ttdef"><b>Definition:</b> util.h:158</div></div>
 <div class="ttc" id="util_8h_html_adc6521557ce5f08fe0c96b20d81c7ebc"><div class="ttname"><a href="util_8h.html#adc6521557ce5f08fe0c96b20d81c7ebc">_comp</a></div><div class="ttdeci">regex_t _comp</div><div class="ttdoc">Holds the regex compiled from DCOMPONENT. </div></div>
-<div class="ttc" id="util_8h_html_a5b9c82f349630a2371c3eeee0fb50a12"><div class="ttname"><a href="util_8h.html#a5b9c82f349630a2371c3eeee0fb50a12">_col</a></div><div class="ttdeci">const char *const _col[]</div><div class="ttdoc">An array of ANSI color sequences associated with the different dlevel severities. ...</div><div class="ttdef"><b>Definition:</b> util.c:47</div></div>
-<div class="ttc" id="util_8h_html_abf5f17d3254f2e930aee0dc34dbff071"><div class="ttname"><a href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a></div><div class="ttdeci">#define basename(f)</div><div class="ttdoc">Trim the path from the given file name. </div><div class="ttdef"><b>Definition:</b> util.h:60</div></div>
-<div class="ttc" id="util_8h_html_aeaf3a04d5bf63b204689a714718ea930"><div class="ttname"><a href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a></div><div class="ttdeci">#define WHT</div><div class="ttdoc">ANSI escape sequence: white. </div><div class="ttdef"><b>Definition:</b> util.h:51</div></div>
-<div class="ttc" id="util_8h_html_add9307de87f38e77d336751e305886f6"><div class="ttname"><a href="util_8h.html#add9307de87f38e77d336751e305886f6">BLU</a></div><div class="ttdeci">#define BLU</div><div class="ttdoc">ANSI escape sequence: blue. </div><div class="ttdef"><b>Definition:</b> util.h:48</div></div>
-<div class="ttc" id="util_8h_html_af54a5a977c0c499323d656315f008ee0"><div class="ttname"><a href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a></div><div class="ttdeci">#define MAG</div><div class="ttdoc">ANSI escape sequence: magenta. </div><div class="ttdef"><b>Definition:</b> util.h:49</div></div>
-<div class="ttc" id="util_8h_html_a911d17fccac43347bb3c6ace7a8051c8"><div class="ttname"><a href="util_8h.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a></div><div class="ttdeci">#define DO_REGEXEC</div><div class="ttdef"><b>Definition:</b> util.h:149</div></div>
-<div class="ttc" id="util_8h_html_ad520a2ca0199ec9bb85c37772900e332"><div class="ttname"><a href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a></div><div class="ttdeci">struct timeval _epoch</div><div class="ttdoc">Stores the timeval at the start of the program, used to print relative times in warn(), die(), etc. </div><div class="ttdef"><b>Definition:</b> util.c:40</div></div>
-<div class="ttc" id="util_8h_html_a33a42d6bfefe54ae2384f5c28dd87340"><div class="ttname"><a href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a></div><div class="ttdeci">#define REV</div><div class="ttdoc">ANSI escape sequence: reverse. </div><div class="ttdef"><b>Definition:</b> util.h:42</div></div>
-<div class="ttc" id="util_8h_html_a9ca66e34b3e6cbe53f22798fc1996f2a"><div class="ttname"><a href="util_8h.html#a9ca66e34b3e6cbe53f22798fc1996f2a">_lock</a></div><div class="ttdeci">pthread_mutex_t _lock</div><div class="ttdoc">Lock to prevent multiple threads from corrupting each others output. </div><div class="ttdef"><b>Definition:</b> util.c:38</div></div>
-<div class="ttc" id="util_8h_html_a1889d6734420c17df6105c658525f64f"><div class="ttname"><a href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a></div><div class="ttdeci">dlevel</div><div class="ttdoc">Debug levels, decreasing severity. </div><div class="ttdef"><b>Definition:</b> util.h:121</div></div>
-<div class="ttc" id="util_8h_html_aff6c95c5d023bcc9fb827a14c8e6ca4c"><div class="ttname"><a href="util_8h.html#aff6c95c5d023bcc9fb827a14c8e6ca4c">_dlevel</a></div><div class="ttdeci">enum dlevel _dlevel</div><div class="ttdoc">Dynamically adjust _dlevel from your code to show or suppress debug messages at runtime. </div><div class="ttdef"><b>Definition:</b> util.c:48</div></div>
+<div class="ttc" id="util_8h_html_a5b9c82f349630a2371c3eeee0fb50a12"><div class="ttname"><a href="util_8h.html#a5b9c82f349630a2371c3eeee0fb50a12">_col</a></div><div class="ttdeci">const char *const _col[]</div><div class="ttdoc">An array of ANSI color sequences associated with the different dlevel severities. ...</div><div class="ttdef"><b>Definition:</b> util.c:50</div></div>
+<div class="ttc" id="util_8h_html_abf5f17d3254f2e930aee0dc34dbff071"><div class="ttname"><a href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a></div><div class="ttdeci">#define basename(f)</div><div class="ttdoc">Trim the path from the given file name. </div><div class="ttdef"><b>Definition:</b> util.h:62</div></div>
+<div class="ttc" id="util_8h_html_adb362507fe8a1becdede446779b54102"><div class="ttname"><a href="util_8h.html#adb362507fe8a1becdede446779b54102">DUNLOCK</a></div><div class="ttdeci">#define DUNLOCK</div><div class="ttdef"><b>Definition:</b> util.h:107</div></div>
+<div class="ttc" id="util_8h_html_aeaf3a04d5bf63b204689a714718ea930"><div class="ttname"><a href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a></div><div class="ttdeci">#define WHT</div><div class="ttdoc">ANSI escape sequence: white. </div><div class="ttdef"><b>Definition:</b> util.h:53</div></div>
+<div class="ttc" id="util_8h_html_add9307de87f38e77d336751e305886f6"><div class="ttname"><a href="util_8h.html#add9307de87f38e77d336751e305886f6">BLU</a></div><div class="ttdeci">#define BLU</div><div class="ttdoc">ANSI escape sequence: blue. </div><div class="ttdef"><b>Definition:</b> util.h:50</div></div>
+<div class="ttc" id="util_8h_html_af54a5a977c0c499323d656315f008ee0"><div class="ttname"><a href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a></div><div class="ttdeci">#define MAG</div><div class="ttdoc">ANSI escape sequence: magenta. </div><div class="ttdef"><b>Definition:</b> util.h:51</div></div>
+<div class="ttc" id="util_8h_html_a911d17fccac43347bb3c6ace7a8051c8"><div class="ttname"><a href="util_8h.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a></div><div class="ttdeci">#define DO_REGEXEC</div><div class="ttdef"><b>Definition:</b> util.h:173</div></div>
+<div class="ttc" id="util_8h_html_ad520a2ca0199ec9bb85c37772900e332"><div class="ttname"><a href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a></div><div class="ttdeci">struct timeval _epoch</div><div class="ttdoc">Stores the timeval at the start of the program, used to print relative times in warn(), die(), etc. </div><div class="ttdef"><b>Definition:</b> util.c:43</div></div>
+<div class="ttc" id="util_8h_html_a33a42d6bfefe54ae2384f5c28dd87340"><div class="ttname"><a href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a></div><div class="ttdeci">#define REV</div><div class="ttdoc">ANSI escape sequence: reverse. </div><div class="ttdef"><b>Definition:</b> util.h:44</div></div>
+<div class="ttc" id="util_8h_html_a1889d6734420c17df6105c658525f64f"><div class="ttname"><a href="util_8h.html#a1889d6734420c17df6105c658525f64f">dlevel</a></div><div class="ttdeci">dlevel</div><div class="ttdoc">Debug levels, decreasing severity. </div><div class="ttdef"><b>Definition:</b> util.h:145</div></div>
+<div class="ttc" id="util_8h_html_aca1b96b12f6ee95bcc37468756298918"><div class="ttname"><a href="util_8h.html#aca1b96b12f6ee95bcc37468756298918">DMASTER</a></div><div class="ttdeci">#define DMASTER</div><div class="ttdef"><b>Definition:</b> util.h:108</div></div>
+<div class="ttc" id="util_8h_html_aff6c95c5d023bcc9fb827a14c8e6ca4c"><div class="ttname"><a href="util_8h.html#aff6c95c5d023bcc9fb827a14c8e6ca4c">_dlevel</a></div><div class="ttdeci">enum dlevel _dlevel</div><div class="ttdoc">Dynamically adjust _dlevel from your code to show or suppress debug messages at runtime. </div><div class="ttdef"><b>Definition:</b> util.c:51</div></div>
+<div class="ttc" id="util_8h_html_a97c15b51609eac87dccc82f73bf3ba39"><div class="ttname"><a href="util_8h.html#a97c15b51609eac87dccc82f73bf3ba39">DLOCK</a></div><div class="ttdeci">#define DLOCK</div><div class="ttdef"><b>Definition:</b> util.h:106</div></div>
 </div><!-- fragment -->
 <p>Print a debug message to stderr, including a black/white indicator whether the message comes from the master thread (black) or not (white), a timestamp since start of the program, a coloMAG indicator for the <a class="el" href="util_8h.html#a1889d6734420c17df6105c658525f64f" title="Debug levels, decreasing severity. ">dlevel</a> severity level, as well as a printf()-style format string fed by further optional arguments. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -976,38 +1010,10 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a9ca66e34b3e6cbe53f22798fc1996f2a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pthread_mutex_t _lock</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Lock to prevent multiple threads from corrupting each others output. </p>
-
-</div>
-</div>
-<a class="anchor" id="ae5f47aa3d4bfb607bef518350025c33d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">pthread_t _master</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Thread ID of the master thread. </p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 11 2017 15:01:38 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 13 2017 12:22:49 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
