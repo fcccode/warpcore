@@ -218,22 +218,22 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            rtr = optarg;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;l&#39;</span>:</div>
-<div class="line">            loops = MIN(UINT32_MAX, (uint32_t)strtoul(optarg, 0, 10));</div>
+<div class="line">            loops = (uint32_t)MIN(UINT32_MAX, strtoul(optarg, 0, 10));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;s&#39;</span>:</div>
-<div class="line">            start = MIN(UINT32_MAX, MAX(1, (uint32_t)strtoul(optarg, 0, 10)));</div>
+<div class="line">            start = (uint32_t)MIN(UINT32_MAX, MAX(1, strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;p&#39;</span>:</div>
-<div class="line">            inc = MIN(UINT32_MAX, MAX(0, (uint32_t)strtoul(optarg, 0, 10)));</div>
+<div class="line">            inc = (uint32_t)MIN(UINT32_MAX, strtoul(optarg, 0, 10));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;e&#39;</span>:</div>
-<div class="line">            end = MIN(UINT32_MAX, MAX(1, (uint32_t)strtoul(optarg, 0, 10)));</div>
+<div class="line">            end = (uint32_t)MIN(UINT32_MAX, MAX(1, strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;c&#39;</span>:</div>
-<div class="line">            conns = MIN(50000, MAX(1, (uint32_t)strtoul(optarg, 0, 10)));</div>
+<div class="line">            conns = (uint32_t)MIN(50000, MAX(1, strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;n&#39;</span>:</div>
-<div class="line">            nbufs = MIN(900000, MAX(1, (uint32_t)strtoul(optarg, 0, 10)));</div>
+<div class="line">            nbufs = (uint32_t)MIN(900000, MAX(1, strtoul(optarg, 0, 10)));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;b&#39;</span>:</div>
 <div class="line">            busywait = <span class="keyword">true</span>;</div>
@@ -243,7 +243,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
 <div class="line"><span class="preprocessor"></span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;v&#39;</span>:</div>
-<div class="line">            <a class="code" href="util_8h.html#aff6c95c5d023bcc9fb827a14c8e6ca4c">_dlevel</a> = MIN(<a class="code" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a>, MAX(0, (uint32_t)strtoul(optarg, 0, 10)));</div>
+<div class="line">            <a class="code" href="util_8h.html#aff6c95c5d023bcc9fb827a14c8e6ca4c">_dlevel</a> = (uint32_t)MIN(<a class="code" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a>, strtoul(optarg, 0, 10));</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
 <div class="line"><span class="preprocessor">#endif</span></div>
 <div class="line"><span class="preprocessor"></span>        <span class="keywordflow">case</span> <span class="charliteral">&#39;h&#39;</span>:</div>
@@ -392,7 +392,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 15 2017 05:06:54 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 15 2017 05:13:59 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
