@@ -15,5 +15,6 @@ var searchData=
   ['port',['port',['../structw__iov.html#a2370b82e72918815dadb10ef44e99349',1,'w_iov']]],
   ['postmain',['postmain',['../util_8c.html#a7231b8f0252e60cce4c383e16304544d',1,'util.c']]],
   ['premain',['premain',['../util_8c.html#a510a3ba7cf4242ea8da0fd5a52fc37f1',1,'util.c']]],
-  ['pro',['pro',['../structarp__hdr.html#a3444b62a7cd68b341c2a1cc59204b87a',1,'arp_hdr']]]
+  ['pro',['pro',['../structarp__hdr.html#a3444b62a7cd68b341c2a1cc59204b87a',1,'arp_hdr']]],
+  ['ptr',['ptr',['../structnetmap__slot.html#ad179b4b3689715000c364d00abdb05b4',1,'netmap_slot']]]
 ];

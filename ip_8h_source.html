@@ -127,7 +127,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">struct </span><a class="code" href="structw__iov.html">w_iov</a>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">struct </span><a class="code" href="structw__engine.html">w_engine</a>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct </span>netmap_ring;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">struct </span><a class="code" href="structnetmap__ring.html">netmap_ring</a>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="ip_8h.html#aff3341a14ac552b054eb4d96bf916241">   42</a></span>&#160;<span class="preprocessor">#define IP_ECT1 1 </span></div>
@@ -199,7 +199,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                                                       const uint16_t len);</div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<a class="code" href="ip_8h.html#a5140912b175371c1ed50dd8f4325a654">ip_rx</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, struct netmap_ring * const r);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<a class="code" href="ip_8h.html#a5140912b175371c1ed50dd8f4325a654">ip_rx</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, struct <a class="code" href="structnetmap__ring.html">netmap_ring</a> * const r);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;extern <span class="keywordtype">bool</span> __attribute__((nonnull))</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<a class="code" href="ip_8h.html#ad5934c09781e39f8bec7f5eae021f791">ip_tx</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, struct <a class="code" href="structw__iov.html">w_iov</a> * const v, const uint16_t len);</div>
@@ -224,6 +224,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structip__hdr_html_a16ba85b638f0f8d5cbd44ec49e658486"><div class="ttname"><a href="structip__hdr.html#a16ba85b638f0f8d5cbd44ec49e658486">ip_hdr::tos</a></div><div class="ttdeci">uint8_t tos</div><div class="ttdoc">DSCP/ECN byte. </div><div class="ttdef"><b>Definition:</b> ip.h:67</div></div>
 <div class="ttc" id="structw__engine_html"><div class="ttname"><a href="structw__engine.html">w_engine</a></div><div class="ttdoc">A warpcore backend engine. </div><div class="ttdef"><b>Definition:</b> warpcore.h:71</div></div>
 <div class="ttc" id="structip__hdr_html_a0ad10fca8f32392cd44acb61e743acb3"><div class="ttname"><a href="structip__hdr.html#a0ad10fca8f32392cd44acb61e743acb3">ip_hdr::off</a></div><div class="ttdeci">uint16_t off</div><div class="ttdoc">Flags &amp; fragment offset field. </div><div class="ttdef"><b>Definition:</b> ip.h:70</div></div>
+<div class="ttc" id="structnetmap__ring_html"><div class="ttname"><a href="structnetmap__ring.html">netmap_ring</a></div><div class="ttdef"><b>Definition:</b> netmap.h:279</div></div>
 <div class="ttc" id="structip__hdr_html_a3af0277b3175508397e51034ba4caa97"><div class="ttname"><a href="structip__hdr.html#a3af0277b3175508397e51034ba4caa97">ip_hdr::id</a></div><div class="ttdeci">uint16_t id</div><div class="ttdoc">IPv4 identification field. </div><div class="ttdef"><b>Definition:</b> ip.h:69</div></div>
 <div class="ttc" id="structip__hdr_html"><div class="ttname"><a href="structip__hdr.html">ip_hdr</a></div><div class="ttdoc">An IPv4 header representation; see RFC791 </div><div class="ttdef"><b>Definition:</b> ip.h:65</div></div>
 <div class="ttc" id="ip_8h_html_abce4a5aefa4ece9002ca4499828716ee"><div class="ttname"><a href="ip_8h.html#abce4a5aefa4ece9002ca4499828716ee">ip_tx_with_rx_buf</a></div><div class="ttdeci">void ip_tx_with_rx_buf(struct w_engine *w, const uint8_t p, void *const buf, const uint16_t len)</div></div>
@@ -235,7 +236,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 15 2017 04:29:02 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 15 2017 05:01:05 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['tail',['tail',['../structnetmap__ring.html#aaf077ab220816b275a48c154570ab1ee',1,'netmap_ring']]],
   ['tailq_5fclass_5fentry',['TAILQ_CLASS_ENTRY',['../queue_8h.html#a9cde1a83b5fce8c3c583d19446b6710a',1,'queue.h']]],
   ['tailq_5fclass_5fhead',['TAILQ_CLASS_HEAD',['../queue_8h.html#a612a17e93b64f98290e4e7ea56a9a519',1,'queue.h']]],
   ['tailq_5fconcat',['TAILQ_CONCAT',['../queue_8h.html#afe4852d23c85543fafc53ad409461750',1,'queue.h']]],
@@ -33,6 +34,7 @@ var searchData=
   ['tracebuf_5finitializer',['TRACEBUF_INITIALIZER',['../queue_8h.html#a0397af84b4a238c2b678721a88b6eccc',1,'queue.h']]],
   ['trashit',['TRASHIT',['../queue_8h.html#adee7bf054da0ade68bb853732c665a2b',1,'queue.h']]],
   ['tree_2eh',['tree.h',['../tree_8h.html',1,'']]],
+  ['ts',['ts',['../structnetmap__ring.html#a92b1183e066bcd2fc65a16b8f5cd57ae',1,'netmap_ring']]],
   ['ttl',['ttl',['../structip__hdr.html#aca4960340d0af5d81d63a7d5a83741b1',1,'ip_hdr']]],
   ['tx_5fpending',['tx_pending',['../structw__iov__stailq.html#ada12829bba787f2c8d8ae5a44f2f91e2',1,'w_iov_stailq']]],
   ['type',['type',['../structeth__hdr.html#ae58e97f701ce21c9cc0b065bbf2fc77c',1,'eth_hdr::type()'],['../structicmp__hdr.html#a4a1374ccda9dd6fc154cb83bc991ca61',1,'icmp_hdr::type()']]]

@@ -1,22 +1,25 @@
 <map id="w_connect" name="w_connect">
-<area shape="rect" id="node2" href="$backend_8h.html#af5df52522d52bfed04aa270094deaa78" title="Connect the given w_sock, using the netmap backend. " alt="" coords="139,147,263,173"/>
-<area shape="rect" id="node3" href="$arp_8c.html#aad7ca3e847867c4dcc618d034aa42739" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="312,147,411,173"/>
-<area shape="rect" id="node4" href="$arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="971,147,1082,173"/>
-<area shape="rect" id="node5" href="$warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="1131,248,1221,275"/>
-<area shape="rect" id="node6" href="$eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="1280,96,1339,123"/>
-<area shape="rect" id="node7" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="1139,45,1213,72"/>
-<area shape="rect" id="node8" href="$warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="459,147,533,173"/>
-<area shape="rect" id="node9" href="$eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="581,147,640,173"/>
-<area shape="rect" id="node10" href="$ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="692,299,743,325"/>
-<area shape="rect" id="node19" href="$arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="688,147,747,173"/>
-<area shape="rect" id="node11" href="$in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="1270,299,1349,325"/>
-<area shape="rect" id="node13" href="$udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="828,349,889,376"/>
-<area shape="rect" id="node16" href="$icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="993,197,1061,224"/>
-<area shape="rect" id="node18" href="$icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="825,299,893,325"/>
-<area shape="rect" id="node12" href="$in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="1398,299,1501,325"/>
-<area shape="rect" id="node14" href="$in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="986,349,1067,376"/>
-<area shape="rect" id="node15" href="$backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="989,400,1064,427"/>
-<area shape="rect" id="node17" href="$ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="1151,147,1201,173"/>
-<area shape="rect" id="node20" href="$arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="989,96,1064,123"/>
-<area shape="rect" id="node21" href="$arp_8c.html#ab422190f07f8dd9929c6802b53f5c8fa" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="795,147,923,173"/>
+<area shape="rect" id="node2" href="$backend_8h.html#af5df52522d52bfed04aa270094deaa78" title="Connect the given w_sock, using the netmap backend. " alt="" coords="139,93,263,120"/>
+<area shape="rect" id="node3" href="$arp_8c.html#aad7ca3e847867c4dcc618d034aa42739" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="312,93,411,120"/>
+<area shape="rect" id="node4" href="$arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="1025,144,1135,171"/>
+<area shape="rect" id="node5" href="$warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="1184,296,1275,323"/>
+<area shape="rect" id="node6" href="$eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="1333,195,1392,221"/>
+<area shape="rect" id="node9" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="1192,245,1267,272"/>
+<area shape="rect" id="node10" href="$warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="459,347,533,373"/>
+<area shape="rect" id="node7" href="$netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75" title="nm_ring_space" alt="" coords="1451,195,1562,221"/>
+<area shape="rect" id="node8" href="$netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="1457,245,1557,272"/>
+<area shape="rect" id="node11" href="$netmap_8h.html#a5fdd1b6f9d32c4d527c47a3a296fb304" title="nm_ring_empty" alt="" coords="582,372,693,399"/>
+<area shape="rect" id="node12" href="$eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="608,321,667,348"/>
+<area shape="rect" id="node13" href="$ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="745,397,796,424"/>
+<area shape="rect" id="node22" href="$arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="741,245,800,272"/>
+<area shape="rect" id="node14" href="$in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="1323,448,1402,475"/>
+<area shape="rect" id="node16" href="$udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="881,347,943,373"/>
+<area shape="rect" id="node19" href="$icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="1046,397,1114,424"/>
+<area shape="rect" id="node21" href="$icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="878,448,946,475"/>
+<area shape="rect" id="node15" href="$in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="1455,448,1558,475"/>
+<area shape="rect" id="node17" href="$in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="1039,296,1121,323"/>
+<area shape="rect" id="node18" href="$backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="1043,245,1117,272"/>
+<area shape="rect" id="node20" href="$ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="1204,347,1255,373"/>
+<area shape="rect" id="node23" href="$arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="1043,195,1117,221"/>
+<area shape="rect" id="node24" href="$arp_8c.html#ab422190f07f8dd9929c6802b53f5c8fa" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="848,195,976,221"/>
 </map>

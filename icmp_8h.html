@@ -140,7 +140,7 @@ Functions</h2></td></tr>
 <tr class="memitem:a901675b142551b335ad115ebef6431e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="icmp_8h.html#a901675b142551b335ad115ebef6431e3">icmp_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, const uint8_t type, const uint8_t code, uint8_t *const buf)</td></tr>
 <tr class="memdesc:a901675b142551b335ad115ebef6431e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Make an ICMP message with the given <code>type</code> and <code>code</code> based on the received packet in <code>buf</code>.  <a href="#a901675b142551b335ad115ebef6431e3">More...</a><br/></td></tr>
 <tr class="separator:a901675b142551b335ad115ebef6431e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b39f25900fc4f9895f7ced404e98718"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="icmp_8h.html#a2b39f25900fc4f9895f7ced404e98718">icmp_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, struct netmap_ring *const r)</td></tr>
+<tr class="memitem:a2b39f25900fc4f9895f7ced404e98718"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="icmp_8h.html#a2b39f25900fc4f9895f7ced404e98718">icmp_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *w, struct <a class="el" href="structnetmap__ring.html">netmap_ring</a> *const r)</td></tr>
 <tr class="memdesc:a2b39f25900fc4f9895f7ced404e98718"><td class="mdescLeft">&#160;</td><td class="mdescRight">Analyze an inbound ICMP packet and react to it.  <a href="#a2b39f25900fc4f9895f7ced404e98718">More...</a><br/></td></tr>
 <tr class="separator:a2b39f25900fc4f9895f7ced404e98718"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -229,7 +229,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct netmap_ring *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structnetmap__ring.html">netmap_ring</a> *const&#160;</td>
           <td class="paramname"><em>r</em>&#160;</td>
         </tr>
         <tr>
@@ -257,7 +257,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="icmp_8h_a2b39f25900fc4f9895f7ced404e98718_cgraph.png" border="0" usemap="#icmp_8h_a2b39f25900fc4f9895f7ced404e98718_cgraph" alt=""/></div>
 <map name="icmp_8h_a2b39f25900fc4f9895f7ced404e98718_cgraph" id="icmp_8h_a2b39f25900fc4f9895f7ced404e98718_cgraph">
-<area shape="rect" id="node2" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="379,5,458,32"/><area shape="rect" id="node4" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="123,56,191,83"/><area shape="rect" id="node3" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="507,5,610,32"/><area shape="rect" id="node5" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="240,56,331,83"/><area shape="rect" id="node6" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="260,107,311,133"/><area shape="rect" id="node8" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="248,157,323,184"/><area shape="rect" id="node7" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="389,107,448,133"/></map>
+<area shape="rect" id="node2" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="379,5,458,32"/><area shape="rect" id="node4" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="123,56,191,83"/><area shape="rect" id="node3" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="511,5,614,32"/><area shape="rect" id="node5" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="240,56,331,83"/><area shape="rect" id="node6" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="260,107,311,133"/><area shape="rect" id="node10" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="381,157,456,184"/><area shape="rect" id="node7" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="389,107,448,133"/><area shape="rect" id="node8" href="netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75" title="nm_ring_space" alt="" coords="507,107,618,133"/><area shape="rect" id="node9" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="513,157,613,184"/></map>
 </div>
 </p>
 
@@ -315,7 +315,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="icmp_8h_a901675b142551b335ad115ebef6431e3_cgraph.png" border="0" usemap="#icmp_8h_a901675b142551b335ad115ebef6431e3_cgraph" alt=""/></div>
 <map name="icmp_8h_a901675b142551b335ad115ebef6431e3_cgraph" id="icmp_8h_a901675b142551b335ad115ebef6431e3_cgraph">
-<area shape="rect" id="node2" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="123,5,213,32"/><area shape="rect" id="node3" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="262,56,341,83"/><area shape="rect" id="node5" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="143,107,193,133"/><area shape="rect" id="node7" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="131,157,205,184"/><area shape="rect" id="node4" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="390,56,493,83"/><area shape="rect" id="node6" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="272,107,331,133"/></map>
+<area shape="rect" id="node2" href="warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="123,5,213,32"/><area shape="rect" id="node3" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="262,56,341,83"/><area shape="rect" id="node5" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="143,107,193,133"/><area shape="rect" id="node9" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="264,157,339,184"/><area shape="rect" id="node4" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="394,56,497,83"/><area shape="rect" id="node6" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="272,107,331,133"/><area shape="rect" id="node7" href="netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75" title="nm_ring_space" alt="" coords="390,107,501,133"/><area shape="rect" id="node8" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="395,157,495,184"/></map>
 </div>
 </p>
 
@@ -324,7 +324,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 15 2017 04:29:02 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 15 2017 05:01:05 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

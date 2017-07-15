@@ -307,7 +307,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line">        <span class="keyword">struct </span><a name="_a10"></a><a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> o;</div>
 <div class="line">        <a name="a11"></a><a class="code" href="warpcore_8h.html#a689204eb10c7dbef64428413352fff85">w_alloc_len</a>(w, &amp;o, len, 0);</div>
 <div class="line">        <span class="keywordtype">long</span> iter = loops;</div>
-<div class="line">        <span class="keywordflow">while</span> (<a name="a12"></a><a class="code" href="util_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a>(iter--)) {</div>
+<div class="line">        <span class="keywordflow">while</span> (<a name="a12"></a><a class="code" href="netmap__user_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a>(iter--)) {</div>
 <div class="line">            <span class="comment">// get the current time</span></div>
 <div class="line">            <span class="keyword">struct </span>timespec before_tx;</div>
 <div class="line">            <a class="code" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(clock_gettime(CLOCK_MONOTONIC, &amp;before_tx) != -1,</div>
@@ -342,7 +342,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">            <span class="comment">// wait for a reply; loop until timeout or we have received all data</span></div>
 <div class="line">            <span class="keyword">struct </span><a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> i = <a name="a24"></a><a class="code" href="warpcore_8h.html#a66e9fb9b95d09984dcfd0e987fe0f1d9">w_iov_stailq_initializer</a>(i);</div>
-<div class="line">            <span class="keywordflow">while</span> (<a class="code" href="util_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a>(<a name="a25"></a><a class="code" href="warpcore_8h.html#a2570e386e8776c6cc5203f56490a6a54">w_iov_stailq_len</a>(&amp;i) &lt; len &amp;&amp; done == <span class="keyword">false</span>)) {</div>
+<div class="line">            <span class="keywordflow">while</span> (<a class="code" href="netmap__user_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a>(<a name="a25"></a><a class="code" href="warpcore_8h.html#a2570e386e8776c6cc5203f56490a6a54">w_iov_stailq_len</a>(&amp;i) &lt; len &amp;&amp; done == <span class="keyword">false</span>)) {</div>
 <div class="line">                <span class="comment">// receive new data (there may not be any if busy-waiting)</span></div>
 <div class="line">                <span class="keywordflow">if</span> (<a name="a26"></a><a class="code" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d">w_nic_rx</a>(w, busywait ? 0 : -1) == <span class="keyword">false</span>)</div>
 <div class="line">                    <span class="keywordflow">continue</span>;</div>
@@ -392,7 +392,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 15 2017 04:29:02 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 15 2017 05:01:05 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

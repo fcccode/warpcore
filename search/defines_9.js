@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['likely',['likely',['../util_8h.html#a217a0bd562b98ae8c2ffce44935351e1',1,'util.h']]],
+  ['likely',['likely',['../netmap__user_8h.html#a217a0bd562b98ae8c2ffce44935351e1',1,'likely():&#160;netmap_user.h'],['../util_8h.html#a217a0bd562b98ae8c2ffce44935351e1',1,'likely():&#160;util.h']]],
   ['list_5fclass_5fentry',['LIST_CLASS_ENTRY',['../queue_8h.html#a329cf1e6182d97db4443f57b9ffad13f',1,'queue.h']]],
   ['list_5fclass_5fhead',['LIST_CLASS_HEAD',['../queue_8h.html#a6b134bbd708a547e1539db14ea4e4c9c',1,'queue.h']]],
   ['list_5fconcat',['LIST_CONCAT',['../queue_8h.html#a0e696dc3099be6d74209aac3902df81d',1,'queue.h']]],

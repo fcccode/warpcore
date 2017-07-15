@@ -8,5 +8,6 @@ var searchData=
   ['_5fdlevel',['_dlevel',['../util_8h.html#aff6c95c5d023bcc9fb827a14c8e6ca4c',1,'_dlevel():&#160;util.c'],['../util_8c.html#aff6c95c5d023bcc9fb827a14c8e6ca4c',1,'_dlevel():&#160;util.c']]],
   ['_5fepoch',['_epoch',['../util_8h.html#ad520a2ca0199ec9bb85c37772900e332',1,'_epoch():&#160;util.c'],['../util_8c.html#ad520a2ca0199ec9bb85c37772900e332',1,'_epoch():&#160;util.c']]],
   ['_5fhexdump',['_hexdump',['../util_8h.html#a7a3fc877ae19d64e52cff7e0ceff7668',1,'_hexdump(const void *const ptr, const size_t len, const char *const ptr_name, const char *const func, const char *const file, const int line):&#160;util.c'],['../util_8c.html#a7a3fc877ae19d64e52cff7e0ceff7668',1,'_hexdump(const void *const ptr, const size_t len, const char *const ptr_name, const char *const func, const char *const file, const int line):&#160;util.c']]],
+  ['_5fnetmap_5foffset',['_NETMAP_OFFSET',['../netmap__user_8h.html#a2e5f7a81f63c53e2a5532a343f26cd0f',1,'netmap_user.h']]],
   ['_5funused_5f2',['_unused_2',['../structw__backend.html#ab64dbe696889010f15443fadf7ad9f7e',1,'w_backend']]]
 ];

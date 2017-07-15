@@ -150,8 +150,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifdef WITH_NETMAP</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor"></span>    <span class="keywordtype">int</span> fd;                     </div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    uint32_t cur_txr;           </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">struct </span>netmap_if * nif;     </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">struct </span>nmreq * req;         </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">struct </span><a class="code" href="structnetmap__if.html">netmap_if</a> * nif;     </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">struct </span><a class="code" href="structnmreq.html">nmreq</a> * req;         </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">struct </span>arp_cache arp_cache; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    uint32_t * tail;            </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    uint16_t next_eph;          </div>
@@ -202,6 +202,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structw__backend_html"><div class="ttname"><a href="structw__backend.html">w_backend</a></div><div class="ttdef"><b>Definition:</b> backend.h:70</div></div>
 <div class="ttc" id="warpcore_8h_html"><div class="ttname"><a href="warpcore_8h.html">warpcore.h</a></div></div>
 <div class="ttc" id="ip_8h_html"><div class="ttname"><a href="ip_8h.html">ip.h</a></div></div>
+<div class="ttc" id="structnmreq_html"><div class="ttname"><a href="structnmreq.html">nmreq</a></div><div class="ttdef"><b>Definition:</b> netmap.h:494</div></div>
+<div class="ttc" id="structnetmap__if_html"><div class="ttname"><a href="structnetmap__if.html">netmap_if</a></div><div class="ttdef"><b>Definition:</b> netmap.h:338</div></div>
 <div class="ttc" id="structw__sock_html"><div class="ttname"><a href="structw__sock.html">w_sock</a></div><div class="ttdoc">A warpcore socket. </div><div class="ttdef"><b>Definition:</b> warpcore.h:133</div></div>
 <div class="ttc" id="backend_8h_html_ad2441128817a4242a994f56eba7154d6"><div class="ttname"><a href="backend_8h.html#ad2441128817a4242a994f56eba7154d6">SLIST_HEAD</a></div><div class="ttdeci">SLIST_HEAD(w_engines, w_engine) engines</div><div class="ttdoc">Global list of initialized warpcore engines. </div></div>
 <div class="ttc" id="backend_8h_html_a7e43d05a55650db2be88e9eece99905d"><div class="ttname"><a href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a></div><div class="ttdeci">void backend_cleanup(struct w_engine *const w)</div><div class="ttdoc">Shut a warpcore netmap engine down cleanly. </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:139</div></div>
@@ -222,7 +224,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 15 2017 04:29:02 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 15 2017 05:01:05 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>warpcore: include/warpcore -&gt; include Relation</title>
+<title>warpcore: nm_ifreq Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
       <li><a href="examples.html"><span>Examples</span></a></li>
       <li>
@@ -59,6 +59,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       </li>
     </ul>
   </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Data&#160;Structures</span></a></li>
+      <li><a href="classes.html"><span>Data&#160;Structure&#160;Index</span></a></li>
+      <li><a href="functions.html"><span>Data&#160;Fields</span></a></li>
+    </ul>
+  </div>
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -73,16 +80,56 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="dir_5a30104352ef4255dc24354b02eb2d20.html">include</a></li><li class="navelem"><a class="el" href="dir_97d138a73ae032e985e8b1a388f68947.html">warpcore</a></li>  </ul>
-</div>
 </div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Data Fields</a>  </div>
+  <div class="headertitle">
+<div class="title">nm_ifreq Struct Reference</div>  </div>
+</div><!--header-->
 <div class="contents">
-<h3>warpcore &rarr; include Relation</h3><table class="dirtab"><tr class="dirtab"><th class="dirtab">File in include/warpcore</th><th class="dirtab">Includes file in include</th></tr><tr class="dirtab"><td class="dirtab"><a class="el" href="warpcore_8h.html">warpcore.h</a></td><td class="dirtab"><a class="el" href="dir_a9681ec83a2be75df99e11bff525b1ab.html">warpcore</a>&#160;/&#160;<a class="el" href="config_8h.html">config.h</a></td></tr></table></div><!-- contents -->
+
+<p><code>#include &lt;<a class="el" href="netmap_8h_source.html">netmap.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Data Fields</h2></td></tr>
+<tr class="memitem:a2c9a809d729f5ea7c5f14d7e56efbac6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnm__ifreq.html#a2c9a809d729f5ea7c5f14d7e56efbac6">nifr_name</a> [IFNAMSIZ]</td></tr>
+<tr class="separator:a2c9a809d729f5ea7c5f14d7e56efbac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61da0c20ca0c61107ffc17657f25ebd6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnm__ifreq.html#a61da0c20ca0c61107ffc17657f25ebd6">data</a> [<a class="el" href="netmap_8h.html#af1234879b75c0d9b9f5279a9a6ff6a42">NM_IFRDATA_LEN</a>]</td></tr>
+<tr class="separator:a61da0c20ca0c61107ffc17657f25ebd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a61da0c20ca0c61107ffc17657f25ebd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char nm_ifreq::data[<a class="el" href="netmap_8h.html#af1234879b75c0d9b9f5279a9a6ff6a42">NM_IFRDATA_LEN</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2c9a809d729f5ea7c5f14d7e56efbac6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char nm_ifreq::nifr_name[IFNAMSIZ]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li>include/net/<a class="el" href="netmap_8h_source.html">netmap.h</a></li>
+</ul>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Jul 15 2017 04:29:02 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Jul 15 2017 05:01:05 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

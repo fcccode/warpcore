@@ -16,5 +16,7 @@ var searchData=
   ['bln',['BLN',['../util_8h.html#affc43d19d38fedbf7a83ea1730115c02',1,'util.h']]],
   ['blu',['BLU',['../util_8h.html#add9307de87f38e77d336751e305886f6',1,'util.h']]],
   ['buf',['buf',['../structw__iov.html#a2b33510e8a5b556deef4fb2b29b62a9e',1,'w_iov']]],
+  ['buf_5fidx',['buf_idx',['../structnetmap__slot.html#a53b5fc7beb0712b9c41f344177894ade',1,'netmap_slot']]],
+  ['buf_5fofs',['buf_ofs',['../structnetmap__ring.html#a7ffcfff1be1ca50a663914184b7faecf',1,'netmap_ring']]],
   ['bufs',['bufs',['../structw__engine.html#afa8ad906202b2098b44fb6a5bdeb5c20',1,'w_engine']]]
 ];

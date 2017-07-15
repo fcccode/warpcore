@@ -1,0 +1,4 @@
+<map id="eth_tx" name="eth_tx">
+<area shape="rect" id="node2" href="$netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75" title="nm_ring_space" alt="" coords="113,5,223,32"/>
+<area shape="rect" id="node3" href="$netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="118,56,218,83"/>
+</map>

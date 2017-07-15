@@ -1,5 +1,7 @@
 <map id="arp_is_at" name="arp_is_at">
 <area shape="rect" id="node2" href="$warpcore_8h.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="128,5,219,32"/>
 <area shape="rect" id="node3" href="$eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="144,56,203,83"/>
-<area shape="rect" id="node4" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="136,107,211,133"/>
+<area shape="rect" id="node6" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="136,107,211,133"/>
+<area shape="rect" id="node4" href="$netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75" title="nm_ring_space" alt="" coords="267,56,378,83"/>
+<area shape="rect" id="node5" href="$netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="273,107,373,133"/>
 </map>

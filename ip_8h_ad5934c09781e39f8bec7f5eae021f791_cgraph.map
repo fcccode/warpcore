@@ -1,5 +1,7 @@
 <map id="ip_tx" name="ip_tx">
 <area shape="rect" id="node2" href="$in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="105,5,183,32"/>
 <area shape="rect" id="node4" href="$eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="115,56,173,83"/>
-<area shape="rect" id="node3" href="$in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="233,5,335,32"/>
+<area shape="rect" id="node3" href="$in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="237,5,339,32"/>
+<area shape="rect" id="node5" href="$netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75" title="nm_ring_space" alt="" coords="233,56,343,83"/>
+<area shape="rect" id="node6" href="$netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="238,107,338,133"/>
 </map>
