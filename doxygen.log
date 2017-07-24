@@ -14,12 +14,28 @@ Searching for files in directory /home/travis/build/NTAP/warpcore/lib/include/wa
 Searching for files in directory /home/travis/build/NTAP/warpcore/lib/src
 Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib
 Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-C
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-C/bin
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/boo.dir
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-C/bin/CMakeFiles/foo.dir
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-C/src
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-CXX
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-CXX/bin
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/boo.dir
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-CXX/bin/CMakeFiles/foo.dir
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-CXX/src
 Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/obj_all.dir
 Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/obj_all.dir/src
 Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/obj_sock.dir
 Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/obj_sock.dir/src
 Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/obj_warp.dir
 Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/obj_warp.dir/src
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/sock_dyn.dir
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/sock_stat.dir
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/warp_dyn.dir
+Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/warp_stat.dir
 Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/include
 Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/include/warpcore
 Searching for files in directory /home/travis/build/NTAP/warpcore/build/lib/src
@@ -73,6 +89,10 @@ Preprocessing /home/travis/build/NTAP/warpcore/lib/src/util.c...
 Parsing file /home/travis/build/NTAP/warpcore/lib/src/util.c...
 Preprocessing /home/travis/build/NTAP/warpcore/lib/src/warpcore.c...
 Parsing file /home/travis/build/NTAP/warpcore/lib/src/warpcore.c...
+Preprocessing /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-C/src/foo.c...
+Parsing file /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-C/src/foo.c...
+Preprocessing /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-C/src/main.c...
+Parsing file /home/travis/build/NTAP/warpcore/build/lib/CMakeFiles/_CMakeLTOTest-C/src/main.c...
 Preprocessing /home/travis/build/NTAP/warpcore/build/lib/include/warpcore/config.h...
 Parsing file /home/travis/build/NTAP/warpcore/build/lib/include/warpcore/config.h...
 Preprocessing /home/travis/build/NTAP/warpcore/build/lib/src/config.c...
@@ -94,7 +114,11 @@ Searching for documented variables...
 Building interface member list...
 Building member list...
 Searching for friends...
-Searching for documented defines...
+Searching for documented defines.../home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:114: warning: argument 'fmt' of command @param is not found in the argument list of die(...)
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:263: warning: argument 'fmt' of command @param is not found in the argument list of ensure(e,...)
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:224: warning: argument 'fmt' of command @param is not found in the argument list of rwarn(dlevel, lps,...)
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:191: warning: argument 'fmt' of command @param is not found in the argument list of warn(dlevel,...)
+
 Computing class inheritance relations...
 Computing class usage relations...
 Flushing cached template relations that have become invalid...
@@ -132,6 +156,8 @@ Generating example documentation...
 Generating docs for example inetd.c...
 Generating docs for example ping.c...
 Generating file sources...
+Parsing code for file CMakeFiles/_CMakeLTOTest-C/src/foo.c...
+Parsing code for file CMakeFiles/_CMakeLTOTest-C/src/main.c...
 Generating code for file include/warpcore/config.h...
 Parsing code for file src/config.c...
 Generating code for file include/net/netmap.h...
@@ -153,17 +179,16 @@ Generating code for file src/icmp.h...
 Parsing code for file src/in_cksum.c...
 Parsing code for file src/ip.c...
 Generating code for file src/ip.h...
-Parsing code for file src/plat.c../home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:114: warning: argument 'fmt' of command @param is not found in the argument list of die(...)
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:263: warning: argument 'fmt' of command @param is not found in the argument list of ensure(e,...)
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:224: warning: argument 'fmt' of command @param is not found in the argument list of rwarn(dlevel, lps,...)
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:191: warning: argument 'fmt' of command @param is not found in the argument list of warn(dlevel,...)
-.
+Parsing code for file src/plat.c...
 Parsing code for file src/udp.c...
 Generating code for file src/udp.h...
 Parsing code for file src/util.c...
 Parsing code for file src/warpcore.c...
 Parsing code for file README.md...
 Generating file documentation...
+Generating docs for file CMakeFiles/_CMakeLTOTest-C/src/foo.c...
+Generating docs for file CMakeFiles/_CMakeLTOTest-C/src/main.c...
+Generating call graph for function main
 Generating docs for file include/warpcore/config.h...
 Generating docs for file src/config.c...
 Generating docs for file include/net/netmap.h...
@@ -271,11 +296,14 @@ Generating docs for compound w_sock...
 Generating namespace index...
 Generating graph info page...
 Generating directory documentation...
+Generating dependency graph for directory CMakeFiles/_CMakeLTOTest-C
+Generating dependency graph for directory CMakeFiles
 Generating dependency graph for directory include
 Generating dependency graph for directory include
 Generating dependency graph for directory include/net
 Generating dependency graph for directory src
 Generating dependency graph for directory src
+Generating dependency graph for directory CMakeFiles/_CMakeLTOTest-C/src
 Generating dependency graph for directory include/warpcore
 Generating dependency graph for directory include/warpcore
 Generating index page...
@@ -294,149 +322,157 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 33 parallel threads...
-Running dot for graph 1/106
-Running dot for graph 2/106
-Running dot for graph 3/106
-Running dot for graph 4/106
-Running dot for graph 5/106
-Running dot for graph 6/106
-Running dot for graph 7/106
-Running dot for graph 8/106
-Running dot for graph 9/106
-Running dot for graph 10/106
-Running dot for graph 11/106
-Running dot for graph 12/106
-Running dot for graph 13/106
-Running dot for graph 14/106
-Running dot for graph 15/106
-Running dot for graph 16/106
-Running dot for graph 17/106
-Running dot for graph 18/106
-Running dot for graph 19/106
-Running dot for graph 20/106
-Running dot for graph 21/106
-Running dot for graph 22/106
-Running dot for graph 23/106
-Running dot for graph 24/106
-Running dot for graph 25/106
-Running dot for graph 26/106
-Running dot for graph 27/106
-Running dot for graph 28/106
-Running dot for graph 29/106
-Running dot for graph 30/106
-Running dot for graph 31/106
-Running dot for graph 32/106
-Running dot for graph 33/106
-Running dot for graph 34/106
-Running dot for graph 35/106
-Running dot for graph 36/106
-Running dot for graph 37/106
-Running dot for graph 38/106
-Running dot for graph 39/106
-Running dot for graph 40/106
-Running dot for graph 41/106
-Running dot for graph 42/106
-Running dot for graph 43/106
-Running dot for graph 44/106
-Running dot for graph 45/106
-Running dot for graph 46/106
-Running dot for graph 47/106
-Running dot for graph 48/106
-Running dot for graph 49/106
-Running dot for graph 50/106
-Running dot for graph 51/106
-Running dot for graph 52/106
-Running dot for graph 53/106
-Running dot for graph 54/106
-Running dot for graph 55/106
-Running dot for graph 56/106
-Running dot for graph 57/106
-Running dot for graph 58/106
-Running dot for graph 59/106
-Running dot for graph 60/106
-Running dot for graph 61/106
-Running dot for graph 62/106
-Running dot for graph 63/106
-Running dot for graph 64/106
-Running dot for graph 65/106
-Running dot for graph 66/106
-Running dot for graph 67/106
-Running dot for graph 68/106
-Running dot for graph 69/106
-Running dot for graph 70/106
-Running dot for graph 71/106
-Running dot for graph 72/106
-Running dot for graph 73/106
-Running dot for graph 74/106
-Running dot for graph 75/106
-Running dot for graph 76/106
-Running dot for graph 77/106
-Running dot for graph 78/106
-Running dot for graph 79/106
-Running dot for graph 80/106
-Running dot for graph 81/106
-Running dot for graph 82/106
-Running dot for graph 83/106
-Running dot for graph 84/106
-Running dot for graph 85/106
-Running dot for graph 86/106
-Running dot for graph 87/106
-Running dot for graph 88/106
-Running dot for graph 89/106
-Running dot for graph 90/106
-Running dot for graph 91/106
-Running dot for graph 92/106
-Running dot for graph 93/106
-Running dot for graph 94/106
-Running dot for graph 95/106
-Running dot for graph 96/106
-Running dot for graph 97/106
-Running dot for graph 98/106
-Running dot for graph 99/106
-Running dot for graph 100/106
-Running dot for graph 101/106
-Running dot for graph 102/106
-Running dot for graph 103/106
-Running dot for graph 104/106
-Running dot for graph 105/106
-Running dot for graph 106/106
-Patching output file 1/38
-Patching output file 2/38
-Patching output file 3/38
-Patching output file 4/38
-Patching output file 5/38
-Patching output file 6/38
-Patching output file 7/38
-Patching output file 8/38
-Patching output file 9/38
-Patching output file 10/38
-Patching output file 11/38
-Patching output file 12/38
-Patching output file 13/38
-Patching output file 14/38
-Patching output file 15/38
-Patching output file 16/38
-Patching output file 17/38
-Patching output file 18/38
-Patching output file 19/38
-Patching output file 20/38
-Patching output file 21/38
-Patching output file 22/38
-Patching output file 23/38
-Patching output file 24/38
-Patching output file 25/38
-Patching output file 26/38
-Patching output file 27/38
-Patching output file 28/38
-Patching output file 29/38
-Patching output file 30/38
-Patching output file 31/38
-Patching output file 32/38
-Patching output file 33/38
-Patching output file 34/38
-Patching output file 35/38
-Patching output file 36/38
-Patching output file 37/38
-Patching output file 38/38
-lookup cache used 730/65536 hits=4189 misses=740
+Running dot for graph 1/110
+Running dot for graph 2/110
+Running dot for graph 3/110
+Running dot for graph 4/110
+Running dot for graph 5/110
+Running dot for graph 6/110
+Running dot for graph 7/110
+Running dot for graph 8/110
+Running dot for graph 9/110
+Running dot for graph 10/110
+Running dot for graph 11/110
+Running dot for graph 12/110
+Running dot for graph 13/110
+Running dot for graph 14/110
+Running dot for graph 15/110
+Running dot for graph 16/110
+Running dot for graph 17/110
+Running dot for graph 18/110
+Running dot for graph 19/110
+Running dot for graph 20/110
+Running dot for graph 21/110
+Running dot for graph 22/110
+Running dot for graph 23/110
+Running dot for graph 24/110
+Running dot for graph 25/110
+Running dot for graph 26/110
+Running dot for graph 27/110
+Running dot for graph 28/110
+Running dot for graph 29/110
+Running dot for graph 30/110
+Running dot for graph 31/110
+Running dot for graph 32/110
+Running dot for graph 33/110
+Running dot for graph 34/110
+Running dot for graph 35/110
+Running dot for graph 36/110
+Running dot for graph 37/110
+Running dot for graph 38/110
+Running dot for graph 39/110
+Running dot for graph 40/110
+Running dot for graph 41/110
+Running dot for graph 42/110
+Running dot for graph 43/110
+Running dot for graph 44/110
+Running dot for graph 45/110
+Running dot for graph 46/110
+Running dot for graph 47/110
+Running dot for graph 48/110
+Running dot for graph 49/110
+Running dot for graph 50/110
+Running dot for graph 51/110
+Running dot for graph 52/110
+Running dot for graph 53/110
+Running dot for graph 54/110
+Running dot for graph 55/110
+Running dot for graph 56/110
+Running dot for graph 57/110
+Running dot for graph 58/110
+Running dot for graph 59/110
+Running dot for graph 60/110
+Running dot for graph 61/110
+Running dot for graph 62/110
+Running dot for graph 63/110
+Running dot for graph 64/110
+Running dot for graph 65/110
+Running dot for graph 66/110
+Running dot for graph 67/110
+Running dot for graph 68/110
+Running dot for graph 69/110
+Running dot for graph 70/110
+Running dot for graph 71/110
+Running dot for graph 72/110
+Running dot for graph 73/110
+Running dot for graph 74/110
+Running dot for graph 75/110
+Running dot for graph 76/110
+Running dot for graph 77/110
+Running dot for graph 78/110
+Running dot for graph 79/110
+Running dot for graph 80/110
+Running dot for graph 81/110
+Running dot for graph 82/110
+Running dot for graph 83/110
+Running dot for graph 84/110
+Running dot for graph 85/110
+Running dot for graph 86/110
+Running dot for graph 87/110
+Running dot for graph 88/110
+Running dot for graph 89/110
+Running dot for graph 90/110
+Running dot for graph 91/110
+Running dot for graph 92/110
+Running dot for graph 93/110
+Running dot for graph 94/110
+Running dot for graph 95/110
+Running dot for graph 96/110
+Running dot for graph 97/110
+Running dot for graph 98/110
+Running dot for graph 99/110
+Running dot for graph 100/110
+Running dot for graph 101/110
+Running dot for graph 102/110
+Running dot for graph 103/110
+Running dot for graph 104/110
+Running dot for graph 105/110
+Running dot for graph 106/110
+Running dot for graph 107/110
+Running dot for graph 108/110
+Running dot for graph 109/110
+Running dot for graph 110/110
+Patching output file 1/42
+Patching output file 2/42
+Patching output file 3/42
+Patching output file 4/42
+Patching output file 5/42
+Patching output file 6/42
+Patching output file 7/42
+Patching output file 8/42
+Patching output file 9/42
+Patching output file 10/42
+Patching output file 11/42
+Patching output file 12/42
+Patching output file 13/42
+Patching output file 14/42
+Patching output file 15/42
+Patching output file 16/42
+Patching output file 17/42
+Patching output file 18/42
+Patching output file 19/42
+Patching output file 20/42
+Patching output file 21/42
+Patching output file 22/42
+Patching output file 23/42
+Patching output file 24/42
+Patching output file 25/42
+Patching output file 26/42
+Patching output file 27/42
+Patching output file 28/42
+Patching output file 29/42
+Patching output file 30/42
+Patching output file 31/42
+Patching output file 32/42
+Patching output file 33/42
+Patching output file 34/42
+Patching output file 35/42
+Patching output file 36/42
+Patching output file 37/42
+Patching output file 38/42
+Patching output file 39/42
+Patching output file 40/42
+Patching output file 41/42
+Patching output file 42/42
+lookup cache used 733/65536 hits=4194 misses=743
 finished...
