@@ -1,10 +1,9 @@
 var searchData=
 [
-  ['plat_5fget_5flink',['plat_get_link',['../plat_8h.html#a2f7eb56d857e3fc97476186dbf10d36b',1,'plat_get_link(const struct ifaddrs *const i):&#160;plat.c'],['../plat_8c.html#a84253d34fd3d0f7c55d4b319c4d2618b',1,'plat_get_link(const struct ifaddrs *i):&#160;plat.c']]],
-  ['plat_5fget_5fmac',['plat_get_mac',['../plat_8h.html#ac645a18d329f9204ceddb21bff751abd',1,'plat_get_mac(struct ether_addr *const mac, const struct ifaddrs *const i):&#160;plat.c'],['../plat_8c.html#ac645a18d329f9204ceddb21bff751abd',1,'plat_get_mac(struct ether_addr *const mac, const struct ifaddrs *const i):&#160;plat.c']]],
-  ['plat_5fget_5fmbps',['plat_get_mbps',['../plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168',1,'plat_get_mbps(const struct ifaddrs *const i):&#160;plat.c'],['../plat_8c.html#a5d7a687500042a6283402c4154bf453c',1,'plat_get_mbps(const struct ifaddrs *i):&#160;plat.c']]],
-  ['plat_5fget_5fmtu',['plat_get_mtu',['../plat_8h.html#aed8665163695e9a71d2d423f978c4b6a',1,'plat_get_mtu(const struct ifaddrs *const i):&#160;plat.c'],['../plat_8c.html#ababcbad22db97091f566216a5b2b849f',1,'plat_get_mtu(const struct ifaddrs *i):&#160;plat.c']]],
-  ['plat_5finitrandom',['plat_initrandom',['../plat_8h.html#a71fbdcd4631b4e0a0146fc7f3b2d27a1',1,'plat_initrandom(void):&#160;plat.c'],['../plat_8c.html#a71fbdcd4631b4e0a0146fc7f3b2d27a1',1,'plat_initrandom(void):&#160;plat.c']]],
-  ['postmain',['postmain',['../util_8c.html#a7231b8f0252e60cce4c383e16304544d',1,'util.c']]],
-  ['premain',['premain',['../util_8c.html#a510a3ba7cf4242ea8da0fd5a52fc37f1',1,'util.c']]]
+  ['slist_5fentry',['SLIST_ENTRY',['../structw__engine.html#ac5547ee2ef8246542b9c0d48b74b02fc',1,'w_engine::SLIST_ENTRY()'],['../structw__sock.html#a1fe244ebdfd0f22d3bb05288bc251ada',1,'w_sock::SLIST_ENTRY()']]],
+  ['slist_5fhead',['SLIST_HEAD',['../warpcore_8h.html#a83b86f011acb496a1aa350a83442be77',1,'SLIST_HEAD(w_sock_slist, w_sock):&#160;warpcore.h'],['../backend_8h.html#ad2441128817a4242a994f56eba7154d6',1,'SLIST_HEAD(w_engines, w_engine) engines:&#160;backend.h']]],
+  ['splay_5fentry',['SPLAY_ENTRY',['../structw__sock.html#a66c89a4b288fc0b434f98ffa407b6cbc',1,'w_sock::SPLAY_ENTRY()'],['../structarp__entry.html#abe7fe99906a77b8e41fa2d59a3c9ac50',1,'arp_entry::SPLAY_ENTRY()']]],
+  ['splay_5fhead',['SPLAY_HEAD',['../warpcore_8h.html#abecee1241663c8ff2f078bad1595531f',1,'SPLAY_HEAD(sock, w_sock):&#160;warpcore.h'],['../arp_8h.html#acb96d32ef2060d91618aaf4333bdec58',1,'SPLAY_HEAD(arp_cache, arp_entry):&#160;arp.h']]],
+  ['stailq_5fentry',['STAILQ_ENTRY',['../structw__iov.html#a63096f96ebff68793ccac843ad3354ab',1,'w_iov']]],
+  ['stailq_5fhead',['STAILQ_HEAD',['../structw__engine.html#a1e8766eb2e008799eac78a5a083ac235',1,'w_engine::STAILQ_HEAD()'],['../structw__iov__stailq.html#aaca5c68f7f27984d54967e37af73a44d',1,'w_iov_stailq::STAILQ_HEAD()'],['../structw__sock.html#abd85085e95c56fcccd5ea70d50107d30',1,'w_sock::STAILQ_HEAD()']]]
 ];
