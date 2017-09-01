@@ -1,4 +1,4 @@
 <map id="w_alloc_cnt" name="w_alloc_cnt">
-<area shape="rect" id="node2" href="$warpcore_8c.html#a055b1821576c9c79d8bea15c13a17f93" title="Helper function for w_alloc_size and w_alloc_cnt. " alt="" coords="144,5,219,32"/>
+<area shape="rect" id="node2" href="$warpcore_8c.html#af0a91ff02a8e6a69fa3727bea99efb88" title="Helper function for w_alloc_size and w_alloc_cnt. " alt="" coords="144,5,219,32"/>
 <area shape="rect" id="node3" href="$warpcore_8c.html#a82e841cb10098960c39ab26a17b20843" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="267,5,357,32"/>
 </map>
