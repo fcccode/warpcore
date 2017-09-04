@@ -59,5 +59,6 @@ var searchData=
   ['ns_5fport_5fmask',['NS_PORT_MASK',['../netmap_8h.html#a6453b2031da74dc33b5b00ad318675a7',1,'netmap.h']]],
   ['ns_5fport_5fshift',['NS_PORT_SHIFT',['../netmap_8h.html#a88aaf951c6911fd809a305a7e0e930b1',1,'netmap.h']]],
   ['ns_5freport',['NS_REPORT',['../netmap_8h.html#a8bf3e16b1288e0ef6f0ba5747b5e5294',1,'netmap.h']]],
-  ['ns_5frfrags',['NS_RFRAGS',['../netmap_8h.html#a87286a29067b634a9748ba110525ad58',1,'netmap.h']]]
+  ['ns_5frfrags',['NS_RFRAGS',['../netmap_8h.html#a87286a29067b634a9748ba110525ad58',1,'netmap.h']]],
+  ['nte',['NTE',['../util_8h.html#a94282510eb8ab66918691df2c0833f68',1,'util.h']]]
 ];

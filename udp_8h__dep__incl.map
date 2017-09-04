@@ -6,5 +6,6 @@
 <area shape="rect" id="node7" href="$ip_8c.html" title="src/ip.c" alt="" coords="542,155,607,181"/>
 <area shape="rect" id="node8" href="$udp_8c.html" title="src/udp.c" alt="" coords="631,155,707,181"/>
 <area shape="rect" id="node9" href="$warpcore_8c.html" title="src/warpcore.c" alt="" coords="731,155,839,181"/>
+<area shape="rect" id="node10" href="$icmp_8c.html" title="src/icmp.c" alt="" coords="709,80,791,107"/>
 <area shape="rect" id="node6" href="$eth_8c.html" title="src/eth.c" alt="" coords="445,155,517,181"/>
 </map>

@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.14.0</span>
+   &#160;<span id="projectnumber">0.15.0</span>
    </div>
   </td>
  </tr>
@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Macros</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Data Structures</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -139,12 +139,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;extern <span class="keywordtype">bool</span> __attribute__((nonnull))</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<a class="code" href="udp_8h.html#a5ff6c06e976086b17457bc7766bb8e0c">udp_tx</a>(const struct <a class="code" href="structw__sock.html">w_sock</a> * const s, struct <a class="code" href="structw__iov.html">w_iov</a> * const v);</div>
 <div class="ttc" id="structudp__hdr_html"><div class="ttname"><a href="structudp__hdr.html">udp_hdr</a></div><div class="ttdoc">A representation of a UDP header; see RFC768. </div><div class="ttdef"><b>Definition:</b> udp.h:40</div></div>
-<div class="ttc" id="udp_8h_html_a008e1d17237f152a0184c0c6b120a747"><div class="ttname"><a href="udp_8h.html#a008e1d17237f152a0184c0c6b120a747">udp_rx</a></div><div class="ttdeci">void udp_rx(struct w_engine *const w, struct netmap_ring *const r)</div><div class="ttdoc">Receive a UDP packet. </div><div class="ttdef"><b>Definition:</b> udp.c:78</div></div>
+<div class="ttc" id="udp_8h_html_a008e1d17237f152a0184c0c6b120a747"><div class="ttname"><a href="udp_8h.html#a008e1d17237f152a0184c0c6b120a747">udp_rx</a></div><div class="ttdeci">void udp_rx(struct w_engine *const w, struct netmap_ring *const r)</div><div class="ttdoc">Receive a UDP packet. </div><div class="ttdef"><b>Definition:</b> udp.c:77</div></div>
 <div class="ttc" id="structw__iov_html"><div class="ttname"><a href="structw__iov.html">w_iov</a></div><div class="ttdoc">The I/O vector structure that warpcore uses at the center of its API. </div><div class="ttdef"><b>Definition:</b> warpcore.h:167</div></div>
 <div class="ttc" id="structw__sock_html"><div class="ttname"><a href="structw__sock.html">w_sock</a></div><div class="ttdoc">A warpcore socket. </div><div class="ttdef"><b>Definition:</b> warpcore.h:133</div></div>
 <div class="ttc" id="structw__engine_html"><div class="ttname"><a href="structw__engine.html">w_engine</a></div><div class="ttdoc">A warpcore backend engine. </div><div class="ttdef"><b>Definition:</b> warpcore.h:71</div></div>
 <div class="ttc" id="structudp__hdr_html_abea80c853cab93c249f23208662f8650"><div class="ttname"><a href="structudp__hdr.html#abea80c853cab93c249f23208662f8650">udp_hdr::sport</a></div><div class="ttdeci">uint16_t sport</div><div class="ttdoc">Source port. </div><div class="ttdef"><b>Definition:</b> udp.h:41</div></div>
-<div class="ttc" id="udp_8h_html_a5ff6c06e976086b17457bc7766bb8e0c"><div class="ttname"><a href="udp_8h.html#a5ff6c06e976086b17457bc7766bb8e0c">udp_tx</a></div><div class="ttdeci">bool udp_tx(const struct w_sock *const s, struct w_iov *const v)</div><div class="ttdoc">Sends a payload contained in a w_sock::ov via UDP. </div><div class="ttdef"><b>Definition:</b> udp.c:157</div></div>
+<div class="ttc" id="udp_8h_html_a5ff6c06e976086b17457bc7766bb8e0c"><div class="ttname"><a href="udp_8h.html#a5ff6c06e976086b17457bc7766bb8e0c">udp_tx</a></div><div class="ttdeci">bool udp_tx(const struct w_sock *const s, struct w_iov *const v)</div><div class="ttdoc">Sends a payload contained in a w_sock::ov via UDP. </div><div class="ttdef"><b>Definition:</b> udp.c:156</div></div>
 <div class="ttc" id="structnetmap__ring_html"><div class="ttname"><a href="structnetmap__ring.html">netmap_ring</a></div><div class="ttdef"><b>Definition:</b> netmap.h:279</div></div>
 <div class="ttc" id="structudp__hdr_html_a237bbfa523557d865a0d7d8570ae8afc"><div class="ttname"><a href="structudp__hdr.html#a237bbfa523557d865a0d7d8570ae8afc">udp_hdr::dport</a></div><div class="ttdeci">uint16_t dport</div><div class="ttdoc">Destination port. </div><div class="ttdef"><b>Definition:</b> udp.h:42</div></div>
 <div class="ttc" id="structudp__hdr_html_ac313f0810d613254a39e0b22dbd95190"><div class="ttname"><a href="structudp__hdr.html#ac313f0810d613254a39e0b22dbd95190">udp_hdr::len</a></div><div class="ttdeci">uint16_t len</div><div class="ttdoc">UDP length (header + data). </div><div class="ttdef"><b>Definition:</b> udp.h:43</div></div>
@@ -152,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 4 2017 09:20:23 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 4 2017 12:32:25 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

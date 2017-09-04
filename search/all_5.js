@@ -2,7 +2,7 @@ var searchData=
 [
   ['engines',['engines',['../warpcore_8c.html#ac5f4812d2c339c6d0fa6e591bf555caf',1,'warpcore.c']]],
   ['ensure',['ensure',['../util_8h.html#a1011ec002411388144b5eea764f90d83',1,'util.h']]],
-  ['err',['err',['../util_8h.html#a1889d6734420c17df6105c658525f64fac16f69770bf5601fbace0a55304daa99',1,'util.h']]],
+  ['err',['ERR',['../util_8h.html#a735563036dced0b7d6cc98f97ea4978b',1,'util.h']]],
   ['eth',['eth',['../structw__hdr.html#a100e2c3a92a36ce954d2082e8afffb88',1,'w_hdr']]],
   ['eth_2ec',['eth.c',['../eth_8c.html',1,'']]],
   ['eth_2eh',['eth.h',['../eth_8h.html',1,'']]],

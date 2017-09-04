@@ -6,6 +6,7 @@ var searchData=
   ['icmp_5funreach_5fport',['ICMP_UNREACH_PORT',['../icmp_8h.html#af9db0dedc4a6ca12e315542afd11db9d',1,'icmp.h']]],
   ['icmp_5funreach_5fprotocol',['ICMP_UNREACH_PROTOCOL',['../icmp_8h.html#a75a0a4e438c2f095e306318d02897c7c',1,'icmp.h']]],
   ['idx2buf',['IDX2BUF',['../backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e',1,'backend.h']]],
+  ['inf',['INF',['../util_8h.html#a12c2040f25d8e3a7b9e1c2024c618cb6',1,'util.h']]],
   ['ip_5faddr_5flen',['IP_ADDR_LEN',['../ip_8h.html#aec550a179f6cebe6d10b9cf600144012',1,'ip.h']]],
   ['ip_5faddr_5fstrlen',['IP_ADDR_STRLEN',['../ip_8h.html#abd745d5e0054ac1479e99ed4794669d1',1,'ip.h']]],
   ['ip_5fany',['IP_ANY',['../ip_8h.html#aff78e91b6eed5ac391a5de7b6e62311e',1,'ip.h']]],

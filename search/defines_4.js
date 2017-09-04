@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['dbg',['DBG',['../util_8h.html#a49606be7356624568932ec81c0d429f4',1,'util.h']]],
   ['die',['die',['../util_8h.html#a0b2164ee75646f16a7388a36e6800c35',1,'util.h']]],
   ['dim',['DIM',['../util_8h.html#ac25189db92959bff3c6c2adf4c34b50a',1,'util.h']]],
   ['dlevel',['DLEVEL',['../util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe',1,'util.h']]],

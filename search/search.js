@@ -12,9 +12,8 @@ var indexSectionsWithContent =
   2: "abceinpqrtuw",
   3: "_abefginpsuw",
   4: "_bcdefhilmnopqrstuvw",
-  5: "d",
-  6: "cdeinw",
-  7: "_abcdeghilmnpqrstuwy"
+  5: "n",
+  6: "_abcdeghilmnpqrstuwy"
 };
 
 var indexSectionNames =
@@ -24,9 +23,8 @@ var indexSectionNames =
   2: "files",
   3: "functions",
   4: "variables",
-  5: "enums",
-  6: "enumvalues",
-  7: "defines"
+  5: "enumvalues",
+  6: "defines"
 };
 
 function convertToId(search)

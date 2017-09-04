@@ -57,7 +57,6 @@ var searchData=
   ['nm_5fring_5fspace',['nm_ring_space',['../netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75',1,'netmap_user.h']]],
   ['nm_5ftx_5fpending',['nm_tx_pending',['../netmap__user_8h.html#a90f773466ed51ee6d9de0b558d1ac074',1,'netmap_user.h']]],
   ['nmreq',['nmreq',['../structnmreq.html',1,'']]],
-  ['notice',['notice',['../util_8h.html#a1889d6734420c17df6105c658525f64fa1947748888b7be287264b77a59951f5d',1,'util.h']]],
   ['nr_5faccept_5fvnet_5fhdr',['NR_ACCEPT_VNET_HDR',['../netmap_8h.html#a9f9c84bf48293c4a8a78e6f523f99c08',1,'netmap.h']]],
   ['nr_5farg1',['nr_arg1',['../structnmreq.html#ad5ec54607ccfd57982c1d6d3285b4fba',1,'nmreq']]],
   ['nr_5farg2',['nr_arg2',['../structnmreq.html#a8ea266b04964d17e204b15cd25571083',1,'nmreq']]],
@@ -102,5 +101,6 @@ var searchData=
   ['ns_5fport_5fshift',['NS_PORT_SHIFT',['../netmap_8h.html#a88aaf951c6911fd809a305a7e0e930b1',1,'netmap.h']]],
   ['ns_5freport',['NS_REPORT',['../netmap_8h.html#a8bf3e16b1288e0ef6f0ba5747b5e5294',1,'netmap.h']]],
   ['ns_5frfrags',['NS_RFRAGS',['../netmap_8h.html#a87286a29067b634a9748ba110525ad58',1,'netmap.h']]],
+  ['nte',['NTE',['../util_8h.html#a94282510eb8ab66918691df2c0833f68',1,'util.h']]],
   ['num_5fslots',['num_slots',['../structnetmap__ring.html#a37102602c060ee425a89df961b39e208',1,'netmap_ring']]]
 ];

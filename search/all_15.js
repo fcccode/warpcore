@@ -35,7 +35,7 @@ var searchData=
   ['w_5ftx',['w_tx',['../warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692',1,'w_tx(const struct w_sock *const s, struct w_iov_stailq *const o):&#160;backend_netmap.c'],['../backend__netmap_8c.html#ae4e224c9a1e5d17f44ea007ff2aa4692',1,'w_tx(const struct w_sock *const s, struct w_iov_stailq *const o):&#160;backend_netmap.c'],['../backend__sock_8c.html#ae4e224c9a1e5d17f44ea007ff2aa4692',1,'w_tx(const struct w_sock *const s, struct w_iov_stailq *const o):&#160;backend_sock.c']]],
   ['w_5ftx_5fpending',['w_tx_pending',['../warpcore_8h.html#adad79a0011e52c38d52df980843fff78',1,'warpcore.h']]],
   ['w_5fzero_5fchksum',['W_ZERO_CHKSUM',['../warpcore_8h.html#a1dc8f24f3aece4066bc8ff8fceeb54f3',1,'warpcore.h']]],
-  ['warn',['warn',['../util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887',1,'warn():&#160;util.h'],['../util_8h.html#a1889d6734420c17df6105c658525f64fa030352c93c772334261abda73e03885f',1,'warn():&#160;util.h']]],
+  ['warn',['warn',['../util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887',1,'util.h']]],
   ['warpcore_2ec',['warpcore.c',['../warpcore_8c.html',1,'']]],
   ['warpcore_2eh',['warpcore.h',['../warpcore_8h.html',1,'']]],
   ['warpcore_5fname',['warpcore_name',['../config_8h.html#a7fd9dfd57d0b4d34f89c4d2ced0a8319',1,'warpcore_name():&#160;config.c'],['../config_8c.html#a7fd9dfd57d0b4d34f89c4d2ced0a8319',1,'warpcore_name():&#160;config.c']]],
@@ -43,5 +43,6 @@ var searchData=
   ['warpcore_5fversion_5fmajor',['WARPCORE_VERSION_MAJOR',['../config_8h.html#a0b885defc8f5c2974b7c322a5d8029d2',1,'config.h']]],
   ['warpcore_5fversion_5fminor',['WARPCORE_VERSION_MINOR',['../config_8h.html#a7ae4e1c713d564d9be834cd43f5dac50',1,'config.h']]],
   ['warpcore_5fversion_5fpatch',['WARPCORE_VERSION_PATCH',['../config_8h.html#a10f58adbdf68ee2d9a9ff0bdfac4c56e',1,'config.h']]],
-  ['wht',['WHT',['../util_8h.html#aeaf3a04d5bf63b204689a714718ea930',1,'util.h']]]
+  ['wht',['WHT',['../util_8h.html#aeaf3a04d5bf63b204689a714718ea930',1,'util.h']]],
+  ['wrn',['WRN',['../util_8h.html#a5806c572b7b8636004096dc51a03ff88',1,'util.h']]]
 ];
