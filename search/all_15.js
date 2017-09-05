@@ -14,7 +14,7 @@ var searchData=
   ['w_5fengine',['w_engine',['../structw__engine.html',1,'w_engine'],['../warpcore_8h.html#ae13f9b3c39d99b4a14d36b88ae5387da',1,'w_engine():&#160;warpcore.h']]],
   ['w_5ffd',['w_fd',['../warpcore_8h.html#aaf46056f39cb452d908ddac8cf6e57c5',1,'w_fd(const struct w_sock *const s):&#160;backend_netmap.c'],['../backend__netmap_8c.html#aaf46056f39cb452d908ddac8cf6e57c5',1,'w_fd(const struct w_sock *const s):&#160;backend_netmap.c'],['../backend__sock_8c.html#aaf46056f39cb452d908ddac8cf6e57c5',1,'w_fd(const struct w_sock *const s):&#160;backend_sock.c']]],
   ['w_5ffree',['w_free',['../warpcore_8h.html#a068c0bd68483726654df048ad7dd0792',1,'w_free():&#160;warpcore.h'],['../warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13',1,'w_free(struct w_engine *const w, struct w_iov_stailq *const q):&#160;warpcore.h']]],
-  ['w_5ffree_5fiov',['w_free_iov',['../warpcore_8h.html#a6dc649fb895f797d4ddd2e831f57595f',1,'w_free_iov():&#160;warpcore.h'],['../warpcore_8h.html#af0de8ce8c73df7d75c3a90c5e01ea998',1,'w_free_iov(struct w_engine *const w, struct w_iov *const v):&#160;warpcore.h']]],
+  ['w_5ffree_5fiov',['w_free_iov',['../warpcore_8h.html#a6dc649fb895f797d4ddd2e831f57595f',1,'warpcore.h']]],
   ['w_5fhdr',['w_hdr',['../structw__hdr.html',1,'']]],
   ['w_5fifname',['w_ifname',['../warpcore_8h.html#a4c1507af14382c3a9afd21140d879e99',1,'warpcore.h']]],
   ['w_5finit',['w_init',['../warpcore_8h.html#a045f4826ff2a8917693126c9d27455e4',1,'w_init(const char *const ifname, const uint32_t rip, const uint32_t nbufs):&#160;warpcore.c'],['../warpcore_8c.html#a045f4826ff2a8917693126c9d27455e4',1,'w_init(const char *const ifname, const uint32_t rip, const uint32_t nbufs):&#160;warpcore.c']]],

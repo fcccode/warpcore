@@ -268,53 +268,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;<a class="code" href="warpcore_8h.html#a068c0bd68483726654df048ad7dd0792">w_free</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, struct <a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> * const q);</div>
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;<a class="code" href="warpcore_8h.html#a6dc649fb895f797d4ddd2e831f57595f">w_free_iov</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, struct w_iov * const v);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;extern uint32_t <a class="code" href="warpcore_8h.html#a2570e386e8776c6cc5203f56490a6a54">w_iov_stailq_len</a>(const struct <a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> * const q);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;extern uint32_t <a class="code" href="warpcore_8h.html#aec5a5bdb16a124254766c349768c2d7e">w_iov_stailq_cnt</a>(const struct <a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> * const q);</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;extern <span class="keywordtype">int</span> __attribute__((nonnull)) <a class="code" href="warpcore_8h.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a>(const struct w_sock * const s);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;extern uint32_t <a class="code" href="warpcore_8h.html#a2570e386e8776c6cc5203f56490a6a54">w_iov_stailq_len</a>(const struct <a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> * const q);</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;extern uint32_t <a class="code" href="warpcore_8h.html#aec5a5bdb16a124254766c349768c2d7e">w_iov_stailq_cnt</a>(const struct <a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> * const q);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;extern <span class="keywordtype">int</span> __attribute__((nonnull)) <a class="code" href="warpcore_8h.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a>(const struct w_sock * const s);</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;<a class="code" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384">w_rx</a>(struct w_sock * const s, struct <a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> * const i);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;<a class="code" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384">w_rx</a>(struct w_sock * const s, struct <a class="code" href="structw__iov__stailq.html">w_iov_stailq</a> * const i);</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75">w_nic_tx</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75">w_nic_tx</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;extern <span class="keywordtype">bool</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;<a class="code" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d">w_nic_rx</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, const int32_t msec);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;extern <span class="keywordtype">bool</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<a class="code" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d">w_nic_rx</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, const int32_t msec);</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;extern uint32_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;<a class="code" href="warpcore_8h.html#a10a4664235583c583eee0a08a35a9c71">w_rx_ready</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, struct w_sock_slist * sl);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;extern uint32_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<a class="code" href="warpcore_8h.html#a10a4664235583c583eee0a08a35a9c71">w_rx_ready</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, struct w_sock_slist * sl);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;<a class="code" href="warpcore_8h.html#a7b47d2c85543fe7de031d20a946a8d40">w_iov_max_len</a>(const struct <a class="code" href="structw__engine.html">w_engine</a> * const w, const struct w_iov * const v);</div>
 <div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;<a class="code" href="warpcore_8h.html#a7b47d2c85543fe7de031d20a946a8d40">w_iov_max_len</a>(const struct <a class="code" href="structw__engine.html">w_engine</a> * const w, const struct w_iov * const v);</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;extern <span class="keywordtype">bool</span> __attribute__((nonnull)) <a class="code" href="warpcore_8h.html#a25db095b03b04843ed074c604c85c27d">w_connected</a>(const struct w_sock * const s);</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;extern <span class="keywordtype">bool</span> __attribute__((nonnull)) <a class="code" href="warpcore_8h.html#a25db095b03b04843ed074c604c85c27d">w_connected</a>(const struct w_sock * const s);</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
-<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="warpcore_8h.html#adad79a0011e52c38d52df980843fff78">  263</a></span>&#160;<span class="preprocessor">#define w_tx_pending(q) (q)-&gt;tx_pending</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;</div>
-<div class="line"><a name="l00272"></a><span class="lineno"><a class="line" href="warpcore_8h.html#ae13f9b3c39d99b4a14d36b88ae5387da">  272</a></span>&#160;<span class="preprocessor">#define w_engine(s) (s)-&gt;w</span></div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
-<div class="line"><a name="l00282"></a><span class="lineno"><a class="line" href="warpcore_8h.html#a4c1507af14382c3a9afd21140d879e99">  282</a></span>&#160;<span class="preprocessor">#define w_ifname(w) (w)-&gt;ifname</span></div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;</div>
-<div class="line"><a name="l00291"></a><span class="lineno"><a class="line" href="warpcore_8h.html#ab8d64c60572eee99efeb3118c292e318">  291</a></span>&#160;<span class="preprocessor">#define w_mtu(w) (w)-&gt;mtu</span></div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;</div>
-<div class="line"><a name="l00300"></a><span class="lineno"><a class="line" href="warpcore_8h.html#a068c0bd68483726654df048ad7dd0792">  300</a></span>&#160;<span class="preprocessor">#define w_free(w, q) STAILQ_CONCAT(&amp;(w)-&gt;iov, (q))</span></div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno"><a class="line" href="warpcore_8h.html#a6dc649fb895f797d4ddd2e831f57595f">  311</a></span>&#160;<span class="preprocessor">#define w_free_iov(w, v) STAILQ_INSERT_HEAD(&amp;(w)-&gt;iov, (v), next)</span></div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno"><a class="line" href="warpcore_8h.html#adad79a0011e52c38d52df980843fff78">  260</a></span>&#160;<span class="preprocessor">#define w_tx_pending(q) (q)-&gt;tx_pending</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;</div>
+<div class="line"><a name="l00269"></a><span class="lineno"><a class="line" href="warpcore_8h.html#ae13f9b3c39d99b4a14d36b88ae5387da">  269</a></span>&#160;<span class="preprocessor">#define w_engine(s) (s)-&gt;w</span></div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="line"><a name="l00279"></a><span class="lineno"><a class="line" href="warpcore_8h.html#a4c1507af14382c3a9afd21140d879e99">  279</a></span>&#160;<span class="preprocessor">#define w_ifname(w) (w)-&gt;ifname</span></div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="warpcore_8h.html#ab8d64c60572eee99efeb3118c292e318">  288</a></span>&#160;<span class="preprocessor">#define w_mtu(w) (w)-&gt;mtu</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="warpcore_8h.html#a068c0bd68483726654df048ad7dd0792">  297</a></span>&#160;<span class="preprocessor">#define w_free(w, q) STAILQ_CONCAT(&amp;(w)-&gt;iov, (q))</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00308"></a><span class="lineno"><a class="line" href="warpcore_8h.html#a6dc649fb895f797d4ddd2e831f57595f">  308</a></span>&#160;<span class="preprocessor">#define w_free_iov(w, v) STAILQ_INSERT_HEAD(&amp;(w)-&gt;iov, (v), next)</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="warpcore_8h_html_a26c31751f7bb602b01bf00077ebd362d"><div class="ttname"><a href="warpcore_8h.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a></div><div class="ttdeci">void w_close(struct w_sock *const s)</div><div class="ttdoc">Close a warpcore socket. </div><div class="ttdef"><b>Definition:</b> warpcore.c:327</div></div>
 <div class="ttc" id="warpcore_8h_html_a7b47d2c85543fe7de031d20a946a8d40"><div class="ttname"><a href="warpcore_8h.html#a7b47d2c85543fe7de031d20a946a8d40">w_iov_max_len</a></div><div class="ttdeci">uint16_t w_iov_max_len(const struct w_engine *const w, const struct w_iov *const v)</div><div class="ttdoc">Return the maximum size a given w_iov may have for the given engine. </div><div class="ttdef"><b>Definition:</b> warpcore.c:503</div></div>
 <div class="ttc" id="structw__iov__stailq_html"><div class="ttname"><a href="structw__iov__stailq.html">w_iov_stailq</a></div><div class="ttdoc">A tail queue of w_iov I/O vectors. </div><div class="ttdef"><b>Definition:</b> warpcore.h:107</div></div>
@@ -357,8 +354,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="structw__engine_html_a671ab793dfd9b6f416c126da7660607b"><div class="ttname"><a href="structw__engine.html#a671ab793dfd9b6f416c126da7660607b">w_engine::mask</a></div><div class="ttdeci">uint32_t mask</div><div class="ttdoc">IPv4 netmask of this interface. </div><div class="ttdef"><b>Definition:</b> warpcore.h:76</div></div>
 <div class="ttc" id="warpcore_8h_html_a045f4826ff2a8917693126c9d27455e4"><div class="ttname"><a href="warpcore_8h.html#a045f4826ff2a8917693126c9d27455e4">w_init</a></div><div class="ttdeci">struct w_engine * w_init(const char *const ifname, const uint32_t rip, const uint32_t nbufs)</div><div class="ttdoc">Initialize a warpcore engine on the given interface. </div><div class="ttdef"><b>Definition:</b> warpcore.c:389</div></div>
 <div class="ttc" id="warpcore_8h_html_a83b86f011acb496a1aa350a83442be77"><div class="ttname"><a href="warpcore_8h.html#a83b86f011acb496a1aa350a83442be77">SLIST_HEAD</a></div><div class="ttdeci">SLIST_HEAD(w_sock_slist, w_sock)</div><div class="ttdoc">A chain of w_sock socket. </div></div>
-<div class="ttc" id="warpcore_8h_html_a068c0bd68483726654df048ad7dd0792"><div class="ttname"><a href="warpcore_8h.html#a068c0bd68483726654df048ad7dd0792">w_free</a></div><div class="ttdeci">#define w_free(w, q)</div><div class="ttdoc">Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore...</div><div class="ttdef"><b>Definition:</b> warpcore.h:300</div></div>
-<div class="ttc" id="warpcore_8h_html_a6dc649fb895f797d4ddd2e831f57595f"><div class="ttname"><a href="warpcore_8h.html#a6dc649fb895f797d4ddd2e831f57595f">w_free_iov</a></div><div class="ttdeci">#define w_free_iov(w, v)</div><div class="ttdoc">Return a single w_iov obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore...</div><div class="ttdef"><b>Definition:</b> warpcore.h:311</div></div>
+<div class="ttc" id="warpcore_8h_html_a068c0bd68483726654df048ad7dd0792"><div class="ttname"><a href="warpcore_8h.html#a068c0bd68483726654df048ad7dd0792">w_free</a></div><div class="ttdeci">#define w_free(w, q)</div><div class="ttdoc">Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore...</div><div class="ttdef"><b>Definition:</b> warpcore.h:297</div></div>
 <div class="ttc" id="structw__engine_html_a4d5acf77045637c8687983b933d9e41d"><div class="ttname"><a href="structw__engine.html#a4d5acf77045637c8687983b933d9e41d">w_engine::mac</a></div><div class="ttdeci">struct ether_addr mac</div><div class="ttdoc">Local Ethernet MAC address of the interface. </div><div class="ttdef"><b>Definition:</b> warpcore.h:79</div></div>
 <div class="ttc" id="warpcore_8h_html_aa17e20ed409edbfe18aa79ae5da640ff"><div class="ttname"><a href="warpcore_8h.html#aa17e20ed409edbfe18aa79ae5da640ff">w_alloc_iov</a></div><div class="ttdeci">struct w_iov * w_alloc_iov(struct w_engine *const w, const uint16_t len, const uint16_t off)</div><div class="ttdoc">Return a spare w_iov from the pool of the given warpcore engine. </div><div class="ttdef"><b>Definition:</b> warpcore.c:85</div></div>
 <div class="ttc" id="warpcore_8h_html_aaf46056f39cb452d908ddac8cf6e57c5"><div class="ttname"><a href="warpcore_8h.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a></div><div class="ttdeci">int w_fd(const struct w_sock *const s)</div><div class="ttdoc">Return the file descriptor associated with a w_sock. </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:227</div></div>
@@ -371,7 +367,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 4 2017 12:32:25 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 5 2017 12:13:06 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
