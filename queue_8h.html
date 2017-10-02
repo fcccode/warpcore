@@ -103,6 +103,8 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a1eb5255e1d14c0f5b812d26c0c38ef81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a1eb5255e1d14c0f5b812d26c0c38ef81">__offsetof</a>(type, field)&#160;&#160;&#160;__builtin_offsetof(type, field)</td></tr>
+<tr class="separator:a1eb5255e1d14c0f5b812d26c0c38ef81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c76efdd134700aee3eb002cf4c0a674"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a0c76efdd134700aee3eb002cf4c0a674">__DEQUALIFY</a>(type, var)&#160;&#160;&#160;((type)(__uintptr_t)(const volatile void *)(var))</td></tr>
 <tr class="separator:a0c76efdd134700aee3eb002cf4c0a674"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a18c8113e8a7874a7f2718b2b46cf2c9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="queue_8h.html#a18c8113e8a7874a7f2718b2b46cf2c9f">__containerof</a>(x, s, m)</td></tr>
@@ -248,8 +250,9 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">({                                                                         \</div>
 <div class="line">        const <span class="keyword">volatile</span> __typeof(((s *)0)-&gt;m) * __x = (x);                      <a class="code" href="queue_8h.html#a0c76efdd134700aee3eb002cf4c0a674">\</a></div>
-<div class="line"><a class="code" href="queue_8h.html#a0c76efdd134700aee3eb002cf4c0a674">        __DEQUALIFY</a>(s *, (<span class="keyword">const</span> <span class="keyword">volatile</span> <span class="keywordtype">char</span> *)__x - __offsetof(s, m));       \</div>
+<div class="line"><a class="code" href="queue_8h.html#a0c76efdd134700aee3eb002cf4c0a674">        __DEQUALIFY</a>(s *, (<span class="keyword">const</span> <span class="keyword">volatile</span> <span class="keywordtype">char</span> *)__x - <a class="code" href="queue_8h.html#a1eb5255e1d14c0f5b812d26c0c38ef81">__offsetof</a>(s, m));       \</div>
 <div class="line">    })</div>
+<div class="ttc" id="queue_8h_html_a1eb5255e1d14c0f5b812d26c0c38ef81"><div class="ttname"><a href="queue_8h.html#a1eb5255e1d14c0f5b812d26c0c38ef81">__offsetof</a></div><div class="ttdeci">#define __offsetof(type, field)</div><div class="ttdef"><b>Definition:</b> queue.h:44</div></div>
 <div class="ttc" id="queue_8h_html_a0c76efdd134700aee3eb002cf4c0a674"><div class="ttname"><a href="queue_8h.html#a0c76efdd134700aee3eb002cf4c0a674">__DEQUALIFY</a></div><div class="ttdeci">#define __DEQUALIFY(type, var)</div><div class="ttdef"><b>Definition:</b> queue.h:48</div></div>
 </div><!-- fragment -->
 </div>
@@ -274,6 +277,32 @@ Macros</h2></td></tr>
           <td></td>
           <td>)</td>
           <td></td><td>&#160;&#160;&#160;((type)(__uintptr_t)(const volatile void *)(var))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1eb5255e1d14c0f5b812d26c0c38ef81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __offsetof</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">type, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">field&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;__builtin_offsetof(type, field)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -495,10 +524,10 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="queue_8h.html#ad26b7de5b00e42e384f73ef03a6e73f4">            sl_init</a>(head2);                                                    \</div>
 <div class="line">        }                                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_ad26b7de5b00e42e384f73ef03a6e73f4"><div class="ttname"><a href="queue_8h.html#ad26b7de5b00e42e384f73ef03a6e73f4">sl_init</a></div><div class="ttdeci">#define sl_init(head)</div><div class="ttdef"><b>Definition:</b> queue.h:281</div></div>
-<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:260</div></div>
-<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:200</div></div>
-<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:299</div></div>
+<div class="ttc" id="queue_8h_html_ad26b7de5b00e42e384f73ef03a6e73f4"><div class="ttname"><a href="queue_8h.html#ad26b7de5b00e42e384f73ef03a6e73f4">sl_init</a></div><div class="ttdeci">#define sl_init(head)</div><div class="ttdef"><b>Definition:</b> queue.h:282</div></div>
+<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:261</div></div>
+<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:201</div></div>
+<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -617,8 +646,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((var) = ((var) ? (var) : <a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a>((head))); (var);                    \</div>
 <div class="line">         (var) = <a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a>((var), field))</div>
-<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:260</div></div>
-<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:299</div></div>
+<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:261</div></div>
+<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -659,8 +688,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((var) = ((var) ? (var) : <a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a>((head)));                           \</div>
 <div class="line">         (var) &amp;&amp; ((tvar) = <a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a>((var), field), 1); (var) = (tvar))</div>
-<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:260</div></div>
-<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:299</div></div>
+<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:261</div></div>
+<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -701,8 +730,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((varp) = &amp;<a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a>((head)); ((var) = *(varp)) != NULL;                \</div>
 <div class="line">         (varp) = &amp;<a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a>((var), field))</div>
-<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:260</div></div>
-<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:299</div></div>
+<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:261</div></div>
+<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -743,8 +772,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((var) = <a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a>((head));                                             \</div>
 <div class="line">         (var) &amp;&amp; ((tvar) = <a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a>((var), field), 1); (var) = (tvar))</div>
-<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:260</div></div>
-<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:299</div></div>
+<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:261</div></div>
+<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -813,7 +842,7 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">        sl_first</a>((head)) = NULL;                                               \</div>
 <div class="line">        (head)-&gt;stqh_len = 0;                                                  \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:260</div></div>
+<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:261</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -850,7 +879,7 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">        sl_next</a>((elm), field) = <a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a>((slistelm), field);                    <a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">        sl_next</a>((slistelm), field) = (elm);                                    \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:299</div></div>
+<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -887,8 +916,8 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">        sl_next</a>((elm), field) = <a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a>((head));                              <a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">        sl_first</a>((head)) = (elm);                                              \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:260</div></div>
-<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:299</div></div>
+<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:261</div></div>
+<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -965,13 +994,13 @@ Macros</h2></td></tr>
 <div class="line">        }                                                                      <a class="code" href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">        TRASHIT</a>(*oldnext);                                                     \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_a0d7dc7e1ea3ff56dea7be5fc9c092a30"><div class="ttname"><a href="queue_8h.html#a0d7dc7e1ea3ff56dea7be5fc9c092a30">sl_remove_head</a></div><div class="ttdeci">#define sl_remove_head(head, field)</div><div class="ttdef"><b>Definition:</b> queue.h:320</div></div>
-<div class="ttc" id="queue_8h_html_a96671a8f87ff87543b3b0b671a274a1c"><div class="ttname"><a href="queue_8h.html#a96671a8f87ff87543b3b0b671a274a1c">QMD_SAVELINK</a></div><div class="ttdeci">#define QMD_SAVELINK(name, link)</div><div class="ttdef"><b>Definition:</b> queue.h:191</div></div>
-<div class="ttc" id="queue_8h_html_adee7bf054da0ade68bb853732c665a2b"><div class="ttname"><a href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">TRASHIT</a></div><div class="ttdeci">#define TRASHIT(x)</div><div class="ttdef"><b>Definition:</b> queue.h:184</div></div>
-<div class="ttc" id="queue_8h_html_a8a2e685faea01f1832bc194dbbb59d65"><div class="ttname"><a href="queue_8h.html#a8a2e685faea01f1832bc194dbbb59d65">sl_remove_after</a></div><div class="ttdeci">#define sl_remove_after(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:315</div></div>
-<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:260</div></div>
-<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:200</div></div>
-<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:299</div></div>
+<div class="ttc" id="queue_8h_html_a0d7dc7e1ea3ff56dea7be5fc9c092a30"><div class="ttname"><a href="queue_8h.html#a0d7dc7e1ea3ff56dea7be5fc9c092a30">sl_remove_head</a></div><div class="ttdeci">#define sl_remove_head(head, field)</div><div class="ttdef"><b>Definition:</b> queue.h:321</div></div>
+<div class="ttc" id="queue_8h_html_a96671a8f87ff87543b3b0b671a274a1c"><div class="ttname"><a href="queue_8h.html#a96671a8f87ff87543b3b0b671a274a1c">QMD_SAVELINK</a></div><div class="ttdeci">#define QMD_SAVELINK(name, link)</div><div class="ttdef"><b>Definition:</b> queue.h:192</div></div>
+<div class="ttc" id="queue_8h_html_adee7bf054da0ade68bb853732c665a2b"><div class="ttname"><a href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">TRASHIT</a></div><div class="ttdeci">#define TRASHIT(x)</div><div class="ttdef"><b>Definition:</b> queue.h:185</div></div>
+<div class="ttc" id="queue_8h_html_a8a2e685faea01f1832bc194dbbb59d65"><div class="ttname"><a href="queue_8h.html#a8a2e685faea01f1832bc194dbbb59d65">sl_remove_after</a></div><div class="ttdeci">#define sl_remove_after(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:316</div></div>
+<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:261</div></div>
+<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:201</div></div>
+<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1001,7 +1030,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       <a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">        sl_next</a>(elm, field) = <a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a>(<a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a>(elm, field), field);             \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:299</div></div>
+<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1031,8 +1060,8 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       <a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">        sl_first</a>((head)) = <a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a>(<a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a>((head)), field);                   \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:260</div></div>
-<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:299</div></div>
+<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:261</div></div>
+<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1070,9 +1099,9 @@ Macros</h2></td></tr>
 <div class="line">        *(prevp) = <a class="code" href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a>(elm, field);                                        <a class="code" href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">        TRASHIT</a>((elm)-&gt;field.sle_next);                                        \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_a7f48f5324768ccc74acae42695d83616"><div class="ttname"><a href="queue_8h.html#a7f48f5324768ccc74acae42695d83616">QMD_SL_CHECK_PREVPTR</a></div><div class="ttdeci">#define QMD_SL_CHECK_PREVPTR(prevp, elm)</div><div class="ttdef"><b>Definition:</b> queue.h:235</div></div>
-<div class="ttc" id="queue_8h_html_adee7bf054da0ade68bb853732c665a2b"><div class="ttname"><a href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">TRASHIT</a></div><div class="ttdeci">#define TRASHIT(x)</div><div class="ttdef"><b>Definition:</b> queue.h:184</div></div>
-<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:299</div></div>
+<div class="ttc" id="queue_8h_html_a7f48f5324768ccc74acae42695d83616"><div class="ttname"><a href="queue_8h.html#a7f48f5324768ccc74acae42695d83616">QMD_SL_CHECK_PREVPTR</a></div><div class="ttdeci">#define QMD_SL_CHECK_PREVPTR(prevp, elm)</div><div class="ttdef"><b>Definition:</b> queue.h:236</div></div>
+<div class="ttc" id="queue_8h_html_adee7bf054da0ade68bb853732c665a2b"><div class="ttname"><a href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">TRASHIT</a></div><div class="ttdeci">#define TRASHIT(x)</div><div class="ttdef"><b>Definition:</b> queue.h:185</div></div>
+<div class="ttc" id="queue_8h_html_a68c442ba2f977720f97cf205bb0530e1"><div class="ttname"><a href="queue_8h.html#a68c442ba2f977720f97cf205bb0530e1">sl_next</a></div><div class="ttdeci">#define sl_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:300</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1110,8 +1139,8 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">        sl_first</a>(head1) = <a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a>(head2);                                     <a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">        sl_first</a>(head2) = swap_first;                                          \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:260</div></div>
-<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:200</div></div>
+<div class="ttc" id="queue_8h_html_a66676caf1496b69dc6c7e3e057bb3d04"><div class="ttname"><a href="queue_8h.html#a66676caf1496b69dc6c7e3e057bb3d04">sl_first</a></div><div class="ttdeci">#define sl_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:261</div></div>
+<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:201</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1196,8 +1225,8 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="queue_8h.html#a92093b07bdbe0c88610b097c3675803b">            sq_init</a>((head2));                                                  \</div>
 <div class="line">        }                                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_af94ce05fbbab07bec6cce3d81b6d5cbf"><div class="ttname"><a href="queue_8h.html#af94ce05fbbab07bec6cce3d81b6d5cbf">sq_empty</a></div><div class="ttdeci">#define sq_empty(head)</div><div class="ttdef"><b>Definition:</b> queue.h:386</div></div>
-<div class="ttc" id="queue_8h_html_a92093b07bdbe0c88610b097c3675803b"><div class="ttname"><a href="queue_8h.html#a92093b07bdbe0c88610b097c3675803b">sq_init</a></div><div class="ttdeci">#define sq_init(head)</div><div class="ttdef"><b>Definition:</b> queue.h:405</div></div>
+<div class="ttc" id="queue_8h_html_af94ce05fbbab07bec6cce3d81b6d5cbf"><div class="ttname"><a href="queue_8h.html#af94ce05fbbab07bec6cce3d81b6d5cbf">sq_empty</a></div><div class="ttdeci">#define sq_empty(head)</div><div class="ttdef"><b>Definition:</b> queue.h:387</div></div>
+<div class="ttc" id="queue_8h_html_a92093b07bdbe0c88610b097c3675803b"><div class="ttname"><a href="queue_8h.html#a92093b07bdbe0c88610b097c3675803b">sq_init</a></div><div class="ttdeci">#define sq_init(head)</div><div class="ttdef"><b>Definition:</b> queue.h:406</div></div>
 </div><!-- fragment --><dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a21">inetd.c</a>.</dd>
 </dl>
 </div>
@@ -1319,8 +1348,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((var) = ((var) ? (var) : <a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>((head))); (var);                    \</div>
 <div class="line">         (var) = <a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>((var), field))</div>
-<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:388</div></div>
-<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:441</div></div>
+<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
+<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1361,8 +1390,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((var) = ((var) ? (var) : <a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>((head)));                           \</div>
 <div class="line">         (var) &amp;&amp; ((tvar) = <a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>((var), field), 1); (var) = (tvar))</div>
-<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:388</div></div>
-<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:441</div></div>
+<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
+<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1403,8 +1432,8 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">for</span> ((var) = <a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>((head));                                             \</div>
 <div class="line">         (var) &amp;&amp; ((tvar) = <a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>((var), field), 1); (var) = (tvar))</div>
-<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:388</div></div>
-<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:441</div></div>
+<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
+<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1476,7 +1505,7 @@ Macros</h2></td></tr>
 <div class="line">        (head)-&gt;stqh_last = &amp;<a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>((head));                                 \</div>
 <div class="line">        (head)-&gt;stqh_len = 0;                                                  \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:388</div></div>
+<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1521,7 +1550,7 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">        sq_next</a>((tqelm), field) = (elm);                                       \</div>
 <div class="line">        (head)-&gt;stqh_len++;                                                    \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:441</div></div>
+<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1560,8 +1589,8 @@ Macros</h2></td></tr>
 <div class="line"><a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">        sq_first</a>((head)) = (elm);                                              \</div>
 <div class="line">        (head)-&gt;stqh_len++;                                                    \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:388</div></div>
-<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:441</div></div>
+<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
+<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1600,7 +1629,7 @@ Macros</h2></td></tr>
 <div class="line">        (head)-&gt;stqh_last = &amp;<a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>((elm), field);                            \</div>
 <div class="line">        (head)-&gt;stqh_len++;                                                    \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:441</div></div>
+<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
 </div><!-- fragment --><dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a28">inetd.c</a>.</dd>
 </dl>
 </div>
@@ -1638,8 +1667,8 @@ Macros</h2></td></tr>
 <div class="line">                      : <a class="code" href="queue_8h.html#a18c8113e8a7874a7f2718b2b46cf2c9f">__containerof</a>((head)-&gt;stqh_last, <a class="code" href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a>(type),   \</div>
 <div class="line">                                      field.stqe_next))</div>
 <div class="ttc" id="queue_8h_html_a18c8113e8a7874a7f2718b2b46cf2c9f"><div class="ttname"><a href="queue_8h.html#a18c8113e8a7874a7f2718b2b46cf2c9f">__containerof</a></div><div class="ttdeci">#define __containerof(x, s, m)</div><div class="ttdef"><b>Definition:</b> queue.h:52</div></div>
-<div class="ttc" id="queue_8h_html_af94ce05fbbab07bec6cce3d81b6d5cbf"><div class="ttname"><a href="queue_8h.html#af94ce05fbbab07bec6cce3d81b6d5cbf">sq_empty</a></div><div class="ttdeci">#define sq_empty(head)</div><div class="ttdef"><b>Definition:</b> queue.h:386</div></div>
-<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:200</div></div>
+<div class="ttc" id="queue_8h_html_af94ce05fbbab07bec6cce3d81b6d5cbf"><div class="ttname"><a href="queue_8h.html#af94ce05fbbab07bec6cce3d81b6d5cbf">sq_empty</a></div><div class="ttdeci">#define sq_empty(head)</div><div class="ttdef"><b>Definition:</b> queue.h:387</div></div>
+<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:201</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1733,13 +1762,13 @@ Macros</h2></td></tr>
 <div class="line">        (head)-&gt;stqh_len--;                                                    <a class="code" href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">        TRASHIT</a>(*oldnext);                                                     \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_a96671a8f87ff87543b3b0b671a274a1c"><div class="ttname"><a href="queue_8h.html#a96671a8f87ff87543b3b0b671a274a1c">QMD_SAVELINK</a></div><div class="ttdeci">#define QMD_SAVELINK(name, link)</div><div class="ttdef"><b>Definition:</b> queue.h:191</div></div>
-<div class="ttc" id="queue_8h_html_adee7bf054da0ade68bb853732c665a2b"><div class="ttname"><a href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">TRASHIT</a></div><div class="ttdeci">#define TRASHIT(x)</div><div class="ttdef"><b>Definition:</b> queue.h:184</div></div>
-<div class="ttc" id="queue_8h_html_ac2022108d7ffaf32b51ba2c6c5617a25"><div class="ttname"><a href="queue_8h.html#ac2022108d7ffaf32b51ba2c6c5617a25">sq_remove_after</a></div><div class="ttdeci">#define sq_remove_after(head, elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:458</div></div>
-<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:388</div></div>
-<div class="ttc" id="queue_8h_html_a735e29d5fd7b7a7ad96681c348996efe"><div class="ttname"><a href="queue_8h.html#a735e29d5fd7b7a7ad96681c348996efe">sq_remove_head</a></div><div class="ttdeci">#define sq_remove_head(head, field)</div><div class="ttdef"><b>Definition:</b> queue.h:465</div></div>
-<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:441</div></div>
-<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:200</div></div>
+<div class="ttc" id="queue_8h_html_a96671a8f87ff87543b3b0b671a274a1c"><div class="ttname"><a href="queue_8h.html#a96671a8f87ff87543b3b0b671a274a1c">QMD_SAVELINK</a></div><div class="ttdeci">#define QMD_SAVELINK(name, link)</div><div class="ttdef"><b>Definition:</b> queue.h:192</div></div>
+<div class="ttc" id="queue_8h_html_adee7bf054da0ade68bb853732c665a2b"><div class="ttname"><a href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">TRASHIT</a></div><div class="ttdeci">#define TRASHIT(x)</div><div class="ttdef"><b>Definition:</b> queue.h:185</div></div>
+<div class="ttc" id="queue_8h_html_ac2022108d7ffaf32b51ba2c6c5617a25"><div class="ttname"><a href="queue_8h.html#ac2022108d7ffaf32b51ba2c6c5617a25">sq_remove_after</a></div><div class="ttdeci">#define sq_remove_after(head, elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:459</div></div>
+<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
+<div class="ttc" id="queue_8h_html_a735e29d5fd7b7a7ad96681c348996efe"><div class="ttname"><a href="queue_8h.html#a735e29d5fd7b7a7ad96681c348996efe">sq_remove_head</a></div><div class="ttdeci">#define sq_remove_head(head, field)</div><div class="ttdef"><b>Definition:</b> queue.h:466</div></div>
+<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
+<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:201</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1777,7 +1806,7 @@ Macros</h2></td></tr>
 <div class="line">            NULL)                                                              \</div>
 <div class="line">            (head)-&gt;stqh_last = &amp;<a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>((elm), field);                        \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:441</div></div>
+<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1808,8 +1837,8 @@ Macros</h2></td></tr>
 <div class="line">        if ((<a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>((head)) = <a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>(<a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>((head)), field)) == NULL)     \</div>
 <div class="line">            (head)-&gt;stqh_last = &amp;<a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>((head));                             \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:388</div></div>
-<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:441</div></div>
+<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
+<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
 </div><!-- fragment --><dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a27">inetd.c</a>.</dd>
 </dl>
 </div>
@@ -1855,9 +1884,9 @@ Macros</h2></td></tr>
 <div class="line">        if (<a class="code" href="queue_8h.html#af94ce05fbbab07bec6cce3d81b6d5cbf">sq_empty</a>(head2))                                                   \</div>
 <div class="line">            (head2)-&gt;stqh_last = &amp;<a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>(head2);                             \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="queue_8h_html_af94ce05fbbab07bec6cce3d81b6d5cbf"><div class="ttname"><a href="queue_8h.html#af94ce05fbbab07bec6cce3d81b6d5cbf">sq_empty</a></div><div class="ttdeci">#define sq_empty(head)</div><div class="ttdef"><b>Definition:</b> queue.h:386</div></div>
-<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:388</div></div>
-<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:200</div></div>
+<div class="ttc" id="queue_8h_html_af94ce05fbbab07bec6cce3d81b6d5cbf"><div class="ttname"><a href="queue_8h.html#af94ce05fbbab07bec6cce3d81b6d5cbf">sq_empty</a></div><div class="ttdeci">#define sq_empty(head)</div><div class="ttdef"><b>Definition:</b> queue.h:387</div></div>
+<div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
+<div class="ttc" id="queue_8h_html_a329a99f8542bf673a0620cc188644558"><div class="ttname"><a href="queue_8h.html#a329a99f8542bf673a0620cc188644558">QUEUE_TYPEOF</a></div><div class="ttdeci">#define QUEUE_TYPEOF(type)</div><div class="ttdef"><b>Definition:</b> queue.h:201</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1904,7 +1933,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 2 2017 13:51:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 2 2017 14:02:14 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
