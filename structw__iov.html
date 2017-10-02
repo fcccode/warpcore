@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.16.0</span>
+   &#160;<span id="projectnumber">0.17.0</span>
    </div>
   </td>
  </tr>
@@ -99,14 +99,14 @@ Collaboration diagram for w_iov:</div>
 <div class="dyncontent">
 <div class="center"><img src="structw__iov__coll__graph.png" border="0" usemap="#w__iov_coll__map" alt="Collaboration graph"/></div>
 <map name="w__iov_coll__map" id="w__iov_coll__map">
-<area shape="rect" id="node2" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="5,5,99,32"/></map>
+<area shape="rect" id="node2" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="4,5,80,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a63096f96ebff68793ccac843ad3354ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#a63096f96ebff68793ccac843ad3354ab">STAILQ_ENTRY</a> (<a class="el" href="structw__iov.html">w_iov</a>) next</td></tr>
-<tr class="memdesc:a63096f96ebff68793ccac843ad3354ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> in a <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a>.  <a href="#a63096f96ebff68793ccac843ad3354ab">More...</a><br/></td></tr>
-<tr class="separator:a63096f96ebff68793ccac843ad3354ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9da11b4de4cb105881cf19a0d60f54ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#a9da11b4de4cb105881cf19a0d60f54ee">sq_entry</a> (<a class="el" href="structw__iov.html">w_iov</a>) next</td></tr>
+<tr class="memdesc:a9da11b4de4cb105881cf19a0d60f54ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> in a <a class="el" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_sq</a>.  <a href="#a9da11b4de4cb105881cf19a0d60f54ee">More...</a><br/></td></tr>
+<tr class="separator:a9da11b4de4cb105881cf19a0d60f54ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
@@ -128,23 +128,23 @@ Data Fields</h2></td></tr>
 <tr class="memitem:aa2e95068f4bef17d199d6b3cb6f89323"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#aa2e95068f4bef17d199d6b3cb6f89323">flags</a></td></tr>
 <tr class="memdesc:aa2e95068f4bef17d199d6b3cb6f89323"><td class="mdescLeft">&#160;</td><td class="mdescRight">DSCP + ECN of the received IPv4 packet on RX, DSCP + ECN to use for the to-be-transmitted IPv4 packet on TX.  <a href="#aa2e95068f4bef17d199d6b3cb6f89323">More...</a><br/></td></tr>
 <tr class="separator:aa2e95068f4bef17d199d6b3cb6f89323"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:accbd9852b7315222705d15c2f571f36b"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#accbd9852b7315222705d15c2f571f36b">o</a></td></tr>
-<tr class="memdesc:accbd9852b7315222705d15c2f571f36b"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Pointer to the <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a> this <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> resides in. Only valid on TX.  <a href="#accbd9852b7315222705d15c2f571f36b">More...</a><br/></td></tr>
-<tr class="separator:accbd9852b7315222705d15c2f571f36b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2cfc955b9f63bab0a2653a5eff96fe8"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#ab2cfc955b9f63bab0a2653a5eff96fe8">o</a></td></tr>
+<tr class="memdesc:ab2cfc955b9f63bab0a2653a5eff96fe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">&lt; Pointer to the <a class="el" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_sq</a> this <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> resides in. Only valid on TX.  <a href="#ab2cfc955b9f63bab0a2653a5eff96fe8">More...</a><br/></td></tr>
+<tr class="separator:ab2cfc955b9f63bab0a2653a5eff96fe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The I/O vector structure that warpcore uses at the center of its API. </p>
 <p>It is mostly a pointer to the first UDP payload byte contained in a netmap packet buffer, together with some associated meta data.</p>
 <p>The meta data consists of the length of the payload data, the sender IPv4 address and port number, the DSCP and ECN bits associated with the IPv4 packet in which the payload arrived, and the netmap arrival timestamp.</p>
-<p>The <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structure also contains a pointer to the next I/O vector, which can be used to chain together longer data items for use with <a class="el" href="warpcore_8h.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> and <a class="el" href="warpcore_8h.html#ae4e224c9a1e5d17f44ea007ff2aa4692" title="Loops over the w_iov structures in the w_iov_stailq o, sending them all over w_sock s...">w_tx()</a>. </p>
+<p>The <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structure also contains a pointer to the next I/O vector, which can be used to chain together longer data items for use with <a class="el" href="warpcore_8h.html#af21a4e848c9199be729d01d20b8eea3d" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> and <a class="el" href="warpcore_8h.html#ac4f053bd8ffef52d164823134d732f51" title="Loops over the w_iov structures in the w_iov_sq o, sending them all over w_sock s. ">w_tx()</a>. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a22">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a13">ping.c</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a63096f96ebff68793ccac843ad3354ab"></a>
+<a class="anchor" id="a9da11b4de4cb105881cf19a0d60f54ee"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">w_iov::STAILQ_ENTRY </td>
+          <td class="memname">w_iov::sq_entry </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structw__iov.html">w_iov</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -153,7 +153,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Next <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> in a <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a>. </p>
+<p>Next <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> in a <a class="el" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_sq</a>. </p>
 
 </div>
 </div>
@@ -231,17 +231,17 @@ Data Fields</h2></td></tr>
 </dl>
 </div>
 </div>
-<a class="anchor" id="accbd9852b7315222705d15c2f571f36b"></a>
+<a class="anchor" id="ab2cfc955b9f63bab0a2653a5eff96fe8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a>* w_iov::o</td>
+          <td class="memname">struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a>* w_iov::o</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>&lt; Pointer to the <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a> this <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> resides in. Only valid on TX. </p>
+<p>&lt; Pointer to the <a class="el" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_sq</a> this <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> resides in. Only valid on TX. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a15">ping.c</a>.</dd>
 </dl>
 </div>
@@ -267,7 +267,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 7 2017 08:30:41 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 2 2017 13:51:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

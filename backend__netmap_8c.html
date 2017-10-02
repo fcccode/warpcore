@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.16.0</span>
+   &#160;<span id="projectnumber">0.17.0</span>
    </div>
   </td>
  </tr>
@@ -114,7 +114,7 @@ Include dependency graph for backend_netmap.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="backend__netmap_8c__incl.png" border="0" usemap="#src_2backend__netmap_8c" alt=""/></div>
 <map name="src_2backend__netmap_8c" id="src_2backend__netmap_8c">
-<area shape="rect" id="node2" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="575,229,717,256"/><area shape="rect" id="node19" href="netmap__user_8h.html" title="net/netmap_user.h" alt="" coords="627,80,756,107"/><area shape="rect" id="node28" href="arp_8h.html" title="arp.h" alt="" coords="985,155,1036,181"/><area shape="rect" id="node30" href="backend_8h.html" title="backend.h" alt="" coords="1416,80,1497,107"/><area shape="rect" id="node31" href="eth_8h.html" title="eth.h" alt="" coords="1327,229,1377,256"/><area shape="rect" id="node32" href="ip_8h.html" title="ip.h" alt="" coords="1439,155,1481,181"/><area shape="rect" id="node33" href="udp_8h.html" title="udp.h" alt="" coords="1610,229,1664,256"/><area shape="rect" id="node5" href="config_8h.html" title="warpcore/config.h" alt="" coords="735,304,860,331"/><area shape="rect" id="node6" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="986,304,1096,331"/><area shape="rect" id="node8" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="535,304,660,331"/><area shape="rect" id="node10" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="399,304,509,331"/><area shape="rect" id="node11" href="util_8h.html" title="warpcore/util.h" alt="" coords="217,304,324,331"/><area shape="rect" id="node23" href="netmap_8h.html" title="net/netmap.h" alt="" coords="412,155,511,181"/></map>
+<area shape="rect" id="node2" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="643,229,785,256"/><area shape="rect" id="node18" href="netmap__user_8h.html" title="net/netmap_user.h" alt="" coords="347,80,476,107"/><area shape="rect" id="node27" href="arp_8h.html" title="arp.h" alt="" coords="887,155,937,181"/><area shape="rect" id="node29" href="backend_8h.html" title="backend.h" alt="" coords="871,80,952,107"/><area shape="rect" id="node30" href="eth_8h.html" title="eth.h" alt="" coords="1249,229,1300,256"/><area shape="rect" id="node31" href="ip_8h.html" title="ip.h" alt="" coords="1357,155,1400,181"/><area shape="rect" id="node32" href="udp_8h.html" title="udp.h" alt="" coords="1577,229,1631,256"/><area shape="rect" id="node5" href="config_8h.html" title="warpcore/config.h" alt="" coords="517,304,643,331"/><area shape="rect" id="node6" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="953,304,1063,331"/><area shape="rect" id="node8" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="667,304,792,331"/><area shape="rect" id="node9" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="816,304,927,331"/><area shape="rect" id="node10" href="util_8h.html" title="warpcore/util.h" alt="" coords="225,304,332,331"/><area shape="rect" id="node22" href="netmap_8h.html" title="net/netmap.h" alt="" coords="513,155,612,181"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
@@ -137,14 +137,14 @@ Functions</h2></td></tr>
 <tr class="memitem:aaf46056f39cb452d908ddac8cf6e57c5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:aaf46056f39cb452d908ddac8cf6e57c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the file descriptor associated with a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>.  <a href="#aaf46056f39cb452d908ddac8cf6e57c5">More...</a><br/></td></tr>
 <tr class="separator:aaf46056f39cb452d908ddac8cf6e57c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5d9eb6da113ab9e0e7219efa0876384"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#ae5d9eb6da113ab9e0e7219efa0876384">w_rx</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const i)</td></tr>
-<tr class="memdesc:ae5d9eb6da113ab9e0e7219efa0876384"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return any new data that has been received on a socket by appending it to the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>i</code>.  <a href="#ae5d9eb6da113ab9e0e7219efa0876384">More...</a><br/></td></tr>
-<tr class="separator:ae5d9eb6da113ab9e0e7219efa0876384"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#ae4e224c9a1e5d17f44ea007ff2aa4692">w_tx</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const o)</td></tr>
-<tr class="memdesc:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a> <code>o</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#ae4e224c9a1e5d17f44ea007ff2aa4692">More...</a><br/></td></tr>
-<tr class="separator:ae4e224c9a1e5d17f44ea007ff2aa4692"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21a4e848c9199be729d01d20b8eea3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#af21a4e848c9199be729d01d20b8eea3d">w_rx</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a> *const i)</td></tr>
+<tr class="memdesc:af21a4e848c9199be729d01d20b8eea3d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return any new data that has been received on a socket by appending it to the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>i</code>.  <a href="#af21a4e848c9199be729d01d20b8eea3d">More...</a><br/></td></tr>
+<tr class="separator:af21a4e848c9199be729d01d20b8eea3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4f053bd8ffef52d164823134d732f51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#ac4f053bd8ffef52d164823134d732f51">w_tx</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s, struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a> *const o)</td></tr>
+<tr class="memdesc:ac4f053bd8ffef52d164823134d732f51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the <a class="el" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_sq</a> <code>o</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.  <a href="#ac4f053bd8ffef52d164823134d732f51">More...</a><br/></td></tr>
+<tr class="separator:ac4f053bd8ffef52d164823134d732f51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#ab0508cfebe874ba0f3f2f230b4120e0d">w_nic_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const int32_t msec)</td></tr>
-<tr class="memdesc:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger netmap to make new received data available to <a class="el" href="backend__netmap_8c.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a>.  <a href="#ab0508cfebe874ba0f3f2f230b4120e0d">More...</a><br/></td></tr>
+<tr class="memdesc:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trigger netmap to make new received data available to <a class="el" href="backend__netmap_8c.html#af21a4e848c9199be729d01d20b8eea3d" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a>.  <a href="#ab0508cfebe874ba0f3f2f230b4120e0d">More...</a><br/></td></tr>
 <tr class="separator:ab0508cfebe874ba0f3f2f230b4120e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3fba5669717435248ca7b7945a9b9d75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__netmap_8c.html#a3fba5669717435248ca7b7945a9b9d75">w_nic_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
 <tr class="memdesc:a3fba5669717435248ca7b7945a9b9d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Push data placed in the TX rings via <a class="el" href="udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c" title="Sends a payload contained in a w_sock::ov via UDP. ">udp_tx()</a> and similar methods out onto the link.  <a href="#a3fba5669717435248ca7b7945a9b9d75">More...</a><br/></td></tr>
@@ -372,7 +372,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Trigger netmap to make new received data available to <a class="el" href="backend__netmap_8c.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a>. </p>
+<p>Trigger netmap to make new received data available to <a class="el" href="backend__netmap_8c.html#af21a4e848c9199be729d01d20b8eea3d" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a>. </p>
 <p>Iterates over any new data in the RX rings, calling <a class="el" href="eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. ">eth_rx()</a> for each.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -428,7 +428,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ae5d9eb6da113ab9e0e7219efa0876384"></a>
+<a class="anchor" id="af21a4e848c9199be729d01d20b8eea3d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -441,7 +441,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a> *const&#160;</td>
           <td class="paramname"><em>i</em>&#160;</td>
         </tr>
         <tr>
@@ -453,7 +453,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Return any new data that has been received on a socket by appending it to the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>i</code>. </p>
-<p>The tail queue must eventually be returned to warpcore via <a class="el" href="warpcore_8h.html#a7dda1788a8e14dc34142676afa6a4e13">w_free()</a>.</p>
+<p>The tail queue must eventually be returned to warpcore via <a class="el" href="warpcore_8h.html#ac415e75903b5565308b0ddf2f1977cb3">w_free()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> for which the application would like to receive new data. </td></tr>
@@ -489,7 +489,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Fill a w_sock_slist with pointers to some sockets with pending inbound data. </p>
-<p>Data can be obtained via <a class="el" href="backend__netmap_8c.html#ae5d9eb6da113ab9e0e7219efa0876384" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> on each <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> in the list. Call can optionally block to wait for at least one ready connection. Will return the number of ready connections, or zero if none are ready. When the return value is not zero, a repeated call may return additional ready sockets.</p>
+<p>Data can be obtained via <a class="el" href="backend__netmap_8c.html#af21a4e848c9199be729d01d20b8eea3d" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> on each <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> in the list. Call can optionally block to wait for at least one ready connection. Will return the number of ready connections, or zero if none are ready. When the return value is not zero, a repeated call may return additional ready sockets.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>Backend engine. </td></tr>
@@ -501,7 +501,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="ae4e224c9a1e5d17f44ea007ff2aa4692"></a>
+<a class="anchor" id="ac4f053bd8ffef52d164823134d732f51"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -514,7 +514,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov__stailq.html">w_iov_stailq</a> *const&#160;</td>
+          <td class="paramtype">struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a> *const&#160;</td>
           <td class="paramname"><em>o</em>&#160;</td>
         </tr>
         <tr>
@@ -525,12 +525,12 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the <a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a> <code>o</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>. </p>
+<p>Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the <a class="el" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_sq</a> <code>o</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>. </p>
 <p>Places the payloads into IPv4 UDP packets, and attempts to move them into TX rings. Will force a NIC TX if all rings are full, retry the failed w_iovs. The (last batch of) packets are not send yet; <a class="el" href="backend__netmap_8c.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. ">w_nic_tx()</a> needs to be called (again) for that. This is, so that an application has control over exactly when to schedule packet I/O.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> socket to transmit over. </td></tr>
-    <tr><td class="paramname">o</td><td><a class="el" href="structw__iov__stailq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_stailq</a> to send. </td></tr>
+    <tr><td class="paramname">o</td><td><a class="el" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_sq</a> to send. </td></tr>
   </table>
   </dd>
 </dl>
@@ -538,8 +538,8 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="backend__netmap_8c_ae4e224c9a1e5d17f44ea007ff2aa4692_cgraph.png" border="0" usemap="#backend__netmap_8c_ae4e224c9a1e5d17f44ea007ff2aa4692_cgraph" alt=""/></div>
-<map name="backend__netmap_8c_ae4e224c9a1e5d17f44ea007ff2aa4692_cgraph" id="backend__netmap_8c_ae4e224c9a1e5d17f44ea007ff2aa4692_cgraph">
+<div class="center"><img src="backend__netmap_8c_ac4f053bd8ffef52d164823134d732f51_cgraph.png" border="0" usemap="#backend__netmap_8c_ac4f053bd8ffef52d164823134d732f51_cgraph" alt=""/></div>
+<map name="backend__netmap_8c_ac4f053bd8ffef52d164823134d732f51_cgraph" id="backend__netmap_8c_ac4f053bd8ffef52d164823134d732f51_cgraph">
 <area shape="rect" id="node2" href="warpcore_8h.html#a25db095b03b04843ed074c604c85c27d" title="Return whether a socket is connected (i.e., w_connect() has been called on it) or not..." alt="" coords="213,5,312,32"/><area shape="rect" id="node3" href="udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c" title="Sends a payload contained in a w_sock::ov via UDP. " alt="" coords="104,107,165,133"/><area shape="rect" id="node27" href="backend__netmap_8c.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="360,791,435,817"/><area shape="rect" id="node4" href="arp_8c.html#aad7ca3e847867c4dcc618d034aa42739" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="213,575,312,601"/><area shape="rect" id="node15" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="1246,319,1325,345"/><area shape="rect" id="node18" href="in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a" title="Compute a pseudo checksum over three 32&#45;bit values. " alt="" coords="941,107,1022,133"/><area shape="rect" id="node22" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="1116,531,1167,557"/><area shape="rect" id="node5" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="926,613,1037,640"/><area shape="rect" id="node6" href="warpcore_8h.html#aa17e20ed409edbfe18aa79ae5da640ff" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="1096,321,1187,348"/><area shape="rect" id="node7" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="1256,609,1315,636"/><area shape="rect" id="node10" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="1104,657,1179,684"/><area shape="rect" id="node11" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="360,537,435,564"/><area shape="rect" id="node8" href="netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75" title="nm_ring_space" alt="" coords="1374,609,1485,636"/><area shape="rect" id="node9" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="1379,688,1479,715"/><area shape="rect" id="node12" href="netmap_8h.html#a5fdd1b6f9d32c4d527c47a3a296fb304" title="nm_ring_empty" alt="" coords="483,512,594,539"/><area shape="rect" id="node13" href="eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="509,461,568,488"/><area shape="rect" id="node14" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="647,360,697,387"/><area shape="rect" id="node24" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="643,512,701,539"/><area shape="rect" id="node17" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="783,309,844,336"/><area shape="rect" id="node20" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="947,461,1015,488"/><area shape="rect" id="node23" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="779,360,847,387"/><area shape="rect" id="node16" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="1378,319,1481,345"/><area shape="rect" id="node19" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="944,360,1019,387"/><area shape="rect" id="node21" href="warpcore_8h.html#a7b47d2c85543fe7de031d20a946a8d40" title="Return the maximum size a given w_iov may have for the given engine. " alt="" coords="1085,480,1197,507"/><area shape="rect" id="node25" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="944,563,1019,589"/><area shape="rect" id="node26" href="arp_8c.html#ab422190f07f8dd9929c6802b53f5c8fa" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="749,563,877,589"/></map>
 </div>
 </p>
@@ -572,7 +572,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 7 2017 08:30:41 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 2 2017 13:51:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>warpcore: w_iov_stailq Struct Reference</title>
+<title>warpcore: w_iov_sq Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.16.0</span>
+   &#160;<span id="projectnumber">0.17.0</span>
    </div>
   </td>
  </tr>
@@ -86,38 +86,38 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">w_iov_stailq Struct Reference</div>  </div>
+<div class="title">w_iov_sq Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>A tail queue of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> I/O vectors.  
- <a href="structw__iov__stailq.html#details">More...</a></p>
+ <a href="structw__iov__sq.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="warpcore_8h_source.html">warpcore.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aaca5c68f7f27984d54967e37af73a44d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov__stailq.html#aaca5c68f7f27984d54967e37af73a44d">STAILQ_HEAD</a> (, <a class="el" href="structw__iov.html">w_iov</a>)</td></tr>
-<tr class="memdesc:aaca5c68f7f27984d54967e37af73a44d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Head of the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue.  <a href="#aaca5c68f7f27984d54967e37af73a44d">More...</a><br/></td></tr>
-<tr class="separator:aaca5c68f7f27984d54967e37af73a44d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31573a13aab6c4da511a31ea2640f6d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov__sq.html#a31573a13aab6c4da511a31ea2640f6d6">sq_head</a> (, <a class="el" href="structw__iov.html">w_iov</a>)</td></tr>
+<tr class="memdesc:a31573a13aab6c4da511a31ea2640f6d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Head of the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue.  <a href="#a31573a13aab6c4da511a31ea2640f6d6">More...</a><br/></td></tr>
+<tr class="separator:a31573a13aab6c4da511a31ea2640f6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:ada12829bba787f2c8d8ae5a44f2f91e2"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov__stailq.html#ada12829bba787f2c8d8ae5a44f2f91e2">tx_pending</a></td></tr>
-<tr class="memdesc:ada12829bba787f2c8d8ae5a44f2f91e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter of untransmitted w_iovs. Only valid on TX.  <a href="#ada12829bba787f2c8d8ae5a44f2f91e2">More...</a><br/></td></tr>
-<tr class="separator:ada12829bba787f2c8d8ae5a44f2f91e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9f873b767f2b85625cadd2cf8d17d8f"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov__sq.html#ab9f873b767f2b85625cadd2cf8d17d8f">tx_pending</a></td></tr>
+<tr class="memdesc:ab9f873b767f2b85625cadd2cf8d17d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counter of untransmitted w_iovs. Only valid on TX.  <a href="#ab9f873b767f2b85625cadd2cf8d17d8f">More...</a><br/></td></tr>
+<tr class="separator:ab9f873b767f2b85625cadd2cf8d17d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A tail queue of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> I/O vectors. </p>
 <p>Also contains a counter that (on TX) tracks how many w_iovs have not yet been transmitted by the NIC. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a15">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a10">ping.c</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aaca5c68f7f27984d54967e37af73a44d"></a>
+<a class="anchor" id="a31573a13aab6c4da511a31ea2640f6d6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">w_iov_stailq::STAILQ_HEAD </td>
+          <td class="memname">w_iov_sq::sq_head </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structw__iov.html">w_iov</a>&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -131,12 +131,12 @@ Data Fields</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="ada12829bba787f2c8d8ae5a44f2f91e2"></a>
+<a class="anchor" id="ab9f873b767f2b85625cadd2cf8d17d8f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t w_iov_stailq::tx_pending</td>
+          <td class="memname">uint32_t w_iov_sq::tx_pending</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -151,7 +151,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 7 2017 08:30:41 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 2 2017 13:51:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

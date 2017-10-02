@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.16.0</span>
+   &#160;<span id="projectnumber">0.17.0</span>
    </div>
   </td>
  </tr>
@@ -135,29 +135,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#elif defined(__APPLE__)</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;net/ethernet.h&gt;</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#define PLAT_MMFLAGS 0</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifdef HAVE_ARC4RANDOM</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define plat_random(x) arc4random(x)</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="plat_8h.html#acf8bee0f69b372ea080bb495ecff8109">   54</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define plat_random() random()</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<a class="code" href="plat_8h.html#ac645a18d329f9204ceddb21bff751abd">plat_get_mac</a>(struct ether_addr * const mac, const struct ifaddrs * const i);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;extern uint16_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<a class="code" href="plat_8h.html#aed8665163695e9a71d2d423f978c4b6a">plat_get_mtu</a>(const struct ifaddrs * const i);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;extern uint32_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<a class="code" href="plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168">plat_get_mbps</a>(const struct ifaddrs * const i);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;extern <span class="keywordtype">bool</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<a class="code" href="plat_8h.html#a2f7eb56d857e3fc97476186dbf10d36b">plat_get_link</a>(const struct ifaddrs * const i);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;extern <span class="keywordtype">void</span> <a class="code" href="plat_8h.html#a71fbdcd4631b4e0a0146fc7f3b2d27a1">plat_initrandom</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define SOCK_CLOEXEC 0</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#ifdef HAVE_ARC4RANDOM</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define plat_random(x) arc4random(x)</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="plat_8h.html#acf8bee0f69b372ea080bb495ecff8109">   55</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define plat_random() random()</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<a class="code" href="plat_8h.html#ac645a18d329f9204ceddb21bff751abd">plat_get_mac</a>(struct ether_addr * const mac, const struct ifaddrs * const i);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<a class="code" href="plat_8h.html#aed8665163695e9a71d2d423f978c4b6a">plat_get_mtu</a>(const struct ifaddrs * const i);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;extern uint32_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<a class="code" href="plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168">plat_get_mbps</a>(const struct ifaddrs * const i);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;extern <span class="keywordtype">bool</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<a class="code" href="plat_8h.html#a2f7eb56d857e3fc97476186dbf10d36b">plat_get_link</a>(const struct ifaddrs * const i);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;extern <span class="keywordtype">void</span> <a class="code" href="plat_8h.html#a71fbdcd4631b4e0a0146fc7f3b2d27a1">plat_initrandom</a>(<span class="keywordtype">void</span>);</div>
 <div class="ttc" id="plat_8h_html_aed8665163695e9a71d2d423f978c4b6a"><div class="ttname"><a href="plat_8h.html#aed8665163695e9a71d2d423f978c4b6a">plat_get_mtu</a></div><div class="ttdeci">uint16_t plat_get_mtu(const struct ifaddrs *const i)</div><div class="ttdoc">Return the MTU of network interface i. </div><div class="ttdef"><b>Definition:</b> plat.c:90</div></div>
 <div class="ttc" id="plat_8h_html_ac97867bf57fe48eb27fa344a9efc6168"><div class="ttname"><a href="plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168">plat_get_mbps</a></div><div class="ttdeci">uint32_t plat_get_mbps(const struct ifaddrs *const i)</div><div class="ttdoc">Return the link speed in Mb/s of network interface i. </div><div class="ttdef"><b>Definition:</b> plat.c:119</div></div>
 <div class="ttc" id="plat_8h_html_a2f7eb56d857e3fc97476186dbf10d36b"><div class="ttname"><a href="plat_8h.html#a2f7eb56d857e3fc97476186dbf10d36b">plat_get_link</a></div><div class="ttdeci">bool plat_get_link(const struct ifaddrs *const i)</div><div class="ttdoc">Return the link status of network interface i. </div><div class="ttdef"><b>Definition:</b> plat.c:171</div></div>
@@ -166,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 7 2017 08:30:40 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 2 2017 13:51:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

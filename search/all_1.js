@@ -1,7 +1,7 @@
 var searchData=
 [
   ['addcarry',['ADDCARRY',['../in__cksum_8c.html#a41cdd9db6c664f0da02d5000ece8ef3d',1,'in_cksum.c']]],
-  ['alloc_5fcnt',['alloc_cnt',['../warpcore_8c.html#af0a91ff02a8e6a69fa3727bea99efb88',1,'warpcore.c']]],
+  ['alloc_5fcnt',['alloc_cnt',['../warpcore_8c.html#a99654de6ff08d3834fcd04b6bcafe0b0',1,'warpcore.c']]],
   ['arp_2ec',['arp.c',['../arp_8c.html',1,'']]],
   ['arp_2eh',['arp.h',['../arp_8h.html',1,'']]],
   ['arp_5fcache_5fcmp',['arp_cache_cmp',['../arp_8c.html#a403adae73c210d7b48018e79a43cf8f2',1,'arp_cache_cmp(const struct arp_entry *const a, const struct arp_entry *const b):&#160;arp.c'],['../arp_8h.html#a403adae73c210d7b48018e79a43cf8f2',1,'arp_cache_cmp(const struct arp_entry *const a, const struct arp_entry *const b):&#160;arp.c']]],

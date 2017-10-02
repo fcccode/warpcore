@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.16.0</span>
+   &#160;<span id="projectnumber">0.17.0</span>
    </div>
   </td>
  </tr>
@@ -160,7 +160,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structarp__entry.html">   95</a></span>&#160;struct <a class="code" href="structarp__entry.html">arp_entry</a> {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="tree_8h.html#a763ee00a62d0b20f98cbc53f0df500cc">SPLAY_ENTRY</a>(arp_entry) next; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="tree_8h.html#a577ab0c7c03e7caae9b2c4b828027ecb">splay_entry</a>(arp_entry) next; </div>
 <div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="structarp__entry.html#a5ac0bb9105276b100aa6d5cc3d2738c9">   97</a></span>&#160;    uint32_t <a class="code" href="structarp__entry.html#a5ac0bb9105276b100aa6d5cc3d2738c9">ip</a>;                 </div>
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="structarp__entry.html#ae879dd35bc39628c54c86819fdd84bfb">   98</a></span>&#160;    <span class="keyword">struct </span>ether_addr mac;       </div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    uint8_t _unused[6]; </div>
@@ -172,21 +172,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;              const struct <a class="code" href="structarp__entry.html">arp_entry</a> * const b);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="arp_8h.html#acb96d32ef2060d91618aaf4333bdec58">SPLAY_HEAD</a>(arp_cache, <a class="code" href="structarp__entry.html">arp_entry</a>);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="arp_8h.html#ab06b22c6e2a1fd19fc881920cb45cc58">splay_head</a>(arp_cache, <a class="code" href="structarp__entry.html">arp_entry</a>);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<a class="code" href="tree_8h.html#a75ee3833aa4387ba31979341c84b6954">SPLAY_PROTOTYPE</a>(arp_cache, arp_entry, next, <a class="code" href="arp_8h.html#a403adae73c210d7b48018e79a43cf8f2">arp_cache_cmp</a>)</div>
 <div class="ttc" id="structarp__entry_html_a5ac0bb9105276b100aa6d5cc3d2738c9"><div class="ttname"><a href="structarp__entry.html#a5ac0bb9105276b100aa6d5cc3d2738c9">arp_entry::ip</a></div><div class="ttdeci">uint32_t ip</div><div class="ttdoc">IPv4 address. </div><div class="ttdef"><b>Definition:</b> arp.h:97</div></div>
 <div class="ttc" id="structarp__hdr_html_a7d4b3e7974f76320a65ddd51e375d765"><div class="ttname"><a href="structarp__hdr.html#a7d4b3e7974f76320a65ddd51e375d765">arp_hdr::spa</a></div><div class="ttdeci">uint32_t spa</div><div class="ttdoc">The sender protocol (i.e., IPv4) address of the ARP operation. </div><div class="ttdef"><b>Definition:</b> arp.h:67</div></div>
+<div class="ttc" id="arp_8h_html_ab06b22c6e2a1fd19fc881920cb45cc58"><div class="ttname"><a href="arp_8h.html#ab06b22c6e2a1fd19fc881920cb45cc58">splay_head</a></div><div class="ttdeci">splay_head(arp_cache, arp_entry)</div></div>
 <div class="ttc" id="warpcore_8h_html"><div class="ttname"><a href="warpcore_8h.html">warpcore.h</a></div></div>
 <div class="ttc" id="structarp__hdr_html_a239e78a3ceaa360c0a2ace850105de20"><div class="ttname"><a href="structarp__hdr.html#a239e78a3ceaa360c0a2ace850105de20">arp_hdr::op</a></div><div class="ttdeci">uint16_t op</div><div class="ttdoc">ARP operation. Either ARP_OP_REQUEST or ARP_OP_REPLY. </div><div class="ttdef"><b>Definition:</b> arp.h:59</div></div>
 <div class="ttc" id="arp_8h_html_a1b84f8ec20a55f766fcfcb9cd2d0d1e7"><div class="ttname"><a href="arp_8h.html#a1b84f8ec20a55f766fcfcb9cd2d0d1e7">free_arp_cache</a></div><div class="ttdeci">void free_arp_cache(struct w_engine *const w)</div><div class="ttdoc">Free the ARP cache entries associated with engine w. </div><div class="ttdef"><b>Definition:</b> arp.c:313</div></div>
-<div class="ttc" id="arp_8h_html_acb96d32ef2060d91618aaf4333bdec58"><div class="ttname"><a href="arp_8h.html#acb96d32ef2060d91618aaf4333bdec58">SPLAY_HEAD</a></div><div class="ttdeci">SPLAY_HEAD(arp_cache, arp_entry)</div></div>
-<div class="ttc" id="tree_8h_html_a75ee3833aa4387ba31979341c84b6954"><div class="ttname"><a href="tree_8h.html#a75ee3833aa4387ba31979341c84b6954">SPLAY_PROTOTYPE</a></div><div class="ttdeci">#define SPLAY_PROTOTYPE(name, type, field, cmp)</div><div class="ttdef"><b>Definition:</b> tree.h:120</div></div>
+<div class="ttc" id="tree_8h_html_a75ee3833aa4387ba31979341c84b6954"><div class="ttname"><a href="tree_8h.html#a75ee3833aa4387ba31979341c84b6954">SPLAY_PROTOTYPE</a></div><div class="ttdeci">#define SPLAY_PROTOTYPE(name, type, field, cmp)</div><div class="ttdef"><b>Definition:</b> tree.h:125</div></div>
 <div class="ttc" id="arp_8h_html_a4ec90ba3bb22f510ca5083c78434d6ad"><div class="ttname"><a href="arp_8h.html#a4ec90ba3bb22f510ca5083c78434d6ad">arp_rx</a></div><div class="ttdeci">void arp_rx(struct w_engine *w, struct netmap_ring *const r)</div><div class="ttdoc">Receive an ARP packet, and react to it. </div><div class="ttdef"><b>Definition:</b> arp.c:241</div></div>
 <div class="ttc" id="structarp__hdr_html_ad746c2a4cea41bd274f445a83ad3d9ca"><div class="ttname"><a href="structarp__hdr.html#ad746c2a4cea41bd274f445a83ad3d9ca">arp_hdr::sha</a></div><div class="ttdeci">struct ether_addr sha</div><div class="ttdoc">The sender hardware (i.e., Ethernet) address of the ARP operation. </div><div class="ttdef"><b>Definition:</b> arp.h:63</div></div>
-<div class="ttc" id="tree_8h_html_a763ee00a62d0b20f98cbc53f0df500cc"><div class="ttname"><a href="tree_8h.html#a763ee00a62d0b20f98cbc53f0df500cc">SPLAY_ENTRY</a></div><div class="ttdeci">#define SPLAY_ENTRY(type)</div><div class="ttdef"><b>Definition:</b> tree.h:75</div></div>
+<div class="ttc" id="tree_8h_html_a577ab0c7c03e7caae9b2c4b828027ecb"><div class="ttname"><a href="tree_8h.html#a577ab0c7c03e7caae9b2c4b828027ecb">splay_entry</a></div><div class="ttdeci">#define splay_entry(type)</div><div class="ttdef"><b>Definition:</b> tree.h:75</div></div>
 <div class="ttc" id="structarp__hdr_html_a98dae47366192fa6bfdafc4519ee3299"><div class="ttname"><a href="structarp__hdr.html#a98dae47366192fa6bfdafc4519ee3299">arp_hdr::hrd</a></div><div class="ttdeci">uint16_t hrd</div><div class="ttdoc">Format of the hardware address. </div><div class="ttdef"><b>Definition:</b> arp.h:44</div></div>
 <div class="ttc" id="structarp__hdr_html_a3444b62a7cd68b341c2a1cc59204b87a"><div class="ttname"><a href="structarp__hdr.html#a3444b62a7cd68b341c2a1cc59204b87a">arp_hdr::pro</a></div><div class="ttdeci">uint16_t pro</div><div class="ttdoc">Format of the protocol address. </div><div class="ttdef"><b>Definition:</b> arp.h:48</div></div>
-<div class="ttc" id="structw__engine_html"><div class="ttname"><a href="structw__engine.html">w_engine</a></div><div class="ttdoc">A warpcore backend engine. </div><div class="ttdef"><b>Definition:</b> warpcore.h:71</div></div>
+<div class="ttc" id="structw__engine_html"><div class="ttname"><a href="structw__engine.html">w_engine</a></div><div class="ttdoc">A warpcore backend engine. </div><div class="ttdef"><b>Definition:</b> warpcore.h:46</div></div>
 <div class="ttc" id="arp_8h_html_a403adae73c210d7b48018e79a43cf8f2"><div class="ttname"><a href="arp_8h.html#a403adae73c210d7b48018e79a43cf8f2">arp_cache_cmp</a></div><div class="ttdeci">int32_t arp_cache_cmp(const struct arp_entry *const a, const struct arp_entry *const b)</div><div class="ttdef"><b>Definition:</b> arp.c:50</div></div>
 <div class="ttc" id="structarp__hdr_html_a192105b01e4cc5ecc0a1deb716ae535a"><div class="ttname"><a href="structarp__hdr.html#a192105b01e4cc5ecc0a1deb716ae535a">arp_hdr::tha</a></div><div class="ttdeci">struct ether_addr tha</div><div class="ttdoc">The target hardware (i.e., Ethernet) address of the ARP operation. </div><div class="ttdef"><b>Definition:</b> arp.h:71</div></div>
 <div class="ttc" id="structnetmap__ring_html"><div class="ttname"><a href="structnetmap__ring.html">netmap_ring</a></div><div class="ttdef"><b>Definition:</b> netmap.h:279</div></div>
@@ -199,7 +199,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 7 2017 08:30:40 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Oct 2 2017 13:51:32 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
