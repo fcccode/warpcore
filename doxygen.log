@@ -55,8 +55,7 @@ Preprocessing /home/travis/build/NTAP/warpcore/lib/src/backend_sock.c...
 Parsing file /home/travis/build/NTAP/warpcore/lib/src/backend_sock.c...
 Preprocessing /home/travis/build/NTAP/warpcore/lib/src/eth.c...
 Parsing file /home/travis/build/NTAP/warpcore/lib/src/eth.c...
-Preprocessing /home/trav/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:192: warning: explicit link request to 'dlevel' could not be resolved
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:206: warning: explicit link request to 'dlevel' could not be resolved
+Preprocessing /home/trav/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:102: warning: explicit link request to 'dlevel' could not be resolved
 is/build/NTAP/warpcore/lib/src/eth.h...
 Parsing file /home/travis/build/NTAP/warpcore/lib/src/eth.h...
 Preprocessing /home/travis/build/NTAP/warpcore/lib/src/icmp.c...
@@ -149,19 +148,14 @@ Generating code for file include/warpcore/util.h...
 Generating code for file include/warpcore/warpcore.h...
 Parsing code for file src/arp.c...
 Generating code for file src/arp.h...
-Generating code for fil/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:192: warning: explicit link request to 'dlevel' could not be resolved
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:206: warning: explicit link request to 'dlevel' could not be resolved
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:192: warning: explicit link request to 'dlevel' could not be resolved
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:130: warning: argument 'fmt' of command @param is not found in the argument list of die(...)
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:279: warning: argument 'fmt' of command @param is not found in the argument list of ensure(e,...)
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:240: warning: explicit link request to 'dlevel' could not be resolved
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:240: warning: argument 'fmt' of command @param is not found in the argument list of rwarn(dlevel, lps,...)
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:206: warning: explicit link request to 'dlevel' could not be resolved
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:206: warning: explicit link request to 'dlevel' could not be resolved
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:206: warning: argument 'fmt' of command @param is not found in the argument list of warn(dlevel,...)
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:192: warning: explicit link request to 'dlevel' could not be resolved
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:192: warning: explicit link request to 'dlevel' could not be resolved
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:192: warning: explicit link request to 'dlevel' could not be resolved
+Generating code for fil/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:102: warning: explicit link request to 'dlevel' could not be resolved
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:60: warning: argument 'fmt' of command @param is not found in the argument list of die(...)
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:173: warning: argument 'fmt' of command @param is not found in the argument list of ensure(e,...)
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:127: warning: explicit link request to 'dlevel' could not be resolved
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:127: warning: argument 'fmt' of command @param is not found in the argument list of rwarn(dlevel, lps,...)
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:102: warning: explicit link request to 'dlevel' could not be resolved
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:102: warning: explicit link request to 'dlevel' could not be resolved
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:102: warning: argument 'fmt' of command @param is not found in the argument list of warn(dlevel,...)
 e src/backend.h...
 Parsing code for file src/backend_netmap.c...
 Parsing code for file src/backend_sock.c...
@@ -188,6 +182,8 @@ Generating docs for file include/warpcore/plat.h...
 Generating docs for file include/warpcore/queue.h...
 Generating docs for file include/warpcore/tree.h...
 Generating docs for file include/warpcore/util.h...
+Generating call graph for function util_rwarn
+Generating call graph for function util_warn
 Generating docs for file include/warpcore/warpcore.h...
 Generating call graph for function w_alloc_cnt
 Generating call graph for function w_alloc_len
@@ -251,6 +247,8 @@ Generating docs for file src/udp.h...
 Generating call graph for function udp_rx
 Generating call graph for function udp_tx
 Generating docs for file src/util.c...
+Generating call graph for function util_rwarn
+Generating call graph for function util_warn
 Generating docs for file src/warpcore.c...
 Generating call graph for function alloc_cnt
 Generating call graph for function w_alloc_cnt
@@ -309,110 +307,114 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 33 parallel threads...
-Running dot for graph 1/104
-Running dot for graph 2/104
-Running dot for graph 3/104
-Running dot for graph 4/104
-Running dot for graph 5/104
-Running dot for graph 6/104
-Running dot for graph 7/104
-Running dot for graph 8/104
-Running dot for graph 9/104
-Running dot for graph 10/104
-Running dot for graph 11/104
-Running dot for graph 12/104
-Running dot for graph 13/104
-Running dot for graph 14/104
-Running dot for graph 15/104
-Running dot for graph 16/104
-Running dot for graph 17/104
-Running dot for graph 18/104
-Running dot for graph 19/104
-Running dot for graph 20/104
-Running dot for graph 21/104
-Running dot for graph 22/104
-Running dot for graph 23/104
-Running dot for graph 24/104
-Running dot for graph 25/104
-Running dot for graph 26/104
-Running dot for graph 27/104
-Running dot for graph 28/104
-Running dot for graph 29/104
-Running dot for graph 30/104
-Running dot for graph 31/104
-Running dot for graph 32/104
-Running dot for graph 33/104
-Running dot for graph 34/104
-Running dot for graph 35/104
-Running dot for graph 36/104
-Running dot for graph 37/104
-Running dot for graph 38/104
-Running dot for graph 39/104
-Running dot for graph 40/104
-Running dot for graph 41/104
-Running dot for graph 42/104
-Running dot for graph 43/104
-Running dot for graph 44/104
-Running dot for graph 45/104
-Running dot for graph 46/104
-Running dot for graph 47/104
-Running dot for graph 48/104
-Running dot for graph 49/104
-Running dot for graph 50/104
-Running dot for graph 51/104
-Running dot for graph 52/104
-Running dot for graph 53/104
-Running dot for graph 54/104
-Running dot for graph 55/104
-Running dot for graph 56/104
-Running dot for graph 57/104
-Running dot for graph 58/104
-Running dot for graph 59/104
-Running dot for graph 60/104
-Running dot for graph 61/104
-Running dot for graph 62/104
-Running dot for graph 63/104
-Running dot for graph 64/104
-Running dot for graph 65/104
-Running dot for graph 66/104
-Running dot for graph 67/104
-Running dot for graph 68/104
-Running dot for graph 69/104
-Running dot for graph 70/104
-Running dot for graph 71/104
-Running dot for graph 72/104
-Running dot for graph 73/104
-Running dot for graph 74/104
-Running dot for graph 75/104
-Running dot for graph 76/104
-Running dot for graph 77/104
-Running dot for graph 78/104
-Running dot for graph 79/104
-Running dot for graph 80/104
-Running dot for graph 81/104
-Running dot for graph 82/104
-Running dot for graph 83/104
-Running dot for graph 84/104
-Running dot for graph 85/104
-Running dot for graph 86/104
-Running dot for graph 87/104
-Running dot for graph 88/104
-Running dot for graph 89/104
-Running dot for graph 90/104
-Running dot for graph 91/104
-Running dot for graph 92/104
-Running dot for graph 93/104
-Running dot for graph 94/104
-Running dot for graph 95/104
-Running dot for graph 96/104
-Running dot for graph 97/104
-Running dot for graph 98/104
-Running dot for graph 99/104
-Running dot for graph 100/104
-Running dot for graph 101/104
-Running dot for graph 102/104
-Running dot for graph 103/104
-Running dot for graph 104/104
+Running dot for graph 1/108
+Running dot for graph 2/108
+Running dot for graph 3/108
+Running dot for graph 4/108
+Running dot for graph 5/108
+Running dot for graph 6/108
+Running dot for graph 7/108
+Running dot for graph 8/108
+Running dot for graph 9/108
+Running dot for graph 10/108
+Running dot for graph 11/108
+Running dot for graph 12/108
+Running dot for graph 13/108
+Running dot for graph 14/108
+Running dot for graph 15/108
+Running dot for graph 16/108
+Running dot for graph 17/108
+Running dot for graph 18/108
+Running dot for graph 19/108
+Running dot for graph 20/108
+Running dot for graph 21/108
+Running dot for graph 22/108
+Running dot for graph 23/108
+Running dot for graph 24/108
+Running dot for graph 25/108
+Running dot for graph 26/108
+Running dot for graph 27/108
+Running dot for graph 28/108
+Running dot for graph 29/108
+Running dot for graph 30/108
+Running dot for graph 31/108
+Running dot for graph 32/108
+Running dot for graph 33/108
+Running dot for graph 34/108
+Running dot for graph 35/108
+Running dot for graph 36/108
+Running dot for graph 37/108
+Running dot for graph 38/108
+Running dot for graph 39/108
+Running dot for graph 40/108
+Running dot for graph 41/108
+Running dot for graph 42/108
+Running dot for graph 43/108
+Running dot for graph 44/108
+Running dot for graph 45/108
+Running dot for graph 46/108
+Running dot for graph 47/108
+Running dot for graph 48/108
+Running dot for graph 49/108
+Running dot for graph 50/108
+Running dot for graph 51/108
+Running dot for graph 52/108
+Running dot for graph 53/108
+Running dot for graph 54/108
+Running dot for graph 55/108
+Running dot for graph 56/108
+Running dot for graph 57/108
+Running dot for graph 58/108
+Running dot for graph 59/108
+Running dot for graph 60/108
+Running dot for graph 61/108
+Running dot for graph 62/108
+Running dot for graph 63/108
+Running dot for graph 64/108
+Running dot for graph 65/108
+Running dot for graph 66/108
+Running dot for graph 67/108
+Running dot for graph 68/108
+Running dot for graph 69/108
+Running dot for graph 70/108
+Running dot for graph 71/108
+Running dot for graph 72/108
+Running dot for graph 73/108
+Running dot for graph 74/108
+Running dot for graph 75/108
+Running dot for graph 76/108
+Running dot for graph 77/108
+Running dot for graph 78/108
+Running dot for graph 79/108
+Running dot for graph 80/108
+Running dot for graph 81/108
+Running dot for graph 82/108
+Running dot for graph 83/108
+Running dot for graph 84/108
+Running dot for graph 85/108
+Running dot for graph 86/108
+Running dot for graph 87/108
+Running dot for graph 88/108
+Running dot for graph 89/108
+Running dot for graph 90/108
+Running dot for graph 91/108
+Running dot for graph 92/108
+Running dot for graph 93/108
+Running dot for graph 94/108
+Running dot for graph 95/108
+Running dot for graph 96/108
+Running dot for graph 97/108
+Running dot for graph 98/108
+Running dot for graph 99/108
+Running dot for graph 100/108
+Running dot for graph 101/108
+Running dot for graph 102/108
+Running dot for graph 103/108
+Running dot for graph 104/108
+Running dot for graph 105/108
+Running dot for graph 106/108
+Running dot for graph 107/108
+Running dot for graph 108/108
 Patching output file 1/38
 Patching output file 2/38
 Patching output file 3/38
@@ -451,5 +453,5 @@ Patching output file 35/38
 Patching output file 36/38
 Patching output file 37/38
 Patching output file 38/38
-lookup cache used 630/65536 hits=3669 misses=640
+lookup cache used 624/65536 hits=3673 misses=634
 finished...

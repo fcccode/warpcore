@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.17.0</span>
+   &#160;<span id="projectnumber">0.18.0</span>
    </div>
   </td>
  </tr>
@@ -93,11 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">util.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;errno.h&gt;</code><br/>
-<code>#include &lt;stdio.h&gt;</code><br/>
-<code>#include &lt;stdlib.h&gt;</code><br/>
-<code>#include &lt;string.h&gt;</code><br/>
-<code>#include &lt;sys/time.h&gt;</code><br/>
+<div class="textblock"><code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;regex.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for util.h:</div>
@@ -118,75 +114,6 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ade01bc98e1632cd645e0f33757d70d2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>&#160;&#160;&#160;&quot;\x1B[0m&quot;</td></tr>
-<tr class="memdesc:ade01bc98e1632cd645e0f33757d70d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: reset all to normal.  <a href="#ade01bc98e1632cd645e0f33757d70d2e">More...</a><br/></td></tr>
-<tr class="separator:ade01bc98e1632cd645e0f33757d70d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6773bd84b2bf2a4f2118fc787f3a53fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">BLD</a>&#160;&#160;&#160;&quot;\x1B[1m&quot;</td></tr>
-<tr class="memdesc:a6773bd84b2bf2a4f2118fc787f3a53fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: bold.  <a href="#a6773bd84b2bf2a4f2118fc787f3a53fb">More...</a><br/></td></tr>
-<tr class="separator:a6773bd84b2bf2a4f2118fc787f3a53fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac25189db92959bff3c6c2adf4c34b50a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac25189db92959bff3c6c2adf4c34b50a">DIM</a>&#160;&#160;&#160;&quot;\x1B[2m&quot;</td></tr>
-<tr class="memdesc:ac25189db92959bff3c6c2adf4c34b50a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: dim.  <a href="#ac25189db92959bff3c6c2adf4c34b50a">More...</a><br/></td></tr>
-<tr class="separator:ac25189db92959bff3c6c2adf4c34b50a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34e574c6e8af28972424d5a51b08d358"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a34e574c6e8af28972424d5a51b08d358">ULN</a>&#160;&#160;&#160;&quot;\x1B[3m&quot;</td></tr>
-<tr class="memdesc:a34e574c6e8af28972424d5a51b08d358"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: underline.  <a href="#a34e574c6e8af28972424d5a51b08d358">More...</a><br/></td></tr>
-<tr class="separator:a34e574c6e8af28972424d5a51b08d358"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affc43d19d38fedbf7a83ea1730115c02"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#affc43d19d38fedbf7a83ea1730115c02">BLN</a>&#160;&#160;&#160;&quot;\x1B[5m&quot;</td></tr>
-<tr class="memdesc:affc43d19d38fedbf7a83ea1730115c02"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: blink.  <a href="#affc43d19d38fedbf7a83ea1730115c02">More...</a><br/></td></tr>
-<tr class="separator:affc43d19d38fedbf7a83ea1730115c02"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33a42d6bfefe54ae2384f5c28dd87340"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a33a42d6bfefe54ae2384f5c28dd87340">REV</a>&#160;&#160;&#160;&quot;\x1B[7m&quot;</td></tr>
-<tr class="memdesc:a33a42d6bfefe54ae2384f5c28dd87340"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: reverse.  <a href="#a33a42d6bfefe54ae2384f5c28dd87340">More...</a><br/></td></tr>
-<tr class="separator:a33a42d6bfefe54ae2384f5c28dd87340"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace5c43487b54ddcce48e383149a5cc80"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ace5c43487b54ddcce48e383149a5cc80">HID</a>&#160;&#160;&#160;&quot;\x1B[8m&quot;</td></tr>
-<tr class="memdesc:ace5c43487b54ddcce48e383149a5cc80"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: hidden.  <a href="#ace5c43487b54ddcce48e383149a5cc80">More...</a><br/></td></tr>
-<tr class="separator:ace5c43487b54ddcce48e383149a5cc80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6283768c836fd4a0f382514973bc3ff4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a>&#160;&#160;&#160;&quot;\x1B[30m&quot;</td></tr>
-<tr class="memdesc:a6283768c836fd4a0f382514973bc3ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: black.  <a href="#a6283768c836fd4a0f382514973bc3ff4">More...</a><br/></td></tr>
-<tr class="separator:a6283768c836fd4a0f382514973bc3ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d23feea868a983c8c2b661e1e16972f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a8d23feea868a983c8c2b661e1e16972f">RED</a>&#160;&#160;&#160;&quot;\x1B[31m&quot;</td></tr>
-<tr class="memdesc:a8d23feea868a983c8c2b661e1e16972f"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: red.  <a href="#a8d23feea868a983c8c2b661e1e16972f">More...</a><br/></td></tr>
-<tr class="separator:a8d23feea868a983c8c2b661e1e16972f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aea69ffbacdcdf16c21b8c9961df84448"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#aea69ffbacdcdf16c21b8c9961df84448">GRN</a>&#160;&#160;&#160;&quot;\x1B[32m&quot;</td></tr>
-<tr class="memdesc:aea69ffbacdcdf16c21b8c9961df84448"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: green.  <a href="#aea69ffbacdcdf16c21b8c9961df84448">More...</a><br/></td></tr>
-<tr class="separator:aea69ffbacdcdf16c21b8c9961df84448"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96fac03c4ab3363f06a0328e0e53a40c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a96fac03c4ab3363f06a0328e0e53a40c">YEL</a>&#160;&#160;&#160;&quot;\x1B[33m&quot;</td></tr>
-<tr class="memdesc:a96fac03c4ab3363f06a0328e0e53a40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: yellow.  <a href="#a96fac03c4ab3363f06a0328e0e53a40c">More...</a><br/></td></tr>
-<tr class="separator:a96fac03c4ab3363f06a0328e0e53a40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add9307de87f38e77d336751e305886f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#add9307de87f38e77d336751e305886f6">BLU</a>&#160;&#160;&#160;&quot;\x1B[34m&quot;</td></tr>
-<tr class="memdesc:add9307de87f38e77d336751e305886f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: blue.  <a href="#add9307de87f38e77d336751e305886f6">More...</a><br/></td></tr>
-<tr class="separator:add9307de87f38e77d336751e305886f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af54a5a977c0c499323d656315f008ee0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a>&#160;&#160;&#160;&quot;\x1B[35m&quot;</td></tr>
-<tr class="memdesc:af54a5a977c0c499323d656315f008ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: magenta.  <a href="#af54a5a977c0c499323d656315f008ee0">More...</a><br/></td></tr>
-<tr class="separator:af54a5a977c0c499323d656315f008ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc708fa688f5d78db361f66c36f0f807"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#adc708fa688f5d78db361f66c36f0f807">CYN</a>&#160;&#160;&#160;&quot;\x1B[36m&quot;</td></tr>
-<tr class="memdesc:adc708fa688f5d78db361f66c36f0f807"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: cyan.  <a href="#adc708fa688f5d78db361f66c36f0f807">More...</a><br/></td></tr>
-<tr class="separator:adc708fa688f5d78db361f66c36f0f807"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaf3a04d5bf63b204689a714718ea930"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a>&#160;&#160;&#160;&quot;\x1B[37m&quot;</td></tr>
-<tr class="memdesc:aeaf3a04d5bf63b204689a714718ea930"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: white.  <a href="#aeaf3a04d5bf63b204689a714718ea930">More...</a><br/></td></tr>
-<tr class="separator:aeaf3a04d5bf63b204689a714718ea930"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3bdb5557ea3a8f7ed80a55ad301e09c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ab3bdb5557ea3a8f7ed80a55ad301e09c">BBLK</a>&#160;&#160;&#160;&quot;\x1B[40m&quot;</td></tr>
-<tr class="memdesc:ab3bdb5557ea3a8f7ed80a55ad301e09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background black.  <a href="#ab3bdb5557ea3a8f7ed80a55ad301e09c">More...</a><br/></td></tr>
-<tr class="separator:ab3bdb5557ea3a8f7ed80a55ad301e09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2adb4c9e293ac446897ccfac5a52d6c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a2adb4c9e293ac446897ccfac5a52d6c2">BRED</a>&#160;&#160;&#160;&quot;\x1B[41m&quot;</td></tr>
-<tr class="memdesc:a2adb4c9e293ac446897ccfac5a52d6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background red.  <a href="#a2adb4c9e293ac446897ccfac5a52d6c2">More...</a><br/></td></tr>
-<tr class="separator:a2adb4c9e293ac446897ccfac5a52d6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a003f38f51e5f6972a6a0796bda4ca11c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a003f38f51e5f6972a6a0796bda4ca11c">BGRN</a>&#160;&#160;&#160;&quot;\x1B[42m&quot;</td></tr>
-<tr class="memdesc:a003f38f51e5f6972a6a0796bda4ca11c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background green.  <a href="#a003f38f51e5f6972a6a0796bda4ca11c">More...</a><br/></td></tr>
-<tr class="separator:a003f38f51e5f6972a6a0796bda4ca11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9b526756196d7c0efa31bc8fe4e5f138"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a9b526756196d7c0efa31bc8fe4e5f138">BYEL</a>&#160;&#160;&#160;&quot;\x1B[43m&quot;</td></tr>
-<tr class="memdesc:a9b526756196d7c0efa31bc8fe4e5f138"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background yellow.  <a href="#a9b526756196d7c0efa31bc8fe4e5f138">More...</a><br/></td></tr>
-<tr class="separator:a9b526756196d7c0efa31bc8fe4e5f138"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f40b3c1c240d5513da9f50685d5bf15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a9f40b3c1c240d5513da9f50685d5bf15">BBLU</a>&#160;&#160;&#160;&quot;\x1B[44m&quot;</td></tr>
-<tr class="memdesc:a9f40b3c1c240d5513da9f50685d5bf15"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background blue.  <a href="#a9f40b3c1c240d5513da9f50685d5bf15">More...</a><br/></td></tr>
-<tr class="separator:a9f40b3c1c240d5513da9f50685d5bf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1bdc3f8928aa1589ef44e3578a09464"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#af1bdc3f8928aa1589ef44e3578a09464">BMAG</a>&#160;&#160;&#160;&quot;\x1B[45m&quot;</td></tr>
-<tr class="memdesc:af1bdc3f8928aa1589ef44e3578a09464"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background magenta.  <a href="#af1bdc3f8928aa1589ef44e3578a09464">More...</a><br/></td></tr>
-<tr class="separator:af1bdc3f8928aa1589ef44e3578a09464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd610b309fe5845f1e5fbd6666a22447"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#abd610b309fe5845f1e5fbd6666a22447">BCYN</a>&#160;&#160;&#160;&quot;\x1B[46m&quot;</td></tr>
-<tr class="memdesc:abd610b309fe5845f1e5fbd6666a22447"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background cyan.  <a href="#abd610b309fe5845f1e5fbd6666a22447">More...</a><br/></td></tr>
-<tr class="separator:abd610b309fe5845f1e5fbd6666a22447"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae528cad0e6c76be71eb66776599ec5d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ae528cad0e6c76be71eb66776599ec5d9">BWHT</a>&#160;&#160;&#160;&quot;\x1B[47m&quot;</td></tr>
-<tr class="memdesc:ae528cad0e6c76be71eb66776599ec5d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background white.  <a href="#ae528cad0e6c76be71eb66776599ec5d9">More...</a><br/></td></tr>
-<tr class="separator:ae528cad0e6c76be71eb66776599ec5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abf5f17d3254f2e930aee0dc34dbff071"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a>(f)&#160;&#160;&#160;(strrchr((f), '/') ? strrchr((f), '/') + 1 : (f))</td></tr>
 <tr class="memdesc:abf5f17d3254f2e930aee0dc34dbff071"><td class="mdescLeft">&#160;</td><td class="mdescRight">Trim the path from the given file name.  <a href="#abf5f17d3254f2e930aee0dc34dbff071">More...</a><br/></td></tr>
 <tr class="separator:abf5f17d3254f2e930aee0dc34dbff071"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -197,17 +124,7 @@ Macros</h2></td></tr>
 <tr class="separator:a217a0bd562b98ae8c2ffce44935351e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6c45889010c1bd68631771b64f18101"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a>(x)&#160;&#160;&#160;__builtin_expect(!!(x), 0)</td></tr>
 <tr class="separator:ac6c45889010c1bd68631771b64f18101"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45e5c88c9ecb59dbebcf010d7c391aa7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a45e5c88c9ecb59dbebcf010d7c391aa7">DTHREAD_LOCK</a></td></tr>
-<tr class="separator:a45e5c88c9ecb59dbebcf010d7c391aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d4b88acd687e9556a203cf43de143a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a6d4b88acd687e9556a203cf43de143a2">DTHREAD_UNLOCK</a></td></tr>
-<tr class="separator:a6d4b88acd687e9556a203cf43de143a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a680e4f50570b3400b455076c0cb143bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a680e4f50570b3400b455076c0cb143bc">DTHREAD_ID</a></td></tr>
-<tr class="separator:a680e4f50570b3400b455076c0cb143bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4e90e0eea07ae337107d6a6fc44f9b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ab4e90e0eea07ae337107d6a6fc44f9b8">DTHREAD_ID_IND</a>(bg)&#160;&#160;&#160;bg</td></tr>
-<tr class="separator:ab4e90e0eea07ae337107d6a6fc44f9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae87fafc79d9317d688dc63fd3d0c805d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ae87fafc79d9317d688dc63fd3d0c805d">DTHREAD_GAP</a>&#160;&#160;&#160;&quot;        &quot;</td></tr>
-<tr class="separator:ae87fafc79d9317d688dc63fd3d0c805d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b2164ee75646f16a7388a36e6800c35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a>(...)</td></tr>
+<tr class="memitem:a0b2164ee75646f16a7388a36e6800c35"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a>(...)&#160;&#160;&#160;<a class="el" href="util_8c.html#a887187f8f71a200c99c63237ed3e3fd5">util_die</a>(__func__, __FILE__, __LINE__, __VA_ARGS__)</td></tr>
 <tr class="memdesc:a0b2164ee75646f16a7388a36e6800c35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abort execution with a message.  <a href="#a0b2164ee75646f16a7388a36e6800c35">More...</a><br/></td></tr>
 <tr class="separator:a0b2164ee75646f16a7388a36e6800c35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25339ce578c7247f4504cb5aefb0a2e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a25339ce578c7247f4504cb5aefb0a2e8">CRT</a>&#160;&#160;&#160;0</td></tr>
@@ -231,40 +148,37 @@ Macros</h2></td></tr>
 <tr class="memitem:a94c2776a2d1f9e44c3d327befe0d3bfe"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a>&#160;&#160;&#160;<a class="el" href="util_8h.html#a49606be7356624568932ec81c0d429f4">DBG</a></td></tr>
 <tr class="memdesc:a94c2776a2d1f9e44c3d327befe0d3bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default debug level.  <a href="#a94c2776a2d1f9e44c3d327befe0d3bfe">More...</a><br/></td></tr>
 <tr class="separator:a94c2776a2d1f9e44c3d327befe0d3bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911d17fccac43347bb3c6ace7a8051c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a>&#160;&#160;&#160;0</td></tr>
-<tr class="separator:a911d17fccac43347bb3c6ace7a8051c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75fb9e13fe5fdbdbf4f0b7f34d25a887"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887">warn</a>(dlevel,...)</td></tr>
 <tr class="memdesc:a75fb9e13fe5fdbdbf4f0b7f34d25a887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a debug message to stderr, including a black/white indicator whether the message comes from the master thread (black) or not (white), a timestamp since start of the program, a coloMAG indicator for the #dlevel severity level, as well as a printf()-style format string fed by further optional arguments.  <a href="#a75fb9e13fe5fdbdbf4f0b7f34d25a887">More...</a><br/></td></tr>
 <tr class="separator:a75fb9e13fe5fdbdbf4f0b7f34d25a887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bc0c9794d85e85e8f2d7266c832638f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a7bc0c9794d85e85e8f2d7266c832638f">rwarn</a>(dlevel, lps,...)</td></tr>
 <tr class="memdesc:a7bc0c9794d85e85e8f2d7266c832638f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Rate-limited variant of <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, which repeats the message prints at most <code>lps</code> times.  <a href="#a7bc0c9794d85e85e8f2d7266c832638f">More...</a><br/></td></tr>
 <tr class="separator:a7bc0c9794d85e85e8f2d7266c832638f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae87fafc79d9317d688dc63fd3d0c805d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ae87fafc79d9317d688dc63fd3d0c805d">DTHREAD_GAP</a>&#160;&#160;&#160;&quot;        &quot;</td></tr>
+<tr class="separator:ae87fafc79d9317d688dc63fd3d0c805d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1011ec002411388144b5eea764f90d83"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a1011ec002411388144b5eea764f90d83">ensure</a>(e,...)</td></tr>
 <tr class="memdesc:a1011ec002411388144b5eea764f90d83"><td class="mdescLeft">&#160;</td><td class="mdescRight">A version of the C assert() macro that isn't disabled by NDEBUG and that ties in with <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, <a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35" title="Abort execution with a message. ">die()</a> and our other debug functions.  <a href="#a1011ec002411388144b5eea764f90d83">More...</a><br/></td></tr>
 <tr class="separator:a1011ec002411388144b5eea764f90d83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1ecaf849af500832b2da48e3c60794de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a1ecaf849af500832b2da48e3c60794de">hexdump</a>(ptr, len)&#160;&#160;&#160;<a class="el" href="util_8c.html#a7a3fc877ae19d64e52cff7e0ceff7668">_hexdump</a>(ptr, len, #ptr, __func__, __FILE__, __LINE__)</td></tr>
+<tr class="memitem:a1ecaf849af500832b2da48e3c60794de"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a1ecaf849af500832b2da48e3c60794de">hexdump</a>(ptr, len)&#160;&#160;&#160;<a class="el" href="util_8c.html#a8ccec5f8d7fa48c4b4c214feba13a8d3">util_hexdump</a>(ptr, len, #ptr, __func__, __FILE__, __LINE__)</td></tr>
 <tr class="memdesc:a1ecaf849af500832b2da48e3c60794de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a hexdump of the memory region given by <code>ptr</code> and <code>len</code> to stderr.  <a href="#a1ecaf849af500832b2da48e3c60794de">More...</a><br/></td></tr>
 <tr class="separator:a1ecaf849af500832b2da48e3c60794de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a7a3fc877ae19d64e52cff7e0ceff7668"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a7a3fc877ae19d64e52cff7e0ceff7668">_hexdump</a> (const void *const ptr, const size_t len, const char *const ptr_name, const char *const func, const char *const file, const int line)</td></tr>
-<tr class="separator:a7a3fc877ae19d64e52cff7e0ceff7668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887187f8f71a200c99c63237ed3e3fd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a887187f8f71a200c99c63237ed3e3fd5">util_die</a> (const char *const func, const char *const file, const unsigned line,...)</td></tr>
+<tr class="separator:a887187f8f71a200c99c63237ed3e3fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab3816283166679f53fa95cf7ea6f50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a6ab3816283166679f53fa95cf7ea6f50">util_warn</a> (const unsigned dlevel, const char *const func, const char *const file, const unsigned line,...)</td></tr>
+<tr class="separator:a6ab3816283166679f53fa95cf7ea6f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d77449cd1566cf29f0ca3565dbe2ee8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a3d77449cd1566cf29f0ca3565dbe2ee8">util_rwarn</a> (const unsigned dlevel, const unsigned lps, const char *const func, const char *const file, const unsigned line,...)</td></tr>
+<tr class="separator:a3d77449cd1566cf29f0ca3565dbe2ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ccec5f8d7fa48c4b4c214feba13a8d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a8ccec5f8d7fa48c4b4c214feba13a8d3">util_hexdump</a> (const void *const ptr, const size_t len, const char *const ptr_name, const char *const func, const char *const file, const unsigned line)</td></tr>
+<tr class="separator:a8ccec5f8d7fa48c4b4c214feba13a8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a05e3542f93d5ea18835fa9f7547b8171"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a05e3542f93d5ea18835fa9f7547b8171">_dlevel</a></td></tr>
-<tr class="memdesc:a05e3542f93d5ea18835fa9f7547b8171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically adjust _dlevel from your code to show or suppress debug messages at runtime.  <a href="#a05e3542f93d5ea18835fa9f7547b8171">More...</a><br/></td></tr>
-<tr class="separator:a05e3542f93d5ea18835fa9f7547b8171"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9c82f349630a2371c3eeee0fb50a12"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a5b9c82f349630a2371c3eeee0fb50a12">_col</a> []</td></tr>
-<tr class="memdesc:a5b9c82f349630a2371c3eeee0fb50a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of ANSI color sequences associated with the different #dlevel severities.  <a href="#a5b9c82f349630a2371c3eeee0fb50a12">More...</a><br/></td></tr>
-<tr class="separator:a5b9c82f349630a2371c3eeee0fb50a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adc6521557ce5f08fe0c96b20d81c7ebc"><td class="memItemLeft" align="right" valign="top">regex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#adc6521557ce5f08fe0c96b20d81c7ebc">_comp</a></td></tr>
-<tr class="memdesc:adc6521557ce5f08fe0c96b20d81c7ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds the regex compiled from DCOMPONENT.  <a href="#adc6521557ce5f08fe0c96b20d81c7ebc">More...</a><br/></td></tr>
-<tr class="separator:adc6521557ce5f08fe0c96b20d81c7ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad520a2ca0199ec9bb85c37772900e332"><td class="memItemLeft" align="right" valign="top">struct timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a></td></tr>
-<tr class="memdesc:ad520a2ca0199ec9bb85c37772900e332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the timeval at the start of the program, used to print relative times in <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, <a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35" title="Abort execution with a message. ">die()</a>, etc.  <a href="#ad520a2ca0199ec9bb85c37772900e332">More...</a><br/></td></tr>
-<tr class="separator:ad520a2ca0199ec9bb85c37772900e332"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0743d672f539b1615b3a5d3b79486b"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a></td></tr>
+<tr class="memdesc:ade0743d672f539b1615b3a5d3b79486b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime.  <a href="#ade0743d672f539b1615b3a5d3b79486b">More...</a><br/></td></tr>
+<tr class="separator:ade0743d672f539b1615b3a5d3b79486b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a class="anchor" id="abf5f17d3254f2e930aee0dc34dbff071"></a>
@@ -294,174 +208,6 @@ Variables</h2></td></tr>
 </dl>
 </div>
 </div>
-<a class="anchor" id="ab3bdb5557ea3a8f7ed80a55ad301e09c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BBLK&#160;&#160;&#160;&quot;\x1B[40m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: background black. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9f40b3c1c240d5513da9f50685d5bf15"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BBLU&#160;&#160;&#160;&quot;\x1B[44m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: background blue. </p>
-
-</div>
-</div>
-<a class="anchor" id="abd610b309fe5845f1e5fbd6666a22447"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BCYN&#160;&#160;&#160;&quot;\x1B[46m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: background cyan. </p>
-
-</div>
-</div>
-<a class="anchor" id="a003f38f51e5f6972a6a0796bda4ca11c"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BGRN&#160;&#160;&#160;&quot;\x1B[42m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: background green. </p>
-
-</div>
-</div>
-<a class="anchor" id="a6773bd84b2bf2a4f2118fc787f3a53fb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLD&#160;&#160;&#160;&quot;\x1B[1m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: bold. </p>
-
-</div>
-</div>
-<a class="anchor" id="a6283768c836fd4a0f382514973bc3ff4"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLK&#160;&#160;&#160;&quot;\x1B[30m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: black. </p>
-
-</div>
-</div>
-<a class="anchor" id="affc43d19d38fedbf7a83ea1730115c02"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLN&#160;&#160;&#160;&quot;\x1B[5m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: blink. </p>
-
-</div>
-</div>
-<a class="anchor" id="add9307de87f38e77d336751e305886f6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BLU&#160;&#160;&#160;&quot;\x1B[34m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: blue. </p>
-
-</div>
-</div>
-<a class="anchor" id="af1bdc3f8928aa1589ef44e3578a09464"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BMAG&#160;&#160;&#160;&quot;\x1B[45m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: background magenta. </p>
-
-</div>
-</div>
-<a class="anchor" id="a2adb4c9e293ac446897ccfac5a52d6c2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BRED&#160;&#160;&#160;&quot;\x1B[41m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: background red. </p>
-
-</div>
-</div>
-<a class="anchor" id="ae528cad0e6c76be71eb66776599ec5d9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BWHT&#160;&#160;&#160;&quot;\x1B[47m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: background white. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9b526756196d7c0efa31bc8fe4e5f138"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define BYEL&#160;&#160;&#160;&quot;\x1B[43m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: background yellow. </p>
-
-</div>
-</div>
 <a class="anchor" id="a25339ce578c7247f4504cb5aefb0a2e8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -474,20 +220,6 @@ Variables</h2></td></tr>
 
 <p>Debug levels, decreasing severity. </p>
 <p>Critical </p>
-
-</div>
-</div>
-<a class="anchor" id="adc708fa688f5d78db361f66c36f0f807"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define CYN&#160;&#160;&#160;&quot;\x1B[36m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: cyan. </p>
 
 </div>
 </div>
@@ -515,40 +247,11 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname"><em>...</em></td><td>)</td>
-          <td></td>
+          <td>&#160;&#160;&#160;<a class="el" href="util_8c.html#a887187f8f71a200c99c63237ed3e3fd5">util_die</a>(__func__, __FILE__, __LINE__, __VA_ARGS__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       <a class="code" href="util_8h.html#a45e5c88c9ecb59dbebcf010d7c391aa7">\</a></div>
-<div class="line"><a class="code" href="util_8h.html#a45e5c88c9ecb59dbebcf010d7c391aa7">        DTHREAD_LOCK</a>;                                                          \</div>
-<div class="line">        const <span class="keywordtype">int</span> _e = errno;                                                  \</div>
-<div class="line">        struct timeval _now = {0, 0}, _dur = {0, 0};                           \</div>
-<div class="line">        gettimeofday(&amp;_now, 0);                                                \</div>
-<div class="line">        timersub(&amp;_now, &amp;<a class="code" href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a>, &amp;_dur); <span class="comment">/* NOLINT */</span>                          \</div>
-<div class="line">        fprintf(stderr,                                                        \</div>
-<div class="line">                <a class="code" href="util_8h.html#ab4e90e0eea07ae337107d6a6fc44f9b8">DTHREAD_ID_IND</a>(<a class="code" href="util_8h.html#af1bdc3f8928aa1589ef44e3578a09464">BMAG</a>) <a class="code" href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a> <a class="code" href="util_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">BLD</a> <span class="stringliteral">&quot;%ld.%03ld   %s %s:%d ABORT: &quot;</span>,   \</div>
-<div class="line">                <a class="code" href="util_8h.html#a680e4f50570b3400b455076c0cb143bc">DTHREAD_ID</a> <span class="comment">/* NOLINT */</span>                                        \</div>
-<div class="line">                (<span class="keywordtype">long</span>)(_dur.tv_sec % 1000),                                    \</div>
-<div class="line">                (<span class="keywordtype">long</span>)(_dur.tv_usec / 1000), __func__, <a class="code" href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a>(__FILE__),     \</div>
-<div class="line">                __LINE__); <span class="comment">/* NOLINT */</span>                                        \</div>
-<div class="line">        fprintf(stderr, __VA_ARGS__);                                          \</div>
-<div class="line">        fprintf(stderr, <span class="stringliteral">&quot; %c%s%c\n&quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>, (_e ? <span class="charliteral">&#39;[&#39;</span> : 0),                       \</div>
-<div class="line">                (_e ? strerror(_e) : <span class="stringliteral">&quot;&quot;</span>), (_e ? <span class="charliteral">&#39;]&#39;</span> : 0));                     \</div>
-<div class="line">        fflush(stderr);                                                        <a class="code" href="util_8h.html#a6d4b88acd687e9556a203cf43de143a2">\</a></div>
-<div class="line"><a class="code" href="util_8h.html#a6d4b88acd687e9556a203cf43de143a2">        DTHREAD_UNLOCK</a>;                                                        \</div>
-<div class="line">        abort();                                                               \</div>
-<div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="util_8h_html_a45e5c88c9ecb59dbebcf010d7c391aa7"><div class="ttname"><a href="util_8h.html#a45e5c88c9ecb59dbebcf010d7c391aa7">DTHREAD_LOCK</a></div><div class="ttdeci">#define DTHREAD_LOCK</div><div class="ttdef"><b>Definition:</b> util.h:119</div></div>
-<div class="ttc" id="util_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> util.h:40</div></div>
-<div class="ttc" id="util_8h_html_abf5f17d3254f2e930aee0dc34dbff071"><div class="ttname"><a href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a></div><div class="ttdeci">#define basename(f)</div><div class="ttdoc">Trim the path from the given file name. </div><div class="ttdef"><b>Definition:</b> util.h:71</div></div>
-<div class="ttc" id="util_8h_html_ab4e90e0eea07ae337107d6a6fc44f9b8"><div class="ttname"><a href="util_8h.html#ab4e90e0eea07ae337107d6a6fc44f9b8">DTHREAD_ID_IND</a></div><div class="ttdeci">#define DTHREAD_ID_IND(bg)</div><div class="ttdef"><b>Definition:</b> util.h:122</div></div>
-<div class="ttc" id="util_8h_html_aeaf3a04d5bf63b204689a714718ea930"><div class="ttname"><a href="util_8h.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a></div><div class="ttdeci">#define WHT</div><div class="ttdoc">ANSI escape sequence: white. </div><div class="ttdef"><b>Definition:</b> util.h:54</div></div>
-<div class="ttc" id="util_8h_html_ad520a2ca0199ec9bb85c37772900e332"><div class="ttname"><a href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a></div><div class="ttdeci">struct timeval _epoch</div><div class="ttdoc">Stores the timeval at the start of the program, used to print relative times in warn(), die(), etc. </div><div class="ttdef"><b>Definition:</b> util.c:43</div></div>
-<div class="ttc" id="util_8h_html_a6773bd84b2bf2a4f2118fc787f3a53fb"><div class="ttname"><a href="util_8h.html#a6773bd84b2bf2a4f2118fc787f3a53fb">BLD</a></div><div class="ttdeci">#define BLD</div><div class="ttdoc">ANSI escape sequence: bold. </div><div class="ttdef"><b>Definition:</b> util.h:41</div></div>
-<div class="ttc" id="util_8h_html_af1bdc3f8928aa1589ef44e3578a09464"><div class="ttname"><a href="util_8h.html#af1bdc3f8928aa1589ef44e3578a09464">BMAG</a></div><div class="ttdeci">#define BMAG</div><div class="ttdoc">ANSI escape sequence: background magenta. </div><div class="ttdef"><b>Definition:</b> util.h:60</div></div>
-<div class="ttc" id="util_8h_html_a6d4b88acd687e9556a203cf43de143a2"><div class="ttname"><a href="util_8h.html#a6d4b88acd687e9556a203cf43de143a2">DTHREAD_UNLOCK</a></div><div class="ttdeci">#define DTHREAD_UNLOCK</div><div class="ttdef"><b>Definition:</b> util.h:120</div></div>
-<div class="ttc" id="util_8h_html_a680e4f50570b3400b455076c0cb143bc"><div class="ttname"><a href="util_8h.html#a680e4f50570b3400b455076c0cb143bc">DTHREAD_ID</a></div><div class="ttdeci">#define DTHREAD_ID</div><div class="ttdef"><b>Definition:</b> util.h:121</div></div>
-</div><!-- fragment -->
+
 <p>Abort execution with a message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -559,20 +262,6 @@ Variables</h2></td></tr>
 </dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a29">inetd.c</a>.</dd>
 </dl>
-</div>
-</div>
-<a class="anchor" id="ac25189db92959bff3c6c2adf4c34b50a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DIM&#160;&#160;&#160;&quot;\x1B[2m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: dim. </p>
-
 </div>
 </div>
 <a class="anchor" id="a94c2776a2d1f9e44c3d327befe0d3bfe"></a>
@@ -591,76 +280,12 @@ Variables</h2></td></tr>
 </dl>
 </div>
 </div>
-<a class="anchor" id="a911d17fccac43347bb3c6ace7a8051c8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DO_REGEXEC&#160;&#160;&#160;0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="ae87fafc79d9317d688dc63fd3d0c805d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define DTHREAD_GAP&#160;&#160;&#160;&quot;        &quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a680e4f50570b3400b455076c0cb143bc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DTHREAD_ID</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab4e90e0eea07ae337107d6a6fc44f9b8"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DTHREAD_ID_IND</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">bg</td><td>)</td>
-          <td>&#160;&#160;&#160;bg</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a45e5c88c9ecb59dbebcf010d7c391aa7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DTHREAD_LOCK</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6d4b88acd687e9556a203cf43de143a2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DTHREAD_UNLOCK</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -695,9 +320,9 @@ Variables</h2></td></tr>
 <div class="line"><a class="code" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">            die</a>(<span class="stringliteral">&quot;assertion failed \n&quot;</span> <a class="code" href="util_8h.html#ae87fafc79d9317d688dc63fd3d0c805d">DTHREAD_GAP</a> #e                           \</div>
 <div class="line">                <span class="stringliteral">&quot; \n&quot;</span> <a class="code" href="util_8h.html#ae87fafc79d9317d688dc63fd3d0c805d">DTHREAD_GAP</a> __VA_ARGS__);                                \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="util_8h_html_a0b2164ee75646f16a7388a36e6800c35"><div class="ttname"><a href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a></div><div class="ttdeci">#define die(...)</div><div class="ttdoc">Abort execution with a message. </div><div class="ttdef"><b>Definition:</b> util.h:134</div></div>
-<div class="ttc" id="util_8h_html_ac6c45889010c1bd68631771b64f18101"><div class="ttname"><a href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></div><div class="ttdeci">#define unlikely(x)</div><div class="ttdef"><b>Definition:</b> util.h:85</div></div>
-<div class="ttc" id="util_8h_html_ae87fafc79d9317d688dc63fd3d0c805d"><div class="ttname"><a href="util_8h.html#ae87fafc79d9317d688dc63fd3d0c805d">DTHREAD_GAP</a></div><div class="ttdeci">#define DTHREAD_GAP</div><div class="ttdef"><b>Definition:</b> util.h:123</div></div>
+<div class="ttc" id="util_8h_html_a0b2164ee75646f16a7388a36e6800c35"><div class="ttname"><a href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a></div><div class="ttdeci">#define die(...)</div><div class="ttdoc">Abort execution with a message. </div><div class="ttdef"><b>Definition:</b> util.h:64</div></div>
+<div class="ttc" id="util_8h_html_ac6c45889010c1bd68631771b64f18101"><div class="ttname"><a href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></div><div class="ttdeci">#define unlikely(x)</div><div class="ttdef"><b>Definition:</b> util.h:54</div></div>
+<div class="ttc" id="util_8h_html_ae87fafc79d9317d688dc63fd3d0c805d"><div class="ttname"><a href="util_8h.html#ae87fafc79d9317d688dc63fd3d0c805d">DTHREAD_GAP</a></div><div class="ttdeci">#define DTHREAD_GAP</div><div class="ttdef"><b>Definition:</b> util.h:167</div></div>
 </div><!-- fragment -->
 <p>A version of the C assert() macro that isn't disabled by NDEBUG and that ties in with <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, <a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35" title="Abort execution with a message. ">die()</a> and our other debug functions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -726,20 +351,6 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aea69ffbacdcdf16c21b8c9961df84448"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GRN&#160;&#160;&#160;&quot;\x1B[32m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: green. </p>
-
-</div>
-</div>
 <a class="anchor" id="a1ecaf849af500832b2da48e3c60794de"></a>
 <div class="memitem">
 <div class="memproto">
@@ -759,13 +370,13 @@ Variables</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="util_8c.html#a7a3fc877ae19d64e52cff7e0ceff7668">_hexdump</a>(ptr, len, #ptr, __func__, __FILE__, __LINE__)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="util_8c.html#a8ccec5f8d7fa48c4b4c214feba13a8d3">util_hexdump</a>(ptr, len, #ptr, __func__, __FILE__, __LINE__)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Print a hexdump of the memory region given by <code>ptr</code> and <code>len</code> to stderr. </p>
-<p>Also emits an ASCII representation. Uses _hexdump internally to augment the output with meta data.</p>
+<p>Also emits an ASCII representation. Uses util_hexdump internally to augment the output with meta data.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ptr</td><td>The beginning of the memory region to hexdump. </td></tr>
@@ -773,20 +384,6 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="ace5c43487b54ddcce48e383149a5cc80"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define HID&#160;&#160;&#160;&quot;\x1B[8m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: hidden. </p>
 
 </div>
 </div>
@@ -818,34 +415,6 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="af54a5a977c0c499323d656315f008ee0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define MAG&#160;&#160;&#160;&quot;\x1B[35m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: magenta. </p>
-
-</div>
-</div>
-<a class="anchor" id="ade01bc98e1632cd645e0f33757d70d2e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NRM&#160;&#160;&#160;&quot;\x1B[0m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: reset all to normal. </p>
 
 </div>
 </div>
@@ -889,34 +458,6 @@ Variables</h2></td></tr>
 </dl>
 </div>
 </div>
-<a class="anchor" id="a8d23feea868a983c8c2b661e1e16972f"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define RED&#160;&#160;&#160;&quot;\x1B[31m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: red. </p>
-
-</div>
-</div>
-<a class="anchor" id="a33a42d6bfefe54ae2384f5c28dd87340"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define REV&#160;&#160;&#160;&quot;\x1B[7m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: reverse. </p>
-
-</div>
-</div>
 <a class="anchor" id="a7bc0c9794d85e85e8f2d7266c832638f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -947,24 +488,15 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        if (<a class="code" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a> &gt;= dlevel &amp;&amp; <a class="code" href="util_8h.html#a05e3542f93d5ea18835fa9f7547b8171">_dlevel</a> &gt;= dlevel &amp;&amp;                           \</div>
-<div class="line">            (<a class="code" href="util_8h.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a> ? !regexec(&amp;<a class="code" href="util_8h.html#adc6521557ce5f08fe0c96b20d81c7ebc">_comp</a>, __FILE__, 0, 0, 0) : 1)) {          \</div>
-<div class="line">            static time_t _rt0, _rcnt;                                         \</div>
-<div class="line">            struct timeval _rts = {0, 0};                                      \</div>
-<div class="line">            gettimeofday(&amp;_rts, 0);                                            \</div>
-<div class="line">            if (_rt0 != _rts.tv_sec) {                                         \</div>
-<div class="line">                _rt0 = _rts.tv_sec;                                            \</div>
-<div class="line">                _rcnt = 0;                                                     \</div>
-<div class="line">            }                                                                  \</div>
-<div class="line">            if (_rcnt++ &lt; lps)                                                 <a class="code" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887">\</a></div>
-<div class="line"><a class="code" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887">                warn</a>(dlevel, __VA_ARGS__);                                     \</div>
+<div class="line">        if (<a class="code" href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a>(<a class="code" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a> &gt;= dlevel &amp;&amp; <a class="code" href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a> &gt;= dlevel)) {             <a class="code" href="util_8h.html#a3d77449cd1566cf29f0ca3565dbe2ee8">\</a></div>
+<div class="line"><a class="code" href="util_8h.html#a3d77449cd1566cf29f0ca3565dbe2ee8">            util_rwarn</a>(dlevel, lps, __func__, __FILE__, __LINE__,              \</div>
+<div class="line">                       __VA_ARGS__);                                           \</div>
 <div class="line">        }                                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="util_8h_html_a94c2776a2d1f9e44c3d327befe0d3bfe"><div class="ttname"><a href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></div><div class="ttdeci">#define DLEVEL</div><div class="ttdoc">Default debug level. </div><div class="ttdef"><b>Definition:</b> util.h:173</div></div>
-<div class="ttc" id="util_8h_html_adc6521557ce5f08fe0c96b20d81c7ebc"><div class="ttname"><a href="util_8h.html#adc6521557ce5f08fe0c96b20d81c7ebc">_comp</a></div><div class="ttdeci">regex_t _comp</div><div class="ttdoc">Holds the regex compiled from DCOMPONENT. </div></div>
-<div class="ttc" id="util_8h_html_a05e3542f93d5ea18835fa9f7547b8171"><div class="ttname"><a href="util_8h.html#a05e3542f93d5ea18835fa9f7547b8171">_dlevel</a></div><div class="ttdeci">short _dlevel</div><div class="ttdoc">Dynamically adjust _dlevel from your code to show or suppress debug messages at runtime. </div><div class="ttdef"><b>Definition:</b> util.c:51</div></div>
-<div class="ttc" id="util_8h_html_a911d17fccac43347bb3c6ace7a8051c8"><div class="ttname"><a href="util_8h.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a></div><div class="ttdeci">#define DO_REGEXEC</div><div class="ttdef"><b>Definition:</b> util.h:188</div></div>
-<div class="ttc" id="util_8h_html_a75fb9e13fe5fdbdbf4f0b7f34d25a887"><div class="ttname"><a href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887">warn</a></div><div class="ttdeci">#define warn(dlevel,...)</div><div class="ttdoc">Print a debug message to stderr, including a black/white indicator whether the message comes from the...</div><div class="ttdef"><b>Definition:</b> util.h:215</div></div>
+<div class="ttc" id="util_8h_html_a94c2776a2d1f9e44c3d327befe0d3bfe"><div class="ttname"><a href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></div><div class="ttdeci">#define DLEVEL</div><div class="ttdoc">Default debug level. </div><div class="ttdef"><b>Definition:</b> util.h:89</div></div>
+<div class="ttc" id="util_8h_html_ac6c45889010c1bd68631771b64f18101"><div class="ttname"><a href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></div><div class="ttdeci">#define unlikely(x)</div><div class="ttdef"><b>Definition:</b> util.h:54</div></div>
+<div class="ttc" id="util_8h_html_ade0743d672f539b1615b3a5d3b79486b"><div class="ttname"><a href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a></div><div class="ttdeci">short util_dlevel</div><div class="ttdoc">Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime...</div><div class="ttdef"><b>Definition:</b> util.c:208</div></div>
+<div class="ttc" id="util_8h_html_a3d77449cd1566cf29f0ca3565dbe2ee8"><div class="ttname"><a href="util_8h.html#a3d77449cd1566cf29f0ca3565dbe2ee8">util_rwarn</a></div><div class="ttdeci">void util_rwarn(const unsigned dlevel, const unsigned lps, const char *const func, const char *const file, const unsigned line,...)</div><div class="ttdef"><b>Definition:</b> util.c:257</div></div>
 </div><!-- fragment -->
 <p>Rate-limited variant of <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, which repeats the message prints at most <code>lps</code> times. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -976,20 +508,6 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a class="anchor" id="a34e574c6e8af28972424d5a51b08d358"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define ULN&#160;&#160;&#160;&quot;\x1B[3m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: underline. </p>
 
 </div>
 </div>
@@ -1033,40 +551,14 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        if (<a class="code" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a> &gt;= dlevel &amp;&amp; <a class="code" href="util_8h.html#a05e3542f93d5ea18835fa9f7547b8171">_dlevel</a> &gt;= dlevel &amp;&amp;                           \</div>
-<div class="line">            (<a class="code" href="util_8h.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a> ? !regexec(&amp;<a class="code" href="util_8h.html#adc6521557ce5f08fe0c96b20d81c7ebc">_comp</a>, __FILE__, 0, 0, 0) : 1)) {          <a class="code" href="util_8h.html#a45e5c88c9ecb59dbebcf010d7c391aa7">\</a></div>
-<div class="line"><a class="code" href="util_8h.html#a45e5c88c9ecb59dbebcf010d7c391aa7">            DTHREAD_LOCK</a>;                                                      \</div>
-<div class="line">            struct timeval _now = {0, 0}, _dur = {0, 0};                       \</div>
-<div class="line">            gettimeofday(&amp;_now, 0);                                            \</div>
-<div class="line">            timersub(&amp;_now, &amp;<a class="code" href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a>, &amp;_dur); <span class="comment">/* NOLINT */</span>                      \</div>
-<div class="line">            fprintf(stderr,                                                    \</div>
-<div class="line">                    <a class="code" href="util_8h.html#ab4e90e0eea07ae337107d6a6fc44f9b8">DTHREAD_ID_IND</a>(<a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>) <span class="stringliteral">&quot;%ld.%03ld %s &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a> <a class="code" href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a> <span class="stringliteral">&quot; %s&quot;</span> <a class="code" href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a>      \</div>
-<div class="line">                                        <span class="stringliteral">&quot; &quot;</span> <a class="code" href="util_8h.html#add9307de87f38e77d336751e305886f6">BLU</a> <span class="stringliteral">&quot;%s:%d &quot;</span> <a class="code" href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>,                  \</div>
-<div class="line">                    <a class="code" href="util_8h.html#a680e4f50570b3400b455076c0cb143bc">DTHREAD_ID</a> <span class="comment">/* NOLINT */</span>                                    \</div>
-<div class="line">                    (<span class="keywordtype">long</span>)(_dur.tv_sec % 1000),                                \</div>
-<div class="line">                    (<span class="keywordtype">long</span>)(_dur.tv_usec / 1000), <a class="code" href="util_8h.html#a5b9c82f349630a2371c3eeee0fb50a12">_col</a>[dlevel], __func__,       \</div>
-<div class="line">                    <span class="comment">/* NOLINT */</span> <a class="code" href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a>(__FILE__), __LINE__);                \</div>
-<div class="line">            fprintf(stderr, __VA_ARGS__);                                      \</div>
-<div class="line">            fprintf(stderr, <span class="stringliteral">&quot;\n&quot;</span>);                                             \</div>
-<div class="line">            fflush(stderr);                                                    <a class="code" href="util_8h.html#a6d4b88acd687e9556a203cf43de143a2">\</a></div>
-<div class="line"><a class="code" href="util_8h.html#a6d4b88acd687e9556a203cf43de143a2">            DTHREAD_UNLOCK</a>;                                                    \</div>
+<div class="line">        if (<a class="code" href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a>(<a class="code" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a> &gt;= dlevel &amp;&amp; <a class="code" href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a> &gt;= dlevel)) {             <a class="code" href="util_8h.html#a6ab3816283166679f53fa95cf7ea6f50">\</a></div>
+<div class="line"><a class="code" href="util_8h.html#a6ab3816283166679f53fa95cf7ea6f50">            util_warn</a>(dlevel, __func__, __FILE__, __LINE__, __VA_ARGS__);      \</div>
 <div class="line">        }                                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="util_8h_html_a6283768c836fd4a0f382514973bc3ff4"><div class="ttname"><a href="util_8h.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a></div><div class="ttdeci">#define BLK</div><div class="ttdoc">ANSI escape sequence: black. </div><div class="ttdef"><b>Definition:</b> util.h:47</div></div>
-<div class="ttc" id="util_8h_html_a45e5c88c9ecb59dbebcf010d7c391aa7"><div class="ttname"><a href="util_8h.html#a45e5c88c9ecb59dbebcf010d7c391aa7">DTHREAD_LOCK</a></div><div class="ttdeci">#define DTHREAD_LOCK</div><div class="ttdef"><b>Definition:</b> util.h:119</div></div>
-<div class="ttc" id="util_8h_html_ade01bc98e1632cd645e0f33757d70d2e"><div class="ttname"><a href="util_8h.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a></div><div class="ttdeci">#define NRM</div><div class="ttdoc">ANSI escape sequence: reset all to normal. </div><div class="ttdef"><b>Definition:</b> util.h:40</div></div>
-<div class="ttc" id="util_8h_html_a94c2776a2d1f9e44c3d327befe0d3bfe"><div class="ttname"><a href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></div><div class="ttdeci">#define DLEVEL</div><div class="ttdoc">Default debug level. </div><div class="ttdef"><b>Definition:</b> util.h:173</div></div>
-<div class="ttc" id="util_8h_html_adc6521557ce5f08fe0c96b20d81c7ebc"><div class="ttname"><a href="util_8h.html#adc6521557ce5f08fe0c96b20d81c7ebc">_comp</a></div><div class="ttdeci">regex_t _comp</div><div class="ttdoc">Holds the regex compiled from DCOMPONENT. </div></div>
-<div class="ttc" id="util_8h_html_a5b9c82f349630a2371c3eeee0fb50a12"><div class="ttname"><a href="util_8h.html#a5b9c82f349630a2371c3eeee0fb50a12">_col</a></div><div class="ttdeci">const char *const _col[]</div><div class="ttdoc">An array of ANSI color sequences associated with the different #dlevel severities. </div><div class="ttdef"><b>Definition:</b> util.c:50</div></div>
-<div class="ttc" id="util_8h_html_abf5f17d3254f2e930aee0dc34dbff071"><div class="ttname"><a href="util_8h.html#abf5f17d3254f2e930aee0dc34dbff071">basename</a></div><div class="ttdeci">#define basename(f)</div><div class="ttdoc">Trim the path from the given file name. </div><div class="ttdef"><b>Definition:</b> util.h:71</div></div>
-<div class="ttc" id="util_8h_html_ab4e90e0eea07ae337107d6a6fc44f9b8"><div class="ttname"><a href="util_8h.html#ab4e90e0eea07ae337107d6a6fc44f9b8">DTHREAD_ID_IND</a></div><div class="ttdeci">#define DTHREAD_ID_IND(bg)</div><div class="ttdef"><b>Definition:</b> util.h:122</div></div>
-<div class="ttc" id="util_8h_html_a05e3542f93d5ea18835fa9f7547b8171"><div class="ttname"><a href="util_8h.html#a05e3542f93d5ea18835fa9f7547b8171">_dlevel</a></div><div class="ttdeci">short _dlevel</div><div class="ttdoc">Dynamically adjust _dlevel from your code to show or suppress debug messages at runtime. </div><div class="ttdef"><b>Definition:</b> util.c:51</div></div>
-<div class="ttc" id="util_8h_html_add9307de87f38e77d336751e305886f6"><div class="ttname"><a href="util_8h.html#add9307de87f38e77d336751e305886f6">BLU</a></div><div class="ttdeci">#define BLU</div><div class="ttdoc">ANSI escape sequence: blue. </div><div class="ttdef"><b>Definition:</b> util.h:51</div></div>
-<div class="ttc" id="util_8h_html_af54a5a977c0c499323d656315f008ee0"><div class="ttname"><a href="util_8h.html#af54a5a977c0c499323d656315f008ee0">MAG</a></div><div class="ttdeci">#define MAG</div><div class="ttdoc">ANSI escape sequence: magenta. </div><div class="ttdef"><b>Definition:</b> util.h:52</div></div>
-<div class="ttc" id="util_8h_html_a911d17fccac43347bb3c6ace7a8051c8"><div class="ttname"><a href="util_8h.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a></div><div class="ttdeci">#define DO_REGEXEC</div><div class="ttdef"><b>Definition:</b> util.h:188</div></div>
-<div class="ttc" id="util_8h_html_ad520a2ca0199ec9bb85c37772900e332"><div class="ttname"><a href="util_8h.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a></div><div class="ttdeci">struct timeval _epoch</div><div class="ttdoc">Stores the timeval at the start of the program, used to print relative times in warn(), die(), etc. </div><div class="ttdef"><b>Definition:</b> util.c:43</div></div>
-<div class="ttc" id="util_8h_html_a6d4b88acd687e9556a203cf43de143a2"><div class="ttname"><a href="util_8h.html#a6d4b88acd687e9556a203cf43de143a2">DTHREAD_UNLOCK</a></div><div class="ttdeci">#define DTHREAD_UNLOCK</div><div class="ttdef"><b>Definition:</b> util.h:120</div></div>
-<div class="ttc" id="util_8h_html_a680e4f50570b3400b455076c0cb143bc"><div class="ttname"><a href="util_8h.html#a680e4f50570b3400b455076c0cb143bc">DTHREAD_ID</a></div><div class="ttdeci">#define DTHREAD_ID</div><div class="ttdef"><b>Definition:</b> util.h:121</div></div>
+<div class="ttc" id="util_8h_html_a6ab3816283166679f53fa95cf7ea6f50"><div class="ttname"><a href="util_8h.html#a6ab3816283166679f53fa95cf7ea6f50">util_warn</a></div><div class="ttdeci">void util_warn(const unsigned dlevel, const char *const func, const char *const file, const unsigned line,...)</div><div class="ttdef"><b>Definition:</b> util.c:240</div></div>
+<div class="ttc" id="util_8h_html_a94c2776a2d1f9e44c3d327befe0d3bfe"><div class="ttname"><a href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></div><div class="ttdeci">#define DLEVEL</div><div class="ttdoc">Default debug level. </div><div class="ttdef"><b>Definition:</b> util.h:89</div></div>
+<div class="ttc" id="util_8h_html_ac6c45889010c1bd68631771b64f18101"><div class="ttname"><a href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></div><div class="ttdeci">#define unlikely(x)</div><div class="ttdef"><b>Definition:</b> util.h:54</div></div>
+<div class="ttc" id="util_8h_html_ade0743d672f539b1615b3a5d3b79486b"><div class="ttname"><a href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a></div><div class="ttdeci">short util_dlevel</div><div class="ttdoc">Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime...</div><div class="ttdef"><b>Definition:</b> util.c:208</div></div>
 </div><!-- fragment -->
 <p>Print a debug message to stderr, including a black/white indicator whether the message comes from the master thread (black) or not (white), a timestamp since start of the program, a coloMAG indicator for the #dlevel severity level, as well as a printf()-style format string fed by further optional arguments. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -1079,20 +571,6 @@ Variables</h2></td></tr>
 </dl>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a2">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a21">ping.c</a>.</dd>
 </dl>
-</div>
-</div>
-<a class="anchor" id="aeaf3a04d5bf63b204689a714718ea930"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define WHT&#160;&#160;&#160;&quot;\x1B[37m&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ANSI escape sequence: white. </p>
-
 </div>
 </div>
 <a class="anchor" id="a5806c572b7b8636004096dc51a03ff88"></a>
@@ -1110,27 +588,51 @@ Variables</h2></td></tr>
 </dl>
 </div>
 </div>
-<a class="anchor" id="a96fac03c4ab3363f06a0328e0e53a40c"></a>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a887187f8f71a200c99c63237ed3e3fd5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define YEL&#160;&#160;&#160;&quot;\x1B[33m&quot;</td>
+          <td class="memname">void util_die </td>
+          <td>(</td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>ANSI escape sequence: yellow. </p>
-
 </div>
 </div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a7a3fc877ae19d64e52cff7e0ceff7668"></a>
+<a class="anchor" id="a8ccec5f8d7fa48c4b4c214feba13a8d3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void _hexdump </td>
+          <td class="memname">void util_hexdump </td>
           <td>(</td>
           <td class="paramtype">const void *const&#160;</td>
           <td class="paramname"><em>ptr</em>, </td>
@@ -1162,7 +664,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
+          <td class="paramtype">const unsigned&#160;</td>
           <td class="paramname"><em>line</em>&#160;</td>
         </tr>
         <tr>
@@ -1175,69 +677,139 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3d77449cd1566cf29f0ca3565dbe2ee8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void util_rwarn </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>dlevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>lps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="util_8h_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph.png" border="0" usemap="#util_8h_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph" alt=""/></div>
+<map name="util_8h_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph" id="util_8h_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#a71b1054e1888e2ce1b9ae9aab5c5644d" title="util_warn_valist" alt="" coords="133,5,245,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ab3816283166679f53fa95cf7ea6f50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void util_warn </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>dlevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="util_8h_a6ab3816283166679f53fa95cf7ea6f50_cgraph.png" border="0" usemap="#util_8h_a6ab3816283166679f53fa95cf7ea6f50_cgraph" alt=""/></div>
+<map name="util_8h_a6ab3816283166679f53fa95cf7ea6f50_cgraph" id="util_8h_a6ab3816283166679f53fa95cf7ea6f50_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#a71b1054e1888e2ce1b9ae9aab5c5644d" title="util_warn_valist" alt="" coords="128,5,240,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a5b9c82f349630a2371c3eeee0fb50a12"></a>
+<a class="anchor" id="ade0743d672f539b1615b3a5d3b79486b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* const _col[]</td>
+          <td class="memname">short util_dlevel</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>An array of ANSI color sequences associated with the different #dlevel severities. </p>
-
-</div>
-</div>
-<a class="anchor" id="adc6521557ce5f08fe0c96b20d81c7ebc"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">regex_t _comp</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Holds the regex compiled from DCOMPONENT. </p>
-
-</div>
-</div>
-<a class="anchor" id="a05e3542f93d5ea18835fa9f7547b8171"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">short _dlevel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Dynamically adjust _dlevel from your code to show or suppress debug messages at runtime. </p>
+<p>Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime. </p>
 <p>Increasing this past what was compiled in by setting DLEVEL is obviously not going to have any effect. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a1">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a1">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
-<a class="anchor" id="ad520a2ca0199ec9bb85c37772900e332"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">struct timeval _epoch</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Stores the timeval at the start of the program, used to print relative times in <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, <a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35" title="Abort execution with a message. ">die()</a>, etc. </p>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 2 2017 20:46:35 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 10 2017 10:52:16 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

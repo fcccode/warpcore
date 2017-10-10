@@ -50,7 +50,7 @@ var searchData=
   ['nr_5ftimestamp',['NR_TIMESTAMP',['../netmap_8h.html#abb2d52203fd2b9f628db7a2f4ecb6344',1,'netmap.h']]],
   ['nr_5ftx_5frings_5fonly',['NR_TX_RINGS_ONLY',['../netmap_8h.html#ade9edf79f46abd852cb55186fe219667',1,'netmap.h']]],
   ['nr_5fzcopy_5fmon',['NR_ZCOPY_MON',['../netmap_8h.html#acee1645a0ec7cb08e8799a8700037129',1,'netmap.h']]],
-  ['nrm',['NRM',['../util_8h.html#ade01bc98e1632cd645e0f33757d70d2e',1,'util.h']]],
+  ['nrm',['NRM',['../util_8c.html#ade01bc98e1632cd645e0f33757d70d2e',1,'util.c']]],
   ['ns_5fbuf_5fchanged',['NS_BUF_CHANGED',['../netmap_8h.html#a7dcf0e4b0c59bec083d6bcc38b4915f3',1,'netmap.h']]],
   ['ns_5fforward',['NS_FORWARD',['../netmap_8h.html#a0042e995a101c870db60f281d58da40f',1,'netmap.h']]],
   ['ns_5findirect',['NS_INDIRECT',['../netmap_8h.html#a24868b1fb61cfcc67e3385c8cd0d26f0',1,'netmap.h']]],

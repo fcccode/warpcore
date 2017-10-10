@@ -23,7 +23,7 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">warpcore
-   &#160;<span id="projectnumber">0.17.0</span>
+   &#160;<span id="projectnumber">0.18.0</span>
    </div>
   </td>
  </tr>
@@ -86,6 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
@@ -93,18 +94,79 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;ctype.h&gt;</code><br/>
+<code>#include &lt;errno.h&gt;</code><br/>
+<code>#include &lt;stdarg.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;stdio.h&gt;</code><br/>
+<code>#include &lt;stdlib.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;sys/time.h&gt;</code><br/>
+<code>#include &lt;time.h&gt;</code><br/>
+<code>#include &lt;regex.h&gt;</code><br/>
 <code>#include &lt;<a class="el" href="warpcore_8h_source.html">warpcore/warpcore.h</a>&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for util.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="util_8c__incl.png" border="0" usemap="#src_2util_8c" alt=""/></div>
 <map name="src_2util_8c" id="src_2util_8c">
-<area shape="rect" id="node6" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="545,80,687,107"/><area shape="rect" id="node7" href="config_8h.html" title="warpcore/config.h" alt="" coords="479,155,604,181"/><area shape="rect" id="node8" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="914,155,1024,181"/><area shape="rect" id="node10" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="628,155,753,181"/><area shape="rect" id="node11" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="777,155,888,181"/><area shape="rect" id="node12" href="util_8h.html" title="warpcore/util.h" alt="" coords="247,155,353,181"/></map>
+<area shape="rect" id="node12" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="545,80,687,107"/><area shape="rect" id="node13" href="config_8h.html" title="warpcore/config.h" alt="" coords="553,155,679,181"/><area shape="rect" id="node14" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="418,155,528,181"/><area shape="rect" id="node16" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="703,155,828,181"/><area shape="rect" id="node17" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="852,155,963,181"/><area shape="rect" id="node18" href="util_8h.html" title="warpcore/util.h" alt="" coords="1089,155,1196,181"/></map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a911d17fccac43347bb3c6ace7a8051c8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a911d17fccac43347bb3c6ace7a8051c8">DO_REGEXEC</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:a911d17fccac43347bb3c6ace7a8051c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45e5c88c9ecb59dbebcf010d7c391aa7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a45e5c88c9ecb59dbebcf010d7c391aa7">DTHREAD_LOCK</a></td></tr>
+<tr class="separator:a45e5c88c9ecb59dbebcf010d7c391aa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4b88acd687e9556a203cf43de143a2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a6d4b88acd687e9556a203cf43de143a2">DTHREAD_UNLOCK</a></td></tr>
+<tr class="separator:a6d4b88acd687e9556a203cf43de143a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a680e4f50570b3400b455076c0cb143bc"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a680e4f50570b3400b455076c0cb143bc">DTHREAD_ID</a></td></tr>
+<tr class="separator:a680e4f50570b3400b455076c0cb143bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e90e0eea07ae337107d6a6fc44f9b8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#ab4e90e0eea07ae337107d6a6fc44f9b8">DTHREAD_ID_IND</a>(bg)&#160;&#160;&#160;bg</td></tr>
+<tr class="separator:ab4e90e0eea07ae337107d6a6fc44f9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade01bc98e1632cd645e0f33757d70d2e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#ade01bc98e1632cd645e0f33757d70d2e">NRM</a>&#160;&#160;&#160;&quot;\x1B[0m&quot;</td></tr>
+<tr class="memdesc:ade01bc98e1632cd645e0f33757d70d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: reset all to normal.  <a href="#ade01bc98e1632cd645e0f33757d70d2e">More...</a><br/></td></tr>
+<tr class="separator:ade01bc98e1632cd645e0f33757d70d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6773bd84b2bf2a4f2118fc787f3a53fb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a6773bd84b2bf2a4f2118fc787f3a53fb">BLD</a>&#160;&#160;&#160;&quot;\x1B[1m&quot;</td></tr>
+<tr class="memdesc:a6773bd84b2bf2a4f2118fc787f3a53fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: bold.  <a href="#a6773bd84b2bf2a4f2118fc787f3a53fb">More...</a><br/></td></tr>
+<tr class="separator:a6773bd84b2bf2a4f2118fc787f3a53fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6283768c836fd4a0f382514973bc3ff4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a6283768c836fd4a0f382514973bc3ff4">BLK</a>&#160;&#160;&#160;&quot;\x1B[30m&quot;</td></tr>
+<tr class="memdesc:a6283768c836fd4a0f382514973bc3ff4"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: black.  <a href="#a6283768c836fd4a0f382514973bc3ff4">More...</a><br/></td></tr>
+<tr class="separator:a6283768c836fd4a0f382514973bc3ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea69ffbacdcdf16c21b8c9961df84448"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#aea69ffbacdcdf16c21b8c9961df84448">GRN</a>&#160;&#160;&#160;&quot;\x1B[32m&quot;</td></tr>
+<tr class="memdesc:aea69ffbacdcdf16c21b8c9961df84448"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: green.  <a href="#aea69ffbacdcdf16c21b8c9961df84448">More...</a><br/></td></tr>
+<tr class="separator:aea69ffbacdcdf16c21b8c9961df84448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add9307de87f38e77d336751e305886f6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#add9307de87f38e77d336751e305886f6">BLU</a>&#160;&#160;&#160;&quot;\x1B[34m&quot;</td></tr>
+<tr class="memdesc:add9307de87f38e77d336751e305886f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: blue.  <a href="#add9307de87f38e77d336751e305886f6">More...</a><br/></td></tr>
+<tr class="separator:add9307de87f38e77d336751e305886f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af54a5a977c0c499323d656315f008ee0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#af54a5a977c0c499323d656315f008ee0">MAG</a>&#160;&#160;&#160;&quot;\x1B[35m&quot;</td></tr>
+<tr class="memdesc:af54a5a977c0c499323d656315f008ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: magenta.  <a href="#af54a5a977c0c499323d656315f008ee0">More...</a><br/></td></tr>
+<tr class="separator:af54a5a977c0c499323d656315f008ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf3a04d5bf63b204689a714718ea930"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#aeaf3a04d5bf63b204689a714718ea930">WHT</a>&#160;&#160;&#160;&quot;\x1B[37m&quot;</td></tr>
+<tr class="memdesc:aeaf3a04d5bf63b204689a714718ea930"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: white.  <a href="#aeaf3a04d5bf63b204689a714718ea930">More...</a><br/></td></tr>
+<tr class="separator:aeaf3a04d5bf63b204689a714718ea930"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1bdc3f8928aa1589ef44e3578a09464"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#af1bdc3f8928aa1589ef44e3578a09464">BMAG</a>&#160;&#160;&#160;&quot;\x1B[45m&quot;</td></tr>
+<tr class="memdesc:af1bdc3f8928aa1589ef44e3578a09464"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background magenta.  <a href="#af1bdc3f8928aa1589ef44e3578a09464">More...</a><br/></td></tr>
+<tr class="separator:af1bdc3f8928aa1589ef44e3578a09464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae528cad0e6c76be71eb66776599ec5d9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#ae528cad0e6c76be71eb66776599ec5d9">BWHT</a>&#160;&#160;&#160;&quot;\x1B[47m&quot;</td></tr>
+<tr class="memdesc:ae528cad0e6c76be71eb66776599ec5d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background white.  <a href="#ae528cad0e6c76be71eb66776599ec5d9">More...</a><br/></td></tr>
+<tr class="separator:ae528cad0e6c76be71eb66776599ec5d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2adb4c9e293ac446897ccfac5a52d6c2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a2adb4c9e293ac446897ccfac5a52d6c2">BRED</a>&#160;&#160;&#160;&quot;\x1B[41m&quot;</td></tr>
+<tr class="memdesc:a2adb4c9e293ac446897ccfac5a52d6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background red.  <a href="#a2adb4c9e293ac446897ccfac5a52d6c2">More...</a><br/></td></tr>
+<tr class="separator:a2adb4c9e293ac446897ccfac5a52d6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a003f38f51e5f6972a6a0796bda4ca11c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a003f38f51e5f6972a6a0796bda4ca11c">BGRN</a>&#160;&#160;&#160;&quot;\x1B[42m&quot;</td></tr>
+<tr class="memdesc:a003f38f51e5f6972a6a0796bda4ca11c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background green.  <a href="#a003f38f51e5f6972a6a0796bda4ca11c">More...</a><br/></td></tr>
+<tr class="separator:a003f38f51e5f6972a6a0796bda4ca11c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b526756196d7c0efa31bc8fe4e5f138"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a9b526756196d7c0efa31bc8fe4e5f138">BYEL</a>&#160;&#160;&#160;&quot;\x1B[43m&quot;</td></tr>
+<tr class="memdesc:a9b526756196d7c0efa31bc8fe4e5f138"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background yellow.  <a href="#a9b526756196d7c0efa31bc8fe4e5f138">More...</a><br/></td></tr>
+<tr class="separator:a9b526756196d7c0efa31bc8fe4e5f138"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f40b3c1c240d5513da9f50685d5bf15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a9f40b3c1c240d5513da9f50685d5bf15">BBLU</a>&#160;&#160;&#160;&quot;\x1B[44m&quot;</td></tr>
+<tr class="memdesc:a9f40b3c1c240d5513da9f50685d5bf15"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background blue.  <a href="#a9f40b3c1c240d5513da9f50685d5bf15">More...</a><br/></td></tr>
+<tr class="separator:a9f40b3c1c240d5513da9f50685d5bf15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd610b309fe5845f1e5fbd6666a22447"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#abd610b309fe5845f1e5fbd6666a22447">BCYN</a>&#160;&#160;&#160;&quot;\x1B[46m&quot;</td></tr>
+<tr class="memdesc:abd610b309fe5845f1e5fbd6666a22447"><td class="mdescLeft">&#160;</td><td class="mdescRight">ANSI escape sequence: background cyan.  <a href="#abd610b309fe5845f1e5fbd6666a22447">More...</a><br/></td></tr>
+<tr class="separator:abd610b309fe5845f1e5fbd6666a22447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a510a3ba7cf4242ea8da0fd5a52fc37f1"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a510a3ba7cf4242ea8da0fd5a52fc37f1">premain</a> ()</td></tr>
@@ -113,72 +175,290 @@ Functions</h2></td></tr>
 <tr class="memitem:a7231b8f0252e60cce4c383e16304544d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a7231b8f0252e60cce4c383e16304544d">postmain</a> ()</td></tr>
 <tr class="memdesc:a7231b8f0252e60cce4c383e16304544d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor function to clean up after the debug framework, before the program exits.  <a href="#a7231b8f0252e60cce4c383e16304544d">More...</a><br/></td></tr>
 <tr class="separator:a7231b8f0252e60cce4c383e16304544d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a3fc877ae19d64e52cff7e0ceff7668"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a7a3fc877ae19d64e52cff7e0ceff7668">_hexdump</a> (const void *const ptr, const size_t len, const char *const ptr_name, const char *const func, const char *const file, const int line)</td></tr>
-<tr class="separator:a7a3fc877ae19d64e52cff7e0ceff7668"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887187f8f71a200c99c63237ed3e3fd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a887187f8f71a200c99c63237ed3e3fd5">util_die</a> (const char *const func, const char *const file, const unsigned line,...)</td></tr>
+<tr class="separator:a887187f8f71a200c99c63237ed3e3fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71b1054e1888e2ce1b9ae9aab5c5644d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a71b1054e1888e2ce1b9ae9aab5c5644d">util_warn_valist</a> (const unsigned dlevel, const char *const func, const char *const file, const unsigned line, va_list ap)</td></tr>
+<tr class="separator:a71b1054e1888e2ce1b9ae9aab5c5644d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ab3816283166679f53fa95cf7ea6f50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a6ab3816283166679f53fa95cf7ea6f50">util_warn</a> (const unsigned dlevel, const char *const func, const char *const file, const unsigned line,...)</td></tr>
+<tr class="separator:a6ab3816283166679f53fa95cf7ea6f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d77449cd1566cf29f0ca3565dbe2ee8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a3d77449cd1566cf29f0ca3565dbe2ee8">util_rwarn</a> (const unsigned dlevel, const unsigned lps, const char *const func, const char *const file, const unsigned line,...)</td></tr>
+<tr class="separator:a3d77449cd1566cf29f0ca3565dbe2ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ccec5f8d7fa48c4b4c214feba13a8d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a8ccec5f8d7fa48c4b4c214feba13a8d3">util_hexdump</a> (const void *const ptr, const size_t len, const char *const ptr_name, const char *const func, const char *const file, const unsigned line)</td></tr>
+<tr class="separator:a8ccec5f8d7fa48c4b4c214feba13a8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad520a2ca0199ec9bb85c37772900e332"><td class="memItemLeft" align="right" valign="top">struct timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#ad520a2ca0199ec9bb85c37772900e332">_epoch</a></td></tr>
-<tr class="memdesc:ad520a2ca0199ec9bb85c37772900e332"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the timeval at the start of the program, used to print relative times in <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, <a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35" title="Abort execution with a message. ">die()</a>, etc.  <a href="#ad520a2ca0199ec9bb85c37772900e332">More...</a><br/></td></tr>
-<tr class="separator:ad520a2ca0199ec9bb85c37772900e332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9c82f349630a2371c3eeee0fb50a12"><td class="memItemLeft" align="right" valign="top">const char *const&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a5b9c82f349630a2371c3eeee0fb50a12">_col</a> [] = {<a class="el" href="util_8h.html#af1bdc3f8928aa1589ef44e3578a09464">BMAG</a>, <a class="el" href="util_8h.html#a2adb4c9e293ac446897ccfac5a52d6c2">BRED</a>, <a class="el" href="util_8h.html#a9b526756196d7c0efa31bc8fe4e5f138">BYEL</a>, <a class="el" href="util_8h.html#abd610b309fe5845f1e5fbd6666a22447">BCYN</a>, <a class="el" href="util_8h.html#a9f40b3c1c240d5513da9f50685d5bf15">BBLU</a>, <a class="el" href="util_8h.html#a003f38f51e5f6972a6a0796bda4ca11c">BGRN</a>}</td></tr>
-<tr class="memdesc:a5b9c82f349630a2371c3eeee0fb50a12"><td class="mdescLeft">&#160;</td><td class="mdescRight">An array of ANSI color sequences associated with the different #dlevel severities.  <a href="#a5b9c82f349630a2371c3eeee0fb50a12">More...</a><br/></td></tr>
-<tr class="separator:a5b9c82f349630a2371c3eeee0fb50a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05e3542f93d5ea18835fa9f7547b8171"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a05e3542f93d5ea18835fa9f7547b8171">_dlevel</a> = <a class="el" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></td></tr>
-<tr class="memdesc:a05e3542f93d5ea18835fa9f7547b8171"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically adjust _dlevel from your code to show or suppress debug messages at runtime.  <a href="#a05e3542f93d5ea18835fa9f7547b8171">More...</a><br/></td></tr>
-<tr class="separator:a05e3542f93d5ea18835fa9f7547b8171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c0c833e1a183e645e20c1dd4a35d1e"><td class="memItemLeft" align="right" valign="top">static regex_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a02c0c833e1a183e645e20c1dd4a35d1e">util_comp</a></td></tr>
+<tr class="separator:a02c0c833e1a183e645e20c1dd4a35d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a200c5748e6cdf77d2369377d98e131e9"><td class="memItemLeft" align="right" valign="top">static struct timeval&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a200c5748e6cdf77d2369377d98e131e9">util_epoch</a></td></tr>
+<tr class="memdesc:a200c5748e6cdf77d2369377d98e131e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the timeval at the start of the program, used to print relative times in <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, <a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35" title="Abort execution with a message. ">die()</a>, etc.  <a href="#a200c5748e6cdf77d2369377d98e131e9">More...</a><br/></td></tr>
+<tr class="separator:a200c5748e6cdf77d2369377d98e131e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade0743d672f539b1615b3a5d3b79486b"><td class="memItemLeft" align="right" valign="top">short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a> = <a class="el" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></td></tr>
+<tr class="memdesc:ade0743d672f539b1615b3a5d3b79486b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime.  <a href="#ade0743d672f539b1615b3a5d3b79486b">More...</a><br/></td></tr>
+<tr class="separator:ade0743d672f539b1615b3a5d3b79486b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a7a3fc877ae19d64e52cff7e0ceff7668"></a>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="a9f40b3c1c240d5513da9f50685d5bf15"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void _hexdump </td>
-          <td>(</td>
-          <td class="paramtype">const void *const&#160;</td>
-          <td class="paramname"><em>ptr</em>, </td>
+          <td class="memname">#define BBLU&#160;&#160;&#160;&quot;\x1B[44m&quot;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: background blue. </p>
+
+</div>
+</div>
+<a class="anchor" id="abd610b309fe5845f1e5fbd6666a22447"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const size_t&#160;</td>
-          <td class="paramname"><em>len</em>, </td>
+          <td class="memname">#define BCYN&#160;&#160;&#160;&quot;\x1B[46m&quot;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: background cyan. </p>
+
+</div>
+</div>
+<a class="anchor" id="a003f38f51e5f6972a6a0796bda4ca11c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *const&#160;</td>
-          <td class="paramname"><em>ptr_name</em>, </td>
+          <td class="memname">#define BGRN&#160;&#160;&#160;&quot;\x1B[42m&quot;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: background green. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6773bd84b2bf2a4f2118fc787f3a53fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *const&#160;</td>
-          <td class="paramname"><em>func</em>, </td>
+          <td class="memname">#define BLD&#160;&#160;&#160;&quot;\x1B[1m&quot;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: bold. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6283768c836fd4a0f382514973bc3ff4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const char *const&#160;</td>
-          <td class="paramname"><em>file</em>, </td>
+          <td class="memname">#define BLK&#160;&#160;&#160;&quot;\x1B[30m&quot;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: black. </p>
+
+</div>
+</div>
+<a class="anchor" id="add9307de87f38e77d336751e305886f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>line</em>&#160;</td>
+          <td class="memname">#define BLU&#160;&#160;&#160;&quot;\x1B[34m&quot;</td>
         </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: blue. </p>
+
+</div>
+</div>
+<a class="anchor" id="af1bdc3f8928aa1589ef44e3578a09464"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
         <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">#define BMAG&#160;&#160;&#160;&quot;\x1B[45m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: background magenta. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2adb4c9e293ac446897ccfac5a52d6c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BRED&#160;&#160;&#160;&quot;\x1B[41m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: background red. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae528cad0e6c76be71eb66776599ec5d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BWHT&#160;&#160;&#160;&quot;\x1B[47m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: background white. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9b526756196d7c0efa31bc8fe4e5f138"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BYEL&#160;&#160;&#160;&quot;\x1B[43m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: background yellow. </p>
+
+</div>
+</div>
+<a class="anchor" id="a911d17fccac43347bb3c6ace7a8051c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DO_REGEXEC&#160;&#160;&#160;0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
+<a class="anchor" id="a680e4f50570b3400b455076c0cb143bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DTHREAD_ID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab4e90e0eea07ae337107d6a6fc44f9b8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DTHREAD_ID_IND</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">bg</td><td>)</td>
+          <td>&#160;&#160;&#160;bg</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a45e5c88c9ecb59dbebcf010d7c391aa7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DTHREAD_LOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6d4b88acd687e9556a203cf43de143a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DTHREAD_UNLOCK</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aea69ffbacdcdf16c21b8c9961df84448"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GRN&#160;&#160;&#160;&quot;\x1B[32m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: green. </p>
+
+</div>
+</div>
+<a class="anchor" id="af54a5a977c0c499323d656315f008ee0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAG&#160;&#160;&#160;&quot;\x1B[35m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: magenta. </p>
+
+</div>
+</div>
+<a class="anchor" id="ade01bc98e1632cd645e0f33757d70d2e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NRM&#160;&#160;&#160;&quot;\x1B[0m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: reset all to normal. </p>
+
+</div>
+</div>
+<a class="anchor" id="aeaf3a04d5bf63b204689a714718ea930"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define WHT&#160;&#160;&#160;&quot;\x1B[37m&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ANSI escape sequence: white. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
 <a class="anchor" id="a7231b8f0252e60cce4c383e16304544d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -229,44 +509,310 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a887187f8f71a200c99c63237ed3e3fd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void util_die </td>
+          <td>(</td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8ccec5f8d7fa48c4b4c214feba13a8d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void util_hexdump </td>
+          <td>(</td>
+          <td class="paramtype">const void *const&#160;</td>
+          <td class="paramname"><em>ptr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>ptr_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>line</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3d77449cd1566cf29f0ca3565dbe2ee8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void util_rwarn </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>dlevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>lps</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="util_8c_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph.png" border="0" usemap="#util_8c_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph" alt=""/></div>
+<map name="util_8c_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph" id="util_8c_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#a71b1054e1888e2ce1b9ae9aab5c5644d" title="util_warn_valist" alt="" coords="133,5,245,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6ab3816283166679f53fa95cf7ea6f50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void util_warn </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>dlevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>...</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="util_8c_a6ab3816283166679f53fa95cf7ea6f50_cgraph.png" border="0" usemap="#util_8c_a6ab3816283166679f53fa95cf7ea6f50_cgraph" alt=""/></div>
+<map name="util_8c_a6ab3816283166679f53fa95cf7ea6f50_cgraph" id="util_8c_a6ab3816283166679f53fa95cf7ea6f50_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#a71b1054e1888e2ce1b9ae9aab5c5644d" title="util_warn_valist" alt="" coords="128,5,240,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a71b1054e1888e2ce1b9ae9aab5c5644d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void util_warn_valist </td>
+          <td>(</td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>dlevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>func</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *const&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const unsigned&#160;</td>
+          <td class="paramname"><em>line</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list&#160;</td>
+          <td class="paramname"><em>ap</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a5b9c82f349630a2371c3eeee0fb50a12"></a>
+<a class="anchor" id="a02c0c833e1a183e645e20c1dd4a35d1e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">regex_t util_comp</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade0743d672f539b1615b3a5d3b79486b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const char* const _col[] = {<a class="el" href="util_8h.html#af1bdc3f8928aa1589ef44e3578a09464">BMAG</a>, <a class="el" href="util_8h.html#a2adb4c9e293ac446897ccfac5a52d6c2">BRED</a>, <a class="el" href="util_8h.html#a9b526756196d7c0efa31bc8fe4e5f138">BYEL</a>, <a class="el" href="util_8h.html#abd610b309fe5845f1e5fbd6666a22447">BCYN</a>, <a class="el" href="util_8h.html#a9f40b3c1c240d5513da9f50685d5bf15">BBLU</a>, <a class="el" href="util_8h.html#a003f38f51e5f6972a6a0796bda4ca11c">BGRN</a>}</td>
+          <td class="memname">short util_dlevel = <a class="el" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>An array of ANSI color sequences associated with the different #dlevel severities. </p>
-
-</div>
-</div>
-<a class="anchor" id="a05e3542f93d5ea18835fa9f7547b8171"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">short _dlevel = <a class="el" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Dynamically adjust _dlevel from your code to show or suppress debug messages at runtime. </p>
+<p>Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime. </p>
 <p>Increasing this past what was compiled in by setting DLEVEL is obviously not going to have any effect. </p>
 
 </div>
 </div>
-<a class="anchor" id="ad520a2ca0199ec9bb85c37772900e332"></a>
+<a class="anchor" id="a200c5748e6cdf77d2369377d98e131e9"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">struct timeval _epoch</td>
+          <td class="memname">struct timeval util_epoch</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Stores the timeval at the start of the program, used to print relative times in <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, <a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35" title="Abort execution with a message. ">die()</a>, etc. </p>
@@ -276,7 +822,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 2 2017 20:46:35 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 10 2017 10:52:16 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

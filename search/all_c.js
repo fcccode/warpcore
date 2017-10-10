@@ -91,7 +91,7 @@ var searchData=
   ['nr_5ftx_5fslots',['nr_tx_slots',['../structnmreq.html#a471cf0759451e8f3e3ca91a35a0e5c2c',1,'nmreq']]],
   ['nr_5fversion',['nr_version',['../structnmreq.html#ae12f9325eefa6832cd79cb7fd9a600df',1,'nmreq']]],
   ['nr_5fzcopy_5fmon',['NR_ZCOPY_MON',['../netmap_8h.html#acee1645a0ec7cb08e8799a8700037129',1,'netmap.h']]],
-  ['nrm',['NRM',['../util_8h.html#ade01bc98e1632cd645e0f33757d70d2e',1,'util.h']]],
+  ['nrm',['NRM',['../util_8c.html#ade01bc98e1632cd645e0f33757d70d2e',1,'util.c']]],
   ['ns_5fbuf_5fchanged',['NS_BUF_CHANGED',['../netmap_8h.html#a7dcf0e4b0c59bec083d6bcc38b4915f3',1,'netmap.h']]],
   ['ns_5fforward',['NS_FORWARD',['../netmap_8h.html#a0042e995a101c870db60f281d58da40f',1,'netmap.h']]],
   ['ns_5findirect',['NS_INDIRECT',['../netmap_8h.html#a24868b1fb61cfcc67e3385c8cd0d26f0',1,'netmap.h']]],
