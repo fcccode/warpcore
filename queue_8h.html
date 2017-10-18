@@ -1758,13 +1758,12 @@ Macros</h2></td></tr>
 <div class="line">            while (<a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>(curelm, field) != (elm))                            \</div>
 <div class="line">                curelm = <a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>(curelm, field);                               <a class="code" href="queue_8h.html#ac2022108d7ffaf32b51ba2c6c5617a25">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#ac2022108d7ffaf32b51ba2c6c5617a25">            sq_remove_after</a>(head, curelm, field);                              \</div>
-<div class="line">        }                                                                      \</div>
-<div class="line">        (head)-&gt;stqh_len--;                                                    <a class="code" href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">\</a></div>
+<div class="line">        }                                                                      <a class="code" href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">        TRASHIT</a>(*oldnext);                                                     \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="queue_8h_html_a96671a8f87ff87543b3b0b671a274a1c"><div class="ttname"><a href="queue_8h.html#a96671a8f87ff87543b3b0b671a274a1c">QMD_SAVELINK</a></div><div class="ttdeci">#define QMD_SAVELINK(name, link)</div><div class="ttdef"><b>Definition:</b> queue.h:192</div></div>
 <div class="ttc" id="queue_8h_html_adee7bf054da0ade68bb853732c665a2b"><div class="ttname"><a href="queue_8h.html#adee7bf054da0ade68bb853732c665a2b">TRASHIT</a></div><div class="ttdeci">#define TRASHIT(x)</div><div class="ttdef"><b>Definition:</b> queue.h:185</div></div>
-<div class="ttc" id="queue_8h_html_ac2022108d7ffaf32b51ba2c6c5617a25"><div class="ttname"><a href="queue_8h.html#ac2022108d7ffaf32b51ba2c6c5617a25">sq_remove_after</a></div><div class="ttdeci">#define sq_remove_after(head, elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:459</div></div>
+<div class="ttc" id="queue_8h_html_ac2022108d7ffaf32b51ba2c6c5617a25"><div class="ttname"><a href="queue_8h.html#ac2022108d7ffaf32b51ba2c6c5617a25">sq_remove_after</a></div><div class="ttdeci">#define sq_remove_after(head, elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:458</div></div>
 <div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
 <div class="ttc" id="queue_8h_html_a735e29d5fd7b7a7ad96681c348996efe"><div class="ttname"><a href="queue_8h.html#a735e29d5fd7b7a7ad96681c348996efe">sq_remove_head</a></div><div class="ttdeci">#define sq_remove_head(head, field)</div><div class="ttdef"><b>Definition:</b> queue.h:466</div></div>
 <div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
@@ -1805,6 +1804,7 @@ Macros</h2></td></tr>
 <div class="line">        if ((<a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>(elm, field) = <a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>(<a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>(elm, field), field)) ==     \</div>
 <div class="line">            NULL)                                                              \</div>
 <div class="line">            (head)-&gt;stqh_last = &amp;<a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>((elm), field);                        \</div>
+<div class="line">        (head)-&gt;stqh_len--;                                                    \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
 </div><!-- fragment -->
@@ -1836,6 +1836,7 @@ Macros</h2></td></tr>
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
 <div class="line">        if ((<a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>((head)) = <a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a>(<a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>((head)), field)) == NULL)     \</div>
 <div class="line">            (head)-&gt;stqh_last = &amp;<a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>((head));                             \</div>
+<div class="line">        (head)-&gt;stqh_len--;                                                    \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
 <div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
@@ -1874,11 +1875,14 @@ Macros</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       <a class="code" href="queue_8h.html#a329a99f8542bf673a0620cc188644558">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#a329a99f8542bf673a0620cc188644558">        QUEUE_TYPEOF</a>(type) * swap_first = <a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>(head1);                     <a class="code" href="queue_8h.html#a329a99f8542bf673a0620cc188644558">\</a></div>
-<div class="line"><a class="code" href="queue_8h.html#a329a99f8542bf673a0620cc188644558">        QUEUE_TYPEOF</a>(type) ** swap_last = (head1)-&gt;stqh_last;                  <a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">\</a></div>
+<div class="line"><a class="code" href="queue_8h.html#a329a99f8542bf673a0620cc188644558">        QUEUE_TYPEOF</a>(type) ** swap_last = (head1)-&gt;stqh_last;                  \</div>
+<div class="line">        const uint64_t swap_len = (head1)-&gt;stqh_len;                           <a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">        sq_first</a>(head1) = <a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>(head2);                                     \</div>
-<div class="line">        (head1)-&gt;stqh_last = (head2)-&gt;stqh_last;                               <a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">\</a></div>
+<div class="line">        (head1)-&gt;stqh_last = (head2)-&gt;stqh_last;                               \</div>
+<div class="line">        (head1)-&gt;stqh_len = (head2)-&gt;stqh_len;                                 <a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">\</a></div>
 <div class="line"><a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">        sq_first</a>(head2) = swap_first;                                          \</div>
 <div class="line">        (head2)-&gt;stqh_last = swap_last;                                        \</div>
+<div class="line">        (head2)-&gt;stqh_len = swap_len;                                          \</div>
 <div class="line">        if (<a class="code" href="queue_8h.html#af94ce05fbbab07bec6cce3d81b6d5cbf">sq_empty</a>(head1))                                                   \</div>
 <div class="line">            (head1)-&gt;stqh_last = &amp;<a class="code" href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a>(head1);                             \</div>
 <div class="line">        if (<a class="code" href="queue_8h.html#af94ce05fbbab07bec6cce3d81b6d5cbf">sq_empty</a>(head2))                                                   \</div>
@@ -1933,7 +1937,7 @@ Macros</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Oct 18 2017 07:36:09 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Oct 18 2017 14:32:55 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
