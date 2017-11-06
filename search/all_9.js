@@ -47,5 +47,6 @@ var searchData=
   ['ip_5frx',['ip_rx',['../ip_8c.html#a5140912b175371c1ed50dd8f4325a654',1,'ip_rx(struct w_engine *const w, struct netmap_ring *const r):&#160;ip.c'],['../ip_8h.html#a5140912b175371c1ed50dd8f4325a654',1,'ip_rx(struct w_engine *const w, struct netmap_ring *const r):&#160;ip.c']]],
   ['ip_5ftx',['ip_tx',['../ip_8c.html#ad5934c09781e39f8bec7f5eae021f791',1,'ip_tx(struct w_engine *const w, struct w_iov *const v, const uint16_t len):&#160;ip.c'],['../ip_8h.html#ad5934c09781e39f8bec7f5eae021f791',1,'ip_tx(struct w_engine *const w, struct w_iov *const v, const uint16_t len):&#160;ip.c']]],
   ['ip_5ftx_5fwith_5frx_5fbuf',['ip_tx_with_rx_buf',['../ip_8h.html#abce4a5aefa4ece9002ca4499828716ee',1,'ip.h']]],
-  ['ip_5fv',['ip_v',['../ip_8h.html#a9cf43471a59a136858ea093070660c79',1,'ip.h']]]
+  ['ip_5fv',['ip_v',['../ip_8h.html#a9cf43471a59a136858ea093070660c79',1,'ip.h']]],
+  ['is_5fpipe',['is_pipe',['../backend_8h.html#a658949c030f0b0f2cf2776f3bdaf5e70',1,'backend.h']]]
 ];
