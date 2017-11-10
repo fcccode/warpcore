@@ -89,117 +89,119 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">arp.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="arp_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// Copyright (c) 2014-2017, NetApp, Inc.</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// All rights reserved.</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// Redistribution and use in source and binary forms, with or without</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// modification, are permitted provided that the following conditions are met:</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// 1. Redistributions of source code must retain the above copyright notice,</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer.</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// 2. Redistributions in binary form must reproduce the above copyright notice,</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer in the documentation</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">//    and/or other materials provided with the distribution.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;net/ethernet.h&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="warpcore_8h.html">warpcore/warpcore.h</a>&gt;</span></div>
+<a href="arp_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSD-2-Clause</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Copyright (c) 2014-2017, NetApp, Inc.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// All rights reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Redistribution and use in source and binary forms, with or without</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// modification, are permitted provided that the following conditions are met:</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// 1. Redistributions of source code must retain the above copyright notice,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// 2. Redistributions in binary form must reproduce the above copyright notice,</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer in the documentation</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//    and/or other materials provided with the distribution.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;net/ethernet.h&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">struct </span><a class="code" href="structnetmap__ring.html">netmap_ring</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="warpcore_8h.html">warpcore/warpcore.h</a>&gt;</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="structarp__hdr.html">   41</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structarp__hdr.html">arp_hdr</a> {</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a98dae47366192fa6bfdafc4519ee3299">   44</a></span>&#160;    uint16_t <a class="code" href="structarp__hdr.html#a98dae47366192fa6bfdafc4519ee3299">hrd</a>;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a3444b62a7cd68b341c2a1cc59204b87a">   48</a></span>&#160;    uint16_t <a class="code" href="structarp__hdr.html#a3444b62a7cd68b341c2a1cc59204b87a">pro</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a98f3fd34adf64f03038acab9ae511d9a">   52</a></span>&#160;    uint8_t <a class="code" href="structarp__hdr.html#a98f3fd34adf64f03038acab9ae511d9a">hln</a>;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a339a17885696badc60b24806bb32d80b">   56</a></span>&#160;    uint8_t <a class="code" href="structarp__hdr.html#a339a17885696badc60b24806bb32d80b">pln</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a239e78a3ceaa360c0a2ace850105de20">   59</a></span>&#160;    uint16_t <a class="code" href="structarp__hdr.html#a239e78a3ceaa360c0a2ace850105de20">op</a>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="structarp__hdr.html#ad746c2a4cea41bd274f445a83ad3d9ca">   63</a></span>&#160;    <span class="keyword">struct </span>ether_addr <a class="code" href="structarp__hdr.html#ad746c2a4cea41bd274f445a83ad3d9ca">sha</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a7d4b3e7974f76320a65ddd51e375d765">   67</a></span>&#160;    uint32_t <a class="code" href="structarp__hdr.html#a7d4b3e7974f76320a65ddd51e375d765">spa</a> __attribute__((packed));</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a192105b01e4cc5ecc0a1deb716ae535a">   71</a></span>&#160;    <span class="keyword">struct </span>ether_addr <a class="code" href="structarp__hdr.html#a192105b01e4cc5ecc0a1deb716ae535a">tha</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a7726cb8a97705c987b1cde312cf71c1d">   75</a></span>&#160;    uint32_t <a class="code" href="structarp__hdr.html#a7726cb8a97705c987b1cde312cf71c1d">tpa</a>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="arp_8h.html#ae83b89fd0db8b3a508c7f73dfc785a14">   79</a></span>&#160;<span class="preprocessor">#define ARP_HRD_ETHER 1  </span></div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="arp_8h.html#a4e15fdfedf617bb9db1588615889ce30">   80</a></span>&#160;<span class="preprocessor">#define ARP_OP_REQUEST 1 </span></div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="arp_8h.html#a70ed40d243b246a155b781b25d61f192">   81</a></span>&#160;<span class="preprocessor">#define ARP_OP_REPLY 2   </span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull))</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<a class="code" href="arp_8h.html#a4ec90ba3bb22f510ca5083c78434d6ad">arp_rx</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * w, struct <a class="code" href="structnetmap__ring.html">netmap_ring</a> * const r);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;extern struct ether_addr __attribute__((nonnull))</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<a class="code" href="arp_8h.html#aad7ca3e847867c4dcc618d034aa42739">arp_who_has</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, const uint32_t dip);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="arp_8h.html#a1b84f8ec20a55f766fcfcb9cd2d0d1e7">free_arp_cache</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">struct </span><a class="code" href="structnetmap__ring.html">netmap_ring</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structarp__hdr.html">   43</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structarp__hdr.html">arp_hdr</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a98dae47366192fa6bfdafc4519ee3299">   46</a></span>&#160;    uint16_t <a class="code" href="structarp__hdr.html#a98dae47366192fa6bfdafc4519ee3299">hrd</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a3444b62a7cd68b341c2a1cc59204b87a">   50</a></span>&#160;    uint16_t <a class="code" href="structarp__hdr.html#a3444b62a7cd68b341c2a1cc59204b87a">pro</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a98f3fd34adf64f03038acab9ae511d9a">   54</a></span>&#160;    uint8_t <a class="code" href="structarp__hdr.html#a98f3fd34adf64f03038acab9ae511d9a">hln</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a339a17885696badc60b24806bb32d80b">   58</a></span>&#160;    uint8_t <a class="code" href="structarp__hdr.html#a339a17885696badc60b24806bb32d80b">pln</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a239e78a3ceaa360c0a2ace850105de20">   61</a></span>&#160;    uint16_t <a class="code" href="structarp__hdr.html#a239e78a3ceaa360c0a2ace850105de20">op</a>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="structarp__hdr.html#ad746c2a4cea41bd274f445a83ad3d9ca">   65</a></span>&#160;    <span class="keyword">struct </span>ether_addr <a class="code" href="structarp__hdr.html#ad746c2a4cea41bd274f445a83ad3d9ca">sha</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a7d4b3e7974f76320a65ddd51e375d765">   69</a></span>&#160;    uint32_t <a class="code" href="structarp__hdr.html#a7d4b3e7974f76320a65ddd51e375d765">spa</a> __attribute__((packed));</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a192105b01e4cc5ecc0a1deb716ae535a">   73</a></span>&#160;    <span class="keyword">struct </span>ether_addr <a class="code" href="structarp__hdr.html#a192105b01e4cc5ecc0a1deb716ae535a">tha</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="structarp__hdr.html#a7726cb8a97705c987b1cde312cf71c1d">   77</a></span>&#160;    uint32_t <a class="code" href="structarp__hdr.html#a7726cb8a97705c987b1cde312cf71c1d">tpa</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="arp_8h.html#ae83b89fd0db8b3a508c7f73dfc785a14">   81</a></span>&#160;<span class="preprocessor">#define ARP_HRD_ETHER 1  </span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="arp_8h.html#a4e15fdfedf617bb9db1588615889ce30">   82</a></span>&#160;<span class="preprocessor">#define ARP_OP_REQUEST 1 </span></div>
+<div class="line"><a name="l00083"></a><span class="lineno"><a class="line" href="arp_8h.html#a70ed40d243b246a155b781b25d61f192">   83</a></span>&#160;<span class="preprocessor">#define ARP_OP_REPLY 2   </span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<a class="code" href="arp_8h.html#a4ec90ba3bb22f510ca5083c78434d6ad">arp_rx</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * w, struct <a class="code" href="structnetmap__ring.html">netmap_ring</a> * const r);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;extern struct ether_addr __attribute__((nonnull))</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<a class="code" href="arp_8h.html#aad7ca3e847867c4dcc618d034aa42739">arp_who_has</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, const uint32_t dip);</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structarp__entry.html">   95</a></span>&#160;struct <a class="code" href="structarp__entry.html">arp_entry</a> {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <a class="code" href="tree_8h.html#a577ab0c7c03e7caae9b2c4b828027ecb">splay_entry</a>(arp_entry) next; </div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="structarp__entry.html#a5ac0bb9105276b100aa6d5cc3d2738c9">   97</a></span>&#160;    uint32_t <a class="code" href="structarp__entry.html#a5ac0bb9105276b100aa6d5cc3d2738c9">ip</a>;                 </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="structarp__entry.html#ae879dd35bc39628c54c86819fdd84bfb">   98</a></span>&#160;    <span class="keyword">struct </span>ether_addr mac;       </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    uint8_t _unused[6]; </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">extern</span> int32_t __attribute__((nonnull))</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<a class="code" href="arp_8h.html#a403adae73c210d7b48018e79a43cf8f2">arp_cache_cmp</a>(const struct <a class="code" href="structarp__entry.html">arp_entry</a> * const a,</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;              const struct <a class="code" href="structarp__entry.html">arp_entry</a> * const b);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<a class="code" href="arp_8h.html#ab06b22c6e2a1fd19fc881920cb45cc58">splay_head</a>(arp_cache, <a class="code" href="structarp__entry.html">arp_entry</a>);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<a class="code" href="tree_8h.html#a75ee3833aa4387ba31979341c84b6954">SPLAY_PROTOTYPE</a>(arp_cache, arp_entry, next, <a class="code" href="arp_8h.html#a403adae73c210d7b48018e79a43cf8f2">arp_cache_cmp</a>)</div>
-<div class="ttc" id="structarp__entry_html_a5ac0bb9105276b100aa6d5cc3d2738c9"><div class="ttname"><a href="structarp__entry.html#a5ac0bb9105276b100aa6d5cc3d2738c9">arp_entry::ip</a></div><div class="ttdeci">uint32_t ip</div><div class="ttdoc">IPv4 address. </div><div class="ttdef"><b>Definition:</b> arp.h:97</div></div>
-<div class="ttc" id="structarp__hdr_html_a7d4b3e7974f76320a65ddd51e375d765"><div class="ttname"><a href="structarp__hdr.html#a7d4b3e7974f76320a65ddd51e375d765">arp_hdr::spa</a></div><div class="ttdeci">uint32_t spa</div><div class="ttdoc">The sender protocol (i.e., IPv4) address of the ARP operation. </div><div class="ttdef"><b>Definition:</b> arp.h:67</div></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="arp_8h.html#a1b84f8ec20a55f766fcfcb9cd2d0d1e7">free_arp_cache</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w);</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="structarp__entry.html">   97</a></span>&#160;struct <a class="code" href="structarp__entry.html">arp_entry</a> {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="tree_8h.html#a577ab0c7c03e7caae9b2c4b828027ecb">splay_entry</a>(arp_entry) next; </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="structarp__entry.html#a5ac0bb9105276b100aa6d5cc3d2738c9">   99</a></span>&#160;    uint32_t <a class="code" href="structarp__entry.html#a5ac0bb9105276b100aa6d5cc3d2738c9">ip</a>;                 </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="structarp__entry.html#ae879dd35bc39628c54c86819fdd84bfb">  100</a></span>&#160;    <span class="keyword">struct </span>ether_addr mac;       </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    uint8_t _unused[6]; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;};</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="keyword">extern</span> int32_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<a class="code" href="arp_8h.html#a403adae73c210d7b48018e79a43cf8f2">arp_cache_cmp</a>(const struct <a class="code" href="structarp__entry.html">arp_entry</a> * const a,</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;              const struct <a class="code" href="structarp__entry.html">arp_entry</a> * const b);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<a class="code" href="arp_8h.html#ab06b22c6e2a1fd19fc881920cb45cc58">splay_head</a>(arp_cache, <a class="code" href="structarp__entry.html">arp_entry</a>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<a class="code" href="tree_8h.html#a75ee3833aa4387ba31979341c84b6954">SPLAY_PROTOTYPE</a>(arp_cache, arp_entry, next, <a class="code" href="arp_8h.html#a403adae73c210d7b48018e79a43cf8f2">arp_cache_cmp</a>)</div>
+<div class="ttc" id="structarp__entry_html_a5ac0bb9105276b100aa6d5cc3d2738c9"><div class="ttname"><a href="structarp__entry.html#a5ac0bb9105276b100aa6d5cc3d2738c9">arp_entry::ip</a></div><div class="ttdeci">uint32_t ip</div><div class="ttdoc">IPv4 address. </div><div class="ttdef"><b>Definition:</b> arp.h:99</div></div>
+<div class="ttc" id="structarp__hdr_html_a7d4b3e7974f76320a65ddd51e375d765"><div class="ttname"><a href="structarp__hdr.html#a7d4b3e7974f76320a65ddd51e375d765">arp_hdr::spa</a></div><div class="ttdeci">uint32_t spa</div><div class="ttdoc">The sender protocol (i.e., IPv4) address of the ARP operation. </div><div class="ttdef"><b>Definition:</b> arp.h:69</div></div>
 <div class="ttc" id="arp_8h_html_ab06b22c6e2a1fd19fc881920cb45cc58"><div class="ttname"><a href="arp_8h.html#ab06b22c6e2a1fd19fc881920cb45cc58">splay_head</a></div><div class="ttdeci">splay_head(arp_cache, arp_entry)</div></div>
 <div class="ttc" id="warpcore_8h_html"><div class="ttname"><a href="warpcore_8h.html">warpcore.h</a></div></div>
-<div class="ttc" id="structarp__hdr_html_a239e78a3ceaa360c0a2ace850105de20"><div class="ttname"><a href="structarp__hdr.html#a239e78a3ceaa360c0a2ace850105de20">arp_hdr::op</a></div><div class="ttdeci">uint16_t op</div><div class="ttdoc">ARP operation. Either ARP_OP_REQUEST or ARP_OP_REPLY. </div><div class="ttdef"><b>Definition:</b> arp.h:59</div></div>
-<div class="ttc" id="arp_8h_html_a1b84f8ec20a55f766fcfcb9cd2d0d1e7"><div class="ttname"><a href="arp_8h.html#a1b84f8ec20a55f766fcfcb9cd2d0d1e7">free_arp_cache</a></div><div class="ttdeci">void free_arp_cache(struct w_engine *const w)</div><div class="ttdoc">Free the ARP cache entries associated with engine w. </div><div class="ttdef"><b>Definition:</b> arp.c:312</div></div>
+<div class="ttc" id="structarp__hdr_html_a239e78a3ceaa360c0a2ace850105de20"><div class="ttname"><a href="structarp__hdr.html#a239e78a3ceaa360c0a2ace850105de20">arp_hdr::op</a></div><div class="ttdeci">uint16_t op</div><div class="ttdoc">ARP operation. Either ARP_OP_REQUEST or ARP_OP_REPLY. </div><div class="ttdef"><b>Definition:</b> arp.h:61</div></div>
+<div class="ttc" id="arp_8h_html_a1b84f8ec20a55f766fcfcb9cd2d0d1e7"><div class="ttname"><a href="arp_8h.html#a1b84f8ec20a55f766fcfcb9cd2d0d1e7">free_arp_cache</a></div><div class="ttdeci">void free_arp_cache(struct w_engine *const w)</div><div class="ttdoc">Free the ARP cache entries associated with engine w. </div><div class="ttdef"><b>Definition:</b> arp.c:314</div></div>
 <div class="ttc" id="tree_8h_html_a75ee3833aa4387ba31979341c84b6954"><div class="ttname"><a href="tree_8h.html#a75ee3833aa4387ba31979341c84b6954">SPLAY_PROTOTYPE</a></div><div class="ttdeci">#define SPLAY_PROTOTYPE(name, type, field, cmp)</div><div class="ttdef"><b>Definition:</b> tree.h:125</div></div>
-<div class="ttc" id="arp_8h_html_a4ec90ba3bb22f510ca5083c78434d6ad"><div class="ttname"><a href="arp_8h.html#a4ec90ba3bb22f510ca5083c78434d6ad">arp_rx</a></div><div class="ttdeci">void arp_rx(struct w_engine *w, struct netmap_ring *const r)</div><div class="ttdoc">Receive an ARP packet, and react to it. </div><div class="ttdef"><b>Definition:</b> arp.c:241</div></div>
-<div class="ttc" id="structarp__hdr_html_ad746c2a4cea41bd274f445a83ad3d9ca"><div class="ttname"><a href="structarp__hdr.html#ad746c2a4cea41bd274f445a83ad3d9ca">arp_hdr::sha</a></div><div class="ttdeci">struct ether_addr sha</div><div class="ttdoc">The sender hardware (i.e., Ethernet) address of the ARP operation. </div><div class="ttdef"><b>Definition:</b> arp.h:63</div></div>
+<div class="ttc" id="arp_8h_html_a4ec90ba3bb22f510ca5083c78434d6ad"><div class="ttname"><a href="arp_8h.html#a4ec90ba3bb22f510ca5083c78434d6ad">arp_rx</a></div><div class="ttdeci">void arp_rx(struct w_engine *w, struct netmap_ring *const r)</div><div class="ttdoc">Receive an ARP packet, and react to it. </div><div class="ttdef"><b>Definition:</b> arp.c:243</div></div>
+<div class="ttc" id="structarp__hdr_html_ad746c2a4cea41bd274f445a83ad3d9ca"><div class="ttname"><a href="structarp__hdr.html#ad746c2a4cea41bd274f445a83ad3d9ca">arp_hdr::sha</a></div><div class="ttdeci">struct ether_addr sha</div><div class="ttdoc">The sender hardware (i.e., Ethernet) address of the ARP operation. </div><div class="ttdef"><b>Definition:</b> arp.h:65</div></div>
 <div class="ttc" id="tree_8h_html_a577ab0c7c03e7caae9b2c4b828027ecb"><div class="ttname"><a href="tree_8h.html#a577ab0c7c03e7caae9b2c4b828027ecb">splay_entry</a></div><div class="ttdeci">#define splay_entry(type)</div><div class="ttdef"><b>Definition:</b> tree.h:75</div></div>
-<div class="ttc" id="structarp__hdr_html_a98dae47366192fa6bfdafc4519ee3299"><div class="ttname"><a href="structarp__hdr.html#a98dae47366192fa6bfdafc4519ee3299">arp_hdr::hrd</a></div><div class="ttdeci">uint16_t hrd</div><div class="ttdoc">Format of the hardware address. </div><div class="ttdef"><b>Definition:</b> arp.h:44</div></div>
-<div class="ttc" id="structarp__hdr_html_a3444b62a7cd68b341c2a1cc59204b87a"><div class="ttname"><a href="structarp__hdr.html#a3444b62a7cd68b341c2a1cc59204b87a">arp_hdr::pro</a></div><div class="ttdeci">uint16_t pro</div><div class="ttdoc">Format of the protocol address. </div><div class="ttdef"><b>Definition:</b> arp.h:48</div></div>
-<div class="ttc" id="structw__engine_html"><div class="ttname"><a href="structw__engine.html">w_engine</a></div><div class="ttdoc">A warpcore backend engine. </div><div class="ttdef"><b>Definition:</b> warpcore.h:46</div></div>
-<div class="ttc" id="arp_8h_html_a403adae73c210d7b48018e79a43cf8f2"><div class="ttname"><a href="arp_8h.html#a403adae73c210d7b48018e79a43cf8f2">arp_cache_cmp</a></div><div class="ttdeci">int32_t arp_cache_cmp(const struct arp_entry *const a, const struct arp_entry *const b)</div><div class="ttdef"><b>Definition:</b> arp.c:50</div></div>
-<div class="ttc" id="structarp__hdr_html_a192105b01e4cc5ecc0a1deb716ae535a"><div class="ttname"><a href="structarp__hdr.html#a192105b01e4cc5ecc0a1deb716ae535a">arp_hdr::tha</a></div><div class="ttdeci">struct ether_addr tha</div><div class="ttdoc">The target hardware (i.e., Ethernet) address of the ARP operation. </div><div class="ttdef"><b>Definition:</b> arp.h:71</div></div>
+<div class="ttc" id="structarp__hdr_html_a98dae47366192fa6bfdafc4519ee3299"><div class="ttname"><a href="structarp__hdr.html#a98dae47366192fa6bfdafc4519ee3299">arp_hdr::hrd</a></div><div class="ttdeci">uint16_t hrd</div><div class="ttdoc">Format of the hardware address. </div><div class="ttdef"><b>Definition:</b> arp.h:46</div></div>
+<div class="ttc" id="structarp__hdr_html_a3444b62a7cd68b341c2a1cc59204b87a"><div class="ttname"><a href="structarp__hdr.html#a3444b62a7cd68b341c2a1cc59204b87a">arp_hdr::pro</a></div><div class="ttdeci">uint16_t pro</div><div class="ttdoc">Format of the protocol address. </div><div class="ttdef"><b>Definition:</b> arp.h:50</div></div>
+<div class="ttc" id="structw__engine_html"><div class="ttname"><a href="structw__engine.html">w_engine</a></div><div class="ttdoc">A warpcore backend engine. </div><div class="ttdef"><b>Definition:</b> warpcore.h:48</div></div>
+<div class="ttc" id="arp_8h_html_a403adae73c210d7b48018e79a43cf8f2"><div class="ttname"><a href="arp_8h.html#a403adae73c210d7b48018e79a43cf8f2">arp_cache_cmp</a></div><div class="ttdeci">int32_t arp_cache_cmp(const struct arp_entry *const a, const struct arp_entry *const b)</div><div class="ttdef"><b>Definition:</b> arp.c:52</div></div>
+<div class="ttc" id="structarp__hdr_html_a192105b01e4cc5ecc0a1deb716ae535a"><div class="ttname"><a href="structarp__hdr.html#a192105b01e4cc5ecc0a1deb716ae535a">arp_hdr::tha</a></div><div class="ttdeci">struct ether_addr tha</div><div class="ttdoc">The target hardware (i.e., Ethernet) address of the ARP operation. </div><div class="ttdef"><b>Definition:</b> arp.h:73</div></div>
 <div class="ttc" id="structnetmap__ring_html"><div class="ttname"><a href="structnetmap__ring.html">netmap_ring</a></div><div class="ttdef"><b>Definition:</b> netmap.h:279</div></div>
-<div class="ttc" id="structarp__hdr_html_a7726cb8a97705c987b1cde312cf71c1d"><div class="ttname"><a href="structarp__hdr.html#a7726cb8a97705c987b1cde312cf71c1d">arp_hdr::tpa</a></div><div class="ttdeci">uint32_t tpa</div><div class="ttdoc">The target protocol (i.e., IPv4) address of the ARP operation. </div><div class="ttdef"><b>Definition:</b> arp.h:75</div></div>
-<div class="ttc" id="structarp__entry_html"><div class="ttname"><a href="structarp__entry.html">arp_entry</a></div><div class="ttdoc">ARP cache entry. </div><div class="ttdef"><b>Definition:</b> arp.h:95</div></div>
-<div class="ttc" id="arp_8h_html_aad7ca3e847867c4dcc618d034aa42739"><div class="ttname"><a href="arp_8h.html#aad7ca3e847867c4dcc618d034aa42739">arp_who_has</a></div><div class="ttdeci">struct ether_addr arp_who_has(struct w_engine *const w, const uint32_t dip)</div><div class="ttdoc">Return the Ethernet MAC address for target IP address dip. </div><div class="ttdef"><b>Definition:</b> arp.c:166</div></div>
-<div class="ttc" id="structarp__hdr_html_a98f3fd34adf64f03038acab9ae511d9a"><div class="ttname"><a href="structarp__hdr.html#a98f3fd34adf64f03038acab9ae511d9a">arp_hdr::hln</a></div><div class="ttdeci">uint8_t hln</div><div class="ttdoc">Length of the hardware address. </div><div class="ttdef"><b>Definition:</b> arp.h:52</div></div>
-<div class="ttc" id="structarp__hdr_html"><div class="ttname"><a href="structarp__hdr.html">arp_hdr</a></div><div class="ttdoc">A representation of an ARP header; see RFC826. </div><div class="ttdef"><b>Definition:</b> arp.h:41</div></div>
-<div class="ttc" id="structarp__hdr_html_a339a17885696badc60b24806bb32d80b"><div class="ttname"><a href="structarp__hdr.html#a339a17885696badc60b24806bb32d80b">arp_hdr::pln</a></div><div class="ttdeci">uint8_t pln</div><div class="ttdoc">Length of the protocol address. </div><div class="ttdef"><b>Definition:</b> arp.h:56</div></div>
+<div class="ttc" id="structarp__hdr_html_a7726cb8a97705c987b1cde312cf71c1d"><div class="ttname"><a href="structarp__hdr.html#a7726cb8a97705c987b1cde312cf71c1d">arp_hdr::tpa</a></div><div class="ttdeci">uint32_t tpa</div><div class="ttdoc">The target protocol (i.e., IPv4) address of the ARP operation. </div><div class="ttdef"><b>Definition:</b> arp.h:77</div></div>
+<div class="ttc" id="structarp__entry_html"><div class="ttname"><a href="structarp__entry.html">arp_entry</a></div><div class="ttdoc">ARP cache entry. </div><div class="ttdef"><b>Definition:</b> arp.h:97</div></div>
+<div class="ttc" id="arp_8h_html_aad7ca3e847867c4dcc618d034aa42739"><div class="ttname"><a href="arp_8h.html#aad7ca3e847867c4dcc618d034aa42739">arp_who_has</a></div><div class="ttdeci">struct ether_addr arp_who_has(struct w_engine *const w, const uint32_t dip)</div><div class="ttdoc">Return the Ethernet MAC address for target IP address dip. </div><div class="ttdef"><b>Definition:</b> arp.c:168</div></div>
+<div class="ttc" id="structarp__hdr_html_a98f3fd34adf64f03038acab9ae511d9a"><div class="ttname"><a href="structarp__hdr.html#a98f3fd34adf64f03038acab9ae511d9a">arp_hdr::hln</a></div><div class="ttdeci">uint8_t hln</div><div class="ttdoc">Length of the hardware address. </div><div class="ttdef"><b>Definition:</b> arp.h:54</div></div>
+<div class="ttc" id="structarp__hdr_html"><div class="ttname"><a href="structarp__hdr.html">arp_hdr</a></div><div class="ttdoc">A representation of an ARP header; see RFC826. </div><div class="ttdef"><b>Definition:</b> arp.h:43</div></div>
+<div class="ttc" id="structarp__hdr_html_a339a17885696badc60b24806bb32d80b"><div class="ttname"><a href="structarp__hdr.html#a339a17885696badc60b24806bb32d80b">arp_hdr::pln</a></div><div class="ttdeci">uint8_t pln</div><div class="ttdoc">Length of the protocol address. </div><div class="ttdef"><b>Definition:</b> arp.h:58</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 6 2017 13:38:12 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 10 2017 15:25:17 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

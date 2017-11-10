@@ -89,30 +89,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">config.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="config_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="config_8h.html#a0b885defc8f5c2974b7c322a5d8029d2">    4</a></span>&#160;<span class="preprocessor">#define WARPCORE_VERSION_MAJOR 0</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="config_8h.html#a7ae4e1c713d564d9be834cd43f5dac50">    7</a></span>&#160;<span class="preprocessor">#define WARPCORE_VERSION_MINOR 18</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="config_8h.html#a10f58adbdf68ee2d9a9ff0bdfac4c56e">   10</a></span>&#160;<span class="preprocessor">#define WARPCORE_VERSION_PATCH 0</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="config_8h.html#a7fd9dfd57d0b4d34f89c4d2ced0a8319">warpcore_name</a>[];</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="config_8h.html#a83a304bfe83fd24059adf0c5ba97d9b5">warpcore_version</a>[];</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="config_8h.html#a7ac088271a666e3538a9ba0b60bcfc48">   18</a></span>&#160;<span class="preprocessor">#define HAVE_RECVMMSG</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="config_8h.html#a3d906c4eaa4ade2322805e7c176e883c">   19</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HAVE_SENDMMSG</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor"></span><span class="comment">/* #undef HAVE_KQUEUE */</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="config_8h.html#a32b4a4c94fbfbeab454a955af6733654">   21</a></span>&#160;<span class="preprocessor">#define HAVE_EPOLL</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor"></span><span class="comment">/* #undef HAVE_ARC4RANDOM */</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="config_8h.html#a6106069e6d14247a904ab2d580e62c4c">   23</a></span>&#160;<span class="preprocessor">#define HAVE_ETHER_NTOA_R</span></div>
-<div class="ttc" id="config_8h_html_a7fd9dfd57d0b4d34f89c4d2ced0a8319"><div class="ttname"><a href="config_8h.html#a7fd9dfd57d0b4d34f89c4d2ced0a8319">warpcore_name</a></div><div class="ttdeci">const char warpcore_name[]</div><div class="ttdoc">The name of this library (warpcore). </div><div class="ttdef"><b>Definition:</b> config.c:3</div></div>
-<div class="ttc" id="config_8h_html_a83a304bfe83fd24059adf0c5ba97d9b5"><div class="ttname"><a href="config_8h.html#a83a304bfe83fd24059adf0c5ba97d9b5">warpcore_version</a></div><div class="ttdeci">const char warpcore_version[]</div><div class="ttdoc">The version of this library (0.18.0) as a string. </div><div class="ttdef"><b>Definition:</b> config.c:5</div></div>
+<a href="config_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-License-Identifier: BSD-2-Clause</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// Copyright (c) 2014-2017, NetApp, Inc.</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// All rights reserved.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">// Redistribution and use in source and binary forms, with or without</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// modification, are permitted provided that the following conditions are met:</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">// 1. Redistributions of source code must retain the above copyright notice,</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer.</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// 2. Redistributions in binary form must reproduce the above copyright notice,</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">//    this list of conditions and the following disclaimer in the documentation</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">//    and/or other materials provided with the distribution.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">// THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">// IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">// SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="config_8h.html#a0b885defc8f5c2974b7c322a5d8029d2">   31</a></span>&#160;<span class="preprocessor">#define WARPCORE_VERSION_MAJOR 0</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="config_8h.html#a7ae4e1c713d564d9be834cd43f5dac50">   34</a></span>&#160;<span class="preprocessor">#define WARPCORE_VERSION_MINOR 18</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="config_8h.html#a10f58adbdf68ee2d9a9ff0bdfac4c56e">   37</a></span>&#160;<span class="preprocessor">#define WARPCORE_VERSION_PATCH 0</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="config_8h.html#a7fd9dfd57d0b4d34f89c4d2ced0a8319">warpcore_name</a>[];</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span> <a class="code" href="config_8h.html#a83a304bfe83fd24059adf0c5ba97d9b5">warpcore_version</a>[];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="config_8h.html#a7ac088271a666e3538a9ba0b60bcfc48">   45</a></span>&#160;<span class="preprocessor">#define HAVE_RECVMMSG</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="config_8h.html#a3d906c4eaa4ade2322805e7c176e883c">   46</a></span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define HAVE_SENDMMSG</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor"></span><span class="comment">/* #undef HAVE_KQUEUE */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="config_8h.html#a32b4a4c94fbfbeab454a955af6733654">   48</a></span>&#160;<span class="preprocessor">#define HAVE_EPOLL</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor"></span><span class="comment">/* #undef HAVE_ARC4RANDOM */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="config_8h.html#a6106069e6d14247a904ab2d580e62c4c">   50</a></span>&#160;<span class="preprocessor">#define HAVE_ETHER_NTOA_R</span></div>
+<div class="ttc" id="config_8h_html_a7fd9dfd57d0b4d34f89c4d2ced0a8319"><div class="ttname"><a href="config_8h.html#a7fd9dfd57d0b4d34f89c4d2ced0a8319">warpcore_name</a></div><div class="ttdeci">const char warpcore_name[]</div><div class="ttdoc">The name of this library (warpcore). </div><div class="ttdef"><b>Definition:</b> config.c:30</div></div>
+<div class="ttc" id="config_8h_html_a83a304bfe83fd24059adf0c5ba97d9b5"><div class="ttname"><a href="config_8h.html#a83a304bfe83fd24059adf0c5ba97d9b5">warpcore_version</a></div><div class="ttdeci">const char warpcore_version[]</div><div class="ttdoc">The version of this library (0.18.0) as a string. </div><div class="ttdef"><b>Definition:</b> config.c:32</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 6 2017 13:38:12 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 10 2017 15:25:17 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -1115,13 +1115,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01024"></a><span class="lineno"> 1024</span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span></div>
 <div class="line"><a name="l01025"></a><span class="lineno"> 1025</span>&#160;nm_inject(<span class="keyword">struct</span> nm_desc *d, <span class="keyword">const</span> <span class="keywordtype">void</span> *buf, <span class="keywordtype">size_t</span> size)</div>
 <div class="line"><a name="l01026"></a><span class="lineno"> 1026</span>&#160;{</div>
-<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;    u_int c, n = d-&gt;last_tx_ring - d-&gt;first_tx_ring + 1;</div>
-<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;</div>
-<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;    <span class="keywordflow">for</span> (c = 0; c &lt; n ; c++) {</div>
-<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;        <span class="comment">/* compute current ring to use */</span></div>
-<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;        <span class="keyword">struct </span><a class="code" href="structnetmap__ring.html">netmap_ring</a> *ring;</div>
-<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;        uint32_t i, idx;</div>
-<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;        uint32_t ri = d-&gt;cur_tx_ring + c;</div>
+<div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;    u_int c, n = d-&gt;last_tx_ring - d-&gt;first_tx_ring + 1,</div>
+<div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;        ri = d-&gt;cur_tx_ring;</div>
+<div class="line"><a name="l01029"></a><span class="lineno"> 1029</span>&#160;</div>
+<div class="line"><a name="l01030"></a><span class="lineno"> 1030</span>&#160;    <span class="keywordflow">for</span> (c = 0; c &lt; n ; c++, ri++) {</div>
+<div class="line"><a name="l01031"></a><span class="lineno"> 1031</span>&#160;        <span class="comment">/* compute current ring to use */</span></div>
+<div class="line"><a name="l01032"></a><span class="lineno"> 1032</span>&#160;        <span class="keyword">struct </span><a class="code" href="structnetmap__ring.html">netmap_ring</a> *ring;</div>
+<div class="line"><a name="l01033"></a><span class="lineno"> 1033</span>&#160;        uint32_t i, idx;</div>
 <div class="line"><a name="l01034"></a><span class="lineno"> 1034</span>&#160;</div>
 <div class="line"><a name="l01035"></a><span class="lineno"> 1035</span>&#160;        <span class="keywordflow">if</span> (ri &gt; d-&gt;last_tx_ring)</div>
 <div class="line"><a name="l01036"></a><span class="lineno"> 1036</span>&#160;            ri = d-&gt;first_tx_ring;</div>
@@ -1159,74 +1159,75 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l01068"></a><span class="lineno"> 1068</span>&#160;<span class="comment">     * of buffers and the int is large enough that we never wrap,</span></div>
 <div class="line"><a name="l01069"></a><span class="lineno"> 1069</span>&#160;<span class="comment">     * so we can omit checking for -1</span></div>
 <div class="line"><a name="l01070"></a><span class="lineno"> 1070</span>&#160;<span class="comment">     */</span></div>
-<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;    <span class="keywordflow">for</span> (c=0; c &lt; n &amp;&amp; cnt != got; c++) {</div>
+<div class="line"><a name="l01071"></a><span class="lineno"> 1071</span>&#160;    <span class="keywordflow">for</span> (c=0; c &lt; n &amp;&amp; cnt != got; c++, ri++) {</div>
 <div class="line"><a name="l01072"></a><span class="lineno"> 1072</span>&#160;        <span class="comment">/* compute current ring to use */</span></div>
 <div class="line"><a name="l01073"></a><span class="lineno"> 1073</span>&#160;        <span class="keyword">struct </span><a class="code" href="structnetmap__ring.html">netmap_ring</a> *ring;</div>
 <div class="line"><a name="l01074"></a><span class="lineno"> 1074</span>&#160;</div>
-<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;        ri = d-&gt;cur_rx_ring + c;</div>
-<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;        <span class="keywordflow">if</span> (ri &gt; d-&gt;last_rx_ring)</div>
-<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;            ri = d-&gt;first_rx_ring;</div>
-<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;        ring = <a class="code" href="netmap__user_8h.html#a5431cf977a363bf303d5848a5f8f8449">NETMAP_RXRING</a>(d-&gt;nifp, ri);</div>
-<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;        <span class="keywordflow">for</span> ( ; !<a class="code" href="netmap_8h.html#a5fdd1b6f9d32c4d527c47a3a296fb304">nm_ring_empty</a>(ring) &amp;&amp; cnt != got; got++) {</div>
-<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;            u_int idx, i;</div>
-<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;            <span class="keywordflow">if</span> (d-&gt;hdr.buf) { <span class="comment">/* from previous round */</span></div>
-<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;                cb(arg, &amp;d-&gt;hdr, d-&gt;hdr.buf);</div>
-<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;            }</div>
-<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;            i = ring-&gt;<a class="code" href="structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105">cur</a>;</div>
-<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;            idx = ring-&gt;<a class="code" href="structnetmap__ring.html#ac11c6137efc7fc88ff2ff8ca413c9035">slot</a>[i].<a class="code" href="structnetmap__slot.html#a53b5fc7beb0712b9c41f344177894ade">buf_idx</a>;</div>
-<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;            d-&gt;hdr.slot = &amp;ring-&gt;<a class="code" href="structnetmap__ring.html#ac11c6137efc7fc88ff2ff8ca413c9035">slot</a>[i];</div>
-<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;            d-&gt;hdr.buf = (u_char *)<a class="code" href="netmap__user_8h.html#ad183dd99786c59862d926b89b70c3acd">NETMAP_BUF</a>(ring, idx);</div>
-<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;            <span class="comment">// __builtin_prefetch(buf);</span></div>
-<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;            d-&gt;hdr.len = d-&gt;hdr.caplen = ring-&gt;<a class="code" href="structnetmap__ring.html#ac11c6137efc7fc88ff2ff8ca413c9035">slot</a>[i].<a class="code" href="structnetmap__slot.html#a504f80f1df944631d75a35c67c3b747f">len</a>;</div>
-<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;            d-&gt;hdr.ts = ring-&gt;<a class="code" href="structnetmap__ring.html#a92b1183e066bcd2fc65a16b8f5cd57ae">ts</a>;</div>
-<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;            ring-&gt;<a class="code" href="structnetmap__ring.html#abe2efe17dacd91af126a1d4a63225424">head</a> = ring-&gt;<a class="code" href="structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105">cur</a> = <a class="code" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d">nm_ring_next</a>(ring, i);</div>
-<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;        }</div>
-<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;    }</div>
-<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;    <span class="keywordflow">if</span> (d-&gt;hdr.buf) { <span class="comment">/* from previous round */</span></div>
-<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;        d-&gt;hdr.flags = 0;</div>
-<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;        cb(arg, &amp;d-&gt;hdr, d-&gt;hdr.buf);</div>
-<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;    }</div>
-<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;    d-&gt;cur_rx_ring = ri;</div>
-<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;    <span class="keywordflow">return</span> got;</div>
-<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;}</div>
-<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;</div>
-<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;<span class="keyword">static</span> u_char *</div>
-<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;nm_nextpkt(<span class="keyword">struct</span> nm_desc *d, <span class="keyword">struct</span> nm_pkthdr *hdr)</div>
-<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;{</div>
-<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;    <span class="keywordtype">int</span> ri = d-&gt;cur_rx_ring;</div>
-<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;</div>
-<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;    <span class="keywordflow">do</span> {</div>
-<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;        <span class="comment">/* compute current ring to use */</span></div>
-<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;        <span class="keyword">struct </span><a class="code" href="structnetmap__ring.html">netmap_ring</a> *ring = <a class="code" href="netmap__user_8h.html#a5431cf977a363bf303d5848a5f8f8449">NETMAP_RXRING</a>(d-&gt;nifp, ri);</div>
-<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="netmap_8h.html#a5fdd1b6f9d32c4d527c47a3a296fb304">nm_ring_empty</a>(ring)) {</div>
-<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;            u_int i = ring-&gt;<a class="code" href="structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105">cur</a>;</div>
-<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;            u_int idx = ring-&gt;<a class="code" href="structnetmap__ring.html#ac11c6137efc7fc88ff2ff8ca413c9035">slot</a>[i].<a class="code" href="structnetmap__slot.html#a53b5fc7beb0712b9c41f344177894ade">buf_idx</a>;</div>
-<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;            u_char *buf = (u_char *)<a class="code" href="netmap__user_8h.html#ad183dd99786c59862d926b89b70c3acd">NETMAP_BUF</a>(ring, idx);</div>
-<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;</div>
-<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;            <span class="comment">// __builtin_prefetch(buf);</span></div>
-<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;            hdr-&gt;ts = ring-&gt;<a class="code" href="structnetmap__ring.html#a92b1183e066bcd2fc65a16b8f5cd57ae">ts</a>;</div>
-<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;            hdr-&gt;len = hdr-&gt;caplen = ring-&gt;<a class="code" href="structnetmap__ring.html#ac11c6137efc7fc88ff2ff8ca413c9035">slot</a>[i].<a class="code" href="structnetmap__slot.html#a504f80f1df944631d75a35c67c3b747f">len</a>;</div>
-<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;            ring-&gt;<a class="code" href="structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105">cur</a> = <a class="code" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d">nm_ring_next</a>(ring, i);</div>
-<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;            <span class="comment">/* we could postpone advancing head if we want</span></div>
-<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;<span class="comment">             * to hold the buffer. This can be supported in</span></div>
-<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;<span class="comment">             * the future.</span></div>
-<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;<span class="comment">             */</span></div>
-<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;            ring-&gt;<a class="code" href="structnetmap__ring.html#abe2efe17dacd91af126a1d4a63225424">head</a> = ring-&gt;<a class="code" href="structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105">cur</a>;</div>
-<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;            d-&gt;cur_rx_ring = ri;</div>
-<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;            <span class="keywordflow">return</span> buf;</div>
-<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;        }</div>
-<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;        ri++;</div>
-<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;        <span class="keywordflow">if</span> (ri &gt; d-&gt;last_rx_ring)</div>
-<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;            ri = d-&gt;first_rx_ring;</div>
-<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;    } <span class="keywordflow">while</span> (ri != d-&gt;cur_rx_ring);</div>
-<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    <span class="keywordflow">return</span> NULL; <span class="comment">/* nothing found */</span></div>
-<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;}</div>
-<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;</div>
-<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !HAVE_NETMAP_WITH_LIBS */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NETMAP_WITH_LIBS */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _NET_NETMAP_USER_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01075"></a><span class="lineno"> 1075</span>&#160;        <span class="keywordflow">if</span> (ri &gt; d-&gt;last_rx_ring)</div>
+<div class="line"><a name="l01076"></a><span class="lineno"> 1076</span>&#160;            ri = d-&gt;first_rx_ring;</div>
+<div class="line"><a name="l01077"></a><span class="lineno"> 1077</span>&#160;        ring = <a class="code" href="netmap__user_8h.html#a5431cf977a363bf303d5848a5f8f8449">NETMAP_RXRING</a>(d-&gt;nifp, ri);</div>
+<div class="line"><a name="l01078"></a><span class="lineno"> 1078</span>&#160;        <span class="keywordflow">for</span> ( ; !<a class="code" href="netmap_8h.html#a5fdd1b6f9d32c4d527c47a3a296fb304">nm_ring_empty</a>(ring) &amp;&amp; cnt != got; got++) {</div>
+<div class="line"><a name="l01079"></a><span class="lineno"> 1079</span>&#160;            u_int idx, i;</div>
+<div class="line"><a name="l01080"></a><span class="lineno"> 1080</span>&#160;            <span class="keywordflow">if</span> (d-&gt;hdr.buf) { <span class="comment">/* from previous round */</span></div>
+<div class="line"><a name="l01081"></a><span class="lineno"> 1081</span>&#160;                cb(arg, &amp;d-&gt;hdr, d-&gt;hdr.buf);</div>
+<div class="line"><a name="l01082"></a><span class="lineno"> 1082</span>&#160;            }</div>
+<div class="line"><a name="l01083"></a><span class="lineno"> 1083</span>&#160;            i = ring-&gt;<a class="code" href="structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105">cur</a>;</div>
+<div class="line"><a name="l01084"></a><span class="lineno"> 1084</span>&#160;            idx = ring-&gt;<a class="code" href="structnetmap__ring.html#ac11c6137efc7fc88ff2ff8ca413c9035">slot</a>[i].<a class="code" href="structnetmap__slot.html#a53b5fc7beb0712b9c41f344177894ade">buf_idx</a>;</div>
+<div class="line"><a name="l01085"></a><span class="lineno"> 1085</span>&#160;            <span class="comment">/* d-&gt;cur_rx_ring doesn&#39;t change inside this loop, but</span></div>
+<div class="line"><a name="l01086"></a><span class="lineno"> 1086</span>&#160;<span class="comment">             * set it here, so it reflects d-&gt;hdr.buf&#39;s ring */</span></div>
+<div class="line"><a name="l01087"></a><span class="lineno"> 1087</span>&#160;            d-&gt;cur_rx_ring = ri;</div>
+<div class="line"><a name="l01088"></a><span class="lineno"> 1088</span>&#160;            d-&gt;hdr.slot = &amp;ring-&gt;<a class="code" href="structnetmap__ring.html#ac11c6137efc7fc88ff2ff8ca413c9035">slot</a>[i];</div>
+<div class="line"><a name="l01089"></a><span class="lineno"> 1089</span>&#160;            d-&gt;hdr.buf = (u_char *)<a class="code" href="netmap__user_8h.html#ad183dd99786c59862d926b89b70c3acd">NETMAP_BUF</a>(ring, idx);</div>
+<div class="line"><a name="l01090"></a><span class="lineno"> 1090</span>&#160;            <span class="comment">// __builtin_prefetch(buf);</span></div>
+<div class="line"><a name="l01091"></a><span class="lineno"> 1091</span>&#160;            d-&gt;hdr.len = d-&gt;hdr.caplen = ring-&gt;<a class="code" href="structnetmap__ring.html#ac11c6137efc7fc88ff2ff8ca413c9035">slot</a>[i].<a class="code" href="structnetmap__slot.html#a504f80f1df944631d75a35c67c3b747f">len</a>;</div>
+<div class="line"><a name="l01092"></a><span class="lineno"> 1092</span>&#160;            d-&gt;hdr.ts = ring-&gt;<a class="code" href="structnetmap__ring.html#a92b1183e066bcd2fc65a16b8f5cd57ae">ts</a>;</div>
+<div class="line"><a name="l01093"></a><span class="lineno"> 1093</span>&#160;            ring-&gt;<a class="code" href="structnetmap__ring.html#abe2efe17dacd91af126a1d4a63225424">head</a> = ring-&gt;<a class="code" href="structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105">cur</a> = <a class="code" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d">nm_ring_next</a>(ring, i);</div>
+<div class="line"><a name="l01094"></a><span class="lineno"> 1094</span>&#160;        }</div>
+<div class="line"><a name="l01095"></a><span class="lineno"> 1095</span>&#160;    }</div>
+<div class="line"><a name="l01096"></a><span class="lineno"> 1096</span>&#160;    <span class="keywordflow">if</span> (d-&gt;hdr.buf) { <span class="comment">/* from previous round */</span></div>
+<div class="line"><a name="l01097"></a><span class="lineno"> 1097</span>&#160;        d-&gt;hdr.flags = 0;</div>
+<div class="line"><a name="l01098"></a><span class="lineno"> 1098</span>&#160;        cb(arg, &amp;d-&gt;hdr, d-&gt;hdr.buf);</div>
+<div class="line"><a name="l01099"></a><span class="lineno"> 1099</span>&#160;    }</div>
+<div class="line"><a name="l01100"></a><span class="lineno"> 1100</span>&#160;    <span class="keywordflow">return</span> got;</div>
+<div class="line"><a name="l01101"></a><span class="lineno"> 1101</span>&#160;}</div>
+<div class="line"><a name="l01102"></a><span class="lineno"> 1102</span>&#160;</div>
+<div class="line"><a name="l01103"></a><span class="lineno"> 1103</span>&#160;<span class="keyword">static</span> u_char *</div>
+<div class="line"><a name="l01104"></a><span class="lineno"> 1104</span>&#160;nm_nextpkt(<span class="keyword">struct</span> nm_desc *d, <span class="keyword">struct</span> nm_pkthdr *hdr)</div>
+<div class="line"><a name="l01105"></a><span class="lineno"> 1105</span>&#160;{</div>
+<div class="line"><a name="l01106"></a><span class="lineno"> 1106</span>&#160;    <span class="keywordtype">int</span> ri = d-&gt;cur_rx_ring;</div>
+<div class="line"><a name="l01107"></a><span class="lineno"> 1107</span>&#160;</div>
+<div class="line"><a name="l01108"></a><span class="lineno"> 1108</span>&#160;    <span class="keywordflow">do</span> {</div>
+<div class="line"><a name="l01109"></a><span class="lineno"> 1109</span>&#160;        <span class="comment">/* compute current ring to use */</span></div>
+<div class="line"><a name="l01110"></a><span class="lineno"> 1110</span>&#160;        <span class="keyword">struct </span><a class="code" href="structnetmap__ring.html">netmap_ring</a> *ring = <a class="code" href="netmap__user_8h.html#a5431cf977a363bf303d5848a5f8f8449">NETMAP_RXRING</a>(d-&gt;nifp, ri);</div>
+<div class="line"><a name="l01111"></a><span class="lineno"> 1111</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="netmap_8h.html#a5fdd1b6f9d32c4d527c47a3a296fb304">nm_ring_empty</a>(ring)) {</div>
+<div class="line"><a name="l01112"></a><span class="lineno"> 1112</span>&#160;            u_int i = ring-&gt;<a class="code" href="structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105">cur</a>;</div>
+<div class="line"><a name="l01113"></a><span class="lineno"> 1113</span>&#160;            u_int idx = ring-&gt;<a class="code" href="structnetmap__ring.html#ac11c6137efc7fc88ff2ff8ca413c9035">slot</a>[i].<a class="code" href="structnetmap__slot.html#a53b5fc7beb0712b9c41f344177894ade">buf_idx</a>;</div>
+<div class="line"><a name="l01114"></a><span class="lineno"> 1114</span>&#160;            u_char *buf = (u_char *)<a class="code" href="netmap__user_8h.html#ad183dd99786c59862d926b89b70c3acd">NETMAP_BUF</a>(ring, idx);</div>
+<div class="line"><a name="l01115"></a><span class="lineno"> 1115</span>&#160;</div>
+<div class="line"><a name="l01116"></a><span class="lineno"> 1116</span>&#160;            <span class="comment">// __builtin_prefetch(buf);</span></div>
+<div class="line"><a name="l01117"></a><span class="lineno"> 1117</span>&#160;            hdr-&gt;ts = ring-&gt;<a class="code" href="structnetmap__ring.html#a92b1183e066bcd2fc65a16b8f5cd57ae">ts</a>;</div>
+<div class="line"><a name="l01118"></a><span class="lineno"> 1118</span>&#160;            hdr-&gt;len = hdr-&gt;caplen = ring-&gt;<a class="code" href="structnetmap__ring.html#ac11c6137efc7fc88ff2ff8ca413c9035">slot</a>[i].<a class="code" href="structnetmap__slot.html#a504f80f1df944631d75a35c67c3b747f">len</a>;</div>
+<div class="line"><a name="l01119"></a><span class="lineno"> 1119</span>&#160;            ring-&gt;<a class="code" href="structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105">cur</a> = <a class="code" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d">nm_ring_next</a>(ring, i);</div>
+<div class="line"><a name="l01120"></a><span class="lineno"> 1120</span>&#160;            <span class="comment">/* we could postpone advancing head if we want</span></div>
+<div class="line"><a name="l01121"></a><span class="lineno"> 1121</span>&#160;<span class="comment">             * to hold the buffer. This can be supported in</span></div>
+<div class="line"><a name="l01122"></a><span class="lineno"> 1122</span>&#160;<span class="comment">             * the future.</span></div>
+<div class="line"><a name="l01123"></a><span class="lineno"> 1123</span>&#160;<span class="comment">             */</span></div>
+<div class="line"><a name="l01124"></a><span class="lineno"> 1124</span>&#160;            ring-&gt;<a class="code" href="structnetmap__ring.html#abe2efe17dacd91af126a1d4a63225424">head</a> = ring-&gt;<a class="code" href="structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105">cur</a>;</div>
+<div class="line"><a name="l01125"></a><span class="lineno"> 1125</span>&#160;            d-&gt;cur_rx_ring = ri;</div>
+<div class="line"><a name="l01126"></a><span class="lineno"> 1126</span>&#160;            <span class="keywordflow">return</span> buf;</div>
+<div class="line"><a name="l01127"></a><span class="lineno"> 1127</span>&#160;        }</div>
+<div class="line"><a name="l01128"></a><span class="lineno"> 1128</span>&#160;        ri++;</div>
+<div class="line"><a name="l01129"></a><span class="lineno"> 1129</span>&#160;        <span class="keywordflow">if</span> (ri &gt; d-&gt;last_rx_ring)</div>
+<div class="line"><a name="l01130"></a><span class="lineno"> 1130</span>&#160;            ri = d-&gt;first_rx_ring;</div>
+<div class="line"><a name="l01131"></a><span class="lineno"> 1131</span>&#160;    } <span class="keywordflow">while</span> (ri != d-&gt;cur_rx_ring);</div>
+<div class="line"><a name="l01132"></a><span class="lineno"> 1132</span>&#160;    <span class="keywordflow">return</span> NULL; <span class="comment">/* nothing found */</span></div>
+<div class="line"><a name="l01133"></a><span class="lineno"> 1133</span>&#160;}</div>
+<div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;</div>
+<div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* !HAVE_NETMAP_WITH_LIBS */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01136"></a><span class="lineno"> 1136</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01137"></a><span class="lineno"> 1137</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NETMAP_WITH_LIBS */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l01138"></a><span class="lineno"> 1138</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l01139"></a><span class="lineno"> 1139</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* _NET_NETMAP_USER_H_ */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="netmap_8h_html_a06fc87d81c62e9abb8790b6e5713c55bac8cca0b6844df0e5417719d9228aa5c5"><div class="ttname"><a href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac8cca0b6844df0e5417719d9228aa5c5">NR_REG_SW</a></div><div class="ttdef"><b>Definition:</b> netmap.h:542</div></div>
 <div class="ttc" id="netmap_8h_html"><div class="ttname"><a href="netmap_8h.html">netmap.h</a></div></div>
 <div class="ttc" id="structnmreq_html_ae722dbbdbcb2d4a4a63c19809d09b065"><div class="ttname"><a href="structnmreq.html#ae722dbbdbcb2d4a4a63c19809d09b065">nmreq::nr_ringid</a></div><div class="ttdeci">uint16_t nr_ringid</div><div class="ttdef"><b>Definition:</b> netmap.h:504</div></div>
@@ -1279,7 +1280,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 6 2017 13:38:12 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 10 2017 15:25:17 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
