@@ -123,12 +123,12 @@ Include dependency graph for warpcore.c:</div>
 Functions</h2></td></tr>
 <tr class="memitem:a8070a2fc850d74be039d1ead890b5af1"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a8070a2fc850d74be039d1ead890b5af1">w_sock_cmp</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const a, const struct <a class="el" href="structw__sock.html">w_sock</a> *const b)</td></tr>
 <tr class="separator:a8070a2fc850d74be039d1ead890b5af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa17e20ed409edbfe18aa79ae5da640ff"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov.html">w_iov</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#aa17e20ed409edbfe18aa79ae5da640ff">w_alloc_iov</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint16_t len, const uint16_t off)</td></tr>
-<tr class="memdesc:aa17e20ed409edbfe18aa79ae5da640ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a spare <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> from the pool of the given warpcore engine.  <a href="#aa17e20ed409edbfe18aa79ae5da640ff">More...</a><br/></td></tr>
-<tr class="separator:aa17e20ed409edbfe18aa79ae5da640ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3f2cda7f51b9530aa3c7c0d9b128cfe"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__sock.html">w_sock</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe">get_sock</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint16_t port)</td></tr>
 <tr class="memdesc:ab3f2cda7f51b9530aa3c7c0d9b128cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the socket bound to local port <code>port</code>.  <a href="#ab3f2cda7f51b9530aa3c7c0d9b128cfe">More...</a><br/></td></tr>
 <tr class="separator:ab3f2cda7f51b9530aa3c7c0d9b128cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3e3376b3f23f1a1a8fc4be642f7710"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov.html">w_iov</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a8e3e3376b3f23f1a1a8fc4be642f7710">w_alloc_iov</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint16_t len, uint16_t off)</td></tr>
+<tr class="memdesc:a8e3e3376b3f23f1a1a8fc4be642f7710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a spare <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> from the pool of the given warpcore engine.  <a href="#a8e3e3376b3f23f1a1a8fc4be642f7710">More...</a><br/></td></tr>
+<tr class="separator:a8e3e3376b3f23f1a1a8fc4be642f7710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99654de6ff08d3834fcd04b6bcafe0b0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a99654de6ff08d3834fcd04b6bcafe0b0">alloc_cnt</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a> *const q, const uint32_t count, const uint16_t len, uint16_t off, const uint16_t adj_last)</td></tr>
 <tr class="memdesc:a99654de6ff08d3834fcd04b6bcafe0b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper function for w_alloc_size and w_alloc_cnt.  <a href="#a99654de6ff08d3834fcd04b6bcafe0b0">More...</a><br/></td></tr>
 <tr class="separator:a99654de6ff08d3834fcd04b6bcafe0b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -252,7 +252,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8c_a99654de6ff08d3834fcd04b6bcafe0b0_cgraph.png" border="0" usemap="#warpcore_8c_a99654de6ff08d3834fcd04b6bcafe0b0_cgraph" alt=""/></div>
 <map name="warpcore_8c_a99654de6ff08d3834fcd04b6bcafe0b0_cgraph" id="warpcore_8c_a99654de6ff08d3834fcd04b6bcafe0b0_cgraph">
-<area shape="rect" id="node2" href="warpcore_8c.html#aa17e20ed409edbfe18aa79ae5da640ff" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="128,5,219,32"/><area shape="rect" id="node3" href="warpcore_8c.html#ac415e75903b5565308b0ddf2f1977cb3" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore..." alt="" coords="143,56,204,83"/></map>
+<area shape="rect" id="node2" href="warpcore_8c.html#a8e3e3376b3f23f1a1a8fc4be642f7710" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="128,5,219,32"/><area shape="rect" id="node3" href="warpcore_8c.html#ac415e75903b5565308b0ddf2f1977cb3" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore..." alt="" coords="143,56,204,83"/></map>
 </div>
 </p>
 
@@ -354,13 +354,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8c_a051f32842ef97201707eb59c85f9dc03_cgraph.png" border="0" usemap="#warpcore_8c_a051f32842ef97201707eb59c85f9dc03_cgraph" alt=""/></div>
 <map name="warpcore_8c_a051f32842ef97201707eb59c85f9dc03_cgraph" id="warpcore_8c_a051f32842ef97201707eb59c85f9dc03_cgraph">
-<area shape="rect" id="node2" href="warpcore_8c.html#a99654de6ff08d3834fcd04b6bcafe0b0" title="Helper function for w_alloc_size and w_alloc_cnt. " alt="" coords="144,31,219,57"/><area shape="rect" id="node3" href="warpcore_8c.html#aa17e20ed409edbfe18aa79ae5da640ff" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="267,5,357,32"/><area shape="rect" id="node4" href="warpcore_8c.html#ac415e75903b5565308b0ddf2f1977cb3" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore..." alt="" coords="281,56,343,83"/></map>
+<area shape="rect" id="node2" href="warpcore_8c.html#a99654de6ff08d3834fcd04b6bcafe0b0" title="Helper function for w_alloc_size and w_alloc_cnt. " alt="" coords="144,31,219,57"/><area shape="rect" id="node3" href="warpcore_8c.html#a8e3e3376b3f23f1a1a8fc4be642f7710" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="267,5,357,32"/><area shape="rect" id="node4" href="warpcore_8c.html#ac415e75903b5565308b0ddf2f1977cb3" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore..." alt="" coords="281,56,343,83"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aa17e20ed409edbfe18aa79ae5da640ff"></a>
+<a class="anchor" id="a8e3e3376b3f23f1a1a8fc4be642f7710"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -379,7 +379,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>off</em>&#160;</td>
         </tr>
         <tr>
@@ -464,7 +464,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8c_a74ac831a6b67ecdb7642abf2ba86555a_cgraph.png" border="0" usemap="#warpcore_8c_a74ac831a6b67ecdb7642abf2ba86555a_cgraph" alt=""/></div>
 <map name="warpcore_8c_a74ac831a6b67ecdb7642abf2ba86555a_cgraph" id="warpcore_8c_a74ac831a6b67ecdb7642abf2ba86555a_cgraph">
-<area shape="rect" id="node2" href="warpcore_8c.html#a99654de6ff08d3834fcd04b6bcafe0b0" title="Helper function for w_alloc_size and w_alloc_cnt. " alt="" coords="144,31,219,57"/><area shape="rect" id="node3" href="warpcore_8c.html#aa17e20ed409edbfe18aa79ae5da640ff" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="267,5,357,32"/><area shape="rect" id="node4" href="warpcore_8c.html#ac415e75903b5565308b0ddf2f1977cb3" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore..." alt="" coords="281,56,343,83"/></map>
+<area shape="rect" id="node2" href="warpcore_8c.html#a99654de6ff08d3834fcd04b6bcafe0b0" title="Helper function for w_alloc_size and w_alloc_cnt. " alt="" coords="144,31,219,57"/><area shape="rect" id="node3" href="warpcore_8c.html#a8e3e3376b3f23f1a1a8fc4be642f7710" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="267,5,357,32"/><area shape="rect" id="node4" href="warpcore_8c.html#ac415e75903b5565308b0ddf2f1977cb3" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore..." alt="" coords="281,56,343,83"/></map>
 </div>
 </p>
 
@@ -915,7 +915,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 14 2017 11:31:18 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 14 2017 16:11:06 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
