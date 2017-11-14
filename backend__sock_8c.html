@@ -123,9 +123,9 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ad11227ca36c524fe0bb4fc5f8917f0b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#ad11227ca36c524fe0bb4fc5f8917f0b4">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint32_t nbufs)</td></tr>
-<tr class="memdesc:ad11227ca36c524fe0bb4fc5f8917f0b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore socket backend for engine <code>w</code>.  <a href="#ad11227ca36c524fe0bb4fc5f8917f0b4">More...</a><br/></td></tr>
-<tr class="separator:ad11227ca36c524fe0bb4fc5f8917f0b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efe6c54e4e30260d1c2630726b98eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#a1efe6c54e4e30260d1c2630726b98eb5">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint32_t nbufs, const bool is_lo, const bool is_left)</td></tr>
+<tr class="memdesc:a1efe6c54e4e30260d1c2630726b98eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore socket backend for engine <code>w</code>.  <a href="#a1efe6c54e4e30260d1c2630726b98eb5">More...</a><br/></td></tr>
+<tr class="separator:a1efe6c54e4e30260d1c2630726b98eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e43d05a55650db2be88e9eece99905d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend__sock_8c.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
 <tr class="memdesc:a7e43d05a55650db2be88e9eece99905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore socket engine down cleanly.  <a href="#a7e43d05a55650db2be88e9eece99905d">More...</a><br/></td></tr>
 <tr class="separator:a7e43d05a55650db2be88e9eece99905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -279,7 +279,7 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad11227ca36c524fe0bb4fc5f8917f0b4"></a>
+<a class="anchor" id="a1efe6c54e4e30260d1c2630726b98eb5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -293,7 +293,19 @@ Variables</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const uint32_t&#160;</td>
-          <td class="paramname"><em>nbufs</em>&#160;</td>
+          <td class="paramname"><em>nbufs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>is_lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>is_left</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -310,6 +322,8 @@ Variables</h2></td></tr>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_lo</td><td>Unused. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_left</td><td>Unused. </td></tr>
   </table>
   </dd>
 </dl>
@@ -430,7 +444,7 @@ Variables</h2></td></tr>
 
 <p>Calls recvmsg() or recvmmsg() for all sockets associated with the engine, emulating the operation of netmap backend_rx() function. </p>
 <p>Return any new data that has been received on a socket by appending it to the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>i</code>.</p>
-<p>Appends all data to the w_sock::iv socket buffers of the respective <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> structures.</p>
+<p>Appends all data to the <a class="el" href="structw__sock.html#a3db894eae177fa4a879dffd4e9ad706e" title="Tail queue containing incoming unread data. ">w_sock::iv</a> socket buffers of the respective <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> structures.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> for which the application would like to receive new data. </td></tr>
@@ -559,7 +573,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 13 2017 15:43:39 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 14 2017 09:20:07 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

@@ -99,14 +99,11 @@ Collaboration diagram for w_sock:</div>
 <div class="dyncontent">
 <div class="center"><img src="structw__sock__coll__graph.png" border="0" usemap="#w__sock_coll__map" alt="Collaboration graph"/></div>
 <map name="w__sock_coll__map" id="w__sock_coll__map">
-<area shape="rect" id="node2" href="structw__hdr.html" title="A warpcore template packet header structure. " alt="" coords="111,187,168,213"/><area shape="rect" id="node3" href="structudp__hdr.html" title="A representation of a UDP header; see RFC768. " alt="" coords="5,96,72,123"/><area shape="rect" id="node4" href="structip__hdr.html" title="An IPv4 header representation; see RFC791 " alt="" coords="97,96,153,123"/><area shape="rect" id="node5" href="structeth__hdr.html" title="An Ethernet II MAC header. " alt="" coords="178,96,243,123"/><area shape="rect" id="node6" href="structw__engine.html" title="A warpcore backend engine. " alt="" coords="256,187,332,213"/><area shape="rect" id="node7" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="267,96,321,123"/><area shape="rect" id="node8" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="256,5,332,32"/><area shape="rect" id="node9" href="structw__backend.html" title="w_backend" alt="" coords="347,96,435,123"/></map>
+<area shape="rect" id="node2" href="structw__hdr.html" title="A warpcore template packet header structure. " alt="" coords="139,187,196,213"/><area shape="rect" id="node3" href="structudp__hdr.html" title="A representation of a UDP header; see RFC768. " alt="" coords="5,96,72,123"/><area shape="rect" id="node4" href="structip__hdr.html" title="An IPv4 header representation; see RFC791 " alt="" coords="97,96,153,123"/><area shape="rect" id="node5" href="structeth__hdr.html" title="An Ethernet II MAC header. " alt="" coords="178,96,243,123"/><area shape="rect" id="node6" href="structw__engine.html" title="A warpcore backend engine. " alt="" coords="340,187,416,213"/><area shape="rect" id="node7" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="388,96,443,123"/><area shape="rect" id="node8" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="304,5,380,32"/><area shape="rect" id="node9" href="structw__backend.html" title="w_backend" alt="" coords="468,96,556,123"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7a446fd89829a8ae06c32ef35e548e1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#a7a446fd89829a8ae06c32ef35e548e1e">sq_head</a> (, <a class="el" href="structw__iov.html">w_iov</a>) iv</td></tr>
-<tr class="memdesc:a7a446fd89829a8ae06c32ef35e548e1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tail queue containing incoming unread data.  <a href="#a7a446fd89829a8ae06c32ef35e548e1e">More...</a><br/></td></tr>
-<tr class="separator:a7a446fd89829a8ae06c32ef35e548e1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accd21d3c233ec7406d49645ef4b8c945"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#accd21d3c233ec7406d49645ef4b8c945">splay_entry</a> (<a class="el" href="structw__sock.html">w_sock</a>) next</td></tr>
 <tr class="memdesc:accd21d3c233ec7406d49645ef4b8c945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Next socket associated with this engine.  <a href="#accd21d3c233ec7406d49645ef4b8c945">More...</a><br/></td></tr>
 <tr class="separator:accd21d3c233ec7406d49645ef4b8c945"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -119,6 +116,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a1ee097500810c7a9e2e63571a49d8bcb"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__engine.html">w_engine</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#a1ee097500810c7a9e2e63571a49d8bcb">w</a></td></tr>
 <tr class="memdesc:a1ee097500810c7a9e2e63571a49d8bcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer back to the warpcore instance associated with this <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>.  <a href="#a1ee097500810c7a9e2e63571a49d8bcb">More...</a><br/></td></tr>
 <tr class="separator:a1ee097500810c7a9e2e63571a49d8bcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db894eae177fa4a879dffd4e9ad706e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#a3db894eae177fa4a879dffd4e9ad706e">iv</a></td></tr>
+<tr class="memdesc:a3db894eae177fa4a879dffd4e9ad706e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tail queue containing incoming unread data.  <a href="#a3db894eae177fa4a879dffd4e9ad706e">More...</a><br/></td></tr>
+<tr class="separator:a3db894eae177fa4a879dffd4e9ad706e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b8ec75854814f39f204648af5dd5726"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__hdr.html">w_hdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#a0b8ec75854814f39f204648af5dd5726">hdr</a></td></tr>
 <tr class="memdesc:a0b8ec75854814f39f204648af5dd5726"><td class="mdescLeft">&#160;</td><td class="mdescRight">The template header to be used for outbound packets on this <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>.  <a href="#a0b8ec75854814f39f204648af5dd5726">More...</a><br/></td></tr>
 <tr class="separator:a0b8ec75854814f39f204648af5dd5726"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -169,24 +169,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7a446fd89829a8ae06c32ef35e548e1e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">w_sock::sq_head </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structw__iov.html">w_iov</a>&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Tail queue containing incoming unread data. </p>
-
-</div>
-</div>
 <h2 class="groupheader">Field Documentation</h2>
 <a class="anchor" id="a52c31f9dcdeff3860a4f5d39208b73b8"></a>
 <div class="memitem">
@@ -230,6 +212,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a3db894eae177fa4a879dffd4e9ad706e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a> w_sock::iv</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tail queue containing incoming unread data. </p>
+
+</div>
+</div>
 <a class="anchor" id="a1ee097500810c7a9e2e63571a49d8bcb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -250,7 +246,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Nov 13 2017 15:43:39 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 14 2017 09:20:07 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

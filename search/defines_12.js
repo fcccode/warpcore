@@ -1,8 +1,6 @@
 var searchData=
 [
   ['w_5fengine',['w_engine',['../warpcore_8h.html#ae13f9b3c39d99b4a14d36b88ae5387da',1,'warpcore.h']]],
-  ['w_5ffree',['w_free',['../warpcore_8h.html#a068c0bd68483726654df048ad7dd0792',1,'warpcore.h']]],
-  ['w_5ffree_5fiov',['w_free_iov',['../warpcore_8h.html#a6dc649fb895f797d4ddd2e831f57595f',1,'warpcore.h']]],
   ['w_5fifname',['w_ifname',['../warpcore_8h.html#a4c1507af14382c3a9afd21140d879e99',1,'warpcore.h']]],
   ['w_5fiov',['w_iov',['../warpcore_8h.html#a7a5b4e1a5d40a07fad55654c811d3ddf',1,'warpcore.h']]],
   ['w_5fiov_5fsq_5fcnt',['w_iov_sq_cnt',['../warpcore_8h.html#a27ee17424d2b7abda2836f8aef0e0a73',1,'warpcore.h']]],
