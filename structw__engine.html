@@ -99,7 +99,7 @@ Collaboration diagram for w_engine:</div>
 <div class="dyncontent">
 <div class="center"><img src="structw__engine__coll__graph.png" border="0" usemap="#w__engine_coll__map" alt="Collaboration graph"/></div>
 <map name="w__engine_coll__map" id="w__engine_coll__map">
-<area shape="rect" id="node2" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="60,96,115,123"/><area shape="rect" id="node3" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="5,5,81,32"/><area shape="rect" id="node4" href="structw__backend.html" title="w_backend" alt="" coords="140,96,228,123"/></map>
+<area shape="rect" id="node2" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="79,97,133,124"/><area shape="rect" id="node3" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="5,5,81,32"/><area shape="rect" id="node4" href="structw__backend.html" title="w_backend" alt="" coords="159,97,247,124"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -140,12 +140,18 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a1cb10e3d74b2d0bb9156644536355334"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a1cb10e3d74b2d0bb9156644536355334">iov</a></td></tr>
 <tr class="memdesc:a1cb10e3d74b2d0bb9156644536355334"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tail queue of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers available.  <a href="#a1cb10e3d74b2d0bb9156644536355334">More...</a><br/></td></tr>
 <tr class="separator:a1cb10e3d74b2d0bb9156644536355334"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b193e57b028722e7b865758d516903"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#af9b193e57b028722e7b865758d516903">priv_iov</a></td></tr>
+<tr class="memdesc:af9b193e57b028722e7b865758d516903"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tail queue of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers in internal use.  <a href="#af9b193e57b028722e7b865758d516903">More...</a><br/></td></tr>
+<tr class="separator:af9b193e57b028722e7b865758d516903"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73d208158e977addc3218c194df3d644"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a73d208158e977addc3218c194df3d644">ifname</a></td></tr>
 <tr class="memdesc:a73d208158e977addc3218c194df3d644"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the interface of this engine.  <a href="#a73d208158e977addc3218c194df3d644">More...</a><br/></td></tr>
 <tr class="separator:a73d208158e977addc3218c194df3d644"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3041da7e8ef3210cae558f5fa14128e8"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a3041da7e8ef3210cae558f5fa14128e8">backend_name</a></td></tr>
 <tr class="memdesc:a3041da7e8ef3210cae558f5fa14128e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Name of the backend in <code>b</code>.  <a href="#a3041da7e8ef3210cae558f5fa14128e8">More...</a><br/></td></tr>
 <tr class="separator:a3041da7e8ef3210cae558f5fa14128e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5cf44806e6aba354a9248bed8260e697"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a5cf44806e6aba354a9248bed8260e697">min_buf_idx</a></td></tr>
+<tr class="memdesc:a5cf44806e6aba354a9248bed8260e697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the smallest buffer.  <a href="#a5cf44806e6aba354a9248bed8260e697">More...</a><br/></td></tr>
+<tr class="separator:a5cf44806e6aba354a9248bed8260e697"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60a8bebdb57370e4a2ab8caa8364821e"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a60a8bebdb57370e4a2ab8caa8364821e">max_buf_idx</a></td></tr>
 <tr class="memdesc:a60a8bebdb57370e4a2ab8caa8364821e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of the largest buffer.  <a href="#a60a8bebdb57370e4a2ab8caa8364821e">More...</a><br/></td></tr>
 <tr class="separator:a60a8bebdb57370e4a2ab8caa8364821e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -313,6 +319,20 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a5cf44806e6aba354a9248bed8260e697"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t w_engine::min_buf_idx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Index of the smallest buffer. </p>
+
+</div>
+</div>
 <a class="anchor" id="ab66a9b845ccc74bf9988ee81c062b2c1"></a>
 <div class="memitem">
 <div class="memproto">
@@ -324,6 +344,20 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>MTU of this interface. </p>
+
+</div>
+</div>
+<a class="anchor" id="af9b193e57b028722e7b865758d516903"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a> w_engine::priv_iov</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Tail queue of <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers in internal use. </p>
 
 </div>
 </div>
@@ -361,7 +395,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 16 2017 08:20:13 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 16 2017 13:20:35 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

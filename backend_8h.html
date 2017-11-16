@@ -164,9 +164,9 @@ Functions</h2></td></tr>
 <tr class="memitem:af5df52522d52bfed04aa270094deaa78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#af5df52522d52bfed04aa270094deaa78">backend_connect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
 <tr class="memdesc:af5df52522d52bfed04aa270094deaa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect the given <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, using the netmap backend.  <a href="#af5df52522d52bfed04aa270094deaa78">More...</a><br/></td></tr>
 <tr class="separator:af5df52522d52bfed04aa270094deaa78"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add1c73550dd09c6ee24014b0408b2ecb"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#add1c73550dd09c6ee24014b0408b2ecb">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint32_t nbufs, const bool is_lo, const bool is_left)</td></tr>
-<tr class="memdesc:add1c73550dd09c6ee24014b0408b2ecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore netmap backend for engine <code>w</code>.  <a href="#add1c73550dd09c6ee24014b0408b2ecb">More...</a><br/></td></tr>
-<tr class="separator:add1c73550dd09c6ee24014b0408b2ecb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efe6c54e4e30260d1c2630726b98eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a1efe6c54e4e30260d1c2630726b98eb5">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint32_t nbufs, const bool is_lo, const bool is_left)</td></tr>
+<tr class="memdesc:a1efe6c54e4e30260d1c2630726b98eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore netmap backend for engine <code>w</code>.  <a href="#a1efe6c54e4e30260d1c2630726b98eb5">More...</a><br/></td></tr>
+<tr class="separator:a1efe6c54e4e30260d1c2630726b98eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e43d05a55650db2be88e9eece99905d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
 <tr class="memdesc:a7e43d05a55650db2be88e9eece99905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore netmap engine down cleanly.  <a href="#a7e43d05a55650db2be88e9eece99905d">More...</a><br/></td></tr>
 <tr class="separator:a7e43d05a55650db2be88e9eece99905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -413,7 +413,7 @@ Functions</h2></td></tr>
 <div class="ttc" id="backend_8h_html_a5b37e7ea7f75aee5b91b27ba4ee39533"><div class="ttname"><a href="backend_8h.html#a5b37e7ea7f75aee5b91b27ba4ee39533">init_iov</a></div><div class="ttdeci">#define init_iov(w, v)</div><div class="ttdef"><b>Definition:</b> backend.h:139</div></div>
 <div class="ttc" id="backend_8h_html_a22a934c8c4d79c27dffbe21e3fb733a4"><div class="ttname"><a href="backend_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">ASAN_UNPOISON_MEMORY_REGION</a></div><div class="ttdeci">#define ASAN_UNPOISON_MEMORY_REGION(x, y)</div><div class="ttdef"><b>Definition:</b> backend.h:34</div></div>
 <div class="ttc" id="netmap__user_8h_html_a217a0bd562b98ae8c2ffce44935351e1"><div class="ttname"><a href="netmap__user_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a></div><div class="ttdeci">#define likely(x)</div><div class="ttdef"><b>Definition:</b> netmap_user.h:96</div></div>
-<div class="ttc" id="structw__iov_html"><div class="ttname"><a href="structw__iov.html">w_iov</a></div><div class="ttdoc">The I/O vector structure that warpcore uses at the center of its API. </div><div class="ttdef"><b>Definition:</b> warpcore.h:144</div></div>
+<div class="ttc" id="structw__iov_html"><div class="ttname"><a href="structw__iov.html">w_iov</a></div><div class="ttdoc">The I/O vector structure that warpcore uses at the center of its API. </div><div class="ttdef"><b>Definition:</b> warpcore.h:146</div></div>
 <div class="ttc" id="backend_8h_html_ac3bb9e4ee9a65dd78636d8d82423a13e"><div class="ttname"><a href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a></div><div class="ttdeci">#define IDX2BUF(w, i)</div><div class="ttdoc">For a given buffer index, get a pointer to its beginning. </div><div class="ttdef"><b>Definition:</b> backend.h:60</div></div>
 <div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
 <div class="ttc" id="queue_8h_html_a735e29d5fd7b7a7ad96681c348996efe"><div class="ttname"><a href="queue_8h.html#a735e29d5fd7b7a7ad96681c348996efe">sq_remove_head</a></div><div class="ttdeci">#define sq_remove_head(head, field)</div><div class="ttdef"><b>Definition:</b> queue.h:466</div></div>
@@ -577,12 +577,12 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="add1c73550dd09c6ee24014b0408b2ecb"></a>
+<a class="anchor" id="a1efe6c54e4e30260d1c2630726b98eb5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint32_t backend_init </td>
+          <td class="memname">void backend_init </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
           <td class="paramname"><em>w</em>, </td>
@@ -624,7 +624,6 @@ Here is the call graph for this function:</div>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the index of the largest buffer used.</dd></dl>
 <p>Initialize the warpcore netmap backend for engine <code>w</code>.</p>
 <p>Sets up the extra buffers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -632,17 +631,16 @@ Here is the call graph for this function:</div>
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">is_lo</td><td>Unused. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">is_left</td><td>Unused.</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_left</td><td>Unused. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the index of the largest buffer used. </dd></dl>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="backend_8h_add1c73550dd09c6ee24014b0408b2ecb_cgraph.png" border="0" usemap="#backend_8h_add1c73550dd09c6ee24014b0408b2ecb_cgraph" alt=""/></div>
-<map name="backend_8h_add1c73550dd09c6ee24014b0408b2ecb_cgraph" id="backend_8h_add1c73550dd09c6ee24014b0408b2ecb_cgraph">
+<div class="center"><img src="backend_8h_a1efe6c54e4e30260d1c2630726b98eb5_cgraph.png" border="0" usemap="#backend_8h_a1efe6c54e4e30260d1c2630726b98eb5_cgraph" alt=""/></div>
+<map name="backend_8h_a1efe6c54e4e30260d1c2630726b98eb5_cgraph" id="backend_8h_a1efe6c54e4e30260d1c2630726b98eb5_cgraph">
 <area shape="rect" id="node2" href="arp_8c.html#a5857d8f27a0bcfa2b9dfe8308ac7befb" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="149,5,277,32"/><area shape="rect" id="node3" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="326,5,437,32"/></map>
 </div>
 </p>
@@ -742,7 +740,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 16 2017 08:20:12 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Nov 16 2017 13:20:35 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

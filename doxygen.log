@@ -459,5 +459,5 @@ Patching output file 35/38
 Patching output file 36/38
 Patching output file 37/38
 Patching output file 38/38
-lookup cache used 633/65536 hits=3798 misses=644
+lookup cache used 637/65536 hits=3832 misses=648
 finished...

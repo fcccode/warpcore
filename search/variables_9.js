@@ -4,5 +4,6 @@ var searchData=
   ['mask',['mask',['../structw__engine.html#a671ab793dfd9b6f416c126da7660607b',1,'w_engine']]],
   ['max_5fbuf_5fidx',['max_buf_idx',['../structw__engine.html#a60a8bebdb57370e4a2ab8caa8364821e',1,'w_engine']]],
   ['mem',['mem',['../structw__engine.html#aeef518ec5511a7094ea0db7cd91013be',1,'w_engine']]],
+  ['min_5fbuf_5fidx',['min_buf_idx',['../structw__engine.html#a5cf44806e6aba354a9248bed8260e697',1,'w_engine']]],
   ['mtu',['mtu',['../structw__engine.html#ab66a9b845ccc74bf9988ee81c062b2c1',1,'w_engine']]]
 ];
