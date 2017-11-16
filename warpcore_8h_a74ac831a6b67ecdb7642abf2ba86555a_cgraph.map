@@ -1,6 +1,5 @@
 <map id="w_alloc_len" name="w_alloc_len">
 <area shape="rect" id="node2" href="$warpcore_8c.html#a99654de6ff08d3834fcd04b6bcafe0b0" title="Helper function for w_alloc_size and w_alloc_cnt. " alt="" coords="144,31,219,57"/>
 <area shape="rect" id="node3" href="$warpcore_8c.html#a8e3e3376b3f23f1a1a8fc4be642f7710" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="267,5,357,32"/>
-<area shape="rect" id="node5" href="$warpcore_8c.html#ac415e75903b5565308b0ddf2f1977cb3" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore..." alt="" coords="281,56,343,83"/>
-<area shape="rect" id="node4" href="$warpcore_8c.html#a0f3d4c8f73105703ece97c8a96203ca1" title="w_alloc_iov_base" alt="" coords="405,5,531,32"/>
+<area shape="rect" id="node4" href="$warpcore_8c.html#ac415e75903b5565308b0ddf2f1977cb3" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore..." alt="" coords="281,56,343,83"/>
 </map>

@@ -14,5 +14,7 @@ var searchData=
   ['arp_5fop_5freply',['ARP_OP_REPLY',['../arp_8h.html#a70ed40d243b246a155b781b25d61f192',1,'arp.h']]],
   ['arp_5fop_5frequest',['ARP_OP_REQUEST',['../arp_8h.html#a4e15fdfedf617bb9db1588615889ce30',1,'arp.h']]],
   ['arp_5frx',['arp_rx',['../arp_8c.html#af5d30e761122e50bc378cb946a620637',1,'arp_rx(struct w_engine *const w, struct netmap_ring *const r):&#160;arp.c'],['../arp_8h.html#a4ec90ba3bb22f510ca5083c78434d6ad',1,'arp_rx(struct w_engine *w, struct netmap_ring *const r):&#160;arp.c']]],
-  ['arp_5fwho_5fhas',['arp_who_has',['../arp_8c.html#aad7ca3e847867c4dcc618d034aa42739',1,'arp_who_has(struct w_engine *const w, const uint32_t dip):&#160;arp.c'],['../arp_8h.html#aad7ca3e847867c4dcc618d034aa42739',1,'arp_who_has(struct w_engine *const w, const uint32_t dip):&#160;arp.c']]]
+  ['arp_5fwho_5fhas',['arp_who_has',['../arp_8c.html#aad7ca3e847867c4dcc618d034aa42739',1,'arp_who_has(struct w_engine *const w, const uint32_t dip):&#160;arp.c'],['../arp_8h.html#aad7ca3e847867c4dcc618d034aa42739',1,'arp_who_has(struct w_engine *const w, const uint32_t dip):&#160;arp.c']]],
+  ['asan_5fpoison_5fmemory_5fregion',['ASAN_POISON_MEMORY_REGION',['../backend_8h.html#a1a737158b6f126742d911591ded5ad78',1,'backend.h']]],
+  ['asan_5funpoison_5fmemory_5fregion',['ASAN_UNPOISON_MEMORY_REGION',['../backend_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4',1,'backend.h']]]
 ];
