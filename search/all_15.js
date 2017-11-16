@@ -19,7 +19,7 @@ var searchData=
   ['w_5fhdr',['w_hdr',['../structw__hdr.html',1,'']]],
   ['w_5fifname',['w_ifname',['../warpcore_8h.html#a4c1507af14382c3a9afd21140d879e99',1,'warpcore.h']]],
   ['w_5finit',['w_init',['../warpcore_8h.html#a045f4826ff2a8917693126c9d27455e4',1,'w_init(const char *const ifname, const uint32_t rip, const uint32_t nbufs):&#160;warpcore.c'],['../warpcore_8c.html#a045f4826ff2a8917693126c9d27455e4',1,'w_init(const char *const ifname, const uint32_t rip, const uint32_t nbufs):&#160;warpcore.c']]],
-  ['w_5fiov',['w_iov',['../structw__iov.html',1,'w_iov'],['../warpcore_8h.html#a7a5b4e1a5d40a07fad55654c811d3ddf',1,'w_iov():&#160;warpcore.h']]],
+  ['w_5fiov',['w_iov',['../structw__iov.html',1,'']]],
   ['w_5fiov_5fmax_5flen',['w_iov_max_len',['../warpcore_8h.html#a7b47d2c85543fe7de031d20a946a8d40',1,'w_iov_max_len(const struct w_engine *const w, const struct w_iov *const v):&#160;warpcore.c'],['../warpcore_8c.html#a7b47d2c85543fe7de031d20a946a8d40',1,'w_iov_max_len(const struct w_engine *const w, const struct w_iov *const v):&#160;warpcore.c']]],
   ['w_5fiov_5fsq',['w_iov_sq',['../structw__iov__sq.html',1,'']]],
   ['w_5fiov_5fsq_5fcnt',['w_iov_sq_cnt',['../warpcore_8h.html#a27ee17424d2b7abda2836f8aef0e0a73',1,'warpcore.h']]],

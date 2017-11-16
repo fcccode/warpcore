@@ -3,7 +3,6 @@ var searchData=
   ['w_5falloc_5fiov_5fbase',['w_alloc_iov_base',['../backend_8h.html#a0abd6d965115280837bcfa35f351aa08',1,'backend.h']]],
   ['w_5fengine',['w_engine',['../warpcore_8h.html#ae13f9b3c39d99b4a14d36b88ae5387da',1,'warpcore.h']]],
   ['w_5fifname',['w_ifname',['../warpcore_8h.html#a4c1507af14382c3a9afd21140d879e99',1,'warpcore.h']]],
-  ['w_5fiov',['w_iov',['../warpcore_8h.html#a7a5b4e1a5d40a07fad55654c811d3ddf',1,'warpcore.h']]],
   ['w_5fiov_5fsq_5fcnt',['w_iov_sq_cnt',['../warpcore_8h.html#a27ee17424d2b7abda2836f8aef0e0a73',1,'warpcore.h']]],
   ['w_5fiov_5fsq_5finitializer',['w_iov_sq_initializer',['../warpcore_8h.html#adb7cefb61123a68cf87f6e33270af1dc',1,'warpcore.h']]],
   ['w_5fmtu',['w_mtu',['../warpcore_8h.html#ab8d64c60572eee99efeb3118c292e318',1,'warpcore.h']]],
