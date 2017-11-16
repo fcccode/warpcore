@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['nbufs',['nbufs',['../structw__engine.html#abf62241650020eeeac843a8d9e9e5db1',1,'w_engine']]],
   ['ni_5fbufs_5fhead',['ni_bufs_head',['../structnetmap__if.html#ae76d2e39d643cb6361eb1bbf8365c1b3',1,'netmap_if']]],
   ['ni_5fflags',['ni_flags',['../structnetmap__if.html#ad13b44724d6ebc70cbe733a63c96039f',1,'netmap_if']]],
   ['ni_5fname',['ni_name',['../structnetmap__if.html#a6e2f3b7e18942a7d4de5763d220ce9b2',1,'netmap_if']]],

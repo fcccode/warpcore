@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['nbufs',['nbufs',['../structw__engine.html#abf62241650020eeeac843a8d9e9e5db1',1,'w_engine']]],
   ['netmap_2eh',['netmap.h',['../netmap_8h.html',1,'']]],
   ['netmap_5fapi',['NETMAP_API',['../netmap_8h.html#a42a3750856de2a1db0136fc62ffea302',1,'netmap.h']]],
   ['netmap_5fbdg_5fattach',['NETMAP_BDG_ATTACH',['../netmap_8h.html#aaa02b7ff5c6853d340ff200c6d2a9648',1,'netmap.h']]],
