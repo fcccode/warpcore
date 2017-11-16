@@ -1,3 +1,4 @@
 <map id="w_rx" name="w_rx">
 <area shape="rect" id="node2" href="$warpcore_8h.html#aa17e20ed409edbfe18aa79ae5da640ff" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="104,5,195,32"/>
+<area shape="rect" id="node3" href="$warpcore_8c.html#a0f3d4c8f73105703ece97c8a96203ca1" title="w_alloc_iov_base" alt="" coords="243,5,368,32"/>
 </map>
