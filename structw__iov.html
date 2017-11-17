@@ -113,9 +113,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a2b33510e8a5b556deef4fb2b29b62a9e"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#a2b33510e8a5b556deef4fb2b29b62a9e">buf</a></td></tr>
 <tr class="memdesc:a2b33510e8a5b556deef4fb2b29b62a9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start of payload data.  <a href="#a2b33510e8a5b556deef4fb2b29b62a9e">More...</a><br/></td></tr>
 <tr class="separator:a2b33510e8a5b556deef4fb2b29b62a9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03cc6e947f6c954e1eff1256aed43f0d"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#a03cc6e947f6c954e1eff1256aed43f0d">idx</a></td></tr>
-<tr class="memdesc:a03cc6e947f6c954e1eff1256aed43f0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of buffer, starting at zero.  <a href="#a03cc6e947f6c954e1eff1256aed43f0d">More...</a><br/></td></tr>
-<tr class="separator:a03cc6e947f6c954e1eff1256aed43f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd67698e186e10820eacb794c0777205"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#abd67698e186e10820eacb794c0777205">nm_idx</a></td></tr>
+<tr class="memdesc:abd67698e186e10820eacb794c0777205"><td class="mdescLeft">&#160;</td><td class="mdescRight">Index of netmap buffer.  <a href="#abd67698e186e10820eacb794c0777205">More...</a><br/></td></tr>
+<tr class="separator:abd67698e186e10820eacb794c0777205"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a362d3a1b5838b941b52350f86be23f4d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__iov.html#a362d3a1b5838b941b52350f86be23f4d">len</a></td></tr>
 <tr class="memdesc:a362d3a1b5838b941b52350f86be23f4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of payload data.  <a href="#a362d3a1b5838b941b52350f86be23f4d">More...</a><br/></td></tr>
 <tr class="separator:a362d3a1b5838b941b52350f86be23f4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -187,20 +187,6 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a03cc6e947f6c954e1eff1256aed43f0d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint32_t w_iov::idx</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Index of buffer, starting at zero. </p>
-
-</div>
-</div>
 <a class="anchor" id="a693d49529a1993d2d72e3f2eb97df183"></a>
 <div class="memitem">
 <div class="memproto">
@@ -229,6 +215,20 @@ Data Fields</h2></td></tr>
 <p>Length of payload data. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a25">inetd.c</a>.</dd>
 </dl>
+</div>
+</div>
+<a class="anchor" id="abd67698e186e10820eacb794c0777205"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t w_iov::nm_idx</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Index of netmap buffer. </p>
+
 </div>
 </div>
 <a class="anchor" id="ab2cfc955b9f63bab0a2653a5eff96fe8"></a>
@@ -267,7 +267,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 16 2017 17:23:09 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 17 2017 04:18:13 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

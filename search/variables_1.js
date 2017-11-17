@@ -1,9 +1,6 @@
 var searchData=
 [
-  ['b',['b',['../structw__engine.html#a9a64dd1d5e088e121a11eb440d60ae9e',1,'w_engine']]],
-  ['backend_5fname',['backend_name',['../structw__engine.html#a3041da7e8ef3210cae558f5fa14128e8',1,'w_engine::backend_name()'],['../backend__netmap_8c.html#a7c5ea7d02c5d0693dfc377f3a7f929a1',1,'backend_name():&#160;backend_netmap.c'],['../backend__sock_8c.html#a7c5ea7d02c5d0693dfc377f3a7f929a1',1,'backend_name():&#160;backend_sock.c']]],
-  ['buf',['buf',['../structw__iov.html#a2b33510e8a5b556deef4fb2b29b62a9e',1,'w_iov']]],
-  ['buf_5fidx',['buf_idx',['../structnetmap__slot.html#a53b5fc7beb0712b9c41f344177894ade',1,'netmap_slot']]],
-  ['buf_5fofs',['buf_ofs',['../structnetmap__ring.html#a7ffcfff1be1ca50a663914184b7faecf',1,'netmap_ring']]],
-  ['bufs',['bufs',['../structw__engine.html#afa8ad906202b2098b44fb6a5bdeb5c20',1,'w_engine']]]
+  ['cksum',['cksum',['../structicmp__hdr.html#add63cdb716242cb7c3254d8fccdb6db7',1,'icmp_hdr::cksum()'],['../structip__hdr.html#aa5e15c593970ddd167cc4c19cd48794e',1,'ip_hdr::cksum()'],['../structudp__hdr.html#aaceb164f008b52a040fd2ae8e97004f9',1,'udp_hdr::cksum()']]],
+  ['code',['code',['../structicmp__hdr.html#aabbbb0fea10498cd78ec18397cc946cb',1,'icmp_hdr']]],
+  ['cur',['cur',['../structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105',1,'netmap_ring']]]
 ];

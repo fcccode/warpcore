@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['cksum',['cksum',['../structicmp__hdr.html#add63cdb716242cb7c3254d8fccdb6db7',1,'icmp_hdr::cksum()'],['../structip__hdr.html#aa5e15c593970ddd167cc4c19cd48794e',1,'ip_hdr::cksum()'],['../structudp__hdr.html#aaceb164f008b52a040fd2ae8e97004f9',1,'udp_hdr::cksum()']]],
-  ['code',['code',['../structicmp__hdr.html#aabbbb0fea10498cd78ec18397cc946cb',1,'icmp_hdr']]],
-  ['cur',['cur',['../structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105',1,'netmap_ring']]]
+  ['data',['data',['../structnm__ifreq.html#a61da0c20ca0c61107ffc17657f25ebd6',1,'nm_ifreq']]],
+  ['dir',['dir',['../structnetmap__ring.html#a56efa3d3188e04e44733858f9b0cf6a1',1,'netmap_ring']]],
+  ['dport',['dport',['../structudp__hdr.html#a237bbfa523557d865a0d7d8570ae8afc',1,'udp_hdr']]],
+  ['dst',['dst',['../structeth__hdr.html#a62491dbb603459d3b23060cd05944752',1,'eth_hdr::dst()'],['../structip__hdr.html#a8100327fc0ab98d0f4e45a5b461e3706',1,'ip_hdr::dst()']]]
 ];

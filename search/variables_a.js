@@ -1,28 +1,6 @@
 var searchData=
 [
-  ['nbufs',['nbufs',['../structw__engine.html#abf62241650020eeeac843a8d9e9e5db1',1,'w_engine']]],
-  ['ni_5fbufs_5fhead',['ni_bufs_head',['../structnetmap__if.html#ae76d2e39d643cb6361eb1bbf8365c1b3',1,'netmap_if']]],
-  ['ni_5fflags',['ni_flags',['../structnetmap__if.html#ad13b44724d6ebc70cbe733a63c96039f',1,'netmap_if']]],
-  ['ni_5fname',['ni_name',['../structnetmap__if.html#a6e2f3b7e18942a7d4de5763d220ce9b2',1,'netmap_if']]],
-  ['ni_5frx_5frings',['ni_rx_rings',['../structnetmap__if.html#ad414fbdb730bbd001ae8ef3af8440e8f',1,'netmap_if']]],
-  ['ni_5fspare1',['ni_spare1',['../structnetmap__if.html#a93d2c43fb0e6b532b3139dca3a27395d',1,'netmap_if']]],
-  ['ni_5ftx_5frings',['ni_tx_rings',['../structnetmap__if.html#ab8b14e631b50fb480377725d2a5281c4',1,'netmap_if']]],
-  ['ni_5fversion',['ni_version',['../structnetmap__if.html#a2faaffd8c1892bd50a6aaf6f2780240f',1,'netmap_if']]],
-  ['nifr_5fname',['nifr_name',['../structnm__ifreq.html#a2c9a809d729f5ea7c5f14d7e56efbac6',1,'nm_ifreq']]],
-  ['nr_5farg1',['nr_arg1',['../structnmreq.html#ad5ec54607ccfd57982c1d6d3285b4fba',1,'nmreq']]],
-  ['nr_5farg2',['nr_arg2',['../structnmreq.html#a8ea266b04964d17e204b15cd25571083',1,'nmreq']]],
-  ['nr_5farg3',['nr_arg3',['../structnmreq.html#adbf0933ed01dfb94e36dabc9c42e82fb',1,'nmreq']]],
-  ['nr_5fbuf_5fsize',['nr_buf_size',['../structnetmap__ring.html#a7225b6ef5a79eb6e8df13fbe986543eb',1,'netmap_ring']]],
-  ['nr_5fcmd',['nr_cmd',['../structnmreq.html#a5a45993e368a473d90286807710bc69f',1,'nmreq']]],
-  ['nr_5fflags',['nr_flags',['../structnmreq.html#a5c58284511ee8b4803c25b2b319deec3',1,'nmreq']]],
-  ['nr_5fmemsize',['nr_memsize',['../structnmreq.html#ab90704691a1ec4b48c23cde016bd2dc1',1,'nmreq']]],
-  ['nr_5fname',['nr_name',['../structnmreq.html#a3ec7cdc9a7f3bb9103f2088a30c5408d',1,'nmreq']]],
-  ['nr_5foffset',['nr_offset',['../structnmreq.html#aeac6e7c4301879310ec3d580c9e81105',1,'nmreq']]],
-  ['nr_5fringid',['nr_ringid',['../structnmreq.html#ae722dbbdbcb2d4a4a63c19809d09b065',1,'nmreq']]],
-  ['nr_5frx_5frings',['nr_rx_rings',['../structnmreq.html#ab69f153468b56318beceed7573061520',1,'nmreq']]],
-  ['nr_5frx_5fslots',['nr_rx_slots',['../structnmreq.html#a164625aa23e5ff67e48a81e0340e82ae',1,'nmreq']]],
-  ['nr_5ftx_5frings',['nr_tx_rings',['../structnmreq.html#ac8bd987253a1cac2cb0c9df35691d17c',1,'nmreq']]],
-  ['nr_5ftx_5fslots',['nr_tx_slots',['../structnmreq.html#a471cf0759451e8f3e3ca91a35a0e5c2c',1,'nmreq']]],
-  ['nr_5fversion',['nr_version',['../structnmreq.html#ae12f9325eefa6832cd79cb7fd9a600df',1,'nmreq']]],
-  ['num_5fslots',['num_slots',['../structnetmap__ring.html#a37102602c060ee425a89df961b39e208',1,'netmap_ring']]]
+  ['o',['o',['../structw__iov.html#ab2cfc955b9f63bab0a2653a5eff96fe8',1,'w_iov']]],
+  ['off',['off',['../structip__hdr.html#a0ad10fca8f32392cd44acb61e743acb3',1,'ip_hdr']]],
+  ['op',['op',['../structarp__hdr.html#a239e78a3ceaa360c0a2ace850105de20',1,'arp_hdr']]]
 ];

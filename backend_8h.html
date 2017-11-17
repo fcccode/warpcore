@@ -285,7 +285,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        (v)-&gt;buf = <a class="code" href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a>((w), (v)-&gt;idx);                                     \</div>
+<div class="line">        (v)-&gt;buf = <a class="code" href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a>((w), (v)-&gt;nm_idx);                                  \</div>
 <div class="line">        (v)-&gt;len = (w)-&gt;mtu;                                                   \</div>
 <div class="line">        (v)-&gt;o = 0;                                                            \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
@@ -406,14 +406,14 @@ Functions</h2></td></tr>
 <div class="line"><a class="code" href="queue_8h.html#a735e29d5fd7b7a7ad96681c348996efe">            sq_remove_head</a>(&amp;(w)-&gt;iov, next);                                   <a class="code" href="backend_8h.html#a5b37e7ea7f75aee5b91b27ba4ee39533">\</a></div>
 <div class="line"><a class="code" href="backend_8h.html#a5b37e7ea7f75aee5b91b27ba4ee39533">            init_iov</a>((w), _v);                                                 \</div>
 <div class="line">            _v-&gt;len = (w)-&gt;mtu;                                                <a class="code" href="backend_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">\</a></div>
-<div class="line"><a class="code" href="backend_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">            ASAN_UNPOISON_MEMORY_REGION</a>(<a class="code" href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a>((w), _v-&gt;idx), _v-&gt;len);       \</div>
+<div class="line"><a class="code" href="backend_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">            ASAN_UNPOISON_MEMORY_REGION</a>(<a class="code" href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a>((w), _v-&gt;nm_idx), _v-&gt;len);    \</div>
 <div class="line">        }                                                                      \</div>
 <div class="line">        _v;                                                                    \</div>
 <div class="line">    })</div>
 <div class="ttc" id="backend_8h_html_a5b37e7ea7f75aee5b91b27ba4ee39533"><div class="ttname"><a href="backend_8h.html#a5b37e7ea7f75aee5b91b27ba4ee39533">init_iov</a></div><div class="ttdeci">#define init_iov(w, v)</div><div class="ttdef"><b>Definition:</b> backend.h:139</div></div>
 <div class="ttc" id="backend_8h_html_a22a934c8c4d79c27dffbe21e3fb733a4"><div class="ttname"><a href="backend_8h.html#a22a934c8c4d79c27dffbe21e3fb733a4">ASAN_UNPOISON_MEMORY_REGION</a></div><div class="ttdeci">#define ASAN_UNPOISON_MEMORY_REGION(x, y)</div><div class="ttdef"><b>Definition:</b> backend.h:34</div></div>
 <div class="ttc" id="netmap__user_8h_html_a217a0bd562b98ae8c2ffce44935351e1"><div class="ttname"><a href="netmap__user_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a></div><div class="ttdeci">#define likely(x)</div><div class="ttdef"><b>Definition:</b> netmap_user.h:96</div></div>
-<div class="ttc" id="structw__iov_html"><div class="ttname"><a href="structw__iov.html">w_iov</a></div><div class="ttdoc">The I/O vector structure that warpcore uses at the center of its API. </div><div class="ttdef"><b>Definition:</b> warpcore.h:147</div></div>
+<div class="ttc" id="structw__iov_html"><div class="ttname"><a href="structw__iov.html">w_iov</a></div><div class="ttdoc">The I/O vector structure that warpcore uses at the center of its API. </div><div class="ttdef"><b>Definition:</b> warpcore.h:143</div></div>
 <div class="ttc" id="backend_8h_html_ac3bb9e4ee9a65dd78636d8d82423a13e"><div class="ttname"><a href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a></div><div class="ttdeci">#define IDX2BUF(w, i)</div><div class="ttdoc">For a given buffer index, get a pointer to its beginning. </div><div class="ttdef"><b>Definition:</b> backend.h:60</div></div>
 <div class="ttc" id="queue_8h_html_aa2e87e42e35761cbbd632c8d01334a40"><div class="ttname"><a href="queue_8h.html#aa2e87e42e35761cbbd632c8d01334a40">sq_first</a></div><div class="ttdeci">#define sq_first(head)</div><div class="ttdef"><b>Definition:</b> queue.h:389</div></div>
 <div class="ttc" id="queue_8h_html_a735e29d5fd7b7a7ad96681c348996efe"><div class="ttname"><a href="queue_8h.html#a735e29d5fd7b7a7ad96681c348996efe">sq_remove_head</a></div><div class="ttdeci">#define sq_remove_head(head, field)</div><div class="ttdef"><b>Definition:</b> queue.h:466</div></div>
@@ -740,7 +740,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 16 2017 17:23:09 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Nov 17 2017 04:18:13 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

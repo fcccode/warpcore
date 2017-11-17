@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['fd',['fd',['../structw__sock.html#a52c31f9dcdeff3860a4f5d39208b73b8',1,'w_sock']]],
-  ['flags',['flags',['../structnetmap__slot.html#a55cf5ec447f34d0cab46f065728a5d93',1,'netmap_slot::flags()'],['../structnetmap__ring.html#a2d73ed8aacb735a74587c6d59bfa521f',1,'netmap_ring::flags()'],['../structw__sock.html#aeb9b6b81f779f7b21ba82a9a305b9687',1,'w_sock::flags()'],['../structw__iov.html#aa2e95068f4bef17d199d6b3cb6f89323',1,'w_iov::flags()']]]
+  ['hdr',['hdr',['../structw__sock.html#a0b8ec75854814f39f204648af5dd5726',1,'w_sock']]],
+  ['head',['head',['../structnetmap__ring.html#abe2efe17dacd91af126a1d4a63225424',1,'netmap_ring']]],
+  ['hln',['hln',['../structarp__hdr.html#a98f3fd34adf64f03038acab9ae511d9a',1,'arp_hdr']]],
+  ['hrd',['hrd',['../structarp__hdr.html#a98dae47366192fa6bfdafc4519ee3299',1,'arp_hdr']]]
 ];
