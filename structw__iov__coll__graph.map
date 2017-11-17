@@ -1,3 +1,5 @@
 <map id="w_iov" name="w_iov">
-<area shape="rect" id="node2" href="$structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="4,5,80,32"/>
+<area shape="rect" id="node2" href="$structw__engine.html" title="A warpcore backend engine. " alt="" coords="53,187,129,213"/>
+<area shape="rect" id="node3" href="$structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="44,5,120,32"/>
+<area shape="rect" id="node4" href="$structw__backend.html" title="w_backend" alt="" coords="155,96,243,123"/>
 </map>
