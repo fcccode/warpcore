@@ -1,4 +1,0 @@
-<map id="alloc_cnt" name="alloc_cnt">
-<area shape="rect" id="node2" href="$warpcore_8c.html#a8e3e3376b3f23f1a1a8fc4be642f7710" title="Return a spare w_iov from the pool of the given warpcore engine. " alt="" coords="128,5,219,32"/>
-<area shape="rect" id="node3" href="$warpcore_8c.html#a960d81cdf30fb1dc693447ba4763f977" title="Return a w_iov tail queue obtained via w_alloc_len(), w_alloc_cnt() or w_rx() back to warpcore..." alt="" coords="143,56,204,83"/>
-</map>
