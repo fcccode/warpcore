@@ -49,7 +49,6 @@ var searchData=
   ['nioctxsync',['NIOCTXSYNC',['../netmap_8h.html#a368c0988cb35f2b257487e64459b820b',1,'netmap.h']]],
   ['nm_5fbdg_5fname',['NM_BDG_NAME',['../netmap_8h.html#a239ceb32c04615908015cfc97185a64d',1,'netmap.h']]],
   ['nm_5fcache_5falign',['NM_CACHE_ALIGN',['../netmap_8h.html#a3b1049947637ce44a5dbc247e570302c',1,'netmap.h']]],
-  ['nm_5fidx',['nm_idx',['../structw__iov.html#abd67698e186e10820eacb794c0777205',1,'w_iov']]],
   ['nm_5fifrdata_5flen',['NM_IFRDATA_LEN',['../netmap_8h.html#af1234879b75c0d9b9f5279a9a6ff6a42',1,'netmap.h']]],
   ['nm_5fifreq',['nm_ifreq',['../structnm__ifreq.html',1,'']]],
   ['nm_5fring_5fempty',['nm_ring_empty',['../netmap_8h.html#a5fdd1b6f9d32c4d527c47a3a296fb304',1,'netmap.h']]],

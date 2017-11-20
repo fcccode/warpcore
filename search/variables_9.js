@@ -8,7 +8,6 @@ var searchData=
   ['ni_5ftx_5frings',['ni_tx_rings',['../structnetmap__if.html#ab8b14e631b50fb480377725d2a5281c4',1,'netmap_if']]],
   ['ni_5fversion',['ni_version',['../structnetmap__if.html#a2faaffd8c1892bd50a6aaf6f2780240f',1,'netmap_if']]],
   ['nifr_5fname',['nifr_name',['../structnm__ifreq.html#a2c9a809d729f5ea7c5f14d7e56efbac6',1,'nm_ifreq']]],
-  ['nm_5fidx',['nm_idx',['../structw__iov.html#abd67698e186e10820eacb794c0777205',1,'w_iov']]],
   ['nr_5farg1',['nr_arg1',['../structnmreq.html#ad5ec54607ccfd57982c1d6d3285b4fba',1,'nmreq']]],
   ['nr_5farg2',['nr_arg2',['../structnmreq.html#a8ea266b04964d17e204b15cd25571083',1,'nmreq']]],
   ['nr_5farg3',['nr_arg3',['../structnmreq.html#adbf0933ed01dfb94e36dabc9c42e82fb',1,'nmreq']]],
