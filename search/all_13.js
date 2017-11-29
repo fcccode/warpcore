@@ -10,7 +10,6 @@ var searchData=
   ['unlikely',['unlikely',['../netmap__user_8h.html#ac6c45889010c1bd68631771b64f18101',1,'unlikely():&#160;netmap_user.h'],['../util_8h.html#ac6c45889010c1bd68631771b64f18101',1,'unlikely():&#160;util.h']]],
   ['util_2ec',['util.c',['../util_8c.html',1,'']]],
   ['util_2eh',['util.h',['../util_8h.html',1,'']]],
-  ['util_5fcomp',['util_comp',['../util_8c.html#a02c0c833e1a183e645e20c1dd4a35d1e',1,'util.c']]],
   ['util_5fdie',['util_die',['../util_8h.html#a887187f8f71a200c99c63237ed3e3fd5',1,'util_die(const char *const func, const char *const file, const unsigned line,...):&#160;util.c'],['../util_8c.html#a887187f8f71a200c99c63237ed3e3fd5',1,'util_die(const char *const func, const char *const file, const unsigned line,...):&#160;util.c']]],
   ['util_5fdlevel',['util_dlevel',['../util_8h.html#ade0743d672f539b1615b3a5d3b79486b',1,'util_dlevel():&#160;util.c'],['../util_8c.html#ade0743d672f539b1615b3a5d3b79486b',1,'util_dlevel():&#160;util.c']]],
   ['util_5fepoch',['util_epoch',['../util_8c.html#a200c5748e6cdf77d2369377d98e131e9',1,'util.c']]],

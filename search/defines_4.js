@@ -3,7 +3,6 @@ var searchData=
   ['dbg',['DBG',['../util_8h.html#a49606be7356624568932ec81c0d429f4',1,'util.h']]],
   ['die',['die',['../util_8h.html#a0b2164ee75646f16a7388a36e6800c35',1,'util.h']]],
   ['dlevel',['DLEVEL',['../util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe',1,'util.h']]],
-  ['do_5fregexec',['DO_REGEXEC',['../util_8c.html#a911d17fccac43347bb3c6ace7a8051c8',1,'util.c']]],
   ['dthread_5fgap',['DTHREAD_GAP',['../util_8h.html#ae87fafc79d9317d688dc63fd3d0c805d',1,'util.h']]],
   ['dthread_5fid',['DTHREAD_ID',['../util_8c.html#a680e4f50570b3400b455076c0cb143bc',1,'util.c']]],
   ['dthread_5fid_5find',['DTHREAD_ID_IND',['../util_8c.html#ab4e90e0eea07ae337107d6a6fc44f9b8',1,'util.c']]],

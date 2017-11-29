@@ -102,7 +102,7 @@ Include dependency graph for ip.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="ip_8h__incl.png" border="0" usemap="#src_2ip_8h" alt=""/></div>
 <map name="src_2ip_8h" id="src_2ip_8h">
-<area shape="rect" id="node5" href="eth_8h.html" title="eth.h" alt="" coords="348,80,399,107"/><area shape="rect" id="node7" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="494,155,636,181"/><area shape="rect" id="node9" href="config_8h.html" title="warpcore/config.h" alt="" coords="709,229,835,256"/><area shape="rect" id="node10" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="859,229,969,256"/><area shape="rect" id="node12" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="267,229,392,256"/><area shape="rect" id="node13" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="416,229,527,256"/><area shape="rect" id="node14" href="util_8h.html" title="warpcore/util.h" alt="" coords="28,229,135,256"/></map>
+<area shape="rect" id="node5" href="eth_8h.html" title="eth.h" alt="" coords="352,80,403,107"/><area shape="rect" id="node7" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="510,155,652,181"/><area shape="rect" id="node9" href="config_8h.html" title="warpcore/config.h" alt="" coords="725,229,851,256"/><area shape="rect" id="node10" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="875,229,985,256"/><area shape="rect" id="node12" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="283,229,408,256"/><area shape="rect" id="node13" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="432,229,543,256"/><area shape="rect" id="node14" href="util_8h.html" title="warpcore/util.h" alt="" coords="28,229,135,256"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
@@ -122,18 +122,24 @@ Data Structures</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:aff3341a14ac552b054eb4d96bf916241"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#aff3341a14ac552b054eb4d96bf916241">IP_ECT1</a>&#160;&#160;&#160;1</td></tr>
-<tr class="memdesc:aff3341a14ac552b054eb4d96bf916241"><td class="mdescLeft">&#160;</td><td class="mdescRight">ECN ECT(1) codepoint.  <a href="#aff3341a14ac552b054eb4d96bf916241">More...</a><br/></td></tr>
-<tr class="separator:aff3341a14ac552b054eb4d96bf916241"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe2aa842bcf14365ed3238fff3eb5c2c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#abe2aa842bcf14365ed3238fff3eb5c2c">IP_ECT0</a>&#160;&#160;&#160;2</td></tr>
-<tr class="memdesc:abe2aa842bcf14365ed3238fff3eb5c2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ECN ECT(0) codepoint.  <a href="#abe2aa842bcf14365ed3238fff3eb5c2c">More...</a><br/></td></tr>
-<tr class="separator:abe2aa842bcf14365ed3238fff3eb5c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6dcb4b4ed9f3df36a929264346748e5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#ae6dcb4b4ed9f3df36a929264346748e5">IP_CE</a>&#160;&#160;&#160;3</td></tr>
-<tr class="memdesc:ae6dcb4b4ed9f3df36a929264346748e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">ECN CE codepoint.  <a href="#ae6dcb4b4ed9f3df36a929264346748e5">More...</a><br/></td></tr>
-<tr class="separator:ae6dcb4b4ed9f3df36a929264346748e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad059798b16d1f615b5af8770175121ba"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#ad059798b16d1f615b5af8770175121ba">IP_OFFMASK</a>&#160;&#160;&#160;0x1fff</td></tr>
-<tr class="memdesc:ad059798b16d1f615b5af8770175121ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit mask for extracting the fragment offset.  <a href="#ad059798b16d1f615b5af8770175121ba">More...</a><br/></td></tr>
-<tr class="separator:ad059798b16d1f615b5af8770175121ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a193fbc11d8db840630152c945be8072a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#a193fbc11d8db840630152c945be8072a">IP_ECN_NOT_ECT</a>&#160;&#160;&#160;0x00</td></tr>
+<tr class="memdesc:a193fbc11d8db840630152c945be8072a"><td class="mdescLeft">&#160;</td><td class="mdescRight">ECN was not enabled.  <a href="#a193fbc11d8db840630152c945be8072a">More...</a><br/></td></tr>
+<tr class="separator:a193fbc11d8db840630152c945be8072a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aecc03108ddb47a05ac1b0afe7d6036c9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#aecc03108ddb47a05ac1b0afe7d6036c9">IP_ECN_ECT_1</a>&#160;&#160;&#160;0x01</td></tr>
+<tr class="memdesc:aecc03108ddb47a05ac1b0afe7d6036c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">ECN capable packet.  <a href="#aecc03108ddb47a05ac1b0afe7d6036c9">More...</a><br/></td></tr>
+<tr class="separator:aecc03108ddb47a05ac1b0afe7d6036c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32586eb66742796cfb267611ea4fcb30"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#a32586eb66742796cfb267611ea4fcb30">IP_ECN_ECT_0</a>&#160;&#160;&#160;0x02</td></tr>
+<tr class="memdesc:a32586eb66742796cfb267611ea4fcb30"><td class="mdescLeft">&#160;</td><td class="mdescRight">ECN capable packet.  <a href="#a32586eb66742796cfb267611ea4fcb30">More...</a><br/></td></tr>
+<tr class="separator:a32586eb66742796cfb267611ea4fcb30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e5e03cd9afd1ca79759fd61ffa0565c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#a5e5e03cd9afd1ca79759fd61ffa0565c">IP_ECN_CE</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memdesc:a5e5e03cd9afd1ca79759fd61ffa0565c"><td class="mdescLeft">&#160;</td><td class="mdescRight">ECN congestion.  <a href="#a5e5e03cd9afd1ca79759fd61ffa0565c">More...</a><br/></td></tr>
+<tr class="separator:a5e5e03cd9afd1ca79759fd61ffa0565c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb71ab89136a7e9fea0ba21cd038fb85"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#abb71ab89136a7e9fea0ba21cd038fb85">IP_ECN_MASK</a>&#160;&#160;&#160;0x03</td></tr>
+<tr class="memdesc:abb71ab89136a7e9fea0ba21cd038fb85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask of ECN bits.  <a href="#abb71ab89136a7e9fea0ba21cd038fb85">More...</a><br/></td></tr>
+<tr class="separator:abb71ab89136a7e9fea0ba21cd038fb85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c661166f9c4edb4f9b429fa662b36f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#ae5c661166f9c4edb4f9b429fa662b36f">IP_OFF_MASK</a>&#160;&#160;&#160;0x1fff</td></tr>
+<tr class="memdesc:ae5c661166f9c4edb4f9b429fa662b36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bit mask for extracting the fragment offset.  <a href="#ae5c661166f9c4edb4f9b429fa662b36f">More...</a><br/></td></tr>
+<tr class="separator:ae5c661166f9c4edb4f9b429fa662b36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a895709708f8f909cf7b7459491d549e7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ip_8h.html#a895709708f8f909cf7b7459491d549e7">IP_RF</a>&#160;&#160;&#160;0x8000</td></tr>
 <tr class="memdesc:a895709708f8f909cf7b7459491d549e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">"Reserved" flag.  <a href="#a895709708f8f909cf7b7459491d549e7">More...</a><br/></td></tr>
 <tr class="separator:a895709708f8f909cf7b7459491d549e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -258,20 +264,6 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ae6dcb4b4ed9f3df36a929264346748e5"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define IP_CE&#160;&#160;&#160;3</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>ECN CE codepoint. </p>
-
-</div>
-</div>
 <a class="anchor" id="a8f1248a9be27c1b1c2faafbab19f6777"></a>
 <div class="memitem">
 <div class="memproto">
@@ -387,31 +379,73 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="abe2aa842bcf14365ed3238fff3eb5c2c"></a>
+<a class="anchor" id="a5e5e03cd9afd1ca79759fd61ffa0565c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IP_ECT0&#160;&#160;&#160;2</td>
+          <td class="memname">#define IP_ECN_CE&#160;&#160;&#160;0x03</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>ECN ECT(0) codepoint. </p>
+<p>ECN congestion. </p>
 
 </div>
 </div>
-<a class="anchor" id="aff3341a14ac552b054eb4d96bf916241"></a>
+<a class="anchor" id="a32586eb66742796cfb267611ea4fcb30"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IP_ECT1&#160;&#160;&#160;1</td>
+          <td class="memname">#define IP_ECN_ECT_0&#160;&#160;&#160;0x02</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>ECN ECT(1) codepoint. </p>
+<p>ECN capable packet. </p>
+
+</div>
+</div>
+<a class="anchor" id="aecc03108ddb47a05ac1b0afe7d6036c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IP_ECN_ECT_1&#160;&#160;&#160;0x01</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ECN capable packet. </p>
+
+</div>
+</div>
+<a class="anchor" id="abb71ab89136a7e9fea0ba21cd038fb85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IP_ECN_MASK&#160;&#160;&#160;0x03</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mask of ECN bits. </p>
+
+</div>
+</div>
+<a class="anchor" id="a193fbc11d8db840630152c945be8072a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define IP_ECN_NOT_ECT&#160;&#160;&#160;0x00</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>ECN was not enabled. </p>
 
 </div>
 </div>
@@ -430,13 +464,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
 <div class="line">        (ip)-&gt;vhl = (4 &lt;&lt; 4) + 5;                                              \</div>
+<div class="line">        (ip)-&gt;tos = <a class="code" href="ip_8h.html#a32586eb66742796cfb267611ea4fcb30">IP_ECN_ECT_0</a>;                                              \</div>
 <div class="line">        (ip)-&gt;off = htons(<a class="code" href="ip_8h.html#ae2473f4a88d141d5298f92a4335b714a">IP_DF</a>);                                              \</div>
 <div class="line">        (ip)-&gt;ttl = 64; <span class="comment">/* XXX this should be configurable */</span>                  \</div>
 <div class="line">        (ip)-&gt;p = <a class="code" href="ip_8h.html#a0a2d72ff4c961f5e8b58c40cc4e1987c">IP_P_UDP</a>;                                                    \</div>
 <div class="line">        (ip)-&gt;cksum = 0;                                                       \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
-<div class="ttc" id="ip_8h_html_ae2473f4a88d141d5298f92a4335b714a"><div class="ttname"><a href="ip_8h.html#ae2473f4a88d141d5298f92a4335b714a">IP_DF</a></div><div class="ttdeci">#define IP_DF</div><div class="ttdoc">&quot;Don&#39;t fragment&quot; flag. </div><div class="ttdef"><b>Definition:</b> ip.h:50</div></div>
-<div class="ttc" id="ip_8h_html_a0a2d72ff4c961f5e8b58c40cc4e1987c"><div class="ttname"><a href="ip_8h.html#a0a2d72ff4c961f5e8b58c40cc4e1987c">IP_P_UDP</a></div><div class="ttdeci">#define IP_P_UDP</div><div class="ttdoc">IP protocol number for UDP. </div><div class="ttdef"><b>Definition:</b> ip.h:81</div></div>
+<div class="ttc" id="ip_8h_html_ae2473f4a88d141d5298f92a4335b714a"><div class="ttname"><a href="ip_8h.html#ae2473f4a88d141d5298f92a4335b714a">IP_DF</a></div><div class="ttdeci">#define IP_DF</div><div class="ttdoc">&quot;Don&#39;t fragment&quot; flag. </div><div class="ttdef"><b>Definition:</b> ip.h:51</div></div>
+<div class="ttc" id="ip_8h_html_a0a2d72ff4c961f5e8b58c40cc4e1987c"><div class="ttname"><a href="ip_8h.html#a0a2d72ff4c961f5e8b58c40cc4e1987c">IP_P_UDP</a></div><div class="ttdeci">#define IP_P_UDP</div><div class="ttdoc">IP protocol number for UDP. </div><div class="ttdef"><b>Definition:</b> ip.h:82</div></div>
+<div class="ttc" id="ip_8h_html_a32586eb66742796cfb267611ea4fcb30"><div class="ttname"><a href="ip_8h.html#a32586eb66742796cfb267611ea4fcb30">IP_ECN_ECT_0</a></div><div class="ttdeci">#define IP_ECN_ECT_0</div><div class="ttdoc">ECN capable packet. </div><div class="ttdef"><b>Definition:</b> ip.h:45</div></div>
 </div><!-- fragment -->
 <p>Initialize the static fields in an IPv4 <a class="el" href="structip__hdr.html" title="An IPv4 header representation; see RFC791 ">ip_hdr</a> header. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -487,12 +523,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad059798b16d1f615b5af8770175121ba"></a>
+<a class="anchor" id="ae5c661166f9c4edb4f9b429fa662b36f"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define IP_OFFMASK&#160;&#160;&#160;0x1fff</td>
+          <td class="memname">#define IP_OFF_MASK&#160;&#160;&#160;0x1fff</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -799,7 +835,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 24 2017 13:33:37 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Nov 29 2017 15:00:03 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

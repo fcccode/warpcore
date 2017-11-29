@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['send_5fsize',['SEND_SIZE',['../backend__sock_8c.html#ad34adfbba8705e64a0b1805377a84220',1,'backend_sock.c']]],
   ['sl_5fclass_5fentry',['sl_class_entry',['../queue_8h.html#a51fb72928f861942f3f197af33c0574a',1,'queue.h']]],
   ['sl_5fclass_5fhead',['sl_class_head',['../queue_8h.html#a26c3143fe2c592bbfc8ea6e9de68ca90',1,'queue.h']]],
   ['sl_5fconcat',['sl_concat',['../queue_8h.html#a05db86d74632d1a81a59c487ebfef9cd',1,'queue.h']]],
