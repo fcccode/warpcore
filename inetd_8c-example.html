@@ -108,7 +108,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="comment">// POSSIBILITY OF SUCH DAMAGE.</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#include &lt;arpa/inet.h&gt;</span></div>
-<div class="line"><span class="preprocessor">#include &lt;getopt.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;signal.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdbool.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;stdint.h&gt;</span></div>
@@ -116,6 +115,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;sys/param.h&gt;</span></div>
 <div class="line"><span class="preprocessor">#include &lt;time.h&gt;</span></div>
+<div class="line"><span class="preprocessor">#include &lt;unistd.h&gt;</span></div>
 <div class="line"></div>
 <div class="line"><span class="preprocessor">#include &lt;<a class="code" href="warpcore_8h.html">warpcore/warpcore.h</a>&gt;</span></div>
 <div class="line"></div>
@@ -167,14 +167,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"></div>
 <div class="line">    <span class="comment">// handle arguments</span></div>
 <div class="line">    <span class="keywordtype">int</span> ch;</div>
-<div class="line">    <span class="keywordflow">while</span> ((ch = getopt(argc, argv,</div>
-<div class="line">                        <span class="stringliteral">&quot;hi:bzn:&quot;</span></div>
-<div class="line">#ifndef NDEBUG</div>
-<div class="line">                        <span class="stringliteral">&quot;v:&quot;</span></div>
-<div class="line">#endif</div>
-<div class="line"></div>
-<div class="line">                        )) != -1) {</div>
-<div class="line">        <span class="keywordflow">switch</span> (ch) {</div>
+<div class="line"><span class="preprocessor">#ifndef NDEBUG</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hi:bzn:v:&quot;</span>)) != -1) {</div>
+<div class="line"><span class="preprocessor">#else</span></div>
+<div class="line"><span class="preprocessor"></span>    <span class="keywordflow">while</span> ((ch = getopt(argc, argv, <span class="stringliteral">&quot;hi:bzn:&quot;</span>)) != -1) {</div>
+<div class="line"><span class="preprocessor">#endif</span></div>
+<div class="line"><span class="preprocessor"></span>        <span class="keywordflow">switch</span> (ch) {</div>
 <div class="line">        <span class="keywordflow">case</span> <span class="charliteral">&#39;i&#39;</span>:</div>
 <div class="line">            ifname = optarg;</div>
 <div class="line">            <span class="keywordflow">break</span>;</div>
@@ -329,7 +327,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --> </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 1 2017 09:01:46 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 1 2017 13:05:02 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
