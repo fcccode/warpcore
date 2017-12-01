@@ -153,7 +153,7 @@ Parsing code for file src/eth.c...
 Generating code for file src/eth.h...
 Parsing code for fil/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:111: warning: explicit link request to 'dlevel' could not be resolved
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:68: warning: argument 'fmt' of command @param is not found in the argument list of die(...)
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:201: warning: argument 'fmt' of command @param is not found in the argument list of ensure(e,...)
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:205: warning: argument 'fmt' of command @param is not found in the argument list of ensure(e,...)
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:155: warning: explicit link request to 'dlevel' could not be resolved
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:155: warning: argument 'fmt' of command @param is not found in the argument list of rwarn(dlevel, lps,...)
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:131: warning: explicit link request to 'dlevel' could not be resolved
@@ -457,5 +457,5 @@ Patching output file 35/38
 Patching output file 36/38
 Patching output file 37/38
 Patching output file 38/38
-lookup cache used 610/65536 hits=3741 misses=622
+lookup cache used 609/65536 hits=3740 misses=621
 finished...
