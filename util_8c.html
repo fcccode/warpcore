@@ -96,6 +96,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#include &lt;ctype.h&gt;</code><br/>
 <code>#include &lt;errno.h&gt;</code><br/>
 <code>#include &lt;stdarg.h&gt;</code><br/>
+<code>#include &lt;stdbool.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
 <code>#include &lt;stdio.h&gt;</code><br/>
 <code>#include &lt;stdlib.h&gt;</code><br/>
@@ -108,7 +109,7 @@ Include dependency graph for util.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="util_8c__incl.png" border="0" usemap="#src_2util_8c" alt=""/></div>
 <map name="src_2util_8c" id="src_2util_8c">
-<area shape="rect" id="node11" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="614,80,756,107"/><area shape="rect" id="node12" href="config_8h.html" title="warpcore/config.h" alt="" coords="517,155,643,181"/><area shape="rect" id="node13" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="1054,155,1164,181"/><area shape="rect" id="node15" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="667,155,792,181"/><area shape="rect" id="node16" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="816,155,927,181"/><area shape="rect" id="node17" href="util_8h.html" title="warpcore/util.h" alt="" coords="387,155,493,181"/></map>
+<area shape="rect" id="node12" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="629,80,771,107"/><area shape="rect" id="node13" href="config_8h.html" title="warpcore/config.h" alt="" coords="776,155,901,181"/><area shape="rect" id="node14" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="590,155,700,181"/><area shape="rect" id="node15" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="925,155,1051,181"/><area shape="rect" id="node16" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="1075,155,1185,181"/><area shape="rect" id="node17" href="util_8h.html" title="warpcore/util.h" alt="" coords="408,155,515,181"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -174,10 +175,10 @@ Functions</h2></td></tr>
 <tr class="separator:a7231b8f0252e60cce4c383e16304544d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a887187f8f71a200c99c63237ed3e3fd5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a887187f8f71a200c99c63237ed3e3fd5">util_die</a> (const char *const func, const char *const file, const unsigned line,...)</td></tr>
 <tr class="separator:a887187f8f71a200c99c63237ed3e3fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71b1054e1888e2ce1b9ae9aab5c5644d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a71b1054e1888e2ce1b9ae9aab5c5644d">util_warn_valist</a> (const unsigned dlevel, const char *const func, const char *const file, const unsigned line, va_list ap)</td></tr>
-<tr class="separator:a71b1054e1888e2ce1b9ae9aab5c5644d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ab3816283166679f53fa95cf7ea6f50"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a6ab3816283166679f53fa95cf7ea6f50">util_warn</a> (const unsigned dlevel, const char *const func, const char *const file, const unsigned line,...)</td></tr>
-<tr class="separator:a6ab3816283166679f53fa95cf7ea6f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34a00cf0413209a01e5eb58efa9b20c8"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a34a00cf0413209a01e5eb58efa9b20c8">util_warn_valist</a> (const unsigned dlevel, const bool tstamp, const char *const func, const char *const file, const unsigned line, va_list ap)</td></tr>
+<tr class="separator:a34a00cf0413209a01e5eb58efa9b20c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3b7cb5fda40549bb1310d1e5611c9c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#ae3b7cb5fda40549bb1310d1e5611c9c6">util_warn</a> (const unsigned dlevel, const bool tstamp, const char *const func, const char *const file, const unsigned line,...)</td></tr>
+<tr class="separator:ae3b7cb5fda40549bb1310d1e5611c9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d77449cd1566cf29f0ca3565dbe2ee8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a3d77449cd1566cf29f0ca3565dbe2ee8">util_rwarn</a> (const unsigned dlevel, const unsigned lps, const char *const func, const char *const file, const unsigned line,...)</td></tr>
 <tr class="separator:a3d77449cd1566cf29f0ca3565dbe2ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ccec5f8d7fa48c4b4c214feba13a8d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8c.html#a8ccec5f8d7fa48c4b4c214feba13a8d3">util_hexdump</a> (const void *const ptr, const size_t len, const char *const ptr_name, const char *const func, const char *const file, const unsigned line)</td></tr>
@@ -633,13 +634,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="util_8c_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph.png" border="0" usemap="#util_8c_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph" alt=""/></div>
 <map name="util_8c_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph" id="util_8c_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph">
-<area shape="rect" id="node2" href="util_8c.html#a71b1054e1888e2ce1b9ae9aab5c5644d" title="util_warn_valist" alt="" coords="133,5,245,32"/></map>
+<area shape="rect" id="node2" href="util_8c.html#a34a00cf0413209a01e5eb58efa9b20c8" title="util_warn_valist" alt="" coords="133,5,245,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a6ab3816283166679f53fa95cf7ea6f50"></a>
+<a class="anchor" id="ae3b7cb5fda40549bb1310d1e5611c9c6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -648,6 +649,12 @@ Here is the call graph for this function:</div>
           <td>(</td>
           <td class="paramtype">const unsigned&#160;</td>
           <td class="paramname"><em>dlevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>tstamp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -684,15 +691,15 @@ Here is the call graph for this function:</div>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="util_8c_a6ab3816283166679f53fa95cf7ea6f50_cgraph.png" border="0" usemap="#util_8c_a6ab3816283166679f53fa95cf7ea6f50_cgraph" alt=""/></div>
-<map name="util_8c_a6ab3816283166679f53fa95cf7ea6f50_cgraph" id="util_8c_a6ab3816283166679f53fa95cf7ea6f50_cgraph">
-<area shape="rect" id="node2" href="util_8c.html#a71b1054e1888e2ce1b9ae9aab5c5644d" title="util_warn_valist" alt="" coords="128,5,240,32"/></map>
+<div class="center"><img src="util_8c_ae3b7cb5fda40549bb1310d1e5611c9c6_cgraph.png" border="0" usemap="#util_8c_ae3b7cb5fda40549bb1310d1e5611c9c6_cgraph" alt=""/></div>
+<map name="util_8c_ae3b7cb5fda40549bb1310d1e5611c9c6_cgraph" id="util_8c_ae3b7cb5fda40549bb1310d1e5611c9c6_cgraph">
+<area shape="rect" id="node2" href="util_8c.html#a34a00cf0413209a01e5eb58efa9b20c8" title="util_warn_valist" alt="" coords="128,5,240,32"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a71b1054e1888e2ce1b9ae9aab5c5644d"></a>
+<a class="anchor" id="a34a00cf0413209a01e5eb58efa9b20c8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -704,6 +711,12 @@ Here is the call graph for this function:</div>
           <td>(</td>
           <td class="paramtype">const unsigned&#160;</td>
           <td class="paramname"><em>dlevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>tstamp</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -785,7 +798,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 30 2017 06:42:41 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Dec 1 2017 08:16:00 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

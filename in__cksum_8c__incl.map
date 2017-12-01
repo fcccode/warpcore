@@ -1,10 +1,10 @@
 <map id="src/in_cksum.c" name="src/in_cksum.c">
-<area shape="rect" id="node3" href="$ip_8h.html" title="ip.h" alt="" coords="929,80,972,107"/>
-<area shape="rect" id="node6" href="$eth_8h.html" title="eth.h" alt="" coords="747,155,797,181"/>
-<area shape="rect" id="node8" href="$warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="601,229,743,256"/>
-<area shape="rect" id="node10" href="$config_8h.html" title="warpcore/config.h" alt="" coords="816,304,941,331"/>
-<area shape="rect" id="node11" href="$plat_8h.html" title="warpcore/plat.h" alt="" coords="238,304,348,331"/>
-<area shape="rect" id="node13" href="$queue_8h.html" title="warpcore/queue.h" alt="" coords="373,304,499,331"/>
-<area shape="rect" id="node14" href="$tree_8h.html" title="warpcore/tree.h" alt="" coords="523,304,633,331"/>
-<area shape="rect" id="node15" href="$util_8h.html" title="warpcore/util.h" alt="" coords="107,304,213,331"/>
+<area shape="rect" id="node3" href="$ip_8h.html" title="ip.h" alt="" coords="464,80,507,107"/>
+<area shape="rect" id="node6" href="$eth_8h.html" title="eth.h" alt="" coords="460,155,511,181"/>
+<area shape="rect" id="node8" href="$warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="414,229,556,256"/>
+<area shape="rect" id="node10" href="$config_8h.html" title="warpcore/config.h" alt="" coords="793,304,919,331"/>
+<area shape="rect" id="node11" href="$plat_8h.html" title="warpcore/plat.h" alt="" coords="215,304,325,331"/>
+<area shape="rect" id="node13" href="$queue_8h.html" title="warpcore/queue.h" alt="" coords="351,304,476,331"/>
+<area shape="rect" id="node14" href="$tree_8h.html" title="warpcore/tree.h" alt="" coords="500,304,611,331"/>
+<area shape="rect" id="node15" href="$util_8h.html" title="warpcore/util.h" alt="" coords="84,304,191,331"/>
 </map>
