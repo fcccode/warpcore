@@ -104,6 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;sys/param.h&gt;</code><br/>
 <code>#include &lt;sys/socket.h&gt;</code><br/>
+<code>#include &lt;sys/time.h&gt;</code><br/>
 <code>#include &lt;unistd.h&gt;</code><br/>
 <code>#include &lt;<a class="el" href="warpcore_8h_source.html">warpcore/warpcore.h</a>&gt;</code><br/>
 <code>#include &lt;netinet/if_ether.h&gt;</code><br/>
@@ -116,7 +117,7 @@ Include dependency graph for warpcore.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="warpcore_8c__incl.png" border="0" usemap="#src_2warpcore_8c" alt=""/></div>
 <map name="src_2warpcore_8c" id="src_2warpcore_8c">
-<area shape="rect" id="node14" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="829,304,971,331"/><area shape="rect" id="node23" href="backend_8h.html" title="backend.h" alt="" coords="1264,80,1345,107"/><area shape="rect" id="node25" href="eth_8h.html" title="eth.h" alt="" coords="1225,229,1276,256"/><area shape="rect" id="node26" href="ip_8h.html" title="ip.h" alt="" coords="1341,155,1384,181"/><area shape="rect" id="node27" href="udp_8h.html" title="udp.h" alt="" coords="1491,155,1545,181"/><area shape="rect" id="node16" href="config_8h.html" title="warpcore/config.h" alt="" coords="968,379,1093,405"/><area shape="rect" id="node17" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="441,379,551,405"/><area shape="rect" id="node18" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="576,379,701,405"/><area shape="rect" id="node19" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="725,379,836,405"/><area shape="rect" id="node20" href="util_8h.html" title="warpcore/util.h" alt="" coords="208,379,315,405"/><area shape="rect" id="node24" href="arp_8h.html" title="arp.h" alt="" coords="937,229,988,256"/></map>
+<area shape="rect" id="node15" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="682,304,824,331"/><area shape="rect" id="node23" href="backend_8h.html" title="backend.h" alt="" coords="411,80,492,107"/><area shape="rect" id="node25" href="eth_8h.html" title="eth.h" alt="" coords="404,229,455,256"/><area shape="rect" id="node26" href="ip_8h.html" title="ip.h" alt="" coords="351,155,393,181"/><area shape="rect" id="node27" href="udp_8h.html" title="udp.h" alt="" coords="271,155,325,181"/><area shape="rect" id="node16" href="config_8h.html" title="warpcore/config.h" alt="" coords="691,379,816,405"/><area shape="rect" id="node17" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="990,379,1100,405"/><area shape="rect" id="node18" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="840,379,965,405"/><area shape="rect" id="node19" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="555,379,665,405"/><area shape="rect" id="node20" href="util_8h.html" title="warpcore/util.h" alt="" coords="1125,379,1232,405"/><area shape="rect" id="node24" href="arp_8h.html" title="arp.h" alt="" coords="620,229,671,256"/></map>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -718,7 +719,6 @@ Here is the call graph for this function:</div>
 
 <p>Initialize a warpcore engine on the given interface. </p>
 <p>Ethernet and IPv4 source addresses and related information, such as the netmask, are taken from the active OS configuration of the interface. A default router, however, needs to be specified with <code>rip</code>, if communication over a WAN is desired. <code>nbufs</code> controls how many packet buffers the engine will attempt to allocate.</p>
-<p>Since warpcore relies on random() to generate random values, the caller should also set an initial seed with srandom() or srandomdev(). Warpcore does not do this, to allow the application control over the seed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ifname</td><td>The OS name of the interface (e.g., "eth0"). </td></tr>
@@ -875,7 +875,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 6 2017 15:09:58 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 6 2017 15:26:55 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

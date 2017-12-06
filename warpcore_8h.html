@@ -1063,7 +1063,6 @@ Here is the call graph for this function:</div>
 
 <p>Initialize a warpcore engine on the given interface. </p>
 <p>Ethernet and IPv4 source addresses and related information, such as the netmask, are taken from the active OS configuration of the interface. A default router, however, needs to be specified with <code>rip</code>, if communication over a WAN is desired. <code>nbufs</code> controls how many packet buffers the engine will attempt to allocate.</p>
-<p>Since warpcore relies on random() to generate random values, the caller should also set an initial seed with srandom() or srandomdev(). Warpcore does not do this, to allow the application control over the seed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">ifname</td><td>The OS name of the interface (e.g., "eth0"). </td></tr>
@@ -1408,7 +1407,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 6 2017 15:09:57 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 6 2017 15:26:55 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
