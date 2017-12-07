@@ -237,11 +237,16 @@ Generating docs for file src/icmp.h...
 Generating call graph for function icmp_rx
 Generating call graph for function icmp_tx
 Generating docs for file src/in_cksum.c...
+Generating call graph for function csum_oc16_sse
 Generating call graph for function ip_cksum
+Generating call graph for function ip_cksum_sse
 Generating call graph for function udp_cksum
+Generating call graph for function udp_cksum_sse
 Generating docs for file src/in_cksum.h...
 Generating call graph for function ip_cksum
+Generating call graph for function ip_cksum_sse
 Generating call graph for function udp_cksum
+Generating call graph for function udp_cksum_sse
 Generating docs for file src/ip.c...
 Generating call graph for function ip_rx
 Generating call graph for function ip_tx
@@ -313,120 +318,125 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 33 parallel threads...
-Running dot for graph 1/114
-Running dot for graph 2/114
-Running dot for graph 3/114
-Running dot for graph 4/114
-Running dot for graph 5/114
-Running dot for graph 6/114
-Running dot for graph 7/114
-Running dot for graph 8/114
-Running dot for graph 9/114
-Running dot for graph 10/114
-Running dot for graph 11/114
-Running dot for graph 12/114
-Running dot for graph 13/114
-Running dot for graph 14/114
-Running dot for graph 15/114
-Running dot for graph 16/114
-Running dot for graph 17/114
-Running dot for graph 18/114
-Running dot for graph 19/114
-Running dot for graph 20/114
-Running dot for graph 21/114
-Running dot for graph 22/114
-Running dot for graph 23/114
-Running dot for graph 24/114
-Running dot for graph 25/114
-Running dot for graph 26/114
-Running dot for graph 27/114
-Running dot for graph 28/114
-Running dot for graph 29/114
-Running dot for graph 30/114
-Running dot for graph 31/114
-Running dot for graph 32/114
-Running dot for graph 33/114
-Running dot for graph 34/114
-Running dot for graph 35/114
-Running dot for graph 36/114
-Running dot for graph 37/114
-Running dot for graph 38/114
-Running dot for graph 39/114
-Running dot for graph 40/114
-Running dot for graph 41/114
-Running dot for graph 42/114
-Running dot for graph 43/114
-Running dot for graph 44/114
-Running dot for graph 45/114
-Running dot for graph 46/114
-Running dot for graph 47/114
-Running dot for graph 48/114
-Running dot for graph 49/114
-Running dot for graph 50/114
-Running dot for graph 51/114
-Running dot for graph 52/114
-Running dot for graph 53/114
-Running dot for graph 54/114
-Running dot for graph 55/114
-Running dot for graph 56/114
-Running dot for graph 57/114
-Running dot for graph 58/114
-Running dot for graph 59/114
-Running dot for graph 60/114
-Running dot for graph 61/114
-Running dot for graph 62/114
-Running dot for graph 63/114
-Running dot for graph 64/114
-Running dot for graph 65/114
-Running dot for graph 66/114
-Running dot for graph 67/114
-Running dot for graph 68/114
-Running dot for graph 69/114
-Running dot for graph 70/114
-Running dot for graph 71/114
-Running dot for graph 72/114
-Running dot for graph 73/114
-Running dot for graph 74/114
-Running dot for graph 75/114
-Running dot for graph 76/114
-Running dot for graph 77/114
-Running dot for graph 78/114
-Running dot for graph 79/114
-Running dot for graph 80/114
-Running dot for graph 81/114
-Running dot for graph 82/114
-Running dot for graph 83/114
-Running dot for graph 84/114
-Running dot for graph 85/114
-Running dot for graph 86/114
-Running dot for graph 87/114
-Running dot for graph 88/114
-Running dot for graph 89/114
-Running dot for graph 90/114
-Running dot for graph 91/114
-Running dot for graph 92/114
-Running dot for graph 93/114
-Running dot for graph 94/114
-Running dot for graph 95/114
-Running dot for graph 96/114
-Running dot for graph 97/114
-Running dot for graph 98/114
-Running dot for graph 99/114
-Running dot for graph 100/114
-Running dot for graph 101/114
-Running dot for graph 102/114
-Running dot for graph 103/114
-Running dot for graph 104/114
-Running dot for graph 105/114
-Running dot for graph 106/114
-Running dot for graph 107/114
-Running dot for graph 108/114
-Running dot for graph 109/114
-Running dot for graph 110/114
-Running dot for graph 111/114
-Running dot for graph 112/114
-Running dot for graph 113/114
-Running dot for graph 114/114
+Running dot for graph 1/119
+Running dot for graph 2/119
+Running dot for graph 3/119
+Running dot for graph 4/119
+Running dot for graph 5/119
+Running dot for graph 6/119
+Running dot for graph 7/119
+Running dot for graph 8/119
+Running dot for graph 9/119
+Running dot for graph 10/119
+Running dot for graph 11/119
+Running dot for graph 12/119
+Running dot for graph 13/119
+Running dot for graph 14/119
+Running dot for graph 15/119
+Running dot for graph 16/119
+Running dot for graph 17/119
+Running dot for graph 18/119
+Running dot for graph 19/119
+Running dot for graph 20/119
+Running dot for graph 21/119
+Running dot for graph 22/119
+Running dot for graph 23/119
+Running dot for graph 24/119
+Running dot for graph 25/119
+Running dot for graph 26/119
+Running dot for graph 27/119
+Running dot for graph 28/119
+Running dot for graph 29/119
+Running dot for graph 30/119
+Running dot for graph 31/119
+Running dot for graph 32/119
+Running dot for graph 33/119
+Running dot for graph 34/119
+Running dot for graph 35/119
+Running dot for graph 36/119
+Running dot for graph 37/119
+Running dot for graph 38/119
+Running dot for graph 39/119
+Running dot for graph 40/119
+Running dot for graph 41/119
+Running dot for graph 42/119
+Running dot for graph 43/119
+Running dot for graph 44/119
+Running dot for graph 45/119
+Running dot for graph 46/119
+Running dot for graph 47/119
+Running dot for graph 48/119
+Running dot for graph 49/119
+Running dot for graph 50/119
+Running dot for graph 51/119
+Running dot for graph 52/119
+Running dot for graph 53/119
+Running dot for graph 54/119
+Running dot for graph 55/119
+Running dot for graph 56/119
+Running dot for graph 57/119
+Running dot for graph 58/119
+Running dot for graph 59/119
+Running dot for graph 60/119
+Running dot for graph 61/119
+Running dot for graph 62/119
+Running dot for graph 63/119
+Running dot for graph 64/119
+Running dot for graph 65/119
+Running dot for graph 66/119
+Running dot for graph 67/119
+Running dot for graph 68/119
+Running dot for graph 69/119
+Running dot for graph 70/119
+Running dot for graph 71/119
+Running dot for graph 72/119
+Running dot for graph 73/119
+Running dot for graph 74/119
+Running dot for graph 75/119
+Running dot for graph 76/119
+Running dot for graph 77/119
+Running dot for graph 78/119
+Running dot for graph 79/119
+Running dot for graph 80/119
+Running dot for graph 81/119
+Running dot for graph 82/119
+Running dot for graph 83/119
+Running dot for graph 84/119
+Running dot for graph 85/119
+Running dot for graph 86/119
+Running dot for graph 87/119
+Running dot for graph 88/119
+Running dot for graph 89/119
+Running dot for graph 90/119
+Running dot for graph 91/119
+Running dot for graph 92/119
+Running dot for graph 93/119
+Running dot for graph 94/119
+Running dot for graph 95/119
+Running dot for graph 96/119
+Running dot for graph 97/119
+Running dot for graph 98/119
+Running dot for graph 99/119
+Running dot for graph 100/119
+Running dot for graph 101/119
+Running dot for graph 102/119
+Running dot for graph 103/119
+Running dot for graph 104/119
+Running dot for graph 105/119
+Running dot for graph 106/119
+Running dot for graph 107/119
+Running dot for graph 108/119
+Running dot for graph 109/119
+Running dot for graph 110/119
+Running dot for graph 111/119
+Running dot for graph 112/119
+Running dot for graph 113/119
+Running dot for graph 114/119
+Running dot for graph 115/119
+Running dot for graph 116/119
+Running dot for graph 117/119
+Running dot for graph 118/119
+Running dot for graph 119/119
 Patching output file 1/39
 Patching output file 2/39
 Patching output file 3/39
@@ -466,5 +476,5 @@ Patching output file 36/39
 Patching output file 37/39
 Patching output file 38/39
 Patching output file 39/39
-lookup cache used 594/65536 hits=3542 misses=606
+lookup cache used 603/65536 hits=3603 misses=615
 finished...

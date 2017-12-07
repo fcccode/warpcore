@@ -27,6 +27,7 @@ var searchData=
   ['ip_5fany',['IP_ANY',['../ip_8h.html#aff78e91b6eed5ac391a5de7b6e62311e',1,'ip.h']]],
   ['ip_5fbcast',['IP_BCAST',['../ip_8h.html#a814976cf8344ac1836f91343eec32009',1,'ip.h']]],
   ['ip_5fcksum',['ip_cksum',['../in__cksum_8c.html#a262ae86742cd94bef7aa644688a88816',1,'ip_cksum(const void *const buf, const uint16_t len):&#160;in_cksum.c'],['../in__cksum_8h.html#a262ae86742cd94bef7aa644688a88816',1,'ip_cksum(const void *const buf, const uint16_t len):&#160;in_cksum.c']]],
+  ['ip_5fcksum_5fsse',['ip_cksum_sse',['../in__cksum_8c.html#a3ec764fa830815a4794140e66521045d',1,'ip_cksum_sse(const void *const buf, const uint16_t len):&#160;in_cksum.c'],['../in__cksum_8h.html#a3ec764fa830815a4794140e66521045d',1,'ip_cksum_sse(const void *const buf, const uint16_t len):&#160;in_cksum.c']]],
   ['ip_5fdata',['ip_data',['../ip_8h.html#a8f1248a9be27c1b1c2faafbab19f6777',1,'ip.h']]],
   ['ip_5fdata_5flen',['ip_data_len',['../ip_8h.html#afb60bf11820e5c832711d8b354eb1e99',1,'ip.h']]],
   ['ip_5fdf',['IP_DF',['../ip_8h.html#ae2473f4a88d141d5298f92a4335b714a',1,'ip.h']]],

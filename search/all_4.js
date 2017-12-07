@@ -2,6 +2,7 @@ var searchData=
 [
   ['data',['data',['../structnm__ifreq.html#a61da0c20ca0c61107ffc17657f25ebd6',1,'nm_ifreq']]],
   ['dbg',['DBG',['../util_8h.html#a49606be7356624568932ec81c0d429f4',1,'util.h']]],
+  ['declare_5faligned',['DECLARE_ALIGNED',['../in__cksum_8c.html#a410e444674cb96c988f2e10804fe1b17',1,'DECLARE_ALIGNED():&#160;in_cksum.c'],['../in__cksum_8c.html#a3feec2cf912afcfcf942a750f6190da5',1,'DECLARE_ALIGNED(uint8_t crc_xmm_shift_tab[48], 16):&#160;in_cksum.c']]],
   ['die',['die',['../util_8h.html#a0b2164ee75646f16a7388a36e6800c35',1,'util.h']]],
   ['dir',['dir',['../structnetmap__ring.html#a56efa3d3188e04e44733858f9b0cf6a1',1,'netmap_ring']]],
   ['dlevel',['DLEVEL',['../util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe',1,'util.h']]],
