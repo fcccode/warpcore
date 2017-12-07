@@ -86,121 +86,100 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Data Structures</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">in_cksum.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &quot;<a class="el" href="in__cksum_8h_source.html">in_cksum.h</a>&quot;</code><br/>
 <code>#include &quot;<a class="el" href="ip_8h_source.html">ip.h</a>&quot;</code><br/>
+<code>#include &quot;<a class="el" href="udp_8h_source.html">udp.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for in_cksum.c:</div>
 <div class="dyncontent">
 <div class="center"><img src="in__cksum_8c__incl.png" border="0" usemap="#src_2in__cksum_8c" alt=""/></div>
 <map name="src_2in__cksum_8c" id="src_2in__cksum_8c">
-<area shape="rect" id="node3" href="ip_8h.html" title="ip.h" alt="" coords="464,80,507,107"/><area shape="rect" id="node6" href="eth_8h.html" title="eth.h" alt="" coords="460,155,511,181"/><area shape="rect" id="node8" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="414,229,556,256"/><area shape="rect" id="node10" href="config_8h.html" title="warpcore/config.h" alt="" coords="793,304,919,331"/><area shape="rect" id="node11" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="215,304,325,331"/><area shape="rect" id="node13" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="351,304,476,331"/><area shape="rect" id="node14" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="500,304,611,331"/><area shape="rect" id="node15" href="util_8h.html" title="warpcore/util.h" alt="" coords="84,304,191,331"/></map>
+<area shape="rect" id="node3" href="in__cksum_8h.html" title="in_cksum.h" alt="" coords="5,155,93,181"/><area shape="rect" id="node4" href="ip_8h.html" title="ip.h" alt="" coords="291,80,333,107"/><area shape="rect" id="node19" href="udp_8h.html" title="udp.h" alt="" coords="271,304,325,331"/><area shape="rect" id="node7" href="eth_8h.html" title="eth.h" alt="" coords="469,155,520,181"/><area shape="rect" id="node9" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="599,229,741,256"/><area shape="rect" id="node11" href="config_8h.html" title="warpcore/config.h" alt="" coords="929,304,1055,331"/><area shape="rect" id="node12" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="402,304,512,331"/><area shape="rect" id="node14" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="537,304,663,331"/><area shape="rect" id="node15" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="687,304,797,331"/><area shape="rect" id="node16" href="util_8h.html" title="warpcore/util.h" alt="" coords="1180,304,1287,331"/></map>
 </div>
 </div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Data Structures</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionl__util.html">l_util</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">union &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionq__util.html">q_util</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a41cdd9db6c664f0da02d5000ece8ef3d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8c.html#a41cdd9db6c664f0da02d5000ece8ef3d">ADDCARRY</a>(x)&#160;&#160;&#160;((x) &gt; 65535 ? (x) -= 65535 : (x))</td></tr>
-<tr class="separator:a41cdd9db6c664f0da02d5000ece8ef3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad35ca114885025735413c9aab6b4a3c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8c.html#ad35ca114885025735413c9aab6b4a3c6">REDUCE32</a></td></tr>
-<tr class="separator:ad35ca114885025735413c9aab6b4a3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a8020baadc05fa31dbb0cf86d01af0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8c.html#ac6a8020baadc05fa31dbb0cf86d01af0">REDUCE16</a></td></tr>
-<tr class="separator:ac6a8020baadc05fa31dbb0cf86d01af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a000a3a73811599e35c4d517d708d5880"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880">in_cksumdata</a> (const void *const buf, int len)</td></tr>
-<tr class="separator:a000a3a73811599e35c4d517d708d5880"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39e558260b696ca36c2a8af7b771b84a"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8c.html#a39e558260b696ca36c2a8af7b771b84a">in_pseudo</a> (const uint32_t a, const uint32_t b, const uint32_t c)</td></tr>
-<tr class="memdesc:a39e558260b696ca36c2a8af7b771b84a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute a pseudo checksum over three 32-bit values.  <a href="#a39e558260b696ca36c2a8af7b771b84a">More...</a><br/></td></tr>
-<tr class="separator:a39e558260b696ca36c2a8af7b771b84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d5fa0202a9ab96e38a5769d8c6177f2"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8c.html#a7d5fa0202a9ab96e38a5769d8c6177f2">in_cksum</a> (const void *const buf, const uint16_t len)</td></tr>
-<tr class="memdesc:a7d5fa0202a9ab96e38a5769d8c6177f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the Internet checksum over buffer <code>buf</code> of length <code>len</code>.  <a href="#a7d5fa0202a9ab96e38a5769d8c6177f2">More...</a><br/></td></tr>
-<tr class="separator:a7d5fa0202a9ab96e38a5769d8c6177f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a46c612d5573b5df801e382f763ed1b60"><td class="memItemLeft" align="right" valign="top">static const uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8c.html#a46c612d5573b5df801e382f763ed1b60">in_masks</a> []</td></tr>
-<tr class="separator:a46c612d5573b5df801e382f763ed1b60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9959119f21d17100032471e6c52d3de"><td class="memItemLeft" align="right" valign="top">static uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8c.html#ad9959119f21d17100032471e6c52d3de">csum_oc16</a> (const uint8_t *data, uint32_t data_len)</td></tr>
+<tr class="separator:ad9959119f21d17100032471e6c52d3de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ee8c766405745694128ec30e7c82f5a"><td class="memItemLeft" align="right" valign="top">static uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a">csum_oc16_reduce</a> (uint32_t sum)</td></tr>
+<tr class="separator:a7ee8c766405745694128ec30e7c82f5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a262ae86742cd94bef7aa644688a88816"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8c.html#a262ae86742cd94bef7aa644688a88816">ip_cksum</a> (const void *const buf, const uint16_t len)</td></tr>
+<tr class="memdesc:a262ae86742cd94bef7aa644688a88816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the Internet checksum over buffer <code>buf</code> of length <code>len</code>.  <a href="#a262ae86742cd94bef7aa644688a88816">More...</a><br/></td></tr>
+<tr class="separator:a262ae86742cd94bef7aa644688a88816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e6f82709d6d507e54fc9366d590917"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8c.html#aa2e6f82709d6d507e54fc9366d590917">udp_cksum</a> (const void *buf, uint16_t len)</td></tr>
+<tr class="separator:aa2e6f82709d6d507e54fc9366d590917"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a class="anchor" id="a41cdd9db6c664f0da02d5000ece8ef3d"></a>
+<h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="ad9959119f21d17100032471e6c52d3de"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">#define ADDCARRY</td>
+          <td class="memname">static uint32_t csum_oc16 </td>
           <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">x</td><td>)</td>
-          <td>&#160;&#160;&#160;((x) &gt; 65535 ? (x) -= 65535 : (x))</td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>data_len</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ac6a8020baadc05fa31dbb0cf86d01af0"></a>
+<a class="anchor" id="a7ee8c766405745694128ec30e7c82f5a"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">#define REDUCE16</td>
+          <td class="memname">static uint16_t csum_oc16_reduce </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>sum</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                          \</div>
-<div class="line">        q_util.q = sum;                                                        \</div>
-<div class="line">        l_util.l = <a class="code" href="unionq__util.html">q_util</a>.<a class="code" href="unionq__util.html#ac66bbb0473acb797d9c679b54681b829">s</a>[0] + <a class="code" href="unionq__util.html">q_util</a>.<a class="code" href="unionq__util.html#ac66bbb0473acb797d9c679b54681b829">s</a>[1] + <a class="code" href="unionq__util.html">q_util</a>.<a class="code" href="unionq__util.html#ac66bbb0473acb797d9c679b54681b829">s</a>[2] + <a class="code" href="unionq__util.html">q_util</a>.<a class="code" href="unionq__util.html#ac66bbb0473acb797d9c679b54681b829">s</a>[3];      \</div>
-<div class="line">        sum = <a class="code" href="unionl__util.html">l_util</a>.<a class="code" href="unionl__util.html#a953ae4f8543e052e4bc6c014bfd8e009">s</a>[0] + <a class="code" href="unionl__util.html">l_util</a>.<a class="code" href="unionl__util.html#a953ae4f8543e052e4bc6c014bfd8e009">s</a>[1];                                       <a class="code" href="in__cksum_8c.html#a41cdd9db6c664f0da02d5000ece8ef3d">\</a></div>
-<div class="line"><a class="code" href="in__cksum_8c.html#a41cdd9db6c664f0da02d5000ece8ef3d">        ADDCARRY</a>(sum);                                                         \</div>
-<div class="line">    }</div>
-<div class="ttc" id="unionl__util_html"><div class="ttname"><a href="unionl__util.html">l_util</a></div><div class="ttdef"><b>Definition:</b> in_cksum.c:82</div></div>
-<div class="ttc" id="unionq__util_html_ac66bbb0473acb797d9c679b54681b829"><div class="ttname"><a href="unionq__util.html#ac66bbb0473acb797d9c679b54681b829">q_util::s</a></div><div class="ttdeci">uint16_t s[4]</div><div class="ttdef"><b>Definition:</b> in_cksum.c:88</div></div>
-<div class="ttc" id="in__cksum_8c_html_a41cdd9db6c664f0da02d5000ece8ef3d"><div class="ttname"><a href="in__cksum_8c.html#a41cdd9db6c664f0da02d5000ece8ef3d">ADDCARRY</a></div><div class="ttdeci">#define ADDCARRY(x)</div><div class="ttdef"><b>Definition:</b> in_cksum.c:60</div></div>
-<div class="ttc" id="unionq__util_html"><div class="ttname"><a href="unionq__util.html">q_util</a></div><div class="ttdef"><b>Definition:</b> in_cksum.c:87</div></div>
-<div class="ttc" id="unionl__util_html_a953ae4f8543e052e4bc6c014bfd8e009"><div class="ttname"><a href="unionl__util.html#a953ae4f8543e052e4bc6c014bfd8e009">l_util::s</a></div><div class="ttdeci">uint16_t s[2]</div><div class="ttdef"><b>Definition:</b> in_cksum.c:83</div></div>
-</div><!-- fragment -->
+
 </div>
 </div>
-<a class="anchor" id="ad35ca114885025735413c9aab6b4a3c6"></a>
+<a class="anchor" id="a262ae86742cd94bef7aa644688a88816"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define REDUCE32</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">{                                                                          \</div>
-<div class="line">        q_util.q = sum;                                                        \</div>
-<div class="line">        sum = <a class="code" href="unionq__util.html">q_util</a>.<a class="code" href="unionq__util.html#ac66bbb0473acb797d9c679b54681b829">s</a>[0] + <a class="code" href="unionq__util.html">q_util</a>.<a class="code" href="unionq__util.html#ac66bbb0473acb797d9c679b54681b829">s</a>[1] + <a class="code" href="unionq__util.html">q_util</a>.<a class="code" href="unionq__util.html#ac66bbb0473acb797d9c679b54681b829">s</a>[2] + <a class="code" href="unionq__util.html">q_util</a>.<a class="code" href="unionq__util.html#ac66bbb0473acb797d9c679b54681b829">s</a>[3];           \</div>
-<div class="line">    }</div>
-<div class="ttc" id="unionq__util_html_ac66bbb0473acb797d9c679b54681b829"><div class="ttname"><a href="unionq__util.html#ac66bbb0473acb797d9c679b54681b829">q_util::s</a></div><div class="ttdeci">uint16_t s[4]</div><div class="ttdef"><b>Definition:</b> in_cksum.c:88</div></div>
-<div class="ttc" id="unionq__util_html"><div class="ttname"><a href="unionq__util.html">q_util</a></div><div class="ttdef"><b>Definition:</b> in_cksum.c:87</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a7d5fa0202a9ab96e38a5769d8c6177f2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t in_cksum </td>
+          <td class="memname">uint16_t ip_cksum </td>
           <td>(</td>
           <td class="paramtype">const void *const&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
@@ -233,31 +212,28 @@ Variables</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="in__cksum_8c_a7d5fa0202a9ab96e38a5769d8c6177f2_cgraph.png" border="0" usemap="#in__cksum_8c_a7d5fa0202a9ab96e38a5769d8c6177f2_cgraph" alt=""/></div>
-<map name="in__cksum_8c_a7d5fa0202a9ab96e38a5769d8c6177f2_cgraph" id="in__cksum_8c_a7d5fa0202a9ab96e38a5769d8c6177f2_cgraph">
-<area shape="rect" id="node2" href="in__cksum_8c.html#a000a3a73811599e35c4d517d708d5880" title="in_cksumdata" alt="" coords="134,5,237,32"/></map>
+<div class="center"><img src="in__cksum_8c_a262ae86742cd94bef7aa644688a88816_cgraph.png" border="0" usemap="#in__cksum_8c_a262ae86742cd94bef7aa644688a88816_cgraph" alt=""/></div>
+<map name="in__cksum_8c_a262ae86742cd94bef7aa644688a88816_cgraph" id="in__cksum_8c_a262ae86742cd94bef7aa644688a88816_cgraph">
+<area shape="rect" id="node2" href="in__cksum_8c.html#ad9959119f21d17100032471e6c52d3de" title="csum_oc16" alt="" coords="157,5,246,32"/><area shape="rect" id="node3" href="in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a" title="csum_oc16_reduce" alt="" coords="134,56,269,83"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a000a3a73811599e35c4d517d708d5880"></a>
+<a class="anchor" id="aa2e6f82709d6d507e54fc9366d590917"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static uint64_t in_cksumdata </td>
+          <td class="memname">uint16_t udp_cksum </td>
           <td>(</td>
-          <td class="paramtype">const void *const&#160;</td>
+          <td class="paramtype">const void *&#160;</td>
           <td class="paramname"><em>buf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>len</em>&#160;</td>
         </tr>
         <tr>
@@ -266,90 +242,23 @@ Here is the call graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="in__cksum_8c_aa2e6f82709d6d507e54fc9366d590917_cgraph.png" border="0" usemap="#in__cksum_8c_aa2e6f82709d6d507e54fc9366d590917_cgraph" alt=""/></div>
+<map name="in__cksum_8c_aa2e6f82709d6d507e54fc9366d590917_cgraph" id="in__cksum_8c_aa2e6f82709d6d507e54fc9366d590917_cgraph">
+<area shape="rect" id="node2" href="in__cksum_8c.html#ad9959119f21d17100032471e6c52d3de" title="csum_oc16" alt="" coords="167,5,257,32"/><area shape="rect" id="node3" href="in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a" title="csum_oc16_reduce" alt="" coords="145,56,279,83"/></map>
 </div>
-</div>
-<a class="anchor" id="a39e558260b696ca36c2a8af7b771b84a"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint16_t in_pseudo </td>
-          <td>(</td>
-          <td class="paramtype">const uint32_t&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint32_t&#160;</td>
-          <td class="paramname"><em>c</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+</p>
 
-<p>Compute a pseudo checksum over three 32-bit values. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">a</td><td>Value one. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">b</td><td>Value two. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">c</td><td>Value three.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Peudo checksum. </dd></dl>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a class="anchor" id="a46c612d5573b5df801e382f763ed1b60"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const uint32_t in_masks[]</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    </div>
-<div class="line">    0x00000000, 0x000000FF, 0x0000FFFF, 0x00FFFFFF, </div>
-<div class="line">    0x00000000, 0x0000FF00, 0x00FFFF00, 0xFFFFFF00, </div>
-<div class="line">    0x00000000, 0x00FF0000, 0xFFFF0000, 0xFFFF0000, </div>
-<div class="line">    0x00000000, 0xFF000000, 0xFF000000, 0xFF000000, </div>
-<div class="line">}</div>
-</div><!-- fragment -->
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 6 2017 15:27:41 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 7 2017 11:49:30 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

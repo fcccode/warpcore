@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['q',['q',['../unionq__util.html#a0acde6fbd3d0fcc8f344578f137004f6',1,'q_util']]],
-  ['q_5futil',['q_util',['../unionq__util.html',1,'']]],
   ['qmd_5fis_5ftrashed',['QMD_IS_TRASHED',['../queue_8h.html#ae28d21dad229fec35f66006913b223b7',1,'queue.h']]],
   ['qmd_5fsavelink',['QMD_SAVELINK',['../queue_8h.html#a96671a8f87ff87543b3b0b671a274a1c',1,'queue.h']]],
   ['qmd_5fsl_5fcheck_5fprevptr',['QMD_SL_CHECK_PREVPTR',['../queue_8h.html#a7f48f5324768ccc74acae42695d83616',1,'queue.h']]],

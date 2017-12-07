@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['addcarry',['ADDCARRY',['../in__cksum_8c.html#a41cdd9db6c664f0da02d5000ece8ef3d',1,'in_cksum.c']]],
   ['arp_2ec',['arp.c',['../arp_8c.html',1,'']]],
   ['arp_2eh',['arp.h',['../arp_8h.html',1,'']]],
   ['arp_5fcache_5fcmp',['arp_cache_cmp',['../arp_8c.html#a1136d8c81058f9bc4d8093d05dbffebd',1,'arp_cache_cmp(const struct arp_entry *const a, const struct arp_entry *const b):&#160;arp.c'],['../arp_8h.html#a1136d8c81058f9bc4d8093d05dbffebd',1,'arp_cache_cmp(const struct arp_entry *const a, const struct arp_entry *const b):&#160;arp.c']]],

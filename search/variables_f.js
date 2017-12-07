@@ -1,11 +1,6 @@
 var searchData=
 [
-  ['tail',['tail',['../structnetmap__ring.html#aaf077ab220816b275a48c154570ab1ee',1,'netmap_ring']]],
-  ['tha',['tha',['../structarp__hdr.html#a192105b01e4cc5ecc0a1deb716ae535a',1,'arp_hdr']]],
-  ['tos',['tos',['../structip__hdr.html#a16ba85b638f0f8d5cbd44ec49e658486',1,'ip_hdr']]],
-  ['tpa',['tpa',['../structarp__hdr.html#a7726cb8a97705c987b1cde312cf71c1d',1,'arp_hdr']]],
-  ['ts',['ts',['../structnetmap__ring.html#a92b1183e066bcd2fc65a16b8f5cd57ae',1,'netmap_ring']]],
-  ['ttl',['ttl',['../structip__hdr.html#aca4960340d0af5d81d63a7d5a83741b1',1,'ip_hdr']]],
-  ['tx_5fpending',['tx_pending',['../structw__iov__sq.html#ab9f873b767f2b85625cadd2cf8d17d8f',1,'w_iov_sq']]],
-  ['type',['type',['../structeth__hdr.html#ae58e97f701ce21c9cc0b065bbf2fc77c',1,'eth_hdr::type()'],['../structicmp__hdr.html#a4a1374ccda9dd6fc154cb83bc991ca61',1,'icmp_hdr::type()']]]
+  ['udp',['udp',['../structw__hdr.html#aeb1966e97b3b2d8f383f6d21eed93a42',1,'w_hdr']]],
+  ['util_5fdlevel',['util_dlevel',['../util_8h.html#ade0743d672f539b1615b3a5d3b79486b',1,'util_dlevel():&#160;util.c'],['../util_8c.html#ade0743d672f539b1615b3a5d3b79486b',1,'util_dlevel():&#160;util.c']]],
+  ['util_5fepoch',['util_epoch',['../util_8c.html#a200c5748e6cdf77d2369377d98e131e9',1,'util.c']]]
 ];

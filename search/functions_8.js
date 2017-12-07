@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['sl_5fentry',['sl_entry',['../structw__engine.html#af24d1311e806cd31c59255982c8f6edd',1,'w_engine::sl_entry()'],['../structw__sock.html#ac630e52730860c0a6f3e29597931d549',1,'w_sock::sl_entry()']]],
-  ['sl_5fhead',['sl_head',['../warpcore_8h.html#aef8c8261fc14f3b65fdcc5a297f30cc3',1,'sl_head(w_sock_slist, w_sock):&#160;warpcore.h'],['../backend_8h.html#a0343eca679aada91188621b5659c0c29',1,'sl_head(w_engines, w_engine) engines:&#160;backend.h']]],
-  ['splay_5fentry',['splay_entry',['../structw__sock.html#accd21d3c233ec7406d49645ef4b8c945',1,'w_sock::splay_entry()'],['../structarp__entry.html#aa1f2c64847895619669e7537e532e8c7',1,'arp_entry::splay_entry()']]],
-  ['splay_5fhead',['splay_head',['../warpcore_8h.html#aca0b58d946b5286725435eb6ec361c9d',1,'splay_head(sock, w_sock):&#160;warpcore.h'],['../arp_8h.html#ab06b22c6e2a1fd19fc881920cb45cc58',1,'splay_head(arp_cache, arp_entry):&#160;arp.h']]],
-  ['sq_5fentry',['sq_entry',['../structw__iov.html#a9da11b4de4cb105881cf19a0d60f54ee',1,'w_iov']]],
-  ['sq_5fhead',['sq_head',['../structw__iov__sq.html#a31573a13aab6c4da511a31ea2640f6d6',1,'w_iov_sq']]]
+  ['plat_5fget_5flink',['plat_get_link',['../plat_8h.html#a2f7eb56d857e3fc97476186dbf10d36b',1,'plat_get_link(const struct ifaddrs *const i):&#160;plat.c'],['../plat_8c.html#a84253d34fd3d0f7c55d4b319c4d2618b',1,'plat_get_link(const struct ifaddrs *i):&#160;plat.c']]],
+  ['plat_5fget_5fmac',['plat_get_mac',['../plat_8h.html#ac645a18d329f9204ceddb21bff751abd',1,'plat_get_mac(struct ether_addr *const mac, const struct ifaddrs *const i):&#160;plat.c'],['../plat_8c.html#ac645a18d329f9204ceddb21bff751abd',1,'plat_get_mac(struct ether_addr *const mac, const struct ifaddrs *const i):&#160;plat.c']]],
+  ['plat_5fget_5fmbps',['plat_get_mbps',['../plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168',1,'plat_get_mbps(const struct ifaddrs *const i):&#160;plat.c'],['../plat_8c.html#a5d7a687500042a6283402c4154bf453c',1,'plat_get_mbps(const struct ifaddrs *i):&#160;plat.c']]],
+  ['plat_5fget_5fmtu',['plat_get_mtu',['../plat_8h.html#aed8665163695e9a71d2d423f978c4b6a',1,'plat_get_mtu(const struct ifaddrs *const i):&#160;plat.c'],['../plat_8c.html#ababcbad22db97091f566216a5b2b849f',1,'plat_get_mtu(const struct ifaddrs *i):&#160;plat.c']]],
+  ['postmain',['postmain',['../util_8c.html#a7231b8f0252e60cce4c383e16304544d',1,'util.c']]],
+  ['premain',['premain',['../util_8c.html#a510a3ba7cf4242ea8da0fd5a52fc37f1',1,'util.c']]]
 ];

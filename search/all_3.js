@@ -5,5 +5,7 @@ var searchData=
   ['config_2ec',['config.c',['../config_8c.html',1,'']]],
   ['config_2eh',['config.h',['../config_8h.html',1,'']]],
   ['crt',['CRT',['../util_8h.html#a25339ce578c7247f4504cb5aefb0a2e8',1,'util.h']]],
+  ['csum_5foc16',['csum_oc16',['../in__cksum_8c.html#ad9959119f21d17100032471e6c52d3de',1,'in_cksum.c']]],
+  ['csum_5foc16_5freduce',['csum_oc16_reduce',['../in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a',1,'in_cksum.c']]],
   ['cur',['cur',['../structnetmap__ring.html#a116a2a487bf4b24a2f98b9e853139105',1,'netmap_ring']]]
 ];

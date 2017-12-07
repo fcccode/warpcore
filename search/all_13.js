@@ -3,6 +3,7 @@ var searchData=
   ['udp',['udp',['../structw__hdr.html#aeb1966e97b3b2d8f383f6d21eed93a42',1,'w_hdr']]],
   ['udp_2ec',['udp.c',['../udp_8c.html',1,'']]],
   ['udp_2eh',['udp.h',['../udp_8h.html',1,'']]],
+  ['udp_5fcksum',['udp_cksum',['../in__cksum_8c.html#aa2e6f82709d6d507e54fc9366d590917',1,'udp_cksum(const void *buf, uint16_t len):&#160;in_cksum.c'],['../in__cksum_8h.html#aa2e6f82709d6d507e54fc9366d590917',1,'udp_cksum(const void *buf, uint16_t len):&#160;in_cksum.c']]],
   ['udp_5fhdr',['udp_hdr',['../structudp__hdr.html',1,'']]],
   ['udp_5flog',['udp_log',['../udp_8c.html#a63761908e7cfd2d7c60d60b80c4bd9d4',1,'udp.c']]],
   ['udp_5frx',['udp_rx',['../udp_8c.html#a008e1d17237f152a0184c0c6b120a747',1,'udp_rx(struct w_engine *const w, struct netmap_ring *const r):&#160;udp.c'],['../udp_8h.html#a008e1d17237f152a0184c0c6b120a747',1,'udp_rx(struct w_engine *const w, struct netmap_ring *const r):&#160;udp.c']]],

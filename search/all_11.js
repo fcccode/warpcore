@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['s',['s',['../unionl__util.html#a953ae4f8543e052e4bc6c014bfd8e009',1,'l_util::s()'],['../unionq__util.html#ac66bbb0473acb797d9c679b54681b829',1,'q_util::s()']]],
   ['sem',['sem',['../structnetmap__ring.html#adfb2ffe7f091af3aa8d369e80de91691',1,'netmap_ring']]],
   ['send_5fsize',['SEND_SIZE',['../backend__sock_8c.html#ad34adfbba8705e64a0b1805377a84220',1,'backend_sock.c']]],
   ['seq',['seq',['../structicmp__hdr.html#a2909b8a0cbcb277ae403d40bf642d2c3',1,'icmp_hdr']]],
