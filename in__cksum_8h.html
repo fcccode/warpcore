@@ -114,6 +114,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a262ae86742cd94bef7aa644688a88816"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8h.html#a262ae86742cd94bef7aa644688a88816">ip_cksum</a> (const void *const buf, const uint16_t len)</td></tr>
 <tr class="memdesc:a262ae86742cd94bef7aa644688a88816"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the Internet checksum over buffer <code>buf</code> of length <code>len</code>.  <a href="#a262ae86742cd94bef7aa644688a88816">More...</a><br/></td></tr>
 <tr class="separator:a262ae86742cd94bef7aa644688a88816"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9187138c3b8bd5c8e75937d12c1a6439"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8h.html#a9187138c3b8bd5c8e75937d12c1a6439">ip_cksum_update32</a> (uint16_t old_check, uint32_t old_data, uint32_t new_data)</td></tr>
+<tr class="separator:a9187138c3b8bd5c8e75937d12c1a6439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af401376b5950061576c93dc1fad8056e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8h.html#af401376b5950061576c93dc1fad8056e">ip_cksum_update16</a> (uint16_t old_check, uint16_t old_data, uint16_t new_data)</td></tr>
+<tr class="separator:af401376b5950061576c93dc1fad8056e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91b5a9539546f7879e7f3183e8db41af"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8h.html#a91b5a9539546f7879e7f3183e8db41af">udp_cksum</a> (const void *const buf, const uint16_t len)</td></tr>
 <tr class="separator:a91b5a9539546f7879e7f3183e8db41af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec764fa830815a4794140e66521045d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="in__cksum_8h.html#a3ec764fa830815a4794140e66521045d">ip_cksum_sse</a> (const void *const buf, const uint16_t len)</td></tr>
@@ -203,6 +207,88 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="af401376b5950061576c93dc1fad8056e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ip_cksum_update16 </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>old_check</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>old_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>new_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="in__cksum_8h_af401376b5950061576c93dc1fad8056e_cgraph.png" border="0" usemap="#in__cksum_8h_af401376b5950061576c93dc1fad8056e_cgraph" alt=""/></div>
+<map name="in__cksum_8h_af401376b5950061576c93dc1fad8056e_cgraph" id="in__cksum_8h_af401376b5950061576c93dc1fad8056e_cgraph">
+<area shape="rect" id="node2" href="in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a" title="csum_oc16_reduce" alt="" coords="193,5,327,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9187138c3b8bd5c8e75937d12c1a6439"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t ip_cksum_update32 </td>
+          <td>(</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>old_check</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>old_data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>new_data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="in__cksum_8h_a9187138c3b8bd5c8e75937d12c1a6439_cgraph.png" border="0" usemap="#in__cksum_8h_a9187138c3b8bd5c8e75937d12c1a6439_cgraph" alt=""/></div>
+<map name="in__cksum_8h_a9187138c3b8bd5c8e75937d12c1a6439_cgraph" id="in__cksum_8h_a9187138c3b8bd5c8e75937d12c1a6439_cgraph">
+<area shape="rect" id="node2" href="in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a" title="csum_oc16_reduce" alt="" coords="193,5,327,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="a91b5a9539546f7879e7f3183e8db41af"></a>
 <div class="memitem">
 <div class="memproto">
@@ -278,7 +364,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Dec 19 2017 10:06:21 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 19 2017 12:45:23 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
