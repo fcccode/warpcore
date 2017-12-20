@@ -5,6 +5,6 @@
 <area shape="rect" id="node5" href="$plat_8h.html#ac97867bf57fe48eb27fa344a9efc6168" title="Return the link speed in Mb/s of network interface i. " alt="" coords="109,157,216,184"/>
 <area shape="rect" id="node6" href="$backend_8h.html#a1efe6c54e4e30260d1c2630726b98eb5" title="Initialize the warpcore netmap backend for engine w. " alt="" coords="115,208,210,235"/>
 <area shape="rect" id="node7" href="$arp_8c.html#a5857d8f27a0bcfa2b9dfe8308ac7befb" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="264,183,392,209"/>
-<area shape="rect" id="node9" href="$warpcore_8h.html#a61040d6a1057690cce90907f628a0e16" title="Return a random number. " alt="" coords="296,233,360,260"/>
+<area shape="rect" id="node9" href="$warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="296,233,360,260"/>
 <area shape="rect" id="node8" href="$arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="441,183,551,209"/>
 </map>

@@ -1,8 +1,12 @@
 <map id="include/net/netmap_user.h" name="include/net/netmap_user.h">
-<area shape="rect" id="node2" href="$arp_8c.html" title="src/arp.c" alt="" coords="5,96,77,123"/>
-<area shape="rect" id="node3" href="$backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="103,96,256,123"/>
-<area shape="rect" id="node4" href="$eth_8c.html" title="src/eth.c" alt="" coords="282,96,355,123"/>
-<area shape="rect" id="node5" href="$icmp_8c.html" title="src/icmp.c" alt="" coords="380,96,461,123"/>
-<area shape="rect" id="node6" href="$ip_8c.html" title="src/ip.c" alt="" coords="487,96,552,123"/>
-<area shape="rect" id="node7" href="$udp_8c.html" title="src/udp.c" alt="" coords="577,96,652,123"/>
+<area shape="rect" id="node2" href="$arp_8c.html" title="src/arp.c" alt="" coords="5,245,77,272"/>
+<area shape="rect" id="node3" href="$eth_8h.html" title="src/eth.h" alt="" coords="447,96,520,123"/>
+<area shape="rect" id="node5" href="$backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="103,245,256,272"/>
+<area shape="rect" id="node7" href="$icmp_8c.html" title="src/icmp.c" alt="" coords="679,245,760,272"/>
+<area shape="rect" id="node8" href="$ip_8c.html" title="src/ip.c" alt="" coords="786,245,851,272"/>
+<area shape="rect" id="node9" href="$udp_8c.html" title="src/udp.c" alt="" coords="282,245,357,272"/>
+<area shape="rect" id="node11" href="$eth_8c.html" title="src/eth.c" alt="" coords="669,171,741,197"/>
+<area shape="rect" id="node4" href="$backend_8h.html" title="src/backend.h" alt="" coords="388,171,492,197"/>
+<area shape="rect" id="node10" href="$warpcore_8c.html" title="src/warpcore.c" alt="" coords="546,245,653,272"/>
+<area shape="rect" id="node6" href="$backend__sock_8c.html" title="src/backend_sock.c" alt="" coords="383,245,521,272"/>
 </map>

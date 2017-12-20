@@ -1,10 +1,6 @@
 <map id="ip_tx" name="ip_tx">
-<area shape="rect" id="node2" href="$warpcore_8h.html#a61040d6a1057690cce90907f628a0e16" title="Return a random number. " alt="" coords="112,5,176,32"/>
+<area shape="rect" id="node2" href="$warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="112,5,176,32"/>
 <area shape="rect" id="node3" href="$in__cksum_8c.html#a262ae86742cd94bef7aa644688a88816" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="105,56,183,83"/>
-<area shape="rect" id="node6" href="$eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="115,132,173,159"/>
-<area shape="rect" id="node4" href="$in__cksum_8c.html#a551e74402a29ecbf7c3f09bcc26f77cd" title="csum_oc16" alt="" coords="255,5,345,32"/>
-<area shape="rect" id="node5" href="$in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a" title="csum_oc16_reduce" alt="" coords="233,56,367,83"/>
-<area shape="rect" id="node7" href="$netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75" title="nm_ring_space" alt="" coords="245,107,355,133"/>
-<area shape="rect" id="node8" href="$eth_8c.html#a84b1cdcdafabcab37d01ffff5a0e1938" title="ether_ntoa_r" alt="" coords="253,157,347,184"/>
-<area shape="rect" id="node9" href="$netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="250,208,350,235"/>
+<area shape="rect" id="node4" href="$in__cksum_8c.html#a551e74402a29ecbf7c3f09bcc26f77cd" title="csum_oc16" alt="" coords="255,31,345,57"/>
+<area shape="rect" id="node5" href="$in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a" title="csum_oc16_reduce" alt="" coords="233,81,367,108"/>
 </map>

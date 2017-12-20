@@ -94,23 +94,26 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;arpa/inet.h&gt;</code><br/>
+<code>#include &lt;<a class="el" href="netmap__user_8h_source.html">net/netmap_user.h</a>&gt;</code><br/>
 <code>#include &lt;netinet/if_ether.h&gt;</code><br/>
 <code>#include &lt;stdbool.h&gt;</code><br/>
 <code>#include &lt;stdint.h&gt;</code><br/>
+<code>#include &lt;string.h&gt;</code><br/>
+<code>#include &lt;sys/types.h&gt;</code><br/>
 <code>#include &lt;<a class="el" href="warpcore_8h_source.html">warpcore/warpcore.h</a>&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for eth.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="eth_8h__incl.png" border="0" usemap="#src_2eth_8h" alt=""/></div>
 <map name="src_2eth_8h" id="src_2eth_8h">
-<area shape="rect" id="node6" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="507,80,649,107"/><area shape="rect" id="node8" href="config_8h.html" title="warpcore/config.h" alt="" coords="833,155,959,181"/><area shape="rect" id="node9" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="591,155,701,181"/><area shape="rect" id="node11" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="305,155,431,181"/><area shape="rect" id="node12" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="455,155,565,181"/><area shape="rect" id="node13" href="util_8h.html" title="warpcore/util.h" alt="" coords="124,155,231,181"/></map>
+<area shape="rect" id="node3" href="netmap__user_8h.html" title="net/netmap_user.h" alt="" coords="287,80,416,107"/><area shape="rect" id="node13" href="warpcore_8h.html" title="warpcore/warpcore.h" alt="" coords="917,80,1059,107"/><area shape="rect" id="node8" href="netmap_8h.html" title="net/netmap.h" alt="" coords="303,155,401,181"/><area shape="rect" id="node15" href="config_8h.html" title="warpcore/config.h" alt="" coords="633,155,759,181"/><area shape="rect" id="node16" href="plat_8h.html" title="warpcore/plat.h" alt="" coords="1119,155,1229,181"/><area shape="rect" id="node18" href="queue_8h.html" title="warpcore/queue.h" alt="" coords="783,155,908,181"/><area shape="rect" id="node19" href="tree_8h.html" title="warpcore/tree.h" alt="" coords="932,155,1043,181"/><area shape="rect" id="node20" href="util_8h.html" title="warpcore/util.h" alt="" coords="1305,155,1412,181"/></map>
 </div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="eth_8h__dep__incl.png" border="0" usemap="#src_2eth_8hdep" alt=""/></div>
 <map name="src_2eth_8hdep" id="src_2eth_8hdep">
-<area shape="rect" id="node2" href="backend_8h.html" title="src/backend.h" alt="" coords="340,155,444,181"/><area shape="rect" id="node3" href="arp_8c.html" title="src/arp.c" alt="" coords="185,229,257,256"/><area shape="rect" id="node4" href="backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="5,229,159,256"/><area shape="rect" id="node6" href="eth_8c.html" title="src/eth.c" alt="" coords="282,229,355,256"/><area shape="rect" id="node7" href="icmp_8c.html" title="src/icmp.c" alt="" coords="883,229,964,256"/><area shape="rect" id="node8" href="ip_8c.html" title="src/ip.c" alt="" coords="543,229,608,256"/><area shape="rect" id="node9" href="udp_8c.html" title="src/udp.c" alt="" coords="782,229,857,256"/><area shape="rect" id="node10" href="warpcore_8c.html" title="src/warpcore.c" alt="" coords="650,229,757,256"/><area shape="rect" id="node11" href="ip_8h.html" title="src/ip.h" alt="" coords="474,80,539,107"/><area shape="rect" id="node5" href="backend__sock_8c.html" title="src/backend_sock.c" alt="" coords="380,229,519,256"/><area shape="rect" id="node12" href="in__cksum_8c.html" title="src/in_cksum.c" alt="" coords="570,155,680,181"/></map>
+<area shape="rect" id="node2" href="backend_8h.html" title="src/backend.h" alt="" coords="405,80,509,107"/><area shape="rect" id="node3" href="arp_8c.html" title="src/arp.c" alt="" coords="5,155,77,181"/><area shape="rect" id="node4" href="backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="103,155,256,181"/><area shape="rect" id="node6" href="icmp_8c.html" title="src/icmp.c" alt="" coords="281,155,363,181"/><area shape="rect" id="node7" href="ip_8c.html" title="src/ip.c" alt="" coords="551,155,616,181"/><area shape="rect" id="node8" href="udp_8c.html" title="src/udp.c" alt="" coords="641,155,716,181"/><area shape="rect" id="node9" href="warpcore_8c.html" title="src/warpcore.c" alt="" coords="741,155,848,181"/><area shape="rect" id="node10" href="eth_8c.html" title="src/eth.c" alt="" coords="686,80,759,107"/><area shape="rect" id="node5" href="backend__sock_8c.html" title="src/backend_sock.c" alt="" coords="388,155,527,181"/></map>
 </div>
 </div>
 <p><a href="eth_8h_source.html">Go to the source code of this file.</a></p>
@@ -142,9 +145,6 @@ Functions</h2></td></tr>
 <tr class="memitem:a3a977a1c4f0168c2b972ea837bbc9b9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#a3a977a1c4f0168c2b972ea837bbc9b9e">eth_rx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structnetmap__ring.html">netmap_ring</a> *const r)</td></tr>
 <tr class="memdesc:a3a977a1c4f0168c2b972ea837bbc9b9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receive an Ethernet frame.  <a href="#a3a977a1c4f0168c2b972ea837bbc9b9e">More...</a><br/></td></tr>
 <tr class="separator:a3a977a1c4f0168c2b972ea837bbc9b9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a44a575864f7d958ad2ecde089144c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#a6a44a575864f7d958ad2ecde089144c9">eth_tx</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, struct <a class="el" href="structw__iov.html">w_iov</a> *const v, const uint16_t len)</td></tr>
-<tr class="memdesc:a6a44a575864f7d958ad2ecde089144c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Places an Ethernet frame into a TX ring.  <a href="#a6a44a575864f7d958ad2ecde089144c9">More...</a><br/></td></tr>
-<tr class="separator:a6a44a575864f7d958ad2ecde089144c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84b1cdcdafabcab37d01ffff5a0e1938"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="eth_8h.html#a84b1cdcdafabcab37d01ffff5a0e1938">ether_ntoa_r</a> (const struct ether_addr *const addr, char *const buf)</td></tr>
 <tr class="separator:a84b1cdcdafabcab37d01ffff5a0e1938"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -255,60 +255,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="eth_8h_a3a977a1c4f0168c2b972ea837bbc9b9e_cgraph.png" border="0" usemap="#eth_8h_a3a977a1c4f0168c2b972ea837bbc9b9e_cgraph" alt=""/></div>
 <map name="eth_8h_a3a977a1c4f0168c2b972ea837bbc9b9e_cgraph" id="eth_8h_a3a977a1c4f0168c2b972ea837bbc9b9e_cgraph">
-<area shape="rect" id="node2" href="eth_8c.html#a84b1cdcdafabcab37d01ffff5a0e1938" title="ether_ntoa_r" alt="" coords="823,487,918,513"/><area shape="rect" id="node3" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="112,157,163,184"/><area shape="rect" id="node19" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="216,436,275,463"/><area shape="rect" id="node4" href="in__cksum_8c.html#a262ae86742cd94bef7aa644688a88816" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="670,157,749,184"/><area shape="rect" id="node7" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="215,56,276,83"/><area shape="rect" id="node10" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="358,208,426,235"/><area shape="rect" id="node18" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="211,157,279,184"/><area shape="rect" id="node5" href="in__cksum_8c.html#a551e74402a29ecbf7c3f09bcc26f77cd" title="csum_oc16" alt="" coords="826,157,915,184"/><area shape="rect" id="node6" href="in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a" title="csum_oc16_reduce" alt="" coords="803,107,938,133"/><area shape="rect" id="node8" href="in__cksum_8c.html#a91b5a9539546f7879e7f3183e8db41af" title="udp_cksum" alt="" coords="665,107,754,133"/><area shape="rect" id="node9" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="355,5,429,32"/><area shape="rect" id="node11" href="warpcore_8h.html#a9ef58000f78363a1127c6f5e1da38bb6" title="Return the maximum size a given w_iov may have for the given engine. " alt="" coords="504,208,616,235"/><area shape="rect" id="node12" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="535,309,585,336"/><area shape="rect" id="node17" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="523,360,597,387"/><area shape="rect" id="node13" href="warpcore_8h.html#a61040d6a1057690cce90907f628a0e16" title="Return a random number. " alt="" coords="677,309,741,336"/><area shape="rect" id="node14" href="eth_8c.html#a6a44a575864f7d958ad2ecde089144c9" title="Places an Ethernet frame into a TX ring. " alt="" coords="680,411,739,437"/><area shape="rect" id="node15" href="netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75" title="nm_ring_space" alt="" coords="815,411,926,437"/><area shape="rect" id="node16" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="821,360,921,387"/><area shape="rect" id="node20" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="355,411,429,437"/><area shape="rect" id="node21" href="arp_8c.html#a5857d8f27a0bcfa2b9dfe8308ac7befb" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="328,461,456,488"/><area shape="rect" id="node22" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="505,461,615,488"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a6a44a575864f7d958ad2ecde089144c9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool eth_tx </td>
-          <td>(</td>
-          <td class="paramtype">struct <a class="el" href="structw__engine.html">w_engine</a> *const&#160;</td>
-          <td class="paramname"><em>w</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">struct <a class="el" href="structw__iov.html">w_iov</a> *const&#160;</td>
-          <td class="paramname"><em>v</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const uint16_t&#160;</td>
-          <td class="paramname"><em>len</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Places an Ethernet frame into a TX ring. </p>
-<p>The Ethernet frame is contained in the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> <code>v</code>, and will be placed into an available slot in a TX ring or - if all are full - dropped.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
-    <tr><td class="paramdir"></td><td class="paramname">v</td><td>The <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> containing the Ethernet frame to transmit. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">len</td><td>The length of the Ethernet <em>payload</em> contained in <code>v</code>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>True if the buffer was placed into a TX ring, false otherwise. </dd></dl>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="eth_8h_a6a44a575864f7d958ad2ecde089144c9_cgraph.png" border="0" usemap="#eth_8h_a6a44a575864f7d958ad2ecde089144c9_cgraph" alt=""/></div>
-<map name="eth_8h_a6a44a575864f7d958ad2ecde089144c9_cgraph" id="eth_8h_a6a44a575864f7d958ad2ecde089144c9_cgraph">
-<area shape="rect" id="node2" href="netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75" title="nm_ring_space" alt="" coords="113,5,223,32"/><area shape="rect" id="node3" href="eth_8c.html#a84b1cdcdafabcab37d01ffff5a0e1938" title="ether_ntoa_r" alt="" coords="121,56,215,83"/><area shape="rect" id="node4" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="118,107,218,133"/></map>
+<area shape="rect" id="node2" href="eth_8c.html#a84b1cdcdafabcab37d01ffff5a0e1938" title="ether_ntoa_r" alt="" coords="113,5,207,32"/><area shape="rect" id="node3" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="135,233,185,260"/><area shape="rect" id="node17" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="131,56,189,83"/><area shape="rect" id="node4" href="in__cksum_8c.html#a262ae86742cd94bef7aa644688a88816" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="763,309,842,336"/><area shape="rect" id="node7" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="289,183,351,209"/><area shape="rect" id="node10" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="454,233,522,260"/><area shape="rect" id="node16" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="286,284,354,311"/><area shape="rect" id="node5" href="in__cksum_8c.html#a551e74402a29ecbf7c3f09bcc26f77cd" title="csum_oc16" alt="" coords="925,164,1014,191"/><area shape="rect" id="node6" href="in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a" title="csum_oc16_reduce" alt="" coords="902,247,1037,273"/><area shape="rect" id="node8" href="in__cksum_8c.html#a91b5a9539546f7879e7f3183e8db41af" title="udp_cksum" alt="" coords="758,132,847,159"/><area shape="rect" id="node9" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="451,183,525,209"/><area shape="rect" id="node11" href="warpcore_8h.html#a9ef58000f78363a1127c6f5e1da38bb6" title="Return the maximum size a given w_iov may have for the given engine. " alt="" coords="592,208,704,235"/><area shape="rect" id="node12" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="623,259,673,285"/><area shape="rect" id="node14" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="611,157,685,184"/><area shape="rect" id="node13" href="warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="771,259,835,285"/><area shape="rect" id="node15" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="753,183,853,209"/><area shape="rect" id="node18" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="451,56,525,83"/><area shape="rect" id="node19" href="arp_8c.html#a5857d8f27a0bcfa2b9dfe8308ac7befb" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="256,5,384,32"/><area shape="rect" id="node20" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="433,5,543,32"/></map>
 </div>
 </p>
 
@@ -375,7 +322,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 20 2017 09:14:09 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 20 2017 14:35:43 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
