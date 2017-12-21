@@ -165,12 +165,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="backend_8h.html">backend.h</a>&quot;</span> <span class="comment">// IWYU pragma: keep</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> __attribute__((nonnull))</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">bool</span> __attribute__((nonnull, always_inline))</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;eth_tx(struct <a class="code" href="structw__engine.html">w_engine</a> * const w, struct <a class="code" href="structw__iov.html">w_iov</a> * const v, const uint16_t len)</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;{</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// find a tx ring with space</span></div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keyword">struct </span><a class="code" href="structnetmap__ring.html">netmap_ring</a> * txr = 0;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">for</span> (uint32_t r = 0; r &lt; w-&gt;b-&gt;nif-&gt;ni_tx_rings; r++) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">for</span> (uint32_t r = 0; <a class="code" href="netmap__user_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a>(r &lt; w-&gt;b-&gt;nif-&gt;ni_tx_rings); r++) {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        txr = <a class="code" href="netmap__user_8h.html#a67fff76d48f2293e1f205c2cbf16ec78">NETMAP_TXRING</a>(w-&gt;b-&gt;nif, w-&gt;b-&gt;cur_txr);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="netmap__user_8h.html#a217a0bd562b98ae8c2ffce44935351e1">likely</a>(<a class="code" href="netmap__user_8h.html#a38619121dd90d4c35aceb58b61b17d75">nm_ring_space</a>(txr)))</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="comment">// we have space in this ring</span></div>
@@ -254,7 +254,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 20 2017 15:02:31 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 21 2017 15:24:18 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

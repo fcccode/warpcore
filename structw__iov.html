@@ -140,7 +140,7 @@ Data Fields</h2></td></tr>
 <p>It is mostly a pointer to the first UDP payload byte contained in a netmap packet buffer, together with some associated meta data.</p>
 <p>The meta data consists of the length of the payload data, the sender IPv4 address and port number, the DSCP and ECN bits associated with the IPv4 packet in which the payload arrived, and the netmap arrival timestamp.</p>
 <p>The <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structure also contains a pointer to the next I/O vector, which can be used to chain together longer data items for use with <a class="el" href="warpcore_8h.html#af21a4e848c9199be729d01d20b8eea3d" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> and <a class="el" href="warpcore_8h.html#ac4f053bd8ffef52d164823134d732f51" title="Loops over the w_iov structures in the w_iov_sq o, sending them all over w_sock s. ">w_tx()</a>. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a22">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a14">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a24">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a15">ping.c</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a9da11b4de4cb105881cf19a0d60f54ee"></a>
 <div class="memitem">
@@ -172,7 +172,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Start of payload data. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a24">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a16">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a25">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a17">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -230,7 +230,7 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Length of payload data. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a25">inetd.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a29">inetd.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -283,7 +283,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 20 2017 15:02:31 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 21 2017 15:24:21 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

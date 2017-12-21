@@ -152,7 +152,7 @@ Generating code for file src/backend.h...
 Parsing code for file src/backend_netmap.c...
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:111: warning: explicit link request to 'dlevel' could not be resolved
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:68: warning: argument 'fmt' of command @param is not found in the argument list of die(...)
-/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:205: warning: argument 'fmt' of command @param is not found in the argument list of ensure(e,...)
+/home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:210: warning: argument 'fmt' of command @param is not found in the argument list of ensure(e,...)
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:155: warning: explicit link request to 'dlevel' could not be resolved
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:155: warning: argument 'fmt' of command @param is not found in the argument list of rwarn(dlevel, lps,...)
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:131: warning: explicit link request to 'dlevel' could not be resolved
@@ -480,5 +480,5 @@ Patching output file 36/39
 Patching output file 37/39
 Patching output file 38/39
 Patching output file 39/39
-lookup cache used 606/65536 hits=3554 misses=618
+lookup cache used 606/65536 hits=3550 misses=618
 finished...

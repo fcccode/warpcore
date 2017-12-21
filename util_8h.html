@@ -94,6 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br/>
+<code>#include &lt;time.h&gt;</code><br/>
 <code>#include &lt;string.h&gt;</code><br/>
 <code>#include &lt;regex.h&gt;</code><br/>
 </div><div class="textblock"><div class="dynheader">
@@ -173,8 +174,8 @@ Functions</h2></td></tr>
 <tr class="separator:a887187f8f71a200c99c63237ed3e3fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3b7cb5fda40549bb1310d1e5611c9c6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ae3b7cb5fda40549bb1310d1e5611c9c6">util_warn</a> (const unsigned dlevel, const bool tstamp, const char *const func, const char *const file, const unsigned line,...)</td></tr>
 <tr class="separator:ae3b7cb5fda40549bb1310d1e5611c9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d77449cd1566cf29f0ca3565dbe2ee8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a3d77449cd1566cf29f0ca3565dbe2ee8">util_rwarn</a> (const unsigned dlevel, const unsigned lps, const char *const func, const char *const file, const unsigned line,...)</td></tr>
-<tr class="separator:a3d77449cd1566cf29f0ca3565dbe2ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac39a5e8f31f734141dd5d67a8e22285e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#ac39a5e8f31f734141dd5d67a8e22285e">util_rwarn</a> (time_t *const rt0, unsigned int *const rcnt, const unsigned dlevel, const unsigned lps, const char *const func, const char *const file, const unsigned line,...)</td></tr>
+<tr class="separator:ac39a5e8f31f734141dd5d67a8e22285e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ccec5f8d7fa48c4b4c214feba13a8d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="util_8h.html#a8ccec5f8d7fa48c4b4c214feba13a8d3">util_hexdump</a> (const void *const ptr, const size_t len, const char *const ptr_name, const char *const func, const char *const file, const unsigned line)</td></tr>
 <tr class="separator:a8ccec5f8d7fa48c4b4c214feba13a8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -238,7 +239,8 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Debug. </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a19">inetd.c</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a0b2164ee75646f16a7388a36e6800c35"></a>
@@ -263,7 +265,7 @@ Variables</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a29">inetd.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a30">inetd.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -325,7 +327,7 @@ Variables</h2></td></tr>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="util_8h_html_a0b2164ee75646f16a7388a36e6800c35"><div class="ttname"><a href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35">die</a></div><div class="ttdeci">#define die(...)</div><div class="ttdoc">Abort execution with a message. </div><div class="ttdef"><b>Definition:</b> util.h:72</div></div>
 <div class="ttc" id="util_8h_html_ac6c45889010c1bd68631771b64f18101"><div class="ttname"><a href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></div><div class="ttdeci">#define unlikely(x)</div><div class="ttdef"><b>Definition:</b> util.h:59</div></div>
-<div class="ttc" id="util_8h_html_ae87fafc79d9317d688dc63fd3d0c805d"><div class="ttname"><a href="util_8h.html#ae87fafc79d9317d688dc63fd3d0c805d">DTHREAD_GAP</a></div><div class="ttdeci">#define DTHREAD_GAP</div><div class="ttdef"><b>Definition:</b> util.h:199</div></div>
+<div class="ttc" id="util_8h_html_ae87fafc79d9317d688dc63fd3d0c805d"><div class="ttname"><a href="util_8h.html#ae87fafc79d9317d688dc63fd3d0c805d">DTHREAD_GAP</a></div><div class="ttdeci">#define DTHREAD_GAP</div><div class="ttdef"><b>Definition:</b> util.h:204</div></div>
 </div><!-- fragment -->
 <p>A version of the C assert() macro that isn't disabled by NDEBUG and that ties in with <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, <a class="el" href="util_8h.html#a0b2164ee75646f16a7388a36e6800c35" title="Abort execution with a message. ">die()</a> and our other debug functions. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -401,7 +403,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Informational. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#a19">inetd.c</a>, and <a class="el" href="ping_8c-example.html#a22">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="ping_8c-example.html#a22">ping.c</a>.</dd>
 </dl>
 </div>
 </div>
@@ -491,15 +493,17 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                       \</div>
-<div class="line">        if (<a class="code" href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a>(<a class="code" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a> &gt;= dlevel &amp;&amp; <a class="code" href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a> &gt;= dlevel)) {             <a class="code" href="util_8h.html#a3d77449cd1566cf29f0ca3565dbe2ee8">\</a></div>
-<div class="line"><a class="code" href="util_8h.html#a3d77449cd1566cf29f0ca3565dbe2ee8">            util_rwarn</a>(dlevel, lps, __func__, __FILE__, __LINE__,              \</div>
-<div class="line">                       __VA_ARGS__);                                           \</div>
+<div class="line">        if (<a class="code" href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a>(<a class="code" href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a> &gt;= dlevel &amp;&amp; <a class="code" href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a> &gt;= dlevel)) {             \</div>
+<div class="line">            static time_t __rt0;                                               \</div>
+<div class="line">            unsigned <span class="keywordtype">int</span> __rcnt;                                               <a class="code" href="util_8h.html#ac39a5e8f31f734141dd5d67a8e22285e">\</a></div>
+<div class="line"><a class="code" href="util_8h.html#ac39a5e8f31f734141dd5d67a8e22285e">            util_rwarn</a>(&amp;__rt0, &amp;__rcnt, dlevel, lps, __func__, __FILE__,       \</div>
+<div class="line">                       __LINE__, __VA_ARGS__);                                 \</div>
 <div class="line">        }                                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="util_8h_html_a94c2776a2d1f9e44c3d327befe0d3bfe"><div class="ttname"><a href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></div><div class="ttdeci">#define DLEVEL</div><div class="ttdoc">Default debug level. </div><div class="ttdef"><b>Definition:</b> util.h:98</div></div>
+<div class="ttc" id="util_8h_html_ac39a5e8f31f734141dd5d67a8e22285e"><div class="ttname"><a href="util_8h.html#ac39a5e8f31f734141dd5d67a8e22285e">util_rwarn</a></div><div class="ttdeci">void util_rwarn(time_t *const rt0, unsigned int *const rcnt, const unsigned dlevel, const unsigned lps, const char *const func, const char *const file, const unsigned line,...)</div><div class="ttdef"><b>Definition:</b> util.c:297</div></div>
 <div class="ttc" id="util_8h_html_ac6c45889010c1bd68631771b64f18101"><div class="ttname"><a href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></div><div class="ttdeci">#define unlikely(x)</div><div class="ttdef"><b>Definition:</b> util.h:59</div></div>
-<div class="ttc" id="util_8h_html_ade0743d672f539b1615b3a5d3b79486b"><div class="ttname"><a href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a></div><div class="ttdeci">short util_dlevel</div><div class="ttdoc">Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime...</div><div class="ttdef"><b>Definition:</b> util.c:226</div></div>
-<div class="ttc" id="util_8h_html_a3d77449cd1566cf29f0ca3565dbe2ee8"><div class="ttname"><a href="util_8h.html#a3d77449cd1566cf29f0ca3565dbe2ee8">util_rwarn</a></div><div class="ttdeci">void util_rwarn(const unsigned dlevel, const unsigned lps, const char *const func, const char *const file, const unsigned line,...)</div><div class="ttdef"><b>Definition:</b> util.c:300</div></div>
+<div class="ttc" id="util_8h_html_ade0743d672f539b1615b3a5d3b79486b"><div class="ttname"><a href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a></div><div class="ttdeci">short util_dlevel</div><div class="ttdoc">Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime...</div><div class="ttdef"><b>Definition:</b> util.c:223</div></div>
 </div><!-- fragment -->
 <p>Rate-limited variant of <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, which repeats the message prints at most <code>lps</code> times. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -544,9 +548,9 @@ Variables</h2></td></tr>
 <div class="line">        }                                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="util_8h_html_a94c2776a2d1f9e44c3d327befe0d3bfe"><div class="ttname"><a href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></div><div class="ttdeci">#define DLEVEL</div><div class="ttdoc">Default debug level. </div><div class="ttdef"><b>Definition:</b> util.h:98</div></div>
-<div class="ttc" id="util_8h_html_ae3b7cb5fda40549bb1310d1e5611c9c6"><div class="ttname"><a href="util_8h.html#ae3b7cb5fda40549bb1310d1e5611c9c6">util_warn</a></div><div class="ttdeci">void util_warn(const unsigned dlevel, const bool tstamp, const char *const func, const char *const file, const unsigned line,...)</div><div class="ttdef"><b>Definition:</b> util.c:278</div></div>
+<div class="ttc" id="util_8h_html_ae3b7cb5fda40549bb1310d1e5611c9c6"><div class="ttname"><a href="util_8h.html#ae3b7cb5fda40549bb1310d1e5611c9c6">util_warn</a></div><div class="ttdeci">void util_warn(const unsigned dlevel, const bool tstamp, const char *const func, const char *const file, const unsigned line,...)</div><div class="ttdef"><b>Definition:</b> util.c:275</div></div>
 <div class="ttc" id="util_8h_html_ac6c45889010c1bd68631771b64f18101"><div class="ttname"><a href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></div><div class="ttdeci">#define unlikely(x)</div><div class="ttdef"><b>Definition:</b> util.h:59</div></div>
-<div class="ttc" id="util_8h_html_ade0743d672f539b1615b3a5d3b79486b"><div class="ttname"><a href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a></div><div class="ttdeci">short util_dlevel</div><div class="ttdoc">Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime...</div><div class="ttdef"><b>Definition:</b> util.c:226</div></div>
+<div class="ttc" id="util_8h_html_ade0743d672f539b1615b3a5d3b79486b"><div class="ttname"><a href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a></div><div class="ttdeci">short util_dlevel</div><div class="ttdoc">Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime...</div><div class="ttdef"><b>Definition:</b> util.c:223</div></div>
 </div><!-- fragment -->
 <p>Like <a class="el" href="util_8h.html#a75fb9e13fe5fdbdbf4f0b7f34d25a887" title="Print a debug message to stderr, including a black/white indicator whether the message comes from the...">warn()</a>, but always prints a timestamp. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -606,9 +610,9 @@ Variables</h2></td></tr>
 <div class="line">        }                                                                      \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="util_8h_html_a94c2776a2d1f9e44c3d327befe0d3bfe"><div class="ttname"><a href="util_8h.html#a94c2776a2d1f9e44c3d327befe0d3bfe">DLEVEL</a></div><div class="ttdeci">#define DLEVEL</div><div class="ttdoc">Default debug level. </div><div class="ttdef"><b>Definition:</b> util.h:98</div></div>
-<div class="ttc" id="util_8h_html_ae3b7cb5fda40549bb1310d1e5611c9c6"><div class="ttname"><a href="util_8h.html#ae3b7cb5fda40549bb1310d1e5611c9c6">util_warn</a></div><div class="ttdeci">void util_warn(const unsigned dlevel, const bool tstamp, const char *const func, const char *const file, const unsigned line,...)</div><div class="ttdef"><b>Definition:</b> util.c:278</div></div>
+<div class="ttc" id="util_8h_html_ae3b7cb5fda40549bb1310d1e5611c9c6"><div class="ttname"><a href="util_8h.html#ae3b7cb5fda40549bb1310d1e5611c9c6">util_warn</a></div><div class="ttdeci">void util_warn(const unsigned dlevel, const bool tstamp, const char *const func, const char *const file, const unsigned line,...)</div><div class="ttdef"><b>Definition:</b> util.c:275</div></div>
 <div class="ttc" id="util_8h_html_ac6c45889010c1bd68631771b64f18101"><div class="ttname"><a href="util_8h.html#ac6c45889010c1bd68631771b64f18101">unlikely</a></div><div class="ttdeci">#define unlikely(x)</div><div class="ttdef"><b>Definition:</b> util.h:59</div></div>
-<div class="ttc" id="util_8h_html_ade0743d672f539b1615b3a5d3b79486b"><div class="ttname"><a href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a></div><div class="ttdeci">short util_dlevel</div><div class="ttdoc">Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime...</div><div class="ttdef"><b>Definition:</b> util.c:226</div></div>
+<div class="ttc" id="util_8h_html_ade0743d672f539b1615b3a5d3b79486b"><div class="ttname"><a href="util_8h.html#ade0743d672f539b1615b3a5d3b79486b">util_dlevel</a></div><div class="ttdeci">short util_dlevel</div><div class="ttdoc">Dynamically adjust util_dlevel from your code to show or suppress debug messages at runtime...</div><div class="ttdef"><b>Definition:</b> util.c:223</div></div>
 </div><!-- fragment -->
 <p>Print a debug message to stderr, including a black/white indicator whether the message comes from the master thread (black) or not (white), a timestamp since start of the program, a coloMAG indicator for the #dlevel severity level, as well as a printf()-style format string fed by further optional arguments. </p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -727,13 +731,25 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3d77449cd1566cf29f0ca3565dbe2ee8"></a>
+<a class="anchor" id="ac39a5e8f31f734141dd5d67a8e22285e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void util_rwarn </td>
           <td>(</td>
+          <td class="paramtype">time_t *const&#160;</td>
+          <td class="paramname"><em>rt0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *const&#160;</td>
+          <td class="paramname"><em>rcnt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const unsigned&#160;</td>
           <td class="paramname"><em>dlevel</em>, </td>
         </tr>
@@ -778,8 +794,8 @@ Variables</h2></td></tr>
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="util_8h_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph.png" border="0" usemap="#util_8h_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph" alt=""/></div>
-<map name="util_8h_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph" id="util_8h_a3d77449cd1566cf29f0ca3565dbe2ee8_cgraph">
+<div class="center"><img src="util_8h_ac39a5e8f31f734141dd5d67a8e22285e_cgraph.png" border="0" usemap="#util_8h_ac39a5e8f31f734141dd5d67a8e22285e_cgraph" alt=""/></div>
+<map name="util_8h_ac39a5e8f31f734141dd5d67a8e22285e_cgraph" id="util_8h_ac39a5e8f31f734141dd5d67a8e22285e_cgraph">
 <area shape="rect" id="node2" href="util_8c.html#a34a00cf0413209a01e5eb58efa9b20c8" title="util_warn_valist" alt="" coords="133,5,245,32"/></map>
 </div>
 </p>
@@ -865,7 +881,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Dec 20 2017 15:02:31 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Dec 21 2017 15:24:21 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
