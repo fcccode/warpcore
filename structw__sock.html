@@ -99,7 +99,7 @@ Collaboration diagram for w_sock:</div>
 <div class="dyncontent">
 <div class="center"><img src="structw__sock__coll__graph.png" border="0" usemap="#w__sock_coll__map" alt="Collaboration graph"/></div>
 <map name="w__sock_coll__map" id="w__sock_coll__map">
-<area shape="rect" id="node2" href="structw__hdr.html" title="A warpcore template packet header structure. " alt="" coords="334,96,391,123"/><area shape="rect" id="node3" href="structudp__hdr.html" title="A representation of a UDP header; see RFC768. " alt="" coords="286,5,353,32"/><area shape="rect" id="node4" href="structip__hdr.html" title="An IPv4 header representation; see RFC791 " alt="" coords="378,5,435,32"/><area shape="rect" id="node5" href="structeth__hdr.html" title="An Ethernet II MAC header. " alt="" coords="459,5,524,32"/><area shape="rect" id="node6" href="structw__engine.html" title="A warpcore backend engine. " alt="" coords="48,96,124,123"/><area shape="rect" id="node7" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="5,187,60,213"/><area shape="rect" id="node8" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="48,5,124,32"/><area shape="rect" id="node9" href="structw__backend.html" title="w_backend" alt="" coords="173,5,261,32"/></map>
+<area shape="rect" id="node2" href="structw__engine.html" title="A warpcore backend engine. " alt="" coords="22,96,98,123"/><area shape="rect" id="node3" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. " alt="" coords="39,187,94,213"/><area shape="rect" id="node4" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. " alt="" coords="119,5,195,32"/><area shape="rect" id="node5" href="structw__backend.html" title="w_backend" alt="" coords="7,5,95,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -119,9 +119,9 @@ Data Fields</h2></td></tr>
 <tr class="memitem:a3db894eae177fa4a879dffd4e9ad706e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__iov__sq.html">w_iov_sq</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#a3db894eae177fa4a879dffd4e9ad706e">iv</a></td></tr>
 <tr class="memdesc:a3db894eae177fa4a879dffd4e9ad706e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tail queue containing incoming unread data.  <a href="#a3db894eae177fa4a879dffd4e9ad706e">More...</a><br/></td></tr>
 <tr class="separator:a3db894eae177fa4a879dffd4e9ad706e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b8ec75854814f39f204648af5dd5726"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structw__hdr.html">w_hdr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#a0b8ec75854814f39f204648af5dd5726">hdr</a></td></tr>
-<tr class="memdesc:a0b8ec75854814f39f204648af5dd5726"><td class="mdescLeft">&#160;</td><td class="mdescRight">The template header to be used for outbound packets on this <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>.  <a href="#a0b8ec75854814f39f204648af5dd5726">More...</a><br/></td></tr>
-<tr class="separator:a0b8ec75854814f39f204648af5dd5726"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a127c3a8a895c63ac4ebbc160a9f78787"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#a127c3a8a895c63ac4ebbc160a9f78787">hdr</a></td></tr>
+<tr class="memdesc:a127c3a8a895c63ac4ebbc160a9f78787"><td class="mdescLeft">&#160;</td><td class="mdescRight">The template header to be used for outbound packets on this <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>.  <a href="#a127c3a8a895c63ac4ebbc160a9f78787">More...</a><br/></td></tr>
+<tr class="separator:a127c3a8a895c63ac4ebbc160a9f78787"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb9b6b81f779f7b21ba82a9a305b9687"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__sock.html#aeb9b6b81f779f7b21ba82a9a305b9687">flags</a></td></tr>
 <tr class="memdesc:aeb9b6b81f779f7b21ba82a9a305b9687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Socket flags.  <a href="#aeb9b6b81f779f7b21ba82a9a305b9687">More...</a><br/></td></tr>
 <tr class="separator:aeb9b6b81f779f7b21ba82a9a305b9687"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,7 +131,7 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A warpcore socket. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a9">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a7">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a12">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a10">ping.c</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac630e52730860c0a6f3e29597931d549"></a>
 <div class="memitem">
@@ -198,12 +198,12 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a0b8ec75854814f39f204648af5dd5726"></a>
+<a class="anchor" id="a127c3a8a895c63ac4ebbc160a9f78787"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct <a class="el" href="structw__hdr.html">w_hdr</a>* w_sock::hdr</td>
+          <td class="memname">void* w_sock::hdr</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -246,7 +246,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Dec 22 2017 14:45:48 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sat Dec 23 2017 17:57:11 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
