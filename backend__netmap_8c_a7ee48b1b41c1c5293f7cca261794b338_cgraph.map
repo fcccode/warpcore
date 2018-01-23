@@ -1,5 +1,4 @@
 <map id="backend_bind" name="backend_bind">
-<area shape="rect" id="node2" href="$backend_8h.html#ac40dacee9231ffda1157048729ab58f1" title="Get a pointer to the w_hdr template of a socket. " alt="" coords="157,5,240,32"/>
-<area shape="rect" id="node3" href="$warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="167,56,231,83"/>
-<area shape="rect" id="node4" href="$backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="161,107,236,133"/>
+<area shape="rect" id="node2" href="$warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="163,5,227,32"/>
+<area shape="rect" id="node3" href="$backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe" title="Get the socket bound to local port port. " alt="" coords="157,56,232,83"/>
 </map>

@@ -131,12 +131,6 @@ Data Fields</h2></td></tr>
 <tr class="memitem:ab66a9b845ccc74bf9988ee81c062b2c1"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#ab66a9b845ccc74bf9988ee81c062b2c1">mtu</a></td></tr>
 <tr class="memdesc:ab66a9b845ccc74bf9988ee81c062b2c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">MTU of this interface.  <a href="#ab66a9b845ccc74bf9988ee81c062b2c1">More...</a><br/></td></tr>
 <tr class="separator:ab66a9b845ccc74bf9988ee81c062b2c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3e17b59acfd49917605a28368db9514"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#aa3e17b59acfd49917605a28368db9514">flags</a></td></tr>
-<tr class="memdesc:aa3e17b59acfd49917605a28368db9514"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flags for this interface.  <a href="#aa3e17b59acfd49917605a28368db9514">More...</a><br/></td></tr>
-<tr class="separator:aa3e17b59acfd49917605a28368db9514"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a651f47b792c02620a2714b5ad0064527"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a651f47b792c02620a2714b5ad0064527">vnet_hdr_len</a></td></tr>
-<tr class="memdesc:a651f47b792c02620a2714b5ad0064527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Length of the virtio network header.  <a href="#a651f47b792c02620a2714b5ad0064527">More...</a><br/></td></tr>
-<tr class="separator:a651f47b792c02620a2714b5ad0064527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d5acf77045637c8687983b933d9e41d"><td class="memItemLeft" align="right" valign="top">struct ether_addr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structw__engine.html#a4d5acf77045637c8687983b933d9e41d">mac</a></td></tr>
 <tr class="memdesc:a4d5acf77045637c8687983b933d9e41d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local Ethernet MAC address of the interface.  <a href="#a4d5acf77045637c8687983b933d9e41d">More...</a><br/></td></tr>
 <tr class="separator:a4d5acf77045637c8687983b933d9e41d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,7 +149,7 @@ Data Fields</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A warpcore backend engine. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a10">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a8">ping.c</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="inetd_8c-example.html#_a7">inetd.c</a>, and <a class="el" href="ping_8c-example.html#_a5">ping.c</a>.</dd>
 </dl></div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af24d1311e806cd31c59255982c8f6edd"></a>
 <div class="memitem">
@@ -215,20 +209,6 @@ Data Fields</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Pointer to <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> buffers. </p>
-
-</div>
-</div>
-<a class="anchor" id="aa3e17b59acfd49917605a28368db9514"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t w_engine::flags</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Flags for this interface. </p>
 
 </div>
 </div>
@@ -358,27 +338,13 @@ Data Fields</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a651f47b792c02620a2714b5ad0064527"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint8_t w_engine::vnet_hdr_len</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Length of the virtio network header. </p>
-
-</div>
-</div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
 <li>include/warpcore/<a class="el" href="warpcore_8h_source.html">warpcore.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Sat Dec 23 2017 17:57:48 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jan 23 2018 05:18:24 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

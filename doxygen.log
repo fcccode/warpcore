@@ -160,10 +160,6 @@ Parsing code for file src/backend_netmap.c...
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:111: warning: explicit link request to 'dlevel' could not be resolved
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:111: warning: explicit link request to 'dlevel' could not be resolved
 /home/travis/build/NTAP/warpcore/lib/include/warpcore/util.h:111: warning: argument 'fmt' of command @param is not found in the argument list of warn(dlevel,...)
-/home/travis/build/NTAP/warpcore/lib/src/warpcore.c:370: warning: The following parameters of w_init(const char *const ifname, const uint32_t rip, const uint8_t flags, const uint32_t nbufs) are not documented:
-  parameter 'flags'
-/home/travis/build/NTAP/warpcore/lib/src/eth.h:60: warning: The following parameters of eth_data(w, buf) are not documented:
-  parameter 'w'
 Parsing code for file src/backend_sock.c...
 Parsing code for file src/eth.c...
 Generating code for file src/eth.h...
@@ -198,8 +194,6 @@ Generating call graph for function w_bind
 Generating call graph for function w_cleanup
 Generating call graph for function w_close
 Generating call graph for function w_connect
-Generating call graph for function w_connected
-Generating call graph for function w_disconnect
 Generating call graph for function w_init
 Generating call graph for function w_nic_rx
 Generating call graph for function w_nic_tx
@@ -219,7 +213,6 @@ Generating call graph for function backend_bind
 Generating call graph for function backend_cleanup
 Generating call graph for function backend_connect
 Generating call graph for function backend_init
-Generating call graph for function w_sock_cmp
 Generating docs for file src/backend_netmap.c...
 Generating call graph for function backend_bind
 Generating call graph for function backend_cleanup
@@ -247,8 +240,6 @@ Generating call graph for function ip_cksum
 Generating call graph for function ip_cksum_sse
 Generating call graph for function ip_cksum_update16
 Generating call graph for function ip_cksum_update32
-Generating call graph for function ip_pseudo
-Generating call graph for function ip_pseudo32
 Generating call graph for function udp_cksum
 Generating call graph for function udp_cksum_sse
 Generating docs for file src/in_cksum.h...
@@ -256,15 +247,6 @@ Generating call graph for function ip_cksum
 Generating call graph for function ip_cksum_sse
 Generating call graph for function ip_cksum_update16
 Generating call graph for function ip_cksum_update32
-Ge/home/travis/build/NTAP/warpcore/lib/src/ip.h:121: warning: The following parameters of ip_data(w, buf) are not documented:
-  parameter 'w'
-/home/travis/build/NTAP/warpcore/lib/src/udp.c:70: warning: The following parameters of udp_rx(struct w_engine *const w, struct netmap_ring *const r, bool csum_valid) are not documented:
-  parameter 'csum_valid'
-/home/travis/build/NTAP/warpcore/lib/src/udp.c:70: warning: The following parameters of udp_rx(struct w_engine *const w, struct netmap_ring *const r, bool csum_valid) are not documented:
-  parameter 'csum_valid'
-/home/travis/build/NTAP/warpcore/lib/src/warpcore.c:370: warning: The following parameters of w_init(const char *const ifname, const uint32_t rip, const uint8_t flags, const uint32_t nbufs) are not documented:
-  parameter 'flags'
-nerating call graph for function ip_pseudo
 Generating call graph for function udp_cksum
 Generating call graph for function udp_cksum_sse
 Generating docs for file src/ip.c...
@@ -290,8 +272,6 @@ Generating call graph for function w_bind
 Generating call graph for function w_cleanup
 Generating call graph for function w_close
 Generating call graph for function w_connect
-Generating call graph for function w_connected
-Generating call graph for function w_disconnect
 Generating call graph for function w_init
 Generating docs for file README.md...
 Generating page documentation...
@@ -340,135 +320,127 @@ Generating example index...
 finalizing index lists...
 Running dot...
 Generating dot graphs using 33 parallel threads...
-Running dot for graph 1/129
-Running dot for graph 2/129
-Running dot for graph 3/129
-Running dot for graph 4/129
-Running dot for graph 5/129
-Running dot for graph 6/129
-Running dot for graph 7/129
-Running dot for graph 8/129
-Running dot for graph 9/129
-Running dot for graph 10/129
-Running dot for graph 11/129
-Running dot for graph 12/129
-Running dot for graph 13/129
-Running dot for graph 14/129
-Running dot for graph 15/129
-Running dot for graph 16/129
-Running dot for graph 17/129
-Running dot for graph 18/129
-Running dot for graph 19/129
-Running dot for graph 20/129
-Running dot for graph 21/129
-Running dot for graph 22/129
-Running dot for graph 23/129
-Running dot for graph 24/129
-Running dot for graph 25/129
-Running dot for graph 26/129
-Running dot for graph 27/129
-Running dot for graph 28/129
-Running dot for graph 29/129
-Running dot for graph 30/129
-Running dot for graph 31/129
-Running dot for graph 32/129
-Running dot for graph 33/129
-Running dot for graph 34/129
-Running dot for graph 35/129
-Running dot for graph 36/129
-Running dot for graph 37/129
-Running dot for graph 38/129
-Running dot for graph 39/129
-Running dot for graph 40/129
-Running dot for graph 41/129
-Running dot for graph 42/129
-Running dot for graph 43/129
-Running dot for graph 44/129
-Running dot for graph 45/129
-Running dot for graph 46/129
-Running dot for graph 47/129
-Running dot for graph 48/129
-Running dot for graph 49/129
-Running dot for graph 50/129
-Running dot for graph 51/129
-Running dot for graph 52/129
-Running dot for graph 53/129
-Running dot for graph 54/129
-Running dot for graph 55/129
-Running dot for graph 56/129
-Running dot for graph 57/129
-Running dot for graph 58/129
-Running dot for graph 59/129
-Running dot for graph 60/129
-Running dot for graph 61/129
-Running dot for graph 62/129
-Running dot for graph 63/129
-Running dot for graph 64/129
-Running dot for graph 65/129
-Running dot for graph 66/129
-Running dot for graph 67/129
-Running dot for graph 68/129
-Running dot for graph 69/129
-Running dot for graph 70/129
-Running dot for graph 71/129
-Running dot for graph 72/129
-Running dot for graph 73/129
-Running dot for graph 74/129
-Running dot for graph 75/129
-Running dot for graph 76/129
-Running dot for graph 77/129
-Running dot for graph 78/129
-Running dot for graph 79/129
-Running dot for graph 80/129
-Running dot for graph 81/129
-Running dot for graph 82/129
-Running dot for graph 83/129
-Running dot for graph 84/129
-Running dot for graph 85/129
-Running dot for graph 86/129
-Running dot for graph 87/129
-Running dot for graph 88/129
-Running dot for graph 89/129
-Running dot for graph 90/129
-Running dot for graph 91/129
-Running dot for graph 92/129
-Running dot for graph 93/129
-Running dot for graph 94/129
-Running dot for graph 95/129
-Running dot for graph 96/129
-Running dot for graph 97/129
-Running dot for graph 98/129
-Running dot for graph 99/129
-Running dot for graph 100/129
-Running dot for graph 101/129
-Running dot for graph 102/129
-Running dot for graph 103/129
-Running dot for graph 104/129
-Running dot for graph 105/129
-Running dot for graph 106/129
-Running dot for graph 107/129
-Running dot for graph 108/129
-Running dot for graph 109/129
-Running dot for graph 110/129
-Running dot for graph 111/129
-Running dot for graph 112/129
-Running dot for graph 113/129
-Running dot for graph 114/129
-Running dot for graph 115/129
-Running dot for graph 116/129
-Running dot for graph 117/129
-Running dot for graph 118/129
-Running dot for graph 119/129
-Running dot for graph 120/129
-Running dot for graph 121/129
-Running dot for graph 122/129
-Running dot for graph 123/129
-Running dot for graph 124/129
-Running dot for graph 125/129
-Running dot for graph 126/129
-Running dot for graph 127/129
-Running dot for graph 128/129
-Running dot for graph 129/129
+Running dot for graph 1/121
+Running dot for graph 2/121
+Running dot for graph 3/121
+Running dot for graph 4/121
+Running dot for graph 5/121
+Running dot for graph 6/121
+Running dot for graph 7/121
+Running dot for graph 8/121
+Running dot for graph 9/121
+Running dot for graph 10/121
+Running dot for graph 11/121
+Running dot for graph 12/121
+Running dot for graph 13/121
+Running dot for graph 14/121
+Running dot for graph 15/121
+Running dot for graph 16/121
+Running dot for graph 17/121
+Running dot for graph 18/121
+Running dot for graph 19/121
+Running dot for graph 20/121
+Running dot for graph 21/121
+Running dot for graph 22/121
+Running dot for graph 23/121
+Running dot for graph 24/121
+Running dot for graph 25/121
+Running dot for graph 26/121
+Running dot for graph 27/121
+Running dot for graph 28/121
+Running dot for graph 29/121
+Running dot for graph 30/121
+Running dot for graph 31/121
+Running dot for graph 32/121
+Running dot for graph 33/121
+Running dot for graph 34/121
+Running dot for graph 35/121
+Running dot for graph 36/121
+Running dot for graph 37/121
+Running dot for graph 38/121
+Running dot for graph 39/121
+Running dot for graph 40/121
+Running dot for graph 41/121
+Running dot for graph 42/121
+Running dot for graph 43/121
+Running dot for graph 44/121
+Running dot for graph 45/121
+Running dot for graph 46/121
+Running dot for graph 47/121
+Running dot for graph 48/121
+Running dot for graph 49/121
+Running dot for graph 50/121
+Running dot for graph 51/121
+Running dot for graph 52/121
+Running dot for graph 53/121
+Running dot for graph 54/121
+Running dot for graph 55/121
+Running dot for graph 56/121
+Running dot for graph 57/121
+Running dot for graph 58/121
+Running dot for graph 59/121
+Running dot for graph 60/121
+Running dot for graph 61/121
+Running dot for graph 62/121
+Running dot for graph 63/121
+Running dot for graph 64/121
+Running dot for graph 65/121
+Running dot for graph 66/121
+Running dot for graph 67/121
+Running dot for graph 68/121
+Running dot for graph 69/121
+Running dot for graph 70/121
+Running dot for graph 71/121
+Running dot for graph 72/121
+Running dot for graph 73/121
+Running dot for graph 74/121
+Running dot for graph 75/121
+Running dot for graph 76/121
+Running dot for graph 77/121
+Running dot for graph 78/121
+Running dot for graph 79/121
+Running dot for graph 80/121
+Running dot for graph 81/121
+Running dot for graph 82/121
+Running dot for graph 83/121
+Running dot for graph 84/121
+Running dot for graph 85/121
+Running dot for graph 86/121
+Running dot for graph 87/121
+Running dot for graph 88/121
+Running dot for graph 89/121
+Running dot for graph 90/121
+Running dot for graph 91/121
+Running dot for graph 92/121
+Running dot for graph 93/121
+Running dot for graph 94/121
+Running dot for graph 95/121
+Running dot for graph 96/121
+Running dot for graph 97/121
+Running dot for graph 98/121
+Running dot for graph 99/121
+Running dot for graph 100/121
+Running dot for graph 101/121
+Running dot for graph 102/121
+Running dot for graph 103/121
+Running dot for graph 104/121
+Running dot for graph 105/121
+Running dot for graph 106/121
+Running dot for graph 107/121
+Running dot for graph 108/121
+Running dot for graph 109/121
+Running dot for graph 110/121
+Running dot for graph 111/121
+Running dot for graph 112/121
+Running dot for graph 113/121
+Running dot for graph 114/121
+Running dot for graph 115/121
+Running dot for graph 116/121
+Running dot for graph 117/121
+Running dot for graph 118/121
+Running dot for graph 119/121
+Running dot for graph 120/121
+Running dot for graph 121/121
 Patching output file 1/39
 Patching output file 2/39
 Patching output file 3/39
@@ -508,5 +480,5 @@ Patching output file 36/39
 Patching output file 37/39
 Patching output file 38/39
 Patching output file 39/39
-lookup cache used 614/65536 hits=3665 misses=626
+lookup cache used 605/65536 hits=3549 misses=617
 finished...
