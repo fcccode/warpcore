@@ -205,36 +205,37 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">        (v)-&gt;buf = IDX2BUF((ww), (v)-&gt;idx);                                    \</span></div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="preprocessor">        (v)-&gt;len = (ww)-&gt;mtu;                                                  \</span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="preprocessor">        (v)-&gt;o = 0;                                                            \</span></div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">    } while (0)</span></div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
-<div class="line"><a name="l00154"></a><span class="lineno"><a class="line" href="backend_8h.html#a0abd6d965115280837bcfa35f351aa08">  154</a></span>&#160;<span class="preprocessor">#define w_alloc_iov_base(w)                                                    \</span></div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="preprocessor">    __extension__({                                                            \</span></div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">        struct w_iov * const _v = sq_first(&amp;(w)-&gt;iov);                         \</span></div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">        if (likely(_v)) {                                                      \</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">            sq_remove_head(&amp;(w)-&gt;iov, next);                                   \</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">            init_iov((w), _v);                                                 \</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">            ASAN_UNPOISON_MEMORY_REGION(IDX2BUF((w), _v-&gt;idx), _v-&gt;len);       \</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">        }                                                                      \</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">        _v;                                                                    \</span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">    })</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structw__sock.html">w_sock</a> * __attribute__((nonnull))</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<a class="code" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe">get_sock</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const <a class="code" href="structw__sock.html#a1ee097500810c7a9e2e63571a49d8bcb">w</a>, const uint16_t port);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a495a4a69dd158694e972166b9c0ddcb7">backend_bind</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a10352237f3cab978ad3dbe7f25acb8cc">backend_close</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#af5df52522d52bfed04aa270094deaa78">backend_connect</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a1efe6c54e4e30260d1c2630726b98eb5">backend_init</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w,</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                                  const uint32_t nbufs,</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                                  const <span class="keywordtype">bool</span> is_lo,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                                  const <span class="keywordtype">bool</span> is_left);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">        sq_next((v), next) = 0;                                                \</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;<span class="preprocessor">    } while (0)</span></div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="backend_8h.html#a0abd6d965115280837bcfa35f351aa08">  155</a></span>&#160;<span class="preprocessor">#define w_alloc_iov_base(w)                                                    \</span></div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="preprocessor">    __extension__({                                                            \</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="preprocessor">        struct w_iov * const _v = sq_first(&amp;(w)-&gt;iov);                         \</span></div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="preprocessor">        if (likely(_v)) {                                                      \</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">            sq_remove_head(&amp;(w)-&gt;iov, next);                                   \</span></div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="preprocessor">            init_iov((w), _v);                                                 \</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">            ASAN_UNPOISON_MEMORY_REGION(IDX2BUF((w), _v-&gt;idx), _v-&gt;len);       \</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="preprocessor">        }                                                                      \</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="preprocessor">        _v;                                                                    \</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="preprocessor">    })</span></div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structw__sock.html">w_sock</a> * __attribute__((nonnull))</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<a class="code" href="backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe">get_sock</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const <a class="code" href="structw__sock.html#a1ee097500810c7a9e2e63571a49d8bcb">w</a>, const uint16_t port);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a495a4a69dd158694e972166b9c0ddcb7">backend_bind</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a10352237f3cab978ad3dbe7f25acb8cc">backend_close</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#af5df52522d52bfed04aa270094deaa78">backend_connect</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a1efe6c54e4e30260d1c2630726b98eb5">backend_init</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w,</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                                  const uint32_t nbufs,</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                                  const <span class="keywordtype">bool</span> is_lo,</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                                                  const <span class="keywordtype">bool</span> is_left);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w);</div>
 <div class="ttc" id="arp_8h_html"><div class="ttname"><a href="arp_8h.html">arp.h</a></div></div>
 <div class="ttc" id="backend_8h_html_a1efe6c54e4e30260d1c2630726b98eb5"><div class="ttname"><a href="backend_8h.html#a1efe6c54e4e30260d1c2630726b98eb5">backend_init</a></div><div class="ttdeci">void backend_init(struct w_engine *const w, const uint32_t nbufs, const bool is_lo, const bool is_left)</div><div class="ttdoc">Initialize the warpcore netmap backend for engine w. </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:71</div></div>
 <div class="ttc" id="structudp__hdr_html"><div class="ttname"><a href="structudp__hdr.html">udp_hdr</a></div><div class="ttdoc">A representation of a UDP header; see RFC768. </div><div class="ttdef"><b>Definition:</b> udp.h:42</div></div>
@@ -269,7 +270,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 16 2018 13:17:49 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 19 2018 13:49:41 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

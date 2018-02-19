@@ -288,9 +288,11 @@ Functions</h2></td></tr>
 <div class="line">        (v)-&gt;w = (ww);                                                         \</div>
 <div class="line">        (v)-&gt;buf = <a class="code" href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a>((ww), (v)-&gt;idx);                                    \</div>
 <div class="line">        (v)-&gt;len = (ww)-&gt;mtu;                                                  \</div>
-<div class="line">        (v)-&gt;o = 0;                                                            \</div>
+<div class="line">        (v)-&gt;o = 0;                                                            <a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">\</a></div>
+<div class="line"><a class="code" href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">        sq_next</a>((v), next) = 0;                                                \</div>
 <div class="line">    } <span class="keywordflow">while</span> (0)</div>
 <div class="ttc" id="backend_8h_html_ac3bb9e4ee9a65dd78636d8d82423a13e"><div class="ttname"><a href="backend_8h.html#ac3bb9e4ee9a65dd78636d8d82423a13e">IDX2BUF</a></div><div class="ttdeci">#define IDX2BUF(w, i)</div><div class="ttdoc">For a given buffer index, get a pointer to its beginning. </div><div class="ttdef"><b>Definition:</b> backend.h:91</div></div>
+<div class="ttc" id="queue_8h_html_aa2cbe708ba7d5eeaa386c4d2ee53cbae"><div class="ttname"><a href="queue_8h.html#aa2cbe708ba7d5eeaa386c4d2ee53cbae">sq_next</a></div><div class="ttdeci">#define sq_next(elm, field)</div><div class="ttdef"><b>Definition:</b> queue.h:442</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -748,7 +750,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Feb 16 2018 13:17:50 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Feb 19 2018 13:49:41 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
