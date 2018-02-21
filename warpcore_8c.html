@@ -165,6 +165,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a92bb31feffd5e9e2cda91aa4612bc103"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a92bb31feffd5e9e2cda91aa4612bc103">w_free_iov</a> (struct <a class="el" href="structw__iov.html">w_iov</a> *const v)</td></tr>
 <tr class="memdesc:a92bb31feffd5e9e2cda91aa4612bc103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a single <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> obtained via <a class="el" href="warpcore_8c.html#a7b0a4ce49d35d188ceaaef1076ad831d" title="Allocate a w_iov tail queue for plen payload bytes, for eventual use with w_tx(). ...">w_alloc_len()</a>, <a class="el" href="warpcore_8c.html#a051f32842ef97201707eb59c85f9dc03" title="Allocate a w_iov tail queue of count packets, for eventual use with w_tx(). ">w_alloc_cnt()</a> or <a class="el" href="warpcore_8h.html#af21a4e848c9199be729d01d20b8eea3d" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a> back to warpcore.  <a href="#a92bb31feffd5e9e2cda91aa4612bc103">More...</a><br/></td></tr>
 <tr class="separator:a92bb31feffd5e9e2cda91aa4612bc103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a850fab047a974d4b7abfd68ceb87665d"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="warpcore_8c.html#a850fab047a974d4b7abfd68ceb87665d">w_get_sport</a> (const struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
+<tr class="memdesc:a850fab047a974d4b7abfd68ceb87665d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the local port a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> is bound to.  <a href="#a850fab047a974d4b7abfd68ceb87665d">More...</a><br/></td></tr>
+<tr class="separator:a850fab047a974d4b7abfd68ceb87665d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -649,6 +652,31 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a850fab047a974d4b7abfd68ceb87665d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t w_get_sport </td>
+          <td>(</td>
+          <td class="paramtype">const struct <a class="el" href="structw__sock.html">w_sock</a> *const&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Return the local port a <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> is bound to. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">s</td><td>Pointer to <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Local port number in network byte-order, or zero if unbound. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a045f4826ff2a8917693126c9d27455e4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -783,7 +811,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 21 2018 12:00:03 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 21 2018 16:22:07 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

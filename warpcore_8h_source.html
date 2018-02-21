@@ -273,49 +273,51 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="warpcore_8h.html#a92bb31feffd5e9e2cda91aa4612bc103">w_free_iov</a>(struct w_iov * const v);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;extern uint64_t <a class="code" href="warpcore_8h.html#a686fbf8e7dfd633857b159c826315fa6">w_rand_state</a>[2];</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;extern uint16_t __attribute__((nonnull))</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;<a class="code" href="warpcore_8h.html#a850fab047a974d4b7abfd68ceb87665d">w_get_sport</a>(const struct w_sock * const s);</div>
 <div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;static inline uint64_t</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;<span class="preprocessor">#if defined(__clang__)</span></div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="preprocessor"></span>    __attribute__((no_sanitize(<span class="stringliteral">&quot;unsigned-integer-overflow&quot;</span>)))</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00261"></a><span class="lineno"><a class="line" href="warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796">  261</a></span>&#160;<span class="preprocessor"></span>    <a class="code" href="warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796">w_rand</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;{</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#define rotl(x, k) (((x) &lt;&lt; (k)) | ((x) &gt;&gt; (64 - (k))))</span></div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">const</span> uint64_t s0 = w_rand_state[0];</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    uint64_t s1 = w_rand_state[1];</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">const</span> uint64_t result = s0 + s1;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    s1 ^= s0;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    w_rand_state[0] = <a class="code" href="warpcore_8h.html#a4f05184ca9e937bd3742cd3d02c08e39">rotl</a>(s0, 55) ^ s1 ^ (s1 &lt;&lt; 14);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    w_rand_state[1] = <a class="code" href="warpcore_8h.html#a4f05184ca9e937bd3742cd3d02c08e39">rotl</a>(s1, 36);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="preprocessor">#undef rotl</span></div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;}</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;</div>
-<div class="line"><a name="l00286"></a><span class="lineno"><a class="line" href="warpcore_8h.html#adad79a0011e52c38d52df980843fff78">  286</a></span>&#160;<span class="preprocessor">#define w_tx_pending(q) (q)-&gt;tx_pending</span></div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;</div>
-<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="warpcore_8h.html#ae13f9b3c39d99b4a14d36b88ae5387da">  295</a></span>&#160;<span class="preprocessor">#define w_engine(s) (s)-&gt;w</span></div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00305"></a><span class="lineno"><a class="line" href="warpcore_8h.html#a4c1507af14382c3a9afd21140d879e99">  305</a></span>&#160;<span class="preprocessor">#define w_ifname(w) (w)-&gt;ifname</span></div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;</div>
-<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="warpcore_8h.html#ab8d64c60572eee99efeb3118c292e318">  314</a></span>&#160;<span class="preprocessor">#define w_mtu(w) (w)-&gt;mtu</span></div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;</div>
-<div class="line"><a name="l00323"></a><span class="lineno"><a class="line" href="warpcore_8h.html#a27ee17424d2b7abda2836f8aef0e0a73">  323</a></span>&#160;<span class="preprocessor">#define w_iov_sq_cnt(q) sq_len(q)</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;extern uint64_t <a class="code" href="warpcore_8h.html#a686fbf8e7dfd633857b159c826315fa6">w_rand_state</a>[2];</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;static inline uint64_t</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="preprocessor">#if defined(__clang__)</span></div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;<span class="preprocessor"></span>    __attribute__((no_sanitize(<span class="stringliteral">&quot;unsigned-integer-overflow&quot;</span>)))</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00263"></a><span class="lineno"><a class="line" href="warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796">  263</a></span>&#160;<span class="preprocessor"></span>    <a class="code" href="warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796">w_rand</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;{</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#define rotl(x, k) (((x) &lt;&lt; (k)) | ((x) &gt;&gt; (64 - (k))))</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">const</span> uint64_t s0 = w_rand_state[0];</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    uint64_t s1 = w_rand_state[1];</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keyword">const</span> uint64_t result = s0 + s1;</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    s1 ^= s0;</div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    w_rand_state[0] = <a class="code" href="warpcore_8h.html#a4f05184ca9e937bd3742cd3d02c08e39">rotl</a>(s0, 55) ^ s1 ^ (s1 &lt;&lt; 14);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;    w_rand_state[1] = <a class="code" href="warpcore_8h.html#a4f05184ca9e937bd3742cd3d02c08e39">rotl</a>(s1, 36);</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="preprocessor">#undef rotl</span></div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;}</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno"><a class="line" href="warpcore_8h.html#adad79a0011e52c38d52df980843fff78">  288</a></span>&#160;<span class="preprocessor">#define w_tx_pending(q) (q)-&gt;tx_pending</span></div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno"><a class="line" href="warpcore_8h.html#ae13f9b3c39d99b4a14d36b88ae5387da">  297</a></span>&#160;<span class="preprocessor">#define w_engine(s) (s)-&gt;w</span></div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;</div>
+<div class="line"><a name="l00307"></a><span class="lineno"><a class="line" href="warpcore_8h.html#a4c1507af14382c3a9afd21140d879e99">  307</a></span>&#160;<span class="preprocessor">#define w_ifname(w) (w)-&gt;ifname</span></div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="warpcore_8h.html#ab8d64c60572eee99efeb3118c292e318">  316</a></span>&#160;<span class="preprocessor">#define w_mtu(w) (w)-&gt;mtu</span></div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;</div>
+<div class="line"><a name="l00325"></a><span class="lineno"><a class="line" href="warpcore_8h.html#a27ee17424d2b7abda2836f8aef0e0a73">  325</a></span>&#160;<span class="preprocessor">#define w_iov_sq_cnt(q) sq_len(q)</span></div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="warpcore_8h_html_a26c31751f7bb602b01bf00077ebd362d"><div class="ttname"><a href="warpcore_8h.html#a26c31751f7bb602b01bf00077ebd362d">w_close</a></div><div class="ttdeci">void w_close(struct w_sock *const s)</div><div class="ttdoc">Close a warpcore socket. </div><div class="ttdef"><b>Definition:</b> warpcore.c:283</div></div>
 <div class="ttc" id="queue_8h_html_a95af779558d5d6de2d5b43a2d794e583"><div class="ttname"><a href="queue_8h.html#a95af779558d5d6de2d5b43a2d794e583">sq_entry</a></div><div class="ttdeci">#define sq_entry(type)</div><div class="ttdef"><b>Definition:</b> queue.h:362</div></div>
 <div class="ttc" id="warpcore_8h_html_ab0508cfebe874ba0f3f2f230b4120e0d"><div class="ttname"><a href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d">w_nic_rx</a></div><div class="ttdeci">bool w_nic_rx(struct w_engine *const w, const int32_t msec)</div><div class="ttdoc">Trigger netmap to make new received data available to w_rx(). </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:330</div></div>
@@ -343,6 +345,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="warpcore_8h_html_aca0b58d946b5286725435eb6ec361c9d"><div class="ttname"><a href="warpcore_8h.html#aca0b58d946b5286725435eb6ec361c9d">splay_head</a></div><div class="ttdeci">splay_head(sock, w_sock)</div></div>
 <div class="ttc" id="warpcore_8h_html_a7b0a4ce49d35d188ceaaef1076ad831d"><div class="ttname"><a href="warpcore_8h.html#a7b0a4ce49d35d188ceaaef1076ad831d">w_alloc_len</a></div><div class="ttdeci">void w_alloc_len(struct w_engine *const w, struct w_iov_sq *const q, const uint32_t qlen, const uint16_t len, const uint16_t off)</div><div class="ttdoc">Allocate a w_iov tail queue for plen payload bytes, for eventual use with w_tx(). ...</div><div class="ttdef"><b>Definition:</b> warpcore.c:133</div></div>
 <div class="ttc" id="structw__iov__sq_html"><div class="ttname"><a href="structw__iov__sq.html">w_iov_sq</a></div><div class="ttdoc">A tail queue of w_iov I/O vectors. </div><div class="ttdef"><b>Definition:</b> warpcore.h:47</div></div>
+<div class="ttc" id="warpcore_8h_html_a850fab047a974d4b7abfd68ceb87665d"><div class="ttname"><a href="warpcore_8h.html#a850fab047a974d4b7abfd68ceb87665d">w_get_sport</a></div><div class="ttdeci">uint16_t w_get_sport(const struct w_sock *const s)</div><div class="ttdoc">Return the local port a w_sock is bound to. </div><div class="ttdef"><b>Definition:</b> warpcore.c:520</div></div>
 <div class="ttc" id="structw__engine_html_a73d208158e977addc3218c194df3d644"><div class="ttname"><a href="structw__engine.html#a73d208158e977addc3218c194df3d644">w_engine::ifname</a></div><div class="ttdeci">char * ifname</div><div class="ttdoc">Name of the interface of this engine. </div><div class="ttdef"><b>Definition:</b> warpcore.h:82</div></div>
 <div class="ttc" id="structw__engine_html_a1cb10e3d74b2d0bb9156644536355334"><div class="ttname"><a href="structw__engine.html#a1cb10e3d74b2d0bb9156644536355334">w_engine::iov</a></div><div class="ttdeci">struct w_iov_sq iov</div><div class="ttdoc">Tail queue of w_iov buffers available. </div><div class="ttdef"><b>Definition:</b> warpcore.h:79</div></div>
 <div class="ttc" id="tree_8h_html_a577ab0c7c03e7caae9b2c4b828027ecb"><div class="ttname"><a href="tree_8h.html#a577ab0c7c03e7caae9b2c4b828027ecb">splay_entry</a></div><div class="ttdeci">#define splay_entry(type)</div><div class="ttdef"><b>Definition:</b> tree.h:75</div></div>
@@ -369,13 +372,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="warpcore_8h_html_af21a4e848c9199be729d01d20b8eea3d"><div class="ttname"><a href="warpcore_8h.html#af21a4e848c9199be729d01d20b8eea3d">w_rx</a></div><div class="ttdeci">void w_rx(struct w_sock *const s, struct w_iov_sq *const i)</div><div class="ttdoc">Return any new data that has been received on a socket by appending it to the w_iov tail queue i...</div><div class="ttdef"><b>Definition:</b> backend_netmap.c:290</div></div>
 <div class="ttc" id="structw__iov__sq_html_ab9f873b767f2b85625cadd2cf8d17d8f"><div class="ttname"><a href="structw__iov__sq.html#ab9f873b767f2b85625cadd2cf8d17d8f">w_iov_sq::tx_pending</a></div><div class="ttdeci">uint32_t tx_pending</div><div class="ttdoc">Counter of untransmitted w_iovs. Only valid on TX. </div><div class="ttdef"><b>Definition:</b> warpcore.h:49</div></div>
 <div class="ttc" id="warpcore_8h_html_aaf46056f39cb452d908ddac8cf6e57c5"><div class="ttname"><a href="warpcore_8h.html#aaf46056f39cb452d908ddac8cf6e57c5">w_fd</a></div><div class="ttdeci">int w_fd(const struct w_sock *const s)</div><div class="ttdoc">Return the file descriptor associated with a w_sock. </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:276</div></div>
-<div class="ttc" id="warpcore_8h_html_ab83dbe51b1644c0665c9b66cd61ff796"><div class="ttname"><a href="warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796">w_rand</a></div><div class="ttdeci">static uint64_t w_rand(void)</div><div class="ttdoc">Return a random number. </div><div class="ttdef"><b>Definition:</b> warpcore.h:261</div></div>
+<div class="ttc" id="warpcore_8h_html_ab83dbe51b1644c0665c9b66cd61ff796"><div class="ttname"><a href="warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796">w_rand</a></div><div class="ttdeci">static uint64_t w_rand(void)</div><div class="ttdoc">Return a random number. </div><div class="ttdef"><b>Definition:</b> warpcore.h:263</div></div>
 <div class="ttc" id="warpcore_8h_html_a10a4664235583c583eee0a08a35a9c71"><div class="ttname"><a href="warpcore_8h.html#a10a4664235583c583eee0a08a35a9c71">w_rx_ready</a></div><div class="ttdeci">uint32_t w_rx_ready(struct w_engine *const w, struct w_sock_slist *sl)</div><div class="ttdoc">Fill a w_sock_slist with pointers to some sockets with pending inbound data. </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:411</div></div>
 <div class="ttc" id="warpcore_8h_html_a25db095b03b04843ed074c604c85c27d"><div class="ttname"><a href="warpcore_8h.html#a25db095b03b04843ed074c604c85c27d">w_connected</a></div><div class="ttdeci">bool w_connected(const struct w_sock *const s)</div><div class="ttdoc">Return whether a socket is connected (i.e., w_connect() has been called on it) or not...</div><div class="ttdef"><b>Definition:</b> warpcore.c:479</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Feb 21 2018 12:00:03 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Feb 21 2018 16:22:07 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
