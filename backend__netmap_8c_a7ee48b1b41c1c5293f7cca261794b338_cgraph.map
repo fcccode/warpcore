@@ -1,4 +1,4 @@
 <map id="backend_bind" name="backend_bind">
-<area shape="rect" id="node2" href="$warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="163,5,227,32"/>
-<area shape="rect" id="node3" href="$backend_8h.html#aca957d914ea14d5b235523fe733f5c0c" title="Get the socket bound to the &lt;sport, dport&gt; pair. " alt="" coords="157,56,232,83"/>
+<area shape="rect" id="node2" href="$warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="172,5,236,32"/>
+<area shape="rect" id="node3" href="$warpcore_8h.html#ae5ac0023fa085cdd2a079fe3a5db2004" title="Get the socket bound to the &lt;sport, dport&gt; pair. " alt="" coords="158,56,250,83"/>
 </map>

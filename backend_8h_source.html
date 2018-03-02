@@ -222,24 +222,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="preprocessor">    })</span></div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="preprocessor"></span></div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">extern</span> <span class="keyword">struct </span><a class="code" href="structw__sock.html">w_sock</a> * __attribute__((nonnull))</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<a class="code" href="backend_8h.html#aca957d914ea14d5b235523fe733f5c0c">get_sock</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const <a class="code" href="structw__sock.html#a1ee097500810c7a9e2e63571a49d8bcb">w</a>, const uint16_t sport, const uint16_t dport);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a495a4a69dd158694e972166b9c0ddcb7">backend_bind</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a10352237f3cab978ad3dbe7f25acb8cc">backend_close</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#af5df52522d52bfed04aa270094deaa78">backend_connect</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a1efe6c54e4e30260d1c2630726b98eb5">backend_init</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w,</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                                  const uint32_t nbufs,</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                                                  const <span class="keywordtype">bool</span> is_lo,</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                                                  const <span class="keywordtype">bool</span> is_left);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w);</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="keyword">extern</span> <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a495a4a69dd158694e972166b9c0ddcb7">backend_bind</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a10352237f3cab978ad3dbe7f25acb8cc">backend_close</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#af5df52522d52bfed04aa270094deaa78">backend_connect</a>(struct <a class="code" href="structw__sock.html">w_sock</a> * const s);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a1efe6c54e4e30260d1c2630726b98eb5">backend_init</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w,</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                                                  const uint32_t nbufs,</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                                                  const <span class="keywordtype">bool</span> is_lo,</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;                                                  const <span class="keywordtype">bool</span> is_left);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;extern <span class="keywordtype">void</span> __attribute__((nonnull)) <a class="code" href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a>(struct <a class="code" href="structw__engine.html">w_engine</a> * const w);</div>
 <div class="ttc" id="arp_8h_html"><div class="ttname"><a href="arp_8h.html">arp.h</a></div></div>
 <div class="ttc" id="backend_8h_html_a1efe6c54e4e30260d1c2630726b98eb5"><div class="ttname"><a href="backend_8h.html#a1efe6c54e4e30260d1c2630726b98eb5">backend_init</a></div><div class="ttdeci">void backend_init(struct w_engine *const w, const uint32_t nbufs, const bool is_lo, const bool is_left)</div><div class="ttdoc">Initialize the warpcore netmap backend for engine w. </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:71</div></div>
-<div class="ttc" id="backend_8h_html_aca957d914ea14d5b235523fe733f5c0c"><div class="ttname"><a href="backend_8h.html#aca957d914ea14d5b235523fe733f5c0c">get_sock</a></div><div class="ttdeci">struct w_sock * get_sock(struct w_engine *const w, const uint16_t sport, const uint16_t dport)</div><div class="ttdoc">Get the socket bound to the &lt;sport, dport&gt; pair. </div><div class="ttdef"><b>Definition:</b> warpcore.c:86</div></div>
 <div class="ttc" id="structudp__hdr_html"><div class="ttname"><a href="structudp__hdr.html">udp_hdr</a></div><div class="ttdoc">A representation of a UDP header; see RFC768. </div><div class="ttdef"><b>Definition:</b> udp.h:42</div></div>
 <div class="ttc" id="backend_8h_html_abb5e804451cdb4e240e7aecc32c6daf0"><div class="ttname"><a href="backend_8h.html#abb5e804451cdb4e240e7aecc32c6daf0">w_sock_cmp</a></div><div class="ttdeci">static int w_sock_cmp(const struct w_sock *const a, const struct w_sock *const b)</div><div class="ttdef"><b>Definition:</b> backend.h:109</div></div>
 <div class="ttc" id="structw__hdr_html_ad5e4784894672338870380104db362a8"><div class="ttname"><a href="structw__hdr.html#ad5e4784894672338870380104db362a8">w_hdr::ip</a></div><div class="ttdeci">struct ip_hdr ip</div><div class="ttdoc">IPv4 header. </div><div class="ttdef"><b>Definition:</b> backend.h:104</div></div>
@@ -264,7 +260,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="warpcore_8c_html_ac5f4812d2c339c6d0fa6e591bf555caf"><div class="ttname"><a href="warpcore_8c.html#ac5f4812d2c339c6d0fa6e591bf555caf">engines</a></div><div class="ttdeci">struct w_engines engines</div><div class="ttdoc">A global list of netmap engines that have been initialized for different interfaces. </div><div class="ttdef"><b>Definition:</b> warpcore.c:73</div></div>
 <div class="ttc" id="structw__hdr_html_aeb1966e97b3b2d8f383f6d21eed93a42"><div class="ttname"><a href="structw__hdr.html#aeb1966e97b3b2d8f383f6d21eed93a42">w_hdr::udp</a></div><div class="ttdeci">struct udp_hdr udp</div><div class="ttdoc">UDP header. </div><div class="ttdef"><b>Definition:</b> backend.h:105</div></div>
 <div class="ttc" id="backend_8h_html_af5df52522d52bfed04aa270094deaa78"><div class="ttname"><a href="backend_8h.html#af5df52522d52bfed04aa270094deaa78">backend_connect</a></div><div class="ttdeci">void backend_connect(struct w_sock *const s)</div><div class="ttdoc">Connect the given w_sock, using the netmap backend. </div><div class="ttdef"><b>Definition:</b> backend_netmap.c:256</div></div>
-<div class="ttc" id="structw__sock_html_a1ee097500810c7a9e2e63571a49d8bcb"><div class="ttname"><a href="structw__sock.html#a1ee097500810c7a9e2e63571a49d8bcb">w_sock::w</a></div><div class="ttdeci">struct w_engine * w</div><div class="ttdoc">Pointer back to the warpcore instance associated with this w_sock. </div><div class="ttdef"><b>Definition:</b> warpcore.h:111</div></div>
 <div class="ttc" id="structudp__hdr_html_a237bbfa523557d865a0d7d8570ae8afc"><div class="ttname"><a href="structudp__hdr.html#a237bbfa523557d865a0d7d8570ae8afc">udp_hdr::dport</a></div><div class="ttdeci">uint16_t dport</div><div class="ttdoc">Destination port. </div><div class="ttdef"><b>Definition:</b> udp.h:44</div></div>
 <div class="ttc" id="structip__hdr_html"><div class="ttname"><a href="structip__hdr.html">ip_hdr</a></div><div class="ttdoc">An IPv4 header representation; see RFC791 </div><div class="ttdef"><b>Definition:</b> ip.h:67</div></div>
 <div class="ttc" id="udp_8h_html"><div class="ttname"><a href="udp_8h.html">udp.h</a></div></div>
@@ -272,7 +267,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 2 2018 09:31:59 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Mar 2 2018 10:44:44 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
