@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['get_5fsock',['get_sock',['../backend_8h.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe',1,'get_sock(struct w_engine *const w, const uint16_t port):&#160;warpcore.c'],['../warpcore_8c.html#ab3f2cda7f51b9530aa3c7c0d9b128cfe',1,'get_sock(struct w_engine *const w, const uint16_t port):&#160;warpcore.c']]]
+  ['get_5fsock',['get_sock',['../backend_8h.html#aca957d914ea14d5b235523fe733f5c0c',1,'get_sock(struct w_engine *const w, const uint16_t sport, const uint16_t dport):&#160;warpcore.c'],['../warpcore_8c.html#aca957d914ea14d5b235523fe733f5c0c',1,'get_sock(struct w_engine *const w, const uint16_t sport, const uint16_t dport):&#160;warpcore.c']]]
 ];
