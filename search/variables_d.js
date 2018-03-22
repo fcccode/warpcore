@@ -6,7 +6,6 @@ var searchData=
   ['slot',['slot',['../structnetmap__ring.html#ac11c6137efc7fc88ff2ff8ca413c9035',1,'netmap_ring']]],
   ['sock',['sock',['../structw__engine.html#aa321bccab5bbcc458e1f793afa7a0e45',1,'w_engine']]],
   ['spa',['spa',['../structarp__hdr.html#a7d4b3e7974f76320a65ddd51e375d765',1,'arp_hdr']]],
-  ['spare2',['spare2',['../structnmreq.html#acdef73623694120dcda0f6805d1ec30d',1,'nmreq']]],
   ['sport',['sport',['../structudp__hdr.html#abea80c853cab93c249f23208662f8650',1,'udp_hdr']]],
   ['src',['src',['../structeth__hdr.html#aaa6c08a23be7d9dd8d4cf5ef7fc302f5',1,'eth_hdr::src()'],['../structip__hdr.html#a37b760c6634d2a11f81dbd972ffe3b42',1,'ip_hdr::src()']]],
   ['swap16a',['swap16a',['../in__cksum_8c.html#ab175c1e5a5cd50957e3ab1dde7a75d93',1,'in_cksum.c']]],

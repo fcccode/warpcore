@@ -1,10 +1,23 @@
 var searchData=
 [
-  ['nr_5freg_5fall_5fnic',['NR_REG_ALL_NIC',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6eefc97d6fcebc35fc66038172acf8d4',1,'netmap.h']]],
-  ['nr_5freg_5fdefault',['NR_REG_DEFAULT',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3b454164cdcee73c3cb5df91569e2d5b',1,'netmap.h']]],
-  ['nr_5freg_5fnic_5fsw',['NR_REG_NIC_SW',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0824e0950ee08ae8fc674bc9ddaa3a34',1,'netmap.h']]],
-  ['nr_5freg_5fone_5fnic',['NR_REG_ONE_NIC',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba62ea9c598020ddaa6be65cd5ba6b6578',1,'netmap.h']]],
-  ['nr_5freg_5fpipe_5fmaster',['NR_REG_PIPE_MASTER',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55bade2109b5bb9eb5377d13a3857397494f',1,'netmap.h']]],
-  ['nr_5freg_5fpipe_5fslave',['NR_REG_PIPE_SLAVE',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55baacdc70a35aa6dffd208c6e178e6df7d7',1,'netmap.h']]],
-  ['nr_5freg_5fsw',['NR_REG_SW',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac8cca0b6844df0e5417719d9228aa5c5',1,'netmap.h']]]
+  ['netmap_5freq_5fopt_5fextmem',['NETMAP_REQ_OPT_EXTMEM',['../netmap_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a83eababc38497cf2c76df34842a3dd2a',1,'netmap.h']]],
+  ['netmap_5freq_5fpools_5finfo_5fget',['NETMAP_REQ_POOLS_INFO_GET',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba871852e4e62862cb4840dce1865e30c9',1,'netmap.h']]],
+  ['netmap_5freq_5fport_5fhdr_5fget',['NETMAP_REQ_PORT_HDR_GET',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba5cb02e4a6c47fa7366235206f2769890',1,'netmap.h']]],
+  ['netmap_5freq_5fport_5fhdr_5fset',['NETMAP_REQ_PORT_HDR_SET',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55baaf270e0dc987b3ceb5f36330f43d70b6',1,'netmap.h']]],
+  ['netmap_5freq_5fport_5finfo_5fget',['NETMAP_REQ_PORT_INFO_GET',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba88ac91c0e6d829ba27790a01d05d3f91',1,'netmap.h']]],
+  ['netmap_5freq_5fregister',['NETMAP_REQ_REGISTER',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac78cdb456cf34f80af0c65613f015b89',1,'netmap.h']]],
+  ['netmap_5freq_5fvale_5fattach',['NETMAP_REQ_VALE_ATTACH',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2d2c4f4ad58231273ae80f31a3dbf2dd',1,'netmap.h']]],
+  ['netmap_5freq_5fvale_5fdelif',['NETMAP_REQ_VALE_DELIF',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba025f84da2b8da001206adfb94014f786',1,'netmap.h']]],
+  ['netmap_5freq_5fvale_5fdetach',['NETMAP_REQ_VALE_DETACH',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba76be6bd372f592f263e134386a669fc8',1,'netmap.h']]],
+  ['netmap_5freq_5fvale_5flist',['NETMAP_REQ_VALE_LIST',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55baeae625e80fdd9974606cc72533f7dae5',1,'netmap.h']]],
+  ['netmap_5freq_5fvale_5fnewif',['NETMAP_REQ_VALE_NEWIF',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba805f1e2c2d9706b471c886f57f46c5ae',1,'netmap.h']]],
+  ['netmap_5freq_5fvale_5fpolling_5fdisable',['NETMAP_REQ_VALE_POLLING_DISABLE',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba45ad4ae8c3694dffe7893223baf0fa61',1,'netmap.h']]],
+  ['netmap_5freq_5fvale_5fpolling_5fenable',['NETMAP_REQ_VALE_POLLING_ENABLE',['../netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba32378a63c32693303c3d17d3893f0804',1,'netmap.h']]],
+  ['nr_5freg_5fall_5fnic',['NR_REG_ALL_NIC',['../netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5a6eefc97d6fcebc35fc66038172acf8d4',1,'netmap.h']]],
+  ['nr_5freg_5fdefault',['NR_REG_DEFAULT',['../netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5a3b454164cdcee73c3cb5df91569e2d5b',1,'netmap.h']]],
+  ['nr_5freg_5fnic_5fsw',['NR_REG_NIC_SW',['../netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5a0824e0950ee08ae8fc674bc9ddaa3a34',1,'netmap.h']]],
+  ['nr_5freg_5fone_5fnic',['NR_REG_ONE_NIC',['../netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5a62ea9c598020ddaa6be65cd5ba6b6578',1,'netmap.h']]],
+  ['nr_5freg_5fpipe_5fmaster',['NR_REG_PIPE_MASTER',['../netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5ade2109b5bb9eb5377d13a3857397494f',1,'netmap.h']]],
+  ['nr_5freg_5fpipe_5fslave',['NR_REG_PIPE_SLAVE',['../netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5aacdc70a35aa6dffd208c6e178e6df7d7',1,'netmap.h']]],
+  ['nr_5freg_5fsw',['NR_REG_SW',['../netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5ac8cca0b6844df0e5417719d9228aa5c5',1,'netmap.h']]]
 ];

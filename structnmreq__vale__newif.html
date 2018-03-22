@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.6"/>
-<title>warpcore: nm_ifreq Struct Reference</title>
+<title>warpcore: nmreq_vale_newif Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,7 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-attribs">Data Fields</a>  </div>
   <div class="headertitle">
-<div class="title">nm_ifreq Struct Reference</div>  </div>
+<div class="title">nmreq_vale_newif Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -93,30 +93,72 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a2c9a809d729f5ea7c5f14d7e56efbac6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnm__ifreq.html#a2c9a809d729f5ea7c5f14d7e56efbac6">nifr_name</a> [IFNAMSIZ]</td></tr>
-<tr class="separator:a2c9a809d729f5ea7c5f14d7e56efbac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61da0c20ca0c61107ffc17657f25ebd6"><td class="memItemLeft" align="right" valign="top">char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnm__ifreq.html#a61da0c20ca0c61107ffc17657f25ebd6">data</a> [<a class="el" href="netmap_8h.html#af1234879b75c0d9b9f5279a9a6ff6a42">NM_IFRDATA_LEN</a>]</td></tr>
-<tr class="separator:a61da0c20ca0c61107ffc17657f25ebd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51324790ea26ea42764b064236039b98"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__vale__newif.html#a51324790ea26ea42764b064236039b98">nr_tx_slots</a></td></tr>
+<tr class="separator:a51324790ea26ea42764b064236039b98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ae011da74d69df98c24dbdb2028d30"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__vale__newif.html#a42ae011da74d69df98c24dbdb2028d30">nr_rx_slots</a></td></tr>
+<tr class="separator:a42ae011da74d69df98c24dbdb2028d30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a472a042828d17aed9c9459e261600175"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__vale__newif.html#a472a042828d17aed9c9459e261600175">nr_tx_rings</a></td></tr>
+<tr class="separator:a472a042828d17aed9c9459e261600175"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf8201c16294759a237699b580d58c0"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__vale__newif.html#afaf8201c16294759a237699b580d58c0">nr_rx_rings</a></td></tr>
+<tr class="separator:afaf8201c16294759a237699b580d58c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb25c7ff133217790e9358c78724bde5"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__vale__newif.html#aeb25c7ff133217790e9358c78724bde5">nr_mem_id</a></td></tr>
+<tr class="separator:aeb25c7ff133217790e9358c78724bde5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Field Documentation</h2>
-<a class="anchor" id="a61da0c20ca0c61107ffc17657f25ebd6"></a>
+<a class="anchor" id="aeb25c7ff133217790e9358c78724bde5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char nm_ifreq::data[<a class="el" href="netmap_8h.html#af1234879b75c0d9b9f5279a9a6ff6a42">NM_IFRDATA_LEN</a>]</td>
+          <td class="memname">uint16_t nmreq_vale_newif::nr_mem_id</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a2c9a809d729f5ea7c5f14d7e56efbac6"></a>
+<a class="anchor" id="afaf8201c16294759a237699b580d58c0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char nm_ifreq::nifr_name[IFNAMSIZ]</td>
+          <td class="memname">uint16_t nmreq_vale_newif::nr_rx_rings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a42ae011da74d69df98c24dbdb2028d30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t nmreq_vale_newif::nr_rx_slots</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a472a042828d17aed9c9459e261600175"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t nmreq_vale_newif::nr_tx_rings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a51324790ea26ea42764b064236039b98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t nmreq_vale_newif::nr_tx_slots</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -129,7 +171,7 @@ Data Fields</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 12 2018 14:57:39 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 22 2018 17:54:56 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

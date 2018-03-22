@@ -94,7 +94,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">netmap.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><div class="dynheader">
+<div class="textblock"><code>#include &quot;netmap_legacy.h&quot;</code><br/>
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for netmap.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="netmap_8h__incl.png" border="0" usemap="#include_2net_2netmap_8h" alt=""/></div>
+<map name="include_2net_2netmap_8h" id="include_2net_2netmap_8h">
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="netmap_8h__dep__incl.png" border="0" usemap="#include_2net_2netmap_8hdep" alt=""/></div>
@@ -112,14 +120,34 @@ Data Structures</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnetmap__if.html">netmap_if</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq.html">nmreq</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__option.html">nmreq_option</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnm__ifreq.html">nm_ifreq</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__header.html">nmreq_header</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__register.html">nmreq_register</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__port__info__get.html">nmreq_port_info_get</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__vale__attach.html">nmreq_vale_attach</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__vale__detach.html">nmreq_vale_detach</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__vale__list.html">nmreq_vale_list</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__port__hdr.html">nmreq_port_hdr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__vale__newif.html">nmreq_vale_newif</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__vale__polling.html">nmreq_vale_polling</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__pools__info.html">nmreq_pools_info</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structnmreq__opt__extmem.html">nmreq_opt_extmem</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a42a3750856de2a1db0136fc62ffea302"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a42a3750856de2a1db0136fc62ffea302">NETMAP_API</a>&#160;&#160;&#160;11		/* current API version */</td></tr>
+<tr class="memitem:a42a3750856de2a1db0136fc62ffea302"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a42a3750856de2a1db0136fc62ffea302">NETMAP_API</a>&#160;&#160;&#160;12		/* current API version */</td></tr>
 <tr class="separator:a42a3750856de2a1db0136fc62ffea302"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a892c50bfeefb1f6d5e82d1824bfc8b7f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a892c50bfeefb1f6d5e82d1824bfc8b7f">NETMAP_MIN_API</a>&#160;&#160;&#160;11		/* min and max versions accepted */</td></tr>
 <tr class="separator:a892c50bfeefb1f6d5e82d1824bfc8b7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -151,48 +179,10 @@ Macros</h2></td></tr>
 <tr class="separator:aa83b675a8b92529ee8a6e0c8e5785ca7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0fe9c019737f9e63abcc99b327a001f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a0fe9c019737f9e63abcc99b327a001f7">NI_PRIV_MEM</a>&#160;&#160;&#160;0x1		/* private memory region */</td></tr>
 <tr class="separator:a0fe9c019737f9e63abcc99b327a001f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0ae3657e22f5fbe43b4b1948db8c1d7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#ae0ae3657e22f5fbe43b4b1948db8c1d7">NETMAP_HW_RING</a>&#160;&#160;&#160;0x4000	/* single NIC ring pair */</td></tr>
-<tr class="separator:ae0ae3657e22f5fbe43b4b1948db8c1d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6562f84ccaa7b9a2bd0e64dbc1115f3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a6562f84ccaa7b9a2bd0e64dbc1115f3e">NETMAP_SW_RING</a>&#160;&#160;&#160;0x2000	/* only host ring pair */</td></tr>
-<tr class="separator:a6562f84ccaa7b9a2bd0e64dbc1115f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85e0f7034b09b3650503e850a592a508"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a85e0f7034b09b3650503e850a592a508">NETMAP_RING_MASK</a>&#160;&#160;&#160;0x0fff	/* the ring number */</td></tr>
-<tr class="separator:a85e0f7034b09b3650503e850a592a508"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99b1adbf0022987ca826ba4358c55207"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a99b1adbf0022987ca826ba4358c55207">NETMAP_NO_TX_POLL</a>&#160;&#160;&#160;0x1000	/* no automatic txsync on poll */</td></tr>
-<tr class="separator:a99b1adbf0022987ca826ba4358c55207"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29a212086e666457b180b5097f463155"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a29a212086e666457b180b5097f463155">NETMAP_DO_RX_POLL</a>&#160;&#160;&#160;0x8000	/* DO automatic rxsync on poll */</td></tr>
-<tr class="separator:a29a212086e666457b180b5097f463155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa02b7ff5c6853d340ff200c6d2a9648"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#aaa02b7ff5c6853d340ff200c6d2a9648">NETMAP_BDG_ATTACH</a>&#160;&#160;&#160;1	/* attach the NIC */</td></tr>
-<tr class="separator:aaa02b7ff5c6853d340ff200c6d2a9648"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5185c1bf63ef5df84635282f32125af"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#ae5185c1bf63ef5df84635282f32125af">NETMAP_BDG_DETACH</a>&#160;&#160;&#160;2	/* detach the NIC */</td></tr>
-<tr class="separator:ae5185c1bf63ef5df84635282f32125af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae04bd7ea57badf7db7cd56662c990ea9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#ae04bd7ea57badf7db7cd56662c990ea9">NETMAP_BDG_REGOPS</a>&#160;&#160;&#160;3	/* register bridge callbacks */</td></tr>
-<tr class="separator:ae04bd7ea57badf7db7cd56662c990ea9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04dc6c6d8d1063aab9ac441677b0e613"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a04dc6c6d8d1063aab9ac441677b0e613">NETMAP_BDG_LIST</a>&#160;&#160;&#160;4	/* get bridge's info */</td></tr>
-<tr class="separator:a04dc6c6d8d1063aab9ac441677b0e613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add32ba800de0fc2df028d40e4c0f2e21"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#add32ba800de0fc2df028d40e4c0f2e21">NETMAP_BDG_VNET_HDR</a>&#160;&#160;&#160;5       /* set the port virtio-net-hdr length */</td></tr>
-<tr class="separator:add32ba800de0fc2df028d40e4c0f2e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19ed4a228a83ae69f4257c708f9bd72d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a19ed4a228a83ae69f4257c708f9bd72d">NETMAP_BDG_OFFSET</a>&#160;&#160;&#160;<a class="el" href="netmap_8h.html#add32ba800de0fc2df028d40e4c0f2e21">NETMAP_BDG_VNET_HDR</a>	/* deprecated alias */</td></tr>
-<tr class="separator:a19ed4a228a83ae69f4257c708f9bd72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67ffa6e36b557af1ae4c87377682ec51"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a67ffa6e36b557af1ae4c87377682ec51">NETMAP_BDG_NEWIF</a>&#160;&#160;&#160;6	/* create a virtual port */</td></tr>
-<tr class="separator:a67ffa6e36b557af1ae4c87377682ec51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae6c2f3e1676565ad8c976a2e4bb5199"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#aae6c2f3e1676565ad8c976a2e4bb5199">NETMAP_BDG_DELIF</a>&#160;&#160;&#160;7	/* destroy a virtual port */</td></tr>
-<tr class="separator:aae6c2f3e1676565ad8c976a2e4bb5199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ab02eb30033cda2351451c84a9df8f0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a5ab02eb30033cda2351451c84a9df8f0">NETMAP_PT_HOST_CREATE</a>&#160;&#160;&#160;8	/* create ptnetmap kthreads */</td></tr>
-<tr class="separator:a5ab02eb30033cda2351451c84a9df8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5377cd238a2b8df6850e02205c8009c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#ac5377cd238a2b8df6850e02205c8009c">NETMAP_PT_HOST_DELETE</a>&#160;&#160;&#160;9	/* delete ptnetmap kthreads */</td></tr>
-<tr class="separator:ac5377cd238a2b8df6850e02205c8009c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7bfe1b1534b8d1323a8b0e26d8b9330e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a7bfe1b1534b8d1323a8b0e26d8b9330e">NETMAP_BDG_POLLING_ON</a>&#160;&#160;&#160;10	/* delete polling kthread */</td></tr>
-<tr class="separator:a7bfe1b1534b8d1323a8b0e26d8b9330e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa364b6b66e2fe54d250d399c9746f088"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#aa364b6b66e2fe54d250d399c9746f088">NETMAP_BDG_POLLING_OFF</a>&#160;&#160;&#160;11	/* delete polling kthread */</td></tr>
-<tr class="separator:aa364b6b66e2fe54d250d399c9746f088"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9695838fe1825e1247417f0930bc7b6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#ab9695838fe1825e1247417f0930bc7b6">NETMAP_VNET_HDR_GET</a>&#160;&#160;&#160;12      /* get the port virtio-net-hdr length */</td></tr>
-<tr class="separator:ab9695838fe1825e1247417f0930bc7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29a6e6810c5253ad4b938b206931c5a9"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a29a6e6810c5253ad4b938b206931c5a9">NETMAP_POOLS_INFO_GET</a>&#160;&#160;&#160;13	/* get memory allocator pools info */</td></tr>
-<tr class="separator:a29a6e6810c5253ad4b938b206931c5a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab321ca0ffb14f777bd58f347a38e49ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#ab321ca0ffb14f777bd58f347a38e49ab">NETMAP_BDG_HOST</a>&#160;&#160;&#160;1	/* attach the host stack on ATTACH */</td></tr>
-<tr class="separator:ab321ca0ffb14f777bd58f347a38e49ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a1a22635528abc06b02764d8fb4b139"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a2a1a22635528abc06b02764d8fb4b139">NR_REG_MASK</a>&#160;&#160;&#160;0xf /* values for nr_flags */</td></tr>
-<tr class="separator:a2a1a22635528abc06b02764d8fb4b139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db62a6911e1cd7382581ae1be1201cd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a6db62a6911e1cd7382581ae1be1201cd">NETMAP_REQ_MAXSIZE</a>&#160;&#160;&#160;4096</td></tr>
+<tr class="separator:a6db62a6911e1cd7382581ae1be1201cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19916f410c3a378150f0169a11e2bd9c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a19916f410c3a378150f0169a11e2bd9c">NETMAP_REQ_IFNAMSIZ</a>&#160;&#160;&#160;64</td></tr>
+<tr class="separator:a19916f410c3a378150f0169a11e2bd9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8e2f2ee3ab8e6deaa51c9bdad2d485a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#ac8e2f2ee3ab8e6deaa51c9bdad2d485a">NR_MONITOR_TX</a>&#160;&#160;&#160;0x100</td></tr>
 <tr class="separator:ac8e2f2ee3ab8e6deaa51c9bdad2d485a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ffc08903814c7ba494afe65196adad3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a6ffc08903814c7ba494afe65196adad3">NR_MONITOR_RX</a>&#160;&#160;&#160;0x200</td></tr>
@@ -211,35 +201,58 @@ Macros</h2></td></tr>
 <tr class="separator:ade9edf79f46abd852cb55186fe219667"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f9c84bf48293c4a8a78e6f523f99c08"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a9f9c84bf48293c4a8a78e6f523f99c08">NR_ACCEPT_VNET_HDR</a>&#160;&#160;&#160;0x8000</td></tr>
 <tr class="separator:a9f9c84bf48293c4a8a78e6f523f99c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a239ceb32c04615908015cfc97185a64d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a239ceb32c04615908015cfc97185a64d">NM_BDG_NAME</a>&#160;&#160;&#160;&quot;vale&quot;	/* prefix for bridge port name */</td></tr>
-<tr class="separator:a239ceb32c04615908015cfc97185a64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abaaeb0d152df89b317f04ee340c27d3e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#abaaeb0d152df89b317f04ee340c27d3e">NIOCGINFO</a>&#160;&#160;&#160;_IOWR('i', 145, struct <a class="el" href="structnmreq.html">nmreq</a>) /* return IF info */</td></tr>
-<tr class="separator:abaaeb0d152df89b317f04ee340c27d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d792861cc4742a871276c17e399af1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a21d792861cc4742a871276c17e399af1">NIOCREGIF</a>&#160;&#160;&#160;_IOWR('i', 146, struct <a class="el" href="structnmreq.html">nmreq</a>) /* interface register */</td></tr>
-<tr class="separator:a21d792861cc4742a871276c17e399af1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e231cec864e2804192530df374c224"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a74e231cec864e2804192530df374c224">NR_DO_RX_POLL</a>&#160;&#160;&#160;0x10000</td></tr>
+<tr class="separator:a74e231cec864e2804192530df374c224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2931082c16918f9588339fad5eb816ac"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a2931082c16918f9588339fad5eb816ac">NR_NO_TX_POLL</a>&#160;&#160;&#160;0x20000</td></tr>
+<tr class="separator:a2931082c16918f9588339fad5eb816ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a2b63b444da3cdf8726ff4446046d8b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a1a2b63b444da3cdf8726ff4446046d8b">NIOCCTRL</a>&#160;&#160;&#160;_IOWR('i', 151, struct <a class="el" href="structnmreq__header.html">nmreq_header</a>)</td></tr>
+<tr class="separator:a1a2b63b444da3cdf8726ff4446046d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a368c0988cb35f2b257487e64459b820b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a368c0988cb35f2b257487e64459b820b">NIOCTXSYNC</a>&#160;&#160;&#160;_IO('i', 148) /* sync tx queues */</td></tr>
 <tr class="separator:a368c0988cb35f2b257487e64459b820b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a624cac14dacccf5d487793bc3686df0a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a624cac14dacccf5d487793bc3686df0a">NIOCRXSYNC</a>&#160;&#160;&#160;_IO('i', 149) /* sync rx queues */</td></tr>
 <tr class="separator:a624cac14dacccf5d487793bc3686df0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a352c34c7d416c392ae207e8a84959ac6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a352c34c7d416c392ae207e8a84959ac6">NIOCCONFIG</a>&#160;&#160;&#160;_IOWR('i',150, struct <a class="el" href="structnm__ifreq.html">nm_ifreq</a>) /* for ext. modules */</td></tr>
-<tr class="separator:a352c34c7d416c392ae207e8a84959ac6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1234879b75c0d9b9f5279a9a6ff6a42"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#af1234879b75c0d9b9f5279a9a6ff6a42">NM_IFRDATA_LEN</a>&#160;&#160;&#160;256</td></tr>
-<tr class="separator:af1234879b75c0d9b9f5279a9a6ff6a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239ceb32c04615908015cfc97185a64d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a239ceb32c04615908015cfc97185a64d">NM_BDG_NAME</a>&#160;&#160;&#160;&quot;vale&quot;	/* prefix for bridge port name */</td></tr>
+<tr class="separator:a239ceb32c04615908015cfc97185a64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659d89097820d20637aa99033dda938d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a659d89097820d20637aa99033dda938d">NETMAP_POLLING_MODE_SINGLE_CPU</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a659d89097820d20637aa99033dda938d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0273f368b49beb5fe9a51f08bf1705d5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="netmap_8h.html#a0273f368b49beb5fe9a51f08bf1705d5">NETMAP_POLLING_MODE_MULTI_CPU</a>&#160;&#160;&#160;2</td></tr>
+<tr class="separator:a0273f368b49beb5fe9a51f08bf1705d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
-&#160;&#160;<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba3b454164cdcee73c3cb5df91569e2d5b">NR_REG_DEFAULT</a> = 0, 
-<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6eefc97d6fcebc35fc66038172acf8d4">NR_REG_ALL_NIC</a> = 1, 
-<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac8cca0b6844df0e5417719d9228aa5c5">NR_REG_SW</a> = 2, 
-<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba0824e0950ee08ae8fc674bc9ddaa3a34">NR_REG_NIC_SW</a> = 3, 
+&#160;&#160;<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55bac78cdb456cf34f80af0c65613f015b89">NETMAP_REQ_REGISTER</a> = 1, 
+<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba88ac91c0e6d829ba27790a01d05d3f91">NETMAP_REQ_PORT_INFO_GET</a>, 
+<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2d2c4f4ad58231273ae80f31a3dbf2dd">NETMAP_REQ_VALE_ATTACH</a>, 
+<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba76be6bd372f592f263e134386a669fc8">NETMAP_REQ_VALE_DETACH</a>, 
 <br/>
-&#160;&#160;<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba62ea9c598020ddaa6be65cd5ba6b6578">NR_REG_ONE_NIC</a> = 4, 
-<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55bade2109b5bb9eb5377d13a3857397494f">NR_REG_PIPE_MASTER</a> = 5, 
-<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55baacdc70a35aa6dffd208c6e178e6df7d7">NR_REG_PIPE_SLAVE</a> = 6
+&#160;&#160;<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55baeae625e80fdd9974606cc72533f7dae5">NETMAP_REQ_VALE_LIST</a>, 
+<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55baaf270e0dc987b3ceb5f36330f43d70b6">NETMAP_REQ_PORT_HDR_SET</a>, 
+<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba5cb02e4a6c47fa7366235206f2769890">NETMAP_REQ_PORT_HDR_GET</a>, 
+<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba805f1e2c2d9706b471c886f57f46c5ae">NETMAP_REQ_VALE_NEWIF</a>, 
+<br/>
+&#160;&#160;<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba025f84da2b8da001206adfb94014f786">NETMAP_REQ_VALE_DELIF</a>, 
+<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba32378a63c32693303c3d17d3893f0804">NETMAP_REQ_VALE_POLLING_ENABLE</a>, 
+<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba45ad4ae8c3694dffe7893223baf0fa61">NETMAP_REQ_VALE_POLLING_DISABLE</a>, 
+<a class="el" href="netmap_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba871852e4e62862cb4840dce1865e30c9">NETMAP_REQ_POOLS_INFO_GET</a>
 <br/>
  }</td></tr>
 <tr class="separator:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf764cbdea00d65edcd07bb9953ad2b7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="netmap_8h.html#adf764cbdea00d65edcd07bb9953ad2b7a83eababc38497cf2c76df34842a3dd2a">NETMAP_REQ_OPT_EXTMEM</a> = 1
+ }</td></tr>
+<tr class="separator:adf764cbdea00d65edcd07bb9953ad2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99fb83031ce9923c84392b4e92f956b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br/>
+&#160;&#160;<a class="el" href="netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5a3b454164cdcee73c3cb5df91569e2d5b">NR_REG_DEFAULT</a> = 0, 
+<a class="el" href="netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5a6eefc97d6fcebc35fc66038172acf8d4">NR_REG_ALL_NIC</a> = 1, 
+<a class="el" href="netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5ac8cca0b6844df0e5417719d9228aa5c5">NR_REG_SW</a> = 2, 
+<a class="el" href="netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5a0824e0950ee08ae8fc674bc9ddaa3a34">NR_REG_NIC_SW</a> = 3, 
+<br/>
+&#160;&#160;<a class="el" href="netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5a62ea9c598020ddaa6be65cd5ba6b6578">NR_REG_ONE_NIC</a> = 4, 
+<a class="el" href="netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5ade2109b5bb9eb5377d13a3857397494f">NR_REG_PIPE_MASTER</a> = 5, 
+<a class="el" href="netmap_8h.html#a99fb83031ce9923c84392b4e92f956b5aacdc70a35aa6dffd208c6e178e6df7d7">NR_REG_PIPE_SLAVE</a> = 6
+<br/>
+ }</td></tr>
+<tr class="separator:a99fb83031ce9923c84392b4e92f956b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -252,163 +265,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NETMAP_API&#160;&#160;&#160;11		/* current API version */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aaa02b7ff5c6853d340ff200c6d2a9648"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_BDG_ATTACH&#160;&#160;&#160;1	/* attach the NIC */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aae6c2f3e1676565ad8c976a2e4bb5199"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_BDG_DELIF&#160;&#160;&#160;7	/* destroy a virtual port */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae5185c1bf63ef5df84635282f32125af"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_BDG_DETACH&#160;&#160;&#160;2	/* detach the NIC */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab321ca0ffb14f777bd58f347a38e49ab"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_BDG_HOST&#160;&#160;&#160;1	/* attach the host stack on ATTACH */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a04dc6c6d8d1063aab9ac441677b0e613"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_BDG_LIST&#160;&#160;&#160;4	/* get bridge's info */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a67ffa6e36b557af1ae4c87377682ec51"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_BDG_NEWIF&#160;&#160;&#160;6	/* create a virtual port */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a19ed4a228a83ae69f4257c708f9bd72d"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_BDG_OFFSET&#160;&#160;&#160;<a class="el" href="netmap_8h.html#add32ba800de0fc2df028d40e4c0f2e21">NETMAP_BDG_VNET_HDR</a>	/* deprecated alias */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="aa364b6b66e2fe54d250d399c9746f088"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_BDG_POLLING_OFF&#160;&#160;&#160;11	/* delete polling kthread */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a7bfe1b1534b8d1323a8b0e26d8b9330e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_BDG_POLLING_ON&#160;&#160;&#160;10	/* delete polling kthread */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae04bd7ea57badf7db7cd56662c990ea9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_BDG_REGOPS&#160;&#160;&#160;3	/* register bridge callbacks */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="add32ba800de0fc2df028d40e4c0f2e21"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_BDG_VNET_HDR&#160;&#160;&#160;5       /* set the port virtio-net-hdr length */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a29a212086e666457b180b5097f463155"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_DO_RX_POLL&#160;&#160;&#160;0x8000	/* DO automatic rxsync on poll */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ae0ae3657e22f5fbe43b4b1948db8c1d7"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_HW_RING&#160;&#160;&#160;0x4000	/* single NIC ring pair */</td>
+          <td class="memname">#define NETMAP_API&#160;&#160;&#160;12		/* current API version */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -439,84 +296,48 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a99b1adbf0022987ca826ba4358c55207"></a>
+<a class="anchor" id="a0273f368b49beb5fe9a51f08bf1705d5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NETMAP_NO_TX_POLL&#160;&#160;&#160;0x1000	/* no automatic txsync on poll */</td>
+          <td class="memname">#define NETMAP_POLLING_MODE_MULTI_CPU&#160;&#160;&#160;2</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a29a6e6810c5253ad4b938b206931c5a9"></a>
+<a class="anchor" id="a659d89097820d20637aa99033dda938d"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NETMAP_POOLS_INFO_GET&#160;&#160;&#160;13	/* get memory allocator pools info */</td>
+          <td class="memname">#define NETMAP_POLLING_MODE_SINGLE_CPU&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="a5ab02eb30033cda2351451c84a9df8f0"></a>
+<a class="anchor" id="a19916f410c3a378150f0169a11e2bd9c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NETMAP_PT_HOST_CREATE&#160;&#160;&#160;8	/* create ptnetmap kthreads */</td>
+          <td class="memname">#define NETMAP_REQ_IFNAMSIZ&#160;&#160;&#160;64</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a class="anchor" id="ac5377cd238a2b8df6850e02205c8009c"></a>
+<a class="anchor" id="a6db62a6911e1cd7382581ae1be1201cd"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NETMAP_PT_HOST_DELETE&#160;&#160;&#160;9	/* delete ptnetmap kthreads */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a85e0f7034b09b3650503e850a592a508"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_RING_MASK&#160;&#160;&#160;0x0fff	/* the ring number */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a6562f84ccaa7b9a2bd0e64dbc1115f3e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_SW_RING&#160;&#160;&#160;0x2000	/* only host ring pair */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="ab9695838fe1825e1247417f0930bc7b6"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NETMAP_VNET_HDR_GET&#160;&#160;&#160;12      /* get the port virtio-net-hdr length */</td>
+          <td class="memname">#define NETMAP_REQ_MAXSIZE&#160;&#160;&#160;4096</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -535,36 +356,12 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a352c34c7d416c392ae207e8a84959ac6"></a>
+<a class="anchor" id="a1a2b63b444da3cdf8726ff4446046d8b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define NIOCCONFIG&#160;&#160;&#160;_IOWR('i',150, struct <a class="el" href="structnm__ifreq.html">nm_ifreq</a>) /* for ext. modules */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="abaaeb0d152df89b317f04ee340c27d3e"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NIOCGINFO&#160;&#160;&#160;_IOWR('i', 145, struct <a class="el" href="structnmreq.html">nmreq</a>) /* return IF info */</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a21d792861cc4742a871276c17e399af1"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NIOCREGIF&#160;&#160;&#160;_IOWR('i', 146, struct <a class="el" href="structnmreq.html">nmreq</a>) /* interface register */</td>
+          <td class="memname">#define NIOCCTRL&#160;&#160;&#160;_IOWR('i', 151, struct <a class="el" href="structnmreq__header.html">nmreq_header</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -619,24 +416,24 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af1234879b75c0d9b9f5279a9a6ff6a42"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NM_IFRDATA_LEN&#160;&#160;&#160;256</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a class="anchor" id="a9f9c84bf48293c4a8a78e6f523f99c08"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define NR_ACCEPT_VNET_HDR&#160;&#160;&#160;0x8000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a74e231cec864e2804192530df374c224"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NR_DO_RX_POLL&#160;&#160;&#160;0x10000</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -691,6 +488,18 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a2931082c16918f9588339fad5eb816ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NR_NO_TX_POLL&#160;&#160;&#160;0x20000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="aa270c718ee2b54a8accfef7ec93d70af"></a>
 <div class="memitem">
 <div class="memproto">
@@ -709,18 +518,6 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define NR_PTNETMAP_HOST&#160;&#160;&#160;0x1000</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a class="anchor" id="a2a1a22635528abc06b02764d8fb4b139"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define NR_REG_MASK&#160;&#160;&#160;0xf /* values for nr_flags */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -898,19 +695,73 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba3b454164cdcee73c3cb5df91569e2d5b"></a>NR_REG_DEFAULT</em>&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55bac78cdb456cf34f80af0c65613f015b89"></a>NETMAP_REQ_REGISTER</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba6eefc97d6fcebc35fc66038172acf8d4"></a>NR_REG_ALL_NIC</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba88ac91c0e6d829ba27790a01d05d3f91"></a>NETMAP_REQ_PORT_INFO_GET</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55bac8cca0b6844df0e5417719d9228aa5c5"></a>NR_REG_SW</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba2d2c4f4ad58231273ae80f31a3dbf2dd"></a>NETMAP_REQ_VALE_ATTACH</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba0824e0950ee08ae8fc674bc9ddaa3a34"></a>NR_REG_NIC_SW</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba76be6bd372f592f263e134386a669fc8"></a>NETMAP_REQ_VALE_DETACH</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba62ea9c598020ddaa6be65cd5ba6b6578"></a>NR_REG_ONE_NIC</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55baeae625e80fdd9974606cc72533f7dae5"></a>NETMAP_REQ_VALE_LIST</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55bade2109b5bb9eb5377d13a3857397494f"></a>NR_REG_PIPE_MASTER</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55baaf270e0dc987b3ceb5f36330f43d70b6"></a>NETMAP_REQ_PORT_HDR_SET</em>&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55baacdc70a35aa6dffd208c6e178e6df7d7"></a>NR_REG_PIPE_SLAVE</em>&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba5cb02e4a6c47fa7366235206f2769890"></a>NETMAP_REQ_PORT_HDR_GET</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba805f1e2c2d9706b471c886f57f46c5ae"></a>NETMAP_REQ_VALE_NEWIF</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba025f84da2b8da001206adfb94014f786"></a>NETMAP_REQ_VALE_DELIF</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba32378a63c32693303c3d17d3893f0804"></a>NETMAP_REQ_VALE_POLLING_ENABLE</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba45ad4ae8c3694dffe7893223baf0fa61"></a>NETMAP_REQ_VALE_POLLING_DISABLE</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a06fc87d81c62e9abb8790b6e5713c55ba871852e4e62862cb4840dce1865e30c9"></a>NETMAP_REQ_POOLS_INFO_GET</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="adf764cbdea00d65edcd07bb9953ad2b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="adf764cbdea00d65edcd07bb9953ad2b7a83eababc38497cf2c76df34842a3dd2a"></a>NETMAP_REQ_OPT_EXTMEM</em>&#160;</td><td class="fielddoc">
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="a99fb83031ce9923c84392b4e92f956b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><em><a class="anchor" id="a99fb83031ce9923c84392b4e92f956b5a3b454164cdcee73c3cb5df91569e2d5b"></a>NR_REG_DEFAULT</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a99fb83031ce9923c84392b4e92f956b5a6eefc97d6fcebc35fc66038172acf8d4"></a>NR_REG_ALL_NIC</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a99fb83031ce9923c84392b4e92f956b5ac8cca0b6844df0e5417719d9228aa5c5"></a>NR_REG_SW</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a99fb83031ce9923c84392b4e92f956b5a0824e0950ee08ae8fc674bc9ddaa3a34"></a>NR_REG_NIC_SW</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a99fb83031ce9923c84392b4e92f956b5a62ea9c598020ddaa6be65cd5ba6b6578"></a>NR_REG_ONE_NIC</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a99fb83031ce9923c84392b4e92f956b5ade2109b5bb9eb5377d13a3857397494f"></a>NR_REG_PIPE_MASTER</em>&#160;</td><td class="fielddoc">
+</td></tr>
+<tr><td class="fieldname"><em><a class="anchor" id="a99fb83031ce9923c84392b4e92f956b5aacdc70a35aa6dffd208c6e178e6df7d7"></a>NR_REG_PIPE_SLAVE</em>&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -944,7 +795,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Mar 12 2018 14:57:39 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 22 2018 17:54:55 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
