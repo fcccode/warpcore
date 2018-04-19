@@ -1,6 +1,6 @@
 <map id="w_bind" name="w_bind">
 <area shape="rect" id="node2" href="$warpcore_8c.html#ae5ac0023fa085cdd2a079fe3a5db2004" title="Get the socket bound to the &lt;sport, dport&gt; pair. " alt="" coords="123,5,215,32"/>
-<area shape="rect" id="node3" href="$backend_8h.html#a495a4a69dd158694e972166b9c0ddcb7" title="Netmap&#45;specific code to bind a warpcore socket. " alt="" coords="118,56,221,83"/>
+<area shape="rect" id="node3" href="$backend_8h.html#a495a4a69dd158694e972166b9c0ddcb7" title="Bind a warpcore socket&#45;backend socket. " alt="" coords="118,56,221,83"/>
 <area shape="rect" id="node4" href="$warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="284,31,348,57"/>
 <area shape="rect" id="node5" href="$warpcore_8h.html#ae5ac0023fa085cdd2a079fe3a5db2004" title="Get the socket bound to the &lt;sport, dport&gt; pair. " alt="" coords="270,81,362,108"/>
 </map>

@@ -110,7 +110,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="backend_8h__dep__incl.png" border="0" usemap="#src_2backend_8hdep" alt=""/></div>
 <map name="src_2backend_8hdep" id="src_2backend_8hdep">
-<area shape="rect" id="node2" href="arp_8c.html" title="src/arp.c" alt="" coords="5,80,77,107"/><area shape="rect" id="node3" href="backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="103,80,256,107"/><area shape="rect" id="node4" href="backend__sock_8c.html" title="src/backend_sock.c" alt="" coords="281,80,420,107"/><area shape="rect" id="node5" href="icmp_8c.html" title="src/icmp.c" alt="" coords="444,80,525,107"/><area shape="rect" id="node6" href="ip_8c.html" title="src/ip.c" alt="" coords="551,80,616,107"/><area shape="rect" id="node7" href="udp_8c.html" title="src/udp.c" alt="" coords="641,80,716,107"/><area shape="rect" id="node8" href="warpcore_8c.html" title="src/warpcore.c" alt="" coords="741,80,848,107"/></map>
+<area shape="rect" id="node2" href="arp_8c.html" title="src/arp.c" alt="" coords="5,80,77,107"/><area shape="rect" id="node3" href="backend__dpdk_8c.html" title="src/backend_dpdk.c" alt="" coords="103,80,241,107"/><area shape="rect" id="node4" href="backend__netmap_8c.html" title="src/backend_netmap.c" alt="" coords="265,80,419,107"/><area shape="rect" id="node5" href="backend__sock_8c.html" title="src/backend_sock.c" alt="" coords="444,80,583,107"/><area shape="rect" id="node6" href="icmp_8c.html" title="src/icmp.c" alt="" coords="607,80,688,107"/><area shape="rect" id="node7" href="ip_8c.html" title="src/ip.c" alt="" coords="714,80,779,107"/><area shape="rect" id="node8" href="udp_8c.html" title="src/udp.c" alt="" coords="803,80,879,107"/><area shape="rect" id="node9" href="warpcore_8c.html" title="src/warpcore.c" alt="" coords="903,80,1011,107"/></map>
 </div>
 </div>
 <p><a href="backend_8h_source.html">Go to the source code of this file.</a></p>
@@ -153,19 +153,19 @@ Functions</h2></td></tr>
 <tr class="memdesc:a0343eca679aada91188621b5659c0c29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global list of initialized warpcore engines.  <a href="#a0343eca679aada91188621b5659c0c29">More...</a><br/></td></tr>
 <tr class="separator:a0343eca679aada91188621b5659c0c29"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a495a4a69dd158694e972166b9c0ddcb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a495a4a69dd158694e972166b9c0ddcb7">backend_bind</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
-<tr class="memdesc:a495a4a69dd158694e972166b9c0ddcb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Netmap-specific code to bind a warpcore socket.  <a href="#a495a4a69dd158694e972166b9c0ddcb7">More...</a><br/></td></tr>
+<tr class="memdesc:a495a4a69dd158694e972166b9c0ddcb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind a warpcore socket-backend socket.  <a href="#a495a4a69dd158694e972166b9c0ddcb7">More...</a><br/></td></tr>
 <tr class="separator:a495a4a69dd158694e972166b9c0ddcb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10352237f3cab978ad3dbe7f25acb8cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a10352237f3cab978ad3dbe7f25acb8cc">backend_close</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
-<tr class="memdesc:a10352237f3cab978ad3dbe7f25acb8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The netmap backend performs no operation here.  <a href="#a10352237f3cab978ad3dbe7f25acb8cc">More...</a><br/></td></tr>
+<tr class="memdesc:a10352237f3cab978ad3dbe7f25acb8cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the socket.  <a href="#a10352237f3cab978ad3dbe7f25acb8cc">More...</a><br/></td></tr>
 <tr class="separator:a10352237f3cab978ad3dbe7f25acb8cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5df52522d52bfed04aa270094deaa78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#af5df52522d52bfed04aa270094deaa78">backend_connect</a> (struct <a class="el" href="structw__sock.html">w_sock</a> *const s)</td></tr>
-<tr class="memdesc:af5df52522d52bfed04aa270094deaa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect the given <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, using the netmap backend.  <a href="#af5df52522d52bfed04aa270094deaa78">More...</a><br/></td></tr>
+<tr class="memdesc:af5df52522d52bfed04aa270094deaa78"><td class="mdescLeft">&#160;</td><td class="mdescRight">The socket backend performs no operation here.  <a href="#af5df52522d52bfed04aa270094deaa78">More...</a><br/></td></tr>
 <tr class="separator:af5df52522d52bfed04aa270094deaa78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1efe6c54e4e30260d1c2630726b98eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a1efe6c54e4e30260d1c2630726b98eb5">backend_init</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w, const uint32_t nbufs, const bool is_lo, const bool is_left)</td></tr>
-<tr class="memdesc:a1efe6c54e4e30260d1c2630726b98eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore netmap backend for engine <code>w</code>.  <a href="#a1efe6c54e4e30260d1c2630726b98eb5">More...</a><br/></td></tr>
+<tr class="memdesc:a1efe6c54e4e30260d1c2630726b98eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the warpcore socket backend for engine <code>w</code>.  <a href="#a1efe6c54e4e30260d1c2630726b98eb5">More...</a><br/></td></tr>
 <tr class="separator:a1efe6c54e4e30260d1c2630726b98eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e43d05a55650db2be88e9eece99905d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="backend_8h.html#a7e43d05a55650db2be88e9eece99905d">backend_cleanup</a> (struct <a class="el" href="structw__engine.html">w_engine</a> *const w)</td></tr>
-<tr class="memdesc:a7e43d05a55650db2be88e9eece99905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore netmap engine down cleanly.  <a href="#a7e43d05a55650db2be88e9eece99905d">More...</a><br/></td></tr>
+<tr class="memdesc:a7e43d05a55650db2be88e9eece99905d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shut a warpcore socket engine down cleanly.  <a href="#a7e43d05a55650db2be88e9eece99905d">More...</a><br/></td></tr>
 <tr class="separator:a7e43d05a55650db2be88e9eece99905d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -433,16 +433,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Netmap-specific code to bind a warpcore socket. </p>
-<p>Only computes a random port number per RFC 6056, if the socket is not binding to a specific port.</p>
+<p>Bind a warpcore socket-backend socket. </p>
+<p>Calls the underlying Socket API.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to bind.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Netmap-specific code to bind a warpcore socket.</p>
-<p>Calls the underlying Socket API.</p>
+<p>Bind a warpcore socket-backend socket.</p>
+<p>Only computes a random port number per RFC 6056, if the socket is not binding to a specific port.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to bind. </td></tr>
@@ -475,16 +475,16 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Shut a warpcore netmap engine down cleanly. </p>
-<p>This function returns all <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures associated the engine to netmap.</p>
+<p>Shut a warpcore socket engine down cleanly. </p>
+<p>Does nothing, at the moment.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">w</td><td>Backend engine.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Shut a warpcore netmap engine down cleanly.</p>
-<p>Does nothing, at the moment.</p>
+<p>Shut a warpcore socket engine down cleanly.</p>
+<p>This function returns all <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures associated the engine to netmap.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">w</td><td>Backend engine. </td></tr>
@@ -517,14 +517,14 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>The netmap backend performs no operation here. </p>
+<p>Close the socket. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to close.</td></tr>
   </table>
   </dd>
 </dl>
-<p>The netmap backend performs no operation here.</p>
+<p>Close the socket.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to close. </td></tr>
@@ -548,18 +548,18 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Connect the given <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, using the netmap backend. </p>
-<p>If the Ethernet MAC address of the destination (or the default router towards it) is not known, it will block trying to look it up via ARP.</p>
+<p>The socket backend performs no operation here. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to connect.</td></tr>
+    <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to connect.</td></tr>
   </table>
   </dd>
 </dl>
-<p>Connect the given <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, using the netmap backend.</p>
+<p>The socket backend performs no operation here.</p>
+<p>If the Ethernet MAC address of the destination (or the default router towards it) is not known, it will block trying to look it up via ARP.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to connect. </td></tr>
+    <tr><td class="paramname">s</td><td><a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to connect. </td></tr>
   </table>
   </dd>
 </dl>
@@ -569,7 +569,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="backend_8h_af5df52522d52bfed04aa270094deaa78_cgraph.png" border="0" usemap="#backend_8h_af5df52522d52bfed04aa270094deaa78_cgraph" alt=""/></div>
 <map name="backend_8h_af5df52522d52bfed04aa270094deaa78_cgraph" id="backend_8h_af5df52522d52bfed04aa270094deaa78_cgraph">
-<area shape="rect" id="node2" href="arp_8c.html#aad7ca3e847867c4dcc618d034aa42739" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="179,93,277,120"/><area shape="rect" id="node3" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="929,169,1039,196"/><area shape="rect" id="node4" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="1107,93,1181,120"/><area shape="rect" id="node6" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="325,93,400,120"/><area shape="rect" id="node5" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="1249,68,1349,95"/><area shape="rect" id="node7" href="netmap_8h.html#a5fdd1b6f9d32c4d527c47a3a296fb304" title="nm_ring_empty" alt="" coords="449,93,559,120"/><area shape="rect" id="node8" href="eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="475,144,533,171"/><area shape="rect" id="node9" href="eth_8c.html#a84b1cdcdafabcab37d01ffff5a0e1938" title="ether_ntoa_r" alt="" coords="609,144,703,171"/><area shape="rect" id="node10" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="631,296,681,323"/><area shape="rect" id="node22" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="627,93,685,120"/><area shape="rect" id="node11" href="in__cksum_8c.html#a262ae86742cd94bef7aa644688a88816" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="1259,296,1338,323"/><area shape="rect" id="node14" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="785,397,847,424"/><area shape="rect" id="node17" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="950,245,1018,272"/><area shape="rect" id="node21" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="782,296,850,323"/><area shape="rect" id="node12" href="in__cksum_8c.html#a551e74402a29ecbf7c3f09bcc26f77cd" title="csum_oc16" alt="" coords="1421,347,1510,373"/><area shape="rect" id="node13" href="in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a" title="csum_oc16_reduce" alt="" coords="1398,296,1533,323"/><area shape="rect" id="node15" href="in__cksum_8c.html#a91b5a9539546f7879e7f3183e8db41af" title="udp_cksum" alt="" coords="1254,347,1343,373"/><area shape="rect" id="node16" href="warpcore_8h.html#ae5ac0023fa085cdd2a079fe3a5db2004" title="Get the socket bound to the &lt;sport, dport&gt; pair. " alt="" coords="938,397,1030,424"/><area shape="rect" id="node18" href="warpcore_8h.html#a9ef58000f78363a1127c6f5e1da38bb6" title="Return the maximum size a given w_iov may have for the given engine. " alt="" coords="1088,195,1200,221"/><area shape="rect" id="node19" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="1119,144,1169,171"/><area shape="rect" id="node20" href="warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="1267,144,1331,171"/><area shape="rect" id="node23" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="947,93,1021,120"/><area shape="rect" id="node24" href="arp_8c.html#a5857d8f27a0bcfa2b9dfe8308ac7befb" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="752,144,880,171"/></map>
+<area shape="rect" id="node2" href="arp_8c.html#aad7ca3e847867c4dcc618d034aa42739" title="Return the Ethernet MAC address for target IP address dip. " alt="" coords="179,93,277,120"/><area shape="rect" id="node3" href="arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="929,169,1039,196"/><area shape="rect" id="node4" href="warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="The sock backend performs no operation here. " alt="" coords="1107,93,1181,120"/><area shape="rect" id="node6" href="warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Check/wait until any data has been received. " alt="" coords="325,93,400,120"/><area shape="rect" id="node5" href="netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="1249,68,1349,95"/><area shape="rect" id="node7" href="netmap_8h.html#a5fdd1b6f9d32c4d527c47a3a296fb304" title="nm_ring_empty" alt="" coords="449,93,559,120"/><area shape="rect" id="node8" href="eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="475,144,533,171"/><area shape="rect" id="node9" href="eth_8c.html#a84b1cdcdafabcab37d01ffff5a0e1938" title="ether_ntoa_r" alt="" coords="609,144,703,171"/><area shape="rect" id="node10" href="ip_8c.html#a5140912b175371c1ed50dd8f4325a654" title="Receive processing for an IPv4 packet. " alt="" coords="631,296,681,323"/><area shape="rect" id="node22" href="arp_8c.html#af5d30e761122e50bc378cb946a620637" title="Receive an ARP packet, and react to it. " alt="" coords="627,93,685,120"/><area shape="rect" id="node11" href="in__cksum_8c.html#a262ae86742cd94bef7aa644688a88816" title="Compute the Internet checksum over buffer buf of length len. " alt="" coords="1259,296,1338,323"/><area shape="rect" id="node14" href="udp_8c.html#a008e1d17237f152a0184c0c6b120a747" title="Receive a UDP packet. " alt="" coords="785,397,847,424"/><area shape="rect" id="node17" href="icmp_8c.html#a07ccf7ab70e02d29731d2aea211c8a7d" title="Make an ICMP message with the given type and code based on the received packet in buf..." alt="" coords="950,245,1018,272"/><area shape="rect" id="node21" href="icmp_8c.html#a28b4a7a8581bdb47625ef28fb9484e4b" title="Analyze an inbound ICMP packet and react to it. " alt="" coords="782,296,850,323"/><area shape="rect" id="node12" href="in__cksum_8c.html#a551e74402a29ecbf7c3f09bcc26f77cd" title="csum_oc16" alt="" coords="1421,347,1510,373"/><area shape="rect" id="node13" href="in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a" title="csum_oc16_reduce" alt="" coords="1398,296,1533,323"/><area shape="rect" id="node15" href="in__cksum_8c.html#a91b5a9539546f7879e7f3183e8db41af" title="udp_cksum" alt="" coords="1254,347,1343,373"/><area shape="rect" id="node16" href="warpcore_8h.html#ae5ac0023fa085cdd2a079fe3a5db2004" title="Get the socket bound to the &lt;sport, dport&gt; pair. " alt="" coords="938,397,1030,424"/><area shape="rect" id="node18" href="warpcore_8h.html#a9ef58000f78363a1127c6f5e1da38bb6" title="Return the maximum size a given w_iov may have for the given engine. " alt="" coords="1088,195,1200,221"/><area shape="rect" id="node19" href="ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="1119,144,1169,171"/><area shape="rect" id="node20" href="warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="1267,144,1331,171"/><area shape="rect" id="node23" href="arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="947,93,1021,120"/><area shape="rect" id="node24" href="arp_8c.html#a5857d8f27a0bcfa2b9dfe8308ac7befb" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="752,144,880,171"/></map>
 </div>
 </p>
 
@@ -611,25 +611,25 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p>Initialize the warpcore netmap backend for engine <code>w</code>. </p>
-<p>This switches the interface to netmap mode, maps the underlying buffers into memory and locks it there, and sets up the extra buffers.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">is_lo</td><td>Is this a loopback interface? </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">is_left</td><td>Is this the left end of a loopback pipe?</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Initialize the warpcore netmap backend for engine <code>w</code>.</p>
+<p>Initialize the warpcore socket backend for engine <code>w</code>. </p>
 <p>Sets up the extra buffers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate. </td></tr>
     <tr><td class="paramdir">[in]</td><td class="paramname">is_lo</td><td>Unused. </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">is_left</td><td>Unused. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_left</td><td>Unused.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Initialize the warpcore socket backend for engine <code>w</code>.</p>
+<p>This switches the interface to netmap mode, maps the underlying buffers into memory and locks it there, and sets up the extra buffers.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">w</td><td>Backend engine. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">nbufs</td><td>Number of packet buffers to allocate. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_lo</td><td>Is this a loopback interface? </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">is_left</td><td>Is this the left end of a loopback pipe? </td></tr>
   </table>
   </dd>
 </dl>
@@ -710,7 +710,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 19 2018 07:03:48 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 19 2018 12:11:10 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

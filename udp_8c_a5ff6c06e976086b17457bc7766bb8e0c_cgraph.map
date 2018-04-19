@@ -4,8 +4,8 @@
 <area shape="rect" id="node16" href="$in__cksum_8c.html#a91b5a9539546f7879e7f3183e8db41af" title="udp_cksum" alt="" coords="1035,56,1125,83"/>
 <area shape="rect" id="node20" href="$ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="1055,563,1105,589"/>
 <area shape="rect" id="node4" href="$arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="865,461,975,488"/>
-<area shape="rect" id="node5" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="1043,183,1117,209"/>
-<area shape="rect" id="node7" href="$warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="261,183,336,209"/>
+<area shape="rect" id="node5" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="The sock backend performs no operation here. " alt="" coords="1043,183,1117,209"/>
+<area shape="rect" id="node7" href="$warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Check/wait until any data has been received. " alt="" coords="261,183,336,209"/>
 <area shape="rect" id="node6" href="$netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="1185,180,1285,207"/>
 <area shape="rect" id="node8" href="$netmap_8h.html#a5fdd1b6f9d32c4d527c47a3a296fb304" title="nm_ring_empty" alt="" coords="385,208,495,235"/>
 <area shape="rect" id="node9" href="$eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="411,272,469,299"/>

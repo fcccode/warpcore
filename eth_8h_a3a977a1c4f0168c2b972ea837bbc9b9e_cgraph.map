@@ -12,7 +12,7 @@
 <area shape="rect" id="node9" href="$warpcore_8h.html#ae5ac0023fa085cdd2a079fe3a5db2004" title="Get the socket bound to the &lt;sport, dport&gt; pair. " alt="" coords="442,183,534,209"/>
 <area shape="rect" id="node11" href="$warpcore_8h.html#a9ef58000f78363a1127c6f5e1da38bb6" title="Return the maximum size a given w_iov may have for the given engine. " alt="" coords="592,208,704,235"/>
 <area shape="rect" id="node12" href="$ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="623,259,673,285"/>
-<area shape="rect" id="node14" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="611,157,685,184"/>
+<area shape="rect" id="node14" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="The sock backend performs no operation here. " alt="" coords="611,157,685,184"/>
 <area shape="rect" id="node13" href="$warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="771,259,835,285"/>
 <area shape="rect" id="node15" href="$netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="753,183,853,209"/>
 <area shape="rect" id="node18" href="$arp_8c.html#a74652ecaac65854698aa193b470f4e08" title="Modifies the ARP request in buf into a corresponding ARP reply, and sends it. " alt="" coords="451,56,525,83"/>

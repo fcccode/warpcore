@@ -1,7 +1,7 @@
 <map id="arp_who_has" name="arp_who_has">
 <area shape="rect" id="node2" href="$arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="755,169,866,196"/>
-<area shape="rect" id="node3" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="933,93,1008,120"/>
-<area shape="rect" id="node5" href="$warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Trigger netmap to make new received data available to w_rx(). " alt="" coords="152,93,227,120"/>
+<area shape="rect" id="node3" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="The sock backend performs no operation here. " alt="" coords="933,93,1008,120"/>
+<area shape="rect" id="node5" href="$warpcore_8h.html#ab0508cfebe874ba0f3f2f230b4120e0d" title="Check/wait until any data has been received. " alt="" coords="152,93,227,120"/>
 <area shape="rect" id="node4" href="$netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="1075,68,1175,95"/>
 <area shape="rect" id="node6" href="$netmap_8h.html#a5fdd1b6f9d32c4d527c47a3a296fb304" title="nm_ring_empty" alt="" coords="275,93,386,120"/>
 <area shape="rect" id="node7" href="$eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e" title="Receive an Ethernet frame. " alt="" coords="301,144,360,171"/>
