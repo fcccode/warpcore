@@ -214,6 +214,8 @@ Generating call graph for function backend_cleanup
 Generating call graph for function backend_connect
 Generating call graph for function backend_init
 Generating docs for file src/backend_dpdk.c...
+Generating call graph for function backend_cleanup
+Generating call graph for function backend_init
 Generating docs for file src/backend_netmap.c...
 Generating call graph for function backend_bind
 Generating call graph for function backend_cleanup
@@ -226,9 +228,7 @@ Generating docs for file src/backend_sock.c...
 Generating call graph for function w_rx
 Generating call graph for function w_tx
 Generating docs for file src/eth.c...
-Generating call graph for function eth_rx
 Generating docs for file src/eth.h...
-Generating call graph for function eth_rx
 Generating docs for file src/icmp.c...
 Generating call graph for function icmp_rx
 Generating call graph for function icmp_tx
@@ -498,5 +498,5 @@ Patching output file 39/42
 Patching output file 40/42
 Patching output file 41/42
 Patching output file 42/42
-lookup cache used 650/65536 hits=3749 misses=663
+lookup cache used 653/65536 hits=3769 misses=666
 finished...

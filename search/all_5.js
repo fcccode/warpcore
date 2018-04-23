@@ -9,7 +9,6 @@ var searchData=
   ['eth_5faddr_5fstrlen',['ETH_ADDR_STRLEN',['../eth_8h.html#aa5bff04c552a0e07d9cb6358300e69a5',1,'eth.h']]],
   ['eth_5fdata',['eth_data',['../eth_8h.html#a236ee51bb0a208a2fd2dd9ffa6a6946e',1,'eth.h']]],
   ['eth_5fhdr',['eth_hdr',['../structeth__hdr.html',1,'']]],
-  ['eth_5frx',['eth_rx',['../eth_8c.html#a3a977a1c4f0168c2b972ea837bbc9b9e',1,'eth_rx(struct w_engine *const w, struct netmap_ring *const r):&#160;eth.c'],['../eth_8h.html#a3a977a1c4f0168c2b972ea837bbc9b9e',1,'eth_rx(struct w_engine *const w, struct netmap_ring *const r):&#160;eth.c']]],
   ['eth_5ftx_5frx_5fcur',['eth_tx_rx_cur',['../eth_8h.html#ab6c7c5a5f3deb0d0dee539dd17ab0d16',1,'eth.h']]],
   ['eth_5ftype_5farp',['ETH_TYPE_ARP',['../eth_8h.html#a14a88f547fcbf1570273a1582e823f87',1,'eth.h']]],
   ['eth_5ftype_5fip',['ETH_TYPE_IP',['../eth_8h.html#a4b8c8ce23cb47d1e56590f00e0c1b583',1,'eth.h']]],

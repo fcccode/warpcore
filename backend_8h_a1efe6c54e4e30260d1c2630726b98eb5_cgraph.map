@@ -1,5 +1,7 @@
 <map id="backend_init" name="backend_init">
-<area shape="rect" id="node2" href="$arp_8c.html#a5857d8f27a0bcfa2b9dfe8308ac7befb" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="149,5,277,32"/>
-<area shape="rect" id="node4" href="$warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="181,56,245,83"/>
-<area shape="rect" id="node3" href="$arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="326,5,437,32"/>
+<area shape="rect" id="node2" href="$backend__dpdk_8c.html#a547ab304c05ed31efe9fb483cd8332bc" title="unbind_driver" alt="" coords="164,5,263,32"/>
+<area shape="rect" id="node3" href="$backend__dpdk_8c.html#a7ae9d91ef162602fc36fe22d6308065e" title="bind_driver" alt="" coords="171,56,256,83"/>
+<area shape="rect" id="node4" href="$arp_8c.html#a5857d8f27a0bcfa2b9dfe8308ac7befb" title="Update the MAC address associated with IPv4 address ip in the ARP cache. " alt="" coords="149,107,277,133"/>
+<area shape="rect" id="node6" href="$warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="181,157,245,184"/>
+<area shape="rect" id="node5" href="$arp_8c.html#ab57d1a0513207babcdb2f6a8a8295fae" title="Find the ARP cache entry associated with IPv4 address ip. " alt="" coords="326,107,437,133"/>
 </map>

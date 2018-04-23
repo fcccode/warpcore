@@ -15,6 +15,7 @@ var searchData=
   ['bblu',['BBLU',['../util_8c.html#a9f40b3c1c240d5513da9f50685d5bf15',1,'util.c']]],
   ['bcyn',['BCYN',['../util_8c.html#abd610b309fe5845f1e5fbd6666a22447',1,'util.c']]],
   ['bgrn',['BGRN',['../util_8c.html#a003f38f51e5f6972a6a0796bda4ca11c',1,'util.c']]],
+  ['bind_5fdriver',['bind_driver',['../backend__dpdk_8c.html#a7ae9d91ef162602fc36fe22d6308065e',1,'backend_dpdk.c']]],
   ['bld',['BLD',['../util_8c.html#a6773bd84b2bf2a4f2118fc787f3a53fb',1,'util.c']]],
   ['blk',['BLK',['../util_8c.html#a6283768c836fd4a0f382514973bc3ff4',1,'util.c']]],
   ['blu',['BLU',['../util_8c.html#add9307de87f38e77d336751e305886f6',1,'util.c']]],
