@@ -206,6 +206,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Bind a warpcore socket-backend socket. </p>
+<p>Netmap-specific code to bind a warpcore socket.</p>
 <p>Calls the underlying Socket API.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -231,6 +232,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Shut a warpcore socket engine down cleanly. </p>
+<p>Shut a warpcore netmap engine down cleanly.</p>
 <p>Does nothing, at the moment.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -256,6 +258,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Close the socket. </p>
+<p>The netmap backend performs no operation here.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to close. </td></tr>
@@ -280,6 +283,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The socket backend performs no operation here. </p>
+<p>Connect the given <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a>, using the netmap backend.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>The <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> to connect. </td></tr>
@@ -326,6 +330,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initialize the warpcore socket backend for engine <code>w</code>. </p>
+<p>Initialize the warpcore netmap backend for engine <code>w</code>.</p>
 <p>Sets up the extra buffers.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -390,6 +395,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check/wait until any data has been received. </p>
+<p>Trigger netmap to make new received data available to <a class="el" href="backend__netmap_8c.html#af21a4e848c9199be729d01d20b8eea3d" title="Return any new data that has been received on a socket by appending it to the w_iov tail queue i...">w_rx()</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>Backend engine. </td></tr>
@@ -416,6 +422,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The sock backend performs no operation here. </p>
+<p>Push data placed in the TX rings via <a class="el" href="udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c" title="Sends a payload contained in a w_sock::ov via UDP. ">udp_tx()</a> and similar methods out onto the link.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">w</td><td>Backend engine. </td></tr>
@@ -450,6 +457,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Calls recvmsg() or recvmmsg() for all sockets associated with the engine, emulating the operation of netmap backend_rx() function. </p>
+<p>Return any new data that has been received on a socket by appending it to the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> tail queue <code>i</code>.</p>
 <p>Appends all data to the <a class="el" href="structw__sock.html#a3db894eae177fa4a879dffd4e9ad706e" title="Tail queue containing incoming unread data. ">w_sock::iv</a> socket buffers of the respective <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> structures.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -532,6 +540,7 @@ Here is the call graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the tail queue <code>o</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>. </p>
+<p>Loops over the <a class="el" href="structw__iov.html" title="The I/O vector structure that warpcore uses at the center of its API. ">w_iov</a> structures in the <a class="el" href="structw__iov__sq.html" title="A tail queue of w_iov I/O vectors. ">w_iov_sq</a> <code>o</code>, sending them all over <a class="el" href="structw__sock.html" title="A warpcore socket. ">w_sock</a> <code>s</code>.</p>
 <p>This backend uses the Socket API.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -578,7 +587,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Apr 23 2018 16:32:48 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu May 3 2018 11:37:09 for warpcore by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

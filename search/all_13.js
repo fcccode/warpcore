@@ -10,7 +10,6 @@ var searchData=
   ['udp_5fmask',['udp_mask',['../in__cksum_8c.html#a43fa9041a48f0315d59d8056f81b60f9',1,'in_cksum.c']]],
   ['udp_5frx',['udp_rx',['../udp_8c.html#a008e1d17237f152a0184c0c6b120a747',1,'udp_rx(struct w_engine *const w, struct netmap_ring *const r):&#160;udp.c'],['../udp_8h.html#a008e1d17237f152a0184c0c6b120a747',1,'udp_rx(struct w_engine *const w, struct netmap_ring *const r):&#160;udp.c']]],
   ['udp_5ftx',['udp_tx',['../udp_8c.html#a5ff6c06e976086b17457bc7766bb8e0c',1,'udp_tx(const struct w_sock *const s, struct w_iov *const v):&#160;udp.c'],['../udp_8h.html#a5ff6c06e976086b17457bc7766bb8e0c',1,'udp_tx(const struct w_sock *const s, struct w_iov *const v):&#160;udp.c']]],
-  ['unbind_5fdriver',['unbind_driver',['../backend__dpdk_8c.html#a547ab304c05ed31efe9fb483cd8332bc',1,'backend_dpdk.c']]],
   ['unlikely',['unlikely',['../netmap__user_8h.html#ac6c45889010c1bd68631771b64f18101',1,'unlikely():&#160;netmap_user.h'],['../util_8h.html#ac6c45889010c1bd68631771b64f18101',1,'unlikely():&#160;util.h']]],
   ['util_2ec',['util.c',['../util_8c.html',1,'']]],
   ['util_2eh',['util.h',['../util_8h.html',1,'']]],

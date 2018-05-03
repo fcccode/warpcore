@@ -5,7 +5,7 @@
 <area shape="rect" id="node4" href="$in__cksum_8c.html#a7ee8c766405745694128ec30e7c82f5a" title="csum_oc16_reduce" alt="" coords="550,56,685,83"/>
 <area shape="rect" id="node6" href="$warpcore_8h.html#a9ef58000f78363a1127c6f5e1da38bb6" title="Return the maximum size a given w_iov may have for the given engine. " alt="" coords="240,81,352,108"/>
 <area shape="rect" id="node7" href="$ip_8c.html#ad5934c09781e39f8bec7f5eae021f791" title="IPv4 transmit processing for the w_iov v of length len. " alt="" coords="271,132,321,159"/>
-<area shape="rect" id="node9" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="The sock backend performs no operation here. " alt="" coords="259,183,333,209"/>
+<area shape="rect" id="node9" href="$warpcore_8h.html#a3fba5669717435248ca7b7945a9b9d75" title="Push data placed in the TX rings via udp_tx() and similar methods out onto the link. " alt="" coords="259,183,333,209"/>
 <area shape="rect" id="node8" href="$warpcore_8h.html#ab83dbe51b1644c0665c9b66cd61ff796" title="Return a random number. " alt="" coords="419,132,483,159"/>
 <area shape="rect" id="node10" href="$netmap__user_8h.html#a071b8fdecd3b708c81259dc63143336d" title="nm_ring_next" alt="" coords="401,183,501,209"/>
 </map>

@@ -1,8 +1,6 @@
 <map id="w_cleanup" name="w_cleanup">
-<area shape="rect" id="node2" href="$warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d" title="Close a warpcore socket. " alt="" coords="165,19,235,45"/>
-<area shape="rect" id="node4" href="$backend_8h.html#a7e43d05a55650db2be88e9eece99905d" title="Shut a warpcore socket engine down cleanly. " alt="" coords="139,95,261,121"/>
-<area shape="rect" id="node3" href="$backend_8h.html#a10352237f3cab978ad3dbe7f25acb8cc" title="Close the socket. " alt="" coords="311,5,420,32"/>
-<area shape="rect" id="node5" href="$backend__dpdk_8c.html#a547ab304c05ed31efe9fb483cd8332bc" title="unbind_driver" alt="" coords="316,56,415,83"/>
-<area shape="rect" id="node6" href="$backend__dpdk_8c.html#a7ae9d91ef162602fc36fe22d6308065e" title="bind_driver" alt="" coords="323,107,408,133"/>
-<area shape="rect" id="node7" href="$arp_8c.html#a1b84f8ec20a55f766fcfcb9cd2d0d1e7" title="Free the ARP cache entries associated with engine w. " alt="" coords="310,157,421,184"/>
+<area shape="rect" id="node2" href="$warpcore_8c.html#a26c31751f7bb602b01bf00077ebd362d" title="Close a warpcore socket. " alt="" coords="165,5,235,32"/>
+<area shape="rect" id="node4" href="$backend_8h.html#a7e43d05a55650db2be88e9eece99905d" title="Shut a warpcore netmap engine down cleanly. " alt="" coords="139,56,261,83"/>
+<area shape="rect" id="node3" href="$backend_8h.html#a10352237f3cab978ad3dbe7f25acb8cc" title="The netmap backend performs no operation here. " alt="" coords="311,5,420,32"/>
+<area shape="rect" id="node5" href="$arp_8c.html#a1b84f8ec20a55f766fcfcb9cd2d0d1e7" title="Free the ARP cache entries associated with engine w. " alt="" coords="310,56,421,83"/>
 </map>
